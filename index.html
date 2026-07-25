@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тренинг-квиз</title>
+<style>
+  :root {
+    --blue: #1f6feb;
+    --blue-dark: #1955b8;
+    --green: #2ea043;
+    --red: #d1242f;
+    --bg: #f4f6f9;
+    --card: #ffffff;
+    --border: #e1e5ea;
+    --text: #1c2733;
+    --muted: #6b7785;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 16px 60px;
+  }
+  .topbar {
+    position: sticky;
+    top: 0;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    z-index: 10;
+  }
+  .topbar h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .progress-outer {
+    flex: 1;
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 16px;
+  }
+  .progress-inner {
+    height: 100%;
+    background: var(--blue);
+    width: 0%;
+    transition: width .3s ease;
+  }
+  .stats {
+    font-size: 13px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+  }
+  .card-header {
+    background: var(--blue);
+    color: #fff;
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .card-body {
+    padding: 20px 22px;
+  }
+  .q-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+  .q-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    white-space: pre-wrap;
+  }
+  pre.context {
+    background: #0d1117;
+    color: #c9d1d9;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    overflow-x: auto;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .15s, border-color .15s;
+    font-size: 15px;
+  }
+  .option:hover { background: #f0f4fa; }
+  .option.selected { border-color: var(--blue); background: #eaf1fd; }
+  .option.correct { border-color: var(--green); background: #e8f7ec; }
+  .option.incorrect { border-color: var(--red); background: #fdeceb; }
+  .option .letter {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0;
+    color: var(--text);
+  }
+  .option.correct .letter { background: var(--green); color: #fff; }
+  .option.incorrect .letter { background: var(--red); color: #fff; }
+  .order-list { display: flex; flex-direction: column; gap: 8px; }
+  .order-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #fafbfc;
+  }
+  .order-item .step-badge {
+    width: 26px; height: 26px; border-radius: 6px;
+    background: var(--blue); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; flex-shrink: 0;
+  }
+  .order-item textarea, .order-item .item-text {
+    flex: 1; font-size: 14px; white-space: pre-wrap;
+  }
+  .order-item .arrows { display: flex; gap: 4px; }
+  .order-item button {
+    border: 1px solid var(--border);
+    background: #fff;
+    border-radius: 6px;
+    width: 28px; height: 28px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .order-item.correct { border-color: var(--green); background: #e8f7ec; }
+  .order-item.incorrect { border-color: var(--red); background: #fdeceb; }
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+  button.btn {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    background: var(--blue);
+  }
+  button.btn:hover { background: var(--blue-dark); }
+  button.btn.secondary {
+    background: #fff;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  button.btn.secondary:hover { background: #f0f2f5; }
+  button.btn:disabled { opacity: .5; cursor: not-allowed; }
+  .feedback {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+  }
+  .feedback.show { display: block; }
+  .feedback.correct { background: #e8f7ec; color: #1a7431; border: 1px solid #b7e4c2; }
+  .feedback.incorrect { background: #fdeceb; color: #a4222c; border: 1px solid #f3c1c1; }
+  .reference {
+    margin-top: 10px;
+    font-size: 12.5px;
+    color: var(--muted);
+    word-break: break-all;
+  }
+  .nav-dots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 18px;
+    justify-content: center;
+  }
+  .dot {
+    width: 30px; height: 30px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--text);
+  }
+  .dot.current { border-color: var(--blue); border-width: 2px; }
+  .dot.answered-correct { background: #2ea043; color: #fff; border-color: #2ea043; }
+  .dot.answered-incorrect { background: #d1242f; color: #fff; border-color: #d1242f; }
+  .summary {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .summary h2 { margin-top: 0; }
+  .summary .score {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--blue);
+    margin: 10px 0;
+  }
+  select.mode-select {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 13px;
+    background: #fff;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1 id="q-counter">Вопрос 1 / 1</h1>
+  <div class="progress-outer"><div class="progress-inner" id="progress-bar"></div></div>
+  <div class="stats" id="stats">Правильно: 0 / 0</div>
+</div>
+
+<div class="wrap">
+  <div id="quiz-root"></div>
+  <div class="nav-dots" id="nav-dots"></div>
+</div>
+
+<script>
+// ======================================================
+// БАЗА ВОПРОСОВ — добавляй новые объекты в этот массив
+// ======================================================
+const QUESTIONS = [
+  {
+    id: 1,
+    topic: "Topic 1",
+    type: "order",
+    prompt: "DRAG DROP - An engineer is implementing NetFlow on a Cisco Nexus 7000 Series Switch.\nDrag and drop the NetFlow commands from the left into the correct order they must be entered on the right.",
+    items: [
+      "N7K-1(config)# flow monitor NetflowMonitor",
+      "N7K-1(config)# interface <interface>\nN7K-1(config-if)# ip flow monitor NetflowMonitor input",
+      "N7K-1(config)# feature netflow",
+      "N7K-1(config)# flow exporter NetflowMonitor\nN7K-1(config)# flow record NetflowMonitor"
+    ],
+    correctOrder: [2, 3, 0, 1],
+    reference: "https://www.cisco.com/c/en/us/support/docs/switches/nexus-7000-series-switches/112213-netflow-nexus7000-nsox-configex.html"
+  },
+  {
+    id: 2,
+    topic: "Topic 1",
+    type: "single",
+    question: "Which virtual MAC address is the default for HSRP version 2 group 10?",
+    options: [
+      "0000.5E00.0110",
+      "0000.0C9F.F00A",
+      "3784.0898.1C0A",
+      "0000.0C9F.F010"
+    ],
+    correct: 1
+  },
+  {
+    id: 3,
+    topic: "Topic 1",
+    type: "single",
+    question: "Refer to the exhibit. Which statement about the ERSPAN configuration in this environment is true?",
+    context:
+`# Switch A ERSPAN Configuration:
+monitor session 48 type erspan-source
+  source interface Ethernet2/11 both
+  destination ip 10.11.11.2
+  erspan-id 903
+  vrf default
+  no shut
+
+monitor erspan origin ip-address 10.254.254.20 global
+
+interface loopback1
+  ip address 10.254.254.20/32
+
+interface Ethernet1/1
+  switchport
+  switchport mode trunk
+  no shutdown
+
+feature interface-vlan
+interface Vlan 12
+  ip address 10.11.11.1/29
+  no ip redirects
+  no shutdown
+
+Topology: Host B -- Eth2/33 -- Switch B -- Eth1/2..Eth1/1 (L2 connection) -- Switch A -- Eth2/11 -- Host A
+
+# Switch B ERSPAN Configuration:
+monitor session 47 type erspan-destination
+  source ip 10.11.11.2
+  destination interface Ethernet2/33
+  erspan-id 903
+  vrf default
+  no shut
+
+interface Ethernet2/33
+  switchport monitor
+
+feature interface-vlan
+interface Vlan 12
+  ip address 10.11.11.2/29
+  no ip redirects
+  no shutdown
+
+interface Ethernet1/2
+  switchport
+  switchport mode trunk`,
+    options: [
+      "The session number of the source of ERSPAN spanned traffic must have a session ID of 47 for the traffic analyzer to receive the traffic.",
+      "Host B is the source of ERSPAN spanned traffic and host A is the traffic analyzer.",
+      "The session number of the source of ERSPAN spanned traffic must have a session ID of 48 for the traffic analyzer to receive the traffic.",
+      "Host A is the source of ERSPAN spanned traffic and host B is the traffic analyzer."
+    ],
+    correct: 3
+  }
+];
+
+// ======================================================
+// ДВИЖОК
+// ======================================================
+let current = 0;
+let score = 0;
+let answeredCount = 0;
+const answers = new Array(QUESTIONS.length).fill(null); // null | 'correct' | 'incorrect'
+const letters = ['A','B','C','D','E','F'];
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// начальные перемешанные порядки для order-вопросов (фиксируем один раз)
+const orderState = {};
+QUESTIONS.forEach((q, idx) => {
+  if (q.type === 'order') {
+    let shuffled;
+    do {
+      shuffled = shuffle(q.items.map((_, i) => i));
+    } while (JSON.stringify(shuffled) === JSON.stringify(q.correctOrder));
+    orderState[idx] = shuffled;
+  }
+});
+
+function renderNavDots() {
+  const nav = document.getElementById('nav-dots');
+  nav.innerHTML = '';
+  QUESTIONS.forEach((q, i) => {
+    const d = document.createElement('div');
+    d.className = 'dot';
+    if (i === current) d.classList.add('current');
+    if (answers[i] === 'correct') d.classList.add('answered-correct');
+    if (answers[i] === 'incorrect') d.classList.add('answered-incorrect');
+    d.textContent = i + 1;
+    d.onclick = () => { current = i; render(); };
+    nav.appendChild(d);
+  });
+}
+
+function updateTopbar() {
+  document.getElementById('q-counter').textContent = `Вопрос ${current + 1} / ${QUESTIONS.length}`;
+  document.getElementById('progress-bar').style.width = `${((current) / QUESTIONS.length) * 100}%`;
+  document.getElementById('stats').textContent = `Правильно: ${score} / ${answeredCount}`;
+}
+
+function render() {
+  updateTopbar();
+  renderNavDots();
+  const root = document.getElementById('quiz-root');
+  const q = QUESTIONS[current];
+
+  if (current >= QUESTIONS.length) {
+    renderSummary();
+    return;
+  }
+
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  const header = document.createElement('div');
+  header.className = 'card-header';
+  header.innerHTML = `<span>Question #${q.id}</span><span>${q.topic || ''}</span>`;
+  card.appendChild(header);
+
+  const body = document.createElement('div');
+  body.className = 'card-body';
+
+  if (q.type === 'single') {
+    body.innerHTML += `<div class="q-text">${escapeHtml(q.question)}</div>`;
+    if (q.context) {
+      body.innerHTML += `<pre class="context">${escapeHtml(q.context)}</pre>`;
+    }
+    const optsWrap = document.createElement('div');
+    optsWrap.className = 'options';
+    q.options.forEach((opt, i) => {
+      const el = document.createElement('div');
+      el.className = 'option';
+      el.innerHTML = `<div class="letter">${letters[i]}</div><div>${escapeHtml(opt)}</div>`;
+      if (answers[current] !== null) {
+        if (i === q.correct) el.classList.add('correct');
+      }
+      el.onclick = () => selectSingle(i);
+      optsWrap.appendChild(el);
+    });
+    body.appendChild(optsWrap);
+
+    const feedback = document.createElement('div');
+    feedback.id = 'feedback';
+    feedback.className = 'feedback';
+    body.appendChild(feedback);
+    if (answers[current] !== null) {
+      showFeedbackSingle(q, feedback);
+    }
+
+    if (q.reference) {
+      body.innerHTML += `<div class="reference">Reference: ${escapeHtml(q.reference)}</div>`;
+    }
+
+  } else if (q.type === 'order') {
+    body.innerHTML += `<div class="q-text">${escapeHtml(q.prompt)}</div>`;
+    const list = document.createElement('div');
+    list.className = 'order-list';
+    list.id = 'order-list';
+    renderOrderList(q, list);
+    body.appendChild(list);
+
+    const feedback = document.createElement('div');
+    feedback.id = 'feedback';
+    feedback.className = 'feedback';
+    body.appendChild(feedback);
+    if (answers[current] !== null) {
+      showFeedbackOrder(q, feedback);
+      markOrderResult(q);
+    }
+
+    if (q.reference) {
+      body.innerHTML += `<div class="reference">Reference: ${escapeHtml(q.reference)}</div>`;
+    }
+  }
+
+  card.appendChild(body);
+
+  const actions = document.createElement('div');
+  actions.className = 'actions';
+  actions.style.margin = '0 22px 20px';
+
+  if (q.type === 'order' && answers[current] === null) {
+    const checkBtn = document.createElement('button');
+    checkBtn.className = 'btn';
+    checkBtn.textContent = 'Проверить';
+    checkBtn.onclick = () => checkOrder(q);
+    actions.appendChild(checkBtn);
+  }
+
+  const prevBtn = document.createElement('button');
+  prevBtn.className = 'btn secondary';
+  prevBtn.textContent = '← Назад';
+  prevBtn.disabled = current === 0;
+  prevBtn.onclick = () => { current--; render(); };
+  actions.appendChild(prevBtn);
+
+  const nextBtn = document.createElement('button');
+  nextBtn.className = 'btn secondary';
+  nextBtn.textContent = current === QUESTIONS.length - 1 ? 'Итоги →' : 'Далее →';
+  nextBtn.onclick = () => { current++; render(); };
+  actions.appendChild(nextBtn);
+
+  root.innerHTML = '';
+  root.appendChild(card);
+  card.appendChild(actions);
+}
+
+function escapeHtml(str) {
+  return (str || '').replace(/[&<>"']/g, m => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[m]));
+}
+
+function selectSingle(i) {
+  const q = QUESTIONS[current];
+  if (answers[current] !== null) return; // уже отвечен
+  const isCorrect = i === q.correct;
+  answers[current] = isCorrect ? 'correct' : 'incorrect';
+  answeredCount++;
+  if (isCorrect) score++;
+
+  const opts = document.querySelectorAll('.option');
+  opts.forEach((el, idx) => {
+    if (idx === i) el.classList.add('selected');
+    if (idx === q.correct) el.classList.add('correct');
+    if (idx === i && !isCorrect) el.classList.add('incorrect');
+  });
+
+  const feedback = document.getElementById('feedback');
+  showFeedbackSingle(q, feedback);
+  updateTopbar();
+  renderNavDots();
+}
+
+function showFeedbackSingle(q, feedback) {
+  const idx = answers[current];
+  feedback.classList.add('show');
+  if (idx === 'correct') {
+    feedback.classList.add('correct');
+    feedback.textContent = `Верно! Правильный ответ: ${letters[q.correct]}.`;
+  } else {
+    feedback.classList.add('incorrect');
+    feedback.textContent = `Неверно. Правильный ответ: ${letters[q.correct]}.`;
+  }
+}
+
+function renderOrderList(q, list) {
+  list.innerHTML = '';
+  const order = orderState[current];
+  order.forEach((itemIdx, pos) => {
+    const row = document.createElement('div');
+    row.className = 'order-item';
+    row.dataset.itemIdx = itemIdx;
+    row.innerHTML = `
+      <div class="step-badge">${pos + 1}</div>
+      <div class="item-text">${escapeHtml(q.items[itemIdx])}</div>
+      <div class="arrows">
+        <button data-dir="up" ${pos === 0 ? 'disabled' : ''}>↑</button>
+        <button data-dir="down" ${pos === order.length - 1 ? 'disabled' : ''}>↓</button>
+      </div>
+    `;
+    const [upBtn, downBtn] = row.querySelectorAll('button');
+    upBtn.onclick = () => moveItem(pos, -1);
+    downBtn.onclick = () => moveItem(pos, 1);
+    list.appendChild(row);
+  });
+}
+
+function moveItem(pos, dir) {
+  if (answers[current] !== null) return;
+  const order = orderState[current];
+  const newPos = pos + dir;
+  if (newPos < 0 || newPos >= order.length) return;
+  [order[pos], order[newPos]] = [order[newPos], order[pos]];
+  const list = document.getElementById('order-list');
+  renderOrderList(QUESTIONS[current], list);
+}
+
+function checkOrder(q) {
+  const order = orderState[current];
+  const isCorrect = JSON.stringify(order) === JSON.stringify(q.correctOrder);
+  answers[current] = isCorrect ? 'correct' : 'incorrect';
+  answeredCount++;
+  if (isCorrect) score++;
+  markOrderResult(q);
+  const feedback = document.getElementById('feedback');
+  showFeedbackOrder(q, feedback);
+  updateTopbar();
+  renderNavDots();
+  render(); // перерисовать, чтобы убрать кнопку "Проверить" и заблокировать стрелки
+}
+
+function markOrderResult(q) {
+  const order = orderState[current];
+  const rows = document.querySelectorAll('.order-item');
+  rows.forEach((row, pos) => {
+    const itemIdx = parseInt(row.dataset.itemIdx, 10);
+    row.querySelectorAll('button').forEach(b => b.disabled = true);
+    if (q.correctOrder[pos] === itemIdx) {
+      row.classList.add('correct');
+    } else {
+      row.classList.add('incorrect');
+    }
+  });
+}
+
+function showFeedbackOrder(q, feedback) {
+  feedback.classList.add('show');
+  if (answers[current] === 'correct') {
+    feedback.classList.add('correct');
+    feedback.textContent = 'Верно! Порядок собран правильно.';
+  } else {
+    feedback.classList.add('incorrect');
+    const correctText = q.correctOrder.map((idx, i) => `${i + 1}. ${q.items[idx].split('\n')[0]}`).join('  |  ');
+    feedback.textContent = `Неверно. Правильный порядок: ${correctText}`;
+  }
+}
+
+function renderSummary() {
+  updateTopbar();
+  document.getElementById('progress-bar').style.width = '100%';
+  const root = document.getElementById('quiz-root');
+  const pct = QUESTIONS.length ? Math.round((score / QUESTIONS.length) * 100) : 0;
+  root.innerHTML = `
+    <div class="card">
+      <div class="card-header"><span>Результат</span></div>
+      <div class="card-body summary">
+        <h2>Тест завершён</h2>
+        <div class="score">${score} / ${QUESTIONS.length}</div>
+        <div>${pct}% правильных ответов</div>
+        <div class="actions" style="justify-content:center; margin-top:20px;">
+          <button class="btn" onclick="restart()">Пройти заново</button>
+          <button class="btn secondary" onclick="current=0; render();">Вернуться к вопросам</button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function restart() {
+  current = 0;
+  score = 0;
+  answeredCount = 0;
+  answers.fill(null);
+  QUESTIONS.forEach((q, idx) => {
+    if (q.type === 'order') {
+      let shuffled;
+      do {
+        shuffled = shuffle(q.items.map((_, i) => i));
+      } while (JSON.stringify(shuffled) === JSON.stringify(q.correctOrder));
+      orderState[idx] = shuffled;
+    }
+  });
+  render();
+}
+
+render();
+</script>
+</body>
+</html>
