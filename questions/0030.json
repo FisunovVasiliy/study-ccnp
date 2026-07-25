@@ -1,0 +1,27 @@
+{
+ "id": 30,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer repeatedly saves a configuration on Catalyst switches to NVRAM using the write memory command. Which action should be taken to implement the same action on Nexus switches?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Use the alias command to use the write memory command.",
+  "Use the wri command to use the copy running-config startup-config command.",
+  "Use the exit command to leave the configuration mode and save the configuration automatically.",
+  "Use the write memory command to save the configuration."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

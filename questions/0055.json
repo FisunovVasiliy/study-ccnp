@@ -1,0 +1,27 @@
+{
+ "id": 55,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Several production and development database servers exist in the same EPG and IP subnet. The IT security policy is to prevent connections between production and development. Which attribute must be used to assign the servers to different microsegments?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "data center",
+  "VM name",
+  "IP address",
+  "VMM domain"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 71%, C 29%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

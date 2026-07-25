@@ -1,0 +1,25 @@
+{
+ "id": 46,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A Cisco MDS 9000 Series Switch is configured for SAN Analytics and SAN Telemetry Streaming. An engineer must enable analytics for NVMe on interfaces in the range of fc1/1-12. Due to a large amount of traffic generated in the SAN environment, the data must be collected at regular intervals of 60 seconds from ports fc1/1-12 and then for ports fc1/13-24 for the next 60 seconds. Ports in the range fc1/13-24 were already enabled for analytics. Which set of commands must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "analytics port-sampling module 1 size 12 interval 60000\n\ninterface fc1/1-12\n  analytics fc-scsi\n  analytics fc-nvme",
+  "analytics port-sampling module 1 size 12 interval 60\n\ninterface fc1/1-12\n  analytics type fc-nvme",
+  "interface fc1/1-12\n  port-sampling module 1 size 12 interval 60\n  analytics nvme",
+  "interface fc1/1-12\n  port-sampling module 1 size 12 interval 60000\n  analytics type fc-scsi"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/8_x/config/san_analytics/cisco-mds9000-san-analytics-telemetry-streaming-config-guide-8x/configuring_san_telemetry_streaming.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

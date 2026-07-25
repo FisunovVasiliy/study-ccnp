@@ -1,0 +1,27 @@
+{
+ "id": 83,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which feature is supported with an In-Service Software Upgrade on a Cisco Nexus 9000 Series switch?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "nondisruptive upgrades via nonstop forwarding",
+  "configuration changes during an upgrade",
+  "upgrades to individual modules and line cards",
+  "zero downtime downgrades via dual supervisor modules"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

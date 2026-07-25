@@ -1,0 +1,27 @@
+{
+ "id": 84,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a monitoring solution for a Cisco Nexus 9000 Series switch based data center. The solution must provide real-time insight into the network health with subscription-based monitoring. The monitoring must be initiated from the client side, and the data must be sent via encryption. Which configuration steps complete the configuration?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure Grafana on the Nexus switch. Specify the logging certificate. Enable syslog level 7 export to Grafana.",
+  "Set the telemetry feature on the Nexus switch. Specify a certificate for telemetry transport. Configure a sensor group and destination.",
+  "Activate SNMPv3 on the Nexus switch. Set the globalEnforcePriv parameter. Configure an SNMP agent to poll information.",
+  "Enable GRPC on the Nexus switch. Generate a certificate. Configure gNMI inputs in Telegraf and output to InfluxDB."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "D 50%, B 50%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/programmability/guide/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x_chapter_011000.html",
+ "explanation": "About Telemetry - Collecting data for analyzing and troubleshooting has always been an important aspect in monitoring the health of a network.\nCisco NX-OS provides several mechanisms such as SNMP, CLI, and Syslog to collect data from a network. These mechanisms have limitations that restrict automation and scale. One limitation is the use of the pull model, where the initial request for data from network elements originates from the client. The pull model does not scale when there is more than one network management station (NMS) in the network. With this model, the server sends data only when clients request it. To initiate such requests, continual manual intervention is required. This continual manual intervention makes the pull model inefficient.\nA push model continuously streams data out of the network and notifies the client. Telemetry enables the push model, which provides near-real-time access to monitoring data.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 42,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer performs a set of configuration changes for the vPC domain using Session Manager. Which two commands are used to verify the configuration and apply the device changes when no errors are returned? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "commit",
+  "verify",
+  "apply",
+  "checkpoint",
+  "write"
+ ],
+ "correct": [
+  0,
+  1
+ ],
+ "mostVoted": [
+  "A",
+  "B"
+ ],
+ "voteNote": "AB 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli/CLIConfigurationGuide/sm_rollback.html",
+ "explanation": "Verifying a Session - To verify a session, use the following command in session mode: switch(config-s)# verify [verbose] - Verifies the commands in the configuration session.\nCommitting a Session - To commit a session, use the following command in session mode: switch(config-s)# commit [verbose] - Commits the commands in the configuration session.",
+ "needsAnswer": false,
+ "provisional": false
+}

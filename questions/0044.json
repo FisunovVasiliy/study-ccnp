@@ -1,0 +1,27 @@
+{
+ "id": 44,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer configured an environment that contains the vPC and non-vPC switches. However, it was noticed that the downstream non-vPC switches do not receive the same STP bridge ID from the upstream vPC switch peers. Which vPC feature must be implemented to ensure that vPC and non-vPC switches receive the same STP bridge ID from the upstream vPC switch peers?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "vpc local role-priority 4000",
+  "peer-switch",
+  "system-mac 0123.4567.89ab",
+  "peer-gateway"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

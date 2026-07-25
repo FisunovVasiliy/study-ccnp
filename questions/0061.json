@@ -1,0 +1,27 @@
+{
+ "id": 61,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer needs to implement streaming telemetry on a Cisco MDS 9000 Series switch. The requirement is for the show command data to be collected every 30 seconds and sent to receivers. Which command must be added to the configuration to meet this requirement?",
+ "context": "switch(config-dest) # sensor-group 100\nswitch(conf-tm-sensor)# path show_stats_fc3/1\nswitch(conf-tm-sensor)# subscription 100\nswitch(conf-tm-sub)# <missing command>\nswitch(conf-tm-sub)# dst-grp 100",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "snsr-grp 200 sample-interval 30000",
+  "snsr-grp 200 sample-interval 30",
+  "sensor-grp 200 sample-period 30",
+  "sensor-grp 200 sample-period 30000"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

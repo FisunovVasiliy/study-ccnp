@@ -1,0 +1,36 @@
+{
+ "id": 87,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the firmware packages from the left onto the software bundles they belong to on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "Board controller firmware",
+  "BIOS firmware",
+  "Kernel and system firmware for Fabric Interconnects",
+  "CIMC firmware",
+  "I/O module firmware",
+  "Cisco UCS Manager software"
+ ],
+ "targets": [
+  "Cisco UCS Infrastructure Software Bundle",
+  "Cisco UCS B-Series Blade Server Software Bundle"
+ ],
+ "matchCorrect": [
+  1,
+  1,
+  0,
+  1,
+  0,
+  0
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 35,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer is implementing OTV on a transport that supports multicast. The solution needs to meet the following requirements:\n- Establish adjacency to the remote peer by using multicast.\n- Enable OTV advertisements for VLAN 100 to the other site.\nWhich two commands should be configured to meet these requirements? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "otv extend-vlan 100",
+  "otv site-vlan 100",
+  "otv use-adjacency-server 172.27.255.94",
+  "otv data-group 232.2.2.0/28",
+  "otv control-group 232.1.1.1"
+ ],
+ "correct": [
+  0,
+  4
+ ],
+ "mostVoted": [
+  "A",
+  "E"
+ ],
+ "voteNote": "AE 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

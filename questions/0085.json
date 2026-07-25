@@ -1,0 +1,27 @@
+{
+ "id": 85,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Software downgrade is required on a Cisco Nexus 7000 Series switch. What is displayed when this command is executed?",
+ "context": "show incompatibility-all system bootflash:n7000-s1-dk9.4.2.4.bin",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "features that are enabled automatically after the downgrade",
+  "impact of a software upgrade in ISSU and chassis reload",
+  "features and commands that are removed automatically from the configuration",
+  "compatibility of software in the system bootflash file"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

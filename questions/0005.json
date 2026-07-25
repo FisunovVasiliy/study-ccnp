@@ -1,0 +1,27 @@
+{
+ "id": 5,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which mroute state is created when Bidirectional PIM is deployed at a site?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "*,G",
+  "MVPN Type-6",
+  "MVPN Type-7",
+  "S,G"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://networklessons.com/multicast/multicast-bidirectional-pim",
+ "explanation": "Bidirectional PIM is a different flavor of multicast than what you are probably used to (sparse, dense and sparse-dense mode). Most multicast networks have a couple of sources and many receivers. Bidirectional PIM has been invented for networks where we have many sources and receivers talking to each other. An example of this is videoconferencing where it's not just 1 source with many listeners but all the participants are communicating with each other.\nThe downside of using PIM sparse mode with many active sources and receivers is that we will see many mroute state entries that can take quite some resources.\nUsing PIM sparse mode the RP builds 2 entries: (*,G) and (S,G).\nWhen we use PIM bidirectional mode the RP will never build a (S,G) entry and we only allow the (*,G) entry for the shared tree. PIM routers will never build the SPT (Shortest Path Tree) towards the source.",
+ "needsAnswer": false,
+ "provisional": false
+}

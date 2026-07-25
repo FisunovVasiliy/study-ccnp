@@ -1,0 +1,27 @@
+{
+ "id": 37,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Cisco Fabric Services is enabled in the network. Which type of IP address is used by the Cisco Fabric Services protocol?",
+ "context": "SWB# ethanalyzer local interface mgmt brief limit-captured-frames 50\nCapturing on mgmt0\n1.130599 192.168.254.1 -> 192.168.254.13 TCP 60 29652 > ssh [ACK] Seq=1 Ack=53 Win=32449 Len=0\n1.136261 00:8e:73:a2:41:0e -> Spanning-tree-(for-bridges)_00 STP 60 Conf. Root = 8192/10/ec:e1:a9:df:6c:80 Cost = 22 Port = 0x800e\n1.373417 192.168.254.13 -> 192.168.254.1 SSH 106 Encrypted response packet len=52\n3.270728 192.168.254.4 -> 239.255.70.83 UDP 166 Source port: cfs Destination port: cfs",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "IPv4 multicast address",
+  "IPv4 unicast address",
+  "IPv4 gateway address",
+  "IPv4 anycast address"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

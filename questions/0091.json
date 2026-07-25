@@ -1,0 +1,30 @@
+{
+ "id": 91,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer wants to create a backup of Cisco UCS Manager for disaster recovery purposes.\nWhat are two characteristics of a full state backup of a Cisco UCS Manager database? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "contains all of the runtime states and statuses but not the configurations",
+  "performs a complete binary dump of the database as a .bin file",
+  "performs a complete binary dump of the database as a .sql file",
+  "performs a complete binary dump of the database as a .tgz file",
+  "contains all of the configurations"
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 67%, DE 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

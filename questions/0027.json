@@ -1,0 +1,27 @@
+{
+ "id": 27,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which MAC address is an HSRP version 2?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "3842.4250.0000",
+  "0000.0C07.AC1H",
+  "0000.0C9F.F0C8",
+  "0100.5E7F.FFFF"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 80%, A 20%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

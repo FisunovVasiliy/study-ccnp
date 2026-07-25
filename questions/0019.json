@@ -1,0 +1,27 @@
+{
+ "id": 19,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What is the result of running the command presented?",
+ "context": "restart pim",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Multicast traffic forwarding is suspended.",
+  "MRIB is flushed.",
+  "The PIM database is deleted.",
+  "PIM join messages are suspended."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/multicast/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_Multicast_Routing_Configuration_Guide/b_Cisco_Nexus_9000_Series_NX-OS_Multicast_Routing_Configuration_Guide_chapter_011.html",
+ "explanation": "When you restart PIM, the following tasks are performed:\n- The PIM database is deleted.\n- The MRIB and MFIB are unaffected and forwarding of traffic continues.\n- The multicast route ownership is verified through the MRIB.\n- Periodic PIM join and prune messages from neighbors are used to repopulate the database.",
+ "needsAnswer": false,
+ "provisional": false
+}

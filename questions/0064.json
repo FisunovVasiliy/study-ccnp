@@ -1,0 +1,27 @@
+{
+ "id": 64,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer implements an ACI fabric and must implement microsegmentation of endpoints within the same IP subnet using a network-based attribute. The attribute mapping must allow IP subnet independence. Which attribute must be selected?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "IP",
+  "tag",
+  "custom",
+  "MAC address"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/3-",
+ "explanation": "If you want to use a network-based attribute and classify IP addresses in the same subnet, you must use the MAC-based network attribute. IP-based microsegmented EPGs do not support classification for IP addresses in the same subnet. IP-based microsegmented EPGs are supported only when traffic requires Layer 3 routing. If the traffic is bridged, the microsegmentation policy cannot be enforced.",
+ "needsAnswer": false,
+ "provisional": false
+}

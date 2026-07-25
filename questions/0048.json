@@ -1,0 +1,27 @@
+{
+ "id": 48,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A customer wants to offload some of its order processing to a public cloud environment. The customer environment is based on Cisco ACI and uses Puppet with containerized applications. The operations team requires a solution to orchestrate and optimize the cost of the new solution. Which product must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Cisco Workload Optimization Manager",
+  "Cisco CloudCenter",
+  "Cisco Intersight",
+  "Cisco Data Center Network Manager"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

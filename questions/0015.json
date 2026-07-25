@@ -1,0 +1,25 @@
+{
+ "id": 15,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A network engineer is setting up a multihomed OTV network. The first site has been set up with a primary and secondary adjacency server.\nWhich configuration must be added on the remote OTV AEDs site?",
+ "context": "OTV-Site1# show otv\nOTV Overlay Information\nSite Identifier 0000.0000.0111\nOverlay interface Overlay200\nVPN name: Overlay200\nVPN state: UP\nExtended vlans: 178 2500-2563 (Total:65)\nJoin interface(s): Eth1/2 (20.1.1.1)\nSite vlan: 1999 (up)\nAED-Capable: Yes\nCapability: Unicast-Only\nIs Adjacency Server: Yes\nAdjacency Server(s): 20.1.1.1/20.2.1.1",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface Overlay200\n  otv join-interface Ethernet1/2\n  otv extend-vlan 178, 2500-2563\n  otv use-adjacency-server 20.1.1.1 unicast-only",
+  "interface Overlay200\n  otv join-interface Ethernet1/2\n  otv extend-vlan 178, 2500-2563",
+  "interface Overlay200\n  otv join-interface Ethernet1/2\n  otv extend-vlan 178, 2500-2563\n  otv use-adjacency-server 20.1.1.1 20.2.1.1 unicast-only",
+  "interface Overlay200\n  otv join-interface Ethernet1/2\n  otv extend-vlan 178, 2500-2563\n  otv adjacency-server unicast-only"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "We need to add both IP's for the primary and secondary adjacency server when using a unicast only design.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 36,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer needs to create a new user in the local user database on Cisco UCS Fabric Interconnect. The user needs permissions to change the following configuration inside UCS Manager version 3.1:\n- vNIC and vHBA profiles\n- Fan speed and power redundancy profile of UCS Manager\nWhich two roles must be assigned to a user to achieve this goal? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "facility-manager",
+  "server-equipment",
+  "operations",
+  "server-profile",
+  "server-compute"
+ ],
+ "correct": [
+  0,
+  3
+ ],
+ "mostVoted": [
+  "A",
+  "D"
+ ],
+ "voteNote": "AD 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

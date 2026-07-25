@@ -1,0 +1,30 @@
+{
+ "id": 98,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two settings must be configured before enabling a Cisco UCS Manager domain for Cisco Intersight connectivity? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SMTP servers",
+  "SMTP reply-to address",
+  "NTP servers",
+  "syslog redirection",
+  "DNS servers"
+ ],
+ "correct": [
+  2,
+  4
+ ],
+ "mostVoted": [
+  "C",
+  "E"
+ ],
+ "voteNote": "CE 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-1/b_UCSM_Getting_Started_Guide_4_1/b_UCSM_Getting_Started_Guide_4_1_chapter_0100.html",
+ "explanation": "Configure Administration Policies - This step involves configuration of administration policies, such as DNS Server, NTP, and Time Zone, that are necessary for proper functioning of all components.",
+ "needsAnswer": false,
+ "provisional": false
+}

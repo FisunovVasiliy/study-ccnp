@@ -1,0 +1,27 @@
+{
+ "id": 99,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure Cisco IMC server management NIC for autonegotiation.\nWhich setting should be selected?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "shared LOM",
+  "Cisco card",
+  "dedicated",
+  "shared LOM EXT"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/unified-computing-system/200221-Auto-negotiation-not-enabling-by-default.html",
+ "explanation": "Auto-negotiation setting is only available in dedicated mode. This setting enables itself as long as a valid dedicated configuration is set.",
+ "needsAnswer": false,
+ "provisional": false
+}

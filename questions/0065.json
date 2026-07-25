@@ -1,0 +1,27 @@
+{
+ "id": 65,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a characteristic of the install all command on the Cisco Nexus Series switch?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "automatically checks the image integrity",
+  "continues the upgrade process if any step in the sequence fails",
+  "upgrades only certain modules",
+  "impacts data plane traffic"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/en/US/docs/storage/san_switches/mds9000/sw/rel_3_x/configuration/guides/cli_3_2/img.pdf",
+ "explanation": "Benefits of Using the install all Command\nThe install all command provides the following benefits:\n• You can upgrade the entire switch using just one procedure command.\n• You can receive descriptive information on the intended changes to your system before you continue with the installation.\n• You have the option to cancel the command. Once the effects of the command are presented, you can continue or cancel when you see this question (the default is no): Do you want to continue (y/n) [n] y\n• You can upgrade the entire switch using the least disruptive procedure.\n• You can see the progress of this command on the console, Telnet, and SSH screens.\n• After a switchover process, you can see the progress from both the supervisor modules.\n• Before a switchover process, you can only see the progress from the active supervisor module.\n• The command automatically checks the image integrity. This includes the running kickstart and system images.",
+ "needsAnswer": false,
+ "provisional": false
+}

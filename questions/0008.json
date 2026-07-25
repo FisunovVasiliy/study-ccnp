@@ -1,0 +1,27 @@
+{
+ "id": 8,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A small remote office is set to connect to the regional hub site via NSSA ASBR.\nWhich type of LSA is sent to the remote office OSPF area?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "type 7 LSA",
+  "type 1 LSA",
+  "type 5 LSA",
+  "type 3 LSA"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "The remote site is connected to the Hub site via an ASBR router. Hence, an ASBR router redistributes a non OSPF or an External route into the NSSA area which is a Type 7. There is no ABR router in the question.",
+ "needsAnswer": false,
+ "provisional": false
+}

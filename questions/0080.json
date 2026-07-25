@@ -1,0 +1,27 @@
+{
+ "id": 80,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is performing an ISSU upgrade on the Cisco MDS 9000 Series switch. What is the impact on the control plane of the switch?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It is down for less than 80 seconds.",
+  "It remains down for more than 80 seconds but less than 140 seconds.",
+  "It remains down until the next reboot.",
+  "It remains up throughout the update."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

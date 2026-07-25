@@ -1,0 +1,27 @@
+{
+ "id": 68,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A Cisco ACI engineer must configure an access port on a Cisco ACI leaf switch. The access policy should be configured so that it supports L3Out connectivity concurrently with several EPGs that are mapped to this interface with the static port method. How should the access policy be configured?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "by linking the interface policy group to multiple Attachable Access Entity Profiles",
+  "with two interface policy groups that are linked to the same interface profile port selector",
+  "by mapping a single physical domain, mapped to the L3out and EPG interfaces",
+  "with a single Attachable Access Entity Profile that is linked to the corresponding routed domain and physical domain"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

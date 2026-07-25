@@ -1,0 +1,27 @@
+{
+ "id": 13,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What is configured as a result of running these commands?",
+ "context": "switch(config)# interface Ethernet 2/2\nswitch(config)# ip address 172.23.231.240/23\nswitch(config)# ip verify unicast source reachable-via rx",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "loose unicast RPF",
+  "strict unicast RPF",
+  "IP Source Guard",
+  "reverse lookup for outbound packets"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.examtopics.com/discussions/cisco/view/62014-exam-350-601-topic-1-question-13-discussion/",
+ "explanation": "The `ip verify unicast source reachable-via rx` command enables Unicast RPF in strict mode. To enable loose mode, administrators can use the any option to enforce the requirement that the source IP address for a packet must appear in the routing table.",
+ "needsAnswer": false,
+ "provisional": false
+}

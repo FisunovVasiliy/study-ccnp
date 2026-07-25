@@ -1,0 +1,27 @@
+{
+ "id": 29,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer needs to implement a solution that prevents loops from occurring accidentally by connecting a switch to interface Ethernet1/1. The port is designated to be used for host connectivity. Which configuration should be implemented?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch# configure terminal / switch(config)# interface Ethernet1/1 / switch(config-if)# spanning-tree bpduguard enable",
+  "switch# configure terminal / switch(config)# interface Ethernet1/1 / switch(config-if)# spanning-tree guard loop",
+  "switch# configure terminal / switch(config)# interface Ethernet1/1 / switch(config-if)# spanning-tree loopguard default",
+  "switch# configure terminal / switch(config)# interface Ethernet1/1 / switch(config-if)# spanning-tree bpdufilter enable"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

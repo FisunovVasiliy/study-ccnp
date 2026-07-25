@@ -1,0 +1,27 @@
+{
+ "id": 60,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Which configuration ensures that the Cisco Nexus 7000 Series switches are the primary devices for LACP?",
+ "context": "Topology: Nexus 7000 device A and device B connected via vPC Peer Keepalive and vPC Peer Link, both downstream connected (lacp 32768) to two access switches.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "N7K_A(config-vpc-domain)# role priority 1 N7K_B(config-vpc-domain)# role priority 2",
+  "N7K_A(config-vpc-domain)# system-priority 32768 N7K_B(config-vpc-domain)# system-priority 32768",
+  "N7K_A(config-vpc-domain)# system-priority 100 N7K_B(config-vpc-domain)# system-priority 200",
+  "N7K_A(config-vpc-domain)# system-priority 4000 N7K_B(config-vpc-domain)# system-priority 4000"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

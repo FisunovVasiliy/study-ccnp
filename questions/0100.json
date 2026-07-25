@@ -1,0 +1,30 @@
+{
+ "id": 100,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "A network engineer is adding a Cisco HyperFlex data platform to the Cisco Intersight management portal.\nWhich two components are required for Intersight to claim the Cisco HyperFlex data platform? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "device FQDN",
+  "device claim code",
+  "device public IP address",
+  "device ID",
+  "device serial number"
+ ],
+ "correct": [
+  1,
+  3
+ ],
+ "mostVoted": [
+  "B",
+  "D"
+ ],
+ "voteNote": "BD 100%",
+ "reference": "https://www.cisco.com/c/en/us/support/docs/hyperconverged-infrastructure/hyperflex-hx-data-platform/214268-cisco-intersight-hyperflex-installatio.html",
+ "explanation": "In UCS Manager, browse to Admin -> Device Connector. Enable Intersight Management toggle button and get the Device ID and the Claim Code.",
+ "needsAnswer": false,
+ "provisional": false
+}

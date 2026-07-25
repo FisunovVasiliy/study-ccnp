@@ -1,0 +1,25 @@
+{
+ "id": 14,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which configuration implements static ingress replication?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface nve 1\n  member vni 3716135\n  ingress-replication protocol bgp",
+  "interface nve 1\n  member vni 3716135\n  peer vtep 10.0.0.4",
+  "interface nve 1\n  member vni 3716135\n  peer vtep 10.0.0.4\n  ingress-replication protocol static\n  peer-ip 10.0.0.4",
+  "interface nve 1\n  member vni 3716135\n  ingress-replication protocol static\n  peer-ip 10.0.0.4"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/vxlan/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_VXLAN_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_VXLAN_Configuration_Guide_7x_chapter_011.html",
+ "explanation": "The following enables static ingress replication for peers.\nProcedure:\nStep 1: configuration terminal - Enters global configuration mode.\nStep 2: interface nve x - Creates a VXLAN overlay interface that terminates VXLAN tunnels. Note: Only 1 NVE interface is allowed on the switch.\nStep 3: member vni [vni-id | vni-range] - Maps VXLAN VNIs to the NVE interface.\nStep 4: ingress-replication protocol static - Enables static ingress replication for the VNI.\nStep 5: peer-ip n.n.n.n - Enables peer IP.",
+ "needsAnswer": false,
+ "provisional": false
+}

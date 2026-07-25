@@ -1,0 +1,27 @@
+{
+ "id": 34,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer needs to implement a monitoring session that should meet the following requirements:\n- Monitor traffic from leaf to leaf switches on a Cisco ACI network\n- Support filtering traffic from Bridge Domain or VRF\nWhich configuration must be added to meet these requirements?",
+ "context": "monitor fabric session mySession\n    description \"This is my fabric ERSPAN session\"\n    destination tenant t1 application app1 epg epg1 destination-ip 192.0.20.123 source-ip-prefix 10.0.20.1\n        erspan-id 100\n        ip dscp 42\n        ip ttl 16\n        mtu 9216\n        exit\n    source interface eth 1/1 switch 101\n        direction tx\n        filter tenant t1 bd bd1\n        filter tenant t1 vrf vrf1\n    no shut",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface eth 1/2 leaf 101",
+  "application epg epg1 app1",
+  "interface eth 1/2 switch 101",
+  "application app1 epg epg1"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

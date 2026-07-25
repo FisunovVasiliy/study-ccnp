@@ -1,0 +1,30 @@
+{
+ "id": 54,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must configure multiple EPGs on a single access port in a large Cisco ACI fabric without using VMM integration. The relevant access policies and tenant policies have been created. A single AAEP is used to configure the access ports in the fabric. Which two additional steps must be taken to complete the configuration? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The EPGs must link directly to the corresponding AAEP.",
+  "A contract must be defined between the EPGs.",
+  "The EPGs must be configured as static ports.",
+  "The corresponding bridge domains must be configured in legacy mode.",
+  "The EPGs must be linked to the correct physical domain."
+ ],
+ "correct": [
+  2,
+  4
+ ],
+ "mostVoted": [
+  "C",
+  "E"
+ ],
+ "voteNote": "CE 89%, 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

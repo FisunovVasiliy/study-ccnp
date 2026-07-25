@@ -1,0 +1,34 @@
+{
+ "id": 76,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the network assurance concepts from the left onto the corresponding benefits on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "Cisco Tetration",
+  "Data Management Engine",
+  "Cisco Network Assurance Engine",
+  "Streaming Telemetry"
+ ],
+ "targets": [
+  "allows close to real-time data monitoring",
+  "confirms that the network operates consistently with business requirements",
+  "offers overall protection and enables analysis of the network in real time to identify security incidents faster",
+  "allows the characteristics to be presented as object properties"
+ ],
+ "matchCorrect": [
+  2,
+  3,
+  1,
+  0
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 72,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement a VXLAN-based data center interconnect. The long-distance transport provided by a service provider is IP-based, supports a maximum MTU of 1554 bytes, and does not support outbound traffic replication. Which action must be taken to build the data center interconnect?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Announce host reachability over BGP.",
+  "Create an IP access list and associate it with VNI to replicate traffic to remote VTEPs.",
+  "Configure a route map to associate the IPs of the remote VTEPs.",
+  "Implement BGP EVPN ingress replication."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

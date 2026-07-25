@@ -1,0 +1,27 @@
+{
+ "id": 31,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What occurs when running the command install deactivate <filename> while a software maintenance upgrade is performed on a Cisco Nexus 9000 Series switch?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The current set of packages is committed.",
+  "The package features for the line card are disabled.",
+  "The package is removed from the switch.",
+  "The current upgrade stops."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/system_management/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide/sm_smu.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

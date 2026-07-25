@@ -1,0 +1,27 @@
+{
+ "id": 81,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement a disaster recovery policy for the Cisco UCS infrastructure. The solution must meet these criteria:\n- The Recovery Point Objective must be 48 hours.\n- The backup must use encrypted transmission.\n- The Recovery Time Objective must be 4 hours.\nWhich configuration set must be used in the scheduled backup to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Protocol: FTP Schedule: Bi-Weekly",
+  "Protocol: SFTP Schedule: Weekly",
+  "Protocol: TFTP Schedule: Bi-Weekly",
+  "Protocol: SCP Schedule: Daily"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

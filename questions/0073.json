@@ -1,0 +1,27 @@
+{
+ "id": 73,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must perform an initial configuration of VXLAN Tunnel End-Point functionality on the Cisco Nexus 9000 Series platform. All the necessary features are already enabled on the switch. Which configuration set must be used to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NX9K(config)# interface loopback0 NX9K(config-if)# ip address 10.10.10.11/32 NX9K(config)# interface VLAN10 NX9K(config-if)# ip unnumbered loopback0 NX9K(config)# interface nve1 NX9K(config-if-nve)# source-interface loopback0",
+  "NX9K(config)# interface loopback0 NX9K(config-if)# ip address 10.10.10.11/32 NX9K(config)# interface overlay0 NX9K(config-if-overlay)# source-interface loopback0 NX9K(config)# interface VLAN10 NX9K(config-if-nve)# source-interface loopback0",
+  "NX9K(config)# interface loopback0 NX9K(config-if)# ip address 10.10.10.11/32 NX9K(config)# interface tunnel1 NX9K(config-if)# tunnel source loopback0 NX9K(config)# interface ethernet1/1 NX9K(config-if)# ip unnumbered loopback0",
+  "NX9K(config)# interface loopback0 NX9K(config-if)# ip address 10.10.10.11/32 NX9K(config)# interface nve1 NX9K(config-if-nve)# source-interface loopback0 NX9K(config)# interface ethernet1/1 NX9K(config-if)# ip unnumbered loopback0"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 47,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A customer needs a tool to take advantage of the CI/CD model to streamline its operations and optimize cost. The customer wants to integrate the solution with the Cisco products it currently uses, including Cisco ACI networking and Cisco UCS Series servers. The solution should also provide on-premises Kubernetes and AppDynamics performance monitoring. Because of the security requirements, the solution should not install a local client on products under management. Which orchestration solution meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Cisco UCS Director",
+  "Cisco CloudCenter",
+  "Cisco APIC",
+  "Cisco DCNM"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "A 50%, B 50%",
+ "reference": "https://www.cisco.com/c/en/us/products/cloud-systems-management/cloudcenter/index.html",
+ "explanation": "With Cisco CloudCenter you can automate multicloud workload deployment and increase feature velocity, consistently enforce multicloud governance, and optimize cloud service consumption to reduce risk and cloud costs.\nStreamline consumption of cloud or on-premises services with the combination of CloudCenter with Cisco Container Platform for on-premises Kubernetes, and AppDynamics for business and application performance monitoring.",
+ "needsAnswer": false,
+ "provisional": false
+}

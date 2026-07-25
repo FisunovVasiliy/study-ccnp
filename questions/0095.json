@@ -1,0 +1,27 @@
+{
+ "id": 95,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is seeking the most optimal on demand CPU performance while configuring the BIOS settings of a UCS C-series rack mount server.\nWhat setting will accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "C6 Retention",
+  "C6 non-Retention",
+  "C2 state",
+  "C0/C1 state"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 83%, A 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 24,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. All switches are configured with the default OSPF priority. Which configuration should be applied to ensure that the SW2 Cisco Nexus switch controls the LSA floods and advertises the network to the remaining nodes in the OSPFv2 area?",
+ "context": "Topology: SW1, SW2, SW3 are all connected to each other via OSPFv2 Area 0.\nSW1 Router-id: 10.10.10.111, Eth1/1 10.10.10.111/24\nSW2 Router-id: 10.10.10.122, Eth1/1 10.10.10.122/24\nSW3 Router-id: 10.10.10.133, Eth1/1 10.10.10.133/24",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SW2# configure terminal / SW2(config)# interface ethernet 1/1 / SW2(config-if)# ip ospf priority 255",
+  "SW2# configure terminal / SW2(config)# interface ethernet 1/1 / SW2(config-if)# ip ospf priority 1",
+  "SW2# configure terminal / SW2(config)# router ospf 1 / SW2(config-router)# router-id 10.10.10.22",
+  "SW2# configure terminal / SW2(config)# interface ethernet 1/1 / SW2(config-if)# ip ospf priority 0"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

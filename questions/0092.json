@@ -1,0 +1,27 @@
+{
+ "id": 92,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What happens to the default host firmware policy after a Cisco UCS Manager upgrade?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It is assigned to all the service profiles that include a host firmware policy.",
+  "It is replaced by a new default policy without any firmware entries.",
+  "It is set to match the host firmware policy.",
+  "It is updated to contain the firmware entries of all the components."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 83%, A 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

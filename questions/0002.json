@@ -1,0 +1,27 @@
+{
+ "id": 2,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which virtual MAC address is the default for HSRP version 2 group 10?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "0000.5E00.0110",
+  "0000.0C9F.F00A",
+  "3784.0898.1C0A",
+  "0000.0C9F.F010"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

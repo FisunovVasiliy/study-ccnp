@@ -1,0 +1,27 @@
+{
+ "id": 20,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What is the reason the system-fm-vrrp checkpoint was created?",
+ "context": "Nexus(config)# show checkpoint summary\nUser Checkpoint Summary\n----------------------------------------\n1) BeforeL3:\nCreated by admin\nCreated at Mon, 15:25:08 31 Dec 2018\nSize is 9,345 bytes\nDescription: None\n\nSystem Checkpoint Summary\n----------------------------------------\n2) system-fm-vrrp:\nCreated by admin\nCreated at Fri, 09:57:02 14 Jun 2019\nSize is 20,865 bytes\nDescription: Created by Feature Manager.\n\n3) system-fm-hsrp_engine:\nCreated by admin\nCreated at Fri, 09:57:28 14 Jun 2019\nSize is 20,852 bytes\nDescription: Created by Feature Manager.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The VRRP process crashed and the checkpoint was automatically created.",
+  "The VRRP service restarted and the checkpoint was automatically created.",
+  "The network administrator manually created it.",
+  "The VRRP-enabled feature has been disabled."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

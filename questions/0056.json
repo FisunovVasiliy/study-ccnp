@@ -1,0 +1,27 @@
+{
+ "id": 56,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An environment consists of a Cisco MDS 9000 Series switch that uses port channels. An engineer must ensure that frames between the source and the destination follow the same links for a specific flow. Subsequent flows are allowed to use a different link. Which load balancing method should be used to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "src-id/dst-id",
+  "src-dst-oui",
+  "src-dst-port",
+  "src-id/dst-id/oxid"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 60%, D 40%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

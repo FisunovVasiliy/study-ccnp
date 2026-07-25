@@ -1,0 +1,27 @@
+{
+ "id": 22,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is an advantage of streaming telemetry over SNMP?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "on-change traps sent to a receiver",
+  "periodic push-based subscription messages",
+  "periodic polling of the device status",
+  "MD5-based authentication on polling"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

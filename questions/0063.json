@@ -1,0 +1,27 @@
+{
+ "id": 63,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a VXLAN routing on a Cisco Nexus 9000 Series switch. The engineer requires a solution where all the leaf switches have the same gateway MAC and IP addresses. Which configuration set accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NX9K(config)# fabric forwarding anycast-gateway-mac AA:BB:AA:BB:AA:BB NX9K(config)# interface VLAN-interface-name NX9K(config-if)# vrf member vrf-name NX9K(config-if)# fabric forwarding mode anycast-gateway",
+  "NX9K(config)# install feature-set fabric NX9K(config)# feature-set fabric NX9K(config)# fabric forwarding anycast-gateway-mac AA:BB:AA:BB:AA:BB NX9K(config)# interface VLAN-interface-name NX9K(config-if)# fabric forwarding mode anycast-gateway",
+  "NX9K(config)# install feature-set fabric NX9K(config)# feature-set fabric NX9K(config)# interface VLAN-interface-name NX9K(config-if)# fabric forwarding anycast-gateway-mac AA:BB:AA:BB:AA:BB NX9K(config-if)# fabric forwarding mode anycast-gateway",
+  "NX9K(config)# fabric forwarding anycast-gateway-mac AA:BB:AA:BB:AA:BB NX9K(config)# interface VLAN-interface-name NX9K(config-if)# fabric forwarding mode anycast-gateway"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 71%, D 29%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

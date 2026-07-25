@@ -1,0 +1,27 @@
+{
+ "id": 52,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must perform a backup and restore of the Cisco Nexus 5000 Series switch configuration. The backup must be made to an external backup server. The only protocol permitted between the Cisco Nexus Series switch and the backup server is UDP. The backup must be used when the current working configuration of the switch gets corrupted. Which set of steps must be taken to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "1. Perform a running-config backup to an SFTP server. 2. Copy backup-config from the SFTP server to the running-config file.",
+  "1. Perform a startup-config backup to a TFTP server. 2. Copy backup-config from the backup server to the running-config file.",
+  "1. Perform a running-config backup to an SCP server. 2. Copy running-config in the boot flash to the running-config file.",
+  "1. Perform a startup-config backup to an FTP server. 2. Copy startup-config in the boot flash to the running-config file."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "Of the answer choices given, only TFTP uses UDP: SFTP runs on TCP 22 (can be assigned whatever port you want, but only TCP). TFTP runs on UDP port 69. SCP runs on TCP port 22. FTP runs on TCP port 21 to establish connection and TCP 20 to transfer data.",
+ "needsAnswer": false,
+ "provisional": false
+}

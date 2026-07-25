@@ -1,0 +1,33 @@
+{
+ "id": 25,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nRefer to the exhibit. In a bidirectional PIM network using Phantom RP as an RP redundancy mechanism, two Cisco NX-OS routers have these requirements:\n- R1 must be the active RP.\n- R2 must be the backup RP that is used only if R1 is not reachable.\nDrag and drop the configuration steps to complete the configuration for Router 2. Not all configuration steps are used.",
+ "context": "; Router 1 configuration\ninterface loopback1\n    ip address 10.10.32.121/30\n    ip ospf network point-to-point\n    ip router ospf 1 area 0.0.0.0\n    ip pim sparse-mode\n\n    ip pim rp-address 10.10.32.122 group-list 225.0.0.0/8 bi-dir",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "; Router 2 configuration\ninterface loopback1\n    ip address {{1}}\n    ip ospf network {{2}}\n    ip router ospf 1 area 0.0.0.0\n    ip pim {{3}}\n\nip pim rp-address {{4}} group-list 225.0.0.0/8 bi-dir",
+ "wordBank": [
+  "10.10.32.121/32",
+  "10.10.32.121/29",
+  "10.10.32.121",
+  "10.10.32.122",
+  "point-to-point",
+  "sparse-mode",
+  "broadcast",
+  "dense-mode"
+ ],
+ "blankAnswers": [
+  "10.10.32.121/29",
+  "point-to-point",
+  "sparse-mode",
+  "10.10.32.122"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://community.cisco.com/t5/networking-documents/rp-redundancy-with-pim-bidir-phantom-rp/ta-p/3117191",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

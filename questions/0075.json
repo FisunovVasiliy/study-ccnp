@@ -1,0 +1,30 @@
+{
+ "id": 75,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nRefer to the exhibit. An engineer must monitor the Ethernet port and the corresponding VLAN traffic for the hyper4 device. The SW3 device is a Cisco Nexus 7000 Series switch. Drag and drop the code snippets from the right into the boxes in the configuration to meet these requirements.",
+ "context": "Topology: SW3 -- Eth1/2 -- Monitoring Device. SW3 -- Eth1/4 (single downlink trunk) -- fans out to SW1 (local port Eth1/4, hosts Vlan51/hyper1, Vlan58/hyper2) and SW2 (local port Eth1/5, hosts Vlan52/hyper3, Vlan57/hyper4).",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "!SW3 configuration\n\ninterface ethernet 1/2\n    switchport {{1}}\n\nmonitor session 2\n    source interface {{2}}\n\n    destination interface {{3}}\n\n    source {{4}}",
+ "wordBank": [
+  "interface vlan 57",
+  "vlan 57",
+  "ethernet 1/2",
+  "ethernet 1/4",
+  "monitor"
+ ],
+ "blankAnswers": [
+  "monitor",
+  "ethernet 1/4",
+  "ethernet 1/2",
+  "vlan 57"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 7,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What must be connected to clear the HA NOT READY status?",
+ "context": "Start time: Mon Apr 15 09:23:01 2019\nLast election time: Mon Apr 15 09:24:24 2019\nA: UP, PRIMARY\nB: UP, SUBORDINATE\nA: memb state UP, lead state PRIMARY, mgmt services state: UP\nB: memb state UP, lead state SUBORDINATE, mgmt services state: UP\nheartbeat state PRIMARY_OK\nINTERNAL NETWORK INTERFACES:\neth1, UP\neth2, UP\nHA NOT READY\nNo device connected to this Fabric Interconnect",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Layer 1-Layer 2 ports",
+  "server chassis",
+  "management ports",
+  "network uplinks"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

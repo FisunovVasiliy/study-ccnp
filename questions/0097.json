@@ -1,0 +1,27 @@
+{
+ "id": 97,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. Which two Cisco UCS components are upgraded as a result of the configuration? (Choose two.)",
+ "context": "Exhibit: UCS Manager 'Install Infrastructure Firmware' wizard, step 2 'Install Infrastructure Firmware'. Fields shown: Firmware Installer: Ready, Name: default, Description: Infrastructure Pack, Infra Pack: 3.2(3d)A, Service Pack: <not set>, Force checked, Evacuate unchecked, Infrastructure Upgrade Schedule: Admin State Untriggered, Owner Local, Max Number Of Concurrent Tasks Unlimited, Upgrade Now checked.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": "Screenshot of the Cisco UCS Manager 'Install Infrastructure Firmware' wizard (step 2), showing Infra Pack version 3.2(3d)A being applied with 'Upgrade Now' checked.",
+ "options": [
+  "IOMs",
+  "Cisco UCS Manager",
+  "board controller",
+  "adapters",
+  "BIOS"
+ ],
+ "correct": [
+  1,
+  0
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "Not revealed in the source material (solution not expanded). The Infrastructure Firmware Pack in Cisco UCS Manager typically upgrades UCS Manager itself, the Fabric Interconnects, and the I/O Modules (IOMs) — the answer is provisional pending verification.",
+ "needsAnswer": true,
+ "provisional": true
+}

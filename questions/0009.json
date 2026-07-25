@@ -1,0 +1,25 @@
+{
+ "id": 9,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which adjacency server configuration makes two OTV edge devices located in the same site bring up the dual-site adjacency?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Nexus-1:\ninterface Ethernet1/2\n  ip address 20.1.1.1/24\ninterface Overlay200\n  otv use-adjacency-server 20.1.1.2 unicast-only\n  otv join-interface Ethernet1/2\n\nNexus-2:\ninterface Ethernet1/2\n  ip address 20.1.1.2/24\ninterface Overlay200\n  otv use-adjacency-server 20.1.1.1 unicast-only\n  otv join-interface Ethernet1/2",
+  "Nexus-1:\ninterface Ethernet1/2\n  ip address 20.1.1.1/24\ninterface Overlay200\n  otv adjacency-server unicast-only\n  otv join-interface Ethernet1/2\n\nNexus-2:\ninterface Ethernet1/2\n  ip address 20.1.1.2/24\ninterface Overlay200\n  otv join-interface Ethernet1/2\n  otv adjacency-server unicast-only\n  otv use-adjacency-server 20.1.1.1 unicast-only",
+  "Nexus-1:\ninterface Ethernet1/2\n  ip address 20.1.1.1/24\ninterface Overlay200\n  otv adjacency-server unicast-only\n  otv join-interface Ethernet1/2\n\nNexus-2:\ninterface Ethernet1/2\n  ip address 20.1.1.2/24\ninterface Overlay200\n  otv adjacency-server unicast-only\n  otv join-interface Ethernet1/2",
+  "Nexus-1:\ninterface Ethernet1/2\n  ip address 20.1.1.1/24\ninterface Overlay200\n  otv use-adjacency-server 20.1.1.1 unicast-only\n  otv adjacency-server unicast-only\n  otv join-interface Ethernet1/2\n\nNexus-2:\ninterface Ethernet1/2\n  ip address 20.1.1.2/24\ninterface Overlay200\n  otv use-adjacency-server 20.1.1.2 unicast-only\n  otv adjacency-server unicast-only\n  otv join-interface Ethernet1/2"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "We need to setup a primary adjacency and a secondary adjacency. On primary, we need to setup 'otv-adjacency-server unicast-only' and on the secondary we need to configure 'otv use-adjacency-server <IP address from primary join interface> unicast only'.",
+ "needsAnswer": false,
+ "provisional": false
+}

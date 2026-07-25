@@ -1,0 +1,27 @@
+{
+ "id": 69,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer monitors ingress traffic from Host-A and all traffic for VLAN 20 from Host-B. Which configuration must be implemented to monitor and export traffic to Network Analyzer?",
+ "context": "Topology: Host-A (Vlan10) -- Eth1/2 -- SW-1 (10.20.10.1) -- Eth2/1 -- IP/MPLS Cloud (GRE encapsulation) -- Eth2/1 -- SW-2 (10.10.10.1) -- Network Analyzer.\nHost-B (Vlan20) -- Eth1/1 -- SW-1.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SW-1(config)# monitor session 5\nSW-1(config-monitor)# source interface ethernet 1/2 rx\nSW-1(config-monitor)# source interface ethernet 1/1 tx\nSW-1(config-monitor)# source vlan 20 both\nSW-1(config-monitor)# destination ip 10.10.10.1\nSW-1(config-monitor)# no shut",
+  "SW-1(config)# monitor session 5 type erspan-source\nSW-1(config-erspan-src)# source interface ethernet 1/2 rx\nSW-1(config-erspan-src)# source vlan 20 both\nSW-1(config-erspan-src)# destination ip 10.10.10.1\nSW-1(config-erspan-src)# erspan-id 111\nSW-1(config-erspan-src)# no shut",
+  "SW-1(config)# monitor session 5\nSW-1(config-monitor)# source interface ethernet 1/2 rx\nSW-1(config-monitor)# source interface ethernet 1/1 both\nSW-1(config-monitor)# source vlan 20 both\nSW-1(config-monitor)# destination interface ethernet 2/1\nSW-1(config-monitor)# no shut",
+  "SW-1(config)# monitor session 5 type erspan\nSW-1(config-erspan-src)# source interface ethernet 1/2 rx\nSW-1(config-erspan-src)# source interface ethernet 1/1 both\nSW-1(config-erspan-src)# destination ip 10.10.10.1\nSW-1(config-erspan-src)# mtu 1000\nSW-1(config-erspan-src)# no shut"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

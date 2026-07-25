@@ -1,0 +1,27 @@
+{
+ "id": 39,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which behavior defines streaming telemetry as a push model in Cisco devices?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Events and network changes generate telemetry data.",
+  "Monitoring clients are pulling data from the network to see real-time statistics.",
+  "JSON encoded telemetry data is transported using the gRPC protocol.",
+  "The network devices send data in JSON or GPB format to configure endpoints."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 67%, D 27%, other 7%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

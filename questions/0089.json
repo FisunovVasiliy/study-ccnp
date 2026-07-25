@@ -1,0 +1,30 @@
+{
+ "id": 89,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "A server engineer wants to control power usage on a Cisco UCS C-Series rack server down to the component level.\nWhich two components support specific power limits? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "storage controller",
+  "network controller",
+  "processor",
+  "graphic card",
+  "memory"
+ ],
+ "correct": [
+  2,
+  4
+ ],
+ "mostVoted": [
+  "C",
+  "E"
+ ],
+ "voteNote": "CE 89%, 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

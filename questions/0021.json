@@ -1,0 +1,30 @@
+{
+ "id": 21,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "What are two capabilities of the Cisco Network Assurance Engine? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It validates that devices comply with network security policies.",
+  "It predicts the impact of changes to the network.",
+  "It predicts the network load on a data center.",
+  "It ensures that network performance meets an SLA.",
+  "It verifies the speed of network packet flows by using telemetry."
+ ],
+ "correct": [
+  0,
+  1
+ ],
+ "mostVoted": [
+  "A",
+  "B"
+ ],
+ "voteNote": "AB 100%",
+ "reference": "https://www.cisco.com/c/en/us/products/collateral/data-center-analytics/network-assurance-engine/at-a-glance-c45-740230.html",
+ "explanation": "With Cisco Network Assurance Engine operators can:\n- Predict the impact of network changes: Proactively verify changes made to the network for correctness to drive increased change agility while significantly reducing the risk of network failures induced by human error.\n- Verify network-wide behavior: Continuously analyze and verify the dynamic state of the network against intent and policy to ensure connectivity and eliminate potential network outages and vulnerabilities before any business impact occurs.\n- Ensure network security policy and compliance: Ensure network security policies and check for compliance against business rules to reduce security risk and achieve provable continuous compliance by policy and state.",
+ "needsAnswer": false,
+ "provisional": false
+}

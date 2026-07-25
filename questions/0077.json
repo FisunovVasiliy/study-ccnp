@@ -1,0 +1,33 @@
+{
+ "id": 77,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nAn engineer must configure HSRP protocol on two Cisco Nexus 9000 Series switches running a virtual port channel. In addition, the HSRP implementation must meet these requirements:\n- It must allow more than 500 groups.\n- switch1 must act as the primary switch.\n- Both switches must use a user-defined hardware address.\nDrag and drop the commands from the right to complete a configuration of the HSRP on the left. The commands are used more than once. Not all commands are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "! switch1\ninterface vlan300\nip 209.165.200.226/27\nhsrp 300\n{{1}}\n{{2}}\nip 209.165.200.225\n{{3}}\n\n! switch2\ninterface vlan300\nip 209.165.200.227/27\nhsrp 300\n{{4}}\n{{5}}\nip 209.165.200.225\n{{6}}",
+ "wordBank": [
+  "mac-address 6000.6000.6000",
+  "hsrp version 1",
+  "priority 255",
+  "hsrp use-bia",
+  "priority 100",
+  "hsrp version 2"
+ ],
+ "blankAnswers": [
+  "hsrp version 2",
+  "priority 255",
+  "mac-address 6000.6000.6000",
+  "hsrp version 2",
+  "priority 100",
+  "mac-address 6000.6000.6000"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/unicast/configuration/guide/l3_cli_nxos/l3_hsrp.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

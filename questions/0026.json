@@ -1,0 +1,27 @@
+{
+ "id": 26,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a Nexus 7000 series switch for HSRP on VLAN 100. When fully functional, the router must be the active master. Which set of commands must be used to implement the scenario?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "feature hsrp / interface vlan100 / ip address 10.1.1.2 255.255.255.0 / priority 255 preempt / hsrp version 2 / hsrp 1000 / ip 10.1.1.1",
+  "feature-set hsrp / interface vlan100 / ip address 10.1.1.2 255.255.255.0 / priority 20 preempt / hsrp version 2 / hsrp 1000 / ip 10.1.1.1",
+  "feature-set hsrp / interface vlan100 / ip address 10.1.1.2 255.255.255.0 / priority 80 preempt / hsrp version 2 / hsrp 1000 / ip 10.1.1.1",
+  "feature hsrp / interface vlan100 / ip address 10.1.1.2 255.255.255.0 / priority 240 preempt / hsrp version 2 / hsrp 1000 / ip 10.1.1.1"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

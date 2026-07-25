@@ -1,0 +1,30 @@
+{
+ "id": 59,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "A network architect must redesign a data center network based on OSPFv2. The network must perform fast reconvergence between directly connected switches. Which two actions must be taken to meet the requirements? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Set low OSPF hello and DEAD timers.",
+  "Configure all links on AREA 0.",
+  "Enable BFD for failure detection.",
+  "Use OSPF point-to-point links only.",
+  "Implement a virtual link between the switches."
+ ],
+ "correct": [
+  2,
+  3
+ ],
+ "mostVoted": [
+  "C",
+  "D"
+ ],
+ "voteNote": "CD 100%",
+ "reference": null,
+ "explanation": "Detecting link and node failures quickly is number one priority for fast convergence. For maximum speed, relying on IGP keepalive times should be avoided whether possible and physical failure detection mechanisms should be used. This implies the use of point-to-point links whether possible.\nBFD (BiDirectional Forwarding Detection) provides sub-second convergence for many protocols and is done in hardware. BFD will also only work on point-to-point links.",
+ "needsAnswer": false,
+ "provisional": false
+}

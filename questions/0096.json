@@ -1,0 +1,30 @@
+{
+ "id": 96,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer is duplicating an existing Cisco UCS setup at a new site.\nWhat are two characteristics of a logical configuration backup of a Cisco UCS Manager database? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "contains the configured organizations and locales",
+  "contains the VLAN and VSAN configurations",
+  "contains the AAA and RBAC configurations",
+  "contains all of the configurations",
+  "contains a file with an extension .tgz that stores all of the configurations"
+ ],
+ "correct": [
+  0,
+  1
+ ],
+ "mostVoted": [
+  "A",
+  "B"
+ ],
+ "voteNote": "AB 57%, AC 29%, 14%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

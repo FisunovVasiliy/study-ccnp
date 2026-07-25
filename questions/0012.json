@@ -1,0 +1,25 @@
+{
+ "id": 12,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Host1 is in VLAN100 located in DataCenter1 and Host2 is in VLAN200 located in DataCenter2.\nWhich OTV VLAN mapping configuration allows Layer 2 connectivity between these two hosts?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "DC1:\ninterface Overlay1\n  otv extend-vlan 100\n  otv vlan mapping 100 to 200\n\nDC2:\ninterface Overlay1\n  otv extend-vlan 100\n  otv vlan mapping 100 to 200",
+  "DC1:\ninterface Overlay1\n  otv extend-vlan 100\n  otv vlan mapping 100 to 200\n\nDC2:\ninterface Overlay1\n  otv extend-vlan 200",
+  "DC1:\ninterface Overlay1\n  otv extend-vlan 100\n\nDC2:\ninterface Overlay2\n  otv extend-vlan 200",
+  "DC1:\ninterface Overlay1\n  otv extend-vlan 100\n\nDC2:\ninterface Overlay1\n  otv extend-vlan 200"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/support/docs/switches/nexus-7000-series-switches/200998-Nexus-7000-OTV-VLAN-Mapping-on-Overlay.html",
+ "explanation": "You can map a VLAN on the local site to a VLAN with a different VLAN ID on the remote site. When you map two VLANs with different VLAN IDs across sites, they get mapped to a common VLAN called the transport VLAN. For example, when you map VLAN 1 on Site A to VLAN 2 on Site B, both VLANs are mapped to a transport VLAN. All traffic originating from VLAN 1 on Site A is translated as going from the transport VLAN. All traffic arriving at Site B from the transport VLAN is translated to VLAN 2.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 32,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer installed a new Nexus switch with the mgmt0 interface in vrf management. Connectivity to the rest of the network needs to be tested from the guest shell of the NX-OS. Which command tests connectivity from the guest shell of the NX-OS?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "[guestshell@guestshell ~]$ dohost \"ping vrf management 173.37.145.84\"",
+  "[guestshell@guestshell ~]$ chvrf management ping 173.37.145.84",
+  "[guestshell@guestshell ~]$ ping 173.37.145.84 vrf management",
+  "[guestshell@guestshell ~]$ iping vrf management ip 173.37.145.84"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/programmability/guide/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x/Guest_Shell.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

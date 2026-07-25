@@ -1,0 +1,27 @@
+{
+ "id": 10,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. The STP priority of N7K-1 and N7K-2 are the lowest in the network.\nWhich statement describes STP on the vPC?",
+ "context": "N7K-1\nspanning-tree vlan 1-10 priority 8192\n\nvpc domain 100\n  role priority 100\n  peer-keepalive destination 10.1.1.2 source 10.1.1.1\nvrf default\n  delay restore 60\n  peer-switch\n  auto-recovery\n  ip arp synchronize\n\nN7K-2\nspanning-tree vlan 1-10 priority 8192\n\nvpc domain 100\n  role priority 200\n  peer-keepalive destination 10.1.1.1 source 10.1.1.2\nvrf default\n  delay restore 60\n  peer-switch\n  auto-recovery\n  ip arp synchronize",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "N7K-1 and N7K-2 appear as a single STP root.",
+  "N7K-1 appears as the STP root.",
+  "N7K-1 preempts N7K-2 as the STP root.",
+  "N7K-2 appears as the STP root."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "Peer-switch - Enables the vPC switch pair to appear as a single STP root in the Layer 2 topology. Use the no form of the command to disable the peer switch vPC topology. If both switches do not have peer-switch enable, the question is not informing the bridge-ID (mac-address + priority) to see which switch would be the root anyway.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 23,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "APIC EPG Resolution Immediacy is set to \"Immediate\".\nWhich statement is true about the Deployment Immediacy for VMM domains associated to EPGs?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "If \"On demand\" is selected, the policy is programmed in the hardware only when the first packet is received through the data path.",
+  "If \"Immediate\" is selected, the policy is programmed in the hardware as soon as the leaf is booted.",
+  "The \"Immediate\" and \"On demand\" options require a port group to be created on the VDS.",
+  "If \"On demand\" is selected, the policy is programmed in the hardware only when the APIC detects a VM created in the EPG."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 71%, D 29%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

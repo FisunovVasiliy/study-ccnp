@@ -1,0 +1,27 @@
+{
+ "id": 79,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An infrastructure architect is analyzing the deployment type for an application. Several companies must be able to operate the application environment and integrate it with a third-party protocol. The development team also must have maximum control over their development environment, including the operating system used, Python interpreter, and corresponding libraries. Which cloud deployment solution meets those requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "private cloud Platform as a Service",
+  "public cloud Storage as a Service",
+  "hybrid cloud Software as a Service",
+  "community cloud Infrastructure as a Service"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

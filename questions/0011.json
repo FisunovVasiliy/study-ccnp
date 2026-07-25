@@ -1,0 +1,30 @@
+{
+ "id": 11,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "The engineer must configure SPAN on a Cisco Nexus 5000 Series Switch to get a capture of the traffic from these applications for an in-depth packet analysis.\nWhich two SPAN characteristics must be considered? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SPAN source ports can be monitored in multiple SPAN sessions.",
+  "The Ethernet, FC, vFC, port channel, SAN port channel can be used as SPAN source ports.",
+  "A SPAN source port cannot be a destination SPAN port.",
+  "Only Ethernet, FC, vFC, port channel port types can be used as SPAN source ports.",
+  "The rx/tx option is available for VLAN or VSAN SPAN sessions."
+ ],
+ "correct": [
+  1,
+  2
+ ],
+ "mostVoted": [
+  "B",
+  "C"
+ ],
+ "voteNote": "BC 88%, 13%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": 1,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nAn engineer is implementing NetFlow on a Cisco Nexus 7000 Series Switch.\nDrag and drop the NetFlow commands from the left into the correct order they must be entered on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "N7K-1(config)# interface <interface>\nN7K-1(config-if)# ip flow monitor NetflowMonitor input",
+  "N7K-1(config)# feature netflow",
+  "N7K-1(config)# flow exporter NetflowMonitor\nN7K-1(config)# flow record NetflowMonitor",
+  "N7K-1(config)# flow monitor NetflowMonitor"
+ ],
+ "correctOrder": [
+  1,
+  2,
+  3,
+  0
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/support/docs/switches/nexus-7000-series-switches/112213-netflow-nexus7000-nsox-configex.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

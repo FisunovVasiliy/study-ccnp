@@ -1,0 +1,27 @@
+{
+ "id": 33,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A DNS server with IP address 192.168.1.1 is deployed in a data center. A network engineer must configure a Cisco UCS Fabric Interconnect to use this DNS.\nWhich configuration should be applied?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "ficl-mgmt-A# scope fabric-interconnect a / ficl-mgmt-A /fabric-interconnect # set name 192.168.1.1 ficl-mgmt-A /fabric-interconnect # scope system ficl-mgmt-A /system # commit-buffer",
+  "ficl-mgmt-A# scope system ficl-mgmt-A /system # create dns 192.168.1.1 ficl-mgmt-A /system* # commit-buffer",
+  "ficl-mgmt-A# scope fabric-interconnect a ficl-mgmt-A /fabric-interconnect # set name 192.168.1.1 ficl-mgmt-A /fabric-interconnect* # commit-buffer",
+  "ficl-mgmt-A# scope system ficl-mgmt-A /system # scope services ficl-mgmt-A /system/services # create dns 192.168.1.1 ficl-mgmt-A /system/services* # commit-buffer"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

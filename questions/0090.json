@@ -1,0 +1,27 @@
+{
+ "id": 90,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is implementing an import operation in Cisco UCS Manager.\nWhat is the impact of performing this operation?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Information is modified on the management plane only.",
+  "A configuration is imported from a higher release to a lower release.",
+  "It is possible to schedule an import operation.",
+  "Only a configuration file that was exported from the same Cisco UCS Manager is allowed to be imported."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/gui/config/guide/141/UCSM_GUI_Configuration_Guide_141_chapter43.html",
+ "explanation": "Import Configuration - You can import any configuration file that was exported from Cisco UCS Manager. The file does not need to have been exported from the same Cisco UCS Manager.\nThe import function is available for all configuration, system configuration, and logical configuration files. You can perform an import while the system is up and running. An import operation modifies information on the management plane only. Some modifications caused by an import operation, such as a change to a vNIC assigned to a server, can cause a server reboot or other operations that disrupt traffic.",
+ "needsAnswer": false,
+ "provisional": false
+}

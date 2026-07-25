@@ -1,0 +1,27 @@
+{
+ "id": 45,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network architect wants to propose a scalable network monitoring solution in which data is repeatedly acquired from network devices. The solution must use a push model and provide close to real-time access to operational data. Which technology must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "CLI-based scripting",
+  "logging",
+  "SNMPv3",
+  "streaming telemetry"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

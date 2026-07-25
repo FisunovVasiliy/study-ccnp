@@ -1,0 +1,30 @@
+{
+ "id": 18,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Due to a major version change, an engineer must perform a software upgrade on a Cisco Nexus Series switch.\nWhich two technologies should be implemented to reduce disruptions to the network during the upgrade? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "vPC",
+  "HSRP",
+  "VDC",
+  "MLAG",
+  "PAgP"
+ ],
+ "correct": [
+  0,
+  1
+ ],
+ "mostVoted": [
+  "A",
+  "B"
+ ],
+ "voteNote": "AB 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": 16,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A customer has a requirement to deploy a cloud service and needs to have full control over the underlying OS, data and applications.\nWhich cloud model meets this requirement?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "MaaS",
+  "PaaS",
+  "SaaS",
+  "IaaS"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "Traditional IT is responsible for Application, Data, Runtime, Middleware, OS, Virtualization, Servers, Storage, Networking.\nIaaS = Infrastructure as a Service - The customer is responsible for OS, Virtualization, Servers, Storage, Networking.\nSaaS = Software as a Service - The software is deployed by the cloud provider - Customer is responsible for nothing.\nPaaS = Platform as a Service - Software can be deployed by the customer building their own application - is responsible for Data and Application.",
+ "needsAnswer": false,
+ "provisional": false
+}

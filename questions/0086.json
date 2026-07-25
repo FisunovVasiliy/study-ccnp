@@ -1,0 +1,27 @@
+{
+ "id": 86,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "The VMM domain is integrated between Cisco APICs and vCenter using a distributed vSwitch. The traffic must be blocked between a subset of endpoints in an EPG based on specific VM attributes and the rest of the VMs in that EPG. Which set of actions blocks this traffic?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "1. Set Allow Microsegmentation under the EPG VMM Domain Association to 'True'. 2. Set Intra-EPG Isolation to 'Unenforced' for the EPG. 3. Set Intra-EPG Isolation to 'Unenforced' for the uSeg EPG.",
+  "1. Set Allow Microsegmentation under the EPG VMM Domain Association to 'False'. 2. Set Intra-EPG Isolation to 'Unenforced' for the EPG. 3. Set Intra-EPG Isolation to 'Enforced' for the uSeg EPG.",
+  "1. Set Allow Microsegmentation under the EPG VMM Domain Association to 'True'. 2. Set Intra-EPG Isolation to 'Enforced' for the EPG. 3. Set Intra-EPG Isolation to 'Enforced' for the uSeg EPG.",
+  "1. Set Allow Microsegmentation under the EPG VMM Domain Association to 'True'. 2. Set Intra-EPG Isolation to 'Enforced' for the EPG. 3. Set Intra-EPG Isolation to 'Unenforced' for the uSeg EPG."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 46%, C 27%, B 27%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}
