@@ -1,0 +1,27 @@
+{
+ "id": 241,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must create an EPG called \"Test\". The configuration request should succeed if the Tenant called \"Tenant\" and the application profile called \"Test\" exist. The firewall policy allows only the HTTP connectivity to APIC from the user's computer. Which action accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Send <fvAEPg dn=\"uni/tn-Tenant/epg-Test\" status=\"created\"/> to APIC payload using HTTP PUT to the Cisco APIC.",
+  "Send <fvAEPg dn=\"uni/tn-Tenant/ap-Test/epg-Test\" status=\"created\"/> to APIC payload using HTTP POST to the Cisco APIC.",
+  "Send <fvAEPg dn=\"uni/tn-Test/ap-Test/epg-Test\" status=\"created\"/> to APIC payload using HTTP POST to the Cisco APIC.",
+  "Send <fvAEPg dn=\"uni/tn-Test/ap-Tenant\" status=\"created\"/> to APIC payload using HTTP PUT to the Cisco APIC."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 84%, other 16%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

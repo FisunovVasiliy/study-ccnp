@@ -1,0 +1,27 @@
+{
+ "id": 284,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which virtualization feature is provided by network-attached storage?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "raw device passthrough",
+  "VM cluster shared disk",
+  "hypervisor host boot LUN",
+  "ALUA path redirection"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 83%, A 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

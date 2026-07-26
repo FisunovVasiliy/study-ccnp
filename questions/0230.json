@@ -1,0 +1,27 @@
+{
+ "id": 230,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer requires a solution to automate the configuration and deployment of remote network devices for a customer. The engineer must keep these considerations in mind:\n- The customer's environment is based on industry-accepted standards and requires a solution that meets these standards.\n- The security requirements mandate the use of a secure transport mechanism between the automation software and target devices such as SSH or TLS.\n- The solution must be implemented using a human-readable language and provide the functionality to format data in XML or JSON.\nWhich solution must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Ansible",
+  "REST API",
+  "NETCONF",
+  "SNMP"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

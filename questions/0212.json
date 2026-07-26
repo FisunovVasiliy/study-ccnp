@@ -1,0 +1,27 @@
+{
+ "id": 212,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit.\nWhy does the Python code for Cisco NX-API print an error message?",
+ "context": "Python Code:\nimport requests\nimport json\n\nurl='http://lab-93180bd1f-sw1/ins'\nswitchuser='dazfre'\nswitchpassword='C1scoroxo'\n\nmyheaders={'content-type' : 'application/json'}\npayload={\n  \"ins_api\": {\n    \"version\": \"1.0\",\n    \"type\": \"cli_show\",\n    \"chunk\": \"0\",\n    \"sid\": \"1\",\n    \"input\": \"configure terminal ; feature hsrp\",\n    \"output_format\": \"json\"\n  }\n}\nresponse = requests.post(url,data=json.dumps(payload), headers=myheaders,auth=(switchuser,switchpassword))\n\nprint(response.text)\n\nERROR MESSAGE:\n{\n  \"ins_api\": {\n    \"type\": \"cli_show\",\n    \"version\": \"1.0\",\n    \"sid\": \"eoc\",\n    \"outputs\": {\n      \"output\": [{\n        \"clierror\": \"% invalid command\\n\",\n        \"input\": \"configure terminal\",\n        \"msg\": \"input CLI command error\",\n        \"code\": \"400\"\n      },{\n        \"clierror\": \"% invalid command\\n\",\n        \"input\": \"feature hsrp\",\n        \"msg\": \"input CLI command error\",\n        \"code\": \"400\"\n      }]\n    }\n  }\n}",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The JSON is not a supported format for the NX-API.",
+  "The \"type\" is wrong in the header of the request and should be \"cli_conf\"",
+  "NX-API does not allow configuration for features via the requests module.",
+  "The \"type\" is wrong in the body of the request and should be \"cli_conf\""
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 258,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Port security is statically configured on a Cisco Nexus 7700 Series switch and F3 line card. The switch is configured with an Advanced Services license. Which two actions delete secured MAC addresses from the interface? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The address must be removed from the configuration.",
+  "Shutdown and then no shutdown must be run on the interface.",
+  "The device must be restarted manually.",
+  "The address must reach the age limit that is configured for the interface.",
+  "The interface must be converted to a routed port."
+ ],
+ "correct": [
+  0,
+  4
+ ],
+ "mostVoted": [
+  "A",
+  "E"
+ ],
+ "voteNote": "AE 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/6_x/nx-os/security/configuration/guide/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_6-x/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_6-x_chapter_010001.html",
+ "explanation": "Removing a Static Secure MAC Address on an Interface:\nYou can remove a static secure MAC address on a Layer 2 interface.\nSwitched port to routed port:\nWhen you change an interface from a Layer 2 interface to a Layer 3 interface, the device disables port security on the interface and discards all port security configuration for the interface. The device also discards all secure MAC addresses for the interface, regardless of the method used to learn the address.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 236,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement an automation solution to allow the backup of the configuration of Cisco Nexus Series Switches to a centralized location. The solution must:\n* support the team-developed custom monitoring scripts that are packaged using RPM packaging that the framework must support.\n* be decoupled from the underlying Cisco Nexus operating system.\n* have no impact on the operating system of the underlying switch if resource contention occurs.\n* use Python to expand the existing automation framework.\nWhich solution meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Guest Shell",
+  "Vegas Shell",
+  "Bash Shell",
+  "TCL Shell"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 215,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer enters these commands while in EEM on a Cisco Nexus 9000 Series Switch: event manager applet Backup-config event timer watchdog time 1800 name timer event cli match \"copy running-config startup-config\"\nWhat is the result of applying this configuration?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It generates an error because no action is mentioned.",
+  "It executes the copy running-config startup-config command.",
+  "It saves the running configuration every 1800 seconds.",
+  "It blocks the copy running-config startup-config command."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 57%, A 38%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

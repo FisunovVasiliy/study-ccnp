@@ -1,0 +1,25 @@
+{
+ "id": 242,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer logs all occurrences of a configuration being saved. The engineer must generate an additional log message when someone attempts to change the configuration for interface Ethernet 1/1. Which set of commands must be used to meet these requirements?",
+ "context": "event manager applet ConfigMgmt\n  event cli match \"copy run start\"\n  action 1 syslog priority warnings msg Configuration Modified",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "event manager applet ConfigMgmt\n  event cli tag eth match \"interface Ethernet1/1\"\n  event cli tag copy match \"copy run start\"\n  event cli tag conf match \"configure terminal\"\n  tag conf and eth or copy happens 1 in 4294967295\n  action 1 syslog priority warnings msg Configuration Modified",
+  "event manager applet ConfigMgmt\n  event cli tag eth match \"interface Ethernet1/1\"\n  event cli tag copy match \"copy run start\"\n  event cli tag conf match \"configure terminal\"\n  tag conf or eth or copy happens 2 in 3\n  action 1 syslog priority warnings msg Configuration Modified\n  action 2 event-default",
+  "event manager applet ConfigMgmt\n  event cli tag eth match \" configure terminal ; interface Ethernet1/1\"\n  event cli tag copy match \"copy run start\"\n  tag eth or copy happens 1 in 2\n  action 1 syslog priority warnings msg Configuration Modified\n  action 2 event-default",
+  "event manager applet ConfigMgmt\n  event cli tag eth match \" configure terminal ; interface Ethernet1/1\"\n  event cli tag copy match \"copy run start\"\n  tag eth and copy happens 1 in 2\n  action 1 syslog priority warnings msg Configuration Modified"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/programmability/guide/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x_chapter_0100.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

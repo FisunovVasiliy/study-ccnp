@@ -1,0 +1,30 @@
+{
+ "id": 255,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two authentication types does Cisco UCS Manager support when configuring authentication? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "PAM",
+  "local",
+  "802.1X",
+  "Kerberos",
+  "LDAP"
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 100%",
+ "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/gui/config/guide/141/UCSM_GUI_Configuration_Guide_141_chapter7.html",
+ "explanation": "Cisco UCS supports two methods to authenticate user logins:\n- Through user accounts local to Cisco UCS Manager\n- Remotely through one of the following protocols: LDAP, RADIUS, TACACS+",
+ "needsAnswer": false,
+ "provisional": false
+}

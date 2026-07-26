@@ -1,0 +1,27 @@
+{
+ "id": 299,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must deploy a configuration backup policy to the Cisco UCS Manager. The file generated from this backup must have a snapshot of the entire system that should be used to restore the system during disaster recovery. The backup file must be transferred insecurely by using the TCP protocol. Which configuration backup settings meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Type: Full State Protocol: FTP",
+  "Type: System Configuration Protocol: TFTP",
+  "Type: All Configuration Protocol: SCP",
+  "Type: Logical Configuration Protocol: SFTP"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

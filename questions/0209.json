@@ -1,0 +1,27 @@
+{
+ "id": 209,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is an advantage of using Ansible for automation as compared to Puppet and Chef?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Ansible performs automation without installing a software agent on the target node.",
+  "Ansible abstracts a scenario so that one set of configuration settings can be used across multiple operating systems.",
+  "Ansible automates the enforcement of configuration settings.",
+  "Ansible configures a set of CLI commands on a device by using NETCONF."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.ansible.com/overview/how-ansible-works",
+ "explanation": "Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.\nDesigned for multi-tier deployments since day one, Ansible models your IT infrastructure by describing how all of your systems inter-relate, rather than just managing one system at a time.\nIt uses no agents and no additional custom security infrastructure, so it's easy to deploy - and most importantly, it uses a very simple language (YAML, in the form of Ansible Playbooks) that allow you to describe your automation jobs in a way that approaches plain English.",
+ "needsAnswer": false,
+ "provisional": false
+}

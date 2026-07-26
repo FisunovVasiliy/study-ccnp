@@ -1,0 +1,27 @@
+{
+ "id": 252,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A host in EPG Client wants to talk to a webserver in EPG Web. A contract with default settings is defined between EPG Client and EPG Web, which allows TCP communication initiated by the client toward the webserver with TCP destination port 80.\nWhich statement describes this scenario?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "If EPG Web is made a preferred group member, a contract between EPG Client and EPG Web is no longer required for the host in EPG Client to reach the webserver in EPG Web.",
+  "If vzAny is configured to consume and provide a \"deny all\" contract, traffic between EPG Client and EPG Web is no longer allowed.",
+  "The host in EPG Client is allowed to connect to TCP destination port 80 on the webserver in EPG Web. The webserver will not be allowed to initiate a separate TCP connection to a host port with TCP source port 80.",
+  "The host in EPG Client is allowed to connect to TCP destination port 80 on the webserver in EPG Web. The webserver is allowed to initiate a separate TCP connection to a host port with TCP source port 80."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 53%, D 47%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

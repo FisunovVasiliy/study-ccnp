@@ -1,0 +1,27 @@
+{
+ "id": 247,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must schedule the firmware upgrade of the Red1 and Red2 leaf switches. The requirement is to keep the upgrade time to the minimum, avoid any service impact, and perform the parallel upgrade. Which set of scheduler attributes must be used to meet these requirements?",
+ "context": "Topology: two spine switches (ACI leaf topology) connect to Blue1, Red1, Blue2, Red2 leaf switches. Blue1-Red1 form a vPC pair; Blue2-Red2 form a vPC pair.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure SchedulerPolicy1 for leaf switches Blue1 and Red1, and SchedulerPolicy2 for leaf switches Blue2 and Red2. Configure SchedulerPolicy1 and SchedulerPolicy2 with a one-time window trigger that has maximum concurrent nodes 1.",
+  "Configure SchedulerPolicy1 for leaf switches Blue1 and Red1, and SchedulerPolicy2 for leaf switches Blue2 and Red2. Configure SchedulerPolicy1 and SchedulerPolicy2 with a one-time window trigger that has maximum concurrent nodes 2.",
+  "Configure SchedulerPolicy1 for all four leaf switches Blue1, Blue2, Red1, and Red2. Configure SchedulerPolicy1 and SchedulerPolicy2 with a one-time window trigger that has maximum concurrent nodes 1.",
+  "Configure SchedulerPolicy1 for all four leaf switches Blue1, Blue2, Red1, and Red2. Configure SchedulerPolicy1 and SchedulerPolicy2 with a one-time window trigger that has maximum concurrent nodes 2."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "We need to define maximum concurrent nodes of 1 to avoid impacting service.",
+ "needsAnswer": false,
+ "provisional": false
+}

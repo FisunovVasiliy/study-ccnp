@@ -1,0 +1,25 @@
+{
+ "id": 264,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure HTTPS secure management for Cisco UCS Manager using a key ring named kr2016 and a key size of 1024 bits. The environment consists of a primary fabric interconnect named UCS-A and a secondary fabric interconnect named UCS-B. Which command sequence must be used to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "UCS-B# scope security\nUCS-B /security # keyring kr2016\nUCS-B /security/keyring* # set mod mod1024\nUCS-A /security/keyring* # commit-buffer",
+  "UCS-A# scope security\nUCS-A /security # create keyring kr2016\nUCS-A /security/keyring* # set modulus mod1024\nUCS-A /security/keyring* # commit-buffer",
+  "UCS-A# scope security\nUCS-A /security # keyring name kr2016\nUCS-A /security/keyring* # set size 1024\nUCS-A /security/keyring* # commit-buffer",
+  "UCS-B# scope security\nUCS-B /security # create keyring kr2016\nUCS-B /security/keyring* # set size mod1024\nUCS-B /security/keyring* # commit-buffer"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/4-0/b_Cisco_UCS_Manager_CLI_Administration_Mgmt_Guide_4-0/b_Cisco_UCS_Manager_CLI_Administration_Mgmt_Guide_4-0_chapter_0110.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

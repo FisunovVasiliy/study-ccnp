@@ -1,0 +1,27 @@
+{
+ "id": 233,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must use the Embedded Event Manager to monitor events that occur on a Cisco Nexus 9000 Series Switch. An environment variable needs to be created so that several policies use the monitored events in their actions. The external email server is represented by IP address 10.10.10.10. Which command sets the environment variable?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "n9k2# event manager environment mailserver \"10.10.10.10\"",
+  "n9k2(config)# event manager environment mailserver \"10.10.10.10\"",
+  "n9k2(config-applet)# environment mailserver \"10.10.10.10\"",
+  "n9k2(config)# event manager policy environment mailserver \"10.10.10.10\""
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

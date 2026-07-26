@@ -1,0 +1,27 @@
+{
+ "id": 267,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must enable port security on all Cisco MDS Series Switches in the fabric. The requirement is to avoid the extensive manual configuration of the switch ports. Which action must be taken to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Enable the auto-learning port security feature.",
+  "Enable the auto-learning port security feature on a per-VSAN basis.",
+  "Activate CFS distribution and the auto-learning port security feature.",
+  "Activate CFS distribution and the auto-learning port security feature on a per-VSAN basis."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 83%, C 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

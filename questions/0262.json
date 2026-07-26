@@ -1,0 +1,27 @@
+{
+ "id": 262,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A network engineer requires remote access via SSH to a Cisco MDS 9000 Series Switch. The solution must support secure access using the local user database when the RADIUS servers are unreachable from the switches. Which command meets these requirements?",
+ "context": "switch# show radius-server\nGlobal RADIUS shared secret:******\nretransmission count:5\ntimeout value:10\nfollowing RADIUS servers are configured:\n  myradius.cisco.users.com:\n    available for authentication on port:1812\n    available for accounting on port:1813\n  172.22.91.37:\n    available for authentication on port:1812\n    available for accounting on port:1813\n    RADIUS shared secret:******\n  10.10.0.0:\n    available for authentication on port:1812\n    available for accounting on port:1813\n    RADIUS shared secret:******\n\nswitch# show radius-server groups\ntotal number of groups:4\nfollowing RADIUS server groups are configured:\n  group radius:\n    server: all configured radius servers\n  group Group1:\n    server: Server3 on auth-port 1812, acct-port 1813\n    server: Server5 on auth-port 1812, acct-port 1813\n  group Group5:",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "aaa authentication none",
+  "aaa authentication login default group radius",
+  "aaa authentication login default fallback error local",
+  "aaa authentication login default group local"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 63%, B 38%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

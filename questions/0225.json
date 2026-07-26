@@ -1,0 +1,27 @@
+{
+ "id": 225,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "The Cisco Nexus switch Generic Online Diagnostics policy for a PortLoopback test requires 10 consecutive failures to error disable the port. The customer wants to change it to 5 consecutive failures. Which configuration applies the changes for module 1 only?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Nexus(config)# event manager applet custom-PortLoopback override __PortLoopback Nexus(config-applet)# event gold mod all test PortLoopback testing-type bootup consecutive-failure 5 Nexus(config-applet)# action 1 publish-event",
+  "Nexus(config)# event manager applet custom-PortLoopback override __PortLoopback Nexus(config-applet)# event gold mod 1 test PortLoopback testing-type monitoring consecutive-failure 5 Nexus(config-applet)# action 1 publish-default",
+  "Nexus(config)# event manager applet custom-PortLoopback override __PortLoopback Nexus(config-applet)# event gold mod all test PortLoopback testing-type monitoring consecutive-failure 5 Nexus(config-applet)# action 1 policy-default",
+  "Nexus(config)# event manager applet custom-PortLoopback override __PortLoopback Nexus(config-applet)# event gold mod 1 test PortLoopback testing-type bootup consecutive-failure 5 Nexus(config-applet)# action 1 policy-event"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "B 37%, C 37%, D 26%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": true,
+ "provisional": true
+}

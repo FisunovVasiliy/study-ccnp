@@ -1,0 +1,27 @@
+{
+ "id": 220,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which configuration generates a syslog message when CPU utilization is higher than 60%?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "event manager applet HIGH-CPU event snmp oid 1.3.6.1.4.1.9.9.109.1.1.1.1.6.1 get-type exact entry-op gt 60 poll-interval 5 action 1.0 syslog priority notifications msg \"cpu high\"",
+  "event manager applet HIGH-CPU event snmp oid 1.3.6.1.4.1.9.9.109.1.1.1.1.1.6.1 get-type exact entry-op lt 60 poll-interval 5 action 1.0 syslog priority notifications msg \"cpu high\"",
+  "event manager applet HIGH-CPU event snmp oid 1.3.6.1.4.1.9.9.109.1.1.1.1.1.6.1 get-type next entry-op gt 60 poll-interval 5 action 1.0 syslog priority notifications msg \"cpu high\"",
+  "event manager applet HIGH-CPU event snmp oid 1.3.6.1.4.1.9.9.109.1.1.1.1.1.6.1 get-type next entry-op lt 60 poll-interval 5 action 1.0 syslog priority notifications msg \"cpu high\""
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.ciscopress.com/articles/article.asp?p=2928194&seqNum=5",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 291,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer needs to install a new package on a Cisco Nexus 9000 Series Switch. What the impact of running the install commit <filename> command on the switch?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The switch is restarted after the upgrade is complete.",
+  "The previous package that was in use is deleted from bootflash.",
+  "The package is used after the switch is restarted.",
+  "The package is used in the running configuration."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 250,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Port security is enabled on a Cisco MDS 9000 Series Switch.\nWhich statement is true?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Port security can be enabled only globally and affects all VSANs.",
+  "Any devices currently logged in must be added manually to the device database.",
+  "Auto-learning is always enabled automatically when port security is enabled.",
+  "Cisco Fabric Services must be disabled before enabling port security."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/US/docs/storage/san_switches/mds9000/sw/rel_3_x/configuration/guides/fm_3_3_1/psec.html",
+ "explanation": "About Enabling Auto-learning -\nThe state of the auto-learning configuration depends on the state of the port security feature:\n- If the port security feature is not activated, auto-learning is disabled by default.\n- If the port security feature is activated, auto-learning is enabled by default (unless you explicitly disabled this option).",
+ "needsAnswer": false,
+ "provisional": false
+}

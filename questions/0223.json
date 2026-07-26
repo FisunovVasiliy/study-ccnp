@@ -1,0 +1,27 @@
+{
+ "id": 223,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must use the python module in the guest shell of the Cisco Nexus 9000 Series switch to shutdown port Ethernet 1/4. Which command set will accomplish this?",
+ "context": "n9k2# guestshell\n[guestshell@guestshell ~]$ python\nPython 2.7.5 (default, Jun 17 2014, 18:11:42)\n[GCC 4.8.2 20140120 (Red Hat 4.8.2-16)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>>",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "from cli import * cli(\"conf t\") cli(\"interface eth1/4\") cli(\"shutdown\")",
+  "from cisco import cli cli(\"conf t\" ; \"interface eth1/4\" ; \"shutdown)",
+  "from cli import * cli(\"conf t ; interface eth1/4 ; shut\")",
+  "from cisco import cli cli(\"conf t ; interface eth1/4\") cli(\"shutdown\")"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.ciscolive.com/c/dam/r/ciscolive/apjc/docs/2016/pdf/DEVNET-1077.pdf",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

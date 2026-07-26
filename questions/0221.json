@@ -1,0 +1,27 @@
+{
+ "id": 221,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which feature must be enabled to support the use of JSON and XML encodings when a Cisco Nexus 7000 Series Switch is deployed?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Bash shell",
+  "NX-API",
+  "Open Agent Container",
+  "LLDP"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus7000/sw/programmability/guide/b_Cisco_Nexus_7000_Series_NX-OS_Programmability_Guide/b_Cisco_Nexus_7000_Series_NX-OS_Programmability_Guide_chapter_0101.html",
+ "explanation": "On Cisco Nexus devices, command-line interfaces (CLIs) are run only on the device. NX-API improves the accessibility of these CLIs by making them available outside of the switch by using HTTP/HTTPS. You can use this extension to the existing Cisco Nexus CLI system on the Cisco Nexus 7000 Series devices. NX-API supports show commands, and configurations. NX-API supports JSON-RPC, JSON, and XML formats.",
+ "needsAnswer": false,
+ "provisional": false
+}

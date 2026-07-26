@@ -1,0 +1,27 @@
+{
+ "id": 248,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer is configuring the Smart Call Home feature on a Cisco Nexus Series Switch. An email must be generated that contains the last 100 lines of the log every time a new piece of hardware is inserted into the chassis. Which command must be added to the configuration to receive the email?",
+ "context": "N7Switch# sh run | section callhome\ncallhome\n  email-contact admin@acme.com\n  phone-contact +1-800-123-4567\n  streetaddress 111 Somestreet st. Sometown, Somewhere\n  destination-profile full_txt email-addr netadmin@acme.com\n  transport email smtp-server 192.168.1.25 port 25\n  transport email from N7Switch@acme.com\n  enable\n  alert-group Inventory user-def-cmd show logging last 100\nN7Switch#",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "destination-profile Operations alert-group Inventory",
+  "destination-profile Operations message-level 2",
+  "alert-group Linecard-Hardware user-def-cmd show logging last 100",
+  "alert-group Operations user-def-cmd show logging last 100"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

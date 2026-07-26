@@ -1,0 +1,30 @@
+{
+ "id": 293,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two actions should be performed before upgrading the infrastructure and firmware of multiple UCS blades? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Get Full State and All Configuration backup files before beginning the upgrade.",
+  "Verify if the bootflash on the fabric interconnects in the Cisco UCS has at least 10% available space.",
+  "Verify if the bootflash on the fabric interconnects in the Cisco UCS has at least 15% available space.",
+  "Enable Smart Call Home feature during the firmware upgrade process.",
+  "Run the Check Conformance feature to verify that all your components are running the compatible firmware version after the upgrade."
+ ],
+ "correct": [
+  0,
+  2
+ ],
+ "mostVoted": [
+  "A",
+  "C"
+ ],
+ "voteNote": "AC 60%, AE 40%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

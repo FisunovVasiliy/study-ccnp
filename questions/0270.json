@@ -1,0 +1,27 @@
+{
+ "id": 270,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer is configuring the Cisco UCS service profile template with Ansible using this code: hostname: 192.168.10.23 username: cisco password: f718c4329405726531f6247ff982 name: DCE-CTRL template_type: updating-template uuid_pool: UUID-POOL storage_pronte: DCE-StgProf maintenance_policy: default server_pool: Container-Pool host_firmware_package: 4.1(1a) bios_policy: Docker\nWhich attribute must be used to apply the iSCSI initiator identifiers to all iSCSI vNICs for the service profiles derived from the service template?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "san_connectivity_policy",
+  "lan_connectivity_policy",
+  "boot_policy",
+  "iqn_pool"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/GUI-User-Guides/Server-Mgmt/1-5/b_CiscoUCSCentral_Server_Management_Guide_1-5/b_CiscoUCSCentral_Server_Management_Guide_1-5_chapter_0101.html",
+ "explanation": "An IQN pool is a collection of iSCSI Qualified Names (IQNs) for use as initiator identifiers by iSCSI vNICs in a Cisco UCS domain. IQN pools created in Cisco UCS Central can be shared between Cisco UCS domains.",
+ "needsAnswer": false,
+ "provisional": false
+}

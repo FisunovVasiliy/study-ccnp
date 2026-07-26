@@ -1,0 +1,31 @@
+{
+ "id": 240,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nDrag and drop the keywords onto the URL request to collect all the subnets configured under tenant Production using a REST API. Not all options are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "https://{apic_ip}/api/{{1}}/uni/tn-Production.json?\n{{2}}=target-subtree-class&{{3}}=fvSubnet",
+ "wordBank": [
+  "target-subtree-class",
+  "query-target-filter",
+  "children",
+  "query-target",
+  "mo",
+  "class",
+  "subtree"
+ ],
+ "blankAnswers": [
+  "mo",
+  "query-target",
+  "subtree"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

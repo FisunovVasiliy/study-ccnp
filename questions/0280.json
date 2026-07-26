@@ -1,0 +1,27 @@
+{
+ "id": 280,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must apply AAA configuration on a Cisco MDS 9000 Series Switch. The solution must meet these conditions:\n- It must use a challenge-response authentication protocol that uses MD5 hashing with an incrementally changing identifier.\n- The RADIUS configuration must be automatically shared with other MDS switches in the environment.\nThe RADIUS server is already defined. Which command set completes the configuration?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "aaa authentication login chap enable radius distribute radius commit",
+  "aaa authentication login pap enable distribute radius radius-server host 10.8.8.0 auth-port 1821",
+  "aaa authentication login mschapv2 enable radius propagate radius authentication port 1821",
+  "aaa authentication login mschap enable radius commit radius-server host 10.8.8.0"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/dcn/mds9000/sw/8_x/config/security/cisco_mds9000_security_config_guide_8x/configuring_security_features_on_external_aaa_server.html#con_2054570",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

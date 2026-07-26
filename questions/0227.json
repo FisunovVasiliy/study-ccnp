@@ -1,0 +1,25 @@
+{
+ "id": 227,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must create an EEM script that saves a copy of the running configuration on bootflash and writes a message to syslog when a user saves the configuration to a Cisco Nexus Series switch. Which configuration set should be applied to complete this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "event manager applet local-backup\n  event cli match \"copy running-config startup-config\"\n  action 1 cli copy running-config bootflash:/current_config.txt\n  action 2 syslog msg Configuration saved and copied to bootflash",
+  "event manager applet local-backup\n  event cli match \"copy running-config startup-config\"\n  action 1 cli copy running-config bootflash:/current_config.txt\n  action 2 syslog msg Configuration saved and copied to bootflash\n  action 3 event-default",
+  "event manager applet local-backup\n  event cli match \"write memory\"\n  action 1 cli copy running-config bootflash:/current_config.txt\n  action 2 snmp-trap strdata \"Configuration saved and copied to bootflash\"",
+  "event manager applet local-backup\n  event cli match \"write memory\"\n  action 1 cli copy running-config bootflash:/current_config.txt\n  action 2 syslog msg Configuration saved and copied to bootflash\n  action 3 event-default"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/system_management/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide_7x_chapter_01110.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

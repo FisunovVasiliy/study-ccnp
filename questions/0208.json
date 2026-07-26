@@ -1,0 +1,27 @@
+{
+ "id": 208,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An administrator needs to configure an automated policy to shut down a link when a given threshold is exceeded on MDS switch.\nWhich feature needs to be used?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "RMON",
+  "EEM",
+  "Call Home",
+  "Scheduler"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "EEM consists of three major components:\n- Event statements: Events to monitor from another Cisco NX-OS component that may require some action, workaround, or notification.\n- Action statements: Actions that EEM can take, such as sending an e-mail, or disabling an interface, to recover from an event.\n- Policies: A combination of an event statement and an action statement. When the specified event occurs, the configured action is executed.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 278,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement a solution that prevents untrusted DHCP servers from compromising the network. The feature must be configured on a Cisco Nexus 7000 Series Switch and applied to VLAN 10. The legitimate DHCP servers are connected to interface Ethernet 2/4. Which configuration set must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "n7k-1(config)# ip dhcp snooping vlan 10 n7k-1(config)# interface Ethernet2/4 n7k-1(config-if)# ip dhcp snooping verify vlan 10",
+  "n7k-1(config)# ip dhcp snooping verify n7k-1(config)# interface Ethernet2/4 n7k-1(config-if)# ip dhcp snooping verify vlan 10",
+  "n7k-1(config)# ip dhcp snooping vlan 10 n7k-1(config)# interface Ethernet2/4 n7k-1(config-if)# ip dhcp snooping trust",
+  "n7k-1(config)# ip dhcp snooping verify n7k-1(config)# vlan configuration 10 n7k-1(config-vlan)# ip dhcp snooping trust"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/security/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_Security_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_Security_Configuration_Guide_7x_chapter_01100.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

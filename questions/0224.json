@@ -1,0 +1,30 @@
+{
+ "id": 224,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nAn engineer deploys a custom Guest Shell rootfs on a Nexus 9000 Series Switch. Drag and drop the steps from the left into the order required to deploy the solution on the right. Not all options are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "Customize the Guest Shell rootfs.",
+  "Export the Guest Shell rootfs.",
+  "Store it in a file server.",
+  "Import the Guest Shell rootfs to other switches.",
+  "Install the specific Guest Shell across devices simultaneously."
+ ],
+ "correctOrder": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/programmability/guide/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x/Guest_Shell.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

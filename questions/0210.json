@@ -1,0 +1,27 @@
+{
+ "id": 210,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is required for using Ansible with HTTP/HTTPS protocol in a Cisco NX-OS environment?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "XML management interface",
+  "SSH",
+  "Open Agent Container",
+  "NX-API"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": "https://docs.ansible.com/ansible/latest/network/user_guide/platform_nxos.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

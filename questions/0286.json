@@ -1,0 +1,31 @@
+{
+ "id": 286,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nAn engineer must configure Cisco UCS Manager to accept only HTTPS connections that use TLS 1.2. The cipher security level must be high and the length of the keyring key value must be 2048 bits. Drag and drop the code snippets from the right onto the blanks in the code on the left to accomplish these goals. Not all commands are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "scope security\n  create keyring ciscokring\n    set modulus {{1}}\n    commit-buffer\n\nscope system\n  scope services\n    enable https\n    set https port 8443\n    set https {{2}}\n    set https cipher-suite-mode {{3}}\n    set https ssl-protocol {{4}}",
+ "wordBank": [
+  "mod2048",
+  "keyring ciscokring",
+  "1024 bits",
+  "secure",
+  "high-strength",
+  "tls1-2"
+ ],
+ "blankAnswers": [
+  "mod2048",
+  "keyring ciscokring",
+  "high-strength",
+  "tls1-2"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

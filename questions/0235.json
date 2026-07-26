@@ -1,0 +1,27 @@
+{
+ "id": 235,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer evaluates a UI-based infrastructure management system capable of monitoring and deploying standalone VXLAN BGP EVPN deployments. The storage administrators also need the solution to manage the Cisco MDS 9000 Series Switches. Which solution meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Cisco DCNM",
+  "Cisco Tetration",
+  "Cisco UCS Director",
+  "Cisco Intersight"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-data-center-network-manager/index.html",
+ "explanation": "Cisco Nexus Dashboard Fabric Controller (NDFC) (formerly DCNM) is the network management platform for all NX-OS enabled deployments. It spans new fabric architectures, storage network deployments, and IP Fabric for Media.",
+ "needsAnswer": false,
+ "provisional": false
+}

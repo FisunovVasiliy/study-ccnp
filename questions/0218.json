@@ -1,0 +1,27 @@
+{
+ "id": 218,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is asked to manage a large-scale data center and collect information from multiple Cisco NX-OS devices using Cisco NX-OS Data Management Engine model.\nWhich technology should be used to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NETCONF",
+  "NX Yang",
+  "NX-API REST",
+  "JSON-RPC"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 66%, A 24%, other 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

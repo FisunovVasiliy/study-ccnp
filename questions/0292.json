@@ -1,0 +1,27 @@
+{
+ "id": 292,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure Cisco Nexus 9000 Series Switches for Cisco UCS Director integration. The configuration must enable automated onboarding of the switches as they come online. For security purposes, the switches must have the bare minimum of connection methods enabled. The connection protocol must allow authentication through credentials. Which protocol must be configured on the switches to allow automated onboarding?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SNMP",
+  "Telnet",
+  "HTTPS",
+  "SSH"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

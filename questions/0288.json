@@ -1,0 +1,27 @@
+{
+ "id": 288,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a backup and restore of Cisco UCS Manager during the weekend maintenance windows. The configuration must be restored to its original state on Monday morning. The end users can make changes only to the Service Profile configuration. Which set of actions meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Schedule a system backup to run at the start of every weekend and manually import the backup on Monday morning.",
+  "Schedule a logical backup to run at the star of every weekend and manually import the backup on Monday morning.",
+  "Schedule a system backup to run at the start of every weekend and schedule the import of the backup to run on Monday morning.",
+  "Schedule a logical backup to run at the start of every weekend and schedule the import of the backup to run on Monday morning."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 75%, D 25%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

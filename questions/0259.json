@@ -1,0 +1,27 @@
+{
+ "id": 259,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is configuring AAA authentication on a Cisco MDS 9000 Series switch. The LDAP server is located under the IP 10.10.2.2. The data sent to the LDAP server should be encrypted. Which command should be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "ldap-server 10.10.2.2 port 443",
+  "ldap-server 10.10.2.2 key SSL_KEY",
+  "ldap-server host 10.10.2.2 key SSL_KEY",
+  "ldap-server host 10.10.2.2 enable-ssl"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

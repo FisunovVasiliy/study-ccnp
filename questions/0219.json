@@ -1,0 +1,27 @@
+{
+ "id": 219,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network architect is asked to design and manage geographically distributed data centers across cities and decides to use a Multi-Site Orchestrator deployment.\nHow many orchestrators should be deployed?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "5",
+  "3",
+  "4",
+  "2"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/multi-site/sw/2x/installation/Cisco-ACI-Multi-Site-Installation-Upgrade-Guide-221/m-multi-site-install-overview.html",
+ "explanation": "A typical Cisco ACI Multi-Site deployment requires a 3-node cluster of Multi-Site Orchestrators to manage all the sites' fabrics in your Multi-Site environment.",
+ "needsAnswer": false,
+ "provisional": false
+}

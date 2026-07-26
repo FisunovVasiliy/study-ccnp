@@ -1,0 +1,27 @@
+{
+ "id": 201,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which statement is true about upgrading the firmware on a Cisco MDS storage switch with dual supervisors?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Supervisors can be upgraded independently to test the new firmware.",
+  "The new firmware is loaded on the standby supervisor first.",
+  "Both supervisors load the new firmware and then the active supervisor reboots.",
+  "The standby supervisor must be offline before the firmware upgrade begins."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/support/docs/storage-networking/mds-9000-nx-os-san-os-software/118952-technote-mds9k-00.html",
+ "explanation": "Non-Disruptive Upgrades Overview\nAll MDS switches support non-disruptive upgrades and downgrade subject to limitations listed in the MDS release notes.\nOn a 95xx or 97xx Series MDS with dual supervisors, during the firmware upgrade, the new code is loaded on the standby supervisor. A switchover then occurs in order to make the supervisor that runs the new code active. The code is then loaded on the previously active supervisor, and it becomes the new standby supervisor. The data plane continues to pass fibre channel traffic. The modules then non-disruptively start at the lowest numbered module and proceed to the highest.\nOn a 91xx, 92xx, or 93xx MDS, which has only one supervisor, the supervisor (control plane) is reloaded. The data plane continues to pass fibre channel traffic.",
+ "needsAnswer": false,
+ "provisional": false
+}

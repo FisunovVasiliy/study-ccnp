@@ -1,0 +1,27 @@
+{
+ "id": 300,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a benefit of using the Cisco UCS Lightweight upgrade feature?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "A soft reboot is available for the fabric interconnects.",
+  "The firmware version of a component is updated only when it has been modified.",
+  "All servers are rebooted to push the latest updates.",
+  "Security updates are scheduled with the next reboot of the fabric interconnects."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

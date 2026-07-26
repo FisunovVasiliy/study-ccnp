@@ -1,0 +1,30 @@
+{
+ "id": 268,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must configure the HSRP protocol between two Cisco Nexus 9000 Series Switches. This configuration is present on Nexus A.\nThe final HSRP configuration must meet these requirements:\n* The HSRP communication must be secured on both switches.\n* Both switches must support more than 300 groups.\nWhich two commands must be added to the HSRP configuration on Nexus A to complete these requirements? (Choose two.)",
+ "context": "! Nexus A\nkey chain NHRP-KEYS\n  key 1010\n    key-string 7 072a43795c1d0c4057265303163b3e2121a720361a021e11\n    accept-lifetime 00:00:00 Jan 01 2021 23:59:59 Aug 31 2021\n    send-lifetime 00:00:00 Jan 01 2021 23:59:59 Jul 31 2021\n  key 1020\n    key-string 7 086f43cd5c150c1702630203163b3e2221a520261a011a12\n    accept-lifetime 00:00:00 Jul 01 2021 23:59:59 Dec 31 2021\n    send-lifetime 00:00:00 Jul 01 2021 23:59:59 Dec 31 2021\ninterface ethernet 1/1\n  ip 209.165.200.226/27\n  hsrp 200\n    priority 201\n    ip 209.165.200.225\n    -- missing output --\n  no shutdown",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "authentication text 1020",
+  "hsrp version 1",
+  "authenticate md5 key-chain NHRP-KEYS",
+  "hsrp version 2",
+  "authentication text 1010"
+ ],
+ "correct": [
+  2,
+  3
+ ],
+ "mostVoted": [
+  "C",
+  "D"
+ ],
+ "voteNote": "C 50%, CD 50%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/unicast/configuration/guide/l3_cli_nxos/l3_hsrp.html",
+ "explanation": "Cisco NX-OS supports HSRP version 1 by default. You can configure an interface to use HSRP version 2.\nHSRP version 2 has the following enhancements to HSRP version 1:\n- Expands the group number range. HSRP version 1 supports group numbers from 0 to 255. HSRP version 2 supports group numbers from 0 to 4095.\n- For IPv4, uses the IPv4 multicast address 224.0.0.102 or the IPv6 multicast address FF02::66 to send hello packets instead of the multicast address of 224.0.0.2, which is used by HSRP version 1.\n- Uses the MAC address range from 0000.0C9F.F000 to 0000.0C9F.FFFF for IPv4 and 0005.73A0.0000 through 0005.73A0.0FFF for IPv6 addresses. HSRP version 1 uses the MAC address range 0000.0C07.AC00 to 0000.0C07.ACFF.\n- Adds support for MD5 authentication.",
+ "needsAnswer": false,
+ "provisional": false
+}

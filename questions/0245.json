@@ -1,0 +1,27 @@
+{
+ "id": 245,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A customer asks an engineer to develop a framework that will be used to replace the process of the manual device configuration of Cisco NX-OS devices. The engineer plans to use the programmatic interface that meets these requirements:\n- The development team is familiar with Windows-based scripting environment using PowerShell.\n- The customer's security requirements mandate the use of HTTPS transport.\nWhich solution must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NETCONF-YANG",
+  "NX-API",
+  "VISORE",
+  "Open Agent Container"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_010011.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 289,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Due to a newly announced security advisory, a company has been informed that they must update the configuration of 500 network devices that are deployed in their network. The engineering team must assist the operations team to prepare for this update. The operations team does not have direct access to the network devices and must login via a Linux server. This is the first time that the team is making a network-wide configuration and must change all devices without first installing additional software on the network devices. The operations team is unfamiliar with automation and scripting technologies. Which automation tool must be used to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Chef",
+  "SaltStack",
+  "Ansible",
+  "Puppet"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

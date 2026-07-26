@@ -1,0 +1,27 @@
+{
+ "id": 211,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is required for using Puppet in a Cisco NX-OS environment?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "OpenNP",
+  "XML management interface",
+  "NX-API",
+  "Open Agent Container"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "C 67%, D 33%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus7000/sw/programmability/guide/b_Cisco_Nexus_7000_Series_NX-OS_Programmability_Guide/b_Cisco_Nexus_7000_Series_NX-OS_Programmability_Guide_chapter_01001.pdf",
+ "explanation": "Puppet agents cannot run natively on Cisco Nexus 7000 and Cisco Nexus 7700 switches. Instead, they run in a special virtual environment called the Open Agent Container (OAC).",
+ "needsAnswer": false,
+ "provisional": false
+}

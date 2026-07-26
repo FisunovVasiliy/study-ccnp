@@ -1,0 +1,27 @@
+{
+ "id": 251,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "When a strict CoPP policy is implemented, which statement describes an event during which packets are dropped?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "A large system image is copied to a switch by using the default VRF.",
+  "Fifteen SSH sessions remain connected to the switch.",
+  "A ping sweep is performed on a network that is connected through a switch.",
+  "A web server that is connected to a switch is affected by a DDoS attack."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 56%, B 29%, C 14%, other",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

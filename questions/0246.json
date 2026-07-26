@@ -1,0 +1,27 @@
+{
+ "id": 246,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Which information must be added to the script to complete the POAP operation on the Cisco Nexus 9000 Series Switch?",
+ "context": "#!/bin/env python\nfrom cli import *\n\n<blank>\n\nx= cli('show running-config | include address')\ny= x.find('192.168.101.191/25')\nz= x.find('192.168.101.192/25')\nif y != -1:\n    cli ('copy tftp://192.168.101.253/initdev1.cfg bootflash: vrf management')\n    cli ('copy bootflash:initdev1.cfg scheduled-config')\nif z != -1:\n    cli ('copy tftp://192.168.101.253/initdev2.cfg bootflash: vrf management')\n    cli ('copy bootflash:initdev2.cfg scheduled-config')\ncli ('copy running-config startup-config')",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "MD5SUM d41d8cd98f00b204e9800998ecf8427e of the script file.",
+  "MD5SUM d41d8cd98f00b204e9800998ecf8427e of the Python code.",
+  "API token d41d8cd98f00b77986331998ecf8427e of the Cisco Nexus 9000 Series Switch.",
+  "API token d41d8cd98f00b410519681198ecf8427e of the Cisco APIC."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 67%, A 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

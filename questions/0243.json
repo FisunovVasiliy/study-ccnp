@@ -1,0 +1,30 @@
+{
+ "id": 243,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two methods are available to manage an ACI REST API session authentication when a user is unauthenticated? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "POST to aaaUserLogin",
+  "GET to aaaListDomains",
+  "GET aaaRefresh",
+  "DELETE to aaaLogout",
+  "POST to aaaLogin"
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 62%, CE 38%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

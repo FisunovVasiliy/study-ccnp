@@ -1,0 +1,27 @@
+{
+ "id": 202,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A Cisco MDS 9000 Series Storage Switch has reloaded unexpectedly.\nWhere does the engineer look for the latest core dump file?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "/mnt/recovery",
+  "/mnt/core",
+  "/mnt/logs",
+  "/mnt/pss"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_2/configuration/guides/system_management/nx-os/sysmgmt_cli_6-x/sys.html#37039",
+ "explanation": "Saving the Last Core to Bootflash\nThis last core dump is automatically saved to bootflash in the /mnt/pss/ partition before the switchover or reboot occurs. Three minutes after the supervisor module reboots, the saved last core is restored from the flash partition (/mnt/pss) back to its original RAM location. This restoration is a background process and is not visible to the user.",
+ "needsAnswer": false,
+ "provisional": false
+}

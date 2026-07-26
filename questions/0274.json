@@ -1,0 +1,32 @@
+{
+ "id": 274,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nAn engineer is implementing security on the Cisco MDS 9000 switch.\nDrag and drop the descriptions from the left onto the correct security features on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "can be distributed via fabric services",
+  "uses the Exchange Fabric Membership Data protocol",
+  "allows a preconfigured set of Fibre Channel devices to logically connect to SAN ports",
+  "prevent unauthorized switches from joining the fabric or disrupting current fabric operations"
+ ],
+ "targets": [
+  "Fabric Binding",
+  "Port Security"
+ ],
+ "matchCorrect": [
+  1,
+  0,
+  0,
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

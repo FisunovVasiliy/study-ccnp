@@ -1,0 +1,27 @@
+{
+ "id": 265,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer needs to configure system logging on the Cisco MDS Series switch. The messages must be displayed with the severity level of 'warning' and above. For security reasons, the users must be logged out of the console after 5 minutes of inactivity. Which configuration must be applied to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "MDS-A(config)# logging console 5\nMDS-A(config-console)# exec-timeout 300",
+  "MDS-A(config)# line console\nMDS-A(config-console)# speed 38400\nMDS-A(config-console)# exec-timeout 5\nMDS-A(config)# logging console 4",
+  "MDS-A(config)# logging line 4\nMDS-A(config-console)# session-limit 300",
+  "MDS-A(config)# console\nMDS-A(config-console)# speed 38400\nMDS-A(config-console)# session-limit 5\nMDS-A(config)# logging console 5"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_2/configuration/guides/fundamentals/b_Cisco_MDS_9000_Series_NX-OS_Fundamentals_Configuration_Guide/b_Cisco_MDS_9000_Series_NX-OS_Fundamentals_Configuration_Guide_Release_6_chapter_0100.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

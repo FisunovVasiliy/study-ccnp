@@ -1,0 +1,27 @@
+{
+ "id": 297,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A Cisco Nexus 7000 Series switch runs VXLAN, and interface Ethernet 7/30 is configured as a trunk port. Which command set configures the switch to act as a gateway for VLAN 507?",
+ "context": "interface Ethernet7/30\n  no switchport\n  no shutdown\n  service instance 1 vni\n  no shutdown\n  encapsulation profile VSI_50_TO_500 default",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "encapsulation profile VSI_50_TO_500 dot1q 50 vni 500 bridge-domain 50 member vni 500 interface Bdi50 ip address 10.50.50.51/24",
+  "encapsulation profile VSI_50_TO_500 dot1q 500 vni 50 bridge-domain 500 member vni 50 interface Bdi500 ip address 10.50.50.51/24",
+  "encapsulation profile VSI_50_TO_500 dot1q 500 vni 50 bridge-domain 500 member vni 50 interface Vlan500 ip address 10.50.50.51/24",
+  "encapsulation profile VSI_50_TO_500 dot1q 50 vni 500 bridge-domain 50 member vni 500 interface Vlan50 ip address 10.50.50.51/24"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 296,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nAn engineer must configure a control plane policy on a Cisco Nexus 9000 Series Switch that is located at IP 192.168.20.1 that meets these requirements:\n- Only HTTP, RDP, and ICMP traffic is permitted from subnet 192.168.10.0/24.\n- The committed information rate must be 54000 pps.\n- The burst size must be 128 packets.\n- Any other traffic must be dropped.\nDrag and drop the code snippets from the bottom onto the blanks in the code on the top to complete the configuration. Not all code snippets are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "ip access-list permithosts\n  permit tcp 192.168.10.0/24 {{1}}\n  permit tcp 192.168.10.0/24 host 192.168.20.1 eq 3389\n  permit icmp 192.168.10.0/24 host 192.168.20.1\n\nclass-map type control-plane match-any hostscmap\n  match {{2}}\n\npolicy-map type control-plane hostspmap\n  {{3}}\n  police cir 54000 pps bc 128 packets {{4}}",
+ "wordBank": [
+  "host 192.168.20.1 eq 443",
+  "access-group name permithosts",
+  "class hostscmap",
+  "conform transmit violate drop",
+  "class permithosts"
+ ],
+ "blankAnswers": [
+  "host 192.168.20.1 eq 443",
+  "access-group name permithosts",
+  "class hostscmap",
+  "conform transmit violate drop"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 205,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is performing a configuration on a Cisco Nexus 5000 Series Switch. The requirement is for the current Fibre Channel IDs in VSAN 120 to be saved across reboots. The Cisco environment also must integrate with a third-party solution that requires persistent Fibre Channel IDs for the VSAN. The WWN of the Cisco switch must be 33:e8:00:05:30:00:16:df and its Fibre Channel ID 0x070128. Which command set meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "fcdomain fcid database vsan 120 wwn 33:e8:00:05:30:00:16:df fcid 0x070128 fcdomain fcid persistent vsan 120",
+  "fabric-binding database vsan 120 vsan 120 wwn 33:e8:00:05:30:00:16:df fcid 0x070128",
+  "vsan 120 wwn 33:e8:00:05:30:00:16:df fcid 0x070128 fabric-binding activate vsan 120 purge fcdomain fcid vsan 4",
+  "gsan 120 wwn 33:e8:00:05:30:00:16:df fcid 0x070128 fcdomain fcid preserve vsan 120"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/storage/san_switches/mds9000/sw/rel_1_x/sf_1_3_2a/san-os/configuration/guide/Domains.pdf",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 298,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer is troubleshooting intermittent connect issues between the client PC and the DHCP server. What does the last package captured from the Cisco Nexus 2000 Series Switch indicate?",
+ "context": "Topology: Client-PC -e1/2- Nexus_2K -e1/1- DHCP Server.\nWireshark capture: multiple DHCP broadcast packets (0.0.0.0 -> 255.255.255.255), one packet 192.168.2.1 -> 192.168.2.48, then last packet #5498 192.168.2.48 -> 192.168.2.1 DHCP.\nFrame 5498 details: Dynamic Host Configuration Protocol (Release). Message type: Boot Request (1). Client IP address: 192.168.2.48. Bootp flags: 0x0000 (Unicast). Option: (53) DHCP Message Type (Release). Option: (54) DHCP Server Identifier (192.168.2.1).",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The client receives an IP address from the DHCP server.",
+  "The DHCP server sends an IP address via a broadcast message.",
+  "The client sends a unicast message to receive an IP address from the DCHP server.",
+  "The DCHP server releases the IP address from the client."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 92%, other 8%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

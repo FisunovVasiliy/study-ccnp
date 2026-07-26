@@ -1,0 +1,27 @@
+{
+ "id": 249,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a feature of NFS?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "zone-based access control",
+  "Kerberos-based security model",
+  "block-based file access",
+  "role-based access control"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

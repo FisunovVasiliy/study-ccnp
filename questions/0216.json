@@ -1,0 +1,27 @@
+{
+ "id": 216,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must modify an overridden policy by changing the number of FCNS database entries to 1500 and then generate a message.\nWhat configuration will accomplish this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "event manager applet fcns_policy event fcns entries max-per-switch 1500 action 1.0 syslog priority warnings msg FCNS DB entries have reached the EEM limit action 2.0 policy-default",
+  "event manager applet fcns_policy override __fcns_entries_max_per_switch action 1.0 syslog priority errors 'CNS DB entries have reached the EEM limit' action 2.0 policy-default",
+  "event manager applet fcns_policy override __fcns_entries_max_per_switch event fcns entries max-per-switch 1500 action 1.0 syslog priority warnings msg FCNS DB entries have reached the EEM limit",
+  "event manager applet fcns_policy action 1.0 syslog priority warnings msg FCNS DB entries have reached the EEM limit action 2.0 event-default"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

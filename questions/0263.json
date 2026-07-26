@@ -1,0 +1,25 @@
+{
+ "id": 263,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network administrator must configure an extra keyring in Cisco UCS Manager. The key must provide a high level of encryption and secure authentication when users use the web interface. Which configuration command set must be applied to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "set https keyring kring7984\nset https cipher-suite-mode high\nset https tls-protocol tls1-2\ncommit-buffer",
+  "set https keyring kring7984\nset https cipher-suite-mode high\nset https ssl-protocol tls1-2\ncommit-buffer",
+  "set https keyring kring7984\nset https cipher-suite-mode secure\nset https ssl-protocol tls1-2\ncommit-buffer",
+  "set https keyring kring7984\nset https cipher-suite-mode secure\nset https tls-protocol tls1-2\ncommit-buffer"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/3-1/b_Cisco_UCS_Manager_CLI_Administration_Mgmt_Guide_3_1/b_Cisco_UCS_Manager_CLI_Administration_Mgmt_Guide_3_1_chapter_0110.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

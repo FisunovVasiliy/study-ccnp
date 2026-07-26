@@ -1,0 +1,27 @@
+{
+ "id": 226,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Which command needs to be added to the line starting with the `file` keyword to have the generated running-config file with the name 'fusion-config_' and current date?",
+ "context": "import time\nimport cli\n\ndate= time.strftime('%Y%m%d')\nfile=\ncli.execute ('copy running-config ftp://10.183.249.182/FusionSW/' +file)\nexit()",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "str.('fusion-config_') + date",
+  "('fusion-config_') + date",
+  "('fusion-config_ + date')",
+  "string(('fusion-config_') + date"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "See below for an example:\nnxos9kv# python\nPython 2.7.11 (default, Feb 26 2018, 03:34:16)\n[GCC 4.6.3] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import time\n>>> import cli\n>>> date = time.strftime('%Y%m%d')\n>>> file = ('fusion-config_') + date\n>>> print(file)\nfusion-config_20210329\n>>> print('copy running-config ftp://10.183.249.182/FusionSW/' + file) copy running-config ftp://10.183.249.182/FusionSW/fusion-config_20210329",
+ "needsAnswer": false,
+ "provisional": false
+}

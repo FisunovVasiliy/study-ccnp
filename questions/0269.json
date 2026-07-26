@@ -1,0 +1,27 @@
+{
+ "id": 269,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement Strict Unicast Reverse Path Forwarding mode for IPv4 packets on the Etnerret1/1 interface on the Cisco Nexus 9500 Series Switch.\nWhich configuration achieves this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface Ethernet1/1 ip address 172.16.10.1/24 ip verify unicast source reachable-via rx",
+  "interface Ethernet1/1 ip address 172.16.10.1/24 ip verify unicast source any",
+  "interface Ethernet1/1 ip address 172.16.10.1/24 ip verify unicast source reachable-via any",
+  "interface Ethernet1/1 ip address 172.16.10.1/24 ip verify unicast source rx"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 75%, C 25%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

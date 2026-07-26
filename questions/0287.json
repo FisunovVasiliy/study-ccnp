@@ -1,0 +1,27 @@
+{
+ "id": 287,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network administrator is creating a custom Django self-service portal that runs on a Linux server to automate the creation of new VLANS on Cisco UCS Manager. Which feature must be installed and configures on the server?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Cisco DNA Center API",
+  "Cisco AppDynamics",
+  "Cisco UCS Python SDK",
+  "Cisco UCS PowerTool Suite"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

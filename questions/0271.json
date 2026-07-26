@@ -1,0 +1,36 @@
+{
+ "id": 271,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nA network engineer must implement RBAC on Cisco MDS 9000 Series Multilayer Switches.\nDrag and drop the Cisco MDS 9000 Series roles from the left onto the categories they belong to on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "san-operator",
+  "global-admin",
+  "server-admin",
+  "storage-admin",
+  "network-admin",
+  "network-operator"
+ ],
+ "targets": [
+  "System Defined",
+  "User Defined"
+ ],
+ "matchCorrect": [
+  1,
+  1,
+  0,
+  1,
+  0,
+  0
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/3-1/b_Cisco_UCS_Admin_Mgmt_Guide_3_1/b_UCSM_Admin_Mgmt_Guide_chapter_01.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

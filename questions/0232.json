@@ -1,0 +1,27 @@
+{
+ "id": 232,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What is the result of executing this Python code?",
+ "context": "import time\nimport cli\n\ndate= time.strftime('%Y%m%d')\nfile= ('fusion-config_') + date\ncli.execute ('copy running-config ftp://10.183.249.182/FusionSW/' + file)\nexit()",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It sends the switch configuration to Cisco TAC",
+  "It sends a Cisco device backup to a remote destination",
+  "It schedules a backup on a Cisco switch using EEM",
+  "It backs up Cisco switches to Cisco Prime Infrastructure"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "This will send a copy of the running configuration to an FTP server at 10.83.249.182.",
+ "needsAnswer": false,
+ "provisional": false
+}

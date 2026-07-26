@@ -1,0 +1,27 @@
+{
+ "id": 217,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit.\nAn engineer configures a new application profile using REST API and receives this error message. Which method can be used before the application profile can be configured?",
+ "context": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><imdata totalCount=\"1\"><error code=\"403\" text=\"Token was invalid (Error: Token timeout)\"/></imdata>",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "GET to aaaListDomains",
+  "POST to aaaRefresh",
+  "POST to aaaLogin",
+  "POST to aaaLogout"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/2-x/rest_cfg/2_1_x/b_Cisco_APIC_REST_API_Configuration_Guide/b_Cisco_APIC_REST_API_Configuration_Guide_chapter_01.html",
+ "explanation": "aaaLogin.xml Sent as a POST message, this method logs in a user and opens a session. The message body contains an aaa:User object with the name and password attributes, and the response contains a session token and cookie. If multiple AAA login domains are configured, you must prepend the user's name with apic: domain\\\\.",
+ "needsAnswer": false,
+ "provisional": false
+}

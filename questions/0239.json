@@ -1,0 +1,27 @@
+{
+ "id": 239,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must design an automation solution for the Cisco ACI Fabric to speed up the deployment of logical network elements for tenant provisioning. When creating a solution, the engineer must keep in mind that the tool must support these requirements:\n* Allow the rapid creation and removal of logical containers.\n* Support the creation of custom modules and data structures.\n* Be extensible with external libraries and modules.\n* Allow rapid testing of code using an on-demand execution environment.\nWhich automation tool meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SaltStack",
+  "YAML",
+  "Chef",
+  "Python"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 56%, C 23%, A 21%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

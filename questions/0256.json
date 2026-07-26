@@ -1,0 +1,27 @@
+{
+ "id": 256,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What is the result of implementing this configuration?",
+ "context": "NEXUS(config)# feature tacacs+\nNEXUS(config)# tacacs-server timeout 5\nNEXUS(config)# tacacs-server directed-request\nNEXUS(config)# tacacs-server deadtime 0\nNEXUS(config)# tacacs-server host 10.1.50.20 port 49\nNEXUS(config)# tacacs-server host 10.1.50.20 key 7 \"F1whg123\" timeout 1\nNEXUS(config)# aaa group server tacacs+ ISE\nNEXUS(config-tacacs+)# server 10.1.50.20\nNEXUS(config-tacacs+)# deadtime 10\nNEXUS(config-tacacs+)# use-vrf management\nNEXUS(config-tacacs+)# source-interface mgmt 0\nNEXUS(config)# aaa authentication login default group ISE",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The switch queries the TACACS+ server by using an encrypted text PAP login.",
+  "The TACACS+ server uses the type-6 encrypted format.",
+  "The switch queries the TACACS+ server by using a clear text PAP login.",
+  "The timeout value on the TACACS+ server is 10 seconds."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 83%, C 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

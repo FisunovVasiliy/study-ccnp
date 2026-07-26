@@ -1,0 +1,27 @@
+{
+ "id": 207,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A customer has a requirement for an automation solution that supports periodically acquiring configuration from a centralized server and aligning UCS servers to their desired state.\nWhich open-source tool meets this requirement?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SaltStack",
+  "Kubernetes",
+  "Puppet",
+  "Terraform"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3548/sw/programmability/6x/b_Cisco_Nexus_3500_Series_NX-OS_Programmability_Guide_6x/b_Cisco_Nexus_3500_Series_NX-OS_Programmability_Guide_6x_chapter_01000.html",
+ "explanation": "The Puppet software package, developed by Puppet Labs, is an open source automation toolset for managing servers and other resources by enforcing device states, such as configuration settings.\nPuppet components include a puppet agent which runs on the managed device (node) and a puppet master (server) that typically runs on a separate dedicated server and serves multiple devices. The operation of the puppet agent involves periodically connecting to the puppet master, which in turn compiles and sends a configuration manifest to the agent; the agent reconciles this manifest with the current state of the node and updates state based on differences.",
+ "needsAnswer": false,
+ "provisional": false
+}

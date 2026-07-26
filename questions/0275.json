@@ -1,0 +1,27 @@
+{
+ "id": 275,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer has a primary fabric that is named UCS-A and a secondary fabric that is named UCS-B. A certificate request that has a subject name of sjc2016 for a keyring that is named kr2016 needs to be created. The cluster IP address is 10.68.68.68.\nWhich command set creates this certificate request?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "UCS-A # scope keyring kr2016 UCS-A /keyring # create certreq 10.68.68.68 UCS-A /keyring* # commit-buffer",
+  "UCS-B # scope keyring kr2016 UCS-B /keyring # create certreq ip 10.68.68.68 subject-name sjc2016 UCS-A /keyring* # commit-both",
+  "UCS-B# scope security UCS-B /security # scope keyring kr2016 UCS-B /security/keyring # set certreq 10.68.68.68 sjc2016 UCS-B /security/keyring* # commit-both",
+  "UCS-A# scope security UCS-A /security # scope keyring kr2016 UCS-A /security/keyring # create certreq ip 10.68.68.68 subject-name sjc2016 UCS-A /security/keyring* # commit-buffer"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

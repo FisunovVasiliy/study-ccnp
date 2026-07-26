@@ -1,0 +1,27 @@
+{
+ "id": 237,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A company is investigating different options for IT automation tools. The IT team has experience with Python programming language and scripting using a declarative language. The proposed tool should be easy to set up and should not require installing an agent on target devices. The team will also need to build custom modules based on the Python programming language to extend the tool's functionality. Which automation tool should be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Ansible",
+  "Chef",
+  "Puppet",
+  "NX-API"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 70%, D 30%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

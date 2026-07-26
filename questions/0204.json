@@ -1,0 +1,27 @@
+{
+ "id": 204,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Which feature set must be used to configure on switch 2 to establish a VSAN trunk between switch 1 and switch 2?",
+ "context": "Switch 1 (E port, Trunk Mode Auto) --- VSAN Trunk --- Switch 2 (?, ?)",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "F Port / Trunk Mode Passive",
+  "N Port / Trunk Mode Active",
+  "NP Port / Trunk Mode Auto",
+  "E Port / Trunk Mode On"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/en/US/docs/storage/san_switches/mds9000/sw/rel_3_x/configuration/guides/cli_3_2/trnk.html",
+ "explanation": "By default, trunk mode is enabled in all Fibre Channel interfaces. However, trunk mode configuration takes effect only in E-port mode. You can configure trunk mode as on (enabled), off (disabled), or auto (automatic). The default trunk mode is on. The trunk mode configuration at the two ends of an ISL, between two switches, determine the trunking state of the link and the port modes at both ends.\nTable 15-1 Trunk Mode Status Between Switches:\nSwitch1=On, Switch2=Auto or on -> Trunking (EISL), TE port\nSwitch1=Off, Switch2=Auto, on, or off -> No trunking (ISL), E port\nSwitch1=Auto, Switch2=Auto -> No trunking (ISL), E port",
+ "needsAnswer": false,
+ "provisional": false
+}

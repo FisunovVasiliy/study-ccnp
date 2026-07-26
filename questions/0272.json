@@ -1,0 +1,30 @@
+{
+ "id": 272,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must configure RBAC in Cisco UCS Manager in an existing data center environment.\nWhich two roles are suitable for configuring LAN connectivity policies? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "server-profile",
+  "network-admin",
+  "operations",
+  "enable",
+  "admin"
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 100%",
+ "reference": "https://www.cisco.com/c/en/US/docs/unified_computing/ucs/sw/gui/config/guide/141/UCSM_GUI_Configuration_Guide_141_chapter9.html",
+ "explanation": "The system contains the following default user roles:\nAAA Administrator: Read-and-write access to users, roles, and AAA configuration. Read access to the rest of the system.\nAdministrator: Complete read-and-write access to the entire system. The default admin account is assigned this role by default and it cannot be changed.\nFacility Manager: Read-and-write access to power management operations through the power-mgmt privilege. Read access to the rest of the system.\nNetwork Administrator: Read-and-write access to fabric interconnect infrastructure and network security operations. Read access to the rest of the system.\nOperations: Read-and-write access to systems logs, including the syslog servers, and faults. Read access to the rest of the system.\nRead-Only: Read-only access to system configuration with no privileges to modify the system state.\nServer Equipment Administrator: Read-and-write access to physical server related operations. Read access to the rest of the system.\nServer Profile Administrator: Read-and-write access to logical server related operations. Read access to the rest of the system.\nServer Security Administrator: Read-and-write access to server security related operations. Read access to the rest of the system.\nStorage Administrator: Read-and-write access to storage operations. Read access to the rest of the system.",
+ "needsAnswer": false,
+ "provisional": false
+}

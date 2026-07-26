@@ -1,0 +1,27 @@
+{
+ "id": 222,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer needs a utility to translate traditional Nexus CLI inputs and generate Python code using XML and JSON message formats. The solution needs to be available on a Nexus 7700 series switch. Which utility should be used?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NX-API Sandbox",
+  "NX-OS JSON-RPC",
+  "Guest Shell for NX-OS",
+  "Open NX-OS"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 83%, C 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

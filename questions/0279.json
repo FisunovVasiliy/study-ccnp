@@ -1,0 +1,27 @@
+{
+ "id": 279,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer implements a Cisco UCS C-Series Server that must adhere to these security requirements:\n- Unencrypted communication must be disabled.\n- The session timeout must not exceed 15 minutes.\n- Unencrypted traffic must be automatically diverted.\n- CLI-based management must use nondefault ports.\nWhich configuration set meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SSH Enabled SSH Port: 8022 SSH Timeout: 1200 IPMI over LAN Enabled",
+  "HTTP Port: 80 / HTTPS Port: 443 Session Timeout: 900 Redirect HTTP to HTTPS Enabled SSH Port: 2022",
+  "Redfish Enabled checked Redfish Port: 443 SSH Enabled checked HTTPS Port: 8443",
+  "XML API Enabled HTTP Port: 8080 / HTTPS Port: 8443 IPMI over LAN Enabled Randomized Encryption Key"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "Only choice B meets all the requirements given of timing out in 15 minutes (900 seconds), Redirecting HTTP to HTTPS, and using a non-default SSH port.",
+ "needsAnswer": false,
+ "provisional": false
+}

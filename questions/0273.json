@@ -1,0 +1,27 @@
+{
+ "id": 273,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is enabling port security on a Cisco MDS 9000 Series Switch.\nWhich feature of enabling port security on a Cisco MDS 9000 Series Switch must be considered?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It is distributed by using Cisco Fabric Services.",
+  "It authorizes only the configured sWWN to participate in the fabric.",
+  "It always learns about switches that are logging in.",
+  "It binds the fabric at the switch level."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "C 64%, A 25%, other 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": true,
+ "provisional": true
+}

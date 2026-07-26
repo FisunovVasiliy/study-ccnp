@@ -1,0 +1,27 @@
+{
+ "id": 203,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement a Cisco UCS system at a customer site. One of the requirements is to implement SAN boot. The storage system maps the source WWPN to a unique LUN.\nWhich method does Cisco recommend to configure the SAN boot?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Define the vHBAs as bootable and leave the boot target definition empty.",
+  "Create a SAN boot policy in which every initiator is mapped to a different target LUN.",
+  "Define the vHBAs as bootable and leave the default values on the boot target definition.",
+  "Create a SAN boot policy in which every initiator is mapped to the same target LUN."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 44%, B 44%, other 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": true,
+ "provisional": true
+}

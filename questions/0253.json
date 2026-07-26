@@ -1,0 +1,27 @@
+{
+ "id": 253,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is running an ACI fabric, has VMM integration with VMware vCenter, and wants to enable microsegmentation based on vCenter VM attributes.\nWhich statement describes microsegmentation in this scenario?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "ACI does not support microsegmentation based on vCenter VM attributes. The network attributes should be used for microsegmentation.",
+  "When enabled, microsegmentation performs distributed switching and routing on the ESXi hosts.",
+  "Microsegmentation is supported only using AVE or AVS.",
+  "An ACI microsegmented EPG automatically creates a port group with a private VLAN configured on a VMware vCenter distributed virtual switch."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}
