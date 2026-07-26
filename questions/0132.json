@@ -1,0 +1,27 @@
+{
+ "id": 132,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must configure a SPAN session on a Cisco Nexus 5600 Series switch to rate-limit the mirrored traffic to 1 Gbps. Which configuration meets this requirement?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface Ethernet 1/3\n monitor session 2\n destination interface ethernet 1/5\n source interface rx\n\ninterface Ethernet 1/5\n monitor rate-limit 1G",
+  "interface Ethernet 1/3\n monitor rate-limit 1G\n destination interface ethernet 1/5\n source interface rx\n\ninterface Ethernet 1/5\n monitor session 2\n destination interface tx",
+  "interface Ethernet 1/3\n switchport monitor rate-limit 1G\n\nmonitor session 2\n destination interface ethernet 1/5\n source interface Eth 1/3",
+  "interface Ethernet 1/3 rx\n switchport mode SD\n switchport monitor rate-limit 1G\n monitor session2\n destination interface ethernet 1/5"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/system_management/7x/b_5600_System_Mgmt_Config_7x/b_6k_System_Mgmt_Config_7x_chapter_01110.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

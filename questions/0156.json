@@ -1,0 +1,27 @@
+{
+ "id": 156,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is implementing zoning on two Cisco MDS switches. After the implementation is finished, E Ports that connect the two Cisco MDS switches become isolated. What is wrong with the implementation?",
+ "context": "Zoning was configured with Zoneset AB, containing different active zone set names between MDS-A and MDS-B.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Zones are local to the MDS switch and name service must be used to activate the connection between E Ports.",
+  "Different zone set names must be configured on both MDS switches.",
+  "Zones must have the same name on both MDS switches for the E Ports to function.",
+  "E Ports on both MDS switches must be configured as F Ports for the zoning to function."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

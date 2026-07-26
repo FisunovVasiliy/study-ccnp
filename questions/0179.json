@@ -1,0 +1,27 @@
+{
+ "id": 179,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which solution provides remote and direct file-level access to users and systems?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "direct-attached storage",
+  "Fibre Channel over Ethernet",
+  "network-attached storage",
+  "storage area network"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "The purpose of NAS is to enable users to collaborate and share data more effectively. It is useful to distributed teams that need remote access or work in different time zones.",
+ "needsAnswer": false,
+ "provisional": false
+}

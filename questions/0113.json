@@ -1,0 +1,32 @@
+{
+ "id": 113,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nAn engineer is configuring VNTag between a virtualized server and a Cisco Nexus 5500 Series switch.\nDrag and drop the configuration steps from the left into the correct order on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "Configure support for VNTag mode on the interface that connects to the server.",
+  "Configure the vNICs of the server.",
+  "Configure the server to support NIV mode.",
+  "Enable the virtualization feature set.",
+  "Configure the port profile.",
+  "Install the virtualization feature set."
+ ],
+ "correctOrder": [
+  5,
+  3,
+  4,
+  0,
+  1,
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5500/sw/adapter-fex/6x/b_5500_Adapter_FEX_Config_6x/b_5500_Adapter_FEX_Config_602N11_chapter_010.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

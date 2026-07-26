@@ -1,0 +1,30 @@
+{
+ "id": 165,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nAn engineer must restore the startup configuration of a switch from a previously saved configuration file stored in bootflash.\nDrag and drop the commands from the left into the correct order of operations on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "copy bootflash:<configuration_file> running-config",
+  "copy running-config startup-config",
+  "show startup-config",
+  "write erase",
+  "reload"
+ ],
+ "correctOrder": [
+  3,
+  4,
+  0,
+  1,
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

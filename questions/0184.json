@@ -1,0 +1,27 @@
+{
+ "id": 184,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer needs to upgrade the EPLDs of the fabric modules for a Cisco MDS director-class switch. In which order are components reloaded during the process?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "one fabric module at the time",
+  "all fabric modules followed by the entire switching platform",
+  "all fabric modules in parallel",
+  "one module and one supervisor at the time"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 59%, B 41%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

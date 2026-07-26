@@ -1,0 +1,27 @@
+{
+ "id": 193,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which NFS version uses the TCP protocol and needs only one IP port to run the service?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NFSv1",
+  "NFSv2",
+  "NFSv3",
+  "NFSv4"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 163,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must ensure fabric redundancy when implementing NPV mode on a Cisco MDS 9000 Series Switch. Which action enables fabric redundancy?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Use TE ports to connect to upstream switches.",
+  "Add a port channel to upstream switches.",
+  "Configure the NPV devices to use an external FLOGI database.",
+  "Connect the NPV devices to multiple upstream switches."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 88%, other 13%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

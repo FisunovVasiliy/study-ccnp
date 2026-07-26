@@ -1,0 +1,27 @@
+{
+ "id": 101,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Where is the witness deployed in a two-node Cisco HyperFlex Edge deployment?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "to the HyperFlex Edge two-node cluster",
+  "to Cisco Intersight",
+  "to a third-party cloud provider",
+  "to an additional server with network access to HyperFlex Edge"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 67%, D 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

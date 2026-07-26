@@ -1,0 +1,27 @@
+{
+ "id": 195,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a characteristic of the NFS protocol?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It uses remote procedure calls with TCP/IP for transport.",
+  "It is used for booting Cisco UCS B-Series servers.",
+  "It is used to access a storage array at a block level.",
+  "It uses UDP and HTTP as its transport."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "When a client wants to perform some type of action on a file on a particular machine, it uses RPC to make a call to the NFS server on that machine. The server accepts the request and performs the action required, then returns a result code and possibly data back to the client, depending on the request. The result code indicates if the action was successful. If it was, the client can assume that whatever it asked to be done was completed. For example, in the case of writing data, the client can assume the data has been successfully written to long-term storage.\nNFS can operate over any transport mechanism that has a valid RPC implementation at the session layer.",
+ "needsAnswer": false,
+ "provisional": false
+}

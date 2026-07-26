@@ -1,0 +1,27 @@
+{
+ "id": 157,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is implementing FCoE. Which aspect of DCBXP on a Cisco Nexus switch affects this implementation?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It requires that LLDP transmit and LLDP receive are enabled on the FCoE interface.",
+  "It uses the Cisco Fabric Services protocol to exchange parameters between two peer links.",
+  "It provides the authentication of peers on the Cisco Nexus switch.",
+  "It always is enabled on 10/100-Mbps native Ethernet ports."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 80%, D 20%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

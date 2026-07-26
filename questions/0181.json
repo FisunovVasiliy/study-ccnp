@@ -1,0 +1,27 @@
+{
+ "id": 181,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "A customer data center is configured for distribution of user roles, call home, and NTP. The data center was split into two geographically separate locations called DC1 and DC2. The requirement is for the user role configurations to be distributed in DC1 and for NTP and call home features to be constrained to DC2. Which two configuration sets must be used to meet these requirements? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "! On Data Center 1\nconfigure terminal\ncfs region 1\n roles\n aaa",
+  "! On Data Center 1\nconfigure terminal\ncfs region 1\n ntp\n callhome",
+  "! On Data Center 1\nconfigure terminal\ncfs region 1\n ntp\n callhome",
+  "! On Data Center 2\nconfigure terminal\ncfs region 2\n roles",
+  "! On Data Center 2\nconfigure terminal\ncfs region 2\n roles\n aaa"
+ ],
+ "correct": [
+  1,
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/US/docs/storage/san_switches/mds9000/sw/rel_3_x/configuration/guides/cli_3_4_x/cfs.html#wp1306478",
+ "explanation": "",
+ "needsAnswer": true,
+ "provisional": true
+}

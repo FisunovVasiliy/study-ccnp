@@ -1,0 +1,27 @@
+{
+ "id": 186,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "The EPLD update of the supervisor module has been scheduled for several Cisco MDS 9000 Series switches. What will be the impact of the update?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "All traffic is stopped for the duration of the EPLD update and the switch is rebooted after the upgrade is completed.",
+  "The redundant supervisor takes over while the EPLD update is in progress and the switch is rebooted after the upgrade is completed.",
+  "All control plane traffic is stopped for the duration of the EPLD update and the switch remains operational for the duration of the upgrade.",
+  "The redundant supervisor takes over while the EPLD update is in progress and there is no service disruption."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 60%, D 40%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

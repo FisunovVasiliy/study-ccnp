@@ -1,0 +1,27 @@
+{
+ "id": 147,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer configures the properties of a Cisco UCS Cisco Integrated Management Controller network adapter for a standalone Cisco C-Series Server. The Failback Timeout in the vNIC was set to 600. When the failure occurs, the secondary interfaces must be used and then failback when the primary interface becomes available again. Which action must be taken to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Set default VLAN on the adapters.",
+  "Increase CoS to 6.",
+  "Enable Uplink Failover.",
+  "Disable VNTAG mode."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/gui/config/guide/4_2/b_cisco_ucs_c-series_gui_configuration_guide_42/b_Cisco_UCS_C-series_GUI_Configuration_Guide_41_chapter_01011.html#task_1696A32C1FD640688DE706384B9A1E76",
+ "explanation": "Enable Uplink Failover checkbox: Check this box if traffic on this vNIC should fail over to the secondary interface if there are communication problems. Note: VNTAG mode is required for this option.",
+ "needsAnswer": false,
+ "provisional": false
+}

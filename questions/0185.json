@@ -1,0 +1,27 @@
+{
+ "id": 185,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a characteristic of EPLD updates on Cisco MDS 9000 Series switches?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "EPLD bundles are released separately from a Cisco MDS NX-OS release",
+  "EPLD packages update hardware functionality on a device",
+  "EPLD updates are nondisruptive to traffic flow",
+  "EPLD updates are installed only via the Cisco DCNM GUI"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/epld-rn/nxos_nlW_epldRN_924.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

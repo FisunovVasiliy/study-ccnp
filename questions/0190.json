@@ -1,0 +1,27 @@
+{
+ "id": 190,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is an advantage of NFSv4 over Fibre Channel Protocol?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "uses IP transport",
+  "congestion management",
+  "improved security",
+  "lossless throughput"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 71%, A 29%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

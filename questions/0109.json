@@ -1,0 +1,27 @@
+{
+ "id": 109,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which command reduces the amount of time it takes to complete the ISSU on a Cisco Nexus 7000 Series Switch that has dual supervisor modules and two I/O modules?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "insinstall all epld bootflash:<image> parallel",
+  "install all kickstart <image> system <image> parallel",
+  "install all kickstart <image> system <image>",
+  "install all epld bootflash: <image>"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus7000/sw/upgrade/guide/cisco_nexus7000_software_upgrade_and_downgrade_guide_8x.html",
+ "explanation": "Starting with Cisco NX-OS Release 5.2(1), multiple linecards can be simultaneously upgraded, and the infrastructure support is available. This decreases the ISSU time when compared with an ISSU upgrade that is done serially (one card at a time).\nTo start a parallel upgrade, use the following command: install all kickstart image system image parallel.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 117,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Which action must be taken before the maintenance policy can be committed?",
+ "context": "FI-1# scope org /\nFI-1 /org # create maint-policy maintenance\nFI-1 /org/maint-policy* # set reboot-policy timer-automatic\nFI-1 /org/maint-policy* # set soft-shutdown-timer never",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Specify a maintenance time by selecting a schedule.",
+  "Associate a service profile to the maintenance policy.",
+  "Set the soft shutdown timer to a specific time.",
+  "Set the policy to apply the changes on the next reboot."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/cli/config/guide/1.4.1/CLI_Config_Guide_1_4_1_chapter26.html",
+ "explanation": "When a service profile is associated with a server, the server needs to be rebooted to complete the association. Specifying the reboot-policy command determines when the reboot occurs for all service profiles that include this maintenance policy. Possible values include:\n- immediate: The server reboots as soon as the change is made to the service profile.\n- timer-automatic: You select the schedule that specifies when maintenance operations can be applied to the server using the set scheduler command. Cisco UCS reboots the server and completes the service profile changes at the scheduled time.\n- user-ack: The user must explicitly acknowledge the changes by using the apply pending-changes command before changes are applied.",
+ "needsAnswer": false,
+ "provisional": false
+}

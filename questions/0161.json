@@ -1,0 +1,27 @@
+{
+ "id": 161,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is implementing NPV mode on a Cisco MDS 9000 Series Switch. Which action must be taken?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NPIV must be enabled on the upstream switch.",
+  "The FCNS database must be disabled in the fabric.",
+  "A port channel must be configured to the upstream switch.",
+  "All switches in the fabric must be Cisco MDS switches."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": 137,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must configure a power redundancy policy on a Cisco UCS C-Series Rack Server. The power redundancy must support two power sources being used to power the server. Which configuration should be applied to meet the requirement?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "server# scope org /\nserver /org # scope psu-policy\nserver /org/psu-policy # set redundancy N+1\nserver /org/psu-policy* # commit-buffer",
+  "server# scope org /\nserver /org # scope psu-policy\nserver /org/psu-policy # set redundancy grid\nserver /org/psu-policy* # commit-buffer",
+  "server# scope org /\nserver /org # scope psu-policy\nserver /org/psu-policy # set psu-redundancy-policy N+1\nserver /org/psu-redundancy-policy* # commit-buffer",
+  "server# scope org /\nserver /org # scope psu-policy\nserver /org/psu-policy # set psu-redundancy-policy grid\nserver /org/psu-redundancy-policy* # commit-buffer"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/US/docs/unified_computing/ucs/sw/cli/config/guide/1.4.1/CLI_Config_Guide_1_4_1_chapter28.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

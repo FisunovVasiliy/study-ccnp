@@ -1,0 +1,25 @@
+{
+ "id": 160,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which statement describes monitoring Fibre Channel traffic on a Cisco UCS 6332 Fabric Interconnect?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Fibre Channel traffic is monitored only on one vHBA per server.",
+  "Fibre Channel traffic is capable to be monitored as it is encapsulated as FCoE.",
+  "The monitoring of Fibre Channel traffic is limited to the default VSAN.",
+  "The destination port for monitoring must be an unassigned Fibre Channel port."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/3-2/b_UCSM_GUI_System_Monitoring_Guide_3_2/b_UCSM_GUI_System_Monitoring_Guide_3_2_chapter_01101.pdf",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

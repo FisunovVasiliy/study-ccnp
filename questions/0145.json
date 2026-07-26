@@ -1,0 +1,30 @@
+{
+ "id": 145,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two configuration settings are available in the Cisco UCS Firmware Auto Sync Server policy? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Immediate Action",
+  "User Notification",
+  "User Acknowledge",
+  "Delayed Action",
+  "No Action"
+ ],
+ "correct": [
+  2,
+  4
+ ],
+ "mostVoted": [
+  "C",
+  "E"
+ ],
+ "voteNote": "CE 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/3-1/b_UCSM_GUI_Firmware_Management_Guide_3_1/b_UCSM_GUI_Firmware_Management_Guide_3_1_chapter_011.html",
+ "explanation": "You can use the Firmware Auto Sync Server policy in Cisco UCS Manager to determine whether firmware versions on recently discovered servers must be upgraded or not. With this policy, you can upgrade the firmware versions of recently discovered unassociated servers to match the firmware version defined in the default host firmware pack. In addition, you can determine if the firmware upgrade process should run immediately after the server is discovered, or run at a later time.\nFollowing are the values for the Firmware Auto Sync Server policy:\n- No Action: No firmware upgrade is initiated on the server. This value is selected by default.\n- User Acknowledge: Firmware on the server is not synchronized until the administrator acknowledges the upgrade in the Pending Activities dialog box.",
+ "needsAnswer": false,
+ "provisional": false
+}

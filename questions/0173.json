@@ -1,0 +1,30 @@
+{
+ "id": 173,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer is configuring a vHBA template in UCS Manager. The engineer needs to specify the logical addresses used by the vHBA and the path through which the SAN traffic flows. Which two resources must be specified in the vHBA template? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "MAC addresses",
+  "WWPN Pool",
+  "WWNN",
+  "Fabric ID",
+  "VLAN ID"
+ ],
+ "correct": [
+  1,
+  3
+ ],
+ "mostVoted": [
+  "B",
+  "D"
+ ],
+ "voteNote": "BD 100%",
+ "reference": "https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/whitepaper_c11-697337.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

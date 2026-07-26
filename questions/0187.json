@@ -1,0 +1,27 @@
+{
+ "id": 187,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer configures a converged network adapter (CNA) and must associate a virtual Fibre Channel 7 interface to VSAN 7. The CNA is connected to the interface Eth1/7, and VLAN 700 is mapped to the VSAN. Which configuration must be applied to create the virtual Fibre Channel interface and associate it with the Ethernet physical interface?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch(config)# interface vfc 7\nswitch(config-if)# bind interface ethernet 1/7",
+  "switch(config)# vlan 700\nswitch(config-vlan)# fcoe vsan 7",
+  "switch(config)# vsan database\nswitch(config-vsan)# vsan 7 interface vfc 7",
+  "switch(config)# interface ethernet 1/7\nswitch(config-if)# vfc 7 attach vlan 1,700"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

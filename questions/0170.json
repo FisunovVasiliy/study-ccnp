@@ -1,0 +1,27 @@
+{
+ "id": 170,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which configuration statically assigns VSAN membership to a virtual Fibre Channel interface?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch(config-vsan-db)# vsan 100 interface vfc 31",
+  "switch(config-vsan-db)# vsan 100 fc 3/1",
+  "switch(config-vsan-db)# vsan 100 bind interface fc 3/1",
+  "switch(config-vsan-db)# vsan 100 bind interface vfc 31"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli/CLIConfigurationGuide/vsan.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 151,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which method must a network engineer use to upgrade the BIOS firmware or a Cisco UCS standalone C-Series rack-mount server?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Use the U-ACPI Interface.",
+  "Use the Cisco host upgrade utility.",
+  "Use the Cisco hardware upgrade utility.",
+  "Use the Cisco host firmware policy."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/lomug/2-0-x/3_0/b_huu_3_0_1/b_huu_2_0_13_chapter_011.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

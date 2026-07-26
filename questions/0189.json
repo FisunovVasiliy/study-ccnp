@@ -1,0 +1,27 @@
+{
+ "id": 189,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which communication method does NFS use for requests between servers and clients?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SMB",
+  "RPC",
+  "SSC",
+  "XDR"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

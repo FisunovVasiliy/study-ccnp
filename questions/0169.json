@@ -1,0 +1,32 @@
+{
+ "id": 169,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nAn engineer must configure and activate a zone containing a single member on a Cisco MDS switch and save the configuration.\nDrag and drop the configuration steps from the left into the correct order on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "zone name Zone1 vsan 4",
+  "member pwwn 10:00:00:23:45:67:89:ac",
+  "zoneset activate name Zoneset1 vsan 4",
+  "member Zone1",
+  "copy running-config startup-config",
+  "zoneset name Zoneset1 vsan 4"
+ ],
+ "correctOrder": [
+  0,
+  1,
+  5,
+  3,
+  2,
+  4
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_2/configuration/guides/fabric/nx-os/nx_os_fabric/zone.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

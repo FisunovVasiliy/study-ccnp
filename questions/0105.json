@@ -1,0 +1,30 @@
+{
+ "id": 105,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two hypervisors does Cisco HyperFlex support? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "OpenStack",
+  "Citrix XenServer",
+  "VMware vSphere",
+  "RedHat KVM",
+  "Microsoft Hyper-V"
+ ],
+ "correct": [
+  2,
+  4
+ ],
+ "mostVoted": [
+  "C",
+  "E"
+ ],
+ "voteNote": "CE 100%",
+ "reference": "https://www.connection.com/~/media/pdfs/brands/c/cisco/hyperflex/1048176cnxnciscohyperflex40anywhereataglance.pdf",
+ "explanation": "Cisco HyperFlex systems include a purpose-built, high-performance, low-latency hyperconverged platform that adapts to support any application, in any cloud, anywhere. The platform supports multiple hypervisors and virtualized environments (Microsoft Windows Server 2019 Hyper-V, VMware vSphere), Docker containers with Kubernetes, multicloud services, and edge deployments to efficiently and economically deploy, monitor, and manage applications.",
+ "needsAnswer": false,
+ "provisional": false
+}

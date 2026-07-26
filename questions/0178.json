@@ -1,0 +1,30 @@
+{
+ "id": 178,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two actions should be taken before an upgrade is started on a Cisco MDS switch? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "disable Cisco Fabric Services",
+  "check the impact of the upgrade using the show install all impact command",
+  "free up space on the USB3 device by deleting old Cisco NX-OS image files",
+  "make the primary supervisor the active supervisor",
+  "back up the configuration"
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/5_2/upgrade/guides/nx-os/upgrade.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

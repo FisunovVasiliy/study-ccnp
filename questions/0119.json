@@ -1,0 +1,27 @@
+{
+ "id": 119,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A UCS B-Series server located in B5108 chassis 1 slot 1 is currently unavailable. The server needs to be associated with a specific service profile when it becomes available. Which associate service profile option should be selected to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "restrict migration",
+  "server pool",
+  "server",
+  "custom server"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 70%, C 30%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,34 @@
+{
+ "id": 155,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the storage characteristics from the left onto the storage types on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "expensive and complex to manage",
+  "moderately expensive and simple to configure",
+  "most resilient, highly scalable, and high-performance storage",
+  "appliance providing file system access",
+  "lacks scalability, performance, and advanced features"
+ ],
+ "targets": [
+  "NAS",
+  "SAN"
+ ],
+ "matchCorrect": [
+  1,
+  0,
+  1,
+  0,
+  0
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

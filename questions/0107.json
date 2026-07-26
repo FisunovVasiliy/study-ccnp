@@ -1,0 +1,27 @@
+{
+ "id": 107,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer changed a configuration and must perform a rollback.\nWhich statement applies to a Cisco Nexus 5600 Series Switch?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The configuration rollback functionality is disabled when FCoE is enabled.",
+  "A system checkpoint is generated automatically when the running configuration is saved to NVRAM.",
+  "A user who is assigned to the network-operator user role is allowed to perform a rollback.",
+  "Errors are skipped when an atomic rollback type is triggered."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/system_management/503_n1_1/cisco_n5k_system_mgmt_cg_rel_503_n1_1_chapter11.pdf",
+ "explanation": "Guidelines and Limitations -\nRollback has the following configuration guidelines and limitations:\n- You can create up to ten checkpoint copies.\n- You cannot apply the checkpoint file of one switch into another switch.\n- Your checkpoint file names must be 75 characters or less.\n- You cannot start a checkpoint filename with the word system.\n- When FCoE is enabled, the checkpoint and configuration rollback functionality are disabled.",
+ "needsAnswer": false,
+ "provisional": false
+}

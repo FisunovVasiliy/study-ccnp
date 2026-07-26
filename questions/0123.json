@@ -1,0 +1,30 @@
+{
+ "id": 123,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "What are two requirements when planning a Cisco HyperFlex All Flash standard cluster installation using three Cisco HX240c M5 Series servers? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "If the Jumbo MTU option in the HyperFlex installer is enabled, then jumbo frames do not have to be enabled on the upstream switches.",
+  "This cluster deployment type must support a mix of HDD and SSD.",
+  "The servers must be discovered, unassociated, and connected to each fabric interconnect.",
+  "If the Jumbo MTU option in the HyperFlex installer is enabled, then jumbo frames must also be enabled on the upstream switches.",
+  "The hypervisors must be installed to Cisco FlexFlash SD cards."
+ ],
+ "correct": [
+  2,
+  3
+ ],
+ "mostVoted": [
+  "C",
+  "D"
+ ],
+ "voteNote": "CD 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/3_5/b_HyperFlexSystems_AdministrationGuide_3_5/b_HyperFlexSystems_AdministrationGuide_3_5_chapter_01111.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

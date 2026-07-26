@@ -1,0 +1,27 @@
+{
+ "id": 196,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A storage array must be connected to port ethernet1/10 on a Cisco MDS 9000 Series switch. In addition, the array must connect using the FCoE protocol and be single-homed. Which configuration meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "vsan database\nvlan 101\nvsan 101\nfcoe vsan 101\ninterface vfc 10\ninterface 1/10\nswitchport mode e\nfcoe vfc 10",
+  "interface vfc 10\nswitchport mode f\nbind interface ethernet 1/10\nvsan database\nvsan 101\nvlan 101\nfcoe vsan 101\nvsan 101 interface vfc 10",
+  "vlan database\nvlan 101\nvsan\nvsan 101\nfcoe vsan 101\ninterface vfc 10\ninterface ethernet1/10\nswitchport mode trunk\nbind interface vfc 10\nfcoe vsan 101",
+  "vlan database\nvlan 101\nfcoe vsan 101\nenable interface vfc 10\nvsan 101\ninterface vfc 10\nswitchport mode fcoe\nswitchport access vlan 101\nbind interface ethernet1/10"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "We must use mode f, because in a switch, on a port which connects to a node, we configure an F port (fabric port). On the endhost (array/storage) side, this port is an N (node) port.",
+ "needsAnswer": false,
+ "provisional": false
+}

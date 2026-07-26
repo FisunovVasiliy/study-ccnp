@@ -1,0 +1,27 @@
+{
+ "id": 164,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is converting a Cisco MDS switch to support NPIV mode. What should be considered when implementing the solution?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It requires mapping of external interface traffic.",
+  "It must be enabled on VSAN 1 only.",
+  "It must be enabled globally on all VSANs.",
+  "It requires the FLOGI database to be disabled."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/5_0/configuration/guides/int/nxos/cli_interfaces/npv.html",
+ "explanation": "About N Port Identifier Virtualization\nN port identifier virtualization (NPIV) provides a means to assign multiple FC IDs to a single N port. This feature allows multiple applications on the N port to use different identifiers and allows access control, zoning, and port security to be implemented at the application level.\nYou must globally enable NPIV for all VSANs on the MDS switch to allow the NPIV-enabled applications to use multiple N port identifiers.",
+ "needsAnswer": false,
+ "provisional": false
+}

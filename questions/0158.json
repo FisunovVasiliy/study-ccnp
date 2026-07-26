@@ -1,0 +1,27 @@
+{
+ "id": 158,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which product includes prebuilt templates that are available to be used to customize fabric deployments?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Cisco Tetration",
+  "Cisco Data Center Network Manager",
+  "Cisco ACI",
+  "Cisco UCS Manager"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

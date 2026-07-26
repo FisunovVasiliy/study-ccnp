@@ -1,0 +1,34 @@
+{
+ "id": 142,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the fields for configuring a full state backup file of the Cisco UCS Manager from the left onto the descriptions on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "hostname",
+  "protocol",
+  "remote file",
+  "type"
+ ],
+ "targets": [
+  "location where the backup file is stored",
+  "full path to the backup configuration file",
+  "binary file that includes a snapshot of the entire system",
+  "settings used to transfer the file to the backup server"
+ ],
+ "matchCorrect": [
+  0,
+  3,
+  1,
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

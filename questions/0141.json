@@ -1,0 +1,27 @@
+{
+ "id": 141,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer is deploying a Cisco All-Flash HyperFlex solution. Which local storage configuration is required for the operating system and persistent logging?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "one solid state drive",
+  "two SATA drives",
+  "one SATA drive",
+  "two solid state drives"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

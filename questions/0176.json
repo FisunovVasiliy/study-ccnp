@@ -1,0 +1,30 @@
+{
+ "id": 176,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. An engineer implements SPAN configuration on a Nexus 5000 series switch. Which two commands are necessary to complete the SPAN session configuration? (Choose two.)",
+ "context": "N5K-Core(config)# monitor session 1 type fc\nN5K-Core(config-monitor)# source interface fc2/1 rx\nN5K-Core(config-monitor)# destination interface fc2/2\nN5K-Core(config-monitor)# no shut",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure switchport speed 4000 under interface fc2/2.",
+  "Configure the switchport monitor under interface fc2/2.",
+  "Configure session type fc under monitor session 1.",
+  "Configure the switchport mode SD under interface fc2/1.",
+  "Configure the switchport mode SD under interface fc2/2."
+ ],
+ "correct": [
+  0,
+  4
+ ],
+ "mostVoted": [
+  "A",
+  "E"
+ ],
+ "voteNote": "AE 64%, CE 15%, BC 15%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 144,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which component is disrupted when the Cisco Integrated Management Controller is upgraded on a Cisco UCS Series Server?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SAN traffic",
+  "Cisco UCS Manager",
+  "KVM sessions",
+  "data traffic"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

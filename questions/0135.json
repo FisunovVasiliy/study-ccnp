@@ -1,0 +1,27 @@
+{
+ "id": 135,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer plans to upgrade the firmware of a Cisco UCS B-Series chassis by using the Auto Install feature. Which component is upgraded during the infrastructure firmware upgrade stage?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Adapter",
+  "Cisco IMC",
+  "I/O Modules",
+  "BIOS"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/firmware-mgmt/gui/2-2/b_GUI_Firmware_Management_22/b_GUI_Firmware_Management_22_chapter_0101.html#task_8F47F9CA290F447589F9384E0B55DC30",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 183,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must start a software upgrade on a Cisco Nexus 5000 Series switch during a zone merge. What is the result of this action?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The upgrade stops.",
+  "The zone merge pauses until the upgrade completes.",
+  "The zone merge stops.",
+  "The zone merge executes and then the upgrade completes."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/upgrade/503_N1_1/n5000_upgrade_downgrade_503_n1_1.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 200,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is an advantage of NFS as compared to Fibre Channel?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NFS removes the impact of IP overhead.",
+  "NFS enables thin provisioning for LUNs.",
+  "NFS provides direct access to the underlying storage hardware.",
+  "NFS provides the dynamic allocation of storage capacity."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

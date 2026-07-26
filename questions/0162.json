@@ -1,0 +1,30 @@
+{
+ "id": 162,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two statements describe modifying Cisco UCS user accounts? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Disabling a user account maintains all of the data in the Cisco UCS Fabric Interconnect.",
+  "The admin account is used only to log on by using SSH.",
+  "The password of the user account must contain a minimum of 10 characters.",
+  "Local user accounts override the same account on a remote authentication server, such as TACACS, RADIUS, or LDAP.",
+  "The password of the user account expires in 30 days."
+ ],
+ "correct": [
+  0,
+  3
+ ],
+ "mostVoted": [
+  "A",
+  "D"
+ ],
+ "voteNote": "AD 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/3-1/b_Cisco_UCS_Admin_Mgmt_Guide_3_1/b_Cisco_UCS_Admin_Mgmt_Guide_chapter_01.html",
+ "explanation": "A locally authenticated user account is authenticated directly through the fabric interconnect and can be enabled or disabled by anyone with admin or aaa privileges.\nAfter a local user account is disabled, the user cannot log in. The database does not delete the configuration details for disabled local user accounts. If you re-enable a disabled local user account, the account becomes active with the existing configuration, including the username and password.\nA remotely authenticated user account is any user account that is authenticated through LDAP, RADIUS, or TACACS+.\nIf a user maintains a local user account and a remote user account simultaneously, the roles defined in the local user account override those maintained in the remote user account.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 152,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure the order in which the server attempts to boot from available boot device types using Cisco Integrated Management Controller (Cisco IMC). The engineer must change the boot order configuration during the setup and apply the new requirements multiple times. The requirement is to change the Cisco IMC actual boot order so it is different from the configured boot order. Which setting accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Enable the system to boot with the configured boot order.",
+  "Set the boot configuration directly through BIOS.",
+  "Apply UEFI Secure Boot for a nonsupported operating system.",
+  "Configure the legacy and precision boot order to be mutually exclusive."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/c/sw/gui/config/guide/1.5/b_Cisco_UCS_C-series_GUI_Configuration_Guide.151_chapter_011.html#d66929e662a1635",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

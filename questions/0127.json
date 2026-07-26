@@ -1,0 +1,30 @@
+{
+ "id": 127,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer is implementing Cisco Intersight in a secure environment. The environment must use LDAP directory service and ensure information integrity and confidentiality. Which two steps must be taken to implement the solution? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Enable Certificate Signing Request in Cisco Intersight",
+  "Add a trusted root LDAP certificate to Cisco Intersight",
+  "Enable Encryption for LDAP",
+  "Add a self-signed LDAP certificate to Cisco Intersight",
+  "Add a trusted OAuth token to Cisco Intersight"
+ ],
+ "correct": [
+  1,
+  2
+ ],
+ "mostVoted": [
+  "B",
+  "C"
+ ],
+ "voteNote": "BC 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

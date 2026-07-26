@@ -1,0 +1,30 @@
+{
+ "id": 111,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two statements describe the process of upgrading an EPLD on a Cisco MDS 9000 Series Switch? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "EPLDs are only capable to be upgraded to the latest EPLD image.",
+  "EPLD upgrades are capable to be completed without powering down the module during the upgrade.",
+  "An upgrade verification identifies the impact of each EPLD upgrade.",
+  "The EPLDs for all the modules on a switch must be upgraded at the same time.",
+  "EPLDs are capable to be upgraded without replacing the hardware."
+ ],
+ "correct": [
+  2,
+  4
+ ],
+ "mostVoted": [
+  "C",
+  "E"
+ ],
+ "voteNote": "CE 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

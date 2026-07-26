@@ -1,0 +1,27 @@
+{
+ "id": 174,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer configures FCIP on a Cisco MDS 9000 Series switch. What is the result of implementing the configuration?",
+ "context": "MDSSWITCH(config)# interface fcip 1\nMDSSWITCH(config-if)# peer-info ipaddr 10.1.1.1\nMDSSWITCH(config-if)# write-accelerator\nMDSSWITCH(config-if)# ip-compression mode auto\nMDSSWITCH(config-if)# no shutdown",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The switch attempts to make two TCP connections.",
+  "Compression is performed by using hardware.",
+  "Compression is performed by using software.",
+  "Mode2 is enabled by default."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

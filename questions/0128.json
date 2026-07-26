@@ -1,0 +1,27 @@
+{
+ "id": 128,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Due to a domain name change at a customer site, a Cisco UCS cluster must be renamed. An engineer must recommend a solution to ensure that the Cisco UCS Manager is available over HTTPS.\nWhich action accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Regenerate the default key ring certificate manually",
+  "Reinstall the cluster to generate the default key ring certificate",
+  "Reboot the SSO component of the Cisco UCS Manager",
+  "Generate a new default key ring certificate from the Cisco UCS Manager"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

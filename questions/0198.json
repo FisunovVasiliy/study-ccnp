@@ -1,0 +1,30 @@
+{
+ "id": 198,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must implement the FCoE on the Cisco Nexus 9000 Series switch-based infrastructure. The deployment will contain dual-homed fabric extenders and must support jumbo frames with port channels. Which two sets of actions complete the configuration? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Create a virtual Fibre Channel Interface. Bind vFC to physical interface.",
+  "Configure the interface with mtu 9516. Disable the feature NPIV.",
+  "Create a dedicated VSAN for FEX. Bind VSAN to FEX uplinks.",
+  "Execute fcoe enable-fex. Configure FEX uplinks with mtu 9216.",
+  "Create a FCoE switch profile. Enable config sync."
+ ],
+ "correct": [
+  0,
+  3
+ ],
+ "mostVoted": [
+  "A",
+  "D"
+ ],
+ "voteNote": "AD 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/fcoe/configuration/guide/b-cisco-nexus-9000-nx-os-fcoe-configuration-guide-92x/b-cisco-nexus-9000-nx-os-fcoe-configuration-guide-92x_chapter_0100.pdf",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

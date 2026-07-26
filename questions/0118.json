@@ -1,0 +1,30 @@
+{
+ "id": 118,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two firmware packages are included in the Cisco UCS C-Series Rack-Mount UCS-Managed Server Software bundle? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "CIMC",
+  "BIOS",
+  "PSU",
+  "system",
+  "third-party"
+ ],
+ "correct": [
+  0,
+  1
+ ],
+ "mostVoted": [
+  "A",
+  "B"
+ ],
+ "voteNote": "AB 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/3-1/b_UCSM_GUI_Firmware_Management_Guide_3_1/b_UCSM_GUI_Firmware_Management_Guide_3_1_chapter_011.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 146,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A Cisco Nexus 9000 Series switch experiences a startup configuration corruption. The engineer must implement a procedure to recover the backup configuration file from the switch. Which command set must be used?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "1. Clear the current configuration of the switch\n2. Restart the device\n3. Copy a previously saved configuration file to the running-configuration\n4. Copy the running-configuration to the startup configuration",
+  "1. Clear the current configuration of the switch\n2. Restart the device\n3. Copy the running-configuration to the startup configuration\n4. Copy a previously saved configuration file to the running configuration",
+  "1. Copy the running-configuration to the startup configuration\n2. Clear the current configuration of the switch\n3. Restart the device\n4. Copy a previously saved configuration file to the running configuration",
+  "1. Restart the device\n2. Copy the running-configuration file to a remote server\n3. Clear the current configuration of the switch\n4. Copy the running configuration to the startup configuration"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/fundamentals/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_Fundamentals_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_Fundamentals_Configuration_Guide_7x_chapter_01001.html",
+ "explanation": "Rolling Back to a Previous Configuration\nTo roll back your configuration to a snapshot copy of a previously saved configuration, you need to perform the following steps:\n1. Clear the current running image with the write erase command.\n2. Restart the device with the reload command.\n3. Copy the previously saved configuration file to the running configuration with the copy configuration-file running-configuration command.\n4. Copy the running configuration to the start-up configuration with the copy running-config startup-config command.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 110,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two statements describe the process of performing an EPLD upgrade on a Cisco MDS 9000 Series Switch? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The upgrade is performed from the standby supervisor module.",
+  "The upgrade process disrupts only the module that is being upgraded.",
+  "The upgrade is performed on the active supervisor.",
+  "If an upgrade is interrupted, the upgrade continues after a connection is restored.",
+  "Modules must be online to be upgraded."
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

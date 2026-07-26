@@ -1,0 +1,27 @@
+{
+ "id": 177,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a recommended design choice in a topology for multipathing iSCSI traffic?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "single initiator to dual targets",
+  "two NICs bonded together on the initiator",
+  "dual initiators to a single target with bonded interfaces",
+  "initiators and targets in separate subnets"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 40%, D 26%, B 15%, other 19%",
+ "reference": "https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-4C19E34E-764C-4069-9D9F-D0F779F2A96C.html",
+ "explanation": "You can create multiple paths by configuring multiple ports and target portals on different IP subnets. By keeping initiator and target ports in different subnets, you can force ESXi to create paths through specific ports. In this configuration, you do not use port binding because port binding requires that all initiator and target ports are on the same subnet.",
+ "needsAnswer": false,
+ "provisional": false
+}

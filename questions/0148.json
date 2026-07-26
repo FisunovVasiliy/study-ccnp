@@ -1,0 +1,27 @@
+{
+ "id": 148,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must perform a backup operation of the Cisco UCS system. The backup must be transferred to a secure location using UDP and must contain information about VLANs, VSANs, and other policies. Also, the operations team requires the backup file to be in a human-readable format. Which configuration set meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Type: All configuration Protocol: FTP",
+  "Type: Full state Protocol: SFTP",
+  "Type: Logical configuration Protocol: TFTP",
+  "Type: System configuration Protocol: SCP"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/1-0-2/b_CLI_Config_Guide_1-0-2/CLI_Config_Guide_1-0-2_chapter29.pdf",
+ "explanation": "TFTP is the only protocol that uses UDP port 69. Logical State backup includes all logical configuration contains settings such as service profiles, VLANs, VSANs, pools, and policies.",
+ "needsAnswer": false,
+ "provisional": false
+}

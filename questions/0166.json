@@ -1,0 +1,27 @@
+{
+ "id": 166,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What is the result of implementing this configuration?",
+ "context": "N5K-1(config)# interface fc2/3\nN5K-1(config-if)# switchport mode SD",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The Fibre Channel interface is configured for SPAN.",
+  "The Fibre Channel interface is configured for source distribution.",
+  "The Fibre Channel interface is configured for FSPF.",
+  "The Fibre Channel interface is configured for synchronization distribution."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/en/US/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli_rel_4_1/Cisco_Nexus_5000_Series_Switch_CLI_Software_Configuration_Guide_chapter50.html#task_1168696",
+ "explanation": "You can configure a Fibre Channel port as a SPAN destination port.\nProcedure:\nStep 1: switch# configure terminal - Enters configuration mode.\nStep 2: switch(config)# interface fc slot/port - Enters interface configuration mode for the specified Fibre Channel interface selected by the slot and port values.\nStep 3: switch(config-if)# switchport mode SD - Sets the interface to SPAN destination (SD) mode.",
+ "needsAnswer": false,
+ "provisional": false
+}

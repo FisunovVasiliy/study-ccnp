@@ -1,0 +1,27 @@
+{
+ "id": 120,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A Cisco UCS C-Series server is installed at a data center. The server should be managed by the Cisco UCS Manager by using a single cable for management and data traffic. Which configuration should be applied after the physical connection is established?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "UCS-A# scope server 1\nUCS-A /server# scope cimc\nUCS-A /server/cimc # scope mgmt-conn sideband\nUCS-A /server/cimc # mgmt-conn-state enabled\nUCS-A /server/cimc/mgmt-conn* # commit-buffer",
+  "UCS-A# scope chassis 1\nUCS-A /chassis# scope cimc\nUCS-A /chassis/cimc # scope mgmt-conn sideband\nUCS-A /chassis/cimc/mgmt-conn # mgmt-conn-state enabled\nUCS-A /chassis/cimc/mgmt-conn* # commit-buffer",
+  "UCS-A# scope chassis 1\nUCS-A /chassis# scope cimc\nUCS-A /chassis/cimc # set mgmt-conn-state enabled\nUCS-A /chassis/cimc/mgmt-conn* # commit-buffer",
+  "UCS-A# scope server 1\nUCS-A /server# scope cimc\nUCS-A /server/cimc # scope mgmt-conn sideband\nUCS-A /server/cimc/mgmt-conn #set mgmt-conn-state enabled\nUCS-A /server/cimc/mgmt-conn* # commit-buffer"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

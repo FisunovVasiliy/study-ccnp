@@ -1,0 +1,40 @@
+{
+ "id": 168,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the NAS characteristics from the left onto the correct categories on the right. Not all options are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "block-based data storage",
+  "Ethernet protocol",
+  "FCoE",
+  "file-based data storage",
+  "Fibre Channel protocol",
+  "stripe data and metadata across nodes",
+  "UPnP"
+ ],
+ "targets": [
+  "storage type",
+  "clustering type",
+  "connectivity type",
+  "serving protocol type"
+ ],
+ "matchCorrect": [
+  null,
+  2,
+  null,
+  0,
+  null,
+  1,
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://en.wikipedia.org/wiki/Network-attached_storage",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

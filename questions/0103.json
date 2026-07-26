@@ -1,0 +1,27 @@
+{
+ "id": 103,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is the benefit of adding Cisco HyperFlex Hardware Acceleration Cards to a HyperFlex deployment?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "increased compression efficiency",
+  "increased network throughput",
+  "GPU acceleration",
+  "offline encryption acceleration"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/Installation_VMware_ESXi/3_5/b_HyperFlexSystems_Installation_Guide_for_VMware_ESXi_3_5/m_configure_hyperflex_hardware_acceleration_cards.html",
+ "explanation": "HyperFlex Hardware Acceleration Cards provide improved performance and compression efficiency for most storage workloads.",
+ "needsAnswer": false,
+ "provisional": false
+}

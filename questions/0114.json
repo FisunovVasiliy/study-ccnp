@@ -1,0 +1,27 @@
+{
+ "id": 114,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Multiple roles are applied to a user on the Cisco MDS 9000 Series Switch.\nWhich statement describes the result of this configuration?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The last role assigned takes precedence over previous roles.",
+  "Access to a command takes priority over being denied access to a command.",
+  "Any commands that have conflicting settings between roles are denied.",
+  "The first role assigned takes precedence over subsequent roles."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

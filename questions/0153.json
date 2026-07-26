@@ -1,0 +1,30 @@
+{
+ "id": 153,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "In an FCoE environment, for which two sets of data must an interface that implements the PAUSE mechanism always provision sufficient ingress buffer? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "frames that were sent with high credit",
+  "frames that were sent on the link but not yet received",
+  "frames that were processed and transmitted by the transmitter after the PAUSE frame left the sender",
+  "frames that were processed and transmitted by the transmitter before the PAUSE frame left the sender",
+  "frames that were sent on the link and received"
+ ],
+ "correct": [
+  1,
+  3
+ ],
+ "mostVoted": [
+  "B",
+  "D"
+ ],
+ "voteNote": "BD 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_2/configuration/guides/qos/nx-os/qos_bk/qos_pfc.pdf",
+ "explanation": "In case of congestion, the long distance ingress ports sends a pause frame to its peer to pause all data transmission on the link for a specified period of time in order to absorb the in-flight packets.\nWhen a pause frame is generated from a switch, it takes time to reach the peer switch. Until the packet reaches to peers all the in-flight packets need to be buffered and should not be dropped.",
+ "needsAnswer": false,
+ "provisional": false
+}

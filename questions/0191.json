@@ -1,0 +1,30 @@
+{
+ "id": 191,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "A customer reports Fibre Channel login requests to a Cisco MDS 9000 Series switch from an authorized source. The customer requires a feature that will allow all devices already logged in and learned to be added to the Fibre Channel active database. Which two features must be enabled to accomplish this goal? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "auto-learning",
+  "smart aliases",
+  "port security",
+  "enhanced zoning",
+  "device aliases"
+ ],
+ "correct": [
+  0,
+  2
+ ],
+ "mostVoted": [
+  "A",
+  "C"
+ ],
+ "voteNote": "AC 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

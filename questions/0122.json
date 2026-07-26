@@ -1,0 +1,25 @@
+{
+ "id": 122,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which server policy is used to install new Cisco IMC software on a server?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "hypervisor firmware policy",
+  "host firmware policy",
+  "BIOS software policy",
+  "Cisco IMC software policy"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/4-0/b_UCSM_CLI_Firmware_Management_Guide_4-0/b_UCSM_CLI_Firmware_Management_Guide_4-0_chapter_01.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

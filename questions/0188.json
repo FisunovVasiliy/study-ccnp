@@ -1,0 +1,27 @@
+{
+ "id": 188,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A company is running a pair of Cisco Nexus 7706 Series switches as part of a data center segment. All network engineers have restricted read-write access to the core switches. A network engineer must add a new FCoE VLAN to allow traffic from servers toward FCoE storage. Which set of actions must be taken to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "1. Assign the network-admin role to a user.\n2. Commit the role to the switch to the active user database.",
+  "1. Modify a network-operator role and add the required privileges.\n2. Assign a VDC-operator role to a user.",
+  "1. Create a user defined role and add the required privileges.\n2. Assign a role to a user.",
+  "1. Add the required privilege to the VDC-admin role.\n2. Commit the changes to the active user database."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

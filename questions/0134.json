@@ -1,0 +1,30 @@
+{
+ "id": 134,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer creates a service profile in Cisco UCS Manager and must assign a policy that reboots blades when changes are applied. The changes must be applied only after user acknowledgment. Which two policies must be configured to meet these requirements? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Reboot Policy",
+  "Boot Policy",
+  "Power Control Policy",
+  "Global Policy",
+  "Maintenance Policy"
+ ],
+ "correct": [
+  0,
+  4
+ ],
+ "mostVoted": [
+  "A",
+  "E"
+ ],
+ "voteNote": "AE 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/3-1/b_Cisco_UCS_Admin_Mgmt_Guide_3_1/b_Cisco_UCS_Admin_Mgmt_Guide_3_1_chapter_01011.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

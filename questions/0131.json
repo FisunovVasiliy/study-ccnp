@@ -1,0 +1,27 @@
+{
+ "id": 131,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. A Cisco Nexus 5600 Series switch experiences unexplained packet drops. An engineer configures a SPAN session to capture dropped packets. Which two command sets complete the configuration? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "span session 2\n type SPAN-on-DROP\n destination interface ethernet 1/3\n source interface ethernet 1/16",
+  "interface ethernet 1/3\n switchport monitor",
+  "monitor session 2 type SPAN-on-DROP\n destination interface ethernet 1/3\n source interface ethernet 1/16",
+  "monitor session 2\n destination interface ethernet 1/3\n span interface ethernet 1/16",
+  "interface ethernet 1/3\n switchport span"
+ ],
+ "correct": [
+  1,
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus6000/sw/system_management/6x/b_6k_System_Mgmt_Config_6x/b_6k_System_Mgmt_Config_602N11_chapter_01111.pdf",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

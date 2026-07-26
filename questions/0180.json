@@ -1,0 +1,27 @@
+{
+ "id": 180,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which storage protocol reduces file locks by using leasing?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SMB",
+  "NFS 3",
+  "NFS 4",
+  "CIFS"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 63%, A 25%, other 13%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

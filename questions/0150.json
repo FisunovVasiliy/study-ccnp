@@ -1,0 +1,27 @@
+{
+ "id": 150,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a benefit of independent resource scaling in Cisco HyperFlex hybrid architecture?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "remote booting of converged servers",
+  "flexible expansion of compute, caching, and capacity",
+  "multivendor converged node hardware support",
+  "support for compute nodes with third-party storage"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

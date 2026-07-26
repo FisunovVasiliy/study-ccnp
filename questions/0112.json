@@ -1,0 +1,27 @@
+{
+ "id": 112,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What is the outcome of this command when the EPLD is updated on a Cisco Nexus 9000 Series Switch?",
+ "context": "show install all impact epld bootflash:n9000-epld.6.1.2.I3.1.img",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "displays the compatibility of the EPLD upgrade and the image in the bootflash",
+  "shows a simulated upgrade of the EPLD",
+  "upgrades the EPLD on the switch disruptively",
+  "displays the impact of the upgrade on the operation of the switch"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 133,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer needs to perform a backup of user roles and locales from Cisco UCS Manager to replicate the setting to a different fabric interconnect. The engineer wants to review the file before importing it to a target fabric interconnect. Which backup type must be selected to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "logical configuration",
+  "full state",
+  "system configuration",
+  "all configuration"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/gui/config/guide/141/UCSM_GUI_Configuration_Guide_141_chapter43.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

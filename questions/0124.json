@@ -1,0 +1,30 @@
+{
+ "id": 124,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. Service degradation is reported on a VM that is deployed on a Cisco UCS B-Series Server. The traffic from the vNIC is required to SPAN in both directions to a packet analyzer that is connected to UCS-A slot 2 port 12. Which two commands are needed to complete the configuration? (Choose two.)",
+ "context": "UCS-A# scope eth-traffic-mon\nUCS-A /eth-traffic-mon # scope fabric a\nUCS-A /eth-traffic-mon/fabric # create eth-mon-session Monitor33\nUCS-A /eth-traffic-mon/fabric/eth-mon-session/dest-interface* #\ncommit-buffer\nUCS-A /eth-traffic-mon/fabric/eth-mon-session/dest-interface #\n\nUCS-A# scope service-profile org / serviceprofile1\nUCS-A /org/service-profile # scope vnic ether-dynamic-prot-008\nUCS-A /org/service-profile/vnic # create mon-src Monitor23\nUCS-A /org/service-profile/vnic/mon-src* # commit-buffer\nUCS-A /org/service-profile/vnic/mon-src #\n\nUCS-A# scope eth-traffic-mon\nUCS-A /eth-traffic-mon # scope fabric a\nUCS-A /eth-traffic-mon/fabric # scope eth-mon-session Monitor33\nUCS-A /eth-traffic-mon/fabric/eth-mon-session # enable\nUCS-A /eth-traffic-mon/fabric/eth-mon-session* # commit-buffer",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "UCS-A /service-profile/vnic/mon-src* # set direction receive transmit",
+  "UCS-A /eth-traffic-mon/fabric/eth-mon-session* # create dest-interface 2 12",
+  "UCS-A /eth-traffic-mon/fabric/eth-mon-session # activate",
+  "UCS-A /eth-traffic-mon/fabric/eth-mon-session* # create eth-mon-session/dest-interface 2 12",
+  "UCS-A /service-profile/vnic/mon-src* # set direction both"
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 100%",
+ "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/cli/config/guide/1.4.1/CLI_Config_Guide_1_4_1_chapter42.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

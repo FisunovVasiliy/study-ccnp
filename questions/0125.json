@@ -1,0 +1,27 @@
+{
+ "id": 125,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer updated firmware on Fabric Interconnects and activates it. However, the endpoint fails to boot from the new firmware image. What is expected to occur in this case?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The system defaults to and boots into kickstart image",
+  "The system defaults to and boots into GOLD firmware image",
+  "The system defaults to the GOLD firmware image",
+  "The system defaults to the backup image version"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-0/b_UCSM_CLI_Firmware_Management_Guide_4-0/b_UCSM_CLI_Firmware_Management_Guide_4-0_chapter_011.html",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

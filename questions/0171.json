@@ -1,0 +1,30 @@
+{
+ "id": 171,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. An engineer must configure FCoE on a Cisco Nexus switch. Which two command sets complete this configuration? (Choose two.)",
+ "context": "vlan 10\n fcoe vsan 10\n\ninterface ethernet 1/3\n switchport mode trunk\n switchport trunk allowed vlan 10",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "vsan database\n vsan 10 interface vfc 10",
+  "interface vfc 10\n bind interface ethernet 1/3\n no shut",
+  "vsan database\n vsan 10 interface ethernet 1/3",
+  "interface vfc 10\n bind interface fcoe-vfc 1/3\n no shut",
+  "interface fcoe 10\n bind interface ethernet 1/3\n no shut"
+ ],
+ "correct": [
+  0,
+  1
+ ],
+ "mostVoted": [
+  "A",
+  "B"
+ ],
+ "voteNote": "AB 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

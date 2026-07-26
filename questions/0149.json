@@ -1,0 +1,27 @@
+{
+ "id": 149,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "When deploying a Cisco HyperFlex edge with a pair of switches, what is the minimum number of interfaces in trunk mode required on each HX node?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "1",
+  "2",
+  "4",
+  "6"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

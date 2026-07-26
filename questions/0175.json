@@ -1,0 +1,27 @@
+{
+ "id": 175,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "The FCoE technology is used in a data center and the MDS switches are configured as Fibre Channel Forwarders. Which configuration should be applied to an MDS switch in order to be used as the best switch to connect by the CNAs in the fabric?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "fcoe fcf-priority 512",
+  "fcoe fcf-priority 0",
+  "no fcoe fcf-priority",
+  "fcoe fcf-priority 1024"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/fcoe/521n11/b_5k_FCoE_Config_521N11/b_5k_FCoE_Config_521N11_chapter_011.pdf",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

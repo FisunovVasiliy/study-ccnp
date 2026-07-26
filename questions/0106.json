@@ -1,0 +1,30 @@
+{
+ "id": 106,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nAn engineer deploys a custom guest shell rootfs onto multiple switches.\nDrag and drop the steps from the left into the correct order on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "Customize the guest shell rootfs.",
+  "Export the Guest Shell rootfs.",
+  "Store it in a file server.",
+  "Import the Guest Shell rootfs to other switches.",
+  "Install the specific Guest Shell across devices simultaneously."
+ ],
+ "correctOrder": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

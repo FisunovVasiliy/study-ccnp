@@ -1,0 +1,27 @@
+{
+ "id": 159,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which statement describes the MAC address that the FCoE Initialization Protocol chooses for use by an E-Node in an FCoE implementation?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The FCoE Initialization Protocol uses a 24-bit FC-MAP and concatenates a 24-bit Fibre Channel ID to create a fabric-provided MAC address.",
+  "The FCoE Initialization Protocol uses the burned-in MAC address of the converged network adapter for all FCoE operations.",
+  "FCoE does not use a MAC address. The FCoE Initialization Protocol is used to acquire a Fibre Channel ID, and the address is used for all FCoE communications in the same way as Fibre Channel Protocol.",
+  "The FCoE Initialization Protocol uses 01.00.0C as the first 24 bits of the MAC address and appends a 24-bit Fibre Channel ID to derive a full 48-bit FCoE MAC address."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "FCoE uses a Fabric Provided MAC Address (FPMA) for SAN traffic. The ENode still gets a 24-bit FCID. FPMA is built by concatenating a 24-bit FCoE MAC address prefix (FC-MAP), ranging from 0x0E-FC-00 to 0x0E-FC-FF, to the 24-bit FCID.\nBeing able to build a unique MAC address for the ENode directly from its FCID saves the switch from having to maintain a table that associates FCID and MAC addresses.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 126,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which service profile is affected if the default host firmware policy in Cisco UCS Manager is changed?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "any service profile that uses the global-default host firmware policy",
+  "any service profile that uses a user-created host firmware policy",
+  "any service profile that has no host firmware policy defined",
+  "any service profile that is not in the root sub-org"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

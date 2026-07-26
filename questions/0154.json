@@ -1,0 +1,30 @@
+{
+ "id": 154,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "What are two types of FC/FCoE oversubscription ratios? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch processing power to end-node processing power",
+  "port bandwidth to uplink bandwidth",
+  "server storage to end-node count",
+  "edge ISL bandwidth to core ISL bandwidth",
+  "host bandwidth to storage bandwidth"
+ ],
+ "correct": [
+  3,
+  4
+ ],
+ "mostVoted": [
+  "D",
+  "E"
+ ],
+ "voteNote": "BD 60%, DE 40%",
+ "reference": "https://community.cisco.com/kxiwq67737/attachments/kxiwq67737/4436-docs-data-center/627/1/99126-Large%20SAN%20Design%20Best%20Practices%20using%20MDS%209710.pdf",
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}
