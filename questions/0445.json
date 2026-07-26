@@ -5,7 +5,7 @@
  "question": "DRAG DROP -\nRefer to the exhibit. An administrator is deploying BGP to geographically connect two data center sites. Both sites are configured for dual-stack routed protocols. The administrator must inject the IPv6 network 2001:AE4:1::/64 into the IPv6 unicast database. Drag and drop the SiteA commands from the right into the blanks in the configuration on the left. Commands are used more than once.",
  "context": "Topology: SiteA (BGP AS 65001, .1 / :1) connects to SiteB (BGP AS 65002, .2 / :2) via 172.16.10.0/24 and 2001:AE4:1::/64.",
  "hasImage": true,
- "image": "assets/q0445_diagram.png",
+ "image": "assets/q0445_diagram.webp",
  "imageNote": "Diagram: SiteA (BGP AS 65001, .1/:1) connects to SiteB (BGP AS 65002, .2/:2) via two links: 172.16.10.0/24 and 2001:AE4:1::/64.",
  "template": "router bgp 65001\n  neighbor {{1}} remote-as 65002\n    address-family {{2}}\n    network {{3}}\n  neighbor 172.16.10.2 remote-as 65002\n    address-family {{4}}\n    network 172.16.10.2",
  "wordBank": [

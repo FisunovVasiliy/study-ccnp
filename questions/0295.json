@@ -5,7 +5,7 @@
  "question": "Refer to the exhibit. A storage engineer must monitor the traffic from the file server to the FC analyzer. The file server and the database use the same storage array. Which configuration must be applied to the Cisco MDS 9000 Series Switch to accomplish this goal?",
  "context": "Topology: File Server and Database connect via Po1/Po3 to MDS 9000 switch; Storage Array connects via Po2. FC Analyzer connects via fc1/3.\ninterface port-channel 1\n  channel mode active\ninterface port-channel 2\n  channel mode active\ninterface fc1/1-2\n  channel-group 1\n  no shutdown\ninterface fc1/4-5\n  channel-group 2\n  no shutdown\ninterface fc1/7-8\n  channel-group 3\n  no shutdown\nvsan database\n  vsan 100 name fabric1\n  vsan 100 interface port-channel 1\n  vsan 100 interface port-channel 2\n  vsan 100 interface port-channel 3",
  "hasImage": true,
- "image": "assets/q0295_diagram_v2.png",
+ "image": "assets/q0295_diagram_v2.webp",
  "imageNote": "Diagram: File Server and Database connect via Po1/Po3 to an MDS 9000 switch; Storage Array connects via Po2, and an FC Analyzer connects via Fc1/3.",
  "options": [
   "MDS-9000(config)# span session 1 MDS-9000(config-span)# destination interface port-channel 2 MDS-9000(config-span)# source interface fc1/1",

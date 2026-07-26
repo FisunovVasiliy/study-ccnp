@@ -5,7 +5,7 @@
  "question": "An engineer is implementing zoning on two Cisco MDS switches. After the implementation is finished, E Ports that connect the two Cisco MDS switches become isolated. What is wrong with the implementation?",
  "context": "Zoning was configured with Zoneset AB, containing different active zone set names between MDS-A and MDS-B.",
  "hasImage": true,
- "image": "assets/q0156_diagram.png",
+ "image": "assets/q0156_diagram.webp",
  "imageNote": "Diagram: Disk Array 10/Zone A1 and Disk Array 20/Zone B1 connect to MDS-Edge-1; Server 10/Zone A2 and Server 20/Zone B2 connect to MDS-Edge-2. MDS-Edge-1 and MDS-Edge-2 are linked via E ports, with a callout box showing Zoneset AB (A1/B1 to MDS-Edge-1, A2/B2 to MDS-Edge-2, Active).",
  "options": [
   "Zones are local to the MDS switch and name service must be used to activate the connection between E Ports.",

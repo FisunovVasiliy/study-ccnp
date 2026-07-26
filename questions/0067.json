@@ -5,7 +5,7 @@
  "question": "Refer to the exhibit. During a vPC peer switch reload, there is packet loss between the server and the router. Which action must be taken to prevent this behavior during future reloads?",
  "context": "Topology: two Nexus switches with OSPF uplinks on both sides, connected via vPC to a downstream server.",
  "hasImage": true,
- "image": "assets/q0067_diagram.png",
+ "image": "assets/q0067_diagram.webp",
  "imageNote": "Diagram: two Nexus switches each with an OSPF uplink to a router/cloud, connected to each other via vPC, both feeding a downstream server.",
  "options": [
   "Set the routed uplink ports of the Cisco Nexus peers as orphans.",

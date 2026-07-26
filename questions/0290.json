@@ -5,7 +5,7 @@
  "question": "Refer to the exhibit. The MDS-EDGE-Switch and MDS-Core-Switch are configured with NPV and NPIV features. The FLOGI from Cisco UCS is received by the MDS-Core-Switch on interface fc1/2. An engineer tried to move all traffic between the MDS-EDGE-Switch and MDS-Core-Switch from interface fc1/2 to fc1/3, but the attempt failed. Which set of actions completes the configuration?",
  "context": "Topology: UCS Server -fc1/1- MDS-EDGE-Switch -fc1/2, fc1/3- MDS-Core-Switch (-fc1/2, fc1/3).\nMDS-EDGE-SWITCH(config)# npv traffic-map server-interface fc1/1 external-interface fc1/3\nfc1/1: External interface list should contain the one in use",
  "hasImage": true,
- "image": "assets/q0290_diagram.png",
+ "image": "assets/q0290_diagram.webp",
  "imageNote": "Diagram: UCS Server connects via fc1/1 to MDS-EDGE-Switch, which connects via fc1/2 and fc1/3 to MDS-Core-Switch.",
  "options": [
   "Shut down fc1/1 in the MDS-EDGE-Switch. Re-apply the command. Enable interface fc1/1.",

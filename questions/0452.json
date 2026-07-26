@@ -5,7 +5,7 @@
  "question": "DRAG DROP -\nRefer to the exhibit. An engineer implements a dynamically negotiated LACP port channel on SW1. The port channel members must be configured as active/standby ports with Eth1/2 as active and Eth1/1 as standby. The Eth1/1 interface is configured with default priority. Drag and drop the code snippets from the right onto the blanks in the code on the left to complete the Eth1/2 interface configuration for SW1. Not all code snippets are used.",
  "context": "Topology: SW1 connects to SW2 (Eth1/7) and SW3 (Eth1/7) which both connect upstream to a router. SW1's Eth1/1 and Eth1/2 form the port channel toward SW2/SW3.",
  "hasImage": true,
- "image": "assets/q0452_diagram.png",
+ "image": "assets/q0452_diagram.webp",
  "imageNote": "Diagram: SW1 (Eth1/1, Eth1/2) connects up to SW2 (Eth1/7) and SW3 (Eth1/7); SW2 and SW3 both connect up to a router, with SW2-SW3 also directly linked.",
  "template": "; SW1 configuration\nfeature {{1}}\ninterface ethernet 1/2\n  channel-group 5 mode {{2}}\n    lacp port priority {{3}}\n\ninterface port-channel 5\n  lacp {{4}} 1",
  "wordBank": [

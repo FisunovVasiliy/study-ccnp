@@ -5,7 +5,7 @@
  "question": "DRAG DROP -\nRefer to the exhibit. An engineer implements an MP-BGP deployment that must meet these requirements:\n- Unicast traffic must flow through the Red link between the two autonomous systems.\n- Multicast traffic must flow through the Green link.\n- BGP must be configured to carry routing information and differentiate between unicast and multicast traffic to avoid RPF check failure.\nDrag and drop the SiteA commands from the right onto the blanks in the configuration on the left. Commands can be used more than once.",
  "context": "Topology: Multicast Server (192.168.1.0/24) - SiteA (AS 65001) -- Red link (Unicast Traffic 172.16.10.0/24) / Green link (Multicast Traffic 172.16.20.0/24) -- SiteB -- Client.",
  "hasImage": true,
- "image": "assets/q0383_diagram.png",
+ "image": "assets/q0383_diagram.webp",
  "imageNote": "Diagram: Multicast Server (192.168.1.0/24) connects to SiteA (AS 65001), which links to SiteB via a Red link (Unicast Traffic, 172.16.10.0/24) and a Green link (Multicast Traffic, 172.16.20.0/24); SiteB connects to a Client.",
  "template": "router bgp {{1}}\n  no bgp default ipv4-unicast\n  network 192.168.1.0 mask 255.255.255.0\n  neighbor 172.16.10.2 remote-as {{2}}\n  neighbor 172.16.20.2 remote-as {{3}}\n  address-family ipv4 unicast\n    neighbor {{4}} activate\n    exit-address-family\n  address-family ipv4 {{5}}\n    neighbor 172.16.20.2 activate\n    exit-address-family",
  "wordBank": [

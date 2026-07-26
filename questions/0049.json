@@ -5,7 +5,7 @@
  "question": "DRAG DROP -\nRefer to the exhibit. Drag and drop each traffic flow type from the left onto the corresponding number on the right. Not all traffic flow types are used.",
  "context": null,
  "hasImage": true,
- "image": "assets/q0049_diagram.png",
+ "image": "assets/q0049_diagram.webp",
  "imageNote": "Diagram: WAN router - Internet/DCI, two spine switches, two leaf switches under DC1, connected to Web Server, App Server, Storage Node 1, Storage Node 2. Numbered arrows 1 (WAN router to spines, orange), 2 (leaf to Web Server, magenta), 3 (leaf to App Server / storage, red), 4 (leaf to Storage Node 2, green), 5 (spines to DCI, blue).",
  "bank": [
   "Inter-Data Center",

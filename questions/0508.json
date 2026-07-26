@@ -5,7 +5,7 @@
  "question": "Refer to the exhibit. An engineer implements an FCoE Unified Fabric where vPC exists between N9K-A and N9K-B. To avoid rate discards, bandwidth must be regulated to account for sent traffic that exceeds the access speed. Which set of commands completes the configuration?",
  "context": "Topology: N9K-A and N9K-B connect to SAN A / LAN / SAN B clouds via Po1, with Po10 connecting downstream via FCoE/FC/Ethernet links.",
  "hasImage": true,
- "image": "assets/q0508_diagram.png",
+ "image": "assets/q0508_diagram.webp",
  "imageNote": "Diagram: N9K-A and N9K-B connect to SAN A / LAN / SAN B clouds via Po1, with Po10 connecting downstream to a server via FCoE (Ethernet/FC/FCoE link types shown in legend).",
  "options": [
   "fcoe cost 255 on N9K-A\nrandom-detect min 10 max 20\nspanning-tree port type edge on Po10",

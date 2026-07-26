@@ -5,7 +5,7 @@
  "question": "Refer to the exhibit. A host with a source address 10.10.10.10 sends traffic to multicast group 239.1.1.1. How do the vPC switches forward the multicast traffic?",
  "context": "Topology: Source 10.10.10.10 -> Rendezvous Point -> Switch1 (Po10, Po1 vPC peer-link) <-> Switch2 (Po11, Po1), both connect via vPC 20 to a downstream switch -> Vlan100 -> Receiver.\n\nSwitch1# sh ip mroute\n(*, 239.1.1.1/32), uptime: 02:10:23, igmp ip pim\n  Incoming interface: port-channel10, RPF nbr: 10.0.1.1\n  Outgoing interface list: (count: 1) Vlan100, uptime: 02:10:23, igmp\n(10.10.10.10/32, 239.1.1.1/32), uptime: 00:44:09, ip pim mrib\n  Incoming interface: port-channel10, RPF nbr: 10.0.1.1\n  Outgoing interface list: (count: 1) Vlan100, uptime: 00:44:09, mrib\n\nSwitch2# sh ip mroute\n(*, 239.1.1.1/32), uptime: 02:18:34, igmp ip pim\n  Incoming interface: port-channel11, RPF nbr: 10.0.2.1\n  Outgoing interface list: (count: 1) Vlan100, uptime: 02:18:23, igmp\n(10.10.10.10/32, 239.1.1.1/32), uptime: 00:44:49, ip pim mrib\n  Incoming interface: port-channel11, RPF nbr: 10.0.2.1\n  Outgoing interface list: (count: 0)",
  "hasImage": true,
- "image": "assets/q0058_diagram.png",
+ "image": "assets/q0058_diagram.webp",
  "imageNote": "Diagram: Source 10.10.10.10 sends multicast through a Rendezvous Point router to Switch1 (Po10, Po1 vPC peer-link) and Switch2 (Po11, Po1); both connect via vPC 20 to a downstream switch feeding Vlan100 and the Receiver.",
  "options": [
   "If multicast traffic is received on Switch1 over the vPC peer-link, the traffic is dropped",

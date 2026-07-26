@@ -5,7 +5,7 @@
  "question": "Refer to the exhibit. A network engineer must improve the convergence time during vPC primary peer device failure and recovery. Which set of actions is required on both vPC switches to accomplish this task?",
  "context": "Topology: two spine switches connect to a vPC Domain (two switches, L3/L2 boundary), which connects to two downstream access switches via vPC 10 and vPC 20.",
  "hasImage": true,
- "image": "assets/q0486_diagram.png",
+ "image": "assets/q0486_diagram.webp",
  "imageNote": "Diagram: two spine switches connect to a vPC Domain (two switches at the L3/L2 boundary), which connects down to two downstream access switches via vPC 10 and vPC 20.",
  "options": [
   "Configure the same system priority. Enable LACP toward the access switches.",

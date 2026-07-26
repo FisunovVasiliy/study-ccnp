@@ -5,7 +5,7 @@
  "question": "Refer to the exhibit. VLAN 10 is experiencing delays and packet drops when the traffic is forwarded through the switch. The destination flow analyzer accepts traffic captures of not more than 30 seconds. Which configuration implements the traffic capture that meets the requirements?",
  "context": "Topology: Flow Analyzer 192.168.20.4 and Flow Collector 192.168.20.2 reachable via Internet -> switch Eth2/1; switch Eth1/1 -> Vlan10 host; switch Eth1/2 -> Vlan20 host.\n\nswitch(config)# flow record L2_record\nswitch(config-flow-record)# match datalink vlan\nswitch(config-flow-record)# exit\n\nswitch(config)# flow exporter flow-exporter-L2\nswitch(config-flow-exporter)# destination 192.168.20.2\nswitch(config-flow-exporter)# source ethernet 1/1\nswitch(config-flow-exporter)# version 9\nswitch(config-flow-exporter)# exit",
  "hasImage": true,
- "image": "assets/q0041_diagram.png",
+ "image": "assets/q0041_diagram.webp",
  "imageNote": "Diagram: Flow Analyzer (192.168.20.4) and Flow Collector (192.168.20.2) reachable via Internet cloud to switch Eth2/1; switch Eth1/1 connects to a Vlan10 host and Eth1/2 to a Vlan20 host.",
  "options": [
   "switch(config)# flow timeout 30000 / switch(config)# interface ethernet 1/1 / switch(config-if)# switchport / switch(config-if)# switchport access vlan 10 / switch(config-if)# ip flow monitor L2_monitor output",

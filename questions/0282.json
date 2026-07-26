@@ -5,7 +5,7 @@
  "question": "Refer to the exhibit. An engineer is creating a SPAN session to send a copy of all the Fabric-A VSAN 11 traffic on N5K_1 to the monitoring laptop. The configuration that presented has already been applied to Cisco UCS Manager. Which action competes the configuration?",
  "context": "Topology: Fabric A / Fabric B each have N5K_1/N5K_3 (fc1/1, fc1/2 to LAN/SAN clouds) with e1/1-2 down to N5K_2/N5K_4. Monitoring Laptop connects between N5K_1 and N5K_3 via e1/5-6. FCoE VLAN 11-VSAN 11 on Fabric A side, FCoE VLAN 12-VSAN 12 on Fabric B side. Both N5K_2 and N5K_4 connect down to a C2XX server (Ten0/Ten1).\nUCS Manager GUI: LAN / Traffic Monitoring Sessions / Fabric A / Monitor Session VSAN11-Session. Properties: Name VSAN11-Session, Admin State Enabled, Destination (blank), Admin Speed 10 Gbps, Operational State Unknown, Configuration Success Yes. Sources: Uplink Ethernet Ports.",
  "hasImage": true,
- "image": "assets/q0282_diagram_v2.png",
+ "image": "assets/q0282_diagram_v2.webp",
  "imageNote": "Diagram: LAN and SAN clouds cross-connect to Fabric A (N5K_1, N5K_2) and Fabric B (N5K_3, N5K_4); a Monitoring Laptop connects to N5K_1 and N5K_3 via e1/5-6, and a C2XX server connects to N5K_2 and N5K_4 via Ten0/Ten1.",
  "options": [
   "Create a SAN traffic monitoring session.",
