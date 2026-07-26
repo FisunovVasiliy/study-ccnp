@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. Two data center fabrics use vPC data center interconnect. The system MAC value on SW1 is 00:23:04:ee:be:20. Which value must be set to configure the system MAC address on SW3?",
  "context": "Topology: VPC 20 domain with SW4/SW3 on top and SW2/SW1 on bottom, cross-connected via PO 100.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0489_diagram.png",
+ "imageNote": "Diagram: VPC 20 domain with SW4/SW3 on top and SW2/SW1 on bottom, cross-connected to each other via PO 100.",
  "options": [
   "00:23:04:ee:be:14 on SW3",
   "00:23:04:ee:be:20 on SW3",

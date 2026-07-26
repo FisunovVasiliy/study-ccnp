@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. A Cisco data center environment is implemented with vPC. The web server replies using the SVI MAC address as the Layer 2 header instead of the HSRP MAC address on VLAN 23. This behavior causes packet drops on the Cisco Nexus 9000 Series Switches due to the vPC loop prevention mechanism. The requirement is for the vPC feature to allow N9K_1 and N9K_2 to forward traffic between the NAS server and the web server, even if the HSRP's MAC address is not used on Layer 2 headers for VLAN 23. Which feature must be used to accomplish this goal?",
  "context": "Topology: NAS (Vlan 23, 192.168.23.0/24) - N9K_3 - vPC 23/Port-Channel 23 - N9K_1/N9K_2 (HSRP MAC 00c1.BEEF.CAFE.0023 for Vlan23, 00c1.BEEF.CAFE.0012 for Vlan12) - vPC 12/Port-Channel 12 - Web Server (Vlan 12, 192.168.12.0/24).",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0490_diagram.png",
+ "imageNote": "Diagram: NAS (Vlan23) connects to N9K_3, which connects via vPC 23/Port-Channel 23 to N9K_1/N9K_2 (HSRP MAC 00c1.BEEF.CAFE.0023 for Vlan23, 00c1.BEEF.CAFE.0012 for Vlan12); N9K_1/N9K_2 connect via vPC 12/Port-Channel 12 to Web Server (Vlan12).",
  "options": [
   "ARP Sync",
   "Object Tracking",

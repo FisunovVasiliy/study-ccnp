@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. An engineer must schedule the firmware upgrade of the Red1 and Red2 leaf switches. The requirement is to keep the upgrade time to the minimum, avoid any service impact, and perform the parallel upgrade. Which set of scheduler attributes must be used to meet these requirements?",
  "context": "Topology: two spine switches (ACI leaf topology) connect to Blue1, Red1, Blue2, Red2 leaf switches. Blue1-Red1 form a vPC pair; Blue2-Red2 form a vPC pair.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0247_diagram.png",
+ "imageNote": "Diagram: Two spine switches connect to four leaf switches (Blue1, Red1, Blue2, Red2) in an ACI fabric; Blue1/Red1 form a vPC pair to one downstream host, and Blue2/Red2 form a vPC pair to another.",
  "options": [
   "Configure SchedulerPolicy1 for leaf switches Blue1 and Red1, and SchedulerPolicy2 for leaf switches Blue2 and Red2. Configure SchedulerPolicy1 and SchedulerPolicy2 with a one-time window trigger that has maximum concurrent nodes 1.",
   "Configure SchedulerPolicy1 for leaf switches Blue1 and Red1, and SchedulerPolicy2 for leaf switches Blue2 and Red2. Configure SchedulerPolicy1 and SchedulerPolicy2 with a one-time window trigger that has maximum concurrent nodes 2.",

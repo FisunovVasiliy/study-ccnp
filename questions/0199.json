@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. A network engineer must configure port E1/31-32 to forward only storage server traffic of VLAN 200 on Cisco fabric interconnects A and B. Port E1/31-32 is not reserved for any other traffic. Which port type must be configured to accomplish this goal?",
  "context": "Topology: NSK1/NSK2 FC SAN A, UCS1 FI-A/FI-B, UCS1 B5108 chassis. Ports E1/31-32 on FI-A and FI-B connect toward NSK1/NSK2 storage over VLAN 200.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0199_diagram.png",
+ "imageNote": "Diagram: FC SAN A connects via E1/48 to NSK 1 and NSK 2, which cross-connect to UCS1 FI-A and FI-B (via E1/9-10, E1/11, E1/3-4, E1/5, E1/46-47, E1/31-32); FI-A and FI-B both connect to the UCS1 B5108 chassis via E1/1-2.",
  "options": [
   "FCoE storage",
   "uplink",

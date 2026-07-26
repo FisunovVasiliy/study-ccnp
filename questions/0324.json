@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. An engineer must invoke a Python script that alerts the operations team when the router DC-RTR-1 becomes unreachable. Which configuration set accomplishes this task?",
  "context": "Topology: DC-RTR-1 (10.19.31.1) connects to N9K-DC-1-SPINE-1 (10.19.31.2) and N9K-DC-1-SPINE-2 (10.19.31.3).\nswitch(config)# ip sla 10\nswitch(config-ip-sla)# icmp-echo 10.19.31.1\nswitch(config)# ip sla schedule 10 life forever start-time now\nswitch(config)# track 5 ip sla 10 reachability",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0324_diagram.png",
+ "imageNote": "Diagram: DC-RTR-1 (10.19.31.1) connects to N9K-DC-1-SPINE-1 (10.19.31.2) and N9K-DC-1-SPINE-2 (10.19.31.3), which are linked to each other; includes the ip sla / track CLI configuration.",
  "options": [
   "event scheduler name DOWN-ROUTER event track 2 state 1 not up event action 1.0 command source routerdown.py event start 0:00 repeat 0:05",
   "track 3 ip sla 10 reachability event name GATEWAY-DOWN event state down action cli command routerdown.py",

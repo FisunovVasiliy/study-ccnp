@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. An engineer must configure FCoE between the N9K-A switch and the FCF-A Nexus 9000 core switch. The deployment has these characteristics:\n- The N9K-A and N9K-B top-of-rack switches share the domain ID of the core switches.\n- The hosts are equipped with converged network adapters.\n- The only VSAN that is used is permitted to traverse port-channel 100 is VSAN 20.\nWhich configuration completes the FCoE configuration on the N9K-A device?",
  "context": "Topology: SAN A / LAN / SAN B clouds connect to FCF-A and FCF-B (N9K core switches). FCF-A/FCF-B connect via port-channel 100 (VSAN 20) to FCoE top-of-rack switches N9K-A and N9K-B. Host A and Host B connect to both N9K-A and N9K-B via unified I/O (FC, 10G Ethernet, Unified I/O, FCoE links).",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0206_diagram_v2.png",
+ "imageNote": "Diagram: SAN A, LAN, and SAN B clouds connect to FCF-A and FCF-B (N9K core switches), which link via port-channel 100 (VSAN 20) down to FCoE top-of-rack switches N9K-A and N9K-B; Host A and Host B connect to both N9K-A and N9K-B using FC, 10G Ethernet, and FCoE links.",
  "options": [
   "N9K-A(config)# feature-set fcoe-npv\nN9K-A(config)# interface vfc-port-channel 100\nN9K-A(config-if)# switchport mode E\nN9K-A(config-if)# switchport trunk allowed vsan 1, 20",
   "N9K-A(config)# feature-set fcoe-npv\nN9K-A(config)# interface vfc-port-channel 100\nN9K-A(config-if)# switchport mode NP\nN9K-A(config-if)# switchport trunk allowed vsan 20",

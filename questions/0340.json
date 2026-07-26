@@ -4,9 +4,9 @@
  "type": "multi",
  "question": "Refer to the exhibit. SVR-A in EPG-A/BD-A fails to reach SVR-B in EPG-B/BD-B. Which two conditions should be verified to analyze the traffic between the two EPGs? (Choose two.)",
  "context": "Topology: two ACI spine switches connect to Node-110, Node-111, Node-112. Node-110 has BD-A/EPG-A -> SVR-A. Node-112 has BD-B/EPG-B -> SVR-B. Both in VRF-1.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0340_diagram.png",
+ "imageNote": "Diagram: two ACI spine switches connect to leaf Node-110, Node-111, and Node-112 (all in VRF-1). Node-110 hosts BD-A/EPG-A leading to SVR-A; Node-112 hosts BD-B/EPG-B leading to SVR-B.",
  "options": [
   "A contract exists between EPG-A and EPG-B and allows the traffic.",
   "The bridge domain for EPG-B floods ARP packets.",

@@ -4,9 +4,9 @@
  "type": "fill",
  "question": "DRAG DROP -\nRefer to the exhibit. An administrator must complete the unified fabric configuration between Server1 and a pair of Cisco Nexus 9000 Series Switches. Drag and drop the code snippets from the right onto the blanks in the code on the left to complete the N9K-1 configuration. Code snippets may be used more than once.",
  "context": "Topology: SAN-A (vsan 100) and LAN (vlan 100) and SAN-B (vsan 200) connect to N9K-1 and N9K-2 (FCF) via e1/9. N9K-1 and N9K-2 connect via 802.3ad Po12 to Server1.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0331_diagram_v2.png",
+ "imageNote": "Diagram: SAN-A (vsan 100), LAN (vlan 100), and SAN-B (vsan 200) clouds connect to N9K-1 and N9K-2 (both FCF, e1/9), which are linked to each other and to Server1 via an 802.3ad port channel Po12.",
  "template": "service-policy type qos input default-fcoe-in-policy\nint {{1}}\n  switchport trunk allowed {{2}} 1, 100\nint {{3}}\n  bind interface {{4}}\n  no shut",
  "wordBank": [
   "vlan",

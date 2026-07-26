@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. What happens to the broadcast traffic when it reaches aggregation switches?",
  "context": "Topology: Agg-1 and Agg-2 connected via a peer link (Eth2/4, Eth2/5). Agg-1 (Port channel55/vPC-1) and Agg-2 (Port channel56/vPC-2) each connect down to Access-1 and Access-2 (Eth2/1, Eth2/2), which host Vlan20 and Vlan10 devices. Broadcast flooding is shown originating from Access-1/Vlan20 hosts.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0082_diagram.png",
+ "imageNote": "Diagram: Agg-1 and Agg-2 connected via a peer link, each in a vPC (Port channel55/vPC-1, Port channel56/vPC-2) down to Access-1 and Access-2, which host Vlan20 and Vlan10 devices; broadcast flooding is shown originating from the Access-1/Vlan20 hosts.",
  "options": [
   "Agg-2 switch receives broadcast packets and stops forwarding to the peer link on Agg-1 switch.",
   "Agg-1 prevents broadcast packets received on the vPC peer link from exiting the switch on ports Eth2/4 and Eth2/5.",

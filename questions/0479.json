@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. A source is sending a multicast traffic stream to the receiver. How is the multicast traffic expected to flow through the network when it reaches a vPC peer?",
  "context": "Topology: Agg-1 (M1) and Agg-2 (M2) connect to Access-1 and Access-2 via vPC-1 and vPC-2. Source connects to Access-1 (Vlan 10), Receiver connects to Access-2 (Vlan 10). Multicast traffic stream flows from Source toward Receiver.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0479_diagram.png",
+ "imageNote": "Diagram: Agg-1 (M1) and Agg-2 (M2) cross-connect to Access-1 and Access-2 via vPC-1/vPC-2; Source (Vlan10) connects to Access-1, Receiver (Vlan10) connects to Access-2, multicast stream flows Source to Receiver.",
  "options": [
   "The multicast traffic is not replicated to the ports that joined a multicast group (224.0.0.13) or the peer link. The multicast traffic stream flows over the vPC link to ensure that orphan ports get the multicast stream in failure scenarios.",
   "The multicast traffic is replicated to the ports that joined a given multicast group and the peer link. The multicast traffic stream flows from Agg-1 to Agg-2 over the M1-to-M2 peer link and forwards the traffic over Layer 4 to Access-2.",

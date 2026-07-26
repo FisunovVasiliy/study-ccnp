@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. An engineer must monitor ingress traffic from SW1 and SW2 port-channel interfaces from SW3. Which configuration must be implemented to accomplish this goal?",
  "context": "Topology: PC1 -- SW1, PC2 -- SW2, SW1 and SW2 both connect via port channels to SW3 Eth1/4; SW3 Eth1/4 also connects to a Network Traffic Analysis Application via SPAN.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0057_diagram.png",
+ "imageNote": "Diagram: PC1 connects to SW1, PC2 connects to SW2; both SW1 and SW2 connect via port-channel to SW3 Eth1/4, which also feeds a Network Traffic Analysis Application via SPAN.",
  "options": [
   "SW3# configure terminal\nSW3(config)# source interface port-channel 1 rx\nSW3(config)# source interface port-channel 2 tx\nSW3(config)# interface ethernet 1/4\nSW3(config-if)# destination interface ethernet 1/4\nSW3(config-if)# exit\nSW3(config)# interface Port-channel 1-2\nSW3(config-if)# switchport monitor\nSW3(config-if)# exit",
   "SW3# configure terminal\nSW3(config)# monitor session 2\nSW3(config-monitor)# source interface port-channel 1 rx\nSW3(config-monitor)# source interface port-channel 2 rx\nSW3(config)# interface ethernet 1/4\nSW3(config-if)# switchport monitor\nSW3(config-if)# exit\nSW3(config)# monitor session 2\nSW3(config-monitor)# destination interface ethernet 1/4",

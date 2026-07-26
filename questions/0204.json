@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. Which feature set must be used to configure on switch 2 to establish a VSAN trunk between switch 1 and switch 2?",
  "context": "Switch 1 (E port, Trunk Mode Auto) --- VSAN Trunk --- Switch 2 (?, ?)",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0204_diagram.png",
+ "imageNote": "Diagram: Switch 1 (E port, Trunk Mode Auto) connects to Switch 2 over a VSAN Trunk link, with Switch 2's port type and trunk mode marked as unknown (?).",
  "options": [
   "F Port / Trunk Mode Passive",
   "N Port / Trunk Mode Active",

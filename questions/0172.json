@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. An engineer is configuring a VSAN on the network. Which option must be selected to create the VSAN?",
  "context": "UCS Manager GUI: Create VSAN dialog with options Common/Global, Fabric A, Fabric B, Both Fabrics Configured Differently; and FC Zoning Settings checkbox 'FC Zoning Enabled'. Network topology shows Fabric A dedicated to the new SAN VSAN.",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0172_diagram.png",
+ "imageNote": "Diagram: Storage connects via VLAN2001/VLAN2002 clouds and NPIV to N5K-A and N5K-B switches, which connect down to FI-A and FI-B, which both connect to the Cisco UCS Chassis.",
  "options": [
   "Common/Global",
   "Fabric B",

@@ -4,9 +4,9 @@
  "type": "single",
  "question": "Refer to the exhibit. A VXLAN data center fabric consists of three hosts mapped to different VLANs. Ingress VTEPs perform Layer 2 bridging and Layer 3 routing. Egress VTEPs only perform a Layer 2 bridging lookup. Which VNI values must be set to allow inter-VNI communication?",
  "context": "Topology: Spine1 connects to Leaf1 (Host-1, IP 192.168.1.1/24, VRF Test_Telco, VLAN 100), Leaf2 (Host-2, IP 192.168.2.1/24, VRF Test_Telco, VLAN 200), and Leaf3/Leaf4 (S1, IP 192.168.3.1/24, VRF Test_Telco, VLAN 300, VNI 1010).",
- "hasImage": false,
- "image": null,
- "imageNote": null,
+ "hasImage": true,
+ "image": "assets/q0493_diagram.png",
+ "imageNote": "Diagram: Spine1 connects to Leaf1 (Host-1, VLAN100), Leaf2 (Host-2, VLAN200), and Leaf3/Leaf4 (S1, VLAN300/VNI1010), all in VRF Test_Telco.",
  "options": [
   "VLAN 100 to Layer 2 VNI 2020 - Test_Telco_VRF to Layer 3 VNI 5050",
   "VLAN 100 to Layer 2 VNI 2020 - VLAN 200 to Layer 2 VNI 5050",
