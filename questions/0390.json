@@ -1,0 +1,27 @@
+{
+ "id": 390,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a Cisco MDS 9000 Series Switch for traffic analysis from the storage array. The storage array is connected to the interface fc2/1 in VSAN 10 and the traffic analyzer to fc4/2. The capture file must include ingress and egress traffic between the switch and the storage array. Also, only traffic in VSAN 10 must be captured. Which configuration set meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface fc4/2\nswitchport mode trunk\nswitchport trunk allow vsan 10\nno shutdown\n!\nspan session 1\nsource interface fc2/1 tx\ndestination interface fc4/2 rx\nno suspend",
+  "interface fc4/2\nswitchport mode SD\nno shutdown\n!\nspan session 1\nsource interface fc2/1\ndestination interface fc4/2\nsource filter vsan 10",
+  "interface fc4/2\nswitchport mode auto\nno shutdown\n!\nspan session 1\nsource interface fc2/1 rx\ndestination interface fc4/2\nsource filter vsan 10\nno suspend",
+  "interface fc4/2\nswitchport mode ST\nno shutdown\n!\nspan session 1\nsource interface fc2/1\ndestination interface fc4/2\nsource filter vsan 10"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

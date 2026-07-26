@@ -1,0 +1,27 @@
+{
+ "id": 360,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must connect a Cisco UCS appliance port directly to NFS and iSCSI storage devices. Which action should be taken to achieve this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure the appliance ports in access mode and apply VLAN tagging on the storage.",
+  "Configure VLAN tagging on the storage and the Cisco UCS simultaneously.",
+  "Configure the appliance ports in trunk mode and apply VLAN tagging on the storage.",
+  "Configure NFS and iSCSI to use the same VLAN tag on the appliance port."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

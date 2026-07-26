@@ -1,0 +1,27 @@
+{
+ "id": 379,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must configure Fibre Channel port monitoring for the local port. The source port should be monitored in the ingress direction. Which configuration should be implemented to achieve this objective?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface fc1/15\nswitchport mode SD\nswitchport speed 2000\nno shutdown\n\nspan session 1\ndestination interface fc1/15\nsource interface fc1/16 rx",
+  "interface fc1/15\nswitchport mode switchport\nswitchport speed 2000\nno shutdown\n\nspan session 1\ndestination interface fc1/15\nsource interface fc1/16 tx",
+  "interface fc1/15\nswitchport mode fex-fabric\nswitchport speed 2000\nno shutdown\n\nspan session 1\ndestination interface fc1/15\nsource interface fc1/16 rx",
+  "interface fc1/15\nswitchport mode SD\nswitchport speed 2000\nno shutdown\n\nspan session 1\ndestination interface fc1/15\nsource interface fc1/16 tx"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

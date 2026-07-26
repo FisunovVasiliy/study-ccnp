@@ -1,0 +1,27 @@
+{
+ "id": 313,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement protection against ICMP DoS attacks on a Cisco Nexus 9000 Series Switch. The requirement is to rate-limit ICMP without denying all other ICMP traffic. The ICMP traffic currently passing through the Cisco Nexus 9000 device must not be affected. Which configuration accomplishes these goals?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Reconfigure the Layer 3 interfaces to be in the non-default VRF and ICMP broadcast storm control.",
+  "Create an access list deny ICMP traffic and apply it to all interfaces in the inside direction.",
+  "Apply a control plane service policy that matches all ICMP traffic to drop the traffic that exceeds the threshold.",
+  "Configure SNMP traps to send the ICMP notification if the CPU utilization is more than 90%."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

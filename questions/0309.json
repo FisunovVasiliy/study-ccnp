@@ -1,0 +1,27 @@
+{
+ "id": 309,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a Cisco UCS blade system that is managed by Cisco UCS Manager. All four connected interfaces between the blade system and the fabric interconnects must be used. Additionally, the connectivity must tolerate any link failure between the I/O module and the fabric interconnects. Which action accomplishes these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure chassis/FEX discovery policy action to four links.",
+  "Configure port aggregation with LACP policy set to default.",
+  "Configure Link Group Preference to Port Channel.",
+  "Configure Firmware Auto Sync Server policy to Auto Acknowledge."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 67%, A 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

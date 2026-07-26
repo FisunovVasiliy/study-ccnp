@@ -1,0 +1,27 @@
+{
+ "id": 338,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A storage administrator notices an increasing number of storage targets that unexpectedly reach capacity, causing periodic service interruptions. The administrator must now create and submit a daily report of the environment that shows the status of the storage targets with the highest capacities.\nWhich solution provides this information?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Cisco Intersight with Slow Drain Analysis",
+  "SolarWinds with Slow Drain Analysis",
+  "Cisco DCNM with SAN Insights",
+  "Nagios Core with OpManager"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

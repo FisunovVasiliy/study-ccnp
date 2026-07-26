@@ -1,0 +1,30 @@
+{
+ "id": 303,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nA network engineer must configure FCoE on an interface of a Cisco MDS 9000 Series Switch. It should be used for mapping between VLAN 600 and VLAN 6.\nDrag and drop the commands from the bottom into their implementation order in the FCoE configuration. Not all commands are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "switch(config)# vlan 600\nswitch(config-vlan)# {{1}}\nswitch(config)# interface ethernet 1/2\nswitch(config-if)# switchport mode trunk\nswitch(config-if)# switchport trunk {{2}}\nswitch(config-if)# spanning-tree port type edge trunk\nswitch(config)# interface vfc 6\nswitch(config-if)# bind interface ethernet 1/2\nswitch(config)# vsan database\nswitch(config-vsan)# {{3}}",
+ "wordBank": [
+  "vsan 6 bind interface vfc 6",
+  "allowed vlan 1,600",
+  "allowed vlan 1",
+  "vsan 6 interface vfc 6",
+  "fcoe vsan 6",
+  "bind vsan 6"
+ ],
+ "blankAnswers": [
+  "fcoe vsan 6",
+  "allowed vlan 1,600",
+  "vsan 6 interface vfc 6"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

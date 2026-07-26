@@ -1,0 +1,27 @@
+{
+ "id": 399,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must activate the port-security database on a Cisco MDS 9000 Series Switch for VSAN 100, but receives the error shown. Which command completes the configuration?",
+ "context": "\"Error for VSAN 100: Activation not permitted with auto-learn ON\"",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "port-security config-enable vsan 100",
+  "port-security vsan 100 database active",
+  "port-security enabled mode vsan 100",
+  "port-security activate vsan 100 force"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

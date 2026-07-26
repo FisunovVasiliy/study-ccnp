@@ -1,0 +1,27 @@
+{
+ "id": 368,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A DevOps engineer must use Python to manage a Cisco device. The device is in a highly secure DMZ environment. Only trusted Cisco Python libraries can be used.\nWhich solution meets the requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Develop an on-box Python script that uses trusted Cisco libraries.",
+  "Develop an application by using serverless technologies in a primary cloud provider.",
+  "Develop an off-box Python script that uses trusted Cisco libraries.",
+  "Develop a containerization application that uses trusted Cisco-provided libraries."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

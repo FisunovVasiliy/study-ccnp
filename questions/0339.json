@@ -1,0 +1,34 @@
+{
+ "id": 339,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the mechanisms to collect data from a network from the left onto their characteristics on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "CLI-based scripts",
+  "SNMP",
+  "syslog",
+  "telemetry"
+ ],
+ "targets": [
+  "Polling can take 5-10 minutes.",
+  "Unstructured and susceptible to change and scripts failure.",
+  "It sends data from the device to a specific endpoint, for instance, JSON or by using Google protocol buffers.",
+  "It pushes messages in the format \"seq no:timestamp: %facility-severity MNEMONIC:description\" and has limits in scale and efficiency."
+ ],
+ "matchCorrect": [
+  1,
+  0,
+  3,
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

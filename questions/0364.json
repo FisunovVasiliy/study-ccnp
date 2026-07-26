@@ -1,0 +1,27 @@
+{
+ "id": 364,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer requires the Cisco Fabric Services to distribute NTP configuration only to the members within the scope of a VSAN that belongs to a Cisco Unified Network.\nWhich scope distribution must be selected to meet this requirement?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Logical scope",
+  "Physical scope",
+  "Uncoordinated scope",
+  "Coordinated scope"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

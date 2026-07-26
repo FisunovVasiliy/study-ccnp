@@ -1,0 +1,27 @@
+{
+ "id": 328,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must export the Cisco UCS Manager configuration for backup purposes. The requirement is to export the configuration that contains the AAA and RBAC configuration. Also, the file must be stores in a human-readable format. Which backup type must be selected to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "full state",
+  "logical configuration",
+  "system configuration",
+  "all configuration"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

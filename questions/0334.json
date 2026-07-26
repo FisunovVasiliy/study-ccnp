@@ -1,0 +1,30 @@
+{
+ "id": 334,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two features are used to allow a nondisruptive upgrade for the ISSU process? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "graceful restart",
+  "advanced services license",
+  "nonstop forwarding",
+  "connectivity management processor",
+  "stateful switchover"
+ ],
+ "correct": [
+  2,
+  4
+ ],
+ "mostVoted": [
+  "C",
+  "E"
+ ],
+ "voteNote": "CE 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

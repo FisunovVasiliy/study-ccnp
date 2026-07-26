@@ -1,0 +1,30 @@
+{
+ "id": 387,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer needs to connect Cisco UCS Fabric Interconnect (FI) to an external storage array. Due to budget limitations, the engineer must connect a Cisco UCS FI directly to an FC storage port. Which two actions must be taken to complete this connection? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Create a storage connection policy.",
+  "Configure the fabric interconnect in end-host mode.",
+  "Create the required VSAN in the SAN cloud.",
+  "Set FC zoning to disabled when creating the VSAN.",
+  "Configure the fabric interconnect in FC switch mode."
+ ],
+ "correct": [
+  0,
+  4
+ ],
+ "mostVoted": [
+  "A",
+  "E"
+ ],
+ "voteNote": "AE 55%, CE 27%, other 18%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

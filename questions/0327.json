@@ -1,0 +1,27 @@
+{
+ "id": 327,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must perform a nondisruptive software upgrade on a dual supervisor Cisco Nexus 7000 Series Switch. What is the cause of the upgrade being disruptive?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Attempt to simultaneously upgrade more than thee cards",
+  "Change to the configuration settings or the network connections during the upgrade process",
+  "The show install all impact command is not issued before the upgrade",
+  "The kickstart image is installed by using the install all kickstart image system image command"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

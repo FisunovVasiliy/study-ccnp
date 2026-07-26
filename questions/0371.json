@@ -1,0 +1,27 @@
+{
+ "id": 371,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is the format of this output?",
+ "context": "{\n  \"ins_api\": {\n    \"type\": \"cli_show\",\n    \"version\": \"1.0\",\n    \"sid\": \"eoc\",\n    \"outputs\": {\n      \"output\": {\n        \"input\": \"show hostname\",\n        \"msg\": \"Success\",\n        \"code\": \"200\",\n        \"body\": {\n          \"hostname\": \"sbx-438device09981kv\"\n        }\n      }\n    }\n  }\n}",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "SOAP",
+  "YAML",
+  "XML",
+  "JSON"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

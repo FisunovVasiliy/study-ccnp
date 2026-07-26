@@ -1,0 +1,27 @@
+{
+ "id": 330,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must restore the running configuration on a Cisco Nexus 5000 Series Switch to an existing snapshot called `stable1`. The restore procedure should proceed only if no errors occur. Which configuration should be used to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "rollback running-config checkpoint stable1 best-effort",
+  "rollback running-config checkpoint stable1 atomic",
+  "rollback checkpoint stable1 best-effort running-config best-effort",
+  "rollback checkpoint stable1 best-effort running-config atomic"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 315,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A developer must create a Bash script that performs a Chef Client reload in the event of a system reset. Which command completes the script?",
+ "context": ". /etc/init.d/functions\nexec=\"/usr/bin/chef-client\"\nprog=\"chef-client\"\n[ -e /etc/sysconfig/$prog ] && . /etc/sysconfig/$prog\nconfig=${CONFIG:-/etc/chef/client.rb}\npidfile=${PIDFILE:-/var/run/chef/client.pid}\nreload() {\n  echo -n $\"Reloading $prog: \"\n  <blank>\n  retval=$?\n  echo\n  return $retval\n}\ncase \"$1\" in\n  reload)\n    rh_status_q || exit 7\n    ;;\n  exit 2\n  esac\n  exit $?",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "killproc -n $pidfile $exec -SIGHUP",
+  "killproc -pi $pidfile $exec -HUP",
+  "killproc -p $pidfile $exec -HUP",
+  "killproc -n $pidfile $exec -HUP"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

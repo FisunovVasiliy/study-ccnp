@@ -1,0 +1,27 @@
+{
+ "id": 308,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must implement VXLAN with anycast gateway. To accomplish this, an engineer must set up PIM Source-Specific Multicast for host reachability. Which IP address must be applied to interface loopback1 to accomplish this goal?",
+ "context": "Topology: Spine01/Spine02 connect to Leaf101/Leaf102 in POD1. MP-iBGP EVPN Control Plane / VXLAN Data Plane.\nSPINE-01#show run pim\nip pim rp-address 10.255.0.100 group-list 225.0.0.0/8\nip pim bsr rp-candidate loopback1 group-list 225.0.0.0/8\nip pim ssm range 232.0.0.0/8\nip pim anycast-rp 10.255.0.100 10.10.0.1\nip pim anycast-rp 10.255.0.100 10.10.0.2\n\nSPINE-01#show run interface loopback1\ninterface loopback1\n  ip router ospf 1 area 0.0.0.0\n  ip pim sparse-mode",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "10.10.0.1/32",
+  "10.255.0.100",
+  "10.10.0.2/32",
+  "255.0.0.1/8"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 77%, A 23%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

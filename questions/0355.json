@@ -1,0 +1,27 @@
+{
+ "id": 355,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A company must security harden its Cisco UCS C-Series servers. The security policy requires all out-of-band management to meet these requirements:\n- It must encrypt all traffic\n- It must use nondefault ports\n- It must provide private administrative sessions.\nWhich Cisco IMC configuration meets the requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "data1# scope sol\ndata1 /sol# set enabled yes\ndata1 /sol *# set encrypted tls1.2\ndata1 /sol *# set port 3389\ndata1 /sol *# set session max 2\ndata1 /sol *# set deny-local yes",
+  "data1# scope cimc\ndata1 /cimc# set enabled yes\ndata1 /cimc *# set encrypted tls\ndata1 /cimc *# set kvm-port 1972\ndata1 /cimc *# set max sessions 1\ndata1 /cimc *# set local-session deny",
+  "data1# scope oob\ndata1 /oob# set enabled no\ndata1 /oob *# set encrypted yes\ndata1 /oob *# set kvm-port 2068\ndata1 /oob *# set max-sessions 1\ndata1 /oob *# set local-access no",
+  "data1# scope kvm\ndata1 /kvm# set enabled yes\ndata1 /kvm *# set encrypted yes\ndata1 /kvm *# set kvm-port 3168\ndata1 /kvm *# set max sessions 1\ndata1 /kvm *# set local-video no"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

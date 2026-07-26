@@ -1,0 +1,27 @@
+{
+ "id": 386,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A bridge domain is being extended out of a Cisco ACI fabric. Between which of these components are policies used to identify the connectivity between Endpoint Groups and the external connection?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "internal contracts and external contracts",
+  "an external bridge domain and an external routed domain",
+  "internal EPGs and external EPGs",
+  "L2Out and L3Out"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 56%, D 38%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

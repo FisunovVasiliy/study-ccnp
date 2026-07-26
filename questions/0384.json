@@ -1,0 +1,27 @@
+{
+ "id": 384,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What does this configuration create?",
+ "context": "<fvTenant name=\"Tenant4A34BC694DE22\">\n  <fvCtx name=\"CTX1\"/>\n  <!-Create bridge domain and enable routing-->\n  <fvBD name=\"bd1\" unicastRoute=\"yes\">\n    <!-Associate the bridge domain with L3 outside connection-->\n    <fvRsBDToOut tnL3extOutName=\"L3Out-1\"/>\n    <fvSubnet ip=\"10.10.10.10/16\"/>\n    <fvSubnet ip=\"10.20.10.10/16\"/>\n    <fvSubnet ip=\"209.165.201.1/27\" scope=\"public\"/>\n    <fvRsCtx tnFvCtxName=\"CTX1\"/>\n  </fvBD>\n</fvTenant>",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "three subnets within a bridge domain",
+  "a CTX1 tenant",
+  "an L3OUT-1 bridge domain",
+  "two L3Out domains"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 50%, C 25%, B 25%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

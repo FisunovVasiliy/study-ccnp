@@ -1,0 +1,27 @@
+{
+ "id": 333,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Which command must be used to restore configuration changes made by disabling the PIM feature and skipping any errors?",
+ "context": "Switch1# show checkpoint summary\n1) pim-checkpoint:\nCreated by admin\nCreated at Tue, 00:50:29 22 Jun 2021\nSize is 24,855 byte\nUser Checkpoint Summary\n--------------------------------------------------\nDescription: Created by Admin.\n\n2) system-fm-pim:\nCreated by admin\nCreated at Tue, 00:08:57 22 Jun 2021\nSize is 24,034 bytes\nSystem Checkpoint Summary\n--------------------------------------------------\nDescription: Created by Feature Manager.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "rollback running-config checkpoint system-fm-pim best-effort",
+  "rollback running-config checkpoint system-fm-pim atomic",
+  "rollback running-config checkpoint new-checkpoint verbose",
+  "rollback running-config checkpoint new-checkpoint stop-at-first-failure"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

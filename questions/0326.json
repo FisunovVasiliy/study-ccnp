@@ -1,0 +1,28 @@
+{
+ "id": 326,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nDrag and drop the steps on the left onto the order in which they must be implemented on the right to recover a fabric interconnect when there is no working image on the bootflash.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "Boot the kickstart image using TFTP.",
+  "Configure the management interfaces.",
+  "Copy the main image files.",
+  "Install the files."
+ ],
+ "correctOrder": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

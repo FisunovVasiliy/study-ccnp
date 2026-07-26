@@ -1,0 +1,30 @@
+{
+ "id": 340,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. SVR-A in EPG-A/BD-A fails to reach SVR-B in EPG-B/BD-B. Which two conditions should be verified to analyze the traffic between the two EPGs? (Choose two.)",
+ "context": "Topology: two ACI spine switches connect to Node-110, Node-111, Node-112. Node-110 has BD-A/EPG-A -> SVR-A. Node-112 has BD-B/EPG-B -> SVR-B. Both in VRF-1.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "A contract exists between EPG-A and EPG-B and allows the traffic.",
+  "The bridge domain for EPG-B floods ARP packets.",
+  "EPG-A and EPG-B are excluded from the preferred group.",
+  "Limit Endpoint Learning is disabled on the bridge domain for EPG-B.",
+  "SVR-B is learned as an endpoint in EPG-B from Node-112."
+ ],
+ "correct": [
+  0,
+  4
+ ],
+ "mostVoted": [
+  "A",
+  "E"
+ ],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

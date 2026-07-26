@@ -1,0 +1,27 @@
+{
+ "id": 318,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a named VSAN when the fabric interconnect is in Fibre Channel switch mode. The VSAN must meet these requirements:\n- Named VSAN must be called `VSAN10`.\n- VSAN ID must be 10.\n- FCoE ID must be 20.\n- VSAN 10 must be attached to port 2 in slot 1.\nWhich command set configures a VSAN when the fabric interconnects is in Fibre Channel switch mode?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "UCS-A# scope eth-storage UCS-A/fc-storage# create vsan VSAN10 10 20 UCS-A/fc-storage/vsan # create member-port fcoe a 2 1 UCS-A/fc-storage/vsan/member-port* # commit-buffer",
+  "UCS-A# scope fc-traffic-mon UCS-A/fc-storage# create vsan VSAN10 20 10 UCS-A/fc-storage/vsan # create member-port fcoe a 2 1 UCS-A/fc-storage/vsan/member-port* # commit-buffer",
+  "UCS-A# scope fc-storage UCS-A/fc-storage# create vsan VSAN10 10 20 UCS-A/fc-storage/vsan # create member-port fcoe a 1 2 UCS-A/fc-storage/vsan/member-port* # commit-buffer",
+  "UCS-A# scope fc-uplink UCS-A/fc-storage# create vsan VSAN10 20 10 UCS-A/fc-storage/vsan # create member-port fcoe a 1 2 UCS-A/fc-storage/vsan/member-port* # commit-buffer"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

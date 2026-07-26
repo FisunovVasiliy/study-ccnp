@@ -1,0 +1,27 @@
+{
+ "id": 335,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must perform an initial configuration of VXLAN and MP-BGP EVPN on the Cisco Nexus 9000 Series platform. The underlay must be OSPF, and the VTEP must run with distributed default gateway on a VLAN interface. Which command set must be applied to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NX9K(config)# feature nv overlay\nNX9K(config)# feature vn-segment-vlan-based\n\nNX9K(config)# feature bgp -\n\nNX9K(config)# nv overlay-evpn -\n\nNX9K(config)# feature ospf -\nNX9K(config)# feature interface-vlan",
+  "NX9K(config)# feature nv overlay\n\nNX9K(config)# feature bfd -\nNX9K(config)# feature vn-segment-vlan-based\n\nNX9K(config)# nv overlay-evpn -\n\nNX9K(config)# feature ngmvpn -\n\nNX9K(config)# feature ospf -",
+  "NX9K(config)# feature nv overlay\n\nNX9K(config)# feature bfd -\nNX9K(config)# feature fabric forwarding\nNX9K(config)# feature vn-segment-vlan-based\n\nNX9K(config)# nv overlay-evpn -\n\nNX9K(config)# feature ospfv3 -",
+  "NX9K(config)# feature nv overlay\n\nNX9K(config)# feature bgp -\n\nNX9K(config)# feature bfd -\n\nNX9K(config)# feature ngmvpn -\n\nNX9K(config)# feature ospf -\nNX9K(config)# feature interface-vlan"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

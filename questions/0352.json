@@ -1,0 +1,27 @@
+{
+ "id": 352,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which Cisco HyperFlex ability adds compute or storage-only nodes as required?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "unified management",
+  "independent resource scaling",
+  "stretch clustering",
+  "in-cluster synchronous replication"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": 345,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nAn engineer configures the NetFlow feature on a Cisco NX-OS device. The requirement is to reduce the amount of export data collected by using a sampler. Drag and drop the NetFlow configuration steps from the left onto the implementation needed to meet these requirements on the right. Not all steps are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "Enable the NetFlow feature.",
+  "Define a flow record.",
+  "Define a flow monitor.",
+  "Apply a sampler with a flow monitor to the interface."
+ ],
+ "correctOrder": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

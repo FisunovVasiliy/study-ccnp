@@ -1,0 +1,27 @@
+{
+ "id": 336,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A content delivery network sends video traffic to a multicast distribution device where the receiver requests the traffic from the multicast distribution device through an IGMP join message. When the traffic reaches the multicast distribution device from a CDN, the switching network populates the multicast routing table in the group (S,G), and the multicast distribution device sends the required traffic back to the receiver.\nWhich feature is used to send back the traffic from the streamer to the receiver in the group (S,G)?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "RP",
+  "Source Specific Multicast",
+  "Reverse Path Forwarding",
+  "IGMP"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 71%, C 29%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

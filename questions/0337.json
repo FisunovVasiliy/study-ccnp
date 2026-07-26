@@ -1,0 +1,27 @@
+{
+ "id": 337,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a feature of EPLD upgrades on a Cisco Nexus 7000 Series Switch?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "They do not cause service disruptions.",
+  "They are performed during an ISSU system and kickstart upgrade.",
+  "They are independent of the Cisco NX-OS ISSU process.",
+  "They execute simultaneously on multiple modules."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

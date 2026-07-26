@@ -1,0 +1,27 @@
+{
+ "id": 310,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is an advantage of NAS compared to SAN?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It provides lossless throughput.",
+  "It offers enhanced NFS features.",
+  "It functions in an existing IP environment.",
+  "It offers enhanced security features."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

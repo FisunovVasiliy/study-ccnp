@@ -1,0 +1,30 @@
+{
+ "id": 388,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must add a new VRF (DC:DC) to the network that runs with Multiprotocol Border Gateway Protocol (MP-BGP) and EVPN. The requirement for the new VRF is to allow communication of network prefixes between PE1 and PE2. Which two sets of steps should be taken to complete the VRF configuration? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "PE1:\nvrf context DC:DC\n  rd 233:1\n  address-family ipv4 unicast\n    route-target import 233:1\n    route-target export 233:2\nPE2:\nvrf context DC:DC\n  rd 233:2\n  address-family ipv4 unicast\n    route-target import 233:1\n    route-target export 233:2",
+  "PE1:\nvrf context DC:DC\n  rd 233:1\n  address-family ipv4 unicast\n    route-target import 233:1\n    route-target export 233:2\nPE2:\nvrf context DC:DC\n  rd 233:1\n  address-family ipv4 unicast\n    route-target import 233:2\n    route-target export 233:2",
+  "PE1:\nvrf context DC:DC\n  rd 233:1\n  address-family ipv4 unicast\n    route-target import 233:1\n    route-target export 233:2\nPE2:\nvrf context DC:DC\n  rd 233:1\n  address-family ipv4 unicast\n    route-target import 233:2\n    route-target export 233:2",
+  "PE1:\nvrf context DC:DC\n  rd 233:1\n  address-family ipv4 unicast\n    route-target import 233:1\n    route-target export 233:1\nPE2:\nvrf context DC:DC\n  rd 233:2\n  address-family ipv4 unicast\n    route-target import 233:1\n    route-target export 233:1",
+  "PE1:\nvrf context DC:DC\n  rd 233:1\n  address-family ipv4 unicast\n    route-target import 233:1\n    route-target export 233:1\nPE2:\nvrf context DC:DC\n  rd 233:1\n  address-family ipv4 unicast\n    route-target import 233:2\n    route-target export 233:1"
+ ],
+ "correct": [
+  1,
+  3
+ ],
+ "mostVoted": [
+  "B",
+  "D"
+ ],
+ "voteNote": "BD 71%, B 29%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

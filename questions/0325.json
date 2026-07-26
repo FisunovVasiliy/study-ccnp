@@ -1,0 +1,27 @@
+{
+ "id": 325,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure two Cisco Nexus 7000 Series switches in the same data center to support OTV. Which command set completes the join interface configuration? feature otv otv site-identifier 256 interface overlay 1 otv control-group 239.1.1.1 otv data-group 239.1.1.0/29 otv join-interface ethernet 2/1 otv extend-vlan 5-10 no shutdown",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Edge Device 1 interface ethernet 2/1 ip address 192.0.2.1/24 ip igmp version 3 ip pim sparse-mode Edge Device 2 interface ethernet 2/1 ip address 192.0.2.16/24 ip igmp version 3 ip pim sparse-mode",
+  "Edge Device 1 interface ethernet 2/1 ip address 192.0.2.1/24 ip igmp version 3 Edge Device 2 interface ethernet 2/1 ip address 192.0.2.1/24 ip igmp version 3",
+  "Edge Device 1 interface ethernet 2/1 ip address 192.0.2.1/24 ip igmp version 3 Edge Device 2 interface ethernet 2/1 ip address 192.0.2.16/24 ip igmp version 3",
+  "Edge Device 1 interface ethernet 2/1 ip address 192.0.2.1/24 Edge Device 2 interface ethernet 2/1 ip address 192.0.2.16/24"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 356,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must configure a QoS policy that controls only vHBA traffic. Which policy must be used to meet this requirement?",
+ "context": "UCS Manager GUI: LAN / LAN Cloud / QoS System Class. Table with Priority, Enabled, Cos, Packet Drop, Weight, Weight (MB), MTU, Multicast Optimized columns for rows: Platinum, Gold, Silver, Bronze, Best Effort, Fibre Channel.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Fibre Channel",
+  "Gold",
+  "Platinum",
+  "Best Effort"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

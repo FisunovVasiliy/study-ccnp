@@ -1,0 +1,27 @@
+{
+ "id": 323,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement access control for Cisco UCS Manager. The configuration must meet these requirements:\n- All users and user groups must be configured using Active Directory.\n- User1 must have full access to the Fabric Interconnect infrastructure and network security operations.\n- User1 must have full access to the storage operations configuration.\nWhich action must be performed on Cisco UCS to meet the requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Execute a built-in role for the user and RADIUS for the role-mapping for Active Directory.",
+  "Execute a built-in role for the user and LDAP for the role-mapping for Active Directory.",
+  "Create a custom role for the user and LDAP for the role-mapping for Active Directory.",
+  "Create a custom role for the user and RADIUS for the role-mapping for Active Directory."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 63%, B 38%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

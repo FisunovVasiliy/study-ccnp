@@ -1,0 +1,27 @@
+{
+ "id": 347,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer performs a Cisco UCS C480 ML M5 installation from a Cisco UCS Manager. As a part of the design, the server must perform an iSCSI boot from the storage array. Which configuration must be performed in the SAN settings in the root organization to satisfy that condition?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Enable a host SAN pool.",
+  "Create an IQN suffix pool.",
+  "Create a virtual iSCSI vNIC.",
+  "Implement a WWPN pool."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 88%, other 13%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

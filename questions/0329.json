@@ -1,0 +1,30 @@
+{
+ "id": 329,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must configure SAN connectivity in Cisco UCS Manager. The requirement is to specify the WWPN of the storage array and set the zoning type to Single Initiator Multiple Targets. The engineer must also configure interrupt handing and queues of the vHBA interface. Which two Cisco UCS polices should be used to configure the settings? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "boot policy",
+  "Fibre Channel adapter policy",
+  "storage connection policy",
+  "vHBA policy",
+  "SAN connectivity policy"
+ ],
+ "correct": [
+  1,
+  2
+ ],
+ "mostVoted": [
+  "B",
+  "C"
+ ],
+ "voteNote": "BC 86%, BE 15%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

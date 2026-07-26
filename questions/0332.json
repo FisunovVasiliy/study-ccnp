@@ -1,0 +1,27 @@
+{
+ "id": 332,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A network administrator experiences these issues with the network:\n- PC1 is experiencing a buffering problem for video applications.\n- The servers that are connected to SW2 are experiencing packet drops when they connect to the internet.\nThe engineer wants to configure the required traffic capture to investigate the issue further.\nWhich configuration must be implemented to monitor the traffic?",
+ "context": "Topology: Monitoring Device -Eth2/3- N9K -Eth1/1- SW1 (PC1 Vlan10, PC2 Vlan15); N9K -Eth1/2- SW2 (Vlan18-23 servers).",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "N9K(config)# monitor session 5 tx\nN9K(config-monitor)# description Span_session_5\nN9K(config-monitor)# source vlan 10-15 rx\nN9K(config-monitor)# source interface ethernet 1/2\nN9K(config-monitor)# destination interface ethernet 2/3",
+  "N9K(config)# monitor session 5 rx\nN9K(config)# monitor session 5 tx\nN9K(config-monitor)# description Span_session_5\nN9K(config-monitor)# source interface ethernet 1/1\nN9K(config-monitor)# source interface ethernet 1/2\nN9K(config-monitor)# destination interface ethernet 2/3",
+  "N9K(config)# monitor session 5 tx\nN9K(config-monitor)# description Span_session_5\nN9K(config-monitor)# source interface ethernet 1/1\nN9K(config-monitor)# source interface ethernet 1/2\nN9K(config-monitor)# destination interface ethernet 2/3",
+  "N9K(config)# monitor session 5 rx\nN9K(config-monitor)# description Span_session_5\nN9K(config-monitor)# source vlan 10 rx\nN9K(config-monitor)# source interface ethernet 1/2\nN9K(config-monitor)# destination interface ethernet 2/3"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 82%, B 18%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

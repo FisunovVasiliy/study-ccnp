@@ -1,0 +1,25 @@
+{
+ "id": 374,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A network engineer must create an EEM script that saves a copy of the running configuration to bootflash and writes a message to syslog when a user saves the configuration to a Cisco Nexus 9000 Series Switch. Which command completes the configuration set?",
+ "context": "event manager applet local-backup\n  event cli match \"copy running-config startup-config\"\n  action 1 cli copy <blank> bootflash:/current_config.txt\n  action 2 syslog msg Configuration saved and copied to bootflash\n  action 3 event-default",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "policy-default",
+  "syslog-config",
+  "event-default",
+  "running-config"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

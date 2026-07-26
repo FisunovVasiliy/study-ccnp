@@ -1,0 +1,27 @@
+{
+ "id": 312,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Where does the witness VM reside in a Cisco HyperFlex Edge deployment?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "HyperFlex Data Platform",
+  "local HyperFlex datastore",
+  "Windows application",
+  "Cisco Intersight"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

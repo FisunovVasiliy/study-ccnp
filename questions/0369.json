@@ -1,0 +1,27 @@
+{
+ "id": 369,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network administrator attempts to automate the provisioning of several new Cisco Nexus switches. The administrator prepares a bootstrap configuration script for the task. Due to the number of switches, a zero-touch provisioning solution is preferred. Additionally, some switches arrive with outdated software and should be automatically upgraded as part of the provisioning workflow. Which solution meets the requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Ansible",
+  "NX-API",
+  "POAP",
+  "DHCP"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

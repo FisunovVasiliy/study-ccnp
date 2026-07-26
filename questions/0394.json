@@ -1,0 +1,27 @@
+{
+ "id": 394,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "The network team needs permissions to access the Cisco UCS B-Series Servers via the Cisco UCS Manager GUI to configure the network and collect information about faults. The administrator wants to assign these permissions to the newly configured user called netops. Which set of tasks must the administrator perform to accomplish these goals?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Implement username netops on the locally authenticated user.\nAssign the roles of network administrator and operations.",
+  "Configure username netops on the Cisco UCS Manager login profile.\nAssign the roles of AAA administrator and operations.",
+  "Enable username netops on the authenticated users.\nAssign the roles of storage administrator and facility manager.",
+  "Deploy username netops on the users locales.\nAssign the roles of networks security and facility manager."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

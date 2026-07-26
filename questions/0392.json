@@ -1,0 +1,25 @@
+{
+ "id": 392,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer implements a Python script on a Cisco Nexus 9000 Series Switch with redundant supervisors. The script is located on a built-in container that runs as part of the Cisco NX-OS system. The requirement is to automate the periodic transfer of the Python script to a redundant supervisor. In addition, the script must be transferred to an external server using encryption and authentication. Which configuration set meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Enable the checkpoint feature.\nConfigure an EEM job to transfer the script to the SCP server.",
+  "Implement the guest shell synchronization feature.\nConfigure a scheduler job to transfer the script to the TFTP server.",
+  "Enable the checkpoint feature.\nConfigure a scheduler job to transfer the script to the HTTP server.",
+  "Implement the guest shell synchronization feature.\nConfigure a CRON job to transfer the script to the SCP server."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

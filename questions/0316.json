@@ -1,0 +1,27 @@
+{
+ "id": 316,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement a new VRF that permits communication between all endpoint groups (EPGs) by default. The new EPGs and bridge domains (BDs) that are created in the new VRF must not require additional configuration to permit traffic between the newly created EPGs or BDs. Which action accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Provide and consume a permit any contract on the VRF level.",
+  "Create a VRF in the common tenant.",
+  "Place all EPGs in the preferred group.",
+  "Implement a global contract."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 86%, other 14%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

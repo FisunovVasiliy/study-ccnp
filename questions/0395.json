@@ -1,0 +1,27 @@
+{
+ "id": 395,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "ASAN administrator must implement infrastructure monitoring for the Fibre Channel storage environment. The storage environment consists of a standalone Cisco Nexus 9000 Series Switch and Cisco MDS 9000 Series Switches. The goal is to be able to visualize the SAN, support VXLAN overlays, and identify storage slow drain issues.\nWhich monitoring solution accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Cisco DCNM",
+  "Cisco APIC",
+  "Cisco Intersight",
+  "Cisco Prime Infrastructure"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 306,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A secure server that provides services to EPG-2 must be placed in EPG-1. The remaining EPGs (EPG-2, EPG-3, and EPG-4) must communicate without any contracts. Which set of actions accomplishes this goal?",
+ "context": "Topology: VRF-prod contains EPG-1 (with Secure server), EPG-2, EPG-3, EPG-4.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Exclude EPG-2, EPG-3, and EPG-4 from the preferred group. Configure a contract between EPG-1 and EPG-3.",
+  "Exclude EPG-2, EPG-3, and EPG-4 from the preferred group. Configure a contract between EPG-2 and EPG-3.",
+  "Include EPG-2, EPG-3, and EPG-4 in the preferred group. Configure a contract between EPG-1 and EPG-2.",
+  "Include EPG-1 and EPG-2 in the preferred group. Configure a contract between EPG-2 and EPG-3."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

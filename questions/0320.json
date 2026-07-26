@@ -1,0 +1,27 @@
+{
+ "id": 320,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer upgrades the bash on the Cisco Nexus 9000 Series Switch.",
+ "context": "guestshell:~$ sudo [MISSING_COMMAND] /bootflash/bash-4.2_8642465284455a-r8x86_64.rpm.rpm\nPreparing...\n#################################### [100%]\n1:bash ################################### [100%]\nupdate-alternatives: Linking //bin/sh to /bin/bash\nWhich command must be used to complete the task?",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "upgrade -U",
+  "rpm -qa",
+  "rpm -Uhv",
+  "update -vh"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 76%, A 24%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

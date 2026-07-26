@@ -1,0 +1,36 @@
+{
+ "id": 319,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the HyperFlex characteristics from the left onto the appropriate HyperFlex node types on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "uses only SSD drives for caching",
+  "contains HDDs for the capacity layer",
+  "uses SSD drives or NVMe storage for caching",
+  "recommended for repeatable and sustainable high performance, especially for scenarios with a larger working set of data",
+  "has SSD drives for the capacity layer",
+  "recommended for capacity sensitive solutions, lower budgets, and fewer performance-sensitive applications"
+ ],
+ "targets": [
+  "Hybrid Node",
+  "All Flash Node"
+ ],
+ "matchCorrect": [
+  0,
+  0,
+  1,
+  0,
+  1,
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

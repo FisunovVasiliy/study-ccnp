@@ -1,0 +1,27 @@
+{
+ "id": 348,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must set access to Cisco IMC. The access must be allowed by logging onto the https://datacenter.local web page. The configuration presented is on the Cisco UCS C240 Series Server.\nWhich set of commands completes the configuration?",
+ "context": "Topology: VLAN10 connects C2XX (Ten0, 192.168.1.10) via a router (192.168.1.2/.1) to 192.168.2.0/24 (DNS server .20) and 192.168.3.0/24 (CIMC at https://datacenter.local, e1/2 .10).\nServer /cimc/network # show detail\nNetwork Setting:\n  IPv4 Address: 192.168.1.10\n  IPv4 Netmask: 255.255.255.0\n  IPv4 Gateway: 192.168.1.2\n  DHCP Enabled: yes\n  ...\n  VLAN Enabled: yes\n  VLAN ID: 1\n  VLAN Priority: 32\n  ...",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Server# scope cimc\nServer /cimc # scope network\nServer /cimc/network # set dhcp-enabled yes\nServer /cimc/network *# set v4-addr 192.168.1.10\nServer /cimc/network *# set v4-netmask 255.255.255.0\nServer /cimc/network *# set v4-gateway 192.168.1.12\nServer /cimc/network *# commit",
+  "Server# scope cimc\nServer /cimc # scope network\nServer /cimc/network # set vlan-enabled yes\nServer /cimc/network *# set vlan-id 10\nServer /cimc/network *# set vlan-priority 32\nServer /cimc/network *# set dns-use-dhcp-enabled yes\nServer /cimc/network *# commit",
+  "Server# scope cimc\nServer /cimc # scope network\nServer /cimc/network # set dhcp-enabled yes\nServer /cimc/network *# set v4-addr 192.168.1.10\nServer /cimc/network *# set v4-netmask 255.255.255.0\nServer /cimc/network *# set preferred-dns-server 192.168.3.20\nServer /cimc/network *# commit",
+  "Server# scope cimc\nServer /cimc # scope network\nServer /cimc/network # set vlan-enabled yes\nServer /cimc/network *# set vlan-id 10\nServer /cimc/network *# set vlan-priority 32\nServer /cimc/network *# set preferred-dns-server 192.168.3.20\nServer /cimc/network *# commit"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 83%, C 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

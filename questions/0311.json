@@ -1,0 +1,26 @@
+{
+ "id": 311,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nA network engineer must implement a telemetry solution to collect real-time structured data in a large-scale network. Drag and drop the actions from the left into the order on the right to implement the solution. Not all actions are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "Configure the flow monitor and flow record.",
+  "Configure the data to be collected as part of the sensor group.",
+  "Set the subscription between the sensor group and the destination."
+ ],
+ "correctOrder": [
+  0,
+  1,
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "\"Set the format and destination to which the data is sent.\" is the distractor not used in the correct sequence.",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 365,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is implementing VSAN 10 on multiple Cisco Nexus 5600 Series Switches and must ensure that the full zone set and active zone set are identical across the fabric. Which configuration must be implemented to meet this requirement?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch(config)# zoneset distribute vsan 10",
+  "switch(config)# zone-attribute-group name ATTR1 vsan 10",
+  "switch(config)# zoneset distribute full vsan 10",
+  "switch(config)# zoneset activate name ZONE10 vsan 10"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

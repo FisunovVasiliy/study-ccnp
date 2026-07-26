@@ -1,0 +1,27 @@
+{
+ "id": 376,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A new user with access privileges in the Finance department moves to a new Admin department. The user must have access privileges to the Admin department data and applications inside the Cisco UCS Manager. Which set of changes must be implemented in Cisco UCS Central for the user to acquire the privileges?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Disable the Finance user account and add the authentication service for the Admin privileges.",
+  "Create a new locale Admin and add the Admin department to the Admin locale.",
+  "Create an Admin user account and remove the authentication service for the Finance privileges.",
+  "Delete the old locale Finance and remove the Finance department from the Finance locale."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

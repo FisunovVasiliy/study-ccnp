@@ -1,0 +1,27 @@
+{
+ "id": 373,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer connects the CNA interface of a server to a switch. The switch must bring down all of the VLANs on the interface that are not enabled for FCoE, but the VLANs that are enabled for FCoE should continue to carry SAN traffic without interruption. Which configuration should be applied to the switch to achieve this objective?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch(config)# interface Ethernet 2/1\nswitch(config-if)# shutdown force",
+  "switch(config)# interface Ethernet 2/1\nswitch(config-if)# shutdown lan",
+  "switch(config)# interface Ethernet vfc 2\nswitch(config-if)# shutdown force",
+  "switch(config)# interface vfc 2\nswitch(config-if)# shutdown lan"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

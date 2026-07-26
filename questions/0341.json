@@ -1,0 +1,30 @@
+{
+ "id": 341,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nAn engineer must configure an LACP port channel on two Cisco Nexus 9000 Series Switches. The interface e1/2 must be a hot-standby link that initiates negotiation with other ports. Drag and drop the commands from the right onto the blanks in the configuration on the left. Not all commands are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "configure terminal\n  feature {{1}}\n\ninterface Ethernet 1/2\n  switchport\n  channel-group 2 {{2}}\n\ninterface Ethernet 1/3\nswitchport\n  channel-group 2 mode active\n  lacp port-{{3}}",
+ "wordBank": [
+  "mode active",
+  "lacp",
+  "priority 1",
+  "mode passive",
+  "priority 65534",
+  "mode on"
+ ],
+ "blankAnswers": [
+  "lacp",
+  "mode active",
+  "priority 1"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": 314,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must determine the cooling requirements for a Cisco UCS C-Series Rack Server. The server with PCIe cards is configured with a fan configuration policy. Which configuration should be used for the fan policy of the server?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "server # scope chassis server /chassis # scope fan-policy server /chassis/fan-policy # set fan-policy balanced server /chassis/fan-policy* # commit",
+  "server # scope chassis server /chassis # scope fan-policy server /chassis/fan-policy # set fan-policy high-power server /chassis/fan-policy* # commit",
+  "server # scope chassis server /server # scope fan-policy server /server/fan-policy # set fan-policy acoustic server /server/fan-policy* # commit",
+  "server # scope server server /server # scope fan-policy server /server/fan-policy # set fan-policy low-power server /server/fan-policy* # commit"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

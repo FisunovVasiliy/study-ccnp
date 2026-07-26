@@ -1,0 +1,27 @@
+{
+ "id": 367,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must perform a POAP deployment of a Cisco Nexus 9000 Series Switch. The switch must automatically receive its software image and configuration file upon power-on. Also, only UDP is permitted between the Nexus 9000 switch and the server that hosts the Cisco NX-OS system images.\nWhich set of actions completes the configuration?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Enable option 35.\nDefine HTTP transfer protocol.",
+  "Enable option 67.\nDefine TFTP transfer protocol.",
+  "Enable option 43.\nDefine HTTP transfer protocol.",
+  "Enable option 46.\nDefine TFTP transfer protocol."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 83%, C 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

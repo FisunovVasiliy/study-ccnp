@@ -1,0 +1,27 @@
+{
+ "id": 354,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must implement private VLANs for a group of Cisco UCS B-Series servers. The primary VLAN is present, but the secondary VLAN must be added to both fabrics. Which configuration set accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "UCS-A# scope eth-uplink -\nUCS-A /eth-uplink # create vlan vlan1981 1981\nUCS-A /eth-uplink/vlan* # set sharing none",
+  "UCS-A# scope eth-uplink -\nUCS-A /eth-uplink # create vlan vlan1981 1981\nUCS-A /eth-uplink/vlan* # set sharing isolated",
+  "UCS-A# scope eth-uplink -\nUCS-A /eth-uplink # scope fabric a\nUCS-A /eth-uplink/fabric # create vlan vlan1981 1981\nUCS-A /eth-uplink/fabric/vlan* # set sharing secondary",
+  "UCS-A# scope eth-uplink -\nUCS-A /eth-uplink # scope fabric a\nUCS-A /eth-uplink/fabric # create vlan vlan1981 1981\nUCS-A /eth-uplink/fabric/vlan* # set sharing private"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

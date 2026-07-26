@@ -1,0 +1,27 @@
+{
+ "id": 350,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer created a service profile in Cisco UCS Manager and associated it to a server. The engineer must create a policy if there is a disruptive change applied to the service profile.\nWhich policy type must be used to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "BIOS",
+  "administration",
+  "reboot",
+  "maintenance"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

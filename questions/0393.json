@@ -1,0 +1,27 @@
+{
+ "id": 393,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A network engineer must monitor the traffic from the server on VLAN 80. All source traffic from the server must be captured on the monitoring device. Which configuration set meets these requirements?",
+ "context": "Topology: server on vlan70 and server on vlan90 connect through a switch (Eth1/2 to vlan80 server, Eth1/1 to Traffic Analyzer).\nswitch(config)# interface ethernet 1/1\nswitch(config-if)# switchport monitor\nswitch(config-if)# exit\nswitch(config)# monitor session 1\nswitch(config-monitor)# no shut",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch(config-monitor)# destination interface ethernet 1/1\nswitch(config-monitor)# source vlan 80",
+  "switch(config-monitor)# destination interface ethernet 1/1\nswitch(config-monitor)# filter vlan 80",
+  "switch(config-monitor)# destination interface ethernet 1/2\nswitch(config-monitor)# filter vlan 80 rx tx",
+  "switch(config-monitor)# destination interface ethernet 1/2\nswitch(config-monitor)# source vlan 80 rx"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 80%, B 20%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

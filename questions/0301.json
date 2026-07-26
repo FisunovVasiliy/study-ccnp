@@ -1,0 +1,27 @@
+{
+ "id": 301,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a Cisco UCS domain for monitoring and management by the Cisco Intersight SaaS platform. After the setup is complete, administrators must have full control to configure the device through Cisco UCS Manager and Intersight. Which set of actions accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure Device Connector Access Mode as Allow Control in Device Consol. Claim the device on Intersight as UCSM Managed Mode.",
+  "Configure Device Connector Access Mode as Allow Control in Cisco UCS Manager. Claim the device on Intersight as UCSM Managed Mode.",
+  "Configure Device Connector Access Mode as Allow Control in Device Console. Claim the device on Intersight as Intersight Managed Mode.",
+  "Configure Device Connector Access Mode as Allow Control in Cisco UCS Manager. Claim the device on Intersight as Intersight Managed Mode."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 63%, D 26%, other 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 389,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which component is excluded by default from the host firmware package?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "network interface controller",
+  "local disk",
+  "board controller",
+  "storage controller"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 83%, A 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

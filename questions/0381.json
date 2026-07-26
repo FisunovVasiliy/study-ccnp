@@ -1,0 +1,27 @@
+{
+ "id": 381,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer deploys a new Cisco Nexus 5000 Series Switch in an existing environment with strict security policies. The new device should meet these requirements:\n- Secure end-user ports with minimum configuration effort.\n- Log security breaches and require manual recovery.\n- Retain the switch configuration if the device restarts.\nWhich configuration must be used?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switchport port-security\nswitchport port-security mac address sticky",
+  "switchport port-security\nswitchport port-security violation restrict\nswitchport port-security mac-address sticky",
+  "switchport port-security\nswitchport port-security violation shutdown\nswitchport port-security mac-address dynamic",
+  "switchport port-security\nswitchport port-security max 1\nswitchport port-security violation shutdown"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 55%, B 30%, other 15%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

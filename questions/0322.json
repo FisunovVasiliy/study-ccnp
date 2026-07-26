@@ -1,0 +1,30 @@
+{
+ "id": 322,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer performs a Firmware Auto install upgrade through the Cisco UCS Manager. Which two Cisco UCS components are available to be upgraded in the install Server Firmware stage? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Fabric Interconnects",
+  "I/O Modules",
+  "Cisco UCS B-Series Blade Server",
+  "Cisco UCS C-Series Rack-Mount Server",
+  "Cisco UCS Manager"
+ ],
+ "correct": [
+  2,
+  3
+ ],
+ "mostVoted": [
+  "C",
+  "D"
+ ],
+ "voteNote": "CD 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

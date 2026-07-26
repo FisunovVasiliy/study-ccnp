@@ -1,0 +1,27 @@
+{
+ "id": 375,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network engineer must configure a Cisco MDS switch to use the local user database for console access if all AAA servers are unreachable. Which configuration should be applied to complete this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "aaa authentication login console fallback error local",
+  "aaa authentication login console local",
+  "aaa authentication login default local",
+  "aaa authentication login default fallback error local"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 89%, other 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

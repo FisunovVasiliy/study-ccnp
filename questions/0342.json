@@ -1,0 +1,27 @@
+{
+ "id": 342,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is deploying a VXLAN EVPN environment for a customer. The customer's environment suffers from a large amount of flooding related to hosts attempting to resolve the MAC to IP mapping on the network segment. Which feature prevents this issue from happening in the future?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "IP ARP suppression",
+  "anycast gateway",
+  "IP ARP SYNC",
+  "anycast rendezvous point"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 67%, B 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

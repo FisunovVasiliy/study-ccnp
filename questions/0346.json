@@ -1,0 +1,27 @@
+{
+ "id": 346,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must perform backup and restore of the Cisco UCS Manager configuration. The configuration must be stored on a remote server via XML encoding. The backup must store the configurations of the chassis, FEX, rack servers, IOMs, and blade server. Which set of actions accomplishes these goals?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Perform an all configuration backup and run the system restore procedure.",
+  "Perform a full state configuration backup and run the restore procedure.",
+  "Perform a logical configuration backup and run the replace import method.",
+  "Perform a system configuration backup and run the merge import method."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 74%, C 26%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

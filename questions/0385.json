@@ -1,0 +1,30 @@
+{
+ "id": 385,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. An engineer installs a new Cisco UCS B-Series server. The requirement is to install an operating system on a LUN that is provided by the Fibre Channel storage array.\nWhich two steps must be configured in the boot policy to accomplish this goal? (Choose two.)",
+ "context": "UCS Manager GUI: Create Boot Policy dialog. Fields: Name, Description, Reboot on Boot Order Change, Enforce vNIC/vHBA/iSCSI Name (checked), Boot Mode (Legacy/Uefi). Boot Order sections: Local Devices, CIMC Mounted vMedia, vNICs, vHBAs, iSCSI vNICs, EFI Shell. Boot Order table columns: Name, Order, vNIC/vHBA, Type, LUN Na..., WWN, Slot No..., Boot No... (No data available).",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Add Local CD/DVD and SAN Boot.",
+  "Set Boot Order to External USB and LAN Boot.",
+  "Create iSCSI vNICs and add Local LUN.",
+  "Configure a SAN Boot Target with a WWPN.",
+  "Disable Enforce vNIC/vHBA/iSCSI Name."
+ ],
+ "correct": [
+  0,
+  3
+ ],
+ "mostVoted": [
+  "A",
+  "D"
+ ],
+ "voteNote": "AD 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

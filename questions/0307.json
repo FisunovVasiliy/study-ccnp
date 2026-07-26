@@ -1,0 +1,27 @@
+{
+ "id": 307,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "The Cisco UCS blade chassis must send SNMPv3 traps to a network monitoring system. The SNMP trap messages should be authenticated and have protection from disclosure. Which SNMP security privilege level should be configured?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "priv",
+  "noAuth",
+  "auth",
+  "noPriv"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

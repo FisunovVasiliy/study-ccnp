@@ -1,0 +1,27 @@
+{
+ "id": 302,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer implements a Python script inside a Cisco Bash shell. The script contains this dictionary object:\nswitch_id_list = {\n  \"N9K-Spine-1\": \"842542684755\",\n  \"N9K-Leaf-1\": \"126784690\",\n  \"N9K-Leaf-2\": \"56556473\"\n}\nWhich command must be used to add the 'N9K-Spine-2': '1498323434' element to the switch_id_list dictionary?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch_id_list += {'N9K-Spine-2':'1498323434'}",
+  "switch_id_list = ['N9K-Spine-2':'1498323434']",
+  "switch_id_list.append({'N9K-Spine-2':'1498323434'})",
+  "switch_id_list.update({'N9K-Spine-2':'1498323434'})"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "Note: the source PDF rendered the quote/brace characters in these options with corrupted glyphs (font encoding issue in the original export); the option text above has been reconstructed based on standard Python dict syntax consistent with the marked correct answer.",
+ "needsAnswer": false,
+ "provisional": false
+}

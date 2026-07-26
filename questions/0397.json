@@ -1,0 +1,27 @@
+{
+ "id": 397,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which protocol does Cisco HyperFlex use to share data among nodes in a VMware vSphere environment?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "FCoE",
+  "NFS",
+  "CIFS",
+  "SMB"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 349,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must recover the Cisco UCS system. The full backup is available on a backup SCP server. Which set of actions recovers the configuration of the Cisco UCS Manager?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Create an import-config task.\nSet the action to Replace.",
+  "Copy the backup file to a USB drive.\nCopy the running-config.",
+  "Factory reset the fabric interconnect.\nSelect the Restore feature.",
+  "Create a scheduled restore job.\nReboot the UCS Manager."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

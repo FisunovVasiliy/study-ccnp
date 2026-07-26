@@ -1,0 +1,27 @@
+{
+ "id": 317,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is implementing traffic monitoring for a server vNIC that is configured with fabric failover enabled. The requirement is for the traffic to be sent to an analyzer, even during a failure of one of the fabric interconnects. The analyzer is connected to unconfigured Ethernet ports on both fabric interconnects. Which configuration accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Create two traffic monitoring sessions with different names, one per fabric. Connect an analyzer on each FI as the destination for the monitoring session local to the FI.",
+  "Create two traffic monitoring sessions with the same name, one per fabric. Connect the analyzer connected to FI-A as the destination for both monitoring sessions.",
+  "Create two traffic monitoring sessions with different names, one per fabric. Connect the analyzer connected to FI-B as the destination for both monitoring sessions.",
+  "Create two traffic monitoring sessions with the same name, one per fabric. Connect an analyzer on each FI as the destination for the monitoring session local to that FI."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 380,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. The communication between the web server and the application server experiences poor performance. The network engineer must collect the traffic between the two servers, including the payload, for more investigation. The collected data must be sent from the remote site to the headquarters. Which action accomplishes this goal?",
+ "context": "Topology: Remote Site has Web Server and Application Server connected to N5K-1, which connects via L3 MPLS to N5K-2 at HQ, which connects to a Monitor Server.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure NetFlow on N5K-1 to send the data to the monitor server.",
+  "Configure SNMP on N5K-1 to send the data to the monitor server.",
+  "Configure a SPAN session between N5K-1 and N5K-2.",
+  "Configure an ERSPAN session between N5K-1 and N5K-2."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 391,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two components are used by the Cisco Nexus switches telemetry process? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "telemetry agent",
+  "data encoding",
+  "data collection",
+  "telemetry compression",
+  "data manipulation"
+ ],
+ "correct": [
+  1,
+  2
+ ],
+ "mostVoted": [
+  "B",
+  "C"
+ ],
+ "voteNote": "BC 62%, AC 38%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

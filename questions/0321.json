@@ -1,0 +1,30 @@
+{
+ "id": 321,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must generate a checkpoint of the running configuration on a Cisco Nexus Switch. The checkpoint file name must be called `before_maintenance` and should be used for recovering the switch to its premaintenance state. The rollback of the checkpoint to running configuration should only occur if no errors occur. Which two configuration commands must be used to meet these requirements? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "rollback running-config file before_maintenance atomic",
+  "checkpoint file before_maintenance",
+  "rollback running-config checkpoint before_maintenance",
+  "checkpoint before_maintenance",
+  "rollback checkpoint file before_maintenance stop-at-first-failure"
+ ],
+ "correct": [
+  0,
+  1
+ ],
+ "mostVoted": [
+  "A",
+  "B"
+ ],
+ "voteNote": "AB 64%, CD 21%, other 14%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

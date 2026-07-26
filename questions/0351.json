@@ -1,0 +1,30 @@
+{
+ "id": 351,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must configure a VDS port group using APIC policy. The requirements are for the frames to be mapped to a particular Layer 2 network and for the virtual machine assigned to the port group to receive all frames passed on the virtual switch.\nWhich two settings must be used to meet these requirements? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "VLAN",
+  "forged transmits",
+  "port binding",
+  "promiscuous mode",
+  "VMDirectPath"
+ ],
+ "correct": [
+  0,
+  3
+ ],
+ "mostVoted": [
+  "A",
+  "D"
+ ],
+ "voteNote": "AD 80%, AC 20%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

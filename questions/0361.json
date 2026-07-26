@@ -1,0 +1,30 @@
+{
+ "id": 361,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. A network engineer must SPAN only the ingress traffic of a Cisco MDS 9000 Series Switch from interface fc 1/23 to interface fc 1/24. Which two configurations must be applied to complete this task? (Choose two.)",
+ "context": "interface fc 1/24\n-- output omitted --\nno shutdown\nspan session 1\n-- output omitted --\ndestination interface fc 1/24",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "MDS-A(config-span)# source interface fc 1/23",
+  "MDS-A(config-if)# switchport mode SD",
+  "MDS-A(config-span)# source interface fc 1/23 rx",
+  "MDS-A(config-span)# source interface fc 1/23 tx",
+  "MDS-A(config-if)# switchport mode TL"
+ ],
+ "correct": [
+  1,
+  2
+ ],
+ "mostVoted": [
+  "B",
+  "C"
+ ],
+ "voteNote": "BC 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

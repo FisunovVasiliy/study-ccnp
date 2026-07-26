@@ -1,0 +1,27 @@
+{
+ "id": 372,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network administrator must create a Linux container on a Cisco Nexus Series Switch. The container requires 10 percent of the CPU of the switch and 1024 MB of RAM to run successfully. Which task provides the necessary resources?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Edit the container properties with the guestshell run command.",
+  "Increase the compute resources with the guestshell resize command.",
+  "Modify resource allocation with the virtual-service resize command.",
+  "Enable the Bash shell of the switch with the feature bash command."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 90%, D 10%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

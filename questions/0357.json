@@ -1,0 +1,27 @@
+{
+ "id": 357,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which file service protocol allows the files to appear locally mapped to the client and provides view, store, and update capabilities on a remote Linux-based storage repository that also serves as a distributed file system standard for NAS?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NFS",
+  "CIFS",
+  "iSCSI",
+  "FTP"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

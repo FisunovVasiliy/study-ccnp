@@ -1,0 +1,27 @@
+{
+ "id": 400,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A customer requires a solution to orchestrate the configuration of storage arrays, firewalls, and Cisco ACI networking. Additionally, the orchestration product must support open automation and a service catalog. Which solution meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Cisco Workload Optimization Manager",
+  "Cisco UCS Director",
+  "Cisco Intersight",
+  "Cisco Data Center Network Manager"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}
