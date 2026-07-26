@@ -1,0 +1,27 @@
+{
+ "id": 477,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A QoS policy on Cisco UCS must meet these requirements: no-drop class must be configured; and jumbo frames must be enabled without fragmentation. Which configuration must be implemented to meet these conditions?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure slow-drain timers and specify an MTU value of 9100 bytes.",
+  "Create a Flow Control Policy and specify an MTU value of 9000 bytes.",
+  "Create a QoS system class and specify an MTU value of 9216 bytes.",
+  "Configure Platinum system class and specify an MTU value of 9100 bytes."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 86%, D 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

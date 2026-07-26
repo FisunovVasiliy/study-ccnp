@@ -1,0 +1,31 @@
+{
+ "id": 441,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nDrag and drop the command snippets from the bottom onto the boxes in the code to complete a Python script that displays a list of interfaces on a Cisco Nexus 9000 Series Switch using on-box Python. Not all command snippets are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": ">>> cli('configure terminal ; interface loopback 5; no shut')\n''\nintflist:json.{{1}} (clid('show interface brief'))\n>>> i=0\n>>> while i < len ({{2}}['TABLE_interface']['ROW_interface']):\n...intf=intflist('TABLE_interface')['{{3}}'][i]\n...i=i+1\n...if {{4}}['state'] == 'up':\n...prit intf['interface']\n...\nmgmt0\nloopback2\nloopback5",
+ "wordBank": [
+  "dumps",
+  "loads",
+  "inflist",
+  "TABLE_interface",
+  "intf",
+  "ROW_interface"
+ ],
+ "blankAnswers": [
+  "loads",
+  "inflist",
+  "ROW_interface",
+  "intf"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

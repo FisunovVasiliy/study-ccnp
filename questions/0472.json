@@ -1,0 +1,27 @@
+{
+ "id": 472,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A network automation engineer must configure a Cisco NX-OS REST API on a Cisco 9000 Series Switch with these requirements: NX-API REST and the DME database must be enabled; the NX-API REST must listen for HTTP traffic on port 83; and the HTTPS certificate must be uploaded. Which configuration set must be used to accomplish these goals?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "feature nxapi\nnxapi {tcp} port 83\nnxapi certificate {httpscrt}",
+  "feature nxapi\nnxapi {tcp} port 83\nnxapi certificate {httpscrt}\nnxapi certificate enable",
+  "feature nxapi\nnxapi {http} port 83\nnxapi certificate {httpscrt}",
+  "feature nxapi\nnxapi {http} port 83\nnxapi certificate {httpscrt | httpskey}\nnxapi certificate enable"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

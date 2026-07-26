@@ -1,0 +1,27 @@
+{
+ "id": 433,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which FC mode is the device MDS-9148S-2 operating in?\nMDS-9148S-2# show interface port-channel 2\nport-channel 2 is up\n  Hardware is Fibre Channel\n  Port WWN is 24:02:8c:60:4f:2d:de:c0\n  Admin port mode is NP, trunk mode is off\n  snmp link state traps are enabled\n  Port mode is NP\n  Port vsan is 11\n  Speed is 16 Gbps\n  1 minute input rate 0 bits/sec, 0 bytes/sec, 0 frames/sec\n  1 minute output rate 0 bits/sec, 0 bytes/sec, 0 frames/sec\n    1160983754 frames input, 140497639680 bytes\n    0 discards, 0 errors\n    0 CRC, 0 unknown class\n    0 too long, 0 too short\n    90139726 frames output, 8743553423232 bytes",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "FDISC",
+  "NPV",
+  "NPIV",
+  "FPMA"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,28 @@
+{
+ "id": 511,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nRefer to the exhibit. Drag and drop FCoE port types from the right onto the corresponding positions on the left to complete the FCoE deployment. Port types can be used more than once. Not all port types are used.",
+ "context": "Topology: FCF NPIV Core switch connects down to FCOE NPV switch, which connects down to FCOE Host.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "FCF NPIV Core\n  (port on Core facing FCOE NPV): {{1}}\n(port on FCOE NPV facing FCF NPIV Core): {{2}}\nFCOE NPV\n  (port on FCOE NPV facing FCOE Host): {{3}}\n(port on FCOE Host facing FCOE NPV): {{4}}\nFCOE Host",
+ "wordBank": [
+  "VF_Port",
+  "VN_Port",
+  "VNP_Port"
+ ],
+ "blankAnswers": [
+  "VF_Port",
+  "VNP_Port",
+  "VF_Port",
+  "VN_Port"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

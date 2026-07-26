@@ -1,0 +1,27 @@
+{
+ "id": 451,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a feature of an electronic programmable logic device (EPLD) upgrade on a Cisco MDS 9000 Series Switch?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Only the modules that are being upgraded are disrupted.",
+  "An EPLD upgrade is disruptive on all modules.",
+  "The standby supervisor module can perform the upgrade.",
+  "An EPLD upgrade is nondisruptive on all modules."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

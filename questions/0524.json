@@ -1,0 +1,27 @@
+{
+ "id": 524,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must restrict users assigned to the sangroup role on the Cisco MDS 9000 Series Switch from issuing commands on VSANs 15 to 20. Which command must the engineer run to achieve this objective?\nRole: sangroup\nDescription: SAN management group\nvsan policy: deny\nPermitted vsans: 10-30\n\nRule  Type    Command-type   Feature\n1.    permit  config         *\n2.    deny    config         fspf\n3.    permit  debug          zone\n4.    permit  exec           fcping",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "permit vsan 15-20",
+  "no vsan policy deny",
+  "vsan policy deny vsan 15-20",
+  "no permit vsan 15-20"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 85%, C 15%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

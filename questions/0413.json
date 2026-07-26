@@ -1,0 +1,27 @@
+{
+ "id": 413,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What does this output indicate about port channel 1?\nswitch# show interface po1\nport-channel 1 is trunking\n  admin port mode is F, trunk mode is on\n  port mode is TF",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Port channel 1 is configured as an ISL trunk between two MDS switches.",
+  "Port channel 1 is configured to connect to an NPV switch.",
+  "Port channel 1 is operating in NPIV mode.",
+  "Port channel 1 has negotiated E port mode."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 67%, C 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

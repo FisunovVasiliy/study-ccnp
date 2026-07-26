@@ -1,0 +1,27 @@
+{
+ "id": 488,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure port aggregation between two Cisco MDS 9000 Series Switches. The solution must meet these requirements: suspend member interface if parameters mismatch; load-balance traffic on multiple ports; and support traffic from multiple VSANs. Which port channel configuration must be used?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Port type: FT Port - Port channel mode: Active",
+  "Port type: F Port - Port channel mode: On",
+  "Port type: E Port - Port channel mode: Active",
+  "Port type: TE Port - Port channel mode: On"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 47%, C 35%, A 18%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

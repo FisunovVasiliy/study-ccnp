@@ -1,0 +1,27 @@
+{
+ "id": 470,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. The Cisco NX-OS scheduler must run every day at 3:00 a.m. Which code snippet completes the script?\n1 configure terminal\n2 scheduler job name BACKUP_JOB\n3 cli copy running-config bootflash:/$(NAME).$(TIMESTAMP).cfg\n4 exit\n5 scheduler schedule name BACKUP_SCHEDULE\n6 job name BACKUP_JOB\n7 ______\n8 end",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "time start daily 3:00",
+  "time start weekly 7 3:00",
+  "time weekly 7 3:00",
+  "time daily 3:00"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

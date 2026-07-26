@@ -1,0 +1,27 @@
+{
+ "id": 460,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must deploy a Cisco UCS C-Series Server with a single VIC 1455 integrated into a Cisco UCS Manager cluster. Two fiber connections are available, and the deployment has no fabric extenders. Which set of actions accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Reset the system using Cisco IMC to its factory default settings. Attach VIC port 1 and 3 to Fabric Interconnects.",
+  "Configure VIC attached ports as Uplink ports on fabric interconnects. Insert 1000Base-T RJ45 SFP in VIC port 1 and 3.",
+  "Reset the system using Cisco IMC to its factory default settings. Insert 1000Base-T RJ45 SFP in VIC port 1 and 3.",
+  "Configure VIC attached ports as Uplink ports on fabric interconnects. Attach VIC port 1 and 3 to Fabric Interconnects."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 86%, 14%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

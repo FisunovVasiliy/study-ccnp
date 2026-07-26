@@ -1,0 +1,27 @@
+{
+ "id": 416,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must reduce TCAM usage in a Cisco ACI fabric while ensuring that all EPGs within a VRF consume the same set of contracts/services. Which action accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Implement a taboo contract.",
+  "Configure a preferred group per EPG.",
+  "Implement vzAny feature.",
+  "Disable policy enforcement on the bridge domain."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

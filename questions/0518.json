@@ -1,0 +1,27 @@
+{
+ "id": 518,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A network engineer must retrieve the network interface name from a JSON object. The engineer loads the JSON into a Python dictionary named json_object. Which code snippet completes the Python script?\nimport json\n\njson_object = {\n  \"type\": \"network\",\n  \"if-name\": \"eth0\",\n  \"description\": \"ethernet\",\n  \"ip-address\": \"170.15.15.11\",\n  \"subnet-mask\": \"255.255.255.0\",\n  \"nat-direction\": \"\"\n}\n______\nreturn interface_name",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface_name = json_object[\"if-name\"]",
+  "interface_name = json_object[0]",
+  "interface_name = json_object[\"eth0\"]",
+  "interface_name = json_object[0][2]"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

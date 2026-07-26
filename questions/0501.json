@@ -1,0 +1,27 @@
+{
+ "id": 501,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must integrate Cisco ACI with VMware vCenter. The virtualization team configured the necessary port groups and assigned them to virtual machines through VMware vCenter. The final port group configuration must be protected from being changed by Cisco APIC. Which action accomplishes these goals?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Create the VMM domain with switch mode set to AVE.",
+  "Set the VMM domain access mode to Read Only Mode.",
+  "Configure the VMM domain with tag collection.",
+  "Activate CDP and LLDP in the VMM domain."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

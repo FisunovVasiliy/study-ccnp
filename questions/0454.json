@@ -1,0 +1,27 @@
+{
+ "id": 454,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must replace a defective fabric interconnect with the same model. The system must be restored, including the database of locally created users. The equivalent Cisco UCS Manager software version must be used. Which backup type must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Full State",
+  "All Configuration",
+  "System Configuration",
+  "Logical Configuration"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

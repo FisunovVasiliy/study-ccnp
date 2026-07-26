@@ -1,0 +1,27 @@
+{
+ "id": 505,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which component is, by default, excluded from the host firmware package on a Cisco UCS B-Series Server?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "local SD card",
+  "local disk",
+  "storage controller",
+  "graphics processing unit"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

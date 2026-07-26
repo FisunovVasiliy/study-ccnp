@@ -1,0 +1,27 @@
+{
+ "id": 482,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer is performing a Cisco Nexus 3000 Series Switch configuration backup with a TFTP server that is reachable in the global routing table. Which action completes the scheduler configuration?\nswitch(config)# feature scheduler\nswitch(config)# scheduler aaa-authentication password X12y34Z56a\nswitch(config)# scheduler job name backup-cfg\nswitch(config-job)# copy bootflash:/cfg-backup.cfg tftp://1.2.3.4/ vrf management\nswitch(config)# scheduler logfile size 16\nswitch(config-job)# end\n\nswitch(config)# scheduler schedule name daily\nswitch(config-if)# job name backup-cfg\nswitch(config-if)# time daily 55\nswitch(config-if)# end",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Use the default VRF for the scheduler job.",
+  "Configure the scheduler authentication password.",
+  "Define the scheduler start time as required.",
+  "Make the size of the job output lower than the size of the log file."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

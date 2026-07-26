@@ -1,0 +1,27 @@
+{
+ "id": 422,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is a benefit of Cisco HyperFlex All-Flash Stretched cluster deployment as compared to All-HDD Stretched cluster deployment?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "lower number of IOPS",
+  "higher number of IOPS",
+  "lower cost",
+  "higher cost"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 423,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A traffic collector virtual machine is installed inside the Cisco UCS server. The collector must monitor traffic that is received on G1/2 with ERSPAN. Which set of actions must be taken to send the traffic to the traffic collector?",
+ "context": "Topology: SW1 (G1/2) connects to FI-A and FI-B, which connect to the UCS Chassis containing the collector VM.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure ERSPAN. Configure a source session on Cisco UCS Manager.",
+  "Configure SPAN. Configure a source session on the SW1 switch.",
+  "Configure SPAN. Configure a source session on Cisco UCS Manager.",
+  "Configure ERSPAN. Configure a source session on the SW1 switch."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "Community-voted answer (B) conflicts with the marked correct answer (D); presented as officially marked (D).",
+ "needsAnswer": false,
+ "provisional": false
+}

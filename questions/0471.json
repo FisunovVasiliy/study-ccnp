@@ -1,0 +1,27 @@
+{
+ "id": 471,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must create a PowerShell script that leverages the Cisco UCS Manager PowerShell module to submit automated requests to Cisco UCS Manager. The engineer must automate the removal of switches from VLANs. Environment variables must provide the VLAN name and switch identifiers. The VLAN must persist when it is removed from the switch port. Which command must the engineer include in the script to accomplish these goals?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Get-UcsApplianceCloud | Remove -UcsVlan -name $VLAN | Remove-UcsVlanMemberPort -SwitchId $SWID -SlotId $SLOT -PortId $PORT",
+  "Get-UcsApplianceCloud | Get-UcsVlan -name $VLAN | Remove-UcsVlanMemberPort -SwitchId B -SlotId 1 -PortId 15",
+  "Get-UcsApplianceCloud | Remove -UcsVlan -name $VLAN",
+  "Get-UcsApplianceCloud | Get-UcsVlan -name $VLAN | Get-UcsVlanMemberPort -SwitchId $SWID -SlotId $SLOT -PortId $PORT | Remove-UcsVlanMemberPort -Force"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

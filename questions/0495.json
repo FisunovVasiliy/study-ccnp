@@ -1,0 +1,27 @@
+{
+ "id": 495,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must perform a configuration backup of an existing Cisco UCS Manager environment. The backup file must contain all vNIC, vHBA, and service profile template settings. Also, the engineer must validate the backup before import and requires an XML output format. Which backup type must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "full state",
+  "all configuration",
+  "logical configuration",
+  "system configuration"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 73%, B 27%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

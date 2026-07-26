@@ -1,0 +1,30 @@
+{
+ "id": 453,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must configure a new Cisco UCS B-Series infrastructure with a Cisco S108 chassis. The configuration must meet these requirements: the setup must use aggregation between Cisco UCS Fabric Interconnects and I/O modules; the implementation requires four 10 GbE connections per I/O module; and the Cisco UCS Fabric Interconnects must support uplinks of different speeds for future expansion. Which two steps must be taken to meet these requirements? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Reacknowledge the chassis after the initial discovery.",
+  "Set IOM link pinning in Global Policies.",
+  "Configure unified ports for the chassis.",
+  "Set Link Group Preference to Port Channel.",
+  "Disable Auto Configure Server Port."
+ ],
+ "correct": [
+  0,
+  3
+ ],
+ "mostVoted": [
+  "A",
+  "D"
+ ],
+ "voteNote": "AD 79%, BD 21%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

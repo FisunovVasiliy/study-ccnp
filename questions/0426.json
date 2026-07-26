@@ -1,0 +1,27 @@
+{
+ "id": 426,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must create a scheduler configuration to create two backup jobs per day. The backup file must be copied to a server in the operations VRF. Which configuration accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "scheduler schedule name CNFGBACKUP / job name BACKUP-JOB / copy vrf operations config tftp://10.19.11.12/$(SWITCHNAME)-$(TIMESTAMP).cfg / time start 12:30 repeat 12",
+  "scheduler schedule name CNFGBACKUP / job name BACKUP-JOB / copy running-config tftp://10.19.11.12/$(SWITCHNAME)-$(TIMESTAMP).cfg vrf operations / time start now repeat 12:00",
+  "scheduler schedule name CNFGBACKUP / job name BACKUP-JOB / show tech-support | redirect vrf operations tftp://10.19.11.12/$(SWITCHNAME)-$(TIMESTAMP).cfg / time start daily 12:30 0:30",
+  "scheduler schedule name CNFGBACKUP / job name BACKUP-JOB / copy startup-config tftp://10.19.11.12/$(SWITCHNAME)-$(TIMESTAMP).cfg / time daily 12:30 0:30"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 80%, D 20%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 403,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which VLAN must be assigned as the ACI infra VLAN when running the APIC setup script during initial configuration?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "VLAN 1, the default VLAN",
+  "the same VLAN as the management VLAN",
+  "any VLAN already used elsewhere in the network",
+  "a unique VLAN within the network"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": 409,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must download new firmware to a Cisco UCS fabric interconnect. The firmware file is 232 MB. The transfer must be encrypted and the server must be authenticated. Which protocol must be used?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "TFTP",
+  "SCP",
+  "FTP",
+  "HTTP"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

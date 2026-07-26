@@ -1,0 +1,27 @@
+{
+ "id": 442,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is the benefit of using the Cisco Nexus Dashboard single sign-on feature?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It provides notifications about end of sale for the deployed switches.",
+  "It adds a security layer based on multifactor authentication.",
+  "It manages operations of the infrastructure using a single pane of glass.",
+  "It allows the user to switch seamlessly between the hosted services."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 523,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must implement an Application Performance Monitoring (APM) for the production servers on the Cisco Nexus 93180 Series Switch-based infrastructure in datacenter 1. The APM solution must meet these requirements: it must copy all inbound and outbound production traffic; and it must support real-time telemetry. Which configuration must be used on datacenter 1 switches to meet these objectives?",
+ "context": "Topology: two data centers, each with a pair of spine switches connecting to three leaf switches, connecting to production/APM servers across VLANs 3018, 2408, 1812.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "monitor session 1 source ip 172.30.18.12,172.24.8.39\nmonitor session 1 destination ip 172.18.10.1\nmonitor session 1 type rspan\nmonitor session 1 filter vlan 3018,2408",
+  "monitor session 1 type erspan-source\nsource vlan 3018,2408 both\nvrf default\ndestination ip 172.18.10.1\nerspan-id 19\nno shut",
+  "monitor session 1 type rspan-source\nsource vlan 3018,2408 both\nvrf management\ndestination vlan 2810\nspan-id 19\nno shut",
+  "monitor session 1 source vlan 3018,2408\nmonitor session 1 type IP\nmonitor session 1 destination ip 172.18.10.1\nno monitor session 1 shutdown"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

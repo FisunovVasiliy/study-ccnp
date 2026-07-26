@@ -1,0 +1,27 @@
+{
+ "id": 457,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must upgrade the server firmware for which the service profile is configured with a host firmware package. Which action must be taken to accomplish this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Disassociate the service profile from the server and upgrade.",
+  "Change the maintenance policy to user-ack and upgrade.",
+  "Upgrade the server through the host firmware package.",
+  "Perform a direct upgrade on the server using Auto Install."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 80%, B 20%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

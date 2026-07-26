@@ -1,0 +1,27 @@
+{
+ "id": 459,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must access a Cisco UCS C-Series server KVM from a remote location. The engineer must use the out-of-band interface to access the KVM. Which configuration set meets these requirements?",
+ "context": "Topology: Server MGMT/LAN1/LAN2 connect to switch ports E1/0/10, E1/0/11, E1/0/12.\ninterface Ethernet1/0/10\n  switchport mode access\n  switchport access vlan 100\ninterface Ethernet1/0/11\n  switchport mode access\n  switchport access vlan 101\ninterface Ethernet1/0/12\n  switchport mode access\n  switchport access vlan 102",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NIC mode: Shared LOM - VLAN ID: 100",
+  "NIC mode: Dedicated - VLAN ID: 101",
+  "NIC mode: Dedicated - VLAN state: Disabled",
+  "NIC mode: Shared LOM - VLAN state: Disabled"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 67%, A 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

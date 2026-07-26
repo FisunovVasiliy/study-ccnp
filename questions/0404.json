@@ -1,0 +1,27 @@
+{
+ "id": 404,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must configure port security on a Cisco Nexus 5000 Series Switch to meet these requirements: only VSAN 10 devices are permitted; a specific pWWN must be permitted only through san-port-channel 2; any WWN must be permitted through fc1/1-3; and auto-learning must be disabled. Which configuration meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "port-security database vsan 10 / pwwn 20:10:10:10:10:10:10:10 interface san-port-channel 2 / any wwn interface fc1/1-3 / port-security commit vsan 10",
+  "port-security database vsan 10 / pwwn 20:10:10:10:10:10:10:10 interface fc1/1-3 / any wwn interface san-port-channel 2 / port-security commit vsan 10",
+  "port-security database vsan 10 / pwwn 20:10:10:10:10:10:10:10 interface san-port-channel 2 / any wwn interface fc1/1-3 / port-security auto-learn vsan 10",
+  "port-security database vsan 1 / pwwn 20:10:10:10:10:10:10:10 interface san-port-channel 2 / any wwn interface fc1/1-3 / port-security commit vsan 10"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 57%, B 38%, other 5%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

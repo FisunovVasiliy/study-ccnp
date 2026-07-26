@@ -1,0 +1,27 @@
+{
+ "id": 427,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Server1 is connected to a Cisco Nexus 9000 Series Switch via a 1-Gb port channel. The storm control is applied to the Eth0 device with a zero percent value. What does the switch do to traffic that traverses the switch interfaces during the streaming window that exceeds the bandwidth of the interfaces?",
+ "context": "Exhibit: Server1, Eth0 interface bandwidth graph showing a streaming window between roughly 10-60 seconds where bandwidth peaks around 1600-1700 MB then fluctuates between 1000-1400 MB.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "suppresses all traffic",
+  "forwards all traffic",
+  "drops all of the excess traffic",
+  "forwards half of the traffic"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 79%, C 21%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

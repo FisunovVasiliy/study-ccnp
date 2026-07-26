@@ -1,0 +1,27 @@
+{
+ "id": 417,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What happens to the LACP peer session during an ISSU upgrade of a switch, when default aging timers are used?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The LACP peer renegotiates a new session immediately.",
+  "The LACP peer session goes down for the duration of the upgrade.",
+  "The LACP peer session flaps once before recovering.",
+  "The LACP peer session remains up."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

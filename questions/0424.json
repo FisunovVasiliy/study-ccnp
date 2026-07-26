@@ -1,0 +1,32 @@
+{
+ "id": 424,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the NAS and NFS concepts from the left onto the definitions on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "Data storage and file sharing requests are sent and received.",
+  "The protocol is regularly used on Linux and UNIX systems.",
+  "Software is deployed on a lightweight OS that is embedded in the hardware.",
+  "The vendor-agnostic protocol is supported on any hardware and OS."
+ ],
+ "targets": [
+  "NFS",
+  "NAS"
+ ],
+ "matchCorrect": [
+  0,
+  0,
+  1,
+  1
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

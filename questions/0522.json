@@ -1,0 +1,27 @@
+{
+ "id": 522,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must deploy Cisco ACI in two data centers with a multisite configuration. The deployment must support a central management console for multiple data centers host multiple applications and support hardware and virtual clouds. Which product must be used?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Nexus Dashboard",
+  "Nexus Dashboard Insights",
+  "Nexus Dashboard Orchestrator",
+  "Nexus Dashboard Fabric Controller"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

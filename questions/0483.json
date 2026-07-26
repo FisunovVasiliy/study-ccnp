@@ -1,0 +1,27 @@
+{
+ "id": 483,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer configures FCoE in a newly installed data center. Which configuration must be applied to activate VSAN 100 on VFC 100?\ninterface vfc100\n  bind interface Ethernet1/12\n  switchport trunk allowed vsan 100\n  no shutdown\n\nN9K-1# sh vlan fcoe\nOriginal VLAN ID   Translated VSAN ID   Association State\n------------------ -------------------- ------------------\n10                 10                   Operational\n300                300                  Operational",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Map an FCoE VLAN to VSAN 100.",
+  "Allow VSAN 100 on interface eth1/12.",
+  "Issue the shutdown lan command on VFC 100.",
+  "Configure a VLAN on VFC 100."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

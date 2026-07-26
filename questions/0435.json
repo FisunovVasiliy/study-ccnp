@@ -1,0 +1,30 @@
+{
+ "id": 435,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two protocols are used by the NFSv4 protocol? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "UDP",
+  "Ethernet",
+  "TCP",
+  "FCP",
+  "IP"
+ ],
+ "correct": [
+  2,
+  4
+ ],
+ "mostVoted": [
+  "C",
+  "E"
+ ],
+ "voteNote": "CE 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

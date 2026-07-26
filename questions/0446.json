@@ -1,0 +1,27 @@
+{
+ "id": 446,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What happens to the VRRP configuration when the router SW9621-2 becomes operational?\nSW9621-1# show vrrp detail\nEthernet2/3 - Group 100 (IPV4)\n  State is Master\n  Virtual IP address is 192.168.30.100\n  Priority 100, Configured 100\n  Forwarding threshold(for VPC), lower: 1 upper: 100\n  Advertisement interval 3\n  Preemption enabled\n  Authentication text \"D458F7B032E4632090EF06EE5A\"\n  Virtual MAC address is 0000.5e00.0164\n  Master router is Local",
+ "context": "Topology: SW9621-1 and SW9621-2 both connect to the Internet via Ethernet2/3. SW9621-2 (VRRP priority 160) is temporarily unavailable.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The SW9621-2 router becomes a new active master.",
+  "The SW9621-1 router becomes a new active master after 3 seconds.",
+  "The SW9621-1 router remains an active master.",
+  "The SW9621-2 router becomes an active master after 3 seconds."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 54%, D 38%, other 8%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

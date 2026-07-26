@@ -1,0 +1,27 @@
+{
+ "id": 401,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must configure port security on a Cisco MDS switch. The requirements are: the VSAN 4 port-security database must be activated and initiated despite conflicts with the existing configuration; static entries in the database must be added without database activation; the configuration must apply fabric wide; and any pending configuration lock must be released after the process is complete. Which command set accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "port-security activate vsan 4 / no port-security auto-learn vsan 4 / port-security distribute / abort",
+  "port-security activate vsan 4 / no port-security auto-learn vsan 4 / no port-security distribute / port-security commit vsan 4",
+  "port-security activate vsan 4 / port-security auto-learn vsan 4 / port-security distribute / port-security commit vsan 4",
+  "port-security activate vsan 4 force / no port-security auto-learn vsan 4 / port-security distribute / port-security commit vsan 4"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 71%, C 29%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

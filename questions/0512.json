@@ -1,0 +1,27 @@
+{
+ "id": 512,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. What is the result of this configuration?\nswitch(config)# fcns proxy-port 21:00:00:b2:c5:71:32:a9 vsan 100",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "It creates a FLOGI database.",
+  "It adds an entry for the name server database.",
+  "It implements a mapping between the WWN and the VSAN.",
+  "It enables the registration of parameters for another node."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 67%, D 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 407,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Two vPCs are configured from leaf A and leaf B in a Cisco ACI fabric to two different downstream devices. Which configuration object must be used on the leaf switches to support this design?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "one vPC domain policy shared by both interface policy groups",
+  "a single vPC interface policy group applied to both port channels",
+  "two vPC domains, one per leaf switch",
+  "two vPC interface policy groups"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

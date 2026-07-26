@@ -1,0 +1,27 @@
+{
+ "id": 492,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer implements an environment with multiple traffic types on a consolidated I/O link between Cisco Nexus 9000 Series Switch and MDS 9000 Series Switch. The configuration must meet these requirements: the unified I/O link must support LAN and SAN traffic; a single, multipurpose Ethernet transport must be used; the configuration must discard MAC addresses that are not part of the current fabric; and the QoS markings must be preserved. Which configuration set meets the requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "MDS-A(config)# interface fcip4 -\nMDS-A(config-if)# use-profile 8 -\nMDS-A(config-if)# peer-info ipaddr 200.200.100.7",
+  "N9K-2(config)# interface Eth2 -\nN9K-2(config-if)# switchport mode trunk\nN9K-2(config-if)# auto qos trust dscp",
+  "MDS-B(config)# interface fc3 -\nMDS-B(config-if)# switchport trunk mode on\nMDS-B(config-if)# switchport trunk allowed vsan 2-5",
+  "N9K-1(config)# fcoe fcmap 0e.fc.1d\nN9K-1(config)# int vfc 1 -\nN9K-1(config-if)# bind interface e1/3"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 80%, B 20%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

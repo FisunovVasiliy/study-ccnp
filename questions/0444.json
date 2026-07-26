@@ -1,0 +1,27 @@
+{
+ "id": 444,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "What is the impact of a nondisruptive upgrade on fabric and modular switches?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The upgrade disrupts the control plane for more than 120 seconds.",
+  "During the upgrade, new devices cannot log in to the fabric.",
+  "If a zone server merge is in progress, the upgrade continues without interruption.",
+  "When the installation is complete, the system BIOS must be updated."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 80%, C 20%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

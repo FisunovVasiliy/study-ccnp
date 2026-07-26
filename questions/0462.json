@@ -1,0 +1,27 @@
+{
+ "id": 462,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer configures an FCoE connection between a Cisco UCS and a Cisco Nexus 9000 Series Switch. The UCS FI-A connects to the Nexus switch using interface e1/12. All relevant configurations have been completed on the Nexus switch to support FCoE deployment. Which action must be taken on Cisco UCS Manager to complete the configuration?",
+ "context": "DCNM SAN view: SAN Cloud / Fabric A / VSANs / VSAN VSAN-500 (500). Properties: Name VSAN-500, ID 500, Fabric ID A, Network Type San, If Type Virtual, Locale External, Transport Type Fc, FCoE VLAN ID 500, Operations State OK, Owner Local.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Trunk VLAN 500 on interface e1/12.",
+  "Create a Virtual Fibre Channel Interface.",
+  "Change the Transport Type to FCoE.",
+  "Configure an FCoE uplink interface."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

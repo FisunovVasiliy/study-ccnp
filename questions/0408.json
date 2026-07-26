@@ -1,0 +1,27 @@
+{
+ "id": 408,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must diagnose intermittent latency and slow response-time issues in the fabric using Cisco DCNM. Which sequence of features must be used to perform a slow-drain analysis?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Slow Drain Analysis / Duration Once/Run Immediately / Start/Stop Collection / Current Jobs/Result",
+  "Current Jobs/Result / Start/Stop Collection / Duration Once/Run Immediately / Slow Drain Analysis",
+  "Slow Drain Analysis / Start/Stop Collection / Duration Once/Run Immediately / Current Jobs/Result",
+  "Duration Once/Run Immediately / Slow Drain Analysis / Start/Stop Collection / Current Jobs/Result"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 83%, B 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

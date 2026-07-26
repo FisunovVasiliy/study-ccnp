@@ -1,0 +1,28 @@
+{
+ "id": 415,
+ "topic": "Topic 1",
+ "type": "order",
+ "question": "DRAG DROP -\nDrag and drop the streaming telemetry components from the left into the correct sequence on the right to describe the push model flow. Not all components are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "items": [
+  "Push model",
+  "Sensor group",
+  "Telemetry receiver",
+  "Google remote procedure call"
+ ],
+ "correctOrder": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "\"Google protocol buffer\" and \"Subscription\" are distractors not used in the correct sequence.",
+ "needsAnswer": false,
+ "provisional": false
+}

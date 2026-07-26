@@ -1,0 +1,27 @@
+{
+ "id": 428,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which storage solution operates at the file level and contains its own native lightweight operating system on simplified hardware?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NAS",
+  "SAN",
+  "unified fabric",
+  "standard file server"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

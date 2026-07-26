@@ -1,0 +1,27 @@
+{
+ "id": 430,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A network engineer must configure an authentication solution for Cisco UCS with these conditions: two-factor authentication must be enabled for all UCS user authentication; and all AAA packets must be encrypted and use TCP port 49 to establish communication. Which set of actions meets these requirements?",
+ "context": "CN=CiscoXYPair,CN=Schema,CN=Configuration,CN=X\nobjectClass: top\nobjectClass: attributeSchema\ncn: CiscoPair\ndistinguishedName: CN=CiscoXYPair,CN=Schema,CN=Configuration,CN=X\ninstanceType: 0x4\nuSNCreated: 26318654\nattributeID: 1.3.6.1.4.1.9.287247.1\nattributeSyntax: 2.5.5.12\nisSingleValued: TRUE\nshowInAdvancedViewOnly: TRUE\nadminDisplayName: CiscoXYPair\nadminDescription: UCS User Authorization Field\noMSyntax: 64\nlDAPDisplayName: CiscoXYPair\nname: CiscoXYPair\nobjectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,CN=X",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Delete the LDAP group mapping. Create a RADIUS provider in user management.",
+  "Remove the LDAP provider. Create a TACACS+ provider in user management.",
+  "Create the LDAP provider. Change the LDAP group rule in an LDAP provider.",
+  "Create the RADIUS group mapping. Change the RADIUS group rule in a RADIUS provider."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

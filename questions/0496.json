@@ -1,0 +1,27 @@
+{
+ "id": 496,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is implementing VSANs on a Cisco MDS 9000 Series Switch with a native Fibre Channel. The deployment must meet these requirements: the host on port fc1/1 must be assigned to VSAN 10; and the port channel 10 ISL must pass multiple VSANs, including VSAN 10. Which configuration set meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Activate VSAN 10 in the vFC interface. Associate VSAN 10 to interface vfc 1/1. Enable vsan F-port-channel-trunk on the ISL. Set encapsulation EISL on the switch port.",
+  "Create VSAN 10 in the VSAN database. Bind VSAN 10 to interface fc1/1 in the VSAN database. Enable VSAN trunking on the ISL. Allow VSAN 10 on the ISL.",
+  "Configure VSAN 10 in the interface configuration. Attach VSAN 10 to the VSAN database. Enable VSAN trunking on fc1/1. Filter all VSAN on the ISL.",
+  "Disable VSAN 1 in the VSAN database. Assign VSAN 10 to the ISL. Enable VSAN trunking on the port channel members. Permit VSAN 10 in the FLOGI database."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

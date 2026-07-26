@@ -1,0 +1,34 @@
+{
+ "id": 405,
+ "topic": "Topic 1",
+ "type": "match",
+ "question": "DRAG DROP -\nDrag and drop the streaming telemetry concepts from the left onto the correct definitions on the right.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "bank": [
+  "Google Protocol Buffers and JSON format",
+  "remote management system or application that stores the telemetry data",
+  "collected from the Data Management Engine database using a distinguished name paths",
+  "UDP and secure UDP (DTLS)"
+ ],
+ "targets": [
+  "data collection",
+  "data encoding",
+  "data transport",
+  "telemetry receiver"
+ ],
+ "matchCorrect": [
+  1,
+  3,
+  0,
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

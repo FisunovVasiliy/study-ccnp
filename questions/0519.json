@@ -1,0 +1,27 @@
+{
+ "id": 519,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must configure Embedded Event Manager to output a message to syslog when the Cisco IOS write memory CLI command runs. Which command completes the script?\nevent manager applet cli-match\n  ______\n  action 1.0 syslog msg \"$_cli_msg Command Executed\"\n  set 2.0 _exit_status 1",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "event cli pattern \"write memory.*\" sync yes",
+  "event cli match \"write memory.*\" sync yes",
+  "event cli regex \"write memory.*\" sync yes",
+  "event cli command \"write memory.*\" sync yes"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

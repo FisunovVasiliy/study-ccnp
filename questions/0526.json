@@ -1,0 +1,27 @@
+{
+ "id": 526,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An administrator connects a Cisco Nexus Series Switch to the Cisco ACI fabric. The connectivity must allow Cisco Discovery Protocol, LLDP, and LACP. Which action enables the protocols between Switch-1 and the ACI leaf switches?",
+ "context": "Topology: ACI fabric with two leaf switches connected via vPC to Switch-1.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Implement an interface policy group.",
+  "Activate a leaf interface.",
+  "Enable an existing interface selector.",
+  "Configure an interface profile."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

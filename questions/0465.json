@@ -1,0 +1,25 @@
+{
+ "id": 465,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure a Fibre Channel port channel on a Cisco Nexus 9000 Series Switch. The configuration must meet these requirements: a port-channel protocol negotiation is performed with the peer ports; the trunk mode must be explicitly configured for the interfaces; and VSANs from 10 to 20 must be allowed. Which command set configures the devices to meet the requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface port-channel 10\nchannel mode auto\nswitchport trunk mode on\nswitchport trunk allowed vsan 10-20",
+  "interface san-port-channel 10\nchannel mode on\nswitchport trunk mode on\nswitchport trunk allowed vsan 10, 20",
+  "interface san-port-channel 10\nchannel mode active\nswitchport trunk mode on\nswitchport trunk allowed vsan 10-20",
+  "interface port-channel 10\nchannel mode on\nswitchport trunk mode active\nswitchport trunk allowed vsan 10, 20"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

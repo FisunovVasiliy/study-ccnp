@@ -1,0 +1,27 @@
+{
+ "id": 440,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A company plans to migrate some of its services to the cloud. The company does not want to manage or control the underlying cloud infrastructure. It also wants to maintain control over the deployment of its applications and configuration settings of the application-hosting environment. Which cloud service model meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Software as a Service",
+  "Infrastructure as a Service",
+  "Platform as a Service",
+  "Function as a Service"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

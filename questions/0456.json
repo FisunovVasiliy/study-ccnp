@@ -1,0 +1,27 @@
+{
+ "id": 456,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer configures user authentication on Cisco UCS Manager to ensure that the user and roles can be saved on the external server and secured using authentication. Which set of actions meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Implement a logical configuration backup and configure the HTTPS protocol.",
+  "Configure a full state backup and implement an FTP protocol.",
+  "Perform a system configuration backup and use the SCP protocol.",
+  "Deploy an all configuration backup and implement a TFTP protocol."
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 463,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer configures a storage environment for a customer with high-security standards. The secure environment is configured in VSAN 50. The customer wants to maintain a configuration and active databases and prevent unauthorized switches from joining the fabric. Additionally, the switches must prevent rogue devices from connecting to their ports by automatically learning the WWPNs of the ports connected to them for the first time. Which two configuration sets must be used to meet these requirements? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "fcsp enable / fcsp auto-active",
+  "port-security enable / port-security activate vsan 50",
+  "clear fabric-binding activate vsan 50 / fabric-binding activate vsan 50",
+  "fcsp dhchap hash md5 sha1",
+  "fabric-binding activate vsan 50 force"
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 71%, BC 29%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

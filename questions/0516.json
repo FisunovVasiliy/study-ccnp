@@ -1,0 +1,30 @@
+{
+ "id": 516,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nRefer to the exhibit. Drag and drop the code snippets from the bottom onto the blanks in the code to complete the JSON request that implements the ACL presented. Not all code snippets are used.\nip access-list block_badactors\n  10 deny tcp 91.213.17.6/24 199.213.12.14/16",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "{\n  \"ipv4aclAP\": {\n    \"children\": [\n      {\n        \"ipv4aclACL\": {\n          \"attributes\": {\n            \"name\": \"block_badactors\"\n          },\n          \"children\": [\n            {\n              \"ipv4aclACE\": {\n                \"attributes\": {\n                  \"action\": \"deny\",\n                  \"dstPrefix\": \"{{1}}\",\n                  \"dstPrefixLength\": \"16\",\n                  \"protocol\": \"tcp\",\n                  \"seqNum\": \"10\",\n                  \"srcPrefix\": \"91.213.17.6\",\n                  \"srcPrefixLength\": \"{{2}}\",\n                  \"userSetBit\": \"1\"\n                }\n              }\n            {{3}}\n            ]\n          }\n        }\n      }\n    ]\n  }\n}",
+ "wordBank": [
+  "91.213.17.6",
+  "24",
+  "}",
+  "199.213.12.14",
+  "]",
+  "16"
+ ],
+ "blankAnswers": [
+  "199.213.12.14",
+  "24",
+  "}"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

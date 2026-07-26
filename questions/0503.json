@@ -1,0 +1,27 @@
+{
+ "id": 503,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. Users report SAN traffic packet loss on a blade server that is managed by using Cisco UCS Manager. An engineer must implement a SPAN feature to an external Fibre Channel analyzer. Which configuration source in the TEST monitoring session must the engineer select?",
+ "context": "DCNM view: SAN / Traffic Monitoring Sessions / Fabric A / Monitor Session TEST. Properties: Name TEST, Admin State Enabled, Operational State Down, Operational State Reason 'No Sources Configured'. Sources list: Uplink FC Ports, FC Port Channels, VSANs, vHBAs, Storage Ports.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "all the VSANs from the server",
+  "all the uplink Fibre Channel ports",
+  "all the virtual host bus adapters from the server",
+  "all the storage ports"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 86%, 14%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 473,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer reported suspicious behavior in a server farm that is deployed on the 198.19.1.0/24 subnet. The traffic must be captured only from the server with the IP address of 198.19.1.19/24. The traffic analyzer is connected to the same switch as the server farm. Which configuration set captures the traffic?\nswitch(config)# vlan access-map span_filter 5\nswitch(config-access-map)# match ip address match_Server_pkts\nswitch(config-access-map)# action forward",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch(config)# ip access-list match_Server_pkts\nswitch(config-acl)# permit ip 198.19.1.19 0.0.0.0 any\nswitch(config)# monitor session 1\nswitch(config-monitor)# filter access-group span_filter",
+  "switch(config)# ip access-list match_Server_pkts\nswitch(config-acl)# permit ip 198.19.1.19 0.0.0.0 any\nswitch(config)# monitor session 1\nswitch(config-monitor)# filter access-group 5",
+  "switch(config)# ip access-list match_Server_pkts\nswitch(config-acl)# permit ip 198.19.1.19 255.255.255.255 any\nswitch(config)# monitor session 1\nswitch(config-monitor)# filter access-group span_filter",
+  "switch(config)# ip access-list match_Server_pkts\nswitch(config-acl)# permit ip 198.19.1.19 255.255.255.0 any\nswitch(config)# monitor session 1\nswitch(config-monitor)# filter access-group span_filter"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 84%, 13%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,25 @@
+{
+ "id": 461,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must configure device aliases for a Cisco MDS 9000 Series Switches-based SAN fabric. The configuration must meet these requirements: the engineer must be prompted before the changes are committed to the database; and pending changes must be explicitly displayed on the console. Which command accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "device-alias enhanced",
+  "device-alias commit",
+  "device-alias confirm-commit",
+  "device-alias distribute diffs-only"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

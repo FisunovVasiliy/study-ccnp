@@ -1,0 +1,27 @@
+{
+ "id": 458,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A Cisco IMC on the Cisco UCS C-Series Server must be configured with VLAN ID 110 and a priority value of 20. Which command set meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Server# scope cimc -\nServer /cimc # scope vlan -\nServer /cimc/network # enable vlan\nServer /cimc/network *# set vlan-id 110\nServer /cimc/network *# set vlan-priority 20\nServer /cimc/network *# commit",
+  "Server# scope cimc -\nServer /cimc # scope network -\nServer /cimc/network # set vlan-enabled yes\nServer /cimc/network *# set vlan-id 110\nServer /cimc/network *# set vlan-priority 20\nServer /cimc/network *# commit",
+  "Server# scope cimc -\nServer /cimc # scope network -\nServer /cimc/network # switchport mode trunk\nServer /cimc/network *# switchport trunk native vlan 110\nServer /cimc/network *# spanning-tree portfast\nServer /cimc/network *# copy run start",
+  "Server# scope cimc -\nServer /cimc # scope network -\nServer /cimc/network # switchport mode access\nServer /cimc/network *# switchport access 110\nServer /cimc/network *# spanning-tree portfast\nServer /cimc/network *# copy run start"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

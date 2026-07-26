@@ -1,0 +1,27 @@
+{
+ "id": 466,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must configure fabric binding on a Cisco MDS 9000 Series Switch to match the output. Which fabric database configuration accomplishes this goal?\nswitch# show fabric-binding database active vsan 10\n----------------------------------------------\nVsan   Logging-in Switch WWN        Domain-id\n----------------------------------------------\n10     21:00:00:00:00:00:00:10      Any\n10     21:00:00:00:00:00:00:20      20\n10     21:00:00:00:00:00:00:30      30\n[Total 3 entries]",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "CISCOMDS(config)# fabric-binding database vsan 10\nCISCOMDS(config-fabric-binding)# swwn 21:00:00:00:00:00:00:10\nCISCOMDS(config-fabric-binding)# nwwn 21:00:00:00:00:00:00:20 domain 20\nCISCOMDS(config-fabric-binding)# nwwn 21:00:00:00:00:00:00:30 domain 30",
+  "CISCOMDS(config)# vsan database\nCISCOMDS(config-vsan-db)# swwn 21:00:00:00:00:00:00:10 any\nCISCOMDS(config-vsan-db)# nwwn 21:00:00:00:00:00:00:20 domain 20\nCISCOMDS(config-vsan-db)# nwwn 21:00:00:00:00:00:00:30 domain 30",
+  "CISCOMDS(config)# vsan database\nCISCOMDS(config-vsan-db)# swwn 21:00:00:00:00:00:00:10\nCISCOMDS(config-vsan-db)# nwwn 21:00:00:00:00:00:00:20 domain 20\nCISCOMDS(config-vsan-db)# nwwn 21:00:00:00:00:00:00:30 domain 30",
+  "CISCOMDS(config)# fabric-binding database vsan 10\nCISCOMDS(config-fabric-binding)# swwn 21:00:00:00:00:00:00:10 domain any\nCISCOMDS(config-fabric-binding)# nwwn 21:00:00:00:00:00:00:20 domain 20\nCISCOMDS(config-fabric-binding)# nwwn 21:00:00:00:00:00:00:30 domain 30"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

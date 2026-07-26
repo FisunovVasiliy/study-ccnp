@@ -1,0 +1,27 @@
+{
+ "id": 514,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must remove the running configuration of a Cisco Nexus 9000 Series Switch and replace it with a backup file without restarting the switch. The backup file is stored on an SFTP server that is reachable via the mgmt0 interface. Which set of commands accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "configure replace sftp://admin@192.168.10.100/backup.cfg vrf mgmt0\ncopy running-config bootflash://startup-config",
+  "copy sftp://admin@192.168.10.100/backup.cfg bootflash://backup.cfg vrf management\nconfigure replace bootflash://backup.cfg",
+  "copy sftp://admin@192.168.10.100/backup.cfg startup-config vrf mgmt0\ncopy startup-config running-config",
+  "copy sftp://admin@192.168.10.100/backup.cfg startup-config vrf management\nreload in 10"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 91%, 9%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 476,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "The Cisco TACACS+ on a Cisco Nexus Series Switch must authenticate any user attempting to access the device and fail over to the local account if the TACACS+ server becomes unavailable. Which command accomplishes these goals?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "aaa authentication login default fallback error local",
+  "aaa authentication login console group local",
+  "aaa authentication login default local",
+  "aaa authentication login default group ISE local"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 79%, C 21%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

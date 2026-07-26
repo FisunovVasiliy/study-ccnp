@@ -1,0 +1,27 @@
+{
+ "id": 455,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which Cisco UCS firmware reboot policy must be used in the maintenance policy to prevent the server firmware from upgrading automatically and wait for user input before proceeding?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "scheduled",
+  "timer-automatic",
+  "immediate",
+  "user-ack"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

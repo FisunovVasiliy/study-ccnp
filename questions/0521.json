@@ -1,0 +1,27 @@
+{
+ "id": 521,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An online retailer uses 200 cloud-hosted virtual machines (VMs). Currently, the configuration of each VM is performed manually. To support the growth strategy of the retailer, the retailer starts to automatically scale the VMs to meet demand and uses Ansible for configuration management. Which action must be performed in Ansible to meet the requirements before automation is performed?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Register each VM in Ansible.",
+  "Add each VM to the .ini inventory file.",
+  "Set up and configure Ansible Tower.",
+  "Configure a dynamic inventory plug-in."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 83%, C 17%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

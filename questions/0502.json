@@ -1,0 +1,27 @@
+{
+ "id": 502,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A software downgrade must be performed on a Cisco Nexus 9000 Series switch. What is displayed by running the command shown?\nNexus01# show incompatibility-all system n7000-s2-dk9.8.0.1.bin",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "features that are removed automatically from the switch",
+  "that the bootflash file is incompatible with the switch hardware",
+  "that the bootflash file is incompatible with the switch software",
+  "impact of an in-service software upgrade and chassis reload"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 53%, A 30%, 7%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,27 @@
+{
+ "id": 414,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. A Cisco Nexus 9000 Series Switch has port security configured, and the MAC address table shows three secure MAC addresses learned on Eth1/1 in VLAN 10. An engineer must prevent any newly learned MAC addresses from forwarding traffic on this port, without affecting the MAC addresses that are already secured. Which configuration accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switchport port-security maximum 3",
+  "switchport port-security violation protect",
+  "switchport port-security violation shutdown",
+  "switchport port-security mac-address sticky"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 59%, B 33%, other 8%",
+ "reference": null,
+ "explanation": "Official answer is B (protect), though community vote leans toward A.",
+ "needsAnswer": false,
+ "provisional": false
+}

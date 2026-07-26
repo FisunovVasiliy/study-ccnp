@@ -1,0 +1,27 @@
+{
+ "id": 525,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must optimize ARP responses and reduce unnecessary ARP broadcasts over the VXLAN/EVPN fabric. Which action accomplishes these tasks?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure ip proxy-arp within the VXLAN VNI configuration under the VTEP NVE interface.",
+  "Configure suppress-arp within the VXLAN VNI configuration under the VTEP NVE interface.",
+  "Configure ip proxy-arp under the VLAN SVI associated with the VXLAN VNI.",
+  "Configure suppress-arp under the VLAN SVI associated with the VXLAN VNI."
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

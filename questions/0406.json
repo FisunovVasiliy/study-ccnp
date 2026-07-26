@@ -1,0 +1,27 @@
+{
+ "id": 406,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer is configuring VXLAN between Core Switch A/B and Router A/B. Router A has been partially configured with: feature vn-segment-vlan-based; feature nv overlay; vlan 10 with vn-segment 10010; and interface Loopback0 with ip address 10.10.0.1/32 and ip pim sparse-mode. Which configuration completes the NVE interface setup on Router A?",
+ "context": "feature vn-segment-vlan-based\nfeature nv overlay\nvlan 10\n  vn-segment 10010\ninterface Loopback0\n  ip address 10.10.0.1/32\n  ip pim sparse-mode",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "interface nve1 / no shutdown / source-interface lo0 / member vni 10010 / no mcast-group",
+  "interface nve1 / shutdown / source-interface lo0 / member vni 10010 mcast-group 231.1.1.1",
+  "interface nve1 / no shutdown / source-interface lo0 / member vni 10010 mcast-group 231.1.1.1",
+  "interface nve1 / no shutdown / source-interface vlan10 / member vni 10010 mcast-group 231.1.1.1"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

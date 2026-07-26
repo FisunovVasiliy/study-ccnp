@@ -1,0 +1,27 @@
+{
+ "id": 438,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A customer data center experiences bandwidth contention that affects the servers connected to the NPV-enabled switch. The NPV switch is connected to the NPIV switch using two 10 Gb uplinks, but the traffic originating from the connected hosts to the core switch exceeds the available bandwidth. The engineers decided to add a third uplink to the NPV switch to increase the available bandwidth. Which set of commands must be used to provision the new uplink?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "switch2(config)# npv auto-load-balance\n! uplink to NPV Core\nswitch2(config-if)# switchport mode npiv",
+  "switch2(config)# npv traffic-map server-interface\n! uplink to NPV Core\nswitch2(config-if)# switchport mode npiv",
+  "switch2(config)# npv auto-load-balance disruptive\n! uplink to NPV Core\nswitch2(config-if)# switchport mode np",
+  "switch2(config)# port-channel load-balance ethernet source-dest-port\n! uplink to NPV Core\nswitch2(config-if)# switchport mode np"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "C"
+ ],
+ "voteNote": "C 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

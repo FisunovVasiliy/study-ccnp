@@ -1,0 +1,27 @@
+{
+ "id": 484,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is designing a cloud solution for an organization. The security requirements mandate that the cloud must be hosted in a local data center but leverage the remote data center for remote backups. Additionally, the workloads in the data center must be scaled out to a known cloud provider in the future. Which cloud deployment model must be used to meet these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "public cloud",
+  "hybrid cloud",
+  "private cloud",
+  "edge cloud"
+ ],
+ "correct": [
+  1
+ ],
+ "mostVoted": [
+  "B"
+ ],
+ "voteNote": "B 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

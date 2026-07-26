@@ -1,0 +1,30 @@
+{
+ "id": 478,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "An engineer must create a new Cisco UCS user account to perform these actions: modify systems logs, faults, and power management settings; and view access to all other configuration in the UCS domain. Which two roles must be assigned to the user to permit these actions? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Server Compute",
+  "Read-Only",
+  "Operations",
+  "Facility Manager",
+  "Administrator"
+ ],
+ "correct": [
+  2,
+  3
+ ],
+ "mostVoted": [
+  "C",
+  "D"
+ ],
+ "voteNote": "CD 89%, 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

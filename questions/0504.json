@@ -1,0 +1,30 @@
+{
+ "id": 504,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Refer to the exhibit. Three operational endpoints are deployed under the same application EPG. Only the ICMP traffic must be permitted within the Web_EPG. Which two actions must be taken to accomplish this goal? (Choose two.)",
+ "context": "Topology: two spines connect to Leaf1-4, which connect to Endpoint2, Endpoint1, Endpoint3, all in EPG: Web_EPG, BD: Web_BD.",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Check box of forward control proxy ARP.",
+  "Set VRF policy control preference to unenforced.",
+  "Add Taboo contract on the Web_EPG.",
+  "Configure intra EPG contract under Web_EPG.",
+  "Mark intra EPG isolation as enforced."
+ ],
+ "correct": [
+  3,
+  4
+ ],
+ "mostVoted": [
+  "D",
+  "E"
+ ],
+ "voteNote": "DE 89%, CE 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

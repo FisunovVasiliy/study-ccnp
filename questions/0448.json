@@ -1,0 +1,27 @@
+{
+ "id": 448,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must integrate Cisco ACI with a VMware vSphere environment. The requirement is to use a VMware Distributed Virtual Switch and to assign the encapsulation VLAN of the EPG from the VLAN pool. Which configuration set accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Create a VMM domain association under the EPGs. Create a VLAN pool with static allocated VLANs.",
+  "Create a physical domain association under the EPGs. Create a VLAN pool with dynamic allocated VLANs.",
+  "Create a physical domain association under the EPGs. Create a VLAN pool with static allocated VLANs.",
+  "Create a VMM domain association under the EPGs. Create a VLAN pool with dynamic allocated VLANs."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 75%, A 25%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

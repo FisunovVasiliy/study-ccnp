@@ -1,0 +1,27 @@
+{
+ "id": 467,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer must create a Bash script to run in the Cisco NX-OS Guest Shell. The script must loop through the available namespaces and output all registered interfaces. Which code snippet completes the script?\nfor ns in /var/run/netns/*; do\n  ______\n  ifconfig\ndone",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "chvrf \"$ns\";",
+  "echo \"$ns\";",
+  "ifconfig \"$ns\";",
+  "vrfinfo \"$ns\";"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 86%, C 14%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

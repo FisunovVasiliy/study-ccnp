@@ -1,0 +1,27 @@
+{
+ "id": 412,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "A company needs an automation solution that enforces the desired state of the infrastructure and automatically reverts any manual configuration changes. The solution will initially be used for network devices but must later extend to server infrastructure as well. Which tool meets these requirements?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Python scripts",
+  "Ansible",
+  "Puppet",
+  "Bash scripts"
+ ],
+ "correct": [
+  2
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 39%, C 39%, B 22%",
+ "reference": null,
+ "explanation": "Community vote is split near-evenly between C (Puppet) and D; Puppet's agent-based enforcement of desired state (with automatic drift correction) matches the requirement described.",
+ "needsAnswer": false,
+ "provisional": false
+}

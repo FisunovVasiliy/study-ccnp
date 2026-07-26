@@ -1,0 +1,30 @@
+{
+ "id": 449,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two actions are needed to configure a single Cisco APIC controller for Cisco ACI fabric for the first time? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Register all leaf and spine switches.",
+  "Register the APIC that is connected to the switch.",
+  "Register the switches that are discovered through LLDP.",
+  "Configure the first Cisco APIC controller.",
+  "Configure the leaf switch where the Cisco APIC is connected, using CLI to allow APIC connectivity."
+ ],
+ "correct": [
+  2,
+  3
+ ],
+ "mostVoted": [
+  "C",
+  "D"
+ ],
+ "voteNote": "CD 63%, AD 38%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

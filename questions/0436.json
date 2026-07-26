@@ -1,0 +1,27 @@
+{
+ "id": 436,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Refer to the exhibit. An engineer created a VRF called \"Sigtran\" using Terraform resource \"aci_vrf\" identified by \"Signaling\" and the bridge domain called \"App\". Which argument reference must be used to map the bridge domain to the \"Sigtran\" VRF?",
+ "context": "resource \"aci_application_profile\" \"test_ap\" {\n  tenant_dn = aci_tenant.PROD.id\n  name = \"PROD_App\"\n  annotation = \"tag\"\n  description = \"from terraform\"\n  name_alias = \"test_ap\"\n  prio = \"level1\"\n}",
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "aci_vrf.Signaling.id",
+  "aci_vrf.App.id",
+  "aci_vrf.Sigtran.id",
+  "aci_vrf.PROD.id"
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

@@ -1,0 +1,30 @@
+{
+ "id": 419,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "Which two actions must be taken to directly connect a Fibre Channel storage array to a Cisco UCS domain? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Configure a Fibre Channel port channel.",
+  "Configure the Fibre Channel port as a Fibre Channel storage port.",
+  "Create a new vHBA dedicated to the storage array.",
+  "Create a Storage Connection Policy.",
+  "Configure a new VSAN."
+ ],
+ "correct": [
+  1,
+  4
+ ],
+ "mostVoted": [
+  "B",
+  "E"
+ ],
+ "voteNote": "BE 53%, DE 37%, other 11%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

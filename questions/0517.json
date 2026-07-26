@@ -1,0 +1,30 @@
+{
+ "id": 517,
+ "topic": "Topic 1",
+ "type": "multi",
+ "question": "A company with a small network team purchases 10 Cisco Nexus 9000 Series Switches for a network refresh. Some elements of the existing network infrastructure will be retained including DHCP and DNS servers. The company wants the network team to use PowerOn Auto Provisioning (POAP) to configure the switches, but the team only has experience with manual configuration. Which two additional network infrastructure components must be configured to use POAP? (Choose two.)",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "NETBOOT host discovery",
+  "GIT server",
+  "SCP file repository",
+  "TFTP script server",
+  "SNMP trap receiver"
+ ],
+ "correct": [
+  2,
+  3
+ ],
+ "mostVoted": [
+  "C",
+  "D"
+ ],
+ "voteNote": "CD 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

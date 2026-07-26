@@ -1,0 +1,31 @@
+{
+ "id": 497,
+ "topic": "Topic 1",
+ "type": "fill",
+ "question": "DRAG DROP -\nAn engineer must authenticate OSPF on interfaces of the Cisco Nexus 9000 Series Switch so that: eth1/1 uses clear text password; and eth1/2 uses encrypted md5 password. Drag and drop the commands from the bottom onto the boxes in the code to complete the configuration. Not all commands are used.",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "template": "SW1(config)# router ospf 1\nSW1(config-router)# interface ethernet 1/1\nSW1(config-if)# ip router ospf 1 area 0.0.0.0\nSW1(config-if)# ip ospf {{1}}\nSW1(config-if)# ip ospf {{2}} 0 P@ssW1\nSW1(config)# interface ethernet 1/2\nSW1(config-if)# ip router ospf 1 area 0.0.0.0\nSW1(config-if)# ip ospf authentication {{3}}\nSW1(config-if)# ip ospf {{4}} 3 md5 3 2b7cf4643b66b22",
+ "wordBank": [
+  "message-digest",
+  "mode",
+  "message-digest-key",
+  "authentication-key",
+  "authentication",
+  "key"
+ ],
+ "blankAnswers": [
+  "authentication",
+  "key",
+  "mode",
+  "message-digest"
+ ],
+ "mostVoted": [],
+ "voteNote": null,
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

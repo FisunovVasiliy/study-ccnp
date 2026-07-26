@@ -1,0 +1,27 @@
+{
+ "id": 420,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which event is expected during direct upgrade of Cisco UCS Manager firmware?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "The I/O Module reboots immediately after the firmware is activated.",
+  "Data traffic is disrupted for a single fabric interconnect setup.",
+  "IPMI polling is interrupted.",
+  "All users logged in to the UCSM are logged out, and their sessions end."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

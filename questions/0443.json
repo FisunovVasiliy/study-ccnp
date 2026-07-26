@@ -1,0 +1,27 @@
+{
+ "id": 443,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer is implementing a Cisco ACI fabric and must use a static VLAN range as part of a VMM deployment. The static VLAN must be incorporated into the dynamic VLAN pool. The existing VLAN pool is set for dynamic allocation. Which action accomplishes this goal?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Create a static reservation within the dynamic VLAN pool.",
+  "Change the existing VLAN pool to static allocation mode.",
+  "Add the VLAN to the pool configured with Inherit Allocation Mode from parent.",
+  "Add a static VLAN allocation range to the VLAN pool."
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 67%, A 33%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

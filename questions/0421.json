@@ -1,0 +1,27 @@
+{
+ "id": 421,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "An engineer must migrate a Cisco UCS C-Series server from Cisco SingleConnect to direct connect integration mode. The Cisco UCS Manager Rack Server Discovery Policy and Rack Management Connection Policy are set to Immediate and Auto-Acknowledge. Which set of steps accomplishes this task?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "Disconnect the cables from the FEX. Connect the cables to server ports on the fabric interconnect. Reacknowledge the server.",
+  "Disconnect the cables from the FEX. Connect the cables to appliance ports on the fabric interconnect. Reacknowledge the server.",
+  "Disconnect the cables from the FEX. Connect the cables to server ports on the fabric interconnect. Reset the Cisco IMC of the server.",
+  "Disconnect the cables from the FEX. Connect the cables to appliance ports on the fabric interconnect. Reset the Cisco IMC of the server."
+ ],
+ "correct": [
+  0
+ ],
+ "mostVoted": [
+  "A"
+ ],
+ "voteNote": "A 88%, 12%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}

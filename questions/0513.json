@@ -1,0 +1,27 @@
+{
+ "id": 513,
+ "topic": "Topic 1",
+ "type": "single",
+ "question": "Which Cisco UCS component does an infra bundle \"A\" software upgrade?",
+ "context": null,
+ "hasImage": false,
+ "image": null,
+ "imageNote": null,
+ "options": [
+  "adapter",
+  "BIOS",
+  "board controller",
+  "I/O module"
+ ],
+ "correct": [
+  3
+ ],
+ "mostVoted": [
+  "D"
+ ],
+ "voteNote": "D 100%",
+ "reference": null,
+ "explanation": "",
+ "needsAnswer": false,
+ "provisional": false
+}
