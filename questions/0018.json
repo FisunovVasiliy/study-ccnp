@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A major NX-OS version upgrade typically requires a disruptive reload of the switch, so redundancy technologies that let a peer or standby device keep forwarding traffic while one box reloads are what minimize the outage. vPC lets a downstream device keep an active link to the surviving peer while the other peer upgrades and reloads, and HSRP lets the standby gateway take over default-gateway duties while the active router is down — together they let traffic keep flowing through the redundant device during a one-at-a-time upgrade of each switch. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC; Chapter 1 — HSRP)"
 }

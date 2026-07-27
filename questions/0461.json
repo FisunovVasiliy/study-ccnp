@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because 'device-alias commit' normally distributes pending changes to the whole fabric immediately, NX-OS also offers 'device-alias confirm-commit', which adds an interactive confirmation step - it explicitly displays the pending changes on the console and requires the administrator to confirm before those changes are actually committed and distributed via CFS, giving a chance to review the diffs first rather than committing blind. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Device Alias / web research)"
 }

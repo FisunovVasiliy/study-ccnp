@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When the virtualization team, not APIC, owns and manages port-group configuration in vCenter, setting the VMM domain's access mode to Read Only tells APIC to only observe and learn the existing port groups rather than actively creating, modifying, or deleting them, protecting the manually managed configuration from being overwritten by APIC's normal read/write VMM integration behavior. AVE switch mode changes the data-plane switch type, tag collection is unrelated to write protection, and CDP/LLDP settings only affect discovery protocols, none of which prevent APIC from altering port-group settings the way Read Only mode does. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI VMM Domain Access Modes)"
 }

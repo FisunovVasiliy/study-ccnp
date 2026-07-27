@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco MDS Streaming Telemetry defines a destination-group, a sensor-group with a 'path' pointing to a show-command's data, and a subscription that ties a sensor-group to a destination-group and sets how often the data is pushed. The interval is configured on the subscription with the 'snsr-grp <id> sample-interval <ms>' command, and like other MDS telemetry/analytics intervals it is expressed in milliseconds, so a 30-second cadence requires sample-interval 30000, not 30. (Cisco MDS 9000 SAN Analytics and SAN Telemetry Streaming Configuration Guide)"
 }

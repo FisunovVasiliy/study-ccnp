@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager's power capping on C-Series rack servers can enforce specific limits on individual power-hungry components rather than only an overall server cap; the two components that support explicit, per-device power limits are the processor(s) and the memory (DIMMs), since these dominate a server's dynamic power draw and can be throttled via P-states/DVFS without disabling the server. Storage, network, and graphics controllers are managed as part of overall platform power budgeting but do not expose the same granular per-component limit settings. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Server Management/Power Control)"
 }

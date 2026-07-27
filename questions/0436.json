@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The same Terraform referencing rule applies here: you address another resource by resource_type.<label>.id using the label given in its resource block — 'Signaling' for the aci_vrf resource — regardless of what friendly 'name' attribute ('Sigtran') that VRF ultimately shows inside ACI. Confusing the ACI object's display name with its Terraform resource label is exactly the mistake this question tests, since only aci_vrf.Signaling.id resolves to the correct declared resource. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

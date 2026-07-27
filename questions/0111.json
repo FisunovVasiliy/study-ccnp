@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Before committing to an EPLD upgrade, the 'install all epld' / 'install module epld' workflow runs a compatibility/impact check that reports which modules are upgradable and whether the impact is disruptive or nondisruptive for each one. EPLD images simply reprogram existing programmable logic already on the module's hardware, so an upgrade never requires swapping any physical hardware - it is a firmware-level update, not something requiring every EPLD on every module to be upgraded together. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - EPLD Upgrade)"
 }

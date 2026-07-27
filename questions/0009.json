@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "We need to setup a primary adjacency and a secondary adjacency. On primary, we need to setup 'otv-adjacency-server unicast-only' and on the secondary we need to configure 'otv use-adjacency-server <IP address from primary join interface> unicast only'.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "OTV's adjacency server feature lets edge devices in a non-multicast-capable (unicast-only) transport learn each other's reachability without multicast in the core. One edge device is configured as the adjacency server with \"otv adjacency-server unicast-only\", and every device that needs to join the overlay — including the server itself if it should also participate — points at that server's join-interface IP using \"otv use-adjacency-server <ip> unicast-only\". Both devices in the same site need this pairing (one acting as server, the other pointing to it) to bring up dual-site adjacency. (Cisco documentation / web research)"
 }

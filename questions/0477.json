@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A no-drop (lossless) traffic class combined with jumbo frames that must not fragment points to configuring the Ethernet QoS System Class settings directly: enabling a no-drop class configures buffer/pause behavior for lossless delivery, and setting the class's MTU to 9216 bytes — the maximum jumbo MTU Cisco UCS QoS system classes support — ensures frames of up to that size pass through without needing fragmentation. Flow control policies and slow-drain timers address different problems (pause frame handling and congestion detection), and Platinum's own default MTU (9000) doesn't match the 9216 ceiling the QoS system class itself supports. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Network Management, QoS System Classes and Jumbo MTU)"
 }

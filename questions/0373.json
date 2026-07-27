@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "DCBX allows a switch to send a LAN Logical Link Status (LLS) message to a CNA, and the 'shutdown lan' command on the Ethernet interface triggers exactly that: it brings down only the VLANs on the interface that are not enabled for FCoE, while VLANs mapped to FCoE keep carrying SAN traffic uninterrupted - a plain 'shutdown' or 'shutdown force' would take the whole interface, and therefore FCoE traffic too, down, which fails the requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Overview / DCBX)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Normally a vPC peer only routes traffic destined to the shared HSRP virtual MAC address; if a downstream device replies using the SVI's own burned-in MAC address instead, port-channel hashing might deliver that frame to the vPC peer that doesn't own that MAC, and vPC's duplicate-frame-prevention rule then blocks the frame from exiting toward its destination because it arrived over the peer link. The vPC peer-gateway feature fixes this by letting each vPC peer also locally route frames addressed to its peer's burned-in MAC, so traffic never needs to cross the peer link at all regardless of which gateway MAC the sending host used. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Peer Gateway)"
 }

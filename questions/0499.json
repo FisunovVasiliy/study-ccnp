@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "User A holds two explicitly assigned roles (network-admin and Custom-Role-B) that conflict on the tacacs+ feature - network-admin permits it, Custom-Role-B denies it. Per Cisco MDS RBAC's core rule that a permit from ANY assigned role overrides a deny from another, TACACS+ remains configurable. DPVM (permitted only by Custom-Role-B), NTP and SSH (permitted by network-admin) are also configurable, while hardware and environment are excluded because those rules only grant 'show' (view) access, not 'config' access, and the question asks specifically what the user is authorized to CONFIGURE. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - User Roles and Rules, rule conflict resolution)"
 }

@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "LACP port channels can bundle more member links than the channel's active-link limit by placing extra links in hot-standby, ready to activate instantly if an active member fails; a hot-standby link still needs the lacp feature enabled and must be configured in mode active so it actively negotiates and exchanges LACPDUs rather than waiting passively, which is required for it to behave as a real standby rather than simply staying down. Which member ends up active versus standby is decided by LACP port priority, where a lower numeric value is more preferred, so assigning the best (lowest) priority to the other bundled interface determines which link wins active status while both still run active mode so either can renegotiate immediately. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — LACP Hot-Standby Links and Port Priority)"
 }

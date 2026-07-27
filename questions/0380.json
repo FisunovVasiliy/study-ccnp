@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "SPAN only mirrors traffic locally within a single switch or across switches on a shared Layer 2 segment; carrying a full copy of traffic, including payload, across a routed multi-hop path such as an MPLS L3 WAN between sites requires ERSPAN, which encapsulates the mirrored frames in a GRE/IP tunnel that can be routed like any other IP traffic to a distant destination address. NetFlow only exports flow summary statistics rather than full payload, and SNMP reports counters/state, neither of which meets the requirement to collect the actual traffic including payload, and plain SPAN cannot span a routed WAN link at all. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — ERSPAN vs. SPAN for Remote Traffic Capture)"
 }

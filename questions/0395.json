@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco DCNM (Nexus Dashboard Fabric Controller) is the platform that spans both classic Fibre Channel SAN management (topology visualization, zoning, SAN Insights/slow-drain analytics for MDS and Nexus SAN switches) and Nexus/VXLAN fabric management, making it the correct tool when a mixed standalone-Nexus-9000-plus-MDS environment needs unified SAN visualization, VXLAN overlay support, and slow-drain detection - APIC, Intersight, and Prime Infrastructure each cover only a subset of these (ACI fabrics, UCS/HyperFlex compute, or general network management), not native FC SAN analytics. (Cisco DCNM documentation / web research)"
 }

@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco's Rapid PVST+ (802.1w) port types let you tune STP behavior per link role: spanning-tree port type network is used on switch-to-switch uplinks and is what actually enables Bridge Assurance, which requires both ends of the link to be in network port type and continuously exchange BPDUs to detect a unidirectional or silently failed link, while spanning-tree port type edge is used on host-facing access ports so they skip STP listening/learning delays and never expect BPDUs from an end device. UDLD aggressive mode is what actually detects a unidirectional link condition on twisted-pair copper by requiring continuous bidirectional echo confirmation, and spanning-tree guard bpdu on the link facing the external switch protects the internal Layer 2 domain by disabling the port if any unexpected or superior BPDU arrives from outside. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — Rapid PVST+ Port Types, Bridge Assurance, UDLD, and BPDU Guard)"
 }

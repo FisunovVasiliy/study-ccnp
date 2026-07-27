@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An OSPF virtual link creates a logical, unicast point-to-point-style adjacency directly between two ABRs across a transit area, without requiring a physical link between them and without any DR/BDR election overhead (since it isn't a broadcast-network adjacency). This gives full adjacency and decentralized link-state advertisement exchange between the two switches over unicast, exactly matching the stated requirements, whereas filter lists and stub areas restrict route propagation rather than establish connectivity, and a plain point-to-point network type doesn't by itself solve a missing-backbone-connectivity problem the way a virtual link does. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — OSPF Virtual Links)"
 }

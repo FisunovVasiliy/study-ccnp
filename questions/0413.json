@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An FC port channel report of 'admin port mode is F, port mode is TF' shows the local switch's ports configured as F ports (trunk mode on) that have negotiated a Trunking F port (TF) state with the far end - TF ports are what a core/NPIV switch uses toward an NPV edge switch's NP uplinks, since an NPV edge relaying multiple VSANs still logs in through F/NP port pairs rather than the E/TE ports used between two full fabric switches. This output therefore indicates the port channel connects to an NPV switch, not another full fabric switch (which would show E/TE) nor an NPIV mode marker on the local port itself. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - NPIV and NPV)"
 }

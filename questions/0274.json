@@ -28,5 +28,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Fabric binding and port security are complementary but independent Cisco MDS security features with distinct mechanics: fabric binding operates at the switch level using the Exchange Fabric Membership Data (EFMD) protocol to keep an identical authorized-switch list on every switch, and it cannot be distributed via CFS - it must be configured manually on each switch. Port security instead binds individual devices (Nx ports via pWWN/nWWN) or switches (xE ports via sWWN) to specific interfaces, and unlike fabric binding, its database CAN be distributed through CFS. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Fabric Binding vs. Port Security)"
 }

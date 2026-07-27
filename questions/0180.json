@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Unlike NFSv2/v3, which rely on a separate, stateless lock-manager protocol for file locking, NFSv4 is a stateful protocol with file locking built directly in, using a lease-based model: a client is granted a lock for a limited lease period that it must periodically renew, and the server can reclaim the lock automatically if the lease expires (e.g., after a client crash), which greatly simplifies lock recovery compared to the older versions. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

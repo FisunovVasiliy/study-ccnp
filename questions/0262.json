@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because the requirement is remote SSH access (not just console access), the fallback policy must be applied to the 'default' method list rather than 'console' only, since 'default' governs all login paths including SSH/Telnet. The command aaa authentication login default fallback error local instructs the switch to fall back to the local user database specifically when the configured RADIUS servers return an error (are unreachable), satisfying the requirement without weakening security by using local authentication as the primary method. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Local AAA Services, Fallback)"
 }

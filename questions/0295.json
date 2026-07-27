@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To capture the traffic exchanged between the file server (on port-channel 1) and the storage array without also capturing the database's port-channel 3 traffic, the SPAN session's source must be the specific port channel carrying the file server's flow (port-channel 1, which as a port-channel source automatically includes all its member links and both directions), while the destination is a dedicated SD-mode Fibre Channel interface (fc1/3) connected to the analyzer; a VSAN or a different port channel cannot be substituted as the SPAN destination. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - SPAN)"
 }

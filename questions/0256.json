@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "TACACS+ encrypts the entire body of every packet exchanged between the switch and the server - not just the password, as RADIUS does - so even though the login exchange functionally resembles a simple username/password (PAP-style) prompt, the query the switch sends to the ISE TACACS+ server (10.1.50.20, group ISE) is fully encrypted end to end. This confidentiality advantage over RADIUS is the key reason TACACS+ is generally preferred for administrative AAA on Nexus devices. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - AAA, TACACS+ vs. RADIUS)"
 }

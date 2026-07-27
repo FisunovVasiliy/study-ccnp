@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Configuring an SNMP trap receiver in Cisco UCS Manager CLI uses 'create snmp-trap <destination-IP>' (not IP:port syntax, and not the NMS's own management address confused with UCSM's), followed by setting the community string, the destination UDP port, and the SNMP version. Because SNMPv3 is the most secure version (offering authentication and encryption, unlike v1/v2c), and the NMS listens at 192.168.10.10 on port 2000, the command set must target that specific host/port combination with 'set version v3' — using the wrong destination address, embedding the port in the create command incorrectly, or selecting v2 would fail the security or addressing requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Manager Administration, SNMP Configuration)"
 }

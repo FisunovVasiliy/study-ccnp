@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Deploying a custom Guest Shell root filesystem across a fleet follows a build-once, distribute-many pattern: you first customize the rootfs image, then export it as a package, stage that package on a central file server, import it onto each target switch, and finally install/activate it across all the devices. This mirrors how software images are normally staged and distributed, letting one engineered rootfs be rolled out consistently instead of manually rebuilding it on every switch. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

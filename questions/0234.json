@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/2-x/rest_cfg/2_1_x/b_Cisco_APIC_REST_API_Configuration_Guide/b_Cisco_APIC_REST_API_Configuration_Guide_chapter_01.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An APIC managed-object REST payload always wraps the class name (aaaUser) around an 'attributes' object holding the object's properties, such as name and pwd, and it must be valid JSON with properly quoted keys and string values — this MO-wrapper structure is how every APIC configuration class, including the login object, is represented, so only the properly quoted {'aaaUser':{'attributes':{...}}} form will be accepted. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

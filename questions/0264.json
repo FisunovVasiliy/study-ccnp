@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/4-0/b_Cisco_UCS_Manager_CLI_Administration_Mgmt_Guide_4-0/b_Cisco_UCS_Manager_CLI_Administration_Mgmt_Guide_4-0_chapter_0110.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To create an HTTPS keyring in Cisco UCS Manager CLI, you scope into security, use create keyring <name> to instantiate it, then set modulus <size> to define the RSA key length used when the certificate signing request is generated - the correct keyword is 'modulus', not 'size' or 'mod'. All changes made under a keyring context are pending until commit-buffer applies them, and this must be executed from the primary fabric interconnect (UCS-A). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, Keyring configuration)"
 }

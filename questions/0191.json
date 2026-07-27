@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco MDS auto-learning port security captures the WWNs of devices that are already logged in to a switch at the time the feature is enabled, as well as new devices that log in afterward, and adds them automatically to the port-security active database without requiring manual entry. Simply enabling the port-security feature and activating it on the relevant VSAN triggers auto-learning by default, satisfying the requirement to admit already-authorized, already-logged-in devices with no extra configuration. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Port Security, Auto-Learning)"
 }

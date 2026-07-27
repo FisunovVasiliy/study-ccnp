@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_010011.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS doesn't expose a PowerShell-specific protocol, but because NX-API puts the CLI behind ordinary HTTP/HTTPS, any language — including PowerShell via its web-request cmdlets — can drive the switch programmatically once 'feature nxapi' is enabled, satisfying both the PowerShell tooling and HTTPS transport requirements. NETCONF-YANG uses SSH rather than HTTPS, VISORE is an APIC-specific MO browser (not applicable to standalone NX-OS), and the Open Agent Container hosts agent-based tools rather than exposing an API. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

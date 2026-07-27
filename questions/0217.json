@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/2-x/rest_cfg/2_1_x/b_Cisco_APIC_REST_API_Configuration_Guide/b_Cisco_APIC_REST_API_Configuration_Guide_chapter_01.html",
  "explanation": "aaaLogin.xml Sent as a POST message, this method logs in a user and opens a session. The message body contains an aaa:User object with the name and password attributes, and the response contains a session token and cookie. If multiple AAA login domains are configured, you must prepend the user's name with apic: domain\\\\.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The 403 'Token was invalid (Error: Token timeout)' response means the client's previous APIC session token has expired. A REST client must POST valid credentials to the aaaLogin endpoint to establish a brand-new authenticated session and receive a fresh token/cookie before making further calls — GET requests, aaaRefresh (which itself needs a still-valid session), and aaaLogout won't create a new authenticated session the way aaaLogin does. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "ERSPAN encapsulates mirrored traffic in a GRE tunnel sourced from the switch's own IP address and destined to the collector's IP; when the switch doesn't have an interface whose address naturally matches what should appear as that tunnel's source, the global monitor erspan origin ip-address command explicitly sets which local IP the switch uses as the GRE/ERSPAN source for all its ERSPAN sessions. This differs from per-session commands like source interface, which selects the mirrored traffic itself rather than the encapsulation's source address, which is why an explicit origin IP command is required here. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — ERSPAN Origin IP Address Configuration)"
 }

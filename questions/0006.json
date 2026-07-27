@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In a vPC pair, both peers program their HSRP MAC address with the gateway (G) flag set, unlike a non-vPC HSRP pair where only the active router owns that flag. This means both the active and standby vPC/HSRP peers can actually route traffic destined to the HSRP virtual MAC locally, without needing to forward it across the peer link to the \"real\" active router. So with N7K-1 preempt/priority 150 and N7K-2 priority 50 configured for vPC, either switch can forward gateway traffic even though only one is HSRP-active. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC HSRP Gateway Considerations)"
 }

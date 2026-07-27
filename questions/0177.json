@@ -23,5 +23,6 @@
  "reference": "https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-4C19E34E-764C-4069-9D9F-D0F779F2A96C.html",
  "explanation": "You can create multiple paths by configuring multiple ports and target portals on different IP subnets. By keeping initiator and target ports in different subnets, you can force ESXi to create paths through specific ports. In this configuration, you do not use port binding because port binding requires that all initiator and target ports are on the same subnet.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "For true multipathing with iSCSI, the initiator and each target portal need independent, distinct network paths that the storage stack can select between; putting initiator and target ports on separate IP subnets (with dedicated NICs/VLANs per subnet) forces the OS/hypervisor to build multiple, genuinely separate paths rather than relying on Ethernet-layer NIC bonding, which load-balances at Layer 2 but does not give iSCSI's multipath software independent paths to fail over between. This is why platforms like VMware recommend port binding only within a single subnet, and separate subnets when multiple paths are desired. (VMware vSphere Storage Documentation)"
 }

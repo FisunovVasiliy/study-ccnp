@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS rollback supports three trigger types: atomic (the default, aborts the entire rollback if any command errors), stop-at-first-failure (halts at the first error but keeps already-applied changes), and best-effort (applies every command it can and simply skips any that error out). Because the requirement is to complete the checkpoint rollback despite existing vPC configuration errors rather than aborting or halting partway, \"best-effort\" is the trigger type that satisfies it. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — NX-OS Rollback Trigger Types)"
 }

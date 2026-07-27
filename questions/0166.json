@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/en/US/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli_rel_4_1/Cisco_Nexus_5000_Series_Switch_CLI_Software_Configuration_Guide_chapter50.html#task_1168696",
  "explanation": "You can configure a Fibre Channel port as a SPAN destination port.\nProcedure:\nStep 1: switch# configure terminal - Enters configuration mode.\nStep 2: switch(config)# interface fc slot/port - Enters interface configuration mode for the specified Fibre Channel interface selected by the slot and port values.\nStep 3: switch(config-if)# switchport mode SD - Sets the interface to SPAN destination (SD) mode.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On a Cisco MDS/Nexus Fibre Channel switch, 'switchport mode SD' places the interface in SPAN Destination mode, dedicating it to receive a mirrored copy of traffic from one or more SPAN source interfaces (typically for connection to a Fibre Channel analyzer). An SD port cannot pass normal switched traffic, only transmit the spanned copy, which is why it must be explicitly set aside with this command rather than left as a normal E/F port. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - SPAN)"
 }

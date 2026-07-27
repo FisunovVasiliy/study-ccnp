@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager RBAC uses discrete built-in roles rather than one all-powerful admin login. vNIC and vHBA profiles are logical service-profile objects, so managing them requires the Server Profile role (read-write to logical server-related operations), while fan speed and power-redundancy settings are power-management operations that fall under the Facility Manager role. Because neither role alone covers both areas, both must be assigned together to satisfy the stated requirement while still following least-privilege principles. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, User Roles)"
 }

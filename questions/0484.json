@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A hybrid cloud combines two or more distinct deployment models — here, an on-premises private cloud for security and compliance, connectivity to a remote data center for backups, and the flexibility to burst workloads out to a public cloud provider later — while keeping them interoperable. This flexibility to mix models and expand outward over time, rather than committing entirely to one provider upfront, is the defining characteristic that distinguishes hybrid cloud from a purely private, purely public, or edge cloud deployment, none of which describe an architecture spanning local hosting, remote backup, and eventual public-cloud scale-out simultaneously. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 5 — Hybrid Cloud Deployment Model)"
 }

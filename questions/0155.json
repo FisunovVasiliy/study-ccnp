@@ -30,5 +30,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "SAN (block-level, Fibre Channel/FCoE-based) storage is generally the most resilient, highly scalable, and highest-performing option, but it is also the most expensive and complex to design, zone, and manage. NAS is a simpler, moderately priced file-access appliance that presents shared file systems directly to hosts over Ethernet/IP, trading some of SAN's raw scalability and advanced feature set for lower cost and easier configuration. Recognizing this cost/complexity-versus-performance trade-off is the core exam concept behind comparing NAS and SAN. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NAS Concepts)"
 }

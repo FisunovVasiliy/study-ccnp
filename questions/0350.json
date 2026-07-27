@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Any policy that determines how and when a disruptive change to an associated service profile is applied to its server — including whether the server reboots immediately, on a schedule, or only after user acknowledgment — is the maintenance policy. BIOS, administration, and 'reboot' (not a standalone UCS policy type on its own) policies address other configuration domains, so the maintenance policy is specifically the object created and attached to a service profile to control the impact of disruptive changes. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Maintenance Policies)"
 }

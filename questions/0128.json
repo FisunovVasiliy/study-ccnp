@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager's HTTPS access relies on a key ring/certificate whose common name is tied to the cluster's identity (name/domain). When a UCS cluster is renamed, the existing default key ring certificate no longer matches the new identity, so browsers/clients will flag it; the fix is to manually regenerate the default key ring certificate so it reflects the new name, rather than reinstalling the cluster or rebooting SSO, which would be disruptive and unnecessary for what is fundamentally a certificate-regeneration task. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Manager Administration, Key Ring Certificates)"
 }

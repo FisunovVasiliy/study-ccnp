@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/6_x/nx-os/security/configuration/guide/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_6-x/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_6-x_chapter_010001.html",
  "explanation": "Removing a Static Secure MAC Address on an Interface:\nYou can remove a static secure MAC address on a Layer 2 interface.\nSwitched port to routed port:\nWhen you change an interface from a Layer 2 interface to a Layer 3 interface, the device disables port security on the interface and discards all port security configuration for the interface. The device also discards all secure MAC addresses for the interface, regardless of the method used to learn the address.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A static secure MAC address entry on a Cisco Nexus port-security interface persists until it is either explicitly removed from the running configuration or the interface is converted from Layer 2 to a routed (Layer 3) port, which causes the device to discard port security configuration and all secure MAC addresses for that interface regardless of how they were learned. A shutdown/no shutdown cycle or waiting for the age timer only affects dynamically learned addresses, not statically configured ones. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus Port Security, Removing Secure MAC Addresses)"
 }

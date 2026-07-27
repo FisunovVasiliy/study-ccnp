@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager privilege names map to specific configuration domains: the Ext LAN Policy privilege (ext-lan-policy) governs global LAN-cloud-wide policies such as NTP synchronization and system date/time-zone settings, while the Ext LAN Config privilege (ext-lan-security) governs LAN configuration objects such as VLANs. Neither privilege alone covers both required tasks, so both must be granted together instead of assigning a broader role like network-admin, keeping the user's access scoped to only what is needed. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - UCS RBAC privilege model)"
 }

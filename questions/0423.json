@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "Community-voted answer (B) conflicts with the marked correct answer (D); presented as officially marked (D).",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Local SPAN can only mirror traffic to a destination on the same switch as the monitored port; to send a copy of traffic monitored on switch SW1's port G1/2 to a destination VM sitting behind the UCS fabric interconnects (a different device, reachable only over the network), the traffic must instead be encapsulated and routed using ERSPAN, which tunnels mirrored frames over IP to a remote destination. Because the monitored port (G1/2) physically resides on SW1, the ERSPAN source session must be configured on SW1 itself — not on Cisco UCS Manager, which has no visibility into that upstream switch port. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Traffic Monitoring, ERSPAN vs. Local SPAN)"
 }

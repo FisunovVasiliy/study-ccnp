@@ -30,5 +30,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NFS and SMB/CIFS are the two dominant network file-sharing protocols used to present shared storage, including virtual-disk images, to hypervisors and clients. NFS, originally built for UNIX/Linux, uses a lease-based locking model in NFSv4 to manage concurrent file access, while SMB/CIFS is Microsoft's protocol, tightly integrated with Windows environments; both can also serve as general shared storage for hypervisor clusters. Learning which native ecosystem, locking semantics, and typical virtual-disk usage pattern belongs to each protocol is the distinction this drag-and-drop is testing. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS and NAS Concepts)"
 }

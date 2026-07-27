@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "We need to define maximum concurrent nodes of 1 to avoid impacting service.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In an ACI vPC topology, each vPC pair (Blue1/Red1 and Blue2/Red2) shares downstream connectivity, so upgrading both members of the same vPC pair at the same time would disrupt that pair's access-layer traffic. Grouping the switches into scheduler policies by vPC pair and setting maximum concurrent nodes to 1 forces each policy to upgrade its two leaves one at a time, guaranteeing at least one leaf per vPC pair stays online while still letting the two separate policies run their sequential upgrades in parallel with each other. A value of 2 would upgrade both vPC-pair members simultaneously and cause an outage. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Firmware Maintenance and Scheduler Policies)"
 }

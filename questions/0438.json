@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Adding a third NP uplink alone doesn't automatically rebalance already-logged-in server interfaces across it - NPV assigns server interfaces to uplinks at login time, so existing sessions stay pinned to their original uplink unless the switch is told to redistribute them. Enabling 'npv auto-load-balance disruptive' forces NPV to log out and relogin existing devices so they can be redistributed, including onto the new uplink, while the new physical interface itself must be brought up as an NP port ('switchport mode np') to serve as another core-facing uplink. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - NPIV and NPV)"
 }

@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a port channel's lacp max-bundle is set below the number of configured member links, LACP still forms the channel but keeps only the allowed number of links actively forwarding and places the rest in hot-standby; which link wins active status is decided purely by LACP port priority, where a numerically lower value is preferred over a higher one, with any unconfigured member simply using the NX-OS default of 32768. Setting max-bundle to 1 on the port channel is what forces LACP to choose a single active member between the two candidate interfaces based on their relative port-priority values, with the less-preferred link automatically falling back to standby instead of being brought down. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — LACP Max-Bundle and Port Priority for Active/Standby Port Channels)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An EPLD upgrade on any Cisco MDS module always reloads that specific module to apply the new hardware logic, but this impact is isolated to the module being upgraded - every other online module, and the switch's overall forwarding for unaffected ports, continues to operate normally, which is why EPLD maintenance can typically be scheduled module-by-module without a full outage. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - EPLD Upgrade)"
 }

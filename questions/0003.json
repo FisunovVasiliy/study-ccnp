@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "ERSPAN uses two independently configured session types that are matched by IP address and erspan-id, not by session number: an erspan-source session (here, session 48 on Switch A) mirrors traffic from its source interface and GRE-encapsulates it toward the destination IP, while an erspan-destination session (session 47 on Switch B) decapsulates it and forwards it out its destination interface. Since Switch A's source interface is Eth2/11 (facing Host A) and Switch B's destination interface is Eth2/33 (facing Host B), Host A is the monitored source and Host B is where the analyzer sits. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — ERSPAN)"
 }

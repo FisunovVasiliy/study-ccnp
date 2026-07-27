@@ -28,5 +28,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In this vPC design, Host A's port channel shows up in show vpc orphan-ports, meaning it is attached to only one leaf instead of being dual-homed across both members of the vPC pair — exactly why the host loses connectivity whenever that single leaf is unavailable. Converting the interface into a genuine vPC member by adding the vpc keyword under the port channel, alongside spanning-tree port type edge trunk for a host-facing trunk port that shouldn't take on switch-to-switch loop-prevention roles, dual-homes Host A across both leaves so connectivity survives either one going down. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Orphan Ports and Dual-Homing Design)"
 }

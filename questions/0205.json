@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/storage/san_switches/mds9000/sw/rel_1_x/sf_1_3_2a/san-os/configuration/guide/Domains.pdf",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "By default, dynamically-assigned FCIDs are cached only in volatile memory and can be reused differently after a reboot; to guarantee the same FCID is preserved for a specific WWN across reboots (needed here for a third-party integration requiring stable FCIDs), you manually seed the fcdomain FCID database with the WWN-to-FCID mapping ('fcdomain fcid database vsan <id> wwn <wwn> fcid <fcid>') and then enable persistence for that VSAN with 'fcdomain fcid persistent vsan <id>', which writes the FCID assignments to nonvolatile storage. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - FCID Allocation)"
 }

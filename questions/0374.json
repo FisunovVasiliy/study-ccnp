@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The action statement's job is to copy the switch's live configuration to a bootflash backup file, so the blank must supply the copy source keyword 'running-config' — producing 'action 1 cli copy running-config bootflash:/current_config.txt', which mirrors this exact EEM local-backup example from the book. 'policy-default', 'event-default', and 'syslog-config' are not valid sources for the copy command. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

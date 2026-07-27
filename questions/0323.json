@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because User1 needs a nonstandard combination of privileges - full Network Administrator scope (fabric interconnect and network security) plus full Storage Administrator scope together - no single built-in UCS role covers exactly that combination, so a custom role combining both privilege sets must be created. Since the organization authenticates through Active Directory, LDAP group mapping (rather than RADIUS, which needs per-user AV-pair attributes instead of group-based mapping) is used to tie AD groups directly to that custom role for role assignment. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - LDAP Group Mapping, custom roles)"
 }

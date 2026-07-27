@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/US/docs/unified_computing/ucs/sw/cli/config/guide/1.4.1/CLI_Config_Guide_1_4_1_chapter28.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS C-Series power supply redundancy policies include options like grid, N+1, and non-redundant; 'grid' redundancy specifically means the server's power supplies are split across two independent power sources/grids, so a failure of one entire input feed (not just one PSU) still leaves the server powered. N+1 protects against a single PSU failure but assumes a common power source, so it does not satisfy a requirement to tolerate loss of one of two separate power feeds — only the grid redundancy setting does. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS C-Series Power Management)"
 }

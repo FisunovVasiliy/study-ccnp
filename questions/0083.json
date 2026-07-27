@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Nexus 9000 ISSU relies on dual supervisors and nonstop forwarding (NSF): while the standby supervisor is upgraded and a switchover occurs, the data plane on line cards keeps forwarding traffic using existing forwarding state, so the upgrade completes without a full reload. Configuration changes are not permitted mid-upgrade, individual line cards aren't upgraded independently of the coordinated ISSU sequence, and downgrades follow the same disruptive/nondisruptive rules as upgrades rather than being inherently zero-downtime. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — In-Service Software Upgrade)"
 }

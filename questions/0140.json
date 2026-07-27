@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A vNIC template's Template Type controls propagation: an 'Initial Template' only pushes its settings to the vNICs that inherit from it at the moment they are created, while an 'Updating Template' keeps every inheriting vNIC in sync with future changes automatically. Because Trunk-A is an Initial Template, adding a new VLAN to it afterward does not retroactively update vNICs already built from it (including the one used by ESXi-Server), so the fix is to change Trunk-A's template type to Updating so the new VLAN (and future changes) propagate to associated vNICs. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Network Management, vNIC Templates)"
 }

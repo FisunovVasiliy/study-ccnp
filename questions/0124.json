@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/cli/config/guide/1.4.1/CLI_Config_Guide_1_4_1_chapter42.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Completing a bidirectional SPAN configuration in the UCS CLI needs two things: a destination-interface entry created directly under the fabric's monitor session using slot/port syntax ('create dest-interface 2 12', not a nested 'eth-mon-session/dest-interface' path), and the monitor source on the vNIC set to capture traffic in both directions with 'set direction both' — 'receive transmit' is not valid CLI syntax for this attribute. Getting the destination-interface path right and using the correct 'both' keyword are what make the SPAN session both syntactically valid and bidirectional. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Traffic Monitoring, SPAN Configuration)"
 }

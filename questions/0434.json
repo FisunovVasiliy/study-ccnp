@@ -30,5 +30,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS keychain management provides the shared-secret mechanism (with configurable send/accept lifetimes) that routing-protocol authentication relies on. Applying it to EIGRP requires tying the interface to a defined key chain (ip authentication key-chain eigrp <process> <chain-name>) and enabling key-based authentication mode on the interface, while the key chain itself (defined globally with 'key chain', a key ID, and a key-string holding the shared secret) supplies the actual credential, and the EIGRP process is separately configured for MD5 authentication mode. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Keychain Authentication, applied to NX-OS EIGRP)"
 }

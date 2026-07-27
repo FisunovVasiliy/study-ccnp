@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In ACI, an interface policy group is what actually defines a specific port-channel/vPC's link-level settings (LACP mode, CDP/LLDP, MCP, and so on) and gets applied to the specific leaf interfaces bundled for that vPC. Because the two vPCs go to two different downstream devices that may need different port-level settings, each vPC needs its own interface policy group even though both leaves still belong to the same single vPC protection group; sharing one policy group across both vPCs would force identical port settings on unrelated downstream connections, and creating two separate vPC domains isn't how ACI models one explicit vPC protection group. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI vPC Interface Policy Groups)"
 }

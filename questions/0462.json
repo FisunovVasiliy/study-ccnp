@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On the Cisco Nexus side, FCoE mapping and vfc/VSAN configuration are already in place; the missing piece is on Cisco UCS Manager, where the fabric interconnect's uplink port toward the Nexus switch must specifically be configured as an FCoE uplink interface, not a regular Ethernet uplink or an FC uplink, so the FI knows to forward FCoE-encapsulated Fibre Channel traffic, along with the matching VSAN/VLAN, out that port to the upstream FCF. (Cisco UCS/Nexus FCoE integration documentation)"
 }

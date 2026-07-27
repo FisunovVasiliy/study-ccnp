@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "VMware vSphere Distributed Switch (VDS) does not use the OpFlex protocol the way Cisco ACI Virtual Edge or AVS do, so ACI implements VM-attribute-based microsegmentation on VDS differently: it automatically provisions a private VLAN (PVLAN)-backed port group on the vCenter distributed switch to represent the uSeg EPG, and matching VMs are moved into that port group. This is unlike AVE/AVS, where the uSeg EPG does not appear as a vCenter port group at all. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - ACI Microsegmentation, VMM domain workflow)"
 }

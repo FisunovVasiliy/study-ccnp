@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Modern CPUs use C-states to trade idle power savings for wake-up latency: deeper states like C6 (retention or non-retention) save more power but add delay before the core can return to full performance, whereas C0/C1 keeps the processor in (or one step from) its fully active state, minimizing response latency. For workloads that need the best possible on-demand CPU performance, the BIOS policy should therefore be set to C0/C1 state, sacrificing idle power efficiency in exchange for immediate compute responsiveness. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Server BIOS Policies)"
 }

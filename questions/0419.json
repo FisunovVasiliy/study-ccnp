@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Directly connecting an FC storage array to a Cisco UCS domain (without an external SAN switch) requires configuring the fabric interconnect's FC port specifically with the Fibre Channel storage port role — not a generic FC uplink or port channel, which assume an upstream switching fabric — and configuring a new VSAN to logically carry that storage traffic, since a VSAN boundary is required for any FC/FCoE traffic on the fabric interconnect. A dedicated vHBA and a storage connection policy may also be involved in full end-to-end zoning, but the two foundational actions for the direct attachment itself are the storage port role and the VSAN. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, Direct-Attached FC Storage)"
 }

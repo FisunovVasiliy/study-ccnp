@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "EPLD upgrades only touch the specific programmable hardware components (FPGAs/CPLDs) whose running version differs from the new image's version; the switch skips any EPLD device whose Running-Version already matches the New-Version. In the exhibited output, every listed EPLD (MI FPGA, IO FPGA, MI FPGA2) already shows \"Upg-Required: No\" because running and new versions are identical, so the switch will skip the EPLD upgrade for every device on that module rather than reboot or selectively upgrade one type. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — EPLD Upgrades)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager can be claimed into Cisco Intersight in one of two modes: UCSM Managed Mode (Intersight monitors/manages while UCS Manager retains full local configuration authority) or Intersight Managed Mode (Intersight becomes the primary configuration point). To keep full administrative control through both UCS Manager and Intersight, the Device Connector's Access Mode must be set to 'Allow Control' from within Cisco UCS Manager itself (not a generic device console), and the domain must be claimed in Intersight specifically as UCSM Managed Mode, which preserves UCS Manager as a first-class management interface alongside Intersight. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 13 — Cisco Intersight, Device Connector and Management Modes)"
 }

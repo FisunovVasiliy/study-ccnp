@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Backing up hardware-inventory-level configuration such as chassis, FEX, rack server, IOM, and blade server settings, stored on a remote server in XML format, corresponds to a System Configuration backup rather than Full State (binary, whole-system) or Logical Configuration (service profiles/VLANs/VSANs). When restoring that data into an existing environment, the merge import method combines the backed-up settings with the domain's current configuration instead of the replace method, which would wipe out existing configuration not present in the backup file — merge is the safer, additive restore approach appropriate here. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, System Configuration Backup and Merge Import)"
 }

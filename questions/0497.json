@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS OSPF supports two authentication modes per interface: simple (clear-text password) authentication, enabled with ip ospf authentication plus a plain-text authentication key, and MD5 message-digest authentication, enabled by setting the interface's authentication mode to message-digest along with a digest key/MD5 hash value. Configuring eth1/1 for the clear-text form and eth1/2 for the message-digest form on the same OSPF process demonstrates that authentication type is set per interface, not per process, mirroring the general simple-vs-MD5 authentication choice available in OSPF. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Keychain Authentication concept, applied to NX-OS OSPF)"
 }

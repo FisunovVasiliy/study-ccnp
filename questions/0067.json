@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The vPC \"delay restore\" timer controls how long a vPC peer waits, after it comes back up, before bringing its vPC member ports back into service — this pause exists so the recovering peer's routing protocols and upstream paths have time to reconverge before traffic is sent to it again. If that timer is too short relative to how long OSPF/uplink convergence actually takes on reload, traffic destined to or from the server can be black-holed briefly; increasing delay restore gives the reloading peer enough time to be fully ready before it resumes forwarding, eliminating that packet loss on future reloads. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Delay Restore)"
 }

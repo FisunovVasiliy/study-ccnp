@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A Full State backup performs a complete binary dump of the Cisco UCS Manager database, saved with a .bin extension, and captures both the configuration and the runtime state of the system — this is what makes it usable to fully restore or rebuild a fabric interconnect during disaster recovery. In contrast, the XML-based All Configuration/System Configuration/Logical Configuration backups only capture configuration objects (not runtime state) and cannot be used for a system restore, only for configuration import. Recognizing the .bin format and 'includes runtime state + config' are the two defining characteristics of a full state backup. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Backup Types)"
 }

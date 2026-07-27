@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Upgrading the Cisco Integrated Management Controller (CIMC) firmware on a UCS server disrupts the management/KVM plane of that server, because CIMC is what hosts the KVM console redirection service; an active KVM session will be dropped during the CIMC reboot that accompanies activation. Data traffic, SAN traffic, and Cisco UCS Manager itself are unaffected because CIMC upgrades are scoped to a single server's management controller and do not touch the fabric's forwarding plane or the domain-wide management application. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Updates, CIMC Firmware Impact)"
 }

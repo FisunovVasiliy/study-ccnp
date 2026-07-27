@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/system_management/7x/b_5600_System_Mgmt_Config_7x/b_6k_System_Mgmt_Config_7x_chapter_01110.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On Nexus 5600, SPAN mirrored traffic can be rate-limited directly on the destination interface using \"switchport monitor rate-limit <rate>\" so the copied traffic doesn't overrun the analyzer or congest the destination port, separate from the normal \"monitor session\" block that defines the source and destination relationship. Both pieces — the rate-limit under the destination interface and a standard monitor session pointing sources at that destination — are needed together to both mirror and throttle the traffic to 1 Gbps. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — SPAN Rate Limiting)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "Official answer is B (protect), though community vote leans toward A.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The switchport port-security violation protect action silently drops ingress traffic from any new, nonsecure MAC address once the interface's secure-MAC maximum is reached, without generating a syslog message/SNMP trap or disabling the port - which keeps the three already-secured MAC addresses and their traffic completely unaffected. This differs from 'shutdown' (which err-disables the entire port, blocking all traffic including the already-secured MACs) and from 'restrict' (which drops the traffic but also logs a violation). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus Port Security Violations and Actions)"
 }

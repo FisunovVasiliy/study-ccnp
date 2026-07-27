@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The Cisco UCS Manager CLI backup command syntax is 'create backup <uri> <backup-type>', not 'copy running-config' or 'create file' (which are not valid backup verbs in this context). Because the requirement calls for all system and service profile settings, the type must be 'all-configuration' (the XML export covering both system and logical configuration), and because the transfer must be authenticated and encrypted, the URI must use the scp:// protocol rather than ftp/tftp, giving 'create backup scp://... all-configuration'. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, CLI Backup Commands)"
 }

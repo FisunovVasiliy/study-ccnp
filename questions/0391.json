@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The Cisco Nexus telemetry pipeline is generally described in terms of a few core processing components inside the switch before data ever leaves the device: data collection, which gathers operational state and counters from internal data stores, and data encoding, which formats that raw data into a transport-friendly structure such as Google Protocol Buffers or JSON. Terms like telemetry agent, compression, and manipulation are not the standard named components of this model, which is why collection and encoding are the two that correctly describe the process. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Nexus Telemetry Architecture)"
 }

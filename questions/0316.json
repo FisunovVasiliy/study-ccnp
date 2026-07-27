@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Providing and consuming a 'permit any' contract at the VRF scope makes every EPG placed in that VRF able to communicate with every other EPG by default, since the wide-open contract applies uniformly across the whole VRF rather than needing to be attached to each new EPG or bridge domain individually. This achieves the same practical effect as unenforcing the VRF's policy, but does so through the standard contract mechanism (functionally similar to applying vzAny with an allow-all filter) so new EPGs/BDs automatically inherit the open policy with zero extra configuration. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Cisco ACI Contracts, VRF-level / vzAny contracts)"
 }

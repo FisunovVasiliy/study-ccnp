@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/system_management/503_n1_1/cisco_n5k_system_mgmt_cg_rel_503_n1_1_chapter11.pdf",
  "explanation": "Guidelines and Limitations -\nRollback has the following configuration guidelines and limitations:\n- You can create up to ten checkpoint copies.\n- You cannot apply the checkpoint file of one switch into another switch.\n- Your checkpoint file names must be 75 characters or less.\n- You cannot start a checkpoint filename with the word system.\n- When FCoE is enabled, the checkpoint and configuration rollback functionality are disabled.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS configuration rollback depends on the checkpoint/rollback infrastructure, which on Nexus 5600 platforms has documented interoperability limits with other features: specifically, when FCoE is enabled on the switch, the checkpoint and configuration rollback functionality is disabled altogether. This is a platform guideline rather than a role-based-access or automatic-checkpoint behavior, and it means an engineer planning a config rollback on that switch first needs to confirm FCoE isn't enabled. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Configuration Rollback, with Cisco documentation)"
 }

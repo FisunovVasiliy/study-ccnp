@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco DCNM's access-admin role is specifically scoped to let a user perform device operations (such as adding, editing, and deploying Layer 2 port channels and vPCs) inside the Interface Manager window across all fabrics, without granting broader administrative rights. The network-operator role maps to DCNM's Operator Perspective, which hides the Admin and Config menu items from the UI entirely while still allowing use of other (non-configuration) features - together these two roles satisfy both 'permit Interface Manager operations' and 'hide Admin/Config menus'. (Cisco documentation / web research - Cisco DCNM Fundamentals Guide, User Roles)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Single-connect (sideband) management of a C-Series server lets Cisco IMC management traffic ride the same cable as data traffic, rather than requiring a dedicated management link. To enable it in the CLI you scope to the server object itself (not the chassis, since a standalone/integrated C-Series server isn't addressed as a chassis) and then scope into its CIMC's management-connection settings — 'scope server 1' > 'scope cimc' > 'scope mgmt-conn sideband' — before enabling the connection state and committing. Using the chassis scope instead targets the wrong managed object for a rack server. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS C-Series Integration, Sideband Management)"
 }

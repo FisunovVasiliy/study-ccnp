@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "Of the answer choices given, only TFTP uses UDP: SFTP runs on TCP 22 (can be assigned whatever port you want, but only TCP). TFTP runs on UDP port 69. SCP runs on TCP port 22. FTP runs on TCP port 21 to establish connection and TCP 20 to transfer data.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Only TFTP among the common file-transfer protocols runs over UDP (port 69); FTP, SFTP, and SCP all use TCP. To meet a UDP-only requirement, the configuration backup must be taken from startup-config to a TFTP server (\"copy startup-config tftp://...\"), and restoring after a corrupted running configuration means copying that saved backup from the TFTP server directly into the running-config, which the device can then use going forward. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Configuration Backup and Restore)"
 }

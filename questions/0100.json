@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/support/docs/hyperconverged-infrastructure/hyperflex-hx-data-platform/214268-cisco-intersight-hyperflex-installatio.html",
  "explanation": "In UCS Manager, browse to Admin -> Device Connector. Enable Intersight Management toggle button and get the Device ID and the Claim Code.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Claiming a Cisco HyperFlex data platform into Cisco Intersight uses the same Device Connector claim workflow as UCS domains: the target's Device Connector produces a unique Device ID and a Claim Code, and both values must be entered into Intersight to establish trust and register the target. FQDN, public IP, and serial number are not the credentials the claim workflow consumes — only the Device ID/Claim Code pair authorizes the association between the on-premises HyperFlex cluster and the Intersight SaaS account. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 13 — Cisco Intersight, Claiming Devices)"
 }

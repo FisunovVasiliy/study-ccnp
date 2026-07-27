@@ -23,5 +23,6 @@
  "reference": "https://www.geeksforgeeks.org/read-json-file-using-python/",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "json.load() parses a JSON document and maps a top-level JSON object (enclosed in { }) to a Python dictionary; JSON arrays would become Python lists, but here the parsed data is an object, so json.load() returns a dict — the json module never produces a tuple or a set from parsed JSON. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

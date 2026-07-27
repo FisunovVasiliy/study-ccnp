@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/support/docs/servers-unified-computing/unified-computing-system/200221-Auto-negotiation-not-enabling-by-default.html",
  "explanation": "Auto-negotiation setting is only available in dedicated mode. This setting enables itself as long as a valid dedicated configuration is set.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Auto-negotiation for the Cisco IMC management NIC is only available when the adapter is configured in dedicated mode, i.e., using a physically separate management port rather than sharing bandwidth with the LOM (shared LOM/shared LOM EXT) or riding on the Cisco VIC card. In dedicated mode the management NIC operates as an independent physical interface, which is what allows it to negotiate speed/duplex directly with its link partner; shared modes multiplex CIMC traffic onto a host NIC and don't expose the same negotiation setting. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco IMC Network Management)"
 }

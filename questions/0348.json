@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Reaching Cisco IMC by hostname (https://datacenter.local) over a specific VLAN requires two independent pieces of CLI configuration under 'scope cimc / scope network': enabling and tagging the management VLAN (vlan-enabled yes, vlan-id 10, vlan-priority 32) so CIMC traffic reaches the right Layer 2 segment, and manually setting the preferred DNS server (192.168.3.20) so the hostname datacenter.local can actually resolve — DHCP-based addressing/DNS wouldn't guarantee that specific static setup, which is why the manual VLAN and DNS commands together are required. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco IMC Network Configuration, VLAN and DNS Settings)"
 }

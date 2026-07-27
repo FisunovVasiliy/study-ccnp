@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "vPC lets two physically separate switches present a single logical port channel to downstream devices, so traffic keeps flowing through whichever peer is still up while the other one reloads during an upgrade; HSRP (or another first-hop redundancy protocol) similarly keeps a virtual default-gateway IP/MAC reachable on the surviving peer so end hosts never lose their gateway mid-reload. VDC, VRF, and VTP are partitioning and trunking-management technologies that don't provide this kind of dual-active redundancy across a physical device reload, which is why they don't reduce upgrade-induced disruption the way vPC and HSRP do. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC and First-Hop Redundancy for Nondisruptive Maintenance)"
 }

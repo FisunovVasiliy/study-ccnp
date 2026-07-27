@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "'Preserve Identities' is a checkbox available for the XML-based backup types (All Configuration, System Configuration, Logical Configuration) that lets you retain pool-derived identities (MAC, UUID, WWN, etc.) when the file is later imported, since those XML exports would otherwise regenerate new identities from the pools on import. A Full State backup is a complete binary snapshot of the whole system, including all runtime identity assignments already embedded in it and restorable only to a fabric interconnect of the same software version — there is nothing extra to 'preserve' via a separate option, so this feature does not apply to it. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Backup Operations)"
 }

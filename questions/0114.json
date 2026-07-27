@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco NX-OS RBAC (Nexus and MDS alike) resolves conflicts between multiple roles assigned to the same user by letting permit rules win over deny rules: if any one of the user's roles explicitly permits a command, the user can run it even if another assigned role denies that same command. This 'access takes priority over denial' behavior lets administrators combine narrow roles without one restrictive role accidentally blocking access granted by another. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18/20 - RBAC, User Roles and Rules)"
 }

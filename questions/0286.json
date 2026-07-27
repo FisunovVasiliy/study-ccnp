@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Hardening Cisco UCS Manager's HTTPS management plane combines several settings under one keyring: set modulus mod2048 sizes the keyring's RSA key at 2048 bits, set https keyring ciscokring binds that keyring to the HTTPS service so it is used for the TLS handshake, set https cipher-suite-mode high-strength forces only strong ciphers to be negotiated, and set https ssl-protocol tls1-2 restricts the protocol version to TLS 1.2, closing off weaker legacy SSL/TLS versions. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, HTTPS/keyring hardening)"
 }

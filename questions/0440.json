@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In the NIST cloud service-model hierarchy, Platform as a Service sits between IaaS and SaaS: the provider fully owns and manages the underlying infrastructure — servers, storage, networking, and OS — while the consumer only manages the applications deployed onto that platform and its configuration settings, exactly matching a company that wants no infrastructure management responsibility but still wants control over how its applications are deployed and configured. IaaS would still require managing the OS and middleware, and SaaS would remove control over the application itself, which is why PaaS is the model that fits both stated requirements. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 5 — Platform as a Service)"
 }

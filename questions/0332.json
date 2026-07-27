@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An NX-OS SPAN session mirrors traffic from one or more sources — physical interfaces, port channels, or entire VLANs — to a single destination interface connected to an analyzer, and each source can be scoped to only ingress (rx), only egress (tx), or left as both by default. Because the two reported symptoms trace back to different traffic paths through the switch (client traffic on Eth1/1 and server-to-internet traffic on Eth1/2), the session needs both uplink interfaces added as tx sources so the switch's own outbound traffic toward each segment is captured, all mirrored to the dedicated SPAN destination on Ethernet 2/3 — mixing in a VLAN-only source or a single-interface source, as the other options do, would miss traffic relevant to one of the two reported problems. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — SPAN Session Sources, Destinations, and Direction)"
 }

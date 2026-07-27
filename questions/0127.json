@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When LDAP encryption is enabled on Cisco Intersight, all directory traffic (including credentials) is protected by TLS, but the appliance must then be able to validate the LDAP server's certificate chain rather than trust it blindly. That requires importing the trusted root CA certificate that issued the LDAP server's certificate into Intersight - a self-signed certificate would fail this trust validation. Together, enabling encryption and adding the trusted root certificate satisfy both integrity and confidentiality for the AAA exchange. (Cisco documentation / web research - Cisco Intersight LDAP configuration)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The exhibited job copies the backup to 'tftp://1.2.3.4/ vrf management', but the TFTP server is stated to be reachable in the global/default routing table, not the management VRF — so the fix is to drop the 'vrf management' keyword and let the job use the default VRF, whose routing table can actually reach that server. Leaving 'vrf management' configured would send the transfer out the wrong routing context and the job would fail to reach a server that's only reachable via the default table. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

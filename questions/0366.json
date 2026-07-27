@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-API JSON responses always include a 'msg' field describing the outcome of the requested CLI command; for a valid show command that returns a '200' code — exactly as shown here for 'show switchname' — the corresponding message is literally 'Success', matching the request/response pattern the book's own NX-API JSON examples (e.g., 'show clock') follow. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

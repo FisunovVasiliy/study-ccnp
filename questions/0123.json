@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/AdminGuide/3_5/b_HyperFlexSystems_AdministrationGuide_3_5/b_HyperFlexSystems_AdministrationGuide_3_5_chapter_01111.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Before HyperFlex installer software can build a standard All-Flash cluster, the target HX240c M5 servers must already be discovered by UCS Manager, left unassociated (no service profile yet, since the installer creates those), and physically connected to both fabric interconnects for redundant connectivity. Separately, jumbo frames are an end-to-end setting: if the installer's Jumbo MTU option is turned on for the HyperFlex data network, the upstream switches must also be configured for jumbo frames, otherwise fragmentation or dropped frames will occur along the path — the installer setting alone is not sufficient. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex All-Flash Cluster Installation Prerequisites)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When Cisco UCS Manager itself is upgraded, the built-in 'default' host firmware policy is not preserved with its previous firmware entries — it is reset to a new default policy that contains no firmware entries at all. This prevents an old firmware package reference from silently forcing an unwanted downgrade or mismatched firmware push onto servers after the upgrade. Administrators must re-populate or reassign the default host firmware policy after an upgrade if they still want it to enforce specific firmware levels on associated servers. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Management, Host Firmware Packages)"
 }

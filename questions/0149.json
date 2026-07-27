@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A Cisco HyperFlex Edge deployment that uses an external pair of switches (rather than direct-connect, switchless mode) requires each HX node to connect with a minimum of two network interfaces configured in trunk mode — one uplink toward each of the two switches — to provide network redundancy across both switches for the cluster's data, management, and storage traffic. A single interface would leave no path redundancy if one switch or link failed, which defeats the purpose of deploying a switch pair. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex Edge Networking)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The vPC duplicate-frame prevention rule states that a frame received on the peer link can never be sent back out another vPC peer-link-facing port, because doing so would create a loop or a duplicate copy on the other peer. When broadcast traffic from Access-1/VLAN20 hits Agg-1 (which received it over the vPC peer-link from Agg-2, or vice versa), Agg-1 forwards it out its local vPC ports but suppresses forwarding it back out the peer link ports (Eth2/4, Eth2/5) it arrived from. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Duplicate Frame Prevention)"
 }

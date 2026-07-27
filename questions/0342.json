@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In a VXLAN EVPN fabric, hosts broadcast ARP requests that would normally have to be flooded as BUM traffic across the entire overlay to every VTEP hosting that VNI. ARP suppression lets the ingress VTEP intercept the ARP request and answer it locally from its own EVPN-learned host table (populated via MP-BGP Type-2 routes) whenever it already knows the target's MAC-to-IP binding, avoiding the flood entirely. Anycast gateway solves default-gateway redundancy rather than ARP flooding, IP ARP SYNC is a vPC feature for synchronizing ARP tables between peer switches, and anycast RP is a multicast concept — none of them reduce ARP-driven BUM traffic the way ARP suppression does. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN EVPN ARP Suppression)"
 }

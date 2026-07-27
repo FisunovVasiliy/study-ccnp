@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/3-1/b_UCSM_GUI_Firmware_Management_Guide_3_1/b_UCSM_GUI_Firmware_Management_Guide_3_1_chapter_011.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The C-Series Rack-Mount UCS-Managed Server Software bundle carries the firmware images that a C-Series server's own hardware components need — including CIMC and BIOS firmware (as well as board controller and adapter images) — mirroring the same logic used for the B-Series bundle but targeted at rack servers instead of blades. PSU, system, and third-party firmware are not distinct entries delivered through this UCS-Managed server bundle, which is why CIMC and BIOS are the two correct selections. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Bundles, C-Series Software Bundle)"
 }

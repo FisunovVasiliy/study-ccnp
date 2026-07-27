@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A direct firmware upgrade of Cisco UCS Manager restarts the UCS Manager management-plane process itself, and because every administrative session (GUI/CLI) is authenticated against that running process, all users currently logged in to UCS Manager are logged out and their sessions end when the upgrade activates — even though data-plane traffic through the fabric interconnects, IPMI polling, and I/O module reboot behavior are not directly triggered by this specific event. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Updates, Direct Cisco UCS Manager Upgrade)"
 }

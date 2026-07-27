@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "VSANs on a Cisco UCS fabric interconnect can be scoped as Common/Global (present identically on both fabrics), pinned to one specific fabric (A or B), or configured differently per fabric. When the SAN topology dedicates Fabric A entirely to the new VSAN's traffic (with no equivalent presence needed on Fabric B), the VSAN must be created scoped to Fabric A specifically, rather than Common/Global (which would also place it on Fabric B) or Fabric B (the wrong side entirely). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, VSAN Configuration)"
 }

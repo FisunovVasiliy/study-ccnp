@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HSRP determines the active router by comparing configured priority (default 100, higher wins) and, because HSRP does not preempt by default, an already-active lower-priority router will keep its role even if a higher-priority router later comes online — unless \"preempt\" is explicitly configured. To guarantee this router becomes and stays the active master whenever it's fully functional, it needs both a priority above the default (255, the maximum) and the \"preempt\" keyword, alongside enabling the feature and assigning the virtual IP under HSRP version 2 group 1000. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — HSRP Priority and Preemption)"
 }

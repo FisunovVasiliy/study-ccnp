@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The NX-API Developer Sandbox is a built-in web form on the switch that converts pasted CLI commands into their equivalent XML or JSON REST payload and can display that request translated into ready-to-use Python, Java, or JavaScript code — precisely the CLI-to-code translation utility described. Guest Shell is a Linux execution container rather than a translation tool, and 'NX-OS JSON-RPC'/'Open NX-OS' aren't the feature being described here. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

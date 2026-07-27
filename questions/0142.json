@@ -30,5 +30,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A Full State backup configuration in Cisco UCS Manager is defined by four related fields: the hostname identifies the location (server) where the backup file will be stored; the protocol specifies the settings used to transfer the file to that backup server (e.g., FTP/SCP/TFTP/SFTP); the remote file is the full path to the resulting backup configuration file on that server; and the type describes what the file actually contains — for Full State specifically, a binary file holding a snapshot of the entire system. Matching each field name to its functional role is the core of this question. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Full State Backup Fields)"
 }

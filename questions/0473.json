@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To capture traffic from exactly one host, the ACL must use a host wildcard mask of 0.0.0.0 rather than a subnet mask like 255.255.255.0, which would match the entire /24 and capture the whole server farm instead of just the target host. Because a VLAN access-map (span_filter) referencing that ACL was already built to select this exact traffic, the monitor session must filter using the access-map's name, filter access-group span_filter, not a numeric access-group ID, which doesn't correspond to anything actually configured in this scenario. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — SPAN Filtering with VLAN Access-Maps and ACLs)"
 }

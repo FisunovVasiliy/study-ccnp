@@ -29,5 +29,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To scale EVPN leaf-to-spine BGP configuration, NX-OS lets you define a reusable template peer that bundles common session parameters — remote-as, update-source, BFD, timers, and address-family activation — once, and then apply it to individual neighbor statements with inherit peer instead of repeating every parameter under each neighbor. The BGP router-id and update-source both point to the same stable loopback used to establish the EVPN overlay session, while the actual VXLAN MAC/IP reachability information is carried specifically under address-family l2vpn evpn, the address family that both activates EVPN route exchange and applies send-community extended, needed for route-target-based VRF/VNI import and export. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN EVPN BGP Peer Templates)"
 }

@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A Fibre Channel port channel is a 'san-port-channel' interface, not the generic Ethernet 'port-channel', and to have the member ports actively negotiate the port channel protocol with their peers, 'channel mode active' must be set; trunk mode must then be explicitly turned on ('switchport trunk mode on') rather than left at its default, and the desired VSAN range is permitted with 'switchport trunk allowed vsan 10-20'. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - SAN Port Channels)"
 }

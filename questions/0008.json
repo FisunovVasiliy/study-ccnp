@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "The remote site is connected to the Hub site via an ASBR router. Hence, an ASBR router redistributes a non OSPF or an External route into the NSSA area which is a Type 7. There is no ABR router in the question.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A Not-So-Stubby Area (NSSA) behaves like a stub area (no external Type 5 LSAs allowed in) but still permits an ASBR inside the NSSA to redistribute external routes. That ASBR generates Type 7 (NSSA External) LSAs, which flood only within the NSSA; an ABR bordering the backbone may optionally translate them to Type 5 for the rest of the domain. Since the remote office connects via an NSSA ASBR (not an ABR), the LSA it receives for the redistributed route is Type 7. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — OSPF NSSA)"
 }

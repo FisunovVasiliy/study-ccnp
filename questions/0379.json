@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Monitoring the ingress direction of a source port requires a SPAN session whose source interface direction is explicitly 'rx' (ingress), pointed at a destination interface configured in SD (SPAN Destination) mode; the destination and source must be different physical interfaces (fc1/15 as SD destination, fc1/16 rx as the monitored source), and using 'tx' or leaving the destination in a non-SD switchport mode would not deliver the required ingress-only capture. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - SPAN)"
 }

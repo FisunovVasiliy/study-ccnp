@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "Note: the source PDF rendered the quote/brace characters in these options with corrupted glyphs (font encoding issue in the original export); the option text above has been reconstructed based on standard Python dict syntax consistent with the marked correct answer.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Python dictionaries are extended or modified with the .update() method (or direct key assignment), which merges the supplied key/value pairs into the existing dict — here switch_id_list.update({'N9K-Spine-2':'1498323434'}) adds the new entry. The '+=' operator isn't defined for combining a dict with a dict literal this way, .append() is a list method not available on dictionaries, and wrapping the pair in square brackets would attempt to build a list rather than update a mapping. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

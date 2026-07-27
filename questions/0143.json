@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When bulk-claiming many targets into an Intersight Virtual Appliance, the CSV bulk-import file must supply, for each target, exactly the information Intersight needs to establish and authenticate a management connection to it: the target type (what kind of device it is), its hostname or IP address (how to reach it), and a username/password pair (how to authenticate). Fields like location, address/name, or certificates/email are not what the claim workflow consumes for API-based device registration, which is why the type/host/user/password tuple is required. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 13 — Cisco Intersight Virtual Appliance, Bulk Target Claim)"
 }

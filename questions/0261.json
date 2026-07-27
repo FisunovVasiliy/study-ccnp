@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A DHCP relay agent needs to know the unicast address of the actual DHCP server before it can convert a client's broadcast BOOTREQUEST into a unicast packet and forward it off the local segment; enabling ip dhcp relay information option only controls insertion of Option 82 information and does not by itself tell the switch where to forward the request. Configuring the DHCP server's IP address under the client-facing SVI is the step that actually completes the relay path so BOOTREQUEST packets reach the server. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 — DHCP Snooping and Relay Agent Configuration)"
 }

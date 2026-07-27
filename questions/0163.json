@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An NPV edge switch has no fabric-services intelligence of its own (no domain ID, no local zoning/name-server) - it is entirely dependent on its upstream core switch(es) for fabric membership. To avoid a single point of failure, an NPV edge switch should be connected, via separate NP uplinks, to multiple independent upstream NPIV-enabled core switches so that a failure of one core switch or its uplink doesn't take down every path from the edge devices into the fabric. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - NPIV and NPV)"
 }

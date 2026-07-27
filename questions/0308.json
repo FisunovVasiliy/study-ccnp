@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In VXLAN EVPN fabrics that use PIM Anycast-RP for the multicast underlay (replicating BUM traffic), all rendezvous points share one common anycast RP address configured with ip pim rp-address and advertised as the source in the ip pim anycast-rp statements. That shared anycast address — not either spine's individual anycast-rp peering address used only for RP-to-RP state sync — is what belongs on the loopback interface acting as the RP, which is why loopback1 must carry the anycast RP address (10.255.0.100) rather than one of the per-spine anycast-rp peer addresses. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — PIM Anycast-RP for Source-Specific Multicast)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Updating the EPLDs on a supervisor module requires that supervisor to reload for the new hardware logic to take effect, and because the control plane lives on the supervisor, all traffic is stopped for the duration of that EPLD update and the switch reboots once it completes - the redundant supervisor cannot simply take over mid-update the way it can during a normal ISSU software upgrade, because the EPLD update itself must run on and reload the target supervisor. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - EPLD Upgrade)"
 }

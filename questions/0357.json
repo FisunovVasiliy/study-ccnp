@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NFS lets a remote directory tree hosted on a Linux/UNIX-based storage repository appear as if it were mounted locally on the client, giving transparent view/store/update access to those files - and because NFS is an open, IETF-standardized protocol rather than a proprietary one, it has become the de facto distributed file system standard underlying NAS deployments, unlike CIFS (Windows-centric), iSCSI (block-level), or FTP (simple file transfer, not a mounted filesystem). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

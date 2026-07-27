@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3000/sw/interfaces/92x/b-cisco-nexus-3000-nx-os-interfaces-configuration-guide-92x/b-cisco-nexus-3000-nx-os-interfaces-configuration-guide-92x_chapter_0110.html",
  "explanation": "3200 is the default UDP port for keepalive packets. Just look for the first line with port 3200 and note the destination IP, which is 192.168.254.4.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "vPC peer-keepalive traffic is a UDP heartbeat sent between the two vPC peers (default UDP port 3200, over the mgmt VRF in this case) purely to detect a dual-active split-brain scenario — it is separate from the peer link used for data forwarding. Reading a packet capture, the keepalive packets are identified by UDP source/destination port 3200; the destination IP of those packets is the peer switch's keepalive-destination address, which the capture shows as 192.168.254.4. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Peer-Keepalive)"
 }

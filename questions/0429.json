@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On Cisco Nexus 9000 platforms with a single supervisor undergoing an ISSU, the process resets and reloads the supervisor CPU with the new NX-OS image; during that reset, the control plane, which builds routing and forwarding tables and runs protocols, is completely unavailable for a bounded window of up to about 80 seconds, while the already-programmed data plane keeps switching traffic in hardware so end hosts see no interruption. Once the CPU comes back up, the control plane resynchronizes with the still-running data plane to complete the upgrade nondisruptively. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Nexus 9000 ISSU Control-Plane Downtime)"
 }

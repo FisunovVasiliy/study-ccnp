@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Traditional SNMP relies on a pull model where a management station periodically polls devices (often every 5–10 minutes), which doesn't scale to many collectors and can't give near-real-time visibility. Streaming telemetry inverts this: the device proactively pushes structured data (JSON/GPB) to a subscribed collector at a configured cadence, so operators get continuous, low-latency updates instead of stale polled snapshots. This push-based subscription model is the key advantage streaming telemetry has over SNMP polling. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Streaming Telemetry)"
 }

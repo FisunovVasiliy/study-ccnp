@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A single monitor session can combine an interface source and a VLAN source in one configuration: the engineer needs the SW3 uplink (Ethernet1/4, which carries the trunk with hyper4's VLAN 57) as an interface source, VLAN 57 itself as an additional VLAN source so only hyper4's traffic is captured (not the whole trunk), and the local analyzer-facing port (Ethernet1/2) both marked with \"switchport monitor\" and set as the session's destination interface. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — SPAN Interface and VLAN Sources)"
 }

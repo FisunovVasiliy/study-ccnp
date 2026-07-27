@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "EEM environment variables are defined globally in configuration mode with 'event manager environment variable-name value', which makes that variable available to any and all EEM policies rather than being scoped to a single applet — so the syntax must be 'n9k2(config)# event manager environment mailserver \"10.10.10.10\"'. There is no equivalent exec-mode or applet-submode command, and 'event manager policy environment' is not valid EEM syntax. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

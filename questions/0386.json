@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a bridge domain's traffic needs to leave the ACI fabric toward an external network, ACI models that external connection itself as a special EPG — an external EPG (l2extInstP for an L2Out, l3extInstP for an L3Out) — so the same contract-based policy model used between internal EPGs also governs what's permitted between an internal EPG and this external EPG. Contracts, external bridge/routed domains, and the L2Out/L3Out objects themselves are supporting building blocks, but it is specifically the internal-EPG-to-external-EPG relationship, tied together by a contract, that determines connectivity permissions. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI External Connectivity: L2Out/L3Out and External EPGs)"
 }

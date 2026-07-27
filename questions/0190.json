@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Compared to native Fibre Channel Protocol, NFSv4 adds a security dimension FCP doesn't natively provide at the protocol layer: strong, negotiable authentication and integrity/privacy (via RPCSEC_GSS/Kerberos) between clients and servers, plus ACL-style access control on files. FCP instead relies on physical fabric security constructs like zoning and port security rather than user- or session-level authentication, so NFSv4's built-in strong authentication is the differentiating advantage being tested here. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

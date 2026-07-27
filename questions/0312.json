@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HyperFlex Edge two- and three-node clusters need a witness to break ties and avoid split-brain, but rather than deploying that witness as a local VM on the HyperFlex datastore or on a separate Windows server, Cisco hosts this arbitration function as a cloud-based service inside Cisco Intersight — the 'invisible cloud witness.' This removes the need for edge sites to provision and maintain their own dedicated witness infrastructure. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — Cisco HyperFlex Edge, Intersight Cloud Witness)"
 }

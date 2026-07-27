@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "This question is a duplicate of Q409 as presented in the source material.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "This question repeats the same scenario as its counterpart: downloading firmware to a fabric interconnect with a requirement for an encrypted transfer and server authentication is satisfied only by SCP, which runs over SSH to provide both encryption and authentication — unlike TFTP, FTP, or unencrypted HTTP, none of which authenticate the server or encrypt the data in transit. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Updates, File Transfer Protocols)"
 }

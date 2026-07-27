@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "This is POAP's core definition: DHCP bootstraps the switch's initial network parameters, a centralized TFTP server hosts the script that installs the image and configuration, and once that one-time process completes there is no ongoing agent enforcing state on the switch afterward — matching every listed requirement. Ansible/Chef are ongoing configuration-management tools that assume a reachable, already-configured device, and Cisco Intersight is a cloud management platform, not a zero-touch bootstrap mechanism for a brand-new switch. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

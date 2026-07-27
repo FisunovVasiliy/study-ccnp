@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Each VRF on the switch maps to its own Linux network namespace under /var/run/netns; Guest Shell's chvrf convenience utility switches the shell's current namespace context to a given namespace before running a command, so 'chvrf \"$ns\";' immediately followed by ifconfig makes ifconfig report the interfaces belonging specifically to that VRF/namespace on each loop iteration. echo and vrfinfo don't change execution context, and passing a namespace name directly as an ifconfig argument isn't valid syntax. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In an MP-BGP EVPN/VPN design, each VRF instance carries a Route Distinguisher (RD) purely to make otherwise-identical prefixes unique in the BGP table, while Route Targets (RT) are separate extended communities that control which PE routers actually import a given prefix into their local VRF. For two PEs to exchange the same VRF's prefixes, each PE's route-target export value must match the other PE's route-target import value — they can use the same value symmetrically on both sides, or cross-matching asymmetric values — while the RD itself doesn't need to match between PEs since it only affects route uniqueness, not import/export filtering. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN EVPN Route Distinguishers and Route Targets)"
 }

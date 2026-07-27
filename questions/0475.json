@@ -24,5 +24,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Meeting all four stated requirements needs three pieces: tacacs-server host ... key Cisco123! timeout 30 sets both the shared secret and the specific 30-second response window used for the 'fail back within 30 seconds' requirement; use-vrf management under the server group scopes TACACS+ traffic to the out-of-band management VRF for connectivity; and aaa authentication login default group tacacs+ local applies to the 'default' method list (covering both SSH and Telnet, unlike a console-scoped policy) and falls back to local credentials only if the TACACS+ group is unreachable. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - AAA NX-OS Configuration examples)"
 }

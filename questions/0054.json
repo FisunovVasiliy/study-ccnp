@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Without VMM integration, an EPG can only be deployed onto an access port through static port binding, so each EPG that should use a given AAEP-managed port must be explicitly configured as a static port on that interface/VLAN. In addition, the EPG's domain association must point at a physical domain (not a VMM domain) so the fabric knows which VLAN pool/encapsulation is valid on that port — the AAEP alone only groups infrastructure policies and doesn't itself carry the EPG-to-VLAN mapping. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Access Policies and Static Port Binding)"
 }

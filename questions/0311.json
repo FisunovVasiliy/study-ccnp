@@ -22,5 +22,6 @@
  "reference": null,
  "explanation": "\"Set the format and destination to which the data is sent.\" is the distractor not used in the correct sequence.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco's model-driven telemetry configuration workflow defines what data is gathered before wiring up how it leaves the device: first a flow monitor and its flow record are configured (defining which fields and counters get collected, much like NetFlow), then the sensor group is configured with the specific data paths to collect for streaming telemetry, and finally a subscription binds that sensor group to a destination so the collected data is actually pushed out. Configuring the destination format before the sensor group and subscription exist would leave nothing to bind it to, which is why that step is the unused distractor. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Streaming Telemetry Configuration Workflow)"
 }

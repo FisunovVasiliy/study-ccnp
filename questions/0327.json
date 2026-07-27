@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An ISSU is only guaranteed nondisruptive when the configuration and topology stay stable throughout the process — NX-OS locks the configuration on a vPC peer specifically because a mid-upgrade configuration or connectivity change can invalidate the state synchronization between the old and new control plane, forcing the switch to fall back to a disruptive reload or protocol renegotiation. Exceeding a card-count limit, skipping the impact check, or which install command is used are operational mistakes, but it is specifically changing configuration or network connections mid-upgrade that turns an otherwise-eligible ISSU disruptive. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Nondisruptive ISSU Requirements)"
 }

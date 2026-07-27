@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus3548/sw/programmability/6x/b_Cisco_Nexus_3500_Series_NX-OS_Programmability_Guide_6x/b_Cisco_Nexus_3500_Series_NX-OS_Programmability_Guide_6x_chapter_01000.html",
  "explanation": "The Puppet software package, developed by Puppet Labs, is an open source automation toolset for managing servers and other resources by enforcing device states, such as configuration settings.\nPuppet components include a puppet agent which runs on the managed device (node) and a puppet master (server) that typically runs on a separate dedicated server and serves multiple devices. The operation of the puppet agent involves periodically connecting to the puppet master, which in turn compiles and sends a configuration manifest to the agent; the agent reconciles this manifest with the current state of the node and updates state based on differences.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Puppet uses a pull-based agent/master architecture: a puppet agent on each managed node (here, UCS servers via the appropriate integration) periodically contacts a centralized puppet master, which compiles and returns a configuration manifest; the agent then reconciles the node's actual state against that manifest and corrects any drift. This periodic 'pull and enforce desired state' behavior is what distinguishes Puppet from push/agentless tools like Ansible or purely one-time provisioning tools like Terraform for this requirement. (Cisco documentation / web research)"
 }

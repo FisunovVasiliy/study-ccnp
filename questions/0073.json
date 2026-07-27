@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A VTEP's identity on the underlay is a loopback interface with its own IP address, which is bound to the NVE interface via \"source-interface loopback0\" so that VXLAN encapsulation uses that loopback IP as the VTEP source/destination address. Physical uplinks used to reach that loopback across the underlay are typically configured as \"ip unnumbered loopback0\" to conserve address space on point-to-point links rather than assigning a separate subnet to every interface, which is why both the nve1 interface and the physical uplink reference the same loopback. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN NVE Configuration)"
 }

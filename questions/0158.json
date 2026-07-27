@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco Data Center Network Manager (DCNM) is the management platform NX-OS documentation points to for automating and provisioning DC fabrics, and it ships with prebuilt, customizable templates (e.g., for VXLAN EVPN \"Easy Fabric\" deployments) that let an operator stand up and tailor a fabric without hand-writing every device's configuration from scratch — a capability that Tetration, ACI's APIC, and UCS Manager are not built around in the same template-driven fabric-deployment sense. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Cisco Data Center Network Manager)"
 }

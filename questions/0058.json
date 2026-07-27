@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In a vPC domain, multicast forwarding toward a downstream vPC is only handled by the peer whose mroute has a populated outgoing interface list (OIF) for that VLAN; the other peer, even if it receives the same multicast stream, has no OIF to forward it out of and drops it locally to avoid duplicating traffic across the peer link toward the same vPC. Since Switch2's (S,G) entry shows \"Outgoing interface list: (count: 0),\" traffic arriving on Po11 at Switch2 has nowhere valid to go and is dropped, while Switch1 (with an active OIF on Vlan100) is the one actually forwarding to the receiver. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — Multicast; Chapter 2 — vPC)"
 }

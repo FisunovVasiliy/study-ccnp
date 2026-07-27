@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On MDS director-class switches, the fabric (crossbar) modules provide the switching fabric all line cards rely on, so their EPLD upgrade is performed one fabric module at a time - the switch checks reserve fabric bandwidth before reloading each module (via 'install all epld uri parallel xbar-module') to make sure enough capacity remains on the surviving fabric modules to keep traffic flowing nondisruptively while that one module reloads. Doing them all at once, or all in parallel, would remove all switching capacity simultaneously. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - EPLD Upgrade)"
 }

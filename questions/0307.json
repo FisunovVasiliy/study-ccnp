@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "SNMPv3 defines three security levels: noAuthNoPriv (no authentication, no encryption), authNoPriv/'auth' (message is authenticated but sent in clear text), and authPriv/'priv' (message is both authenticated AND encrypted for confidentiality). Since the requirement is for SNMPv3 traps that are both authenticated and protected from disclosure (i.e., encrypted), the 'priv' privacy level - which provides authentication plus encryption together - is the only option that meets both criteria. (Cisco documentation / web research - SNMPv3 security levels, general Cisco UCS SNMP configuration)"
 }

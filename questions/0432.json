@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco Nexus Dashboard hosts multiple ACI-related services and applications — Insights, Orchestrator, Fabric Controller, and individual site APIC GUIs — side by side on one shared platform. Its Single Sign-On feature authenticates the user once and then lets them move between those different services and site controllers without re-authenticating for each one, which is exactly the feature that provides seamless switching between site controllers. Multifactor authentication strengthens the login itself, air-gap support addresses isolated deployments, and cloud-site onboarding is about adding new cloud sites — none of them relate to switching between already-onboarded controllers. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 7 — Nexus Dashboard Single Sign-On)"
 }

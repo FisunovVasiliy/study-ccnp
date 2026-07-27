@@ -26,5 +26,6 @@
  "reference": "https://community.cisco.com/kxiwq67737/attachments/kxiwq67737/4436-docs-data-center/627/1/99126-Large%20SAN%20Design%20Best%20Practices%20using%20MDS%209710.pdf",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Oversubscription in a SAN describes the ratio between the bandwidth committed on one side of a link and the bandwidth actually available on the other, and it is measured at more than one layer of the fabric: the edge-to-core ISL oversubscription ratio (aggregate host-facing edge bandwidth vs. the ISL bandwidth feeding the core) and the host-to-storage bandwidth ratio (aggregate host port bandwidth vs. available storage-array port bandwidth). Keeping these ratios low (ideally close to 1:1) reduces congestion and the risk of slow-drain conditions, while higher ratios are accepted in cost-optimized large-fabric designs. (Cisco Large SAN Design Best Practices / web research)"
 }

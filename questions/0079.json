@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A community cloud is shared among multiple organizations that need to jointly operate an environment (e.g., integrating a shared third-party protocol), while IaaS gives the customer the deepest level of control over the underlying OS, interpreter versions, and libraries — exactly what the development team needs. Combining these, a community-cloud IaaS deployment satisfies both the multi-company operational requirement and the maximum-developer-control requirement, unlike PaaS/SaaS models that abstract away OS-level control, or private/ public/hybrid models that don't match the \"several companies jointly operate\" requirement as directly. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 5 — Cloud Deployment and Service Models)"
 }

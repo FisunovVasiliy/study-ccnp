@@ -28,5 +28,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NFS is a vendor-neutral, IETF-standardized protocol heavily associated with Linux/UNIX systems that simply defines how storage/file-sharing requests are exchanged between a client and server, while NAS refers to a purpose-built storage appliance running its own lightweight, embedded operating system on simplified hardware to serve that data. Keeping the protocol (NFS, which any OS/vendor can implement) distinct from the appliance/device concept (NAS, a dedicated hardware-plus-software storage platform) is the core distinction this match question tests. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS and NAS Concepts)"
 }

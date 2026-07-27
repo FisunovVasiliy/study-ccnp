@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Appliance ports connect a Cisco UCS fabric interconnect directly to NAS/iSCSI storage devices operating in end-host mode. Because a single appliance port can need to carry more than one VLAN toward the storage device (for example, separate NFS and iSCSI VLANs), the port must be configured in trunk mode with matching VLAN tagging applied on the storage device's side — access mode would restrict the port to a single untagged VLAN, and having the UCS and storage device use different or same-tag configurations without a deliberate trunk setup would misalign VLAN membership between the two ends. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Network Management, Appliance Ports)"
 }

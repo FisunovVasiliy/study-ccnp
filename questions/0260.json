@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The aaa authentication login default command defines an ordered method list; here it specifies only 'group RADIUS' with no 'local' keyword appended. Because local fallback is not part of the configured method list, the switch relies exclusively on the RADIUS group for authentication - it does not automatically add a local fallback the way MDS switches do by default. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - AAA Service Configuration Options)"
 }

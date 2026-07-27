@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Central and UCS Manager use locales as an organizational scoping mechanism layered on top of roles: a locale ties a user's access to a specific organization (department) so the same role grants access only within that org's resources. Moving a user between departments therefore requires creating (or reusing) a locale scoped to the new department (Admin) and assigning that locale to the user, rather than deleting the old account or just swapping authentication services. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - UCS RBAC, roles and locales)"
 }

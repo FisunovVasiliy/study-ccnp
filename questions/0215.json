@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "EEM requires an explicit 'event-default' action whenever a policy matches a CLI command; without it, EEM intercepts the matched command but does not allow it to actually run. This applet defines an event that matches 'copy running-config startup-config' but never adds an event-default action, so instead of executing (or merely being logged), the command is effectively blocked from completing when a user enters it. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

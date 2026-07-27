@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Before downgrading, \"show incompatibility-all\" checks the currently running configuration against the target (older) image and reports which currently configured features and commands are not supported by that older image — information the administrator needs because those unsupported features/commands would be automatically stripped from the configuration during the downgrade. It does not describe post-downgrade auto-enabled features, ISSU/reload impact (that's \"show install all impact\"), or generic bootflash file compatibility. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Pre-Downgrade Compatibility Checks)"
 }

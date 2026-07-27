@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli/CLIConfigurationGuide/sm_rollback.html",
  "explanation": "Verifying a Session - To verify a session, use the following command in session mode: switch(config-s)# verify [verbose] - Verifies the commands in the configuration session.\nCommitting a Session - To commit a session, use the following command in session mode: switch(config-s)# commit [verbose] - Commits the commands in the configuration session.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Session Manager lets an administrator stage a batch of configuration changes in a temporary session before committing them, so risky changes (like modifying a vPC domain) can be validated first. \"verify\" checks the staged commands in the session for consistency/errors without applying them, and \"commit\" applies the verified session's commands to the running configuration; if verify comes back clean, commit is the step that actually pushes the changes live. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — NX-OS Configuration Session Manager)"
 }

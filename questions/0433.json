@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An interface (or port channel) whose 'Admin port mode is NP' and 'Port mode is NP' is functioning as an NP (proxy N) port - the uplink type a Cisco MDS switch running NPV mode uses toward its upstream NPIV-enabled core switch. Since this port channel is up and operating in NP mode rather than F, E, or TE, MDS-9148S-2 must be an NPV edge switch relaying FLOGIs from its downstream devices through this uplink, so the switch is operating in NPV mode. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - NPIV and NPV)"
 }

@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/security/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_Security_Configuration_Guide/b_Cisco_Nexus_9000_Series_NX-OS_Security_Configuration_Guide_chapter_01001.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco NX-OS RBAC lets a permit rule override a deny rule when they come from different roles a user holds, but WITHIN a single role, a broad rule like 'permit command *' would allow the auditor to enter configuration mode unless a more specific deny is added for that exact command. Adding 'deny command configure terminal' explicitly blocks the auditor from ever entering config mode, hardening the role into a true read-only auditor role even though the base rule is permissive. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Role-Based Access Control, Rules)"
 }

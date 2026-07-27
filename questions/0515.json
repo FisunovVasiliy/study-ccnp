@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because the task requires SCP as the default transfer protocol and the tarball must be fetched to the same download_path later passed into POAPPersonality(), the script has to build personality_tarball with os.path.join(download_path, ...) — not a separately hardcoded /tmp path — and set protocol = os.environ['PROTOCOL'] if 'PROTOCOL' in os.environ else \"scp\" so it only falls back to scp when the operator hasn't overridden it. The hostname must also be queried through the NX-OS CLI via 'vsh -c \"show hostname\"' rather than a plain shell command that has no notion of the switch's identity. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

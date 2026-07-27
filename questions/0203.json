@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": true,
- "provisional": true
+ "provisional": true,
+ "theory": "For SAN boot where the storage array presents the boot LUN by mapping the initiator's (vHBA's) source WWPN to a fixed LUN, Cisco's recommended practice is to build the SAN boot policy so that every initiator (each vHBA/path) is configured to point at the same target LUN ID, since the array itself differentiates access per-WWPN rather than needing different LUN numbers per path. Leaving boot targets undefined or using default values would not tell UCS Manager which specific LUN/target WWPN to boot from, and mapping each initiator to a different LUN would be incorrect when the array uses WWPN-based LUN mapping to a single logical boot volume. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, SAN Boot Policies)"
 }

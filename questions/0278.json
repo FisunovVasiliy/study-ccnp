@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/security/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_Security_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_Security_Configuration_Guide_7x_chapter_01100.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "DHCP snooping filters traffic based on interface trust state: enabling ip dhcp snooping vlan 10 activates the feature for that VLAN, and marking the interface facing the legitimate DHCP server (Ethernet 2/4) as trusted with ip dhcp snooping trust exempts DHCP server-type replies (OFFER/ACK) arriving on that port from being dropped. All other, untrusted ports will have DHCP server responses (like those from a rogue DHCP server) filtered out automatically, since untrusted ports may only forward client-originated DHCP requests. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus First-Hop Security, NX-OS DHCP Snooping)"
 }

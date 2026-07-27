@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS syslog severities are numbered 0 (emergency, most severe) through 7 (debug, least severe), with 4 corresponding to 'warning'; the 'logging logfile <name> <severity> size <bytes>' command both names the log file and sets the minimum severity level (and maximum size) of messages stored in it, so capturing warning-and-above messages in a file capped at 20,000 bytes requires severity level 4 and 'size 20000' exactly. (Cisco NX-OS System Management Configuration Guide)"
 }

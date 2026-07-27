@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco All-Flash HyperFlex nodes reserve a pair of solid-state drives, mirrored, specifically for the hypervisor's local operating system installation and for persistent/system logging — separate from the SSDs/NVMe drives used for the caching tier and the capacity tier. Using two SSDs rather than one (or SATA HDDs) provides redundancy for this local boot/log storage, ensuring the node can still boot and log events even if one of the two local drives fails. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — Cisco HyperFlex All-Flash Node Architecture)"
 }

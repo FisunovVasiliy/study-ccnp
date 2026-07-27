@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Control Plane Policing addresses ICMP-based DoS attacks by classifying ICMP traffic destined for the switch's own CPU and applying a policer (police cir ... conform transmit / violate drop) that rate-limits it to a safe threshold, dropping only the excess above that rate while still allowing legitimate, low-volume ICMP through. This is different from a hard ACL deny (which would block all ICMP indiscriminately) and has no effect on ICMP traffic that is simply transiting the device via the data plane rather than being punted to the CPU. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus Control Plane Policing)"
 }

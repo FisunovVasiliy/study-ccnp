@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Fibre Channel Security Protocol (FC-SP) authenticates switches and devices joining the fabric using CHAP, a challenge-response protocol; pairing this with a TACACS+ server group ensures the AAA exchange with the centralized server is fully encrypted (TACACS+ encrypts the entire payload, unlike RADIUS which encrypts only the password) and, by default, TACACS+ falls back to the local user database automatically if the AAA server becomes unreachable - together meeting the requirement for encrypted communication with built-in local-account fallback. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - AAA, TACACS+ and Local Fallback)"
 }

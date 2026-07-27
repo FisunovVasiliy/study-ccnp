@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The error occurs because auto-learning is automatically enabled by default whenever port security is activated, and normally that must be explicitly disabled before the database can be (re)activated. Appending the force keyword to port-security activate vsan 100 overrides this restriction, letting the administrator activate the database despite auto-learning still being on, effectively accepting the currently learned/static entries as the enforced baseline. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Port Security, Activation and Auto-Learning)"
 }

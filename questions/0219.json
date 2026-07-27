@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/multi-site/sw/2x/installation/Cisco-ACI-Multi-Site-Installation-Upgrade-Guide-221/m-multi-site-install-overview.html",
  "explanation": "A typical Cisco ACI Multi-Site deployment requires a 3-node cluster of Multi-Site Orchestrators to manage all the sites' fabrics in your Multi-Site environment.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In Cisco ACI Multi-Site designs, the Multi-Site Orchestrator is always deployed as a three-node cluster so that cross-site policy resolution has both redundancy and a voting quorum. A three-node cluster tolerates the loss of a single node while the remaining two still form a majority, which is why Cisco's reference architecture calls for exactly three orchestrator nodes rather than two (no quorum possible) or more (unnecessary overhead), regardless of how many physical sites the deployment spans. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Multi-Site and Multi-Site Orchestrator)"
 }

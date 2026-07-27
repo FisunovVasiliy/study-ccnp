@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The scenario describes asymmetric Integrated Routing and Bridging: because the egress VTEP only performs a Layer 2 bridging lookup rather than routing, the ingress VTEP must both route the packet into the destination's Layer 2 segment and encapsulate it directly with the destination VLAN's own Layer 2 VNI. This only works if every VTEP in the fabric has all the relevant Layer 2 VNIs locally configured, since there is no shared Layer 3 transit VNI involved, unlike symmetric IRB, which routes through a common VRF-wide Layer 3 VNI and lets every VTEP perform both bridging and routing — which is why answers referencing a shared Layer 3 VNI don't match the asymmetric behavior described here. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN EVPN Asymmetric vs. Symmetric IRB)"
 }

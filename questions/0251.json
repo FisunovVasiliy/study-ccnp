@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A strict CoPP policy applies the tightest committed-rate and burst (BC) values to every traffic class hitting the supervisor CPU. Bulk data transfers such as a large system-image copy sent through the default (non-management) VRF ride the in-band path that is subject to CoPP, so a large, sustained transfer easily exceeds the strict policy's conform rate and gets policed/dropped - unlike a modest number of SSH sessions, a normal ping sweep, or a DDoS aimed at a downstream server (not the switch's own control plane), none of which threaten to exceed the strict thresholds destined for the supervisor. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus Control Plane Policing)"
 }

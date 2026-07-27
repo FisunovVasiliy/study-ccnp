@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On platforms like the MDS 9250i or the 24/10-port SAN extension module, FCIP compression modes (mode1, mode2, and 'auto') are all implemented in the module's dedicated hardware compression engine rather than in software, so configuring 'ip-compression mode auto' offloads compression work from the CPU while automatically selecting an algorithm appropriate to the link speed. Write acceleration, configured alongside compression, further improves throughput over the FCIP tunnel by masking WAN round-trip latency for SCSI write operations. (Cisco documentation / web research)"
 }

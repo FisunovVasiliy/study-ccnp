@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NFSv4 is defined as an RPC-based protocol that runs over IP networks using TCP exclusively as its transport, unlike earlier NFS versions which also supported UDP; it is not tied to Ethernet or FCP framing at Layer 2, since NFS operates at the network/transport and application layers over any IP-capable link. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

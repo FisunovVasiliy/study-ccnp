@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/gui/config/guide/4_2/b_cisco_ucs_c-series_gui_configuration_guide_42/b_Cisco_UCS_C-series_GUI_Configuration_Guide_41_chapter_01011.html#task_1696A32C1FD640688DE706384B9A1E76",
  "explanation": "Enable Uplink Failover checkbox: Check this box if traffic on this vNIC should fail over to the secondary interface if there are communication problems. Note: VNTAG mode is required for this option.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On a standalone C-Series server's Cisco IMC network adapter, 'Enable Uplink Failover' is the setting that lets a vNIC's traffic move to its secondary uplink interface when the primary path has connectivity problems, and then fail back to the primary once it recovers (using the configured Failback Timeout). This option requires the adapter to be in VNTAG mode, but disabling VNTAG mode (as one of the distractors suggests) would remove that capability rather than enable it; changing CoS or default VLAN settings does not affect failover behavior at all. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco IMC Network Adapter Policies)"
 }

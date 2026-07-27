@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Zoning is enforced fabric-wide: when two MDS switches merge over an E port ISL, each side compares its active zone set (name, members, attributes) with the other's, and if the active zone set names differ or the zone databases otherwise conflict, the merge fails and NX-OS isolates the E ports to protect both fabrics from inconsistent zoning. Since the exhibit shows Zoneset AB configured with different active zone set names on MDS-A and MDS-B, the fix is to make the active zone (and zone set) names match on both switches so the merge succeeds and the ISL comes up as a trunk. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Zoning)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To change a pre-built system EEM policy (names beginning with '__'), you must use the 'override' keyword to replace it, and correctly re-specify both the event (the FCNS max-per-switch threshold of 1500) and the action (a syslog message) under that override applet. Simply redefining the action without overriding the underlying system event, or omitting the event statement entirely, would not actually change the FCNS entry threshold being monitored. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

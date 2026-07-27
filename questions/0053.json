@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A correct Bash for-loop must use the 'do ... done' block syntax, not just a semicolon, so 'for x in (1..5); do dohost \"...\"; done' is properly formed shell script. Inside the loop body, $x is substituted into the quoted dohost string on each iteration, letting a single loop generate five separate 'interface eth1/$x' / 'description Server$x' NX-OS configuration commands issued through dohost. Options missing 'do'/'done' or omitting the loop entirely are invalid Bash and would either error or only run once. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

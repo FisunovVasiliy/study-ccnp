@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The Network Administrator role in Cisco UCS Manager grants read/write access to fabric interconnect infrastructure and network security operations, which includes configuring vHBAs, vNICs, and server port types - all objects tied to the fabric-facing network configuration. This differs from the Server Compute role, which explicitly excludes creating, modifying, or deleting vNICs/vHBAs even though it otherwise has broad service-profile access. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, Default User Roles)"
 }

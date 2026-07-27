@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Before a session exists, only two ACI REST calls are meaningful: GET to aaaListDomains (which lists available AAA login domains so the client knows which one to authenticate against) and POST to aaaLogin (which submits credentials and returns a session token/cookie). aaaRefresh and aaaLogout both operate on an already-established session, so they cannot be used by an unauthenticated user. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

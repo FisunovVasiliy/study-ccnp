@@ -28,5 +28,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5500/sw/adapter-fex/6x/b_5500_Adapter_FEX_Config_6x/b_5500_Adapter_FEX_Config_602N11_chapter_010.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Bringing up VNTag/Adapter-FEX (NIV) connectivity between a Nexus 5500 and a virtualized server has a fixed dependency order: the switch side must be prepared first (install then enable the virtualization feature set, then define the port profile), followed by enabling VNTag mode on the physical interface facing the server, and only then can the server side be configured (its vNICs, then NIV mode on the server itself) since the server can't successfully negotiate NIV/VNTag until the switch-side infrastructure it depends on already exists. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Adapter-FEX and VNTag)"
 }

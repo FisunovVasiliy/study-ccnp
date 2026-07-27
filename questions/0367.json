@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "During POAP's DHCP discovery phase, the switch relies on standard DHCP options to learn where to get its bootstrap script: option 66/150 supplies the TFTP server address, and option 67 supplies the bootfile name; the script is then downloaded over TFTP, which runs over UDP, satisfying the 'only UDP' transport constraint. HTTP-based delivery runs over TCP and option 43 carries vendor-specific information rather than the bootfile name, so neither fits this requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

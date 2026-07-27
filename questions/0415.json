@@ -24,5 +24,6 @@
  "reference": null,
  "explanation": "\"Google protocol buffer\" and \"Subscription\" are distractors not used in the correct sequence.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco's model-driven telemetry push-model flow starts by selecting the push delivery method itself, then defining a sensor group that specifies exactly which data paths to export, then identifying the telemetry receiver as the destination collector, and finally the data is carried using a transport/RPC mechanism such as gRPC (Google Remote Procedure Call) to continuously stream the encoded data to the receiver. Google Protocol Buffer, the encoding format, and subscription, the binding object, are related concepts that aren't part of this particular ordered sequence, which is why they appear as distractors. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Streaming Telemetry Push Model Flow)"
 }

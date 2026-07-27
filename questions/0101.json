@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A two-node HyperFlex Edge cluster cannot achieve quorum with just two storage nodes, so it relies on a lightweight witness to arbitrate split-brain scenarios. Rather than requiring customers to stand up and maintain a dedicated witness VM or server at each remote/edge site, Cisco Intersight provides this witness function as an 'invisible cloud witness' service, eliminating the operational burden of deploying and patching a local witness for every two-node edge deployment. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — Cisco HyperFlex as an Edge Device)"
 }

@@ -36,5 +36,6 @@
  "reference": "https://en.wikipedia.org/wiki/Network-attached_storage",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NAS characteristics can be sorted along several independent axes: the storage type it exposes (file-based, not block-based), the connectivity/transport it rides on (standard Ethernet), the clustering approach some scale-out NAS platforms use (striping data and metadata across multiple nodes for scale and resiliency), and the serving/file-sharing protocols clients use to reach it (such as NFS, CIFS/SMB, or media-oriented protocols like UPnP). Keeping these categories distinct - file vs. block, connectivity vs. protocol vs. clustering - is the key to correctly classifying each NAS characteristic. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NAS Concepts)"
 }

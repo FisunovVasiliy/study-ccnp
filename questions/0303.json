@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Building FCoE on an MDS/Nexus interface follows a fixed sequence: map the FCoE VLAN to its VSAN under the VLAN itself ('fcoe vsan 6'), allow both the native VLAN (1) and the FCoE VLAN (600) on the trunk carrying the CNA's converged traffic ('switchport trunk allowed vlan 1,600'), and finally, in the VSAN database, add the already-created and Ethernet-bound vfc interface as a member of its VSAN ('vsan 6 interface vfc 6') so it participates in Fibre Channel switching. Getting the VLAN-VSAN mapping location or the trunk's allowed-VLAN list wrong is the typical failure point in FCoE bring-up. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Implementation)"
 }

@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/multicast/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_Multicast_Routing_Configuration_Guide/b_Cisco_Nexus_9000_Series_NX-OS_Multicast_Routing_Configuration_Guide_chapter_011.html",
  "explanation": "When you restart PIM, the following tasks are performed:\n- The PIM database is deleted.\n- The MRIB and MFIB are unaffected and forwarding of traffic continues.\n- The multicast route ownership is verified through the MRIB.\n- Periodic PIM join and prune messages from neighbors are used to repopulate the database.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The \"restart pim\" command performs a soft restart of the PIM process: it deletes and rebuilds the PIM protocol database itself, but it does not touch the Multicast RIB/FIB, so multicast forwarding continues uninterrupted while PIM repopulates its state from periodic join/prune messages received from neighbors. This non-disruptive behavior is why restarting PIM is a safe troubleshooting action rather than one that drops multicast traffic. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — PIM)"
 }

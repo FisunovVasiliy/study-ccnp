@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Meeting 'encrypted, nondefault port, private single session' for Cisco IMC KVM console access requires scoping specifically into kvm (not cimc, sol, or oob, which govern other management channels), enabling it, setting encrypted to yes, moving the kvm-port off its default value, and limiting max sessions to 1 while disabling local video output so a remote KVM session cannot be simultaneously viewed at the physical console - this combination is what makes the administrative session both encrypted and private. (Cisco documentation / web research - Cisco UCS C-Series Integrated Management Controller CLI Configuration Guide, KVM)"
 }

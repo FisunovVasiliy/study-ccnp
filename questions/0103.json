@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/hyperconverged_systems/HyperFlex_HX_DataPlatformSoftware/Installation_VMware_ESXi/3_5/b_HyperFlexSystems_Installation_Guide_for_VMware_ESXi_3_5/m_configure_hyperflex_hardware_acceleration_cards.html",
  "explanation": "HyperFlex Hardware Acceleration Cards provide improved performance and compression efficiency for most storage workloads.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco HyperFlex Hardware Acceleration Cards are PCIe cards that offload data-optimization functions (primarily inline compression) from the CPU. Adding them to a HyperFlex node improves compression efficiency and reduces the CPU overhead of the data platform's storage services for most workloads, rather than accelerating raw network throughput, providing GPU compute, or performing offline (post-write) encryption — those are separate, unrelated capabilities from other hardware options. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex Hardware Acceleration)"
 }

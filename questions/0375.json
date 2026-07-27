@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The console keyword scopes the fallback policy specifically to console line access rather than 'default', which would apply to all login paths (Telnet, SSH, DCNM, etc.). The command aaa authentication login console fallback error local ensures that only the console falls back to the local user database when all configured AAA servers are unreachable, leaving other access methods governed by whatever separate policy is configured for 'default'. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Local AAA Services, Console vs. Default Fallback)"
 }

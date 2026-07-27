@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "POAP is purpose-built to both install/upgrade the software image and apply the configuration during a switch's very first boot with zero manual steps, which is exactly the combination of zero-touch provisioning plus automatic image upgrade described. Ansible can push configuration afterward but can't stage an unreachable, unconfigured switch from scratch, plain NX-API needs an already-reachable device, and DHCP alone only hands out an address — it doesn't install images or configuration. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Entering 'guestshell' drops the operator into the isolated, decoupled Guest Shell Linux container — an embedded execution space separate from the host NX-OS process — where sudo -i can then elevate privileges and tcpdump can capture traffic against the switch's Linux network interfaces securely. 'run bash' would instead enter the host's own Bash shell (not the isolated container), and 'guestshell-bash'/'run guestshell' aren't valid CLI keywords on NX-OS. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

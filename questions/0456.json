@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager offers several distinct backup types; a system configuration backup captures the logical configuration - including local users, roles, and AAA settings - separately from a full-state binary backup, making it the appropriate choice when the goal is to preserve users/roles on an external server. Pairing it with SCP (which requires authenticated, encrypted transport) rather than FTP or TFTP (both unauthenticated/unencrypted) satisfies the requirement that the backup transfer itself be secured. (Cisco UCS Manager Administration Management Guide / general Cisco documentation - Backup Types)"
 }

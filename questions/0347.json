@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "For a server to perform an iSCSI boot, its iSCSI vNIC needs an IQN (iSCSI Qualified Name) to identify itself as an initiator to the storage array. In Cisco UCS Manager, this is provided by creating an IQN suffix pool under SAN settings in the root organization, which UCS Manager then uses to automatically generate unique initiator names for iSCSI vNICs. WWPN pools and host SAN pools apply to Fibre Channel identities, not iSCSI, and creating a virtual iSCSI vNIC alone doesn't supply the initiator naming needed for the boot process. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, iSCSI Boot and IQN Pools)"
 }

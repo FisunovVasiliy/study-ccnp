@@ -32,5 +32,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS firmware ships in bundles rather than per-component files. The Infrastructure (A) bundle carries firmware for elements that run the domain's control/data plane itself: the kernel and system firmware for the fabric interconnects, the I/O module firmware, and Cisco UCS Manager software. The B-Series Blade Server bundle carries firmware for the server hardware endpoints: BIOS, CIMC, board controller, and adapter firmware. Knowing which components 'belong' to the domain infrastructure versus the individual blade server is what lets you match each firmware package to the bundle that installs it. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware/Software Updates)"
 }

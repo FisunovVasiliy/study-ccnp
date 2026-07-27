@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Guest Shell is a decoupled, resource-limited Linux Container (CPU/memory/rootfs caps independently configurable) so a custom monitoring application can't starve the host NX-OS process even under contention, and it ships Python plus pip/YUM, letting you install team-built RPM-packaged tools directly. Bash shell runs closer to the host with less isolation, and 'Vegas Shell'/'TCL Shell' aren't real decoupled execution environments on NX-OS, so Guest Shell uniquely satisfies all four stated requirements. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

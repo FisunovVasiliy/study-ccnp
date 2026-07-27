@@ -115,6 +115,18 @@ function resetProgress() {
   saveProgress();
 }
 
+// Скидає історію відповідей поточного режиму (Тренування або Екзамен) по
+// УСІХ темах одразу (не лише поточному фільтру), доступно прямо над питанням.
+function resetAllHistoryForMode() {
+  const label = mode === 'exam' ? 'Екзамен' : 'Тренування';
+  if (!confirm(`Скинути всю історію відповідей режиму «${label}» (по всіх темах)?`)) return;
+  TOPIC_ORDER.forEach(topic => {
+    try { localStorage.removeItem(storageKeyFor(mode, topic)); } catch (e) {}
+  });
+  resetProgress();
+  render();
+}
+
 function peekStats(m, topic) {
   const total = indicesForTopic(topic).length;
   try {
@@ -405,6 +417,12 @@ function render() {
   homeBtn.onclick = () => goHome();
   actions.appendChild(homeBtn);
 
+  const resetHistBtn = document.createElement('button');
+  resetHistBtn.className = 'btn danger';
+  resetHistBtn.textContent = 'Скинути історію';
+  resetHistBtn.onclick = () => resetAllHistoryForMode();
+  actions.appendChild(resetHistBtn);
+
   root.innerHTML = '';
 
   if (mode === 'training') {
@@ -431,6 +449,9 @@ function render() {
 function showExtras(q) {
   const extra = document.getElementById('extra-info');
   let html = '';
+  if (q.theory) {
+    html += `<div class="explanation theory"><strong>📘 Theory:</strong>\n${escapeHtml(q.theory)}</div>`;
+  }
   if (q.explanation) {
     html += `<div class="explanation"><strong>Пояснення:</strong>\n${escapeHtml(q.explanation)}</div>`;
   }

@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When unicast and multicast traffic between two autonomous systems take physically different links, the standard Reverse-Path Forwarding check — which by default consults the unicast BGP table — fails, because multicast traffic appears to arrive from an unexpected direction. Multiprotocol BGP solves this by carrying multicast reachability information in a separate address family (ipv4 multicast, alongside ipv4 unicast), letting the router validate RPF against the multicast-specific BGP table instead. Disabling automatic activation with no bgp default ipv4-unicast and then explicitly activating each neighbor under the appropriate address family — unicast for the Red-link peer, multicast for the Green-link peer — is what lets each traffic type be routed and RPF-checked over its intended link. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — Multiprotocol BGP for Multicast RPF)"
 }

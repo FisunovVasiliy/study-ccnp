@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On NX-OS platforms that support the modular install add, install activate, install commit workflow, install commit is what makes a previously activated package's changes persist across a reload; without committing, an activated package only survives until the next reboot, at which point the switch reverts to its prior package set. The practical effect of running install commit <filename> is that the newly installed package remains in effect the next time the switch restarts, rather than immediately restarting the switch itself, immediately affecting the running configuration, or deleting older packages from bootflash. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — NX-OS Modular Package Installation: install add/activate/commit)"
 }

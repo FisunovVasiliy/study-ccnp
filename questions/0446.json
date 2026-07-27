@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "VRRP preemption, enabled by default and confirmed in the exhibit, lets a router with a higher configured priority immediately take over the Master role from a currently active Master with a lower priority as soon as it becomes reachable, with no built-in hold-down delay unless a non-default preempt delay is explicitly configured. Because SW9621-2's priority (160) is higher than SW9621-1's current priority (100), as soon as SW9621-2 comes back online it advertises its higher priority and immediately preempts SW9621-1 to become the new active Master, rather than waiting out the advertisement interval, which only governs how often Master keepalives are sent. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — VRRP Preemption)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Only NFS version 4 mandates TCP as its sole transport (earlier versions also supported UDP, and NFSv2/v3 traditionally relied on separate, dynamically-assigned mountd/lockd/statd RPC services on top of portmapper). NFSv4 consolidates everything onto a single well-known TCP port, 2049, which is why it needs only one IP port to operate - this greatly simplifies deployment across firewalls and NAT compared to the multi-port RPC service model used by NFSv2/v3. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

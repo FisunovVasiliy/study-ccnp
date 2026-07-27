@@ -23,5 +23,6 @@
  "reference": "https://docs.ansible.com/ansible/latest/network/user_guide/platform_nxos.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS network modules in Ansible communicate over an HTTP/HTTPS transport backed by the switch's NX-API feature, so 'feature nxapi' must be enabled before Ansible can reach the device that way; without it, Ansible would have to fall back to an SSH/CLI-based transport instead. NX-API is the piece that turns ordinary NX-OS CLI commands into an HTTP(S)-accessible REST interface that Ansible's playbooks (and other HTTP clients) can call. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

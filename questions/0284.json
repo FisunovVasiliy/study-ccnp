@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because NAS exposes storage as a shared, concurrently-accessible file system over the network rather than a block LUN owned by one host, multiple hypervisor hosts can mount the same NAS export simultaneously and use it as shared storage for a VM cluster - this shared-file-access model is what makes NAS well suited for clustered virtualization storage, unlike host-specific constructs such as raw device passthrough or a dedicated boot LUN. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NAS Concepts)"
 }

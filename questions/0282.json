@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Monitoring VSAN traffic (Fibre Channel/FCoE at the VSAN level) requires a SAN traffic monitoring session rather than a LAN monitoring session, because VSAN, FC uplink, FC port-channel, vHBA, and storage-port sources only exist under the SAN monitoring session type in Cisco UCS Manager — LAN sessions only expose Ethernet-side sources like VLANs or vNICs. Since the requirement is to mirror all Fabric-A VSAN 11 traffic, the missing step is creating that SAN traffic monitoring session (with VSAN 11 as its source) rather than trying to reuse a LAN/VLAN-based session or a NetFlow session, which serves a different purpose (flow statistics, not full packet mirroring). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Traffic Monitoring, SAN Traffic Monitoring Sessions)"
 }

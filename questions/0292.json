@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "UCS Director onboards Nexus switches over SSH, which supports credential-based (username/password or key) authentication while keeping the enabled connection surface minimal — satisfying both the 'bare minimum of connection methods' and 'authentication through credentials' requirements. Telnet is unencrypted and inappropriate here, SNMP alone doesn't provide the same interactive, credential-authenticated configuration channel, and HTTPS would additionally require NX-API to be enabled on the switches rather than being the baseline onboarding protocol UCS Director uses for Nexus devices. (Cisco documentation / web research)"
 }

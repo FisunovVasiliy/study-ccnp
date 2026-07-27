@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Classic Cisco IOS EEM applet syntax for intercepting CLI input is 'event cli pattern \"<regex>\" sync {yes | no}': 'pattern' (not 'match', 'regex', or 'command', none of which are valid EEM CLI-event keywords) accepts a full regular expression like \"write memory.*\", and 'sync yes' makes EEM process the match synchronously so the action's $_cli_msg variable can reference the command text that triggered it. (Cisco documentation / web research)"
 }

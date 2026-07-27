@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/3-",
  "explanation": "If you want to use a network-based attribute and classify IP addresses in the same subnet, you must use the MAC-based network attribute. IP-based microsegmented EPGs do not support classification for IP addresses in the same subnet. IP-based microsegmented EPGs are supported only when traffic requires Layer 3 routing. If the traffic is bridged, the microsegmentation policy cannot be enforced.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "ACI microsegmentation with an IP-based network attribute only works when the traffic between endpoints is Layer 3 routed; it cannot classify endpoints that share the same subnet because Layer 2/bridged traffic is not policy-enforceable that way. To microsegment endpoints within a single subnet, you must instead use the MAC-based network attribute, which uniquely identifies each endpoint regardless of IP subnet membership, giving the required IP-subnet independence. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - ACI Microsegmentation, network-based attributes)"
 }

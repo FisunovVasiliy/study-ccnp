@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/8_x/release_notes/epld/epld_rn_8x.html",
  "explanation": "When you upgrade or downgrade the EPLDs, observe the following guidelines and limitations:\n- You can upgrade each module only when it is online. The EPLD upgrade is only disruptive to the module being upgraded.\n- If you interrupt an EPLD upgrade or downgrade, the module must be upgraded again.\n- In Cisco MDS 9000 Director Switches, EPLD upgrade or downgrade can only be executed from the active supervisor module. To upgrade the supervisor EPLDs nondisruptively, upgrade the standby supervisor and then switchover. After the new standby supervisor is online its EPLDs can be upgraded.\n- In Cisco MDS 9000 Series Fabric Switches, be sure to specify 1 as the module number. The switch must be power cycled for the EPLDs to start running the new code.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Just as with any Cisco MDS module, an EPLD firmware update reloads only the specific module it targets - the active supervisor's management connectivity, other line cards, and the rest of the chassis remain unaffected and continue forwarding traffic. This module-scoped impact is why EPLD maintenance can be scheduled per-module rather than requiring a full chassis outage, provided the switch has redundant paths through unaffected modules. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - EPLD Upgrade)"
 }

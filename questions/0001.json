@@ -24,5 +24,6 @@
  "reference": "https://www.cisco.com/c/en/us/support/docs/switches/nexus-7000-series-switches/112213-netflow-nexus7000-nsox-configex.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NetFlow must be turned up in dependency order: first enable the feature (feature netflow), then build the pieces it needs — a flow exporter (where to send records) and a flow record (which fields/keys to match) — combine them into a flow monitor, and only then apply that monitor to an interface with \"ip flow monitor ... input\". Applying the monitor before the exporter/record exist, or before the feature is enabled, fails because the referenced objects do not yet exist. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — NetFlow)"
 }

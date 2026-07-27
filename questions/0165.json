@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Restoring a switch's startup configuration from a saved bootflash file follows a defined order: first confirm the current startup-config with \"show startup-config,\" then \"write erase\" to clear it, \"reload\" the switch so it boots without a startup config, copy the saved file from bootflash into the running-configuration with \"copy bootflash:<file> running-config,\" and finally save that restored running-configuration back to startup-config with \"copy running-config startup-config\" so it persists. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Configuration Recovery)"
 }

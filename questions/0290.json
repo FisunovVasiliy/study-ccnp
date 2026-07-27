@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NPV's 'npv traffic-map server-interface ... external-interface ...' command pins a server-facing interface to a specific NP uplink, but NX-OS only accepts the mapping if the external interface list for that server interface currently includes the uplink already in active use - you cannot directly retarget a live, logged-in server interface to a different external interface. The workaround is to shut the server interface down first (forcing its devices to log out and clearing the active mapping), reapply the traffic-map command so the new external interface is accepted, and then re-enable the server interface so devices log back in over the newly mapped uplink. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - NPIV and NPV)"
 }

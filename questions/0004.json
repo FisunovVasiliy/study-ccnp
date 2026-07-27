@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": true,
- "provisional": true
+ "provisional": true,
+ "theory": "In an ACI fabric, a route marked \"attached, direct, pervasive\" is a bridge domain subnet hosted locally on that leaf via the pervasive (anycast) gateway SVI, so 10.20.1.0/24 is a BD subnet. External prefixes learned through an L3Out are redistributed into MP-BGP and installed with a next hop over the infra VXLAN overlay (overlay-1); that next-hop address is the TEP (tunnel endpoint) address of the border leaf that owns the external route, which is why 10.1.168.95 (tagged bgp-132/internal/mpls-vpn) is a border-leaf TEP for 172.16.100.0/24. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Fabric and Bridge Domains)"
 }

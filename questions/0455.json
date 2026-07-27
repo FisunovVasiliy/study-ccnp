@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Among the maintenance policy's reboot-policy values, 'user-ack' is specifically the setting that prevents automatic server firmware upgrades from proceeding on their own — instead, Cisco UCS Manager holds the pending change until an administrator explicitly acknowledges it (typically via the Pending Activities dialog), at which point the reboot and upgrade proceed. 'Immediate' reboots right away, 'timer-automatic' reboots at a defined schedule without requiring manual approval, and 'scheduled' is not itself a valid reboot-policy keyword — user-ack is the only option that requires explicit user input before proceeding. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Maintenance Policies, Reboot Policy)"
 }

@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-central/GUI-User-Guides/Server-Mgmt/1-5/b_CiscoUCSCentral_Server_Management_Guide_1-5/b_CiscoUCSCentral_Server_Management_Guide_1-5_chapter_0101.html",
  "explanation": "An IQN pool is a collection of iSCSI Qualified Names (IQNs) for use as initiator identifiers by iSCSI vNICs in a Cisco UCS domain. IQN pools created in Cisco UCS Central can be shared between Cisco UCS domains.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An IQN pool is the UCS construct that allocates unique iSCSI Qualified Names to iSCSI vNICs; in the Ansible UCS service-profile-template module, the iqn_pool attribute binds that pool to the template so every service profile derived from it automatically gets a unique iSCSI initiator identifier. san/lan_connectivity_policy govern Fibre Channel and Ethernet connectivity respectively (not iSCSI naming), and boot_policy only controls boot order, so none of them assign initiator identifiers. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

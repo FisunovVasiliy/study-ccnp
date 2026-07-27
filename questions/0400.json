@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Director is a heterogeneous, workflow-based private-cloud orchestration platform with out-of-the-box and partner-built connectors for third-party storage arrays and firewalls alongside Cisco UCS/ACI, plus a built-in self-service catalog for provisioning — matching every requirement listed. Workload Optimization Manager only optimizes/right-sizes workloads that already exist rather than orchestrating heterogeneous multi-vendor provisioning, Intersight is Cisco's own cloud infrastructure manager with narrower third-party breadth and no classic service catalog, and DCNM is limited to managing the Cisco data-center network fabric. (Cisco documentation / web research)"
 }

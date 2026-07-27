@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A Logical Configuration backup is an XML export of logical objects only — organizations/locales together with service profiles and their related VLAN/VSAN, pool, and policy definitions — which makes it suitable for duplicating a UCS setup's logical layout at a new site. It does not include the AAA/RBAC (system configuration) settings, nor is it the .tgz-style complete binary dump that a Full State backup produces; those distinctions (what's XML vs binary, and what object classes are covered) are exactly what separates the four Cisco UCS Manager backup types. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Backup Types)"
 }

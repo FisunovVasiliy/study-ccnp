@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "TACACS+ (unlike RADIUS) uses TCP port 49 and encrypts the entire AAA payload rather than just the password, matching the requirement for encrypted, TCP/49-based AAA traffic. Cisco UCS two-factor authentication is supported only when RADIUS or TACACS+ provider groups are associated with an authentication domain - it is not supported for LDAP, local, or none - so the existing LDAP provider must be removed and replaced with a TACACS+ provider to satisfy both the encryption and two-factor requirements together. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Two-Factor Authentication, RADIUS/TACACS+ AAA)"
 }

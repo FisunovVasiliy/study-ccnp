@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A SPAN source vlan statement, when configured without an rx or tx qualifier, defaults to monitoring traffic in both directions for every port carrying that VLAN — the broadest option, and the one needed here since all source traffic from the server must be captured. Restricting the source to rx only would miss traffic the switch sends back toward the server, and the filter vlan keyword narrows which VLANs are copied from an interface-based source rather than defining the source itself, so it doesn't apply when the source is already a VLAN. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — SPAN VLAN-Based Sources and Directionality)"
 }

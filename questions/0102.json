@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In the UCS CLI, 'update firmware' copies (downloads) a new firmware image to an endpoint, while a separate 'activate firmware ... set-startup-only' step only changes the startup version pointer without immediately switching the running image. The 'set-startup-only' keyword specifically defers activation: the new firmware becomes active only the next time the adapter (or endpoint) reboots, rather than forcing an immediate reboot or activation. This two-step update/activate model lets administrators stage firmware changes and control exactly when disruption occurs. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Updates, Direct Firmware Update)"
 }

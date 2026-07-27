@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The requirements — rapid creation/removal of logical containers, custom modules and data structures, extensibility with external libraries, and an on-demand interactive execution environment — describe the traits of a general-purpose programming language rather than a fixed-syntax automation DSL. On-box or Guest Shell Python (including the ACI Python SDK) provides exactly this: an interactive REPL, importable custom/external modules, and full programmatic control, unlike YAML (a static data format), SaltStack, or Chef, whose configuration languages are far less flexible for this kind of rapid ad hoc scripting. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

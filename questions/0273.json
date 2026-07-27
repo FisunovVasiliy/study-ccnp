@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": true,
- "provisional": true
+ "provisional": true,
+ "theory": "Cisco MDS port security configuration and database changes can optionally be distributed fabric-wide using Cisco Fabric Services (CFS), which lets a single point of configuration propagate consistently to every switch in the VSAN - but this distribution must be explicitly enabled (it is not automatic), and port security itself does not blindly learn every switch login by default, nor does it operate purely at the switch level like fabric binding does. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Port Security, CFS Distribution)"
 }

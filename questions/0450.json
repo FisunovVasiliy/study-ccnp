@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because the vSwitch has promiscuous mode disabled, a virtual APM sensor can't simply sniff local traffic, so the copy of load-balancer traffic must instead be mirrored at the physical switch and delivered as a routed, GRE-encapsulated ERSPAN stream that the APM tool decapsulates remotely. Configuring an erspan-source session with the erspan-id, a destination IP address (since the copy must be routed off-box rather than sent to a local interface), the both direction on the monitored interface to capture inbound and outbound traffic, and a VRF for reachability is what produces a proper GRE/ERSPAN mirrored feed rather than a purely local SPAN copy. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — ERSPAN Source Sessions for Remote/Routed Traffic Capture)"
 }

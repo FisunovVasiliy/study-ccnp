@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS does not natively support the classic IOS \"write memory\" shortcut for saving configuration (its native equivalent is \"copy running-config startup-config\"). To preserve familiar muscle memory from IOS-based Catalyst switches, an administrator can define a custom command alias on NX-OS that maps the text \"write memory\" (or a similar string) to execute \"copy running-config startup-config\" under the hood, rather than typing the native command every time. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — NX-OS Configuration Management)"
 }

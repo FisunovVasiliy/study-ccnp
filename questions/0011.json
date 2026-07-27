@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "SPAN sessions on Nexus platforms can use Ethernet, Fibre Channel, virtual FC, port-channel, and SAN port-channel interfaces as sources, giving broad coverage for packet capture across LAN and SAN traffic. A fundamental SPAN rule is that a port configured as a SPAN source cannot simultaneously be used as a SPAN destination (and vice versa), since the destination port's normal switching function is replaced by the mirrored output. These two facts are why the engineer capturing application traffic needs to consider both the range of valid source types and the source/destination exclusivity rule. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — SPAN)"
 }

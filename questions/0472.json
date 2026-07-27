@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The requirement to listen on HTTP (not HTTPS) means the port command must use the 'http' keyword — 'nxapi {http} port 83' — while still uploading both halves of the HTTPS certificate (cert and key together, {httpscrt | httpskey}) so the certificate is complete, and the certificate only actually takes effect once 'nxapi certificate enable' is explicitly run afterward. Omitting either the key half of the certificate or the final enable step leaves the setup incomplete even though 'feature nxapi' and the port are configured. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools) / (Cisco documentation / web research)"
 }

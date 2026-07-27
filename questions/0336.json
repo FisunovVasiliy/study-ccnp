@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Source-Specific Multicast (SSM) lets a receiver's IGMPv3 join explicitly request traffic from one particular source, which builds an (S,G) forwarding state directly along the shortest path from that source rather than through a shared tree rooted at a rendezvous point. Because the distribution device already knows both the source (the CDN streamer) and the group from the receiver's join, SSM is exactly what lets it forward the resulting (S,G) traffic straight back down that source-rooted tree to the requesting receiver without needing RP-based shared-tree mechanics. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — PIM Source-Specific Multicast)"
 }

@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/8_x/config/san_analytics/cisco-mds9000-san-analytics-telemetry-streaming-config-guide-8x/configuring_san_telemetry_streaming.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "SAN Analytics on the MDS collects per-flow SCSI/NVMe metrics directly in hardware; you enable it per protocol on an interface with 'analytics type fc-nvme' (or fc-scsi), which is independent from the port-sampling feature used by SAN Telemetry Streaming to periodically push that data out. Because ports fc1/13-24 are already enabled and only need a new 60-second collection window, and fc1/1-12 needs both analytics enabled and sampling, the correct sequence enables NVMe analytics on the new range and lets the existing port-sampling group (interval expressed in milliseconds, so 60 seconds = 60000) apply. Mixing up seconds vs. milliseconds, or using a 'port-sampling' or 'nvme' keyword that doesn't exist under the interface, is the trap in the distractors. (Cisco MDS 9000 SAN Analytics and SAN Telemetry Streaming Configuration Guide)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "During an ISSU, NX-OS automatically extends Layer 2 protocol timers, including LACP's default slow timers, so neighboring devices don't tear down their protocol adjacency while the local control plane briefly restarts. Because LACP's default timer is already the slow 30-second interval rather than the aggressive fast timer (which ISSU explicitly does not support), the LACP peer session simply rides through the brief control-plane gap and remains up throughout the upgrade instead of flapping or renegotiating. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Protocol Timer Extension During ISSU)"
 }

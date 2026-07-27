@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The vPC peer-switch feature lets both vPC peer devices present the same Spanning Tree bridge ID to downstream switches, so during a primary-peer failure or its later recovery, the secondary doesn't need to renegotiate a new STP root or topology, since both switches were already advertising a shared identity — dramatically reducing the convergence time that would otherwise occur. Configuring identical STP priority on both switches is a prerequisite for enabling peer-switch, since spanning tree needs one consistent root bridge ID between what appear to be two physical switches acting as one logical bridge, whereas BPDU/loop guard and role priority/peer-gateway address different, unrelated failure scenarios. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Peer-Switch and STP Convergence)"
 }

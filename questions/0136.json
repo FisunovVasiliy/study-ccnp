@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/gui/config/guide/141/UCSM_GUI_Configuration_Guide_141_chapter43.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Reproducing a production environment in a lab requires an export that captures the full configuration set (both system and logical objects) so the new cluster ends up equivalent to the source — that is the All Configuration backup type, which is always an XML file. To meet the requirement for an encrypted export method, the transfer protocol must be SCP rather than the unencrypted TFTP, so the correct pair of settings is Type: All Configuration together with Protocol: SCP. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Backup Protocols and Types)"
 }

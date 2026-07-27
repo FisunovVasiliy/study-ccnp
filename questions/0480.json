@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The pip error 'Name or service not known' is a DNS resolution failure inside the Guest Shell's own Linux environment, so the fix is adding a nameserver entry to /etc/resolv.conf there and then, because Guest Shell typically reaches the outside network through the management VRF, running pip with 'sudo chvrf management' so the install traffic uses that VRF's namespace. NX-OS exec-mode commands like 'ip domain-lookup' or 'ip name-server' configure the host switch's own DNS resolver, not the separate Guest Shell container's, so they wouldn't fix this. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

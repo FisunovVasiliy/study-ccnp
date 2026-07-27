@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Restoring a saved checkpoint with rollback running-config checkpoint supports three trigger types, and because the requirement is that the restore proceed only if no errors occur, the atomic keyword is required — NX-OS's default mode that treats the entire rollback as a single all-or-nothing transaction and aborts immediately, applying nothing, if any single line fails to reapply. Best-effort would apply everything it can while ignoring failures, which does not satisfy a strict no-errors requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Configuration Rollback Trigger Types)"
 }

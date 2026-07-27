@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In a VMware vSphere environment, the Cisco HyperFlex Distributed Filesystem exposes its storage to ESXi hosts as a datastore mounted over NFS; each node's controller VM participates in the distributed storage cluster, and the resulting datastore is presented to and shared among the ESXi hosts using the NFS protocol rather than FCoE (a transport used for FC, not HyperFlex's native filesystem access), CIFS, or SMB (Windows file-sharing protocols not used for this purpose). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex Data Platform, Storage Access Protocol)"
 }

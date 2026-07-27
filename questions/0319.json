@@ -32,5 +32,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HyperFlex Hybrid nodes use SSDs purely for the caching layer and HDDs for the capacity layer, which is why Cisco recommends them for capacity-sensitive solutions, lower-budget deployments, and workloads that are not especially performance-sensitive. All-Flash (and NVMe-capable) nodes instead use SSD or NVMe storage for both caching and the capacity tier, giving them the low, consistent latency needed for repeatable, sustainable high performance — especially valuable when the active working set of data is larger than what a caching tier alone could absorb. (Note: per Cisco's official HyperFlex documentation, the phrase 'capacity sensitive, lower budgets, fewer performance-sensitive applications' describes Hybrid nodes, and 'repeatable and sustainable high performance ... larger working set of data' describes All-Flash nodes — this differs from the pairing currently stored for two of the six items in this question's answer key.) (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex Hybrid vs. All-Flash Nodes)"
 }

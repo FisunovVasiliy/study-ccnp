@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because NFS storage is presented as file-system-level network shares rather than raw block LUNs, capacity on an NFS-backed datastore can be grown or shrunk dynamically at the storage layer without the LUN resizing, rescan, and filesystem-extend steps that Fibre Channel block storage requires - this dynamic, thin-friendly allocation of capacity is the practical advantage NFS offers over FCP in virtualized environments. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

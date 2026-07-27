@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Backing up user names/roles together with service profiles in one XML-encoded file requires a backup type that spans both system-level objects (usernames, roles) and logical-level objects (service profiles) — that combination is exactly what an All Configuration backup provides, since it merges the scope of System Configuration and Logical Configuration into a single XML export. System Configuration alone would miss the service profiles, Logical Configuration alone would miss the usernames/roles, and Full State is a binary (not XML) file, ruling out the other three options. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, All Configuration Backup)"
 }

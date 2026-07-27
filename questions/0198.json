@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/fcoe/configuration/guide/b-cisco-nexus-9000-nx-os-fcoe-configuration-guide-92x/b-cisco-nexus-9000-nx-os-fcoe-configuration-guide-92x_chapter_0100.pdf",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Standing up FCoE on Nexus 9000 with dual-homed FEXes and port channels requires the standard FCoE building block - creating a virtual Fibre Channel interface and binding it to the relevant physical interface - plus enabling FCoE support on the FEX uplinks specifically ('fcoe enable-fex') and sizing those uplinks for FCoE's larger frames by setting MTU 9216 to accommodate jumbo FCoE frames end-to-end, since an FCoE frame carries a full FC frame inside an Ethernet frame plus FCoE/VLAN headers. (Cisco Nexus 9000 NX-OS FCoE Configuration Guide)"
 }

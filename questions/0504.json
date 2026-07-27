@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "By default, endpoints within the same EPG can communicate freely without any contract. To restrict that intra-EPG traffic down to only ICMP, you must first mark intra-EPG isolation as Enforced, which blocks all default intra-EPG communication, and then add an explicit intra-EPG contract permitting only ICMP - isolation alone would block everything, while the intra-EPG contract selectively re-opens just the desired protocol between endpoints in the same EPG. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Cisco ACI Contracts and EPG Isolation)"
 }

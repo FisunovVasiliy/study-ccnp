@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a monitored vNIC has fabric failover enabled, its traffic can shift between Fabric A and Fabric B during a fabric interconnect failure, so a monitoring solution that only spans one fabric would lose visibility during a failover event. The fix is to create two monitoring sessions that share the same session name (so they logically act as one monitoring definition spanning both fabrics), each with its own locally-connected analyzer as the destination on its respective FI — ensuring that no matter which fabric is currently carrying the vNIC's traffic, a local destination is already configured to receive the mirrored copy. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Traffic Monitoring, Fabric Failover Considerations)"
 }

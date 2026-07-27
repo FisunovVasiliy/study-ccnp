@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "If the AAA servers are unreachable and TCP to them is blocked, remote authentication cannot succeed, so the engineer must fall back to a local account on the switch itself; NX-OS always keeps local authentication as a fallback method, and a locally-defined 'network-admin' role has the full privileges needed to perform software installs. Because TFTP uses UDP (not the disabled TCP path) to reach the file server, downloading the upgrade images via TFTP after a local login is the only option consistent with both constraints in the scenario. (General Cisco NX-OS AAA/software upgrade practice)"
 }

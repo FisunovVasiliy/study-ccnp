@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When top-of-rack Nexus 9000 switches share the domain ID of the core FCF switches instead of running their own full FCF, they operate as FCoE NPV (an FCoE analogue of native FC NPV): the feature-set 'fcoe-npv' is enabled, and the uplink toward the FCF core is configured as an NP-type virtual interface (here a vfc-port-channel in mode NP, mirroring how a native NPV edge switch uses NP ports toward its NPIV core), with only the required VSAN (20) permitted on the trunk. Using F or E port modes would be wrong because N9K-A is acting as a proxy/edge switch relaying logins upstream, not terminating them as a full fabric switch. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE NPV)"
 }

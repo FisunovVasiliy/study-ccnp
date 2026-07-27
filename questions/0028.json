@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A vPC member port can only carry VLANs that are also allowed across the vPC peer link, because the peer link is what synchronizes MAC/IGMP state and carries traffic for orphan ports on those VLANs. The peer-link's active VLAN range (100-105 in the \"show vpc brief\" output) is therefore the superset that bounds what any individual vPC (Po7, Po8, Po9) is allowed to carry, even though each specific vPC shows a narrower currently-active subset. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Peer Link and VLAN Consistency)"
 }

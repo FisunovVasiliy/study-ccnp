@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Data Center Bridging Exchange Protocol (DCBXP) is an extension of LLDP that Cisco Nexus switches use to negotiate PFC, ETS, and other lossless-Ethernet parameters with a CNA before FCoE traffic can flow. Because DCBXP TLVs ride inside LLDP frames, LLDP transmit and receive must both be enabled on the FCoE-facing interface for DCBXP - and therefore FCoE - to operate; if either direction of LLDP is disabled, capability negotiation with the adapter fails. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - Data Center Bridging Exchange (DCBX))"
 }

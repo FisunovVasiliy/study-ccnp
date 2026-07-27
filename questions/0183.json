@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/upgrade/503_N1_1/n5000_upgrade_downgrade_503_n1_1.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS treats a software upgrade and an in-progress zone merge as mutually exclusive operations that both require exclusive control of the switch's fabric-services state; if an administrator tries to start an upgrade while a zone merge is still converging, the upgrade is rejected and stops rather than proceeding and potentially corrupting the zoning database or the upgrade itself. The correct approach is to wait for the zone merge to complete before initiating the upgrade. (Cisco Nexus 5000 Series Software Upgrade/Downgrade Guide)"
 }

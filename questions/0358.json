@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Fabric binding restricts which switches can join a VSAN by matching each principal switch's WWN and domain ID against a preconfigured list; the swwn/domain values entered on MDS-1 must come directly from the actual principal switch WWN and domain ID already shown in the show fcdomain domain-list output for each VSAN (32/4041 and 11/4042), so that only the currently legitimate neighbor (MDS-2) is authorized to bind into the fabric for each VSAN after fabric-binding activate is issued. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Fabric Binding Configuration)"
 }

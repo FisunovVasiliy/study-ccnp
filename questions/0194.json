@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": true,
- "provisional": true
+ "provisional": true,
+ "theory": "The system-defined default-role in Cisco MDS RBAC applies cumulatively to every user in addition to whatever role they are individually assigned, and rules are evaluated in ascending rule-number order. Adding a new, higher-numbered deny rule ('deny show feature environment') to default-role restricts that specific command for all users fabric-wide, including the san-users role being created, without needing to touch san-users itself - which only needs its own permit rules for the show/debug/exec commands it should allow. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - User Roles and Rules)"
 }

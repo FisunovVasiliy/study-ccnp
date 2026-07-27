@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On the Nexus 7000's F3-based VXLAN gateway implementation, a Layer 2 trunk's dot1q-tagged VLAN is mapped into a VXLAN bridge domain and its VNI through an encapsulation profile, which binds a specific dot1q VLAN tag to a target VNI and bridge-domain number. The Layer 3 gateway function for that segment is then provided by a Bridge-Domain Interface (a BDI, such as interface Bdi50), the SVI-equivalent construct used in this dot1q/bridge-domain model rather than a traditional interface Vlan SVI, so the profile must reference the matching dot1q tag, VNI, and bridge-domain number consistently, with the gateway IP address applied to the corresponding BDI. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN Gateway Configuration on Nexus 7000)"
 }

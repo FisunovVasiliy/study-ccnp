@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a Full State backup exists on an SCP server and the fabric interconnect needs to be fully recovered, the correct path is to factory reset the fabric interconnect and, during its initial setup wizard, choose the Restore option, which specifically expects (and consumes) a Full State backup file to rebuild the FI's complete configuration and runtime state. There is no CLI 'copy running-config' equivalent restore for UCS Manager, and imports/scheduled restores apply to the XML configuration backups, not to a ground-up Full State recovery of a factory-reset FI. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Full State Restore Procedure)"
 }

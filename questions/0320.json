@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "RPM packages on the Nexus Bash shell are managed with the standard rpm command-line tool: the '-U' flag upgrades (or installs) the package, '-h' prints hash-mark progress, and '-v' adds verbose output — exactly matching the 'Preparing... [100%]' progress bar shown in the exhibit. 'upgrade -U' and 'update -vh' aren't valid rpm invocations, and 'rpm -qa' only lists already-installed packages without installing anything new. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

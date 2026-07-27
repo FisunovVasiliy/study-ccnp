@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/unicast/configuration/guide/l3_cli_nxos/l3_ospf.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On Nexus switches, \"ip ospf passive-interface\" is applied per-interface and only suppresses OSPF hellos/ adjacency formation on that specific interface, while the interface's connected subnet is still advertised into OSPF as a normal network statement. This is different from a router-wide passive-interface default, and it leaves the existing adjacency on Eth1/1 completely untouched, satisfying the requirement to advertise Eth1/2's subnet without forming an adjacency there while Eth1/1's neighbor relationship stays intact. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — OSPF Passive Interfaces)"
 }

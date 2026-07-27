@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/fcoe/521n11/b_5k_FCoE_Config_521N11/b_5k_FCoE_Config_521N11_chapter_011.pdf",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When multiple Cisco Nexus/MDS switches act as Fibre Channel Forwarders (FCFs) in an FCoE fabric, each one advertises an FCF priority value in the range 0 (highest preference) to 255 (lowest), with 128 as the default; CNAs use this priority during FIP FCF discovery to pick the 'best' switch to log in to. To make a specific switch the preferred FCF for all CNAs in the fabric, you configure it with the lowest priority value available - 'fcoe fcf-priority 0' - since a lower number wins. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Overview / FCF Priority)"
 }

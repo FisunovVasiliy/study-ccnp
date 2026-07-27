@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager's Operations role provides read/write access to system logs (including syslog servers) and faults, while the Facility Manager role provides read/write access to power-management operations such as fan speed and power redundancy - both roles also grant read-only visibility into the rest of the system by default. Together they exactly satisfy 'modify logs/faults/power settings, view everything else' without granting the broader write access that Administrator or Server Compute would provide. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, Default User Roles)"
 }

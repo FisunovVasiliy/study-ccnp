@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "This will send a copy of the running configuration to an FTP server at 10.83.249.182.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The script builds a dated filename with time.strftime() and then calls cli.execute('copy running-config ftp://.../filename') — this is the on-box Python interpreter directly issuing the NX-OS 'copy running-config' command to push a backup of the switch's configuration to a remote FTP server. Nothing here contacts Cisco TAC, schedules an EEM job, or integrates with Prime Infrastructure; it's simply a scripted remote configuration backup. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

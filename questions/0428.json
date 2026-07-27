@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NAS storage systems are purpose-built appliances: unlike a general-purpose SAN array (which serves block-level LUNs) or a standard file server (running a full general-purpose OS on standard server hardware), NAS runs its own lightweight, embedded operating system on simplified, storage-optimized hardware and serves data strictly at the file level, which is the defining characteristic distinguishing NAS from these other solutions. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NAS Concepts)"
 }

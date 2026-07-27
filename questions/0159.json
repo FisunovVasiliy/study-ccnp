@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "FCoE uses a Fabric Provided MAC Address (FPMA) for SAN traffic. The ENode still gets a 24-bit FCID. FPMA is built by concatenating a 24-bit FCoE MAC address prefix (FC-MAP), ranging from 0x0E-FC-00 to 0x0E-FC-FF, to the 24-bit FCID.\nBeing able to build a unique MAC address for the ENode directly from its FCID saves the switch from having to maintain a table that associates FCID and MAC addresses.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "FCoE Initialization Protocol (FIP) does not simply reuse the CNA's burned-in MAC or skip addressing entirely - it builds a Fabric Provided MAC Address (FPMA) for each E-Node by concatenating a 24-bit FCoE MAC address prefix, the FC-MAP (ranging from 0x0E-FC-00 to 0x0E-FC-FF and identifying the SAN), with the E-Node's 24-bit Fibre Channel ID obtained during fabric login. Deriving the MAC directly from the FCID this way lets the switch avoid maintaining a separate FCID-to-MAC lookup table, since the FCID is embedded in the address itself. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Addressing and FPMA)"
 }

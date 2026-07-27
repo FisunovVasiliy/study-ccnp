@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/system_management/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide/sm_smu.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On a Cisco Nexus 9000 running a software maintenance upgrade (SMU) workflow, \"install activate\" turns on a patch's functional changes while \"install deactivate <filename>\" reverses that for one package — it disables the features that package added for the affected line card, without removing the package file itself or halting the overall upgrade. It's a targeted rollback of one component's behavior, not a full cancellation or full uninstall. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Software Maintenance Updates)"
 }

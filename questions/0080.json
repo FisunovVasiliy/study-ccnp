@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An MDS 'install all' nondisruptive software upgrade (ISSU) reloads the supervisor's control-plane software while the data plane keeps forwarding Fibre Channel frames; Cisco documents that this control-plane interruption lasts under about 80 seconds even though the overall install process (which also cycles line cards) takes longer. Understanding this number matters for planning maintenance windows: a nondisruptive upgrade does not mean zero impact - the control plane briefly goes down while the standby supervisor takes over and the previously active one reloads - it only means the fabric keeps switching frames. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - Nondisruptive Upgrade)"
 }

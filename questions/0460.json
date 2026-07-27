@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Deploying a C-Series server with a single VIC 1455 directly into a UCS Manager cluster (no fabric extenders) requires first resetting Cisco IMC to factory defaults so the adapter comes up ready for UCS Manager integration rather than in its prior standalone configuration, and then cabling the VIC's port 1 and port 3 (the pair Cisco specifies for dual-link direct connect on this adapter) each to one of the two fabric interconnects. Treating the VIC-attached ports as generic uplink ports, or inserting copper SFPs meant for a different port type, does not match the documented direct-connect cabling and reset procedure for this adapter. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS C-Series Direct-Connect Integration, VIC Cabling)"
 }

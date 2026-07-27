@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Ansible defaults to SSH transport, requires no agent installed on any managed system, and expresses automation as declarative YAML playbooks intentionally designed to be readable without deep programming skill — matching every stated requirement simultaneously. PowerShell is imperative scripting typically over WinRM rather than SSH, and both Chef and Puppet require an installed agent on managed systems, ruling them out. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

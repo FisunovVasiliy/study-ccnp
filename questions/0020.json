@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco NX-OS automatically generates a system checkpoint (prefixed \"system-\") whenever certain configuration- altering events occur, including disabling a previously enabled feature with \"no feature ...\" or removing a Layer 3 protocol instance. Seeing a checkpoint named \"system-fm-vrrp\" created by the Feature Manager therefore indicates that the VRRP feature was disabled (not that it crashed, restarted, or was manually saved) — the system snapshot exists so an administrator can roll back to the pre-disable configuration if needed. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Configuration Rollback and Checkpoint)"
 }

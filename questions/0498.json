@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager encrypts Full State backups specifically so that passwords and other sensitive information are not exported as cleartext inside the file — this encryption is a property of the backup type itself (Full State), independent of which transfer protocol carries it. That means even a Full State backup transferred over an otherwise-unencrypted protocol like TFTP still keeps passwords out of cleartext within the file, satisfying the stated requirement, whereas the XML-based backup types (Logical/System/All Configuration) do not include this same password-encryption guarantee. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Full State Backup Encryption)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The Cisco UCS Lightweight upgrade capability compares a component's currently running firmware against the version targeted by the upgrade and only actually updates (and reboots, where applicable) components whose firmware version has genuinely changed, skipping components that already match. This selective behavior reduces unnecessary reboots and shortens overall upgrade time, unlike a blanket approach that would reboot or reflash every server/component regardless of whether its firmware version actually needs to change. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Updates, Lightweight Upgrade)"
 }

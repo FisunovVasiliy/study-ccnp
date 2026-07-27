@@ -30,5 +30,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Traditional network data-collection methods each carry well-known limitations that streaming telemetry was built to fix: CLI-based scripts scrape unstructured show-command text that breaks whenever output formatting changes; SNMP polls devices for MIB values but is typically limited to five-to-ten-minute polling intervals, too coarse for real-time troubleshooting; and syslog pushes free-form seq-no/timestamp/facility-severity messages that scale poorly. Model-driven streaming telemetry instead pushes structured data (JSON or Google Protocol Buffers) directly to a receiver as state changes occur, which is why each mechanism maps to its own distinct characteristic rather than sharing one description. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Traditional Monitoring Methods vs. Streaming Telemetry)"
 }

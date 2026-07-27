@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Two fabric interconnects form an active/active management cluster by connecting their dedicated L1 and L2 ports to each other; this out-of-band link carries the HA heartbeat and cluster state (PRIMARY/SUBORDINATE) between them, separate from any data-plane uplinks or server chassis links. 'HA NOT READY' with 'No device connected to this Fabric Interconnect' means the peer FI cannot be reached over these ports, so HA cannot be established even though each node individually shows UP. Connecting the L1-L2 cabling (directly or through a switch, per model) restores heartbeat exchange and clears the fault. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Architecture/Initial Setup)"
 }

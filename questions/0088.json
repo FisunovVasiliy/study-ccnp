@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/3-0/b_UCSM_CLI_User_Guide_3_0/b_UCSM_CLI_User_Guide_3_0_chapter_0100011.pdf",
  "explanation": "Decommissioning is performed when a chassis is physically present and connected but you want to temporarily remove it from the Cisco UCS Manager configuration. Because it is expected that a decommissioned chassis will be eventually recommissioned, a portion of the chassis' information is retained by Cisco UCS Manager for future use.\nRenumbering a Chassis -\nBefore You Begin -\nIf you are swapping IDs between chassis, you must first decommission both chassis, then wait for the chassis decommission FSM to complete before proceeding with the renumbering steps.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Renumbering (changing the chassis ID of) a Cisco UCS chassis, especially when swapping IDs between two chassis, requires that the chassis first be decommissioned. Decommissioning logically removes a physically present, connected chassis from UCS Manager's active configuration while retaining enough state to later recommission it, which avoids ID conflicts and inconsistent FSM state during the renumbering process. Simply re-acknowledging the chassis or bouncing the connected ports does not release the chassis ID, so the renumber operation would fail or be blocked until decommission completes. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Chassis Management)"
 }

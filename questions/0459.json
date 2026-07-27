@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Accessing a C-Series server's KVM through the dedicated out-of-band management interface requires setting Cisco IMC's NIC mode to Dedicated (not Shared LOM, which multiplexes management traffic over a data NIC). Because the upstream switch port for that management interface is configured as an untagged access port (switchport mode access) rather than a VLAN trunk, the Cisco IMC VLAN tagging state must be Disabled to match — enabling and tagging a VLAN ID on the CIMC side when the switch port expects untagged traffic would break connectivity rather than restrict it correctly. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco IMC Network Management, Dedicated NIC Mode)"
 }

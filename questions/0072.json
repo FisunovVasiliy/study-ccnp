@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a VXLAN-based DCI transport is IP-based but cannot support multicast replication for BUM traffic, the fabric needs a unicast-based way to replicate that traffic and learn remote host reachability — this is exactly what BGP EVPN provides. With BGP EVPN as the control plane, VTEPs learn remote MAC/IP reachability via BGP updates (instead of data-plane flood-and-learn) and use ingress (head-end) unicast replication for BUM traffic, eliminating the dependency on multicast in the long-distance transport. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN MP-BGP EVPN Control Plane)"
 }

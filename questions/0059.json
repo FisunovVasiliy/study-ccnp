@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "Detecting link and node failures quickly is number one priority for fast convergence. For maximum speed, relying on IGP keepalive times should be avoided whether possible and physical failure detection mechanisms should be used. This implies the use of point-to-point links whether possible.\nBFD (BiDirectional Forwarding Detection) provides sub-second convergence for many protocols and is done in hardware. BFD will also only work on point-to-point links.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Fast OSPF convergence between directly connected switches depends on quickly detecting a link/neighbor failure and avoiding the overhead of DR/BDR election on shared-media logic. Enabling BFD gives sub-second, hardware-assisted failure detection independent of OSPF's own hello/dead timers, and it (like true fast convergence generally) only works reliably on point-to-point-type links; configuring OSPF interfaces as point-to-point removes the unnecessary DR/BDR election overhead present on broadcast network types. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — BFD and OSPF Network Types)"
 }

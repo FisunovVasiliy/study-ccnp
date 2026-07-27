@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "BPDU Guard is designed for edge/host-facing ports that should never receive a BPDU, since receiving one usually means an unauthorized switch was plugged in, accidentally creating a loop risk. When BPDU Guard is enabled on such a port and a BPDU arrives, the port is immediately error-disabled rather than being allowed to participate in spanning tree, which is exactly the accidental-loop protection needed for a host-facing interface like Ethernet1/1. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — Spanning Tree BPDU Guard)"
 }

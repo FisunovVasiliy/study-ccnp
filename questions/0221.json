@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus7000/sw/programmability/guide/b_Cisco_Nexus_7000_Series_NX-OS_Programmability_Guide/b_Cisco_Nexus_7000_Series_NX-OS_Programmability_Guide_chapter_0101.html",
  "explanation": "On Cisco Nexus devices, command-line interfaces (CLIs) are run only on the device. NX-API improves the accessibility of these CLIs by making them available outside of the switch by using HTTP/HTTPS. You can use this extension to the existing Cisco Nexus CLI system on the Cisco Nexus 7000 Series devices. NX-API supports show commands, and configurations. NX-API supports JSON-RPC, JSON, and XML formats.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-API is the feature that exposes NX-OS CLI functionality externally over HTTP/HTTPS, encoding requests and responses in JSON or XML; it must be explicitly enabled ('feature nxapi') before any external client can use those encodings against a Nexus 7000 switch. Bash shell and the Open Agent Container are Linux execution environments, not external programmable interfaces, and LLDP is an unrelated discovery protocol. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

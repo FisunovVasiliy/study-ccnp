@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Copying both inbound and outbound production traffic across VLANs, and delivering it off-box to a remote APM collector while still supporting the switch's own real-time telemetry, calls for an ERSPAN source session, which unlike SPAN or RSPAN is IP-routable and doesn't consume a local monitoring port, with sources specified as both direction so ingress and egress traffic on the relevant VLANs are captured and sent to the collector's IP with a unique erspan-id and the appropriate VRF for reachability. RSPAN and simple VLAN-based SPAN configurations shown in the other options can't route the mirrored copy to a remote analyzer the way ERSPAN's IP-based destination can. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — ERSPAN Source Sessions for Bidirectional Production Traffic Capture)"
 }

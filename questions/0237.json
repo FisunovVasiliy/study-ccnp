@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Ansible playbooks are declarative YAML, the tool is agentless (pushing over SSH with no software installed on target nodes), and its modules are ordinary Python programs that a Python-literate team can extend or write from scratch — this exact combination of easy setup, no agent, and Python-based extensibility matches the requirements, whereas Puppet/Chef require an installed agent and NX-API is a device interface, not a general automation tool. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

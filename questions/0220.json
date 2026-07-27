@@ -23,5 +23,6 @@
  "reference": "https://www.ciscopress.com/articles/article.asp?p=2928194&seqNum=5",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An EEM SNMP-triggered event needs get-type 'exact' to poll that specific CPU-utilization OID instance (rather than 'next', which walks to the following OID in the tree), and the comparison operator must be 'gt 60' so the policy only fires when the value is greater than 60 — 'lt' would instead trigger when CPU drops below the threshold, the opposite of what's needed. Combined with a poll-interval and a syslog action, this correctly reports high CPU only when the 60% threshold is exceeded. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Smart Call Home only emails a destination profile when that profile is explicitly subscribed to the alert-group that generated the event; attaching a user-defined command to the Inventory alert-group only determines what data is captured, not where it is sent. Adding a destination-profile statement that subscribes to the Inventory alert-group is the missing piece that routes the captured show-command output to the configured email destination whenever a hardware-insertion event fires that alert-group. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Smart Call Home Alert Groups and Destination Profiles)"
 }

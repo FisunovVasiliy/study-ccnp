@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/firmware-mgmt/gui/2-2/b_GUI_Firmware_Management_22/b_GUI_Firmware_Management_22_chapter_0101.html#task_8F47F9CA290F447589F9384E0B55DC30",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Auto Install's infrastructure firmware upgrade stage targets the components that make up the UCS domain's shared infrastructure — the fabric interconnects, Cisco UCS Manager, and the I/O Modules connecting chassis to the fabric. Adapter, Cisco IMC, and BIOS firmware belong to individual servers and are instead upgraded in the separate Install Server Firmware stage via host firmware packages, so I/O Modules is the component from this list that actually gets upgraded during the infrastructure stage. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Upgrades, Auto Install)"
 }

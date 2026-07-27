@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "This mirrors the book's own interactive Python example almost exactly: json.loads() parses the JSON text returned by clid('show interface brief') into intflist, the while loop walks down through the TABLE_interface/ROW_interface keys to get the list of per-interface dictionaries, each entry is pulled into intf, and intf['state'] is checked for 'up' before printing intf['interface'] — the same TABLE_x/ROW_x nested navigation pattern NX-OS JSON show-command output always follows. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

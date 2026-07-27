@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NFS is built on Sun's Remote Procedure Call (RPC) framework: when a client wants to perform an operation on a remote file, it issues an RPC call to the NFS server, which executes the request and returns a result code (and data, if applicable) over whatever transport RPC is running on (TCP in modern NFS versions). This RPC-based, request/response model is fundamental to how NFS clients and servers communicate, distinguishing it from protocols like SMB that use their own dedicated messaging format. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

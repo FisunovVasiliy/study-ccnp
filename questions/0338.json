@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco DCNM's SAN Insights feature, built on SAN Analytics telemetry streamed directly from MDS switch ASICs, provides long-term trending, correlation, and reporting on flow-level metrics across the fabric, including target/LUN capacity and utilization trends - making it the right tool to generate recurring reports that flag storage targets approaching capacity before they cause service interruptions, which neither generic monitoring tools nor slow-drain-specific features are designed to summarize. (Cisco DCNM SAN Insights documentation / web research)"
 }

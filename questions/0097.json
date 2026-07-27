@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "Not revealed in the source material (solution not expanded). The Infrastructure Firmware Pack in Cisco UCS Manager typically upgrades UCS Manager itself, the Fabric Interconnects, and the I/O Modules (IOMs) — the answer is provisional pending verification.",
  "needsAnswer": true,
- "provisional": true
+ "provisional": true,
+ "theory": "Installing an Infrastructure Firmware pack through Auto Install upgrades the components that make up the UCS domain's control and data-plane infrastructure — the fabric interconnects, Cisco UCS Manager, and the I/O Modules (IOMs) — as a single, all-or-nothing operation. Server-facing components such as BIOS, board controller, and adapter firmware are not part of the Infrastructure pack; they are upgraded separately in the Install Server Firmware stage via host firmware packages. Recognizing that IOMs and UCS Manager (not adapters/BIOS) sit inside the infrastructure bundle is the key distinction here. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Upgrades, Auto Install)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS exposes its internal Data Management Engine (DME) object model to external clients through NX-API REST, letting you query and configure managed objects across many NX-OS devices over HTTP/HTTPS using structured JSON or XML — this is the DME-native programmable interface. NETCONF/YANG and JSON-RPC are alternative management protocols, but NX-API REST is specifically the one built around NX-OS's DME data model for large-scale device data collection. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco Intersight is Cisco's SaaS management platform for UCS and HyperFlex; to manage compute infrastructure through it, an administrator does not use UCS Central or UCS Manager as the SaaS front end — instead, each UCS domain's Device Connector is enabled and then 'claimed' into an Intersight account using the unique Device ID and Claim Code shown in that device's connector. This claim process establishes the secure outbound connection between the on-premises hardware and the Intersight cloud service, which is the mechanism that lets SaaS-based management take over. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 13 — Cisco Intersight)"
 }

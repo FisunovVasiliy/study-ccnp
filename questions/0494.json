@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Creating or modifying an APIC managed object always requires an HTTP POST to the object's 'mo' (managed object) URL, and every editable property must sit inside an 'attributes' dictionary nested under the object's class wrapper (physDomP: {attributes: {...}, children: [...]}) — GET only reads data, and 'PATCH'/'variables' aren't valid APIC MO API keywords, so both the POST method and the 'attributes' key are needed together to create the physical domain and attach its VLAN pool. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

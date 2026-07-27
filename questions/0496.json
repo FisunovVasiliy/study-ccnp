@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Assigning a host port to a specific VSAN and letting an ISL carry multiple VSANs are two separate configuration steps: the VSAN must first exist in the VSAN database and be statically bound to the host's interface (fc1/1), while the port channel ISL (po10) needs VSAN trunking enabled and the desired VSANs, including VSAN 10, explicitly permitted in its allowed list - attaching VSAN configuration directly under an interface's own config mode, or filtering out all VSANs on the ISL, would prevent VSAN 10 traffic from ever reaching the other switch. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - VSAN / SAN Port Channels)"
 }

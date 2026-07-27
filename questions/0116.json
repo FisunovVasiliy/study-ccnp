@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A service profile's UUID identity can come from a UUID pool (administrator-assigned, portable) or it can be set to 'derived,' in which case Cisco UCS Manager uses the UUID that is burned into the physical server hardware itself rather than allocating one from a pool. The CLI command 'set identity dynamic-uuid derived' therefore ties the profile's UUID to whichever physical server it is currently associated with, based on that server's own hardware-assigned UUID, rather than a system-generated, vendor-assigned, or pool-allocated value. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Service Profiles, Identity Pools)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a service profile already references a host firmware package, server firmware is upgraded by changing/updating the firmware version referenced inside that host firmware package (or the package assigned to the profile), which then propagates to the server according to the profile's maintenance policy — rather than disassociating the profile, tweaking the maintenance policy's acknowledgment behavior, or performing an unrelated direct Auto Install upgrade, none of which is the standard mechanism for upgrading firmware on a profile-managed server. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Management, Host Firmware Packages)"
 }

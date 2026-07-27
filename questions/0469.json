@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Username/password authentication in the ACI Terraform provider repeatedly requests new session tokens, and APIC counts and throttles password-based login attempts as an anti-DDoS measure (particularly from ACI 3.1 onward), which can break large-scale Terraform automation. Configuring the provider block (not individual resources) for signature-based authentication — an x509 certificate/private-key pair registered to the APIC user — avoids counting against that login threshold while also improving performance. (Cisco documentation / web research)"
 }

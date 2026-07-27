@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/products/cloud-systems-management/cloudcenter/index.html",
  "explanation": "With Cisco CloudCenter you can automate multicloud workload deployment and increase feature velocity, consistently enforce multicloud governance, and optimize cloud service consumption to reduce risk and cloud costs.\nStreamline consumption of cloud or on-premises services with the combination of CloudCenter with Cisco Container Platform for on-premises Kubernetes, and AppDynamics for business and application performance monitoring.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco CloudCenter Suite is a cross-domain, agentless orchestration platform built for CI/CD-style multicloud application lifecycle automation: it integrates with Cisco ACI and UCS through APIs (no client installed on managed endpoints), pairs with Cisco Container Platform for on-premises Kubernetes, and uses AppDynamics for application performance monitoring while optimizing multicloud consumption cost. UCS Director and DCNM are workflow/fabric orchestration tools without this app-layer CI/CD and hybrid-cloud cost-governance focus, and APIC only manages the ACI fabric itself. (Cisco documentation / web research)"
 }

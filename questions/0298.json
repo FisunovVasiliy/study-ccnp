@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "DHCP message types are identified in Option 53, and a Release message (type 7) is sent as a unicast packet from the client directly to the DHCP server that issued its lease, informing the server that the client is giving up the address. In the capture, the last frame is unicast from the client (192.168.2.48) to the server (192.168.2.1) with DHCP Message Type set to Release, which is exactly the signature of the client voluntarily releasing its leased IP address back to the server. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 — DHCP Message Types and Client-Server Exchange)"
 }

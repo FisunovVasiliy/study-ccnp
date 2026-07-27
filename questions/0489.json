@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Within a single vPC domain, both peer switches share one virtual system MAC address derived from the vPC domain ID, which is why SW1 and SW2, forming one domain, share the same value. When two separate vPC domains are interconnected back-to-back, as with SW3/SW4 forming a second domain toward SW1/SW2, each domain must use a distinct vPC domain ID so its derived virtual system MAC differs from the other domain's — reusing the same MAC across both domains would create address duplication and break the loop-prevention and forwarding logic vPC relies on to distinguish peer devices. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Domain ID and System MAC in Back-to-Back vPC Designs)"
 }

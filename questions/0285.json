@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A team with no infrastructure or platform expertise and only a small budget benefits from a service model where the provider owns everything below the application layer: Platform as a Service supplies the OS, database, and storage runtime so the team only manages its own application code and configuration, while a public cloud deployment model, rather than a private cloud requiring capital investment and in-house infrastructure, provides the pay-as-you-go elasticity and provider-supplied usage data needed to scale on demand. IaaS would still require the team to manage the OS and database themselves, and SaaS would remove control over their own application, which is why PaaS combined with public cloud satisfies every stated requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 5 — Platform as a Service and Public Cloud Deployment)"
 }

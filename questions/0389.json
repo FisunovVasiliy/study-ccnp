@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "By default, the host firmware package in Cisco UCS Manager excludes local disk firmware from the components it manages, because local disk firmware updates can be more disruptive/data-sensitive and are handled separately (often manually or via a dedicated policy) rather than being bundled automatically with routine server firmware updates. Network interface controller, board controller, and storage controller firmware, by contrast, are included by default in host firmware package scope. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Management, Host Firmware Package Default Exclusions)"
 }

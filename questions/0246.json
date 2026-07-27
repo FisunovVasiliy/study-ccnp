@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "POAP scripts verify their own integrity before execution: the missing piece is an MD5SUM checksum of the Python script itself, computed and compared to guard against a corrupted or tampered download before the rest of the automation (image and config installation) is trusted to run — this self-integrity check is distinct from checksumming the separate configuration file or presenting an API token, neither of which the reference POAP scripts use for this purpose. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

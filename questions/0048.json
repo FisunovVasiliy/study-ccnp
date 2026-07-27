@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco Workload Optimization Manager continuously analyzes real-time demand across compute, storage and application layers and automatically resizes or moves workloads to control cost while assuring performance — exactly the 'orchestrate and optimize cost' requirement here. CloudCenter focuses on deploying and moving applications across clouds rather than ongoing cost/performance right-sizing, Intersight is Cisco's SaaS infrastructure management platform, and DCNM only manages the network fabric, so none of them directly deliver continuous workload cost optimization. (Cisco documentation / web research)"
 }

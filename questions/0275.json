@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Creating an HTTPS certificate signing request in Cisco UCS Manager CLI requires first scoping into security, then into the specific keyring (scope keyring kr2016), and issuing create certreq ip <cluster-IP> subject-name <name> to bind the CSR to both the cluster's virtual IP address and a chosen subject name; commit-buffer then applies the pending transaction. The command must be run from the primary fabric interconnect (UCS-A) and follow the security > keyring scope hierarchy exactly. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, Keyring/CSR configuration)"
 }

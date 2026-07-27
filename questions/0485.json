@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "FCFs establish FCoE links to each other over VE_Ports (the FCoE equivalent of native FC E ports), so a vfc interface that is really extending the SAN uplink between two FCoE-capable switches, rather than terminating a host's CNA, must be configured with 'switchport mode e', bound to its Ethernet interface, and restricted to the correct fabric's VSAN (11 for Fabric A here); using F, N, or SD mode would be appropriate for a host-facing or SPAN scenario, not a switch-to-switch FCoE extension. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Port Types / VE_Port)"
 }

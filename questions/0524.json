@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The sangroup role's VSAN policy is set to deny by default with an explicit exception list ('Permitted vsans: 10-30') that currently includes the 15-20 range the administrator wants to restrict. Because the permitted range is configured as a specific override rather than the whole policy, removing just that override with no permit vsan 15-20 trims 15-20 back out of the allowed set while leaving the rest of the permitted range (10-14 and 21-30) untouched, precisely targeting the restriction requested. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - User Role Policies, VSAN policy)"
 }

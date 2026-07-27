@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Disabling a feature such as PIM causes NX-OS to automatically generate a system checkpoint named system-fm-<feature> (here system-fm-pim) that captures the configuration being removed. Restoring that specific system checkpoint while skipping any errors uses the best-effort rollback trigger, which reapplies every line it can and simply ignores lines that fail, rather than aborting entirely (atomic) or stopping at the first failure (stop-at-first-failure); referencing a nonexistent checkpoint name like new-checkpoint would not restore the actual PIM configuration shown in the exhibit. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — System-Generated Checkpoints and Rollback Trigger Types)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Connecting an MDS director to a downstream switch over a Fibre Channel port channel that must negotiate as a standard ISL trunk requires the aggregate interface to be a 'san-port-channel' (the FC-specific port-channel construct, distinct from the Ethernet 'port-channel'), configured as an E port with trunk mode explicitly 'on' so it negotiates trunking (TE) with the peer, and channel mode 'active' so the member ports run port-channel-protocol negotiation with their peers rather than blindly forming without verification. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - SAN Port Channels)"
 }

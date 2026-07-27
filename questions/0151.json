@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/lomug/2-0-x/3_0/b_huu_3_0_1/b_huu_2_0_13_chapter_011.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "For a Cisco UCS standalone (non-UCS-Manager-integrated) C-Series server, BIOS firmware is upgraded locally using the Cisco Host Upgrade Utility (HUU), a bootable ISO/tool that updates the server's onboard firmware components including BIOS. The host firmware policy mechanism only applies to servers integrated into and managed by Cisco UCS Manager, and there is no 'hardware upgrade utility' or 'U-ACPI interface' in Cisco's tooling, making HUU the only valid method for a standalone server. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Updates, Standalone C-Series Servers)"
 }

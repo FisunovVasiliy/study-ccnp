@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A VMware vSphere Distributed Switch (VDS) port group needs a VLAN ID assigned so its frames map to a specific Layer 2 broadcast domain — the standard trunking/tagging mechanism. For an attached VM to receive a copy of all frames passed on the virtual switch, rather than only traffic destined to its own MAC, the port group's security policy must have promiscuous mode enabled, the vSwitch equivalent of a SPAN/mirror port; forged transmits and port binding control unrelated behaviors (source MAC spoofing and static versus dynamic port assignment), so they don't satisfy either requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Integration with VMware VDS Port Groups)"
 }

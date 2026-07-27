@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A vPC domain configuration is only functionally complete once real traffic-carrying interfaces are bundled into the peer-link and vPC port channels via \"channel-group\"; simply trunking Ethernet1/1 and Ethernet1/2 as individual switchports (as shown) does not make them members of port-channel100. Without that final channel-group assignment step, the peer-link port channel has no active members and the vPC domain cannot come up, even though peer-keepalive and the vpc domain settings are already correctly configured. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Configuration)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Replacing a defective fabric interconnect and restoring it — including the locally created user database — while requiring the exact same UCS Manager software version, is precisely the use case a Full State backup is designed for: it's a complete binary snapshot of the whole system's configuration and runtime state (including local user accounts), restorable only to a fabric interconnect running the same software version it was taken from. The XML-based All/System/Logical Configuration backups don't restore local user databases or provide a ground-up system rebuild the way Full State does. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Full State Backup and Restore)"
 }

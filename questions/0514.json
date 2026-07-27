@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The NX-OS configure replace feature compares a saved configuration file against the currently running configuration and applies only the incremental differences needed to converge the running config to match the file, all without a reload, unlike copying a file to startup-config and rebooting. Because the backup file sits on a remote SFTP server, it first needs to be copied locally to bootflash over the mgmt0 VRF, since that's the interface with SFTP reachability, before configure replace can reference it as a local file — configure replace cannot pull an sftp:// URL directly, and copying to startup-config plus copying startup to running doesn't reconcile a running configuration cleanly the way configure replace does. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — NX-OS Configuration Replace and Backup Restoration)"
 }

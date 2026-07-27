@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because end users are only permitted to modify Service Profile configuration, the weekend backup only needs to preserve the logical configuration (which covers service profiles, VLANs, VSANs, pools, and policies) rather than the entire system. Restoring that state must also be a deliberate, controlled action taken by an administrator on Monday — imports are not something Cisco UCS Manager can schedule to run automatically — so the correct approach is a scheduled logical backup at the start of the weekend combined with a manual import performed Monday morning. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Backup and Import Scheduling)"
 }

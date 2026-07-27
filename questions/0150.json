@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HyperFlex Hybrid architecture couples compute, caching (SSD), and capacity (HDD) resources per node but still allows independent resource scaling — administrators can add compute-only or storage-only nodes to a cluster to grow one resource dimension without being forced to over-provision the others. This flexible, granular expansion of compute, caching, and capacity independently is the practical benefit, distinct from remote booting, multivendor hardware support, or third-party storage integration, none of which describe this scaling capability. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex Independent Resource Scaling)"
 }

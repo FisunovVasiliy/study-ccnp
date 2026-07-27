@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "Traditional IT is responsible for Application, Data, Runtime, Middleware, OS, Virtualization, Servers, Storage, Networking.\nIaaS = Infrastructure as a Service - The customer is responsible for OS, Virtualization, Servers, Storage, Networking.\nSaaS = Software as a Service - The software is deployed by the cloud provider - Customer is responsible for nothing.\nPaaS = Platform as a Service - Software can be deployed by the customer building their own application - is responsible for Data and Application.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The NIST/industry cloud service models split responsibility differently: SaaS hands the customer a finished application with no infrastructure or OS access; PaaS gives the customer control over their application and data while the provider manages the runtime, OS, and infrastructure; IaaS gives the customer raw compute, storage, and network resources on top of which they install and fully control their own OS, middleware, and applications. Because the requirement is full control over the OS, data, and applications, IaaS is the only model that grants that level of control. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 5 — Cloud Service Models)"
 }

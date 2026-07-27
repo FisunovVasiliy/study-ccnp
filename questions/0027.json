@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HSRP version 2 virtual MAC addresses always fall within the reserved block 0000.0C9F.F000–0000.0C9F.FFFF, distinct from HSRPv1's 0000.0C07.AC00–ACFF block, VRRP's 0000.5E00.01xx block, and ordinary burned-in vendor OUIs. Of the listed addresses, only 0000.0C9F.F0C8 falls inside that HSRPv2 range, which is why it's the one that identifies an HSRPv2 virtual MAC. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — HSRP Version 2)"
 }

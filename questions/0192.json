@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Every FCoE fabric (VSAN) is associated with a unique FC-MAP value, the 24-bit prefix used to build Fabric Provided MAC Addresses for that fabric's E-Nodes. Configuring a distinct 'fcoe fcmap' value per fabric/VSAN ensures FPMAs generated in one fabric can never collide with, or be mistaken for, FPMAs from a different (cross-connected) fabric, which is exactly the safeguard needed to prevent data corruption from cross-fabric traffic in a dual-fabric FCoE design. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Addressing / FC-MAP)"
 }

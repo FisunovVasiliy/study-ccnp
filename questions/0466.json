@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Fabric binding configuration lives under the fabric-binding database vsan hierarchy (not vsan database, which governs unrelated VSAN membership), where each swwn entry binds a switch WWN to either a specific domain ID or, when no domain qualifier restricts it, effectively permits any domain - matching the 'Any' entry shown for the first WWN in the active database output, with explicit domain values for the other two. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Fabric Binding Configuration)"
 }

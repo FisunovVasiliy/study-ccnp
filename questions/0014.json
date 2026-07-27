@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/vxlan/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_VXLAN_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_VXLAN_Configuration_Guide_7x_chapter_011.html",
  "explanation": "The following enables static ingress replication for peers.\nProcedure:\nStep 1: configuration terminal - Enters global configuration mode.\nStep 2: interface nve x - Creates a VXLAN overlay interface that terminates VXLAN tunnels. Note: Only 1 NVE interface is allowed on the switch.\nStep 3: member vni [vni-id | vni-range] - Maps VXLAN VNIs to the NVE interface.\nStep 4: ingress-replication protocol static - Enables static ingress replication for the VNI.\nStep 5: peer-ip n.n.n.n - Enables peer IP.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Ingress (head-end) replication is how a VXLAN VTEP floods BUM traffic to remote VTEPs when the underlying transport network does not support multicast. With static ingress replication, the administrator manually lists each remote VTEP's IP under the NVE interface using \"ingress-replication protocol static\" together with one \"peer-ip <address>\" line per remote VTEP, so the local VTEP unicast-replicates a copy of BUM traffic to each listed peer. This differs from BGP EVPN-based ingress replication, where the peer list is learned dynamically via BGP instead of being statically configured. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN Ingress Replication)"
 }

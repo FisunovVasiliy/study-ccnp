@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To aggregate multiple ISLs between two MDS switches into a single logical link that load-balances traffic, suspends a mismatched member automatically, and can carry multiple VSANs, the port type must be E port, the standard switch-to-switch FC port type capable of trunking multiple VSANs, and the channel mode must be Active so member ports run port-channel-protocol negotiation, automatically detect parameter mismatches, and suspend any port that doesn't match rather than silently forming an inconsistent channel, which On mode would allow. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - SAN Port Channels)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A backup meant to serve as a full disaster-recovery snapshot of the entire system must be a Full State backup, since that is the only type containing both configuration and runtime state as a complete binary image suitable for rebuilding the system. The requirement for an insecure, TCP-based transfer protocol points to FTP (as opposed to the UDP-based TFTP, or the encrypted SCP/SFTP), so Type: Full State with Protocol: FTP is the only pairing that satisfies both the backup-content requirement and the explicit insecure-TCP transport requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Backup Protocols)"
 }

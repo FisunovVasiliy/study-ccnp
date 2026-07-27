@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/gui/config/guide/141/UCSM_GUI_Configuration_Guide_141_chapter43.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A System Configuration backup is an XML export limited to system-level settings such as usernames, roles, and locales — exactly what's needed to replicate access-control configuration to a different fabric interconnect. Because it is XML (human-readable and reviewable before import), unlike the binary Full State backup, and because it excludes service profiles/VLANs/VSANs (which belong to Logical Configuration) and doesn't bundle everything together (as All Configuration does), System Configuration is the precise, minimal backup type for this AAA/RBAC-focused requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, System Configuration Backup)"
 }

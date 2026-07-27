@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/3-1/b_Cisco_UCS_Admin_Mgmt_Guide_3_1/b_Cisco_UCS_Admin_Mgmt_Guide_3_1_chapter_01011.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A maintenance policy governs when a service profile's disruptive changes take effect, and its reboot-policy setting can be set to 'user-ack,' which forces Cisco UCS Manager to wait for an administrator to explicitly acknowledge pending changes (via the Pending Activities dialog) before rebooting the blade, rather than rebooting immediately or on an automatic schedule. Boot Policy, Power Control Policy, and Global Policy configure unrelated aspects of the server (boot device order, power capping, and domain-wide defaults), so the reboot-timing behavior described here is controlled through the maintenance policy's reboot policy setting. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Maintenance Policies)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Beyond basic host-trust authentication (AUTH_SYS), NFS supports RPCSEC_GSS security flavors, and the standard, widely deployed mechanism under that framework is Kerberos, which provides strong, ticket-based mutual authentication (and optionally integrity/privacy) for NFS clients and servers - this Kerberos integration is the notable security feature associated with modern NFS, particularly NFSv4, distinguishing it from simpler role- or zone-based access-control schemes used elsewhere in storage networking. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts / RPCSEC_GSS-Kerberos)"
 }

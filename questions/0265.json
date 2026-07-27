@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_2/configuration/guides/fundamentals/b_Cisco_MDS_9000_Series_NX-OS_Fundamentals_Configuration_Guide/b_Cisco_MDS_9000_Series_NX-OS_Fundamentals_Configuration_Guide_Release_6_chapter_0100.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco syslog severity levels run from 0 (emergency, most severe) to 7 (debugging, least severe), so setting 'logging console 4' displays messages at severity 4 (warning) and all more severe levels (0-4), matching the requirement. Independently, the exec-timeout command configured under line console sets the idle-session timeout (in minutes) after which an inactive console session is automatically logged out, here set to 5 minutes as required. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - general MDS/NX-OS logging and line configuration)"
 }

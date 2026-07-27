@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Streaming telemetry is described as a \"push\" model because the network device itself initiates data delivery whenever relevant events or state changes occur (or on a defined cadence), sending it unprompted to a subscribed collector — the opposite of a pull model where a client must first request data. That event/change-driven, device-initiated delivery (rather than encoding format or transport protocol details) is what defines the push behavior. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Streaming Telemetry)"
 }

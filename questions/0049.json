@@ -37,5 +37,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Data center traffic is commonly classified by direction and purpose: north-south traffic moves between clients outside the DC and servers inside it; east-west traffic moves server-to-server within the DC (common with distributed/multi-tier apps); storage traffic runs between hosts and storage arrays; storage replication runs array-to-array; and inter-data-center traffic crosses a DCI link between separate sites. \"North-west\" and \"south-west\" are not real traffic-classification terms and are included only as distractors that should not be matched. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — Data Center Traffic Patterns)"
 }

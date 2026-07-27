@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "EPLD (erasable programmable logic device, e.g., FPGA) images control lower-level hardware functions on Nexus 7000 line cards and are versioned and applied completely separately from the NX-OS system/kickstart images used in an ISSU. EPLD upgrades are always disruptive since they reload the affected module, are applied one module at a time rather than simultaneously, and Cisco explicitly recommends against performing them during or around an ISSU — which is why their defining characteristic is being independent of the ISSU process, not being nondisruptive or simultaneous. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — EPLD Upgrades)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The ACI 'preferred group' lets member EPGs communicate freely within a VRF without needing a contract between every pair, so including EPG-2, EPG-3, and EPG-4 in the preferred group satisfies the requirement that those three communicate contract-free. Because the secure server's EPG-1 must stay outside the preferred group (to keep it protected), it still needs an explicit contract to reach any EPG it must serve - here, a contract between EPG-1 and EPG-2 gives the secure server exactly the access it needs while remaining isolated from unrestricted access to/from the rest. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Cisco ACI Contracts, Preferred Groups)"
 }

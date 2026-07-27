@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "For data-intensive, database-style workloads that demand the highest performance with high consistency and the lowest possible latency, Cisco HyperFlex All-NVMe nodes are the right storage configuration, because NVMe drives connect directly to the CPU (bypassing the latency-adding PCIe switch/SAS controller path used by SATA/SAS SSDs), delivering more predictable, lower-latency I/O than Hybrid, All-Flash (SATA/SAS SSD), or All-HDD configurations. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex All-NVMe Nodes)"
 }

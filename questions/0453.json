@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Meeting an aggregated (port-channel) IOM-to-fabric-interconnect topology with four 10GbE links per I/O module, plus support for mixed uplink speeds later, requires setting Link Group Preference to Port Channel so all discovered links bundle into one logical channel instead of being pinned individually. Because changing this connectivity mode is a disruptive topology change, the chassis must be reacknowledged after the initial discovery for the new port-channel-based link grouping to take effect cleanly, rather than just leaving it in its originally discovered (discrete-pinning) state. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Chassis/IOM Connectivity, Link Group Preference and Reacknowledgment)"
 }

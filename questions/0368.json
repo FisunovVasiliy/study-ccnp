@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Running the automation directly on the device with NX-OS's embedded, on-box Python interpreter and Cisco's built-in cisco/cli Python packages keeps the entire toolchain within Cisco-provided, trusted code and avoids any external network path into the DMZ-isolated device. Off-box scripts, cloud-serverless functions, and generic containerized apps would all pull in non-Cisco runtimes/libraries and require reaching into the DMZ from outside, conflicting with the 'only trusted Cisco libraries' restriction. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

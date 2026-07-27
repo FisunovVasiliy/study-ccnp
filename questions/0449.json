@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Bringing up a brand-new ACI fabric starts with configuring the very first APIC controller through its console setup script (fabric name, infra VLAN, TEP pool, and so on); that APIC then uses LLDP to automatically discover directly connected leaf switches, and any switches those leaves in turn discover. The administrator registers those LLDP-discovered switches through the APIC GUI or CLI, rather than manually registering every leaf and spine upfront or configuring the leaf switch's own CLI, since ACI's switch discovery and registration process is fundamentally driven by LLDP originating from the first configured APIC. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Fabric Bring-Up: Bootstrap and Switch Discovery)"
 }

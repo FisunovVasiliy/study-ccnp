@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The 'fcns proxy-port' command manually registers a proxy device, one that can't perform a normal FLOGI/PLOGI itself, into the Fibre Channel Name Server (FCNS) database for a given VSAN, adding an entry so other devices in the fabric can discover and resolve that WWN through the name server exactly as they would a normally logged-in device. This differs from the FLOGI database (which tracks physical logins per switch) and from a WWN-to-VSAN mapping mechanism, since it is specifically a name-server registration. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - FLOGI and FCNS Databases)"
 }

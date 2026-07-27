@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Monitoring hosts attached to different local interfaces/VLANs and exporting the mirrored traffic across an IP/MPLS transport to a remote analyzer requires ERSPAN (not local SPAN), since local SPAN destinations must be physical local ports, not a remote IP reachable only over a routed core. An erspan-source session lets the engineer combine an interface source (Host-A on Eth1/2, rx) with a VLAN source (VLAN 20 for Host-B, both directions) in one session, GRE-encapsulate the mirrored traffic with a unique erspan-id, and send it to the analyzer's IP address (10.10.10.1) across the MPLS cloud. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — ERSPAN)"
 }

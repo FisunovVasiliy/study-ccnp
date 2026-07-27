@@ -23,5 +23,6 @@
  "reference": "https://www.examtopics.com/discussions/cisco/view/62014-exam-350-601-topic-1-question-13-discussion/",
  "explanation": "The `ip verify unicast source reachable-via rx` command enables Unicast RPF in strict mode. To enable loose mode, administrators can use the any option to enforce the requirement that the source IP address for a packet must appear in the routing table.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The command ip verify unicast source reachable-via rx enables strict Unicast Reverse Path Forwarding (uRPF), which checks that the source IP address of every incoming packet is reachable via the SAME interface on which the packet arrived (a symmetric-routing check based on the FIB), dropping packets whose source could not have legitimately come in that way. This defeats IP spoofing/DoS attacks. Loose mode, enabled instead with the any keyword, only requires the source address to appear anywhere in the routing table regardless of interface, which is needed in asymmetric-routing topologies. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus First-Hop Security / uRPF)"
 }

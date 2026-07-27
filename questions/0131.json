@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus6000/sw/system_management/6x/b_6k_System_Mgmt_Config_6x/b_6k_System_Mgmt_Config_602N11_chapter_01111.pdf",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Capturing packets that are being dropped (rather than normally forwarded) requires a special SPAN session type, \"SPAN-on-DROP,\" configured with \"monitor session ... type SPAN-on-DROP\" plus the usual source and destination interfaces. As with any SPAN session, the destination interface must also be explicitly enabled to receive mirrored traffic using \"switchport monitor\" under that interface — both the session-type configuration and the destination-port monitor enablement are required together to complete the capture. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — SPAN Session Types)"
 }

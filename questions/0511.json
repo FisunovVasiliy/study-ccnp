@@ -24,5 +24,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In an FCoE topology, the FCF's virtual ports facing the FCoE NPV bridge and the FCoE host are both VF_Ports, the FCoE equivalent of a native F port on a fabric switch, because the FCF always presents a fabric-side port to whatever connects to it; the FCoE NPV bridge presents a VNP_Port toward the core, mirroring how a native NP port presents itself as a host to its upstream, and the FCoE host presents a VN_Port, mirroring a native N port, toward the NPV bridge. Matching these virtual port types to their native FC equivalents is the core exam concept. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Port Types)"
 }

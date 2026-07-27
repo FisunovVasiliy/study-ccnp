@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/92x/epld-rn/nxos_nlW_epldRN_924.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "EPLD (Electrically Programmable Logic Device) packages update programmable hardware logic embedded in supervisor, line card, and fabric modules - not the NX-OS software itself - to add hardware-level functionality or fix hardware-related issues; EPLD image versions are tied to (released alongside) specific NX-OS releases, they are disruptive to the module being updated because that module must reload, and they can be installed from the CLI, not only through a GUI tool. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - EPLD Upgrade)"
 }

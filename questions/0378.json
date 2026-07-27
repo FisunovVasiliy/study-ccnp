@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "After a CA-signed keyring is created for HTTPS, Cisco UCS Manager still needs a way to validate that certificate's chain of trust; creating a trusted point (which holds the issuing CA's certificate) lets UCS Manager confirm the keyring's certificate is authoritative before binding it to the HTTPS service. This mirrors the same PKI trust-chain concept used elsewhere (e.g., trusting a remote LDAP server's root CA certificate) to affirm a device's identity for secure communications. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, PKI/trusted points)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Integrating ACI with VMware vSphere through a Distributed Virtual Switch requires a VMM domain association on the EPG, which is what lets APIC push port-group configuration into vCenter and dynamically assign VLAN encapsulation as EPGs are consumed by VMs. A dynamically allocated VLAN pool is required, rather than static, because APIC itself automatically picks and assigns VLAN IDs from the pool as EPGs are deployed to the VMM domain — the defining behavior of a dynamic pool versus a statically pre-assigned one, which is typically paired with physical domains instead. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI VMM Domain Integration and Dynamic VLAN Pools)"
 }

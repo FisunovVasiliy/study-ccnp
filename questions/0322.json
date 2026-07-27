@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The Install Server Firmware stage of Auto Install upgrades the host firmware packages applied to actual servers in the domain — both Cisco UCS B-Series Blade Servers and Cisco UCS C-Series Rack-Mount Servers that are integrated into and managed by the UCS domain — as opposed to the Install Infrastructure Firmware stage, which instead upgrades the fabric interconnects, I/O Modules, and Cisco UCS Manager. Recognizing that this stage is scoped to server hardware (blade and rack) rather than domain infrastructure is what identifies the correct two components. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Upgrades, Install Server Firmware)"
 }

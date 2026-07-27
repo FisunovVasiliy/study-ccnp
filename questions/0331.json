@@ -24,5 +24,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Completing FCoE on a pair of Nexus 9000 FCFs for a server dual-homed via a port channel requires configuring the port-channel interface itself (po12) as the trunk carrying both the data VLAN and the FCoE-mapped VLAN ('switchport trunk allowed vlan 1,100'), and then creating and binding the virtual Fibre Channel interface directly to that same port channel ('interface vfc 1' bound to 'interface po12') so the vfc rides over the aggregated Ethernet link to the server rather than a single physical port. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Implementation)"
 }

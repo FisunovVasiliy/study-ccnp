@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "EIGRP key-chain authentication on NX-OS requires the interface's authentication commands to reference the SAME EIGRP process identifier used elsewhere in the configuration (here, the named process 'Pallini', matching 'router eigrp Pallini'), and to explicitly select MD5 as the authentication algorithm with ip authentication mode eigrp Pallini md5, tying the interface to the key chain already bound in the exhibit. Mismatched process names or missing the md5 keyword would prevent the neighbors from ever forming an authenticated EIGRP adjacency. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Keychain Authentication, applied to NX-OS EIGRP)"
 }

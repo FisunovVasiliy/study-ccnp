@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/system_management/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide_7x_chapter_011100.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Capturing Layer 2/VLAN-based flow data on a switchport requires \"mac packet-classify\" so the interface classifies traffic using MAC-layer fields for NetFlow, plus a \"layer2-switched flow monitor\" applied to the interface (rather than the routed \"ip flow monitor\") since the traffic is being switched within VLAN 10, not routed. Because the exporter/record already define VLAN matching and the collector only accepts captures up to 30 seconds, the interface-level \"flow timeout 30\" must also be set so cache entries expire within that window. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — NetFlow for Layer 2 Traffic)"
 }

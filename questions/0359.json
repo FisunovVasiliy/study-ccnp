@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Meeting all three requirements needs three separate interface knobs: leaving bit-error monitoring active (i.e., not configuring 'switchport ignore bit-errors') so the port is automatically disabled when the bit-error threshold is exceeded, setting 'switchport fcrxbbcredit 255 mode Fx' to grant the maximum buffer-to-buffer credit an F/FL port can hold, and configuring 'switchport rate-mode dedicated' so the interface gets full, non-shared bandwidth for its port group rather than being part of a shared bandwidth pool. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Fibre Channel Interfaces)"
 }

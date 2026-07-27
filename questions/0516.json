@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Mapping the CLI ACL 'deny tcp 91.213.17.6/24 199.213.12.14/16' into its JSON managed-object form means each field has a specific JSON attribute: the second address in a 'deny <proto> <src>/<srclen> <dst>/<dstlen>' statement is the destination, so dstPrefix must be 199.213.12.14 (matching the already-filled dstPrefixLength of 16), while srcPrefixLength must capture the /24 following the source address 91.213.17.6 — and the trailing '}' simply closes the still-open attributes object before the surrounding structure closes. Swapping the source and destination fields is the classic mistake this item is testing. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools) / (Cisco documentation / web research)"
 }

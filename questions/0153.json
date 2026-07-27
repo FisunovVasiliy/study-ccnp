@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_2/configuration/guides/qos/nx-os/qos_bk/qos_pfc.pdf",
  "explanation": "In case of congestion, the long distance ingress ports sends a pause frame to its peer to pause all data transmission on the link for a specified period of time in order to absorb the in-flight packets.\nWhen a pause frame is generated from a switch, it takes time to reach the peer switch. Until the packet reaches to peers all the in-flight packets need to be buffered and should not be dropped.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a switch experiences congestion it sends an IEEE 802.3x/PFC PAUSE frame upstream, but that PAUSE takes time (propagation delay) to reach the sender, and during that interval the sender keeps transmitting whatever was already queued for the link before it received the pause. To avoid dropping traffic, the receiving port must reserve enough ingress buffer to absorb all of these 'in-flight' frames - the ones the far end had already processed and sent before the PAUSE arrived - which is why buffer sizing in a lossless FCoE fabric is directly tied to link distance and PAUSE round-trip time. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - Priority-Based Flow Control)"
 }

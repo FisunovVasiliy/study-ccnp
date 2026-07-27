@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/gui/config/guide/141/UCSM_GUI_Configuration",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A traffic monitoring (SPAN) session in UCS Manager needs both a destination port and one or more sources. When the goal is to capture all LAN traffic that a specific blade server sends and receives on Fabric A, the correct source is the set of vNICs defined in that server's service profile, since vNICs are the logical Ethernet interfaces representing the server's traffic on the fabric. Uplink Ethernet/FCoE ports would capture traffic for the whole fabric rather than one server, and vHBAs carry Fibre Channel, not LAN, traffic. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Network Management, Traffic Monitoring)"
 }

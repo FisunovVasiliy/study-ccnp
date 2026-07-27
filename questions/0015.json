@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "We need to add both IP's for the primary and secondary adjacency server when using a unicast only design.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a site already has a primary and secondary adjacency server (as shown by \"Adjacency Server(s): 20.1.1.1/20.2.1.1\" in the show otv output), every other multihomed edge device that needs unicast-only connectivity into that overlay must reference both addresses in a single \"otv use-adjacency-server <primary-ip> <secondary-ip> unicast-only\" statement. Listing only the primary address would leave the remote device without a backup path if the primary adjacency server becomes unreachable, defeating the purpose of having a secondary server. (Cisco documentation / web research)"
 }

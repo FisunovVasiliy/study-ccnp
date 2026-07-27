@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Turning a Nexus 5000 into an NPV edge switch that forwards FC traffic upstream requires enabling NPV globally ('npv enable', which reboots the switch), then configuring the uplink toward the MDS core as an NP port ('switchport mode NP') and the downstream/server-facing port as an F port ('switchport mode F') - since NPV mode applies switch-wide, each individual interface's role, NP toward the core, F toward end devices, still has to be set explicitly per port. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - NPIV and NPV)"
 }

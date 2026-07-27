@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A local SPAN session needs both a source (with a direction: rx, tx, or both) and a destination configured under \"monitor session\", plus the destination interface must be enabled for monitoring with \"switchport monitor\". To capture only ingress traffic arriving from SW1 and SW2's port channels, both port-channel interfaces are set as sources with \"rx\" direction, and Eth1/4 (facing the analyzer) is set as the destination and marked as a SPAN monitor port. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — SPAN Configuration)"
 }

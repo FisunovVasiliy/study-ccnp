@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "ACI VLAN pools can contain multiple encapsulation blocks, and each block independently carries its own allocation mode — static or dynamic — rather than the pool itself being locked into a single mode. So a pool generally used for dynamic VMM allocation can still contain an additional VLAN block explicitly added as static allocation, without converting the whole pool to static (which would break the existing dynamic VMM behavior) or nesting a static reservation inside the dynamic range. Simply adding a new static allocation range alongside the existing dynamic range within the same VLAN pool is the correct approach. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI VLAN Pools: Static and Dynamic Allocation Blocks)"
 }

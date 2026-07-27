@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Before upgrading infrastructure and blade firmware across multiple UCS servers, Cisco recommends first capturing recovery points by taking both a Full State and an All Configuration backup, so the domain can be rolled back or rebuilt if the upgrade goes wrong. Separately, the fabric interconnects' bootflash needs enough free space to stage the new firmware images during the upgrade — Cisco's guidance specifies verifying at least 15% (not 10%) free bootflash space beforehand to avoid an upgrade failing partway through due to insufficient storage. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Upgrade Pre-Checks)"
 }

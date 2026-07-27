@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Named VSANs are only created when the fabric interconnect is running in Fibre Channel switch mode, and in the CLI this is done under the fc-storage scope (not eth-storage, fc-traffic-mon, or fc-uplink, which are unrelated or end-host-mode scopes). The 'create vsan' command takes the VSAN name, VSAN ID, then FCoE VLAN ID in that order (VSAN10 10 20), and the member FC port is then added under that VSAN object using 'create member-port fcoe <fabric> <slot> <port>' — matching fabric interconnect FC switch mode operation to the fc-storage scope and correct argument order is the key skill tested. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, VSANs in FC Switch Mode)"
 }

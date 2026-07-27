@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "After authenticating (POST to aaaLogin), an APIC REST session is tracked by a session token carried in a cookie named APIC-cookie; to make a subsequent GET succeed in Postman, that API token must be attached in the APIC-cookie, not sent as plain username/password in a header or presented as a certificate — matching the token/cookie-based session model the book describes for aaaLogin. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

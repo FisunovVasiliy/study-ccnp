@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "DCNM's slow-drain analysis workflow is used in a fixed sequence: you launch the Slow Drain Analysis feature, choose the collection duration (a one-time 'Once' run or continuous 'Run Immediately' monitoring), then start (and later stop) the data collection job, and finally review the outcome under Current Jobs/Results - following this order is what lets you diagnose intermittent latency caused by slow-draining devices in the fabric. (Cisco DCNM SAN Insights documentation / web research)"
 }

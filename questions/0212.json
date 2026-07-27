@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-API distinguishes between 'cli_show' (read-only show commands) and 'cli_conf' (configuration commands) request types. This script sends configuration commands ('configure terminal ; feature hsrp') but labels the request type as 'cli_show', so the switch correctly rejects both lines as invalid input — the type field in the request body must be changed to 'cli_conf' for configuration commands to be accepted. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

@@ -23,5 +23,6 @@
  "reference": "https://www.ciscolive.com/c/dam/r/ciscolive/apjc/docs/2016/pdf/DEVNET-1077.pdf",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Chaining CLI commands inside a single cli() call with ' ; ' between them (as in cli(\"conf t ; interface eth1/4 ; shut\")) preserves configuration-mode context across the chained commands, so 'interface eth1/4' correctly carries into 'shut'. Calling cli() separately for each command loses that context between calls, meaning a second cli(\"interface eth1/4\") call after cli(\"conf t\") would not remember it is still in config mode. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

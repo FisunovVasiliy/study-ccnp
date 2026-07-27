@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/products/collateral/servers-unified-computing/ucs-manager/whitepaper_c11-697337.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A vHBA template needs two things to define how a virtual HBA connects into the SAN: a WWPN Pool, which supplies the logical Fibre Channel port address (WWPN) the vHBA will use to log into the fabric, and a Fabric ID, which selects which physical fabric (A or B) — and therefore which physical path — the vHBA's SAN traffic will traverse. MAC addresses and VLAN IDs are Ethernet/vNIC concerns, not FC, and WWNN is a separate node-level identity typically set elsewhere, so WWPN Pool and Fabric ID are the two vHBA-template-specific resources required. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, vHBA Templates)"
 }

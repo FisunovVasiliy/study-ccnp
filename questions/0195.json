@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "When a client wants to perform some type of action on a file on a particular machine, it uses RPC to make a call to the NFS server on that machine. The server accepts the request and performs the action required, then returns a result code and possibly data back to the client, depending on the request. The result code indicates if the action was successful. If it was, the client can assume that whatever it asked to be done was completed. For example, in the case of writing data, the client can assume the data has been successfully written to long-term storage.\nNFS can operate over any transport mechanism that has a valid RPC implementation at the session layer.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NFS is fundamentally an RPC-based protocol: a client wraps its file operation request in an RPC call and sends it to the NFS server, which executes the action and returns a result code plus any requested data, all carried over TCP/IP (with UDP also historically supported in v2/v3). This RPC-over-TCP/IP design lets NFS run over any transport mechanism with a valid RPC implementation, unlike block-level protocols such as Fibre Channel that operate over a dedicated SAN fabric. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

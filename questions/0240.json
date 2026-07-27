@@ -27,5 +27,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "APIC REST calls address a managed object at /api/mo/<dn>.json (the 'mo' endpoint targets a specific object by its distinguished name); to pull every subnet configured under a tenant's DN rather than just the tenant object itself, you add the query-target parameter to scope the query into the object's subtree and a target-subtree-class filter so only fvSubnet children are returned — together these parameters turn a single-object lookup into a filtered subtree search for one specific class of child object. (Cisco documentation / web research)"
 }

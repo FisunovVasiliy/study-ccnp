@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "UCS C-Series servers populated with add-in PCIe cards generate extra heat that the platform's default/balanced fan policy may not adequately dissipate, so Cisco provides a 'high-power' fan configuration profile that increases fan speed/airflow to keep PCIe cards within safe operating temperatures. Choosing balanced, acoustic, or low-power fan policies for a PCIe-equipped server risks inadequate cooling, since those profiles prioritize noise or power savings over the higher thermal headroom PCIe cards require. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS C-Series Server Fan Policies)"
 }

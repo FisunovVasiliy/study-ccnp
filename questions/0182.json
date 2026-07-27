@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In FEX (Fabric Extender) deployments, host ports can either be statically pinned to a specific fabric uplink or the FEX fabric interfaces can be bundled into a single port channel. Bundling all eight fabric uplinks into one port channel lets NX-OS hash host traffic across every uplink and, if one uplink fails, automatically re-hash the affected flows onto the remaining members instead of dropping only the hosts that were statically pinned to that one link. Raising the pinning max-links value or statically reassigning host ports still keeps a rigid 1:1 relationship between a host's traffic and one fabric link, which does not spread load across all eight or minimize disruption on failure. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — Fabric Extender Uplink Connectivity)"
 }

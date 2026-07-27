@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "This scenario combines two independent Cisco MDS security features that together give the requested protection: fabric-binding activate vsan 50 force enables fabric binding on VSAN 50 (using the force option since switches may already be logged in before the fabric-binding database is populated), which maintains a switch-level authorized list via the EFMD protocol and prevents unauthorized switches from joining; and port-security enable / port-security activate vsan 50 turns on port security with auto-learning, which automatically records the WWPNs of devices connecting to a port for the first time and then blocks any other, unrecognized device from that point on. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Fabric Binding and Port Security)"
 }

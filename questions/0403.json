@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The ACI infrastructure VLAN carries all internal fabric control-plane traffic between APICs, leaf switches, and spine switches, so it must never overlap with any VLAN already used elsewhere in the network — the APIC setup script explicitly requires this VLAN ID to be unique and unused anywhere else, unlike a tenant or management VLAN which can freely coexist with other network VLANs. Reusing VLAN 1, the management VLAN, or an already-in-use VLAN would create conflicts with Layer 2 domains outside the fabric, which is why only a genuinely unique VLAN satisfies the requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Infrastructure VLAN Requirements)"
 }

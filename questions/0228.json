@@ -24,5 +24,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "This applet uses a Track object to watch Ethernet4/5's state, so the track configuration itself must reference 'interface ethernet 4/5' (the interface being monitored). When EEM's 'event track 1 state down' fires, its action statements must select the other interface — 'interface ethernet 1/2' — and then issue 'shut' on it, implementing a simple dependent-interface shutdown pattern (track object → EEM track event → conditional action) without any external scripting. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

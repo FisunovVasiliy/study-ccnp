@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus7000/sw/programmability/guide/b_Cisco_Nexus_7000_Series_NX-OS_Programmability_Guide/b_Cisco_Nexus_7000_Series_NX-OS_Programmability_Guide_chapter_01001.pdf",
  "explanation": "Puppet agents cannot run natively on Cisco Nexus 7000 and Cisco Nexus 7700 switches. Instead, they run in a special virtual environment called the Open Agent Container (OAC).",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Puppet agents cannot run natively inside NX-OS on Nexus 7000/7700 platforms, so Cisco provides the Open Agent Container (OAC), a decoupled Linux execution environment (conceptually similar to Guest Shell) where the Puppet agent process actually runs and talks to the switch through its local management interfaces. Without OAC there is nowhere on-box for the third-party Puppet agent software to execute, which is why it is a hard requirement for using Puppet on these platforms. (Cisco documentation / web research)"
 }

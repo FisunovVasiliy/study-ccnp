@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/system_management/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide_7x_chapter_01110.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The applet must match the command engineers actually type today — 'copy running-config startup-config' — not the legacy 'write memory' alias, so the event statement triggers correctly. And because the policy matches a CLI command, it must end with 'action ... event-default' so the original command is still allowed to run after the backup-and-syslog actions execute; without event-default the save would be silently blocked, just as in the EEM CLI-match behavior described in the book. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

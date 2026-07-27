@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An All-Flash Stretched HyperFlex cluster uses SSDs across its nodes instead of spinning HDDs, and flash media delivers substantially higher random I/O performance (IOPS) than HDD-based storage at similar or comparable queue depths, especially important in a stretched (geographically split) cluster where replication and consistency add extra I/O overhead across sites. The benefit of All-Flash over All-HDD stretched deployment is therefore a higher achievable number of IOPS, not a cost or IOPS reduction. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex Stretched Clusters, All-Flash vs. All-HDD)"
 }

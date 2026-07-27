@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS's unified fabric maintains a dedicated 'Fibre Channel' QoS system class, separate from the Ethernet classes (Platinum, Gold, Silver, Bronze, Best Effort), specifically to carry FCoE-encapsulated Fibre Channel traffic from vHBAs with lossless, no-drop handling appropriate for storage protocols. To control QoS behavior for vHBA traffic only — without affecting Ethernet/vNIC traffic — the Fibre Channel system class is the one that must be configured, since the Ethernet-named classes govern LAN traffic instead. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Network Management, QoS System Classes)"
 }

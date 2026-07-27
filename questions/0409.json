@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Downloading firmware to a fabric interconnect while requiring both encryption of the transfer and authentication of the server calls for SCP, since it runs over SSH and inherently provides both an encrypted channel and credential-based server authentication. TFTP and FTP transmit in the clear with no meaningful authentication, and HTTP (without TLS, as offered here) is also unencrypted, leaving SCP as the only protocol among the choices that satisfies both stated requirements. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Updates, File Transfer Protocols)"
 }

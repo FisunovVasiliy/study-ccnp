@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On a multi-access OSPF network, the router with the highest interface priority wins the Designated Router (DR) election, and the valid priority range is 0–255 (0 excludes a router from the election entirely). Since all switches in this topology use the default priority (1) and SW2 must control LSA flooding as the DR, raising SW2's interface priority above the default — to the maximum value of 255 — guarantees it wins the election over its neighbors without having to touch anyone else's configuration. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — OSPF Designated Router Election)"
 }

@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_2/configuration/guides/system_management/nx-os/sysmgmt_cli_6-x/sys.html#37039",
  "explanation": "Saving the Last Core to Bootflash\nThis last core dump is automatically saved to bootflash in the /mnt/pss/ partition before the switchover or reboot occurs. Three minutes after the supervisor module reboots, the saved last core is restored from the flash partition (/mnt/pss) back to its original RAM location. This restoration is a background process and is not visible to the user.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When an MDS supervisor crashes and reboots, NX-OS automatically saves the last core dump to the bootflash partition '/mnt/pss/' just before the reload; a few minutes after the reboot, that saved core is quietly restored in the background from /mnt/pss back into its normal in-memory location, so engineers troubleshooting an unexpected reload should look in /mnt/pss for the most recent core file. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - System Management)"
 }

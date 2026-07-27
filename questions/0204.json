@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/en/US/docs/storage/san_switches/mds9000/sw/rel_3_x/configuration/guides/cli_3_2/trnk.html",
  "explanation": "By default, trunk mode is enabled in all Fibre Channel interfaces. However, trunk mode configuration takes effect only in E-port mode. You can configure trunk mode as on (enabled), off (disabled), or auto (automatic). The default trunk mode is on. The trunk mode configuration at the two ends of an ISL, between two switches, determine the trunking state of the link and the port modes at both ends.\nTable 15-1 Trunk Mode Status Between Switches:\nSwitch1=On, Switch2=Auto or on -> Trunking (EISL), TE port\nSwitch1=Off, Switch2=Auto, on, or off -> No trunking (ISL), E port\nSwitch1=Auto, Switch2=Auto -> No trunking (ISL), E port",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Fibre Channel ISLs only trunk (negotiate as TE ports carrying multiple VSANs over EISL) when at least one end is configured with trunk mode 'on'; per the trunk-mode compatibility table, On+On or On+Auto both result in trunking, while Off on either side, or Auto on both sides, results in a plain (non-trunking) E port ISL carrying only the port VSAN. Since Switch 1 is already Trunk Mode Auto, Switch 2 must be configured as an E port with trunk mode explicitly 'on' for the link to come up as a VSAN trunk. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - VSAN Trunking)"
 }

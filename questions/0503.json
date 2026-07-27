@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "For a SAN (Fibre Channel) traffic monitoring session aimed at a specific blade server's traffic, the correct source is the set of virtual host bus adapters (vHBAs) defined in that server's service profile, mirroring how a LAN monitoring session uses vNICs as its per-server source. Uplink FC ports, VSANs, and storage ports would each capture broader fabric-wide or storage-array-wide traffic rather than isolating the packet loss to the specific blade server being investigated, so vHBAs are the source scoped correctly to that one server. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Traffic Monitoring, SAN Monitoring Sessions)"
 }

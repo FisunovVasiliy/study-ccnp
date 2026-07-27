@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": true,
- "provisional": true
+ "provisional": true,
+ "theory": "Overriding a GOLD diagnostic system policy (names beginning with '__') requires specifying the correct testing-type — 'monitoring' here, since you're adjusting the ongoing runtime failure threshold rather than a one-time bootup test — along with the new consecutive-failure count, and closing with 'action 1 policy-default' so the rest of the original system policy's default actions still execute after your override. The other option combinations use invalid or mismatched testing-type/action keywords for a GOLD policy override. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools) / (Cisco documentation / web research)"
 }

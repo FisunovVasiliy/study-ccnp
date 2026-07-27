@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Replacing a Nexus 7000 chassis can regenerate the vPC domain's default system MAC address (which is derived partly from chassis hardware), causing the vPC/LACP system ID that downstream devices see to change and forcing all vPC-enabled LACP port channels to renegotiate and reinitialize. Manually pinning the vPC system MAC to a fixed, higher value than the peer keeps the LACP system ID stable across a chassis swap, and temporarily disabling auto-recovery on both peers prevents an unwanted automatic vPC role takeover while the replaced peer is still rejoining the domain. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Consistency and Recovery)"
 }

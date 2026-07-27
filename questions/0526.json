@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In ACI, protocol-level settings such as CDP, LLDP, and LACP mode for a specific leaf interface or vPC are defined inside an interface policy group, which bundles individual policies — a CDP policy, an LLDP policy, a port-channel/LACP policy, and so on — and gets applied to the ports connecting to Switch-1 through the interface profile and selector. Simply activating an interface, enabling an existing selector, or configuring an interface profile, which only groups which ports get which policy group, doesn't by itself turn on CDP, LLDP, or LACP, since those protocol behaviors are specifically controlled by the policies bundled inside the interface policy group. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Interface Policy Groups)"
 }

@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To SPAN only ingress (Rx) traffic from fc1/23 to a dedicated analyzer port, the destination interface (fc1/24) must be put into SD (SPAN Destination) port mode, and the source must be explicitly scoped to the ingress direction with 'source interface fc1/23 rx' - omitting the 'rx' qualifier would span both directions, and configuring 'tx' would capture egress traffic instead of the required ingress traffic. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - SPAN)"
 }

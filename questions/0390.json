@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Capturing both ingress and egress traffic between the switch and the storage array requires a SPAN source specified without an rx/tx qualifier (which spans both directions by default) on fc2/1, paired with a destination interface in SD mode (fc4/2), and because only VSAN 10 traffic should be captured, a 'source filter vsan 10' is applied to the session so traffic from other VSANs sharing the physical port is excluded from the mirrored copy. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - SPAN)"
 }

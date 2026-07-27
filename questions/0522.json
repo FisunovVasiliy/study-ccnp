@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco Nexus Dashboard Orchestrator, the evolution of the original Multi-Site Orchestrator, is purpose-built to provide one central management console for policy and connectivity across multiple ACI, and now also NDFC and cloud, fabric sites, coordinating hardware and virtual cloud sites hosting multiple applications from a single pane. Nexus Dashboard itself is the shared platform that hosts Orchestrator and other apps, Insights focuses on assurance and analytics rather than multisite policy orchestration, and Fabric Controller manages individual NX-OS fabrics rather than cross-site ACI policy — making Orchestrator the specific product matching the multisite central-console requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 7 — Nexus Dashboard Orchestrator)"
 }

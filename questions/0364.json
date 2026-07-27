@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco Fabric Services can distribute an application's configuration using different scopes: physical scope reaches every CFS-capable switch in the fabric regardless of VSAN, while logical scope restricts distribution to only the switches that are members of a specific VSAN. Since the requirement here is to distribute NTP configuration only within a particular VSAN's membership, logical scope is the correct choice - CFS has no 'coordinated' or 'uncoordinated' scope, since those terms describe CFS distribution modes, not distribution scopes. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Cisco Fabric Services (CFS))"
 }

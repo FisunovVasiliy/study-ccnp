@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An Attachable Access Entity Profile (AEP) links physical leaf ports to one or more domains, and a single port can carry both routed (L3Out) and bridged (EPG) traffic concurrently only if that port's AEP is associated with both a routed domain (for the L3Out) and a physical domain (for the statically bound EPGs) at the same time. Splitting these across multiple AEPs or interface policy groups on the same port isn't how ACI resolves simultaneous L3Out and EPG traffic on one interface — the single AEP simply needs both domain associations. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Attachable Entity Profiles)"
 }

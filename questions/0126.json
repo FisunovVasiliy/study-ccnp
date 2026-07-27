@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The 'default' host firmware policy in Cisco UCS Manager only applies automatically to service profiles that do not have an explicit host firmware package assigned to them — it acts as a fallback, not a global override. Service profiles that reference their own user-created (non-default) host firmware policy are unaffected by changes to the default policy, since they already point to a different, specific policy object. This distinction between 'default policy used as fallback' versus 'explicitly assigned policy' is what determines the blast radius of a default policy change. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Management, Default Host Firmware Package)"
 }

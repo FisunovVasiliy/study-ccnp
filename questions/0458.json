@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Configuring VLAN tagging for Cisco IMC's own management network on a C-Series server is done under 'scope cimc' > 'scope network,' where 'set vlan-enabled yes' turns tagging on before 'set vlan-id' and 'set vlan-priority' assign the VLAN and its 802.1p priority; there is no 'scope vlan' sub-scope, and switchport-style IOS commands (switchport mode trunk/access) don't apply to the Cisco IMC's own CLI, which is why the network-scope 'set vlan-enabled'/'set vlan-id'/'set vlan-priority' sequence is the correct configuration set. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco IMC Network Configuration, VLAN Tagging)"
 }

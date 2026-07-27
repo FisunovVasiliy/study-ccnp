@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An EPLD upgrade can only be performed on a module while it is online, and it always disrupts that specific module for the duration of its reload - the upgrade cannot proceed on an offline module, and it does not affect other modules in the chassis. This is different from claims that the standby supervisor performs the work or that the process can resume automatically after an interruption: if interrupted, the module must simply be upgraded again. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - EPLD Upgrade)"
 }

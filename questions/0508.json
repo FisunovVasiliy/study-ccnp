@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a vPC pair of FCoE switches (N9K-A/N9K-B) uplinks FCoE traffic, the switches need to be positioned to be a preferred FCF (fcoe fcf-priority 0), rate-shape FC traffic to prevent rate discards when sent traffic momentarily exceeds the access-link speed ('hardware qos fc rate-shaper low'), and treat the downstream port channel as an edge trunk port for spanning tree so it comes up immediately without delay ('spanning-tree port type edge trunk on Po10') - combining FCF preference, hardware-based FC rate shaping, and fast STP edge behavior is what avoids the described rate discards on this unified fabric. (Cisco Nexus 9000 FCoE/vPC Configuration Guide / web research)"
 }

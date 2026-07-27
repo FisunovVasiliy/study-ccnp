@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because the existing built-in roles (like network-admin) grant far more than what is needed just to add an FCoE VLAN, least-privilege security practice calls for creating a custom user-defined role containing only the specific permit rules required (e.g., permit config for VLAN-related features) and assigning that role to the user. This follows the RBAC model where roles are built from granular rules rather than reusing an overly broad predefined role. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Role-Based Access Control, NX-OS RBAC Configuration)"
 }

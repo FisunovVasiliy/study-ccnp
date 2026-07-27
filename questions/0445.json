@@ -25,5 +25,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A dual-stack eBGP session needs a separate neighbor statement and address-family activation for each protocol: the IPv6 neighbor is activated under address-family ipv6 unicast, where the IPv6 prefix is injected with a network statement, while the existing IPv4 neighbor is activated under address-family ipv4 unicast for the IPv4 prefix. Each address family independently carries and advertises only the prefixes of its own protocol, which is why the IPv6 network statement must sit under the IPv6, not the IPv4, address family, referencing the actual /64 prefix and the neighbor's IPv6 address. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — BGP Dual-Stack IPv4/IPv6 Configuration)"
 }

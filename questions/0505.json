@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On a Cisco UCS B-Series server, as with C-Series, the host firmware package excludes local disk firmware from its default management scope, because local disk firmware changes are handled outside the routine host firmware package workflow due to their data-sensitivity. Storage controller, local SD card, and GPU firmware are included in host firmware package scope by default, leaving local disk as the specific component excluded. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Management, Host Firmware Package Default Exclusions)"
 }

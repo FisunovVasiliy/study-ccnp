@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because Ansible needs no agent installed on the managed devices — it just needs SSH or NX-API reachability from the control host — the operations team can run it straight from the Linux jump server they already use, without pushing any new software to 500 devices first. Its YAML playbooks are also readable by a team new to automation, unlike Puppet/Chef/SaltStack, all of which require installing and maintaining agent software on every managed node before any change can be pushed. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

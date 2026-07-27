@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The job's copy command must include 'vrf operations' so the TFTP transfer actually routes out through that VRF, and to run the backup twice a day the schedule uses the periodic delta-style pattern 'time start now repeat 12:00' (an interval repeating every 12 hours equals two runs per day), rather than a single daily entry that would only fire once. This matches the book's job/schedule split, where the job defines what command to run and the schedule defines the timetable. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

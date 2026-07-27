@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HyperFlex's independent resource scaling capability is what lets an administrator add compute-only nodes (extra CPU/memory without extra storage) or storage-only nodes (extra capacity without extra compute) to a running cluster as workload needs shift, rather than being forced to scale compute and storage together in lockstep. Unified management, stretch clustering, and in-cluster synchronous replication describe other HyperFlex capabilities (single-pane management, geographically split clusters, and data protection) unrelated to this granular node-type expansion. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex Independent Resource Scaling)"
 }

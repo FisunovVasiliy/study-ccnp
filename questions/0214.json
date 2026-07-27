@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "POAP only auto-triggers under two conditions: the switch has no startup configuration present, and it is going through its very first power-up/setup sequence — that combination is literally the entry criteria the switch checks before entering POAP mode. If a startup configuration already exists, or the device isn't in that initial bootup process, POAP will not start regardless of licensing or bootflash directory contents. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

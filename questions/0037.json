@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco Fabric Services (CFS) is a peer-to-peer infrastructure Cisco MDS/Nexus NX-OS uses to automatically synchronize configuration (VSAN, zoning, device-alias, NTP, etc.) across every switch in a fabric, removing the need for manual per-switch configuration. When CFS distributes over IP (CFSoIP) rather than over Fibre Channel ISLs, it uses IPv4 multicast (239.255.70.83, UDP port 'cfs') so that any CFS-capable switch on the management network can dynamically discover its peers without static configuration, which is exactly what the ethanalyzer capture shows. This differs from CFS over FC, which piggybacks CFS frames as a proprietary SW_ILS over the fabric itself. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Cisco Fabric Services (CFS))"
 }

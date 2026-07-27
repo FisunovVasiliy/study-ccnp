@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/programmability/guide/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x/Guest_Shell.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Just like distributing a custom Guest Shell rootfs to multiple switches generally, the correct sequence is to customize the rootfs, export it as a package, store it centrally on a file server, import it to the target switches, and then install it across those devices simultaneously — a standard build-once, stage-centrally, deploy-fleet-wide workflow that avoids manually rebuilding the environment on each switch. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

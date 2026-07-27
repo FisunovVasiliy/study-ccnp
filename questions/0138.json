@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS Manager's RBAC model separates what a user can do (privileges/roles) from where they can do it (locale/organization scope). Restricting an account so it can only manage a specific sub-organization — and cannot touch root-level policies that would impact every service profile inheriting from root — requires assigning that user to a locale bound to the appropriate organization, rather than changing their role's privilege level or giving them a broader built-in role like network-operator, neither of which limits scope to an organization. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Manager Administration, Locales and Organizational Permissions)"
 }

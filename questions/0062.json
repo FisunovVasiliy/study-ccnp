@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "\"default-information originate\" injects a default route into OSPF only if the originating router already has a default route of its own in its routing table (learned dynamically, e.g., from an upstream provider), which matches the requirement that the Internet exit point be advertised only when a dynamic default exists. Adding the \"always\" keyword would instead advertise a default route unconditionally, even if the router had none of its own — which would violate the stated requirement rather than satisfy it. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — OSPF Default Route Origination)"
 }

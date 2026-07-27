@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus7000/sw/upgrade/guide/cisco_nexus7000_software_upgrade_and_downgrade_guide_8x.html",
  "explanation": "Starting with Cisco NX-OS Release 5.2(1), multiple linecards can be simultaneously upgraded, and the infrastructure support is available. This decreases the ISSU time when compared with an ISSU upgrade that is done serially (one card at a time).\nTo start a parallel upgrade, use the following command: install all kickstart image system image parallel.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Traditionally, ISSU on modular Nexus 7000 chassis upgraded one I/O module at a time (serially), which adds up when there are many line cards. Starting with a later NX-OS release, Cisco added support for upgrading multiple line cards simultaneously using the \"parallel\" keyword appended to the standard \"install all kickstart <image> system <image>\" command, which is what reduces the total ISSU time on a dual-supervisor, multi-module chassis. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Parallel ISSU)"
 }

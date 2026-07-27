@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An ERSPAN destination session terminates the GRE-encapsulated mirrored traffic and replays the original frames out a local interface toward the analyzer; it must be told which ERSPAN source IP to expect the tunnel from, using source ip to match the origin address the source switch used, and which local interface to forward the decapsulated copy out, using destination interface, matching the erspan-id that ties the destination session to the specific source session on the remote switch. Using a VLAN or a routed interface as the source of a destination session, or sending decapsulated traffic back out to a remote IP, doesn't match how an ERSPAN destination session is actually built. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — ERSPAN Destination Session Configuration)"
 }

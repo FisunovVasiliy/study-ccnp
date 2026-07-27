@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Control Plane Policing is built from three MQC building blocks: an ACL that classifies the traffic of interest (here, HTTP/RDP/ICMP from the trusted subnet toward the switch's own IP), a class-map that references that ACL via access-group name, and a policy-map that applies a policer to that class - police cir 54000 pps bc 128 packets sets the committed rate and burst size, and conform transmit violate drop explicitly forwards traffic within the rate while dropping anything that exceeds it, protecting the CPU from excess control-plane-destined traffic while still allowing legitimate flows through. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus Control Plane Policing, MQC configuration)"
 }

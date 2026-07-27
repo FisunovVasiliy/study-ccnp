@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "OpenStack OpFlex agents communicate with the APIC over the ACI infrastructure (infra) VLAN, the same private VLAN the fabric already uses internally between leaf switches and APICs. Extending that VLAN to a directly attached compute node requires enabling it on the Attachable Access Entity Profile (AEP) — the object that actually maps VLAN pools and infra connectivity onto physical leaf ports — so the leaf port facing the compute node tags and forwards infra-VLAN traffic. A VMM or physical domain association controls tenant-facing EPG VLANs instead, and an interface profile alone doesn't govern infra VLAN extension, which is why the AEP is the correct place to enable it. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — Attachable Access Entity Profile and OpFlex Connectivity)"
 }

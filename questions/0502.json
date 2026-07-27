@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Before downgrading NX-OS to an older image, show incompatibility-all system <image> checks the switch's current configuration and enabled features against what the target image actually supports, flagging anything incompatible with the older software that would need to be disabled or would be automatically removed. This is a distinct pre-downgrade sanity check from show install all impact, which specifically evaluates whether a change can be applied as an ISSU versus a disruptive reload — running the incompatibility check before any downgrade or major version change is standard practice to avoid losing configuration unexpectedly or hitting an unsupported feature after the image change. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Pre-Upgrade/Downgrade Compatibility Checks)"
 }

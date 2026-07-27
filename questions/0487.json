@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "PIM sparse mode builds shared and source trees only in response to explicit receiver joins, so a video feed is never flooded to parts of the network with no interested clients, satisfying the requirement that shared trees not propagate traffic if no clients request it — unlike dense mode, which floods by default. For the rendezvous point itself to be discovered and elected automatically rather than statically configured on every router, Cisco's Bootstrap Router mechanism is used: routers configured as bsr-candidate advertise themselves to become the bootstrap router that distributes RP-set information fabric-wide, while routers configured as rp-candidate advertise themselves as eligible RPs, letting every router independently learn and agree on the active RP without manual rp-address configuration on each device. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — PIM Sparse Mode and BSR-Based RP Discovery)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The same JSON syntax cues apply here as in any NX-API response: curly braces, quoted key/value pairs, and no angle-bracket tags identify this 'show hostname' output as JSON rather than XML, YAML, or SOAP. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

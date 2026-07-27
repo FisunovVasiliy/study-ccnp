@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NETCONF (RFC 6241) is the IETF standard network-management protocol built to run over a secure transport such as SSH (and via RESTCONF, TLS/HTTPS), using human-readable, XML-encoded operations to configure devices — matching every listed requirement (industry standard, secure transport, human-readable, XML/JSON-capable). Ansible is a tool rather than a management-protocol standard, plain REST APIs aren't uniformly XML-based across vendors, and SNMP is neither inherently secure nor XML/JSON structured. (Cisco documentation / web research)"
 }

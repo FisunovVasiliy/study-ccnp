@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The Cisco UCS Infrastructure ('A') software bundle upgrades the components that make up the domain's shared infrastructure plane — the fabric interconnects, Cisco UCS Manager, and the I/O modules — rather than server-resident components like the adapter, BIOS, or board controller, which are instead delivered through the B-Series or C-Series server software bundles. Of the options listed, the I/O module is the one that belongs to the infrastructure ('A') bundle. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Bundles, Infrastructure Software Bundle)"
 }

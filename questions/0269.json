@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Just as on other Nexus platforms, the command ip verify unicast source reachable-via rx applied under an interface enables strict Unicast RPF, requiring that an incoming packet's source address be reachable specifically through the receiving interface (a symmetric-routing check), which blocks spoofed-source traffic. The 'reachable-via any' or bare 'any' variants instead configure loose mode, which only checks that the source exists anywhere in the routing table. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus First-Hop Security / uRPF)"
 }

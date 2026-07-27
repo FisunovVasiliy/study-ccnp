@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "See below for an example:\nnxos9kv# python\nPython 2.7.11 (default, Feb 26 2018, 03:34:16)\n[GCC 4.6.3] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import time\n>>> import cli\n>>> date = time.strftime('%Y%m%d')\n>>> file = ('fusion-config_') + date\n>>> print(file)\nfusion-config_20210329\n>>> print('copy running-config ftp://10.183.249.182/FusionSW/' + file) copy running-config ftp://10.183.249.182/FusionSW/fusion-config_20210329",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In Python, string literals are concatenated directly with the '+' operator; because ('fusion-config_') is already a string, no additional str() casting, extra parentheses, or quoting is needed — 'file = (\"fusion-config_\") + date' simply appends the date string produced by time.strftime() to build a filename like 'fusion-config_20260726'. Wrapping the concatenation in an unnecessary str.() call or mismatched quotes/parentheses would raise a syntax or type error. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

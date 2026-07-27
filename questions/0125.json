@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/4-0/b_UCSM_CLI_Firmware_Management_Guide_4-0/b_UCSM_CLI_Firmware_Management_Guide_4-0_chapter_011.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco UCS fabric interconnects keep a backup firmware image specifically to guard against a bad activation: if a newly activated firmware image fails to boot the endpoint, the system automatically falls back to the previous, known-good backup image version rather than defaulting to a kickstart or GOLD (factory recovery) image. This automatic fallback behavior is what protects the fabric interconnect from being left in an unbootable state after a failed firmware activation. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Updates, Fabric Interconnect Firmware)"
 }

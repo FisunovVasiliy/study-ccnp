@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Manual port-security database configuration scopes entries per VSAN with port-security database vsan 10, then binds a specific device pWWN to a single interface (interface san-port-channel 2) while a broader any-wwn interface fc1/1-3 entry allows any device through that separate port range, exactly matching the stated per-interface restrictions; committing with port-security commit vsan 10 saves the database. Because auto-learning is off by default until explicitly enabled, this manual method inherently satisfies the 'auto-learning must be disabled' requirement without extra commands. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Port Security, Manual Database Configuration)"
 }

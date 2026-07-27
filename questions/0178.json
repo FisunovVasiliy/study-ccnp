@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/5_2/upgrade/guides/nx-os/upgrade.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Before starting any MDS software upgrade, best practice is to validate the impact and protect against failure: running 'show install all impact' previews exactly which modules will be affected and whether the upgrade will be disruptive or nondisruptive, and backing up the running configuration ensures you can recover the switch's state if anything goes wrong during the install. Neither disabling CFS nor forcing a particular supervisor to be active is a required or meaningful pre-upgrade step. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - Software Upgrade)"
 }

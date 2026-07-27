@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The vPC peer link is always kept in a forwarding state specifically because it must carry Layer 2 multicast/IGMP-snooping state and act as a path for orphan ports — single-homed, non-vPC ports — to still receive multicast traffic even if their local vPC peer isn't the one that originally received it from the source. Multicast traffic entering one vPC peer is replicated both to local receiver ports that joined the group and across the peer link, ensuring orphan-port receivers connected to the other switch aren't left without the stream during forwarding-path changes or failures. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Peer Link Multicast Forwarding and Orphan Ports)"
 }

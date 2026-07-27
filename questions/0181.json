@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/US/docs/storage/san_switches/mds9000/sw/rel_3_x/configuration/guides/cli_3_4_x/cfs.html#wp1306478",
  "explanation": "",
  "needsAnswer": true,
- "provisional": true
+ "provisional": true,
+ "theory": "Cisco Fabric Services (CFS) is the peer-to-peer infrastructure NX-OS uses to automatically synchronize application configuration across switches in a fabric, and its distribution scope can be scoped to a defined \"CFS region\" so that only switches in that region share a given application's config. Since user roles/AAA need to synchronize within DC1 and NTP/Call Home need to synchronize within DC2, each site defines its own CFS region (e.g., region 1 for DC1, region 2 for DC2) and lists only the CFS-enabled applications (roles/aaa vs. ntp/callhome) that should be distributed within that region. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 — Cisco Fabric Services)"
 }

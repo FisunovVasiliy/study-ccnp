@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To use all four links between a chassis's I/O module and the fabric interconnects as an aggregated bundle that survives an individual link failure, the chassis discovery/connectivity behavior must be set to Port Channel mode via the Link Group Preference (rather than the default discrete/pinned-links mode). Port Channel mode bundles all discovered IOM-to-FI links into a single logical channel, so traffic redistributes across the remaining links automatically if one physical link fails, whereas discrete link pinning would simply drop the server traffic pinned to a failed individual link. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Chassis/IOM Connectivity, Link Group Preference)"
 }

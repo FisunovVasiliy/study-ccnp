@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a device is single-homed to only one member of a vPC pair, it becomes an orphan port, and losing the vPC peer link doesn't automatically bring that orphan port down — so traffic can keep arriving at a switch that has lost synchronization with its vPC peer and can no longer forward it correctly. The vPC orphan-port suspend feature is designed to shut down the orphan port when the peer link fails, forcing the firewall to fail over to its still-healthy connection on the other switch instead of black-holing traffic; peer-switch and auto-recovery address different failure scenarios (shared STP root identity and peer-link/keepalive recovery), not orphan-port traffic loss. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Orphan Ports and Failure Handling)"
 }

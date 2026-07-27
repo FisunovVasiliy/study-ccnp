@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS AAA supports separate method lists per access type, so console login authentication can be bound to one server group (aaa authentication login console group RAD1) while the default method list (covering SSH/remote access) uses a different group (RAD2). Because the two RADIUS servers are reachable through different Layer 3 interfaces (the out-of-band mgmt0 VRF versus the in-band VLAN 22 SVI), each group's RADIUS traffic must also be explicitly sourced from the matching interface so replies route back correctly, rather than relying on a single shared source interface for both. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - AAA Service Configuration Options, per-service method lists)"
 }

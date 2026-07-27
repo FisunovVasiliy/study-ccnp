@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco's UCS Python SDK (ucsmsdk) is the library that lets any Python application — including a Django web app — log into UCS Manager's Management Information Tree via its XML API and perform create/modify/delete operations (add_mo, set_mo, query_dn, etc.) on managed objects such as VLANs. DNA Center API and AppDynamics don't manage UCS Manager objects at all, and the PowerTool Suite is a PowerShell library, not something a Python/Django application can import directly. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

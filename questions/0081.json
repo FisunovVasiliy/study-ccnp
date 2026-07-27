@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Disaster-recovery requirements map to specific backup settings: RPO drives how often backups run (a 48-hour RPO needs at most a daily schedule, since a weekly or biweekly job could lose up to a week of changes), while a low RTO and an encrypted-transfer requirement point to SCP, which combines SSH-based encryption with authenticated, reliable TCP transfer (unlike FTP/TFTP, which are unencrypted, or plain scheduling gaps that don't meet a 4-hour recovery window). Choosing Protocol SCP with a Daily schedule is the only combination that satisfies both the RPO and the encryption requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Backup and Export Policies)"
 }

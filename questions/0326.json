@@ -24,5 +24,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Recovering a fabric interconnect that has no working bootable image on its bootflash follows a strict bootstrap sequence: first the kickstart image must be booted over the network via TFTP (since there's nothing usable locally to boot from), then basic management interfaces are configured so the FI can reach a file server, then the main system image files are copied down over that now-working management connection, and finally those files are installed to complete the recovery. Each step depends on the one before it, which is why the order (boot kickstart via TFTP → configure management interfaces → copy main image → install) cannot be reshuffled. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Fabric Interconnect Recovery Procedures)"
 }

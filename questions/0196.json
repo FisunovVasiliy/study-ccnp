@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "We must use mode f, because in a switch, on a port which connects to a node, we configure an F port (fabric port). On the endhost (array/storage) side, this port is an N (node) port.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A storage array attaching over FCoE to a single switch (single-homed) needs a vfc interface in F port mode, since the switch's port that connects to any end-node - host or array - is a fabric/F port, mirroring native FC where the array is the N port and the switch is the F port; that vfc must be bound to the physical Ethernet interface, with the VLAN created and mapped to the VSAN ('fcoe vsan') and the vfc statically added to that VSAN in the VSAN database. Getting the port mode wrong (e.g., leaving it in E mode, meant for switch-to-switch ISLs) or omitting the VLAN-to-VSAN mapping are the classic mistakes this scenario tests. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Implementation)"
 }

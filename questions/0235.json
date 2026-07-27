@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-data-center-network-manager/index.html",
  "explanation": "Cisco Nexus Dashboard Fabric Controller (NDFC) (formerly DCNM) is the network management platform for all NX-OS enabled deployments. It spans new fabric architectures, storage network deployments, and IP Fabric for Media.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco Data Center Network Manager (DCNM), now rebranded as Nexus Dashboard Fabric Controller (NDFC), is the single UI-based platform that spans both NX-OS LAN fabrics — including standalone VXLAN BGP EVPN deployments — and SAN fabrics built on Cisco MDS 9000 switches. UCS Director and Intersight focus on compute/infrastructure orchestration and Tetration targets workload visibility, so none of them cover fabric-level LAN and MDS SAN management the way NDFC/DCNM does, making it the only option that satisfies both stated requirements. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 7 — Nexus Dashboard Fabric Controller)"
 }

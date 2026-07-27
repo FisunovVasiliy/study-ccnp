@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Configuring a common, non-default vPC system-priority (lower than the default 32768 access-switch priority) on both Nexus 7000 vPC peers, combined with the shared vPC system MAC they already present, makes the two chassis appear to downstream devices as a single logical LACP system with a numerically better (lower) priority value. Since LACP prefers the lower system priority when deciding which side controls port selection, giving both N7Ks the same low system-priority (4000, well below the downstream switches' default 32768) ensures the vPC pair is elected as the LACP primary/controlling system. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC and LACP)"
 }

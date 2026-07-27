@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A SPAN session on a Cisco Nexus/MDS switch needs both a defined session (source and destination interfaces, direction) and the destination interface must actually be placed in SD (SPAN Destination) port mode - simply naming it as a destination under the span session isn't enough. In this Fibre Channel SPAN scenario, interface fc2/2 must have 'switchport mode SD' configured and, because SD ports support only fixed lower speeds (no auto-negotiation), its speed must also be explicitly set to match, which is why both the switchport mode SD and switchport speed commands are required to complete the session. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - SPAN)"
 }

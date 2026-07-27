@@ -28,5 +28,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_2/configuration/guides/fabric/nx-os/nx_os_fabric/zone.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Configuring and activating a zone on an MDS switch follows a fixed dependency order: first create the zone and add its member(s) ('zone name ... vsan', then 'member pwwn ...'), then create a zone set and add the zone to it ('zoneset name ...', then 'member <zone>'), then activate the zone set in the VSAN ('zoneset activate name ... vsan ...') so it becomes the enforced active zone set, and finally save the running configuration to startup so the zoning survives a reload. Skipping or reordering these steps leaves the fabric either unprotected or vulnerable to losing the zoning after a reboot. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Zoning)"
 }

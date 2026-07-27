@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In the Cisco UCS Manager CLI, system-wide administrative services such as DNS, NTP, and the default time zone live under the 'system/services' scope, not directly under 'system' or under a fabric-interconnect scope (which configures per-FI identity, not shared services). To add a DNS server you must therefore descend scope system > scope services before issuing 'create dns <ip>' and committing the buffer. Options that try to set the DNS address as the fabric interconnect 'name' or skip the services sub-scope target the wrong object and will not configure name resolution for the cluster. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Initial Setup and UCS Manager)"
 }

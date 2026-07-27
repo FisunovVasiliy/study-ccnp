@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A vfc interface can be bound to its Ethernet interface and allow the correct VSAN on its trunk, but FCoE traffic still won't flow unless the underlying VLAN carrying that traffic has actually been translated/mapped to the corresponding VSAN - the 'show vlan fcoe' output confirms VLANs 10 and 300 are already mapped, but VLAN 100 (needed for VSAN 100 on vfc100) is missing, so the fix is mapping the FCoE VLAN to VSAN 100 (via 'fcoe vsan 100' under that VLAN), not touching the Ethernet or vfc interface configuration, which is already correct. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE VLAN-VSAN Mapping)"
 }

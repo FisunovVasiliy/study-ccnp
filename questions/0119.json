@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When associating a service profile to a server that is not currently available/discovered, Cisco UCS Manager offers a 'custom server' (specific server) association option that lets you point the profile at an exact chassis/slot location — e.g., chassis 1 slot 1 — even though that physical server is not yet present or reachable. This differs from associating against a server pool (which picks any qualifying server dynamically) or a generic 'server' selection, making custom/specific server assignment the right choice when a precise future physical location must be pinned. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Service Profile Association)"
 }

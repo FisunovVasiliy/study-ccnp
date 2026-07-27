@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A single, multipurpose converged Ethernet link between a Nexus and MDS switch that must carry both LAN and SAN traffic, discard MAC addresses foreign to the fabric, and preserve QoS markings is exactly what FCoE provides: configuring a distinct 'fcoe fcmap', so only FPMAs belonging to this fabric are accepted and any others are discarded, and creating and binding a vfc interface to the physical Ethernet interface is the FCoE-specific configuration needed - FCIP (a WAN/IP-based FC tunneling technology) and plain FC trunking don't provide a single unified Ethernet transport for both LAN and SAN traffic. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Addressing / FC-MAP)"
 }

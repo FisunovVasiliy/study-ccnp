@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Without \"peer-switch,\" each vPC peer advertises its own individual bridge ID in BPDUs sent out non-vPC ports, so a downstream non-vPC switch dual-homed (via separate links) to both peers can see two different STP bridge IDs from what should look like one logical upstream switch. Enabling \"peer-switch\" makes both vPC peers advertise the same vPC-system bridge ID consistently on both vPC and non-vPC ports, so any downstream device — vPC-attached or not — sees a single, consistent STP root/bridge ID from the pair. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC Peer-Switch)"
 }

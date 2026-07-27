@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/CLI-User-Guides/Admin-Management/3-1/b_Cisco_UCS_Manager_CLI_Administration_Mgmt_Guide_3_1/b_Cisco_UCS_Manager_CLI_Administration_Mgmt_Guide_3_1_chapter_0110.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Hardening Cisco UCS Manager's HTTPS management interface requires binding a keyring (which supplies the certificate/key material) to the HTTPS service, restricting the negotiated cipher suite to a high-security set with cipher-suite-mode high, and pinning the protocol version with set https ssl-protocol tls1-2 - note UCS Manager CLI uses the keyword 'ssl-protocol', not 'tls-protocol', for this setting. Together these commands prevent weak ciphers or older TLS/SSL versions from being negotiated for management sessions. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, HTTPS hardening)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "During a fabric interconnect's initial setup wizard, choosing 'restore from backup' specifically expects a Full State backup file, because that is the only backup type that contains a complete binary snapshot capable of rebuilding the entire fabric interconnect configuration and runtime state from scratch (and it can only be restored to the same UCS Manager software version it was taken from). The XML-based configuration backups (system/logical/all) are meant for later import into an already-running system, not for this ground-up restore path. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Full State Restore)"
 }

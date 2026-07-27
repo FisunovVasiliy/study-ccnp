@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A scalable monitoring architecture that needs continuous, near-real-time visibility fits the streaming telemetry push model best: the device streams operational data out to a subscribed collector as changes occur, at a configurable cadence, instead of requiring a management station to repeatedly poll every device (as CLI scripting, syslog, and SNMPv3 polling all do). This is why streaming telemetry, not SNMP or CLI scraping, is the technology built for that requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Streaming Telemetry)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Once IP SLA and a track object are already monitoring reachability to DC-RTR-1, EEM is the component that reacts to a change in that track object's state; an applet with 'event track 5 state down' fires the moment the tracked object transitions down, and an action such as 'cli command source routerdown.py' then sources/runs the Python alert script. The Scheduler and the other pseudo-syntax options aren't valid ways to bind an EEM/track event directly to invoking a script. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools) / (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

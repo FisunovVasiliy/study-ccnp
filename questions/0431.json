@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Terraform resource references use the pattern resource_type.<Terraform resource label>.id, where the label is whatever name was assigned in the resource block's HCL declaration — here 'test_ap' — not the ACI object's 'name' attribute value ('PROD_App') as seen on the APIC side. Terraform's internal dependency graph is built from these label-based references, so application_profile_dn must be aci_application_profile.test_ap.id to correctly point at the already-declared application profile resource. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

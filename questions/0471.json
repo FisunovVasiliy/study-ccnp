@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because the VLAN itself must persist and only its membership on one specific switch port should be removed, the script has to first retrieve the VLAN object (Get-UcsVlan), then retrieve the specific member-port object attached to it via Get-UcsVlanMemberPort (filtered by switch/slot/port), and only then pipe that specific object into Remove-UcsVlanMemberPort. Calling Remove-UcsVlan would delete the VLAN entirely, and skipping the Get-UcsVlanMemberPort step leaves no specific port-membership object to target for removal. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

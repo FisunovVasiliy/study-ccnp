@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "\"show install all impact epld <image>\" is a non-disruptive, simulated check: it compares the running EPLD versions against the versions contained in the specified image and reports the compatibility and expected impact (disruptive or not, per module) of actually performing the EPLD upgrade — without making any changes yet. It is the pre-upgrade planning step, distinct from the command that actually performs the disruptive EPLD upgrade itself. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — EPLD Upgrade Impact)"
 }

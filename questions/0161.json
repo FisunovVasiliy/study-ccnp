@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NPV (N Port Virtualization) lets an edge switch relay FLOGIs from its connected hosts upstream instead of consuming its own domain ID; every one of those relayed logins arrives at the upstream 'core' switch over a single NP uplink and must be translated into multiple, independently addressable FCIDs on that link. That translation is exactly what NPIV (N Port ID Virtualization) provides, so the upstream/core switch must have NPIV enabled for an NPV edge switch to function correctly against it. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - NPIV and NPV)"
 }

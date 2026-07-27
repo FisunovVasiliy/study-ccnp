@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/4-0/b_UCSM_CLI_Firmware_Management_Guide_4-0/b_UCSM_CLI_Firmware_Management_Guide_4-0_chapter_01.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "New Cisco IMC (server management controller) software is delivered and applied to a server through its host firmware package, which is the policy in a service profile that governs firmware for server-resident components such as BIOS, CIMC, adapters, and board controllers. There is no separate 'Cisco IMC software policy' or 'BIOS software policy' object in UCS Manager — the host firmware package is the single mechanism used to standardize and push CIMC firmware to managed servers. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Management, Host Firmware Packages)"
 }

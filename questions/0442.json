@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The benefit of Nexus Dashboard's Single Sign-On is that once a user authenticates, they can move seamlessly between the different hosted services running on the shared platform — Insights, Orchestrator, Fabric Controller, individual APIC/site GUIs — without re-authenticating for each one, unifying what would otherwise be several separate logins into a single session. It is not itself a notification mechanism, a multifactor-authentication hardening feature, or a single-pane-of-glass operations dashboard, since those are separate Nexus Dashboard capabilities. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 7 — Nexus Dashboard Single Sign-On)"
 }

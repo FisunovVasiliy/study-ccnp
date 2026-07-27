@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Combining port-security enable / port-security activate vsan 50 with fabric-binding activate vsan 50 force addresses both stated needs: port security's auto-learning captures the WWPNs of devices connecting to a port for the first time and blocks unrecognized devices thereafter, while fabric binding maintains a switch-level authorized list (verified via EFMD) to keep unauthorized switches from joining the fabric. The force keyword is typically needed the first time fabric binding is activated because already-logged-in switches may conflict with an as-yet-unpopulated fabric-binding database. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Fabric Binding and Port Security)"
 }

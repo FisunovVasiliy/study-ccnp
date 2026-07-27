@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/1-0-2/b_CLI_Config_Guide_1-0-2/CLI_Config_Guide_1-0-2_chapter29.pdf",
  "explanation": "TFTP is the only protocol that uses UDP port 69. Logical State backup includes all logical configuration contains settings such as service profiles, VLANs, VSANs, pools, and policies.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Matching requirements to backup settings: transport 'over UDP' points specifically to TFTP (the only one of the offered protocols that runs over UDP, on port 69), and 'human-readable' plus 'VLANs, VSANs, and other policies' points to a Logical Configuration backup, since it is an XML file (readable) scoped to logical objects like service profiles, VLANs, VSANs, pools, and policies — as opposed to Full State (binary) or System Configuration (users/roles, not VLANs/VSANs). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Backup Types and Protocols)"
 }

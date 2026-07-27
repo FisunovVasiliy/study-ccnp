@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A boot policy for booting from a Fibre Channel array LUN needs both a local boot device to start the media (Local CD/DVD, e.g., for OS install media) and a SAN Boot entry, and that SAN Boot entry must be paired with an explicit boot target defined by the storage array's WWPN so the server's vHBA knows which target/LUN to boot from. Options describing USB/LAN boot, iSCSI vNICs with a local LUN, or disabling name enforcement do not establish a Fibre Channel SAN boot path, which is why adding Local CD/DVD + SAN Boot and configuring a SAN Boot Target with a WWPN are the two required steps. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, SAN Boot Policy Configuration)"
 }

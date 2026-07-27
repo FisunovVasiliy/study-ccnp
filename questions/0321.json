@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NX-OS's configuration-checkpoint feature snapshots the running configuration to a named file with the checkpoint command, which is why checkpoint file before_maintenance creates the pre-maintenance baseline. Restoring that snapshot only when the operation completes with zero errors uses the atomic rollback trigger type — one of three modes (atomic, best-effort, stop-at-first-failure) — which treats the whole rollback as one all-or-nothing transaction and aborts entirely if any single command fails to reapply, rather than leaving a partially restored configuration. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Configuration Checkpoint and Rollback)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The NVE (Network Virtualization Edge) interface is what actually instantiates the VTEP function; it must be administratively enabled with no shutdown (a shut NVE interface never encapsulates or decapsulates VXLAN traffic), sourced from the loopback already running PIM sparse-mode and reachable via the underlay routing protocol, and it must map the VLAN's vn-segment to a specific VNI member along with an underlay multicast group so BUM traffic for that VNI is replicated via PIM in the transport network. Omitting the multicast-group would leave the VTEP with no way to flood traffic to other VTEPs sharing that VNI, and sourcing from a VLAN SVI instead of the loopback would tie VTEP reachability to a single VLAN's spanning tree state rather than a stable routed loopback. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN NVE Interface and Multicast Underlay)"
 }

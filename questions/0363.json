@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Creating a device alias requires entering global configuration mode first ('configure terminal'), then the device-alias database submode, defining the name-to-pWWN mapping using the pWWN actually seen in the FLOGI table for the intended port (fc1/9 = 50:00:14:42:d0:0c:f5:20), and finally issuing 'device-alias commit' so the CFS infrastructure distributes and activates the new alias fabric-wide - simply exiting the database submode leaves the change pending and undistributed rather than committed. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Device Alias)"
 }

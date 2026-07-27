@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "OTV edge devices use the join interface to reach the Layer 3 transport network and build the overlay's control-plane multicast tree, and because the OTV control-group relies on source-specific multicast-style joins, the join interface needs IGMP version 3 (which adds source filtering to membership reports) rather than the default IGMPv2. Both edge devices sit on the same transport subnet, so their join interfaces simply need unique host addresses within that shared /24 range so each can independently join the OTV control-group and exchange MAC reachability information across the overlay. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — OTV Join Interface and Control-Plane Configuration)"
 }

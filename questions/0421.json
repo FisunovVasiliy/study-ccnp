@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Migrating a C-Series server from Cisco SingleConnect/FEX-based integration to direct-connect integration means physically re-cabling the server from the fabric extender to server ports on the fabric interconnect itself (not appliance ports, which are for storage devices, not compute servers). Because the Rack Server Discovery Policy is set to Immediate and the Rack Management Connection Policy to Auto-Acknowledge, simply reacknowledging the server after re-cabling is enough to trigger UCS Manager to rediscover it under the new direct-connect topology, without needing to reset the Cisco IMC separately. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS C-Series Integration Modes)"
 }

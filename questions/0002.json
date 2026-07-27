@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HSRP version 2 draws its virtual MAC addresses from the reserved range 0000.0C9F.F000–FFFF, with the last two hex digits encoding the HSRP group number. Group 10 in decimal is 0A in hexadecimal, which produces 0000.0C9F.F00A. HSRPv1, by contrast, used the smaller 0000.0C07.ACxy range and supported only groups 0–255, which is why v2 was introduced for larger group scale. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — HSRP)"
 }

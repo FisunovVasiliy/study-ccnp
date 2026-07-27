@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "ARP suppression for VXLAN EVPN is configured per-VNI directly under the NVE (VTEP) interface's member vni submode; suppress-arp there tells the VTEP to intercept ARP requests for that specific VNI and answer them locally from its EVPN-learned host table whenever possible, rather than flooding the request across the fabric. Proxy-ARP, under either the NVE or the SVI, is a different mechanism used for routing between subnets rather than suppressing intra-subnet ARP floods, and suppress-arp isn't a valid configuration under the VLAN SVI at all — it belongs specifically under the NVE's per-VNI configuration. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN EVPN ARP Suppression Configuration)"
 }

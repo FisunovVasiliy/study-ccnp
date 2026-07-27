@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco NX-OS's Graceful Insertion and Removal (GIR), configured via a Maintenance Mode Profile, is designed exactly for this scenario: before a disruptive upgrade, it gracefully shuts down interfaces and lets routing protocols withdraw the switch from the topology in an orderly way (e.g., raising OSPF/BGP metrics or performing a graceful shutdown) so traffic reroutes elsewhere first, instead of abruptly dropping when the box goes down for maintenance. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — Graceful Insertion and Removal / Maintenance Mode)"
 }

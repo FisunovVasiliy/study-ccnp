@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When Ethernet ports on the fabric interconnects need to forward FCoE-encapsulated storage traffic on a specific VLAN toward an FCoE-capable SAN endpoint (rather than terminating a directly attached storage array's FC port), they must be configured with the FCoE uplink port role. This differs from a plain (LAN) uplink port, which only carries Ethernet/VLAN traffic without FC/FCoE semantics, from a unified uplink (which multiplexes both LAN and FC uplink roles together), and from an FCoE storage port (used for direct-attach storage rather than uplinking into an FCoE network). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Network Management, FCoE Port Roles)"
 }

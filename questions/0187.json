@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To connect a converged network adapter's FCoE traffic into a specific VSAN, you first create the virtual Fibre Channel interface (here vfc 7) and then bind it directly to the physical Ethernet interface the CNA is attached to ('bind interface ethernet 1/7'); this binding, not a VLAN or VSAN database command by itself, is what ties the logical FC interface to the physical link so FCoE frames can be forwarded correctly, after which VLAN-to-VSAN mapping and VSAN interface membership complete the picture. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 9 - FCoE Implementation)"
 }

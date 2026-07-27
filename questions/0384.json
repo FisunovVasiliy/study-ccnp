@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "In the ACI object model, a bridge domain (fvBD) is a Layer 2 forwarding boundary that can hold multiple fvSubnet children, each representing a distinct gateway subnet available to endpoints in that bridge domain. The XML shown defines exactly one bridge domain (bd1) containing three separate fvSubnet elements, so the net effect is three subnets configured within a single bridge domain — not multiple bridge domains, an extra tenant, or additional L3Outs, since fvTenant and the referenced VRF (fvCtx) each appear only once and fvRsBDToOut simply associates the bridge domain with an already-existing L3Out rather than creating one. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Bridge Domains and Subnets)"
 }

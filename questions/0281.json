@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/en/US/docs/unified_computing/ucs/sw/cli/config/guide/1.4.1/CLI_Config_Guide_1_4_1_chapter7.html",
  "explanation": "RADIUS is an IETF open standard, while TACACS+ is Cisco-proprietary, so RADIUS (not \"scope tacacs+\") must be used. Source PDF rendering of the official answer boxes was corrupted for this question; order reconstructed from Cisco UCS CLI AAA configuration syntax (scope security > scope radius > create server > set key > commit-buffer).",
  "needsAnswer": true,
- "provisional": true
+ "provisional": true,
+ "theory": "Cisco UCS Manager's CLI uses a strict scope hierarchy for AAA configuration: scope security enters the security context, scope radius narrows into RADIUS settings, create server <ip> adds a server entry, set key defines the shared secret used to encrypt the password sent to that server, and commit-buffer commits the pending transaction. RADIUS (rather than TACACS+) is chosen here specifically because RADIUS is defined by an open IETF standard (RFC 2865), satisfying the stated 'open standard' requirement, whereas TACACS+ is Cisco-proprietary. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18/19 - AAA protocol comparison and UCS CLI scope hierarchy)"
 }

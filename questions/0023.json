@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "For VMM-integrated EPGs, Resolution Immediacy controls when the APIC pushes a policy down to a leaf, while Deployment Immediacy controls when that already-resolved policy is actually programmed into the leaf's hardware policy TCAM. With Deployment Immediacy set to \"On Demand,\" the leaf holds the resolved policy but doesn't consume TCAM space until the first data packet from that endpoint is actually seen on the data path; \"Immediate\" instead programs the hardware as soon as the policy resolves (e.g., when the VM's port group is created), not merely when the leaf boots. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI VMM Domain Integration)"
 }

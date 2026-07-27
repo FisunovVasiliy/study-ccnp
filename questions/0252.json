@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "ACI contracts are directional by default: the filter here only permits the consumer (EPG Client) to open a new TCP session to the provider's (EPG Web) destination port 80. Reverse traffic that belongs to that same established connection is allowed, but the reverse-filter mechanism does not let the webserver independently INITIATE a brand-new TCP connection back to the client using source port 80 unless a separate contract or the 'apply both directions' option explicitly permits it. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Cisco ACI Contracts, Single Contract Bidirectional Reverse Filter)"
 }

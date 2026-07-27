@@ -29,5 +29,6 @@
  "reference": "https://community.cisco.com/t5/networking-documents/rp-redundancy-with-pim-bidir-phantom-rp/ta-p/3117191",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Phantom RP is a Bidir-PIM RP redundancy technique where the RP address is an unused (\"phantom\") host address inside a subnet, and each candidate RP advertises reachability to that subnet with a different prefix length. The router advertising the longer, more specific mask (closest to /32) is preferred and becomes the active RP; the backup advertises a shorter mask so it only wins if the primary disappears. Configuring R2 with a /29 (shorter than R1's /30/32-style advertisement) on the same point-to-point OSPF/PIM-sparse-mode interface, plus the identical rp-address group-list statement, makes R2 the standby RP that only activates when R1's more specific route is withdrawn. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — PIM Bidirectional RP Redundancy)"
 }

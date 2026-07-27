@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NAS's biggest practical advantage over SAN is that it rides on the IP/Ethernet network the organization already has, rather than requiring a dedicated Fibre Channel fabric with its own switches, HBAs, and cabling - this lets organizations add shared storage without the capital and operational cost of standing up a separate SAN infrastructure. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NAS Concepts)"
 }

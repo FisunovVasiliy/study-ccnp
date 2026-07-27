@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A static .ini inventory file, or manually registering each VM, can't keep pace with a fleet of VMs that scales automatically up and down; Ansible's dynamic inventory plugins instead query the cloud provider's API at run time to build the current host list on the fly, so newly created VMs are automatically included and terminated ones drop out without any manual inventory editing. Ansible Tower/AWX is optional surrounding tooling, not a prerequisite for using dynamic inventory itself. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies) / (Cisco documentation / web research)"
 }

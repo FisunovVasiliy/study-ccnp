@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "SAN port channels can load-balance in two ways: flow-based (src-id/dst-id), which pins every exchange between a given source and destination to one physical link so all frames for that flow stay in order, while a different source/destination pair can use a different link; and exchange-based (src-id/dst-id/oxid, the default), which can move even successive exchanges of the same flow to different links for finer-grained balancing. Because the requirement is that frames of one specific flow always take the same link while other (subsequent) flows may use a different link, src-id/dst-id is the correct load-balancing method, not the OXID-based variant. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - SAN Port Channels)"
 }

@@ -26,5 +26,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Getting-Started/4-1/b_UCSM_Getting_Started_Guide_4_1/b_UCSM_Getting_Started_Guide_4_1_chapter_0100.html",
  "explanation": "Configure Administration Policies - This step involves configuration of administration policies, such as DNS Server, NTP, and Time Zone, that are necessary for proper functioning of all components.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Before a Cisco UCS domain can register with Cisco Intersight, its administration policies must already be in place, because Intersight connectivity relies on accurate time synchronization and name resolution to establish and validate its outbound secure connection: NTP servers keep the domain's clock accurate (required for certificate/TLS validation), and DNS servers let the domain resolve the Intersight cloud endpoint by hostname. SMTP and syslog settings affect notifications/logging but are not prerequisites for the Device Connector to reach Intersight. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 13 — Cisco Intersight, Administration Policies)"
 }

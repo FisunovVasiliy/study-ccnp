@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A device alias database goes through a pending state while changes are staged and an effective (active) state once 'device-alias commit' has distributed and applied them; the 'show device-alias database' output listing a name-to-pWWN mapping with no 'pending' indicator, as shown here, is displaying the effective database currently enforced fabric-wide, not the pending or inactive one. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Device Alias)"
 }

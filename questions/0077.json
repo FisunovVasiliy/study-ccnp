@@ -29,5 +29,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/unicast/configuration/guide/l3_cli_nxos/l3_hsrp.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HSRPv2 raises the maximum group number from 255 (HSRPv1) to 4095, so supporting more than 500 groups requires \"hsrp version 2\" on both switches. Giving switch1 the higher priority (255) makes it the primary/active router by default, while switch2 keeps the lower priority (100) as standby; configuring an explicit \"mac-address\" on both switches (instead of relying on the group-number-derived default virtual MAC) satisfies the requirement for a user-defined hardware address shared consistently by the pair. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — HSRP Version 2 and Custom Virtual MAC)"
 }

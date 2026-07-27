@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "By default, activating a zone set distributes only the active zone set to other switches in the fabric; the full zone set database, every configured zone and zone set whether active or not, is only distributed automatically if full zone set distribution is enabled. Running 'zoneset distribute full vsan 10' turns on continuous, automatic distribution of the complete zoning database (not just a one-time push), which is what's needed to guarantee the full and active zone sets stay identical across every switch in the fabric. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Zoning)"
 }

@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/System-Monitoring/3-2/b_UCSM_GUI_System_Monitoring_Guide_3_2/b_UCSM_GUI_System_Monitoring_Guide_3_2_chapter_01101.pdf",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On a Cisco UCS 6332 Fabric Interconnect, native Fibre Channel traffic inside the unified fabric is carried encapsulated as FCoE over the same Ethernet/DCE infrastructure used for LAN traffic. Because of this encapsulation, FC traffic monitoring (SPAN) is not limited to a single vHBA, the default VSAN, or unassigned FC-only destination ports — instead, monitoring works on the encapsulated FCoE frames the same general way Ethernet SPAN does, which is the key characteristic tested here. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Traffic Monitoring, Fibre Channel over Ethernet)"
 }

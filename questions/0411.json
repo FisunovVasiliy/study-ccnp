@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The max-metric router-lsa command makes a router advertise all of its own router-LSA links, except stub links, with the maximum possible metric, so every other OSPF router in the area recalculates SPF and prefers alternate paths around that router for transit traffic — without the router dropping or resetting its OSPF adjacencies, so neighbors stay up and no re-negotiation occurs. This is the standard OSPF graceful-shutdown technique for draining transit traffic before maintenance, unlike changing administrative distance, filtering redistribution, or configuring a passive interface, none of which change how other routers calculate their best path through the topology. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — OSPF Max-Metric Router-LSA)"
 }

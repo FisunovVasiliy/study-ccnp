@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "json_object is already a Python dictionary once the JSON text has been parsed, so a value is retrieved using its exact string key from the document — here 'if-name' — with bracket notation: json_object[\"if-name\"]. Indexing with an integer (json_object[0]) or using the value itself as though it were the key (\"eth0\") doesn't correspond to how dictionaries are addressed in Python. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

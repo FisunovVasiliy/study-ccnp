@@ -30,5 +30,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The NIST cloud deployment models differ by ownership and access scope: a private cloud is owned/operated by a single organization for its exclusive use; a community cloud is owned/operated by one or more organizations that share common concerns (compliance, mission); a public cloud is provisioned by a provider for open use by any customer; and a hybrid cloud connects two or more distinct cloud infrastructures (private, community, or public) together so workloads and data can move between them. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 5 — Cloud Deployment Models)"
 }

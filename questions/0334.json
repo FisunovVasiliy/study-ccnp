@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A nondisruptive ISSU relies on high-availability mechanisms already built into dual-supervisor NX-OS platforms: Stateful Switchover (SSO) keeps the standby supervisor's control-plane state synchronized with the active supervisor so a switchover during the upgrade doesn't reset protocol state, while Nonstop Forwarding (NSF), Cisco's graceful-restart implementation, lets neighboring routers keep forwarding using cached routes while the local control plane restarts, hiding the brief outage from the rest of the network. Advanced licensing, a connectivity management processor, and stand-alone graceful restart are not themselves the redundancy mechanisms that make ISSU nondisruptive. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — High Availability Foundations for ISSU: SSO and NSF)"
 }

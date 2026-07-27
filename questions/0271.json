@@ -32,5 +32,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Admin-Management/3-1/b_Cisco_UCS_Admin_Mgmt_Guide_3_1/b_UCSM_Admin_Mgmt_Guide_chapter_01.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco MDS 9000 Series switches ship with a small set of system-defined roles that cannot be renamed or deleted - network-admin (full read/write), network-operator (read-only), and server-admin (predefined server administrator role). Roles such as san-operator, global-admin, and storage-admin are not part of that built-in set; they represent examples of custom, user-defined roles an administrator creates to implement more granular, least-privilege access for specific SAN administration tasks. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - User Accounts and RBAC, User Roles)"
 }

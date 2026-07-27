@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A backup that must include vNIC, vHBA, and service profile template settings — logical objects, not user/role or full binary state — and needs to be XML (so it can be validated/reviewed before import) points to a Logical Configuration backup, which is exactly the XML export scoped to service profiles, templates, pools, and policies. Full State is binary and not reviewable in the same way, and System/All Configuration either omit these logical objects or bundle in unrelated system settings, making Logical Configuration the precise match. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, Logical Configuration Backup)"
 }

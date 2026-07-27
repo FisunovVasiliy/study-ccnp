@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "By default, enabling switchport port-security on a Nexus 5000 port already limits the interface to one dynamically learned MAC address and shuts the port down (err-disable) on a violation, which both logs the breach and requires an administrator to manually issue no shutdown to recover - satisfying 'minimum configuration' and 'manual recovery' with no extra keywords needed. Adding switchport port-security mac address sticky changes the learning method so the secured MAC address is stored in NVRAM and survives a device reload, meeting the retention requirement. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Nexus Port Security, Sticky Method and Violation Actions)"
 }

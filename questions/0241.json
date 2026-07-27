@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "ACI configuration payloads reference objects by their full distinguished name reflecting the object hierarchy — here uni/tn-Tenant/ap-Test/epg-Test, correctly nesting the EPG under both the existing Tenant and existing Application Profile — with status=\"created\" telling APIC to create the object only if it does not already exist. APIC configuration changes are made with an HTTP POST to the object payload, not PUT, so both the correctly nested dn and the POST method are required for this creation to succeed. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools) / (Cisco documentation / web research)"
 }

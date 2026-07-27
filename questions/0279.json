@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "Only choice B meets all the requirements given of timing out in 15 minutes (900 seconds), Redirecting HTTP to HTTPS, and using a non-default SSH port.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Hardening Cisco IMC out-of-band management to meet 'encrypt everything, 15-minute timeout, auto-redirect unencrypted traffic, nondefault CLI ports' requires enabling HTTPS with HTTP-to-HTTPS redirect, setting the session timeout to 900 seconds (15 minutes, versus the 1800-second/30-minute default), and moving SSH off its default port 22 to a custom port. Cisco IMC ships with HTTP port 80/HTTPS 443 and SSH port 22 by default, so every one of these values must be explicitly changed to satisfy the policy. (Cisco documentation / web research - Cisco UCS C-Series Integrated Management Controller CLI Configuration Guide)"
 }

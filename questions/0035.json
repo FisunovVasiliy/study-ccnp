@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Establishing OTV adjacency over a multicast-capable transport requires a control-group: the multicast address used by OTV edge devices to exchange IS-IS-based control-plane hellos and discover each other, functioning similarly to how a data-group carries encapsulated multicast BUM data traffic (a separate, unrelated setting). Separately, advertising VLAN 100 to the remote site over the overlay requires \"otv extend-vlan 100\" so that VLAN's MAC reachability is advertised across the overlay interface. Site-vlan and adjacency-server settings serve different purposes and aren't needed for this multicast-transport scenario. (Cisco documentation / web research)"
 }

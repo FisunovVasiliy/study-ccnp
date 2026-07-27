@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The Scheduler's periodic timetable syntax for a once-daily job is exactly 'time daily HH:MM', so 'time daily 3:00' correctly binds the job to run every day at 3 a.m. 'time start daily 3:00' isn't valid syntax (start pairs with a one-time or delta schedule, not daily), and the weekly variants require a day-of-week/month argument and a different keyword form entirely, so they don't produce a simple daily 3 a.m. run. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

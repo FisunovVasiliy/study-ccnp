@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Even a nondisruptive (hitless) ISSU keeps the data plane forwarding for devices already logged into the fabric, but the control-plane services that process new FLOGIs (fabric login, name-server registration) are briefly unavailable during the roughly 80-second control-plane switchover - so while existing traffic keeps flowing, any new device attempting to log in to the fabric during that window will be unable to do so until the control plane comes back online. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 11 - Nondisruptive Upgrade)"
 }

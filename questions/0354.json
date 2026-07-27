@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Private VLANs use a primary VLAN paired with one or more secondary VLANs (isolated or community) to segment hosts that share a subnet but should not communicate directly with each other. To add the secondary VLAN so it is available on both fabrics, it is created as a normal VLAN object under 'scope eth-uplink' (not scoped under a single fabric) and marked with 'set sharing isolated,' which designates it as an isolated secondary VLAN paired to the primary — 'sharing none' would make it an ordinary VLAN rather than a PVLAN secondary, and 'sharing secondary'/'sharing private' are not valid keyword values. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Network Management, Private VLANs)"
 }

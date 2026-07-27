@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "SAN connectivity design in Cisco UCS Manager splits responsibilities between two policy types: a storage connection policy defines the storage array's WWPN targets and the desired zoning topology (such as Single Initiator Multiple Targets), controlling how the vHBA's traffic reaches specific storage targets, while a Fibre Channel adapter policy tunes lower-level vHBA driver behavior such as interrupt handling and queue depth/count for performance. Boot policy, a generic 'vHBA policy' (not a real UCS object), and SAN connectivity policy (which bundles storage connection policies for use in a profile, rather than defining WWPN/zoning itself) don't match both requirements the way these two policies do. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, Storage Connection and FC Adapter Policies)"
 }

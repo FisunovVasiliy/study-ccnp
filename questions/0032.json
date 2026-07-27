@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/programmability/guide/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x/Guest_Shell.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The dohost application inside NX-OS Guest Shell hands a fully quoted string to the underlying switch as a native NX-OS exec or config command, so it behaves exactly like typing at the switch prompt, including VRF-aware commands. A plain 'ping' typed in the Guest Shell instead uses the container's own Linux network stack and namespaces, not the switch's VRF-aware ping, so it cannot take a 'vrf management' keyword the way NX-OS CLI does. Only dohost \"ping vrf management <ip>\" correctly routes the test through the switch's management VRF. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

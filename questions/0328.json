@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A System Configuration backup produces a human-readable XML file scoped to system-level settings — including AAA and RBAC (users, roles, locales) — rather than logical objects like service profiles or a binary Full State snapshot. Because the requirement here is specifically AAA/RBAC content in a human-readable format, System Configuration is the correct backup type, distinguishing it from Logical Configuration (service profiles/VLANs/VSANs/policies) and All Configuration (both combined). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Configuration Management, System Configuration Backup)"
 }

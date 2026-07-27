@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Standard SysV-style init scripts implement a 'reload' action by sending the daemon a SIGHUP signal (not a full stop/start), so the running chef-client process re-reads its configuration in place. The killproc utility takes its pidfile argument with the '-p' flag, followed by the executable path and the signal name '-HUP' — the other option flags ('-n', '-pi') aren't valid killproc syntax for specifying the pidfile. (Cisco documentation / web research)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Combining Cisco Fabric Services (CFS) distribution with per-VSAN auto-learning port security minimizes manual work in two ways: auto-learning removes the need to manually enter every device WWN and port pairing (the switch discovers them automatically), and CFS distribution propagates that configuration from one switch to every other switch in the fabric once committed, instead of repeating the setup on each switch individually. Auto-learning itself is always a per-VSAN setting in Cisco MDS NX-OS. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Port Security, Method 3: Auto-Learning with CFS Distribution)"
 }

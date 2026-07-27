@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/dcn/mds9000/sw/8_x/config/security/cisco_mds9000_security_config_guide_8x/configuring_security_features_on_external_aaa_server.html#con_2054570",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "CHAP (Challenge Handshake Authentication Protocol) uses MD5 hashing combined with a challenge value/identifier that changes on every authentication attempt, preventing replay of a captured exchange - matching the requirement for 'a challenge-response protocol using MD5 hashing with an incrementally changing identifier'. Enabling aaa authentication login chap for RADIUS handles the authentication method, while radius distribute followed by radius commit uses Cisco Fabric Services (CFS) to automatically propagate the already-defined RADIUS server configuration to every other MDS switch in the fabric. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - AAA Server Distribution via CFS; general CHAP concept)"
 }

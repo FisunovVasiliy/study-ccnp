@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Guest Shell starts with modest default CPU/memory/rootfs limits; the documented way to raise them is the 'guestshell resize {cpu | memory | rootfs}' command (e.g., resizing memory to 1024 MB and CPU to 10%), followed by a Guest Shell reboot to apply the new limits before installing a heavier container workload. There is no 'virtual-service resize' or 'guestshell run' command, and enabling the separate Bash shell feature does nothing to a Guest Shell container's resource allocation. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

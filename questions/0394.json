@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The netops user's needs (configure network settings, view faults) map directly to two Cisco UCS Manager built-in roles: Network Administrator (read/write to fabric interconnect infrastructure and network security operations) and Operations (read/write to system logs and faults). Since the user only needs standard UCS Manager GUI login (not remote AAA or locale-scoped multi-tenant access), the account should be created as a locally authenticated user with both roles assigned. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 19 - Securing UCS Management, Local Accounts and Roles)"
 }

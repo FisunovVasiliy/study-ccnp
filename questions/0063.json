@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "VXLAN's distributed anycast gateway lets every leaf switch present the exact same gateway IP and MAC address for a given subnet, so a host's default gateway is always answered locally by whichever leaf it's attached to, with no need to route traffic to a specific gateway leaf. Configuring a common \"fabric forwarding anycast-gateway-mac\" globally and then enabling \"fabric forwarding mode anycast-gateway\" under each SVI/VRF member interface is what makes every leaf share that identical gateway MAC and IP for the VNI. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN Distributed Anycast Gateway)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Each requirement maps to a specific MDS port-security command: activate vsan 4 force overrides conflicts with the current fabric state during activation; no port-security auto-learn vsan 4 ensures only explicitly configured static entries are used going forward (learning is off, so new logins are not silently added); port-security distribute turns on CFS-wide propagation; and port-security commit vsan 4 pushes the pending changes to every switch in the fabric AND releases the CFS lock - unlike abort, which would discard the changes instead of applying and releasing them. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - Port Security, CFS Distribution Workflow)"
 }

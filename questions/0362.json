@@ -29,5 +29,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Deploying SAN Insights in DCNM requires enabling SAN Analytics telemetry on the switches, via the SAN_ANALYTICS_PKG license, since SAN Insights consumes analytics data the switch hardware generates, then, within DCNM, choosing which fabric to monitor and which specific ports on those switches should have analytics/telemetry data collected and streamed - VSAN or name-resolution settings aren't part of enabling the feature itself, since SAN Analytics operates at the port/flow level, not per-VSAN. (Cisco DCNM SAN Insights documentation / web research)"
 }

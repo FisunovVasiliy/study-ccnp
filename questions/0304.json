@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When an SVI belongs to a non-default VRF — here Vlan100 and Vlan150 are both configured as vrf member WEB on N5K-1 — any static route needed for traffic sourced from or destined to that VRF's subnets must be created inside that same VRF's routing context, because a route placed in the default (global) table is invisible to VRF WEB's RIB. Since N5K-1's route toward Server2's subnet must be reachable from within VRF WEB, the fix is adding the static route under vrf context WEB on N5K-1 rather than in the default table; because N5K-2's return path uses a separate, non-VRF static route, connectivity ends up unidirectional as required. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — VRF-Aware Static Routing)"
 }

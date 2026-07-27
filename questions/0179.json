@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "The purpose of NAS is to enable users to collaborate and share data more effectively. It is useful to distributed teams that need remote access or work in different time zones.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Network-attached storage (NAS) is purpose-built to give remote users and systems direct, file-level access to shared data over standard IP/Ethernet connectivity - clients simply mount or map a share and interact with files as if they were local, which makes NAS ideal for distributed teams or systems needing collaborative, remote file access. This is in contrast to SAN or DAS, which provide block-level access typically consumed by a single host or a Fibre Channel-attached cluster, not general-purpose remote file sharing. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NAS Concepts)"
 }

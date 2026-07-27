@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because the production and development servers share the same EPG and the same IP subnet, an IP-based or VMM-domain-based attribute cannot distinguish them for microsegmentation - the value would be identical for all of them. ACI microsegmentation (uSeg EPGs) can instead match on a VM-based attribute such as VM Name, letting the APIC dynamically pull matching VMs into a separate uSeg EPG so a contract or isolation policy can then block traffic between the production and development groups. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - ACI Microsegmentation)"
 }

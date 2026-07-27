@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "clid() returns the CLI command's structured output as a JSON-formatted string, so it must be parsed with json.loads() (converting JSON text into a Python object) rather than json.dumps() (which does the opposite — serializing a Python object into JSON text); once parsed, you then walk the resulting nested dictionary using the exact key path shown in the JSON body, output['TABLE_asn']['ROW_asn']['asn'], rather than assuming the value sits at a flat top-level ['asn'] key. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

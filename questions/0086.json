@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To isolate a subset of VMs within an EPG using VM attributes, three settings must align: 'Allow Microsegmentation' must be enabled on the EPG-to-VMM-domain association so uSeg EPGs can pull matching VMs out of the application EPG; the parent (application) EPG's intra-EPG isolation must stay Unenforced so the rest of that EPG keeps its normal default-allow behavior; and the new uSeg EPG's own intra-EPG isolation must be set to Unenforced as well when the requirement is simply to separate the subset from the rest of the EPG via a contract rather than to also block the subset members from each other - matching option A's combination. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - ACI Microsegmentation, uSeg EPG configuration)"
 }

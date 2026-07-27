@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Because the number of tenants returned is unknown ahead of time, the script must iterate over every element of the $resultjson.imdata array rather than assume a fixed count; PowerShell's foreach loop naturally walks the whole collection, pulling each tenant's fvTenant.attributes.name out on every pass. The other snippets rely on invalid pseudo-code ('While true (...)') or manual indexing without a proper loop terminator, which wouldn't safely cover a variable-length result set. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

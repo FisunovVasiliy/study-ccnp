@@ -28,5 +28,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "This pipeline chains NX-OS CLI access from Bash ('vsh -c') with standard Linux text tools: filtering the ARP table output down to IPv4 address lines, transforming each surviving line into a 'ping <address>' command, and then narrowing the resulting ping output to just the summary statistics/loss lines — the same style of Guest/Bash-shell scripting the book uses to fan an NX-OS CLI command out into repeatable per-address automation without writing a full Python script. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

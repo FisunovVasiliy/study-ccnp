@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/configuration/guide/cli/CLIConfigurationGuide/vsan.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "VSAN membership for a virtual Fibre Channel interface can be assigned statically from the VSAN database using 'vsan <id> interface vfc <n>', which directly binds that interface to the VSAN regardless of what traffic or FCoE mapping is configured elsewhere. This is distinct from binding a vfc to its underlying Ethernet interface (done under the vfc interface itself with the 'bind interface' command) - the VSAN database command specifically controls VSAN port membership, not the FCoE binding. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - VSAN)"
 }

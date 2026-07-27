@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "Community vote is split near-evenly between C (Puppet) and D; Puppet's agent-based enforcement of desired state (with automatic drift correction) matches the requirement described.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Puppet's agent periodically pulls a compiled manifest from a puppet master and reconciles the live system against it, automatically correcting any manual configuration drift back to the desired state; the same agent/master model (via the Open Agent Container on supported Nexus platforms) works for both network devices and traditional servers, making it a natural fit when the requirement explicitly needs both continuous enforcement and eventual server-side reuse. Ansible is push/on-demand rather than continuously enforcing, and raw Python/Bash scripts have no built-in state-reconciliation model at all. (Cisco documentation / web research)"
 }

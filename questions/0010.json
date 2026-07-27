@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "Peer-switch - Enables the vPC switch pair to appear as a single STP root in the Layer 2 topology. Use the no form of the command to disable the peer switch vPC topology. If both switches do not have peer-switch enable, the question is not informing the bridge-ID (mac-address + priority) to see which switch would be the root anyway.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The vPC \"peer-switch\" command makes the two physically distinct Nexus switches present themselves as one single STP root, both originating BPDUs with the same designated bridge ID on vPC ports. This avoids relying on a single elected root (which would force a suboptimal L2 path over the peer link) and speeds convergence during peer-link or role failures. Because both N7K-1 and N7K-2 have peer-switch configured and the lowest STP priority in the network, they appear to the rest of the topology as a single STP root rather than one of them individually winning the election. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 2 — vPC and Spanning Tree)"
 }

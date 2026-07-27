@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco's UCS PowerTool Suite is a ready-made set of PowerShell cmdlets covering nearly the entire UCS Manager XML API object model, so a scripting-savvy (but not necessarily deep-programming) administrator can automate service profiles without building an SDK integration from scratch. Because the same PowerTool family also has a Cisco IMC module, it naturally extends to managing standalone C-Series rack servers later, which plain Bash/Python scripts or DCNM (a network fabric manager, not a UCS tool) don't provide out of the box. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

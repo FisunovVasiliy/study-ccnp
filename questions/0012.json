@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/support/docs/switches/nexus-7000-series-switches/200998-Nexus-7000-OTV-VLAN-Mapping-on-Overlay.html",
  "explanation": "You can map a VLAN on the local site to a VLAN with a different VLAN ID on the remote site. When you map two VLANs with different VLAN IDs across sites, they get mapped to a common VLAN called the transport VLAN. For example, when you map VLAN 1 on Site A to VLAN 2 on Site B, both VLANs are mapped to a transport VLAN. All traffic originating from VLAN 1 on Site A is translated as going from the transport VLAN. All traffic arriving at Site B from the transport VLAN is translated to VLAN 2.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "OTV VLAN mapping lets a VLAN on one site be extended and translated to a different VLAN ID on the remote site. The mapping only needs to be configured on the site doing the translation (\"otv vlan mapping 100 to 200\"); OTV internally treats the pair as a common transport VLAN, so all VLAN-100 traffic leaving DC1 is carried as VLAN 200 when it arrives at DC2. DC2 therefore only needs a normal \"otv extend-vlan 200\" for its native VLAN 200 — it does not need a reciprocal mapping statement, since the translation already happened at the DC1 edge. (Cisco documentation / web research)"
 }

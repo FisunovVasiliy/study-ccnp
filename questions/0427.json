@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Traffic storm control measures the percentage of broadcast, multicast, or unknown-unicast traffic arriving during each one-second interval and drops all such traffic above the configured ceiling until the interval resets. Setting the storm-control level to zero percent sets that ceiling to zero, so any traffic of the monitored type during the interval immediately exceeds the threshold and gets suppressed entirely for that interval, rather than being partially rate-limited or fully forwarded — which is why a zero percent value results in complete suppression during high-traffic streaming windows. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — Traffic Storm Control Thresholds)"
 }

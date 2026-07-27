@@ -24,5 +24,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Configuring sampled NetFlow on NX-OS follows a fixed dependency order: enable the NetFlow feature, define a flow record (which fields to match and counters to collect), define a flow monitor that ties that record to a cache, and finally apply the flow monitor together with a sampler to the interface. The sampler is what actually reduces exported data volume by examining only a subset of packets (for example, 1-in-N) instead of every packet, satisfying the stated requirement, and each object must exist before the next step can reference it, which is why this order can't be rearranged. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 6 — NetFlow Configuration and Sampling)"
 }

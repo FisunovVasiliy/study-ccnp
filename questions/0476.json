@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "On Cisco Nexus (data-center switch) NX-OS, AAA login method lists follow an IOS-like ordered syntax such as aaa authentication login default group <group-name> local, where appending 'local' as the last method makes the switch fall back to the local user database only if the named group (here ISE) fails to authenticate the user. This differs from Cisco MDS NX-OS, which uses the distinct 'fallback error local' keyword form instead - the two platforms use different AAA fallback syntax for the same underlying concept. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - AAA Service Configuration Options)"
 }

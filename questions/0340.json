@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Two independent conditions must both be verified when SVR-A cannot reach SVR-B across EPGs in ACI: first, a contract must exist between EPG-A and EPG-B that explicitly permits the required traffic, since ACI denies inter-EPG traffic by default in the absence of a contract; second, the destination endpoint SVR-B must actually be learned by the fabric under EPG-B on the correct leaf (Node-112), since ACI's policy enforcement and forwarding both depend on accurate endpoint learning - a missing contract or an unlearned endpoint will independently break connectivity even if the other condition is satisfied. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Cisco ACI Contracts and endpoint learning)"
 }

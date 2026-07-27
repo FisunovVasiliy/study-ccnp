@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A World Wide Port Name (WWPN/pWWN) is a globally unique identifier assigned to a specific Fibre Channel port on an HBA or storage array - it identifies that individual physical interface/port, not the whole device (which instead has its own WWNN), nor a zone, an area, or a switch, which is why the pWWNs shown in the zone's active membership each correspond one-to-one with a specific end-device interface. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - Fibre Channel Addressing)"
 }

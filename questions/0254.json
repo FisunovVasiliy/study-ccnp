@@ -30,5 +30,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NFSv2/v3 traditionally trust whichever machine sends the RPC request (AUTH_SYS), effectively authenticating the client machine rather than the individual user; NFSv4 raised the bar by supporting strong, user-level authentication, typically delivered through Kerberos, which itself provides mutual, ticket-based authentication between clients and servers. RADIUS, in contrast, is a general AAA protocol commonly used to authenticate clients against a centralized corporate directory rather than being an NFS-specific mechanism - understanding which authentication model each protocol/version relies on is the concept being tested. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 10 - NFS Concepts)"
 }

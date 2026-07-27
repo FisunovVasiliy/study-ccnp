@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "POAP depends on two pieces of external infrastructure at boot time: a DHCP server to bootstrap the switch's IP address, gateway, and DNS information, and a TFTP server hosting the configuration/bootstrap script the switch downloads next. If either is missing or unreachable, the switch cannot progress through the DHCP discovery or script execution phases, so these are the first two components to check on a POAP boot failure — licensing and script signing are not part of the core POAP bootstrap chain. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

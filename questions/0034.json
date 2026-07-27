@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "An ACI fabric SPAN (ERSPAN) session's destination is defined against an EPG so the mirrored traffic is delivered into the fabric's normal policy model rather than a bare physical port; the correct CLI syntax names the application profile before the EPG, i.e. \"application <ap-name> epg <epg-name>\", matching the same ordering already used in the destination clause of the exhibited session. Getting the app/EPG order or keywords wrong (as in the \"epg ... app ...\" or bare interface-based distractors) would not correctly bind the ERSPAN destination into the tenant's EPG. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 4 — ACI Fabric Monitoring)"
 }

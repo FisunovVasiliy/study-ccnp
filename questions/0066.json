@@ -25,5 +25,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Object tracking on HSRP lets a router lower its own priority (via a \"track ... decrement\") when a tracked condition (like default-route reachability) fails, so the peer with intact reachability becomes/stays active instead. \"preempt delay minimum\" forces a router that regains a higher priority to wait a configured number of seconds before reclaiming the active role, giving routing protocols time to reconverge first — which is exactly what's needed so switch1 retains primary status until conditions are truly stable, and switch2 only takes over if the gateway itself becomes unreachable. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 1 — HSRP Object Tracking and Preemption)"
 }

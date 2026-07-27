@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "A standard VXLAN BGP EVPN deployment on Nexus 9000 requires several independent features enabled together: feature nv overlay turns on the NVE/VTEP infrastructure, feature vn-segment-vlan-based lets VLANs map to VNIs, feature bgp plus nv overlay-evpn brings up the MP-BGP EVPN control plane, feature ospf enables the chosen underlay routing protocol, and feature interface-vlan is required because a distributed anycast gateway needs SVIs configured on every VTEP to answer for the same shared gateway IP/MAC. Omitting interface-vlan, as some distractor answers do, would make it impossible to build the VLAN-interface-based anycast gateway the requirement calls for. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 3 — VXLAN EVPN Feature Prerequisites)"
 }

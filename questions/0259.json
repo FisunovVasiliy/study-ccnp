@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The ldap-server host command's enable-ssl keyword causes the Cisco MDS switch to establish a secure SSL/TLS session with the specified LDAP server before sending any bind or search request, encrypting all authentication data exchanged with that host. This directly satisfies a requirement to encrypt LDAP traffic, whereas configuring a key or a nonstandard port alone does not enable transport encryption. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 20 - AAA, LDAP)"
 }

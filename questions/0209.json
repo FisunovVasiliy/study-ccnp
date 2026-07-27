@@ -23,5 +23,6 @@
  "reference": "https://www.ansible.com/overview/how-ansible-works",
  "explanation": "Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.\nDesigned for multi-tier deployments since day one, Ansible models your IT infrastructure by describing how all of your systems inter-relate, rather than just managing one system at a time.\nIt uses no agents and no additional custom security infrastructure, so it's easy to deploy - and most importantly, it uses a very simple language (YAML, in the form of Ansible Playbooks) that allow you to describe your automation jobs in a way that approaches plain English.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Ansible's key architectural difference from Puppet and Chef is that it is agentless: it pushes changes over SSH (or an API like NX-API) from a control station without installing or maintaining any persistent agent process on the managed device. Puppet and Chef instead rely on an agent running on every managed node that periodically pulls configuration from a master server, which adds installation and maintenance overhead that Ansible avoids. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

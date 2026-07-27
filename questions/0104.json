@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/ucs-manager/GUI-User-Guides/Firmware-Mgmt/3-1/b_UCSM_GUI_Firmware_Management_Guide_3_1/b_UCSM_GUI_Firmware_Management_Guide_3_1_chapter_011.html",
  "explanation": "This activation procedure causes the server to reboot. Depending upon whether the service profile associated with the server includes a maintenance policy, the reboot can occur immediately. Cisco recommends that you upgrade the board controller firmware through the host firmware package in the service profile as the last step of upgrading a Cisco UCS domain, along with upgrading the server BIOS. This reduces the number of times a server needs to reboot during the upgrade process.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "When a new default host firmware package version triggers a server firmware upgrade, the server generally must reboot to apply it, and it is the maintenance policy attached to the associated service profile that governs when that reboot happens — immediately, on a scheduled timer, or only after explicit user acknowledgment. Diagnostics, local disk, and BIOS policies configure other aspects of the server but do not control the timing of the disruptive reboot itself; that responsibility belongs specifically to the maintenance policy. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 14 — UCS Firmware Management/Maintenance Policy)"
 }

@@ -21,5 +21,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Guest Shell includes a supervisor-synchronization feature that automatically mirrors its filesystem/state to the standby supervisor, meeting the redundant-supervisor requirement; because Guest Shell is an ordinary Linux container, standard Linux CRON (rather than NX-OS's own EEM/Scheduler or the config-rollback-focused 'checkpoint' feature) is the native way to schedule the periodic transfer, and SCP provides the required encryption and username/password authentication for the external hop, unlike TFTP or HTTP. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools) / (Cisco documentation / web research)"
 }

@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Applying a contract to vzAny (the VRF-wide 'any EPG' construct) lets every EPG within that VRF share the exact same set of contract rules using a single set of hardware TCAM entries, instead of programming a separate contract/filter entry for every individual EPG pair - directly reducing TCAM consumption while still guaranteeing that all EPGs in the VRF consume identical services. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 18 - Cisco ACI Contracts, Apply/Remove VRF Contracts / vzAny)"
 }

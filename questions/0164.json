@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/5_0/configuration/guides/int/nxos/cli_interfaces/npv.html",
  "explanation": "About N Port Identifier Virtualization\nN port identifier virtualization (NPIV) provides a means to assign multiple FC IDs to a single N port. This feature allows multiple applications on the N port to use different identifiers and allows access control, zoning, and port security to be implemented at the application level.\nYou must globally enable NPIV for all VSANs on the MDS switch to allow the NPIV-enabled applications to use multiple N port identifiers.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "NPIV lets a single physical N port register multiple FCIDs so that several applications, VMs, or an NPV edge switch's downstream devices can each get their own identity for zoning and access control. On Cisco MDS/Nexus switches, NPIV is a single global feature that applies to the entire switch and every VSAN configured on it - you cannot scope it to just VSAN 1 or enable it per-VSAN, so implementing NPIV means it becomes active fabric-wide. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 8 - NPIV and NPV)"
 }

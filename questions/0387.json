@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "To directly attach an FC storage array's port to a fabric interconnect (bypassing an external SAN switch/MDS), the fabric interconnect must first be switched out of default end-host mode into FC switch mode, since only switch mode allows FC storage ports and native FC switching behavior. Because there's no upstream SAN fabric performing zoning in this direct-attach scenario, a storage connection policy must also be created on the UCS side to define the target WWPNs and zoning relationship between the server's vHBAs and the storage array. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 12 — Cisco UCS Storage Management, Direct-Attached Storage and FC Switch Mode)"
 }

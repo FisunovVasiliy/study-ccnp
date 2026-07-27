@@ -26,5 +26,6 @@
  "reference": "https://www.connection.com/~/media/pdfs/brands/c/cisco/hyperflex/1048176cnxnciscohyperflex40anywhereataglance.pdf",
  "explanation": "Cisco HyperFlex systems include a purpose-built, high-performance, low-latency hyperconverged platform that adapts to support any application, in any cloud, anywhere. The platform supports multiple hypervisors and virtualized environments (Microsoft Windows Server 2019 Hyper-V, VMware vSphere), Docker containers with Kubernetes, multicloud services, and edge deployments to efficiently and economically deploy, monitor, and manage applications.",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Cisco HyperFlex is built as a multi-hypervisor hyperconverged platform: its two officially supported virtualization hypervisors are VMware vSphere and Microsoft Hyper-V (Windows Server Hyper-V), in addition to container support via Kubernetes. OpenStack, Citrix XenServer, and Red Hat KVM are not part of HyperFlex's supported hypervisor list, which is why they are excluded from the correct pair. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — Cisco HyperFlex Overview, Supported Hypervisors)"
 }

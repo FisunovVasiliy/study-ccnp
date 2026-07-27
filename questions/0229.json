@@ -23,5 +23,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "The payload uses curly braces, quoted 'name': value pairs, and bracketed arrays with no angle-bracket tags — that combination of syntax is the hallmark of JSON, as opposed to XML's tag-based markup, YAML's indentation-based structure, or CSS (which isn't a data-interchange format at all). (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }

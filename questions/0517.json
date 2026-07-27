@@ -26,5 +26,6 @@
  "reference": null,
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "Beyond the DHCP and DNS infrastructure the company already has, POAP still needs a TFTP server to host the configuration script the switch downloads during bootstrap, plus a file repository (commonly reached via SCP) holding the actual software image and configuration files the script installs — these two additions complete POAP's documented network requirements. A NETBOOT/PXE-style discovery service, a GIT server, or an SNMP trap receiver play no role in POAP's bootstrap chain. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 17 — Evaluate Automation and Orchestration Technologies)"
 }

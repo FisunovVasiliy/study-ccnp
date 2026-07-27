@@ -23,5 +23,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/UCS_CVDs/hx_4_vsi_vmware_esxi.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "HyperFlex Hybrid nodes pair an SSD caching tier with HDDs for the capacity tier, which yields high usable storage capacity at a lower cost per GB than flash-only designs, at the expense of the very low, consistent latency that All-Flash or All-NVMe configurations provide. For a virtual environment that is not performance-sensitive but needs high capacity and low cost, Hybrid is therefore the appropriate storage configuration, since All-Flash/All-NVMe are optimized for performance-sensitive, mission-critical workloads rather than cost efficiency, and 'All-SAN' is not a HyperFlex node type. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 15 — HyperFlex Storage Configurations, Hybrid Nodes)"
 }

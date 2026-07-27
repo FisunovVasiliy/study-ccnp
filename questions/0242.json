@@ -21,5 +21,6 @@
  "reference": "https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/programmability/guide/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_Programmability_Guide_7x_chapter_0100.html",
  "explanation": "",
  "needsAnswer": false,
- "provisional": false
+ "provisional": false,
+ "theory": "EEM lets you tag multiple independent event triggers and combine them with boolean logic and a 'happens N in M' window; here 'tag eth or copy happens 1 in 2' fires the policy if either the interface Ethernet1/1 pattern or the config-save pattern occurs once within a two-event window, so one applet can generate the required log message whether a save happens or the specific interface is touched. The trailing event-default action lets the underlying matched CLI commands still execute after logging. (CCNP/CCIE DCCOR Official Cert Guide, Chapter 16 — Automation and Scripting Tools)"
 }
