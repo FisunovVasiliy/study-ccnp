@@ -172,16 +172,10 @@ function goHome() {
 }
 
 function renderLanding() {
-  const counts = topicCounts();
-  const t = peekStats('training', topicFilter);
-  const e = peekStats('exam', 'All'); // екзамен завжди по всіх темах, незалежно від фільтра
-
-  const topicOptions = TOPIC_ORDER.map(topic => {
-    const n = topic === 'All' ? QUESTIONS.length : (counts[topic] || 0);
-    const label = TOPIC_LABELS[topic] || topic;
-    const sel = topic === topicFilter ? ' selected' : '';
-    return `<option value="${escapeHtml(topic)}"${sel}>${escapeHtml(label)} (${n})</option>`;
-  }).join('');
+  // на головній завжди показуємо загальний прогрес по всіх темах;
+  // звуження за темою відбувається під час самого тренування (селектор над питанням).
+  const t = peekStats('training', 'All');
+  const e = peekStats('exam', 'All');
 
   const userObj = AUTH_USERS.find(u => u.slug === currentUser);
   const userBar = userObj ? `<div class="user-bar">Увійшов як: <strong>${escapeHtml(userObj.name)}</strong> · <a href="#" id="logout-link">Вийти</a></div>` : '';
@@ -190,12 +184,7 @@ function renderLanding() {
     <div class="landing">
       ${userBar}
       <h1>CCNP DCCOR — тренажер</h1>
-      <p>350-601 DCCOR практичні питання з поясненнями. Прогрес зберігається у браузері окремо для кожного користувача, режиму й теми.</p>
-      <div class="topic-filter-row">
-        <label for="topic-select">Тема для тренування (за офіційним блупринтом 350-601 v1.2):</label>
-        <select id="topic-select">${topicOptions}</select>
-        <div class="topic-filter-note">Фільтр діє лише в режимі «Тренування». Екзамен завжди охоплює всі 526 питань.</div>
-      </div>
+      <p>350-601 DCCOR практичні питання з поясненнями. Прогрес зберігається у браузері окремо для кожного користувача й режиму. Фільтр за темою (Network, Compute, ...) доступний прямо над питаннями в режимі «Тренування».</p>
       <div class="mode-cards">
         <div class="mode-card">
           <h3>Тренування</h3>
@@ -223,19 +212,12 @@ function renderLanding() {
   const logoutLink = document.getElementById('logout-link');
   if (logoutLink) logoutLink.onclick = (e) => { e.preventDefault(); logout(); };
 
-  const topicSelect = document.getElementById('topic-select');
-  topicSelect.onchange = () => {
-    topicFilter = topicSelect.value;
-    try { localStorage.setItem(TOPIC_FILTER_KEY, topicFilter); } catch (e) {}
-    renderLanding();
-  };
-
-  document.getElementById('start-training').onclick = () => selectMode('training');
+  document.getElementById('start-training').onclick = () => { topicFilter = 'All'; selectMode('training'); };
   document.getElementById('start-exam').onclick = () => selectMode('exam');
   const rt = document.getElementById('restart-training');
   if (rt) rt.onclick = () => {
-    if (confirm('Скинути прогрес режиму «Тренування» для теми «' + (TOPIC_LABELS[topicFilter] || topicFilter) + '»?')) {
-      localStorage.removeItem(storageKeyFor('training', topicFilter)); renderLanding();
+    if (confirm('Скинути прогрес режиму «Тренування» (усі теми)?')) {
+      localStorage.removeItem(storageKeyFor('training', 'All')); renderLanding();
     }
   };
   const re = document.getElementById('restart-exam');
@@ -319,6 +301,32 @@ function renderNavDots(container, resync) {
 }
 
 // ------------------------------------------------------------
+// ФІЛЬТР ТЕМИ НАД ПИТАННЯМ (лише режим «Тренування»)
+// ------------------------------------------------------------
+function buildSessionTopicFilter() {
+  const counts = topicCounts();
+  const options = TOPIC_ORDER.map(topic => {
+    const n = topic === 'All' ? QUESTIONS.length : (counts[topic] || 0);
+    const label = TOPIC_LABELS[topic] || topic;
+    const sel = topic === topicFilter ? ' selected' : '';
+    return `<option value="${escapeHtml(topic)}"${sel}>${escapeHtml(label)} (${n})</option>`;
+  }).join('');
+
+  const bar = document.createElement('div');
+  bar.className = 'session-topic-filter';
+  bar.innerHTML = `<label for="session-topic-select">Тема:</label><select id="session-topic-select">${options}</select>`;
+
+  const sel = bar.querySelector('select');
+  sel.onchange = () => {
+    if (sel.value === topicFilter) return;
+    topicFilter = sel.value;
+    try { localStorage.setItem(TOPIC_FILTER_KEY, topicFilter); } catch (e) {}
+    selectMode('training'); // перезавантажує activeIndices + збережений прогрес під нову тему
+  };
+  return bar;
+}
+
+// ------------------------------------------------------------
 // MAIN RENDER DISPATCH
 // ------------------------------------------------------------
 function render() {
@@ -398,6 +406,11 @@ function render() {
   actions.appendChild(homeBtn);
 
   root.innerHTML = '';
+
+  if (mode === 'training') {
+    root.appendChild(buildSessionTopicFilter());
+  }
+
   root.appendChild(card);
   card.appendChild(actions);
 
