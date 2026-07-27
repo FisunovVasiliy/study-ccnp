@@ -3,10 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 <title>CCNP DCCOR — тренажер</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="auth-gate hidden" id="auth-gate">
+  <div class="auth-box">
+    <h2>Доступ обмежено</h2>
+    <input type="password" id="auth-pass" placeholder="Пароль" autocomplete="off">
+    <button class="btn" id="auth-btn">Увійти</button>
+    <div class="auth-err" id="auth-err"></div>
+  </div>
+</div>
 
 <div class="topbar hidden" id="topbar">
   <h1 id="q-counter">Питання 1 / 1</h1>
@@ -14,7 +24,7 @@
   <div class="stats" id="stats">Правильно: 0 / 0</div>
 </div>
 
-<div class="wrap">
+<div class="wrap hidden">
   <div id="app-root"></div>
 </div>
 

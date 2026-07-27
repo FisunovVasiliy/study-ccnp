@@ -5,7 +5,8 @@
 // ============================================================
 
 const LETTERS = ['A','B','C','D','E','F'];
-const STORAGE_KEY = 'dccor-quiz-progress-v1';
+const STORAGE_PREFIX = 'dccor-quiz-progress-v2-';
+const OLD_STORAGE_KEY = 'dccor-quiz-progress-v1'; // для міграції прогресу зі старої версії
 
 let QUESTIONS = [];         // масив питань у порядку id
 let current = 0;            // індекс поточного питання
@@ -13,8 +14,9 @@ let answers = [];           // 'correct' | 'incorrect' | null, паралель�
 let userAnswerData = [];    // збережений вибір користувача (для перегляду)
 let score = 0;
 let answeredCount = 0;
-let reviewFilter = 'all';   // 'all' | 'wrong'
 let started = false;
+let mode = null;            // 'training' | 'exam'
+let examRevealed = false;   // true, коли екзамен завершено і можна показувати правильні відповіді
 
 const root = document.getElementById('app-root');
 
@@ -26,9 +28,26 @@ async function loadQuestions() {
   return all;
 }
 
+function storageKeyFor(m) {
+  return STORAGE_PREFIX + (m === 'exam' ? 'exam' : 'training');
+}
+
+function migrateOldProgress() {
+  try {
+    const old = localStorage.getItem(OLD_STORAGE_KEY);
+    const newKey = storageKeyFor('training');
+    if (old && !localStorage.getItem(newKey)) {
+      const d = JSON.parse(old);
+      if (d.answers && d.answers.length === QUESTIONS.length) {
+        localStorage.setItem(newKey, JSON.stringify({ ...d, examRevealed: false }));
+      }
+    }
+  } catch (e) {}
+}
+
 function loadProgress() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(storageKeyFor(mode));
     if (!raw) return null;
     return JSON.parse(raw);
   } catch (e) { return null; }
@@ -36,8 +55,8 @@ function loadProgress() {
 
 function saveProgress() {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      answers, userAnswerData, current, score, answeredCount
+    localStorage.setItem(storageKeyFor(mode), JSON.stringify({
+      answers, userAnswerData, current, score, answeredCount, examRevealed
     }));
   } catch (e) {}
 }
@@ -45,8 +64,18 @@ function saveProgress() {
 function resetProgress() {
   answers = new Array(QUESTIONS.length).fill(null);
   userAnswerData = new Array(QUESTIONS.length).fill(null);
-  current = 0; score = 0; answeredCount = 0;
+  current = 0; score = 0; answeredCount = 0; examRevealed = false;
   saveProgress();
+}
+
+function peekStats(m) {
+  try {
+    const raw = localStorage.getItem(storageKeyFor(m));
+    if (!raw) return { answeredN: 0, score: 0, examRevealed: false };
+    const d = JSON.parse(raw);
+    if (!d.answers || d.answers.length !== QUESTIONS.length) return { answeredN: 0, score: 0, examRevealed: false };
+    return { answeredN: d.answers.filter(a => a !== null).length, score: d.score || 0, examRevealed: !!d.examRevealed };
+  } catch (e) { return { answeredN: 0, score: 0, examRevealed: false }; }
 }
 
 function escapeHtml(str) {
@@ -65,37 +94,70 @@ function shuffle(arr) {
 }
 
 // ------------------------------------------------------------
-// LANDING
+// LANDING / ВИБІР РЕЖИМУ
 // ------------------------------------------------------------
+function selectMode(m) {
+  mode = m;
+  const saved = loadProgress();
+  if (saved && saved.answers && saved.answers.length === QUESTIONS.length) {
+    answers = saved.answers;
+    userAnswerData = saved.userAnswerData || new Array(QUESTIONS.length).fill(null);
+    current = saved.current || 0;
+    score = saved.score || 0;
+    answeredCount = saved.answeredCount || 0;
+    examRevealed = !!saved.examRevealed;
+  } else {
+    resetProgress();
+  }
+  started = true;
+  render();
+}
+
+function goHome() {
+  started = false;
+  mode = null;
+  render();
+}
+
 function renderLanding() {
-  const answeredN = answers.filter(a => a !== null).length;
+  const t = peekStats('training');
+  const e = peekStats('exam');
   root.innerHTML = `
     <div class="landing">
       <h1>CCNP DCCOR — тренажер</h1>
-      <p>350-601 DCCOR практичні питання з поясненнями. Прогрес зберігається у браузері автоматично.</p>
-      <div class="landing-stats">
-        <div class="landing-stat"><div class="num">${QUESTIONS.length}</div><div class="lbl">питань</div></div>
-        <div class="landing-stat"><div class="num">${answeredN}</div><div class="lbl">пройдено</div></div>
-        <div class="landing-stat"><div class="num">${score}</div><div class="lbl">правильно</div></div>
-      </div>
-      <div class="landing-actions">
-        <button class="btn" id="start-btn">${answeredN > 0 ? 'Продовжити' : 'Почати'}</button>
-        ${answeredN > 0 ? '<button class="btn secondary" id="restart-btn">Почати заново</button>' : ''}
+      <p>350-601 DCCOR практичні питання з поясненнями. Прогрес зберігається у браузері окремо для кожного режиму.</p>
+      <div class="mode-cards">
+        <div class="mode-card">
+          <h3>Тренування</h3>
+          <p class="mode-desc">Правильна відповідь і пояснення показуються одразу після кожного питання.</p>
+          <div class="mode-stat">${t.answeredN} / ${QUESTIONS.length} пройдено · ${t.score} правильно</div>
+          <div class="landing-actions">
+            <button class="btn" id="start-training">${t.answeredN > 0 ? 'Продовжити' : 'Почати'}</button>
+            ${t.answeredN > 0 ? '<button class="btn secondary" id="restart-training">Скинути</button>' : ''}
+          </div>
+        </div>
+        <div class="mode-card">
+          <h3>Екзамен</h3>
+          <p class="mode-desc">Без підказок під час проходження. Правильні відповіді й пояснення — лише у підсумку.</p>
+          <div class="mode-stat">${e.answeredN > 0 ? (e.examRevealed ? `${e.answeredN} / ${QUESTIONS.length} · ${e.score} правильно` : `${e.answeredN} / ${QUESTIONS.length} · в процесі`) : `0 / ${QUESTIONS.length}`}</div>
+          <div class="landing-actions">
+            <button class="btn" id="start-exam">${e.answeredN > 0 ? 'Продовжити' : 'Почати'}</button>
+            ${e.answeredN > 0 ? '<button class="btn secondary" id="restart-exam">Скинути</button>' : ''}
+          </div>
+        </div>
       </div>
     </div>
   `;
   document.getElementById('topbar').classList.add('hidden');
-  document.getElementById('start-btn').onclick = () => {
-    started = true;
-    render();
+  document.getElementById('start-training').onclick = () => selectMode('training');
+  document.getElementById('start-exam').onclick = () => selectMode('exam');
+  const rt = document.getElementById('restart-training');
+  if (rt) rt.onclick = () => {
+    if (confirm('Скинути прогрес режиму «Тренування»?')) { localStorage.removeItem(storageKeyFor('training')); renderLanding(); }
   };
-  const restartBtn = document.getElementById('restart-btn');
-  if (restartBtn) restartBtn.onclick = () => {
-    if (confirm('Скинути весь прогрес і почати заново?')) {
-      resetProgress();
-      started = true;
-      render();
-    }
+  const re = document.getElementById('restart-exam');
+  if (re) re.onclick = () => {
+    if (confirm('Скинути прогрес режиму «Екзамен»?')) { localStorage.removeItem(storageKeyFor('exam')); renderLanding(); }
   };
 }
 
@@ -106,7 +168,12 @@ function updateTopbar() {
   document.getElementById('topbar').classList.remove('hidden');
   document.getElementById('q-counter').textContent = `Питання ${current + 1} / ${QUESTIONS.length}`;
   document.getElementById('progress-bar').style.width = `${(current / QUESTIONS.length) * 100}%`;
-  document.getElementById('stats').textContent = `Правильно: ${score} / ${answeredCount}`;
+  const statsEl = document.getElementById('stats');
+  if (mode === 'exam' && !examRevealed) {
+    statsEl.textContent = `Відповідено: ${answeredCount} / ${QUESTIONS.length}`;
+  } else {
+    statsEl.textContent = `Правильно: ${score} / ${answeredCount}`;
+  }
 }
 
 // ------------------------------------------------------------
@@ -114,12 +181,17 @@ function updateTopbar() {
 // ------------------------------------------------------------
 function renderNavDots(container) {
   container.innerHTML = '';
+  const reveal = mode !== 'exam' || examRevealed;
   QUESTIONS.forEach((q, i) => {
     const d = document.createElement('div');
     d.className = 'dot';
     if (i === current) d.classList.add('current');
-    if (answers[i] === 'correct') d.classList.add('answered-correct');
-    if (answers[i] === 'incorrect') d.classList.add('answered-incorrect');
+    if (reveal) {
+      if (answers[i] === 'correct') d.classList.add('answered-correct');
+      if (answers[i] === 'incorrect') d.classList.add('answered-incorrect');
+    } else if (answers[i] !== null) {
+      d.classList.add('answered-neutral');
+    }
     d.title = 'Питання ' + (i + 1);
     d.textContent = i + 1;
     d.onclick = () => { current = i; render(); };
@@ -141,10 +213,11 @@ function render() {
   const card = document.createElement('div');
   card.className = 'card';
 
+  const modeTag = `<span class="mode-tag">${mode === 'exam' ? 'Екзамен' : 'Тренування'}</span>`;
   const header = document.createElement('div');
   header.className = 'card-header';
   header.innerHTML = `<span>Питання #${q.id}${q.type === 'order' ? ' · впорядкування' : ''}${q.type === 'match' ? ' · зіставлення' : ''}${q.type === 'fill' ? ' · заповнення' : ''}</span>` +
-    `<span>${q.needsAnswer ? '<span class="badge-warn">не підтверджено офіційно</span>' : ''} ${escapeHtml(q.topic||'')}</span>`;
+    `<span>${q.needsAnswer ? '<span class="badge-warn">не підтверджено офіційно</span>' : ''} ${modeTag} ${escapeHtml(q.topic||'')}</span>`;
   card.appendChild(header);
 
   const body = document.createElement('div');
@@ -181,7 +254,7 @@ function render() {
   const checkBtn = document.createElement('button');
   checkBtn.className = 'btn';
   checkBtn.id = 'check-btn';
-  checkBtn.textContent = 'Перевірити';
+  checkBtn.textContent = mode === 'exam' ? 'Відповісти' : 'Перевірити';
   actions.appendChild(checkBtn);
 
   const prevBtn = document.createElement('button');
@@ -200,7 +273,7 @@ function render() {
   const homeBtn = document.createElement('button');
   homeBtn.className = 'btn secondary';
   homeBtn.textContent = 'На головну';
-  homeBtn.onclick = () => { started = false; render(); };
+  homeBtn.onclick = () => goHome();
   actions.appendChild(homeBtn);
 
   root.innerHTML = '';
@@ -271,14 +344,16 @@ function checkChoice(q) {
   return selected;
 }
 
-function markChoice(q, selected) {
+function markChoice(q, selected, reveal) {
   const wrap = document.getElementById('choice-wrap');
   const correctSet = new Set(q.correct);
   const selSet = new Set(selected);
   [...wrap.children].forEach((el, i) => {
     el.style.cursor = 'default';
-    if (correctSet.has(i)) el.classList.add('correct');
-    else if (selSet.has(i)) el.classList.add('incorrect');
+    if (reveal) {
+      if (correctSet.has(i)) el.classList.add('correct');
+      else if (selSet.has(i)) el.classList.add('incorrect');
+    }
   });
 }
 
@@ -328,11 +403,12 @@ function moveOrderItem(pos, dir) {
   [order[pos], order[newPos]] = [order[newPos], order[pos]];
 }
 
-function markOrder(q) {
+function markOrder(q, reveal) {
   const order = orderState[current];
   const rows = document.querySelectorAll('#order-list .order-item');
   rows.forEach((row, pos) => {
     row.querySelectorAll('button').forEach(b => b.disabled = true);
+    if (!reveal) return;
     const itemIdx = parseInt(row.dataset.itemIdx, 10);
     if (q.correctOrder[pos] === itemIdx) row.classList.add('correct');
     else row.classList.add('incorrect');
@@ -370,12 +446,13 @@ function drawFillTemplate(q, pre) {
   pre.innerHTML = html;
 }
 
-function markFill(q) {
+function markFill(q, reveal) {
   const selects = document.querySelectorAll('#fill-template select.fill-blank');
   selects.forEach(sel => {
+    sel.disabled = true;
+    if (!reveal) return;
     const idx = parseInt(sel.dataset.blank, 10);
     const correctVal = q.blankAnswers[idx];
-    sel.disabled = true;
     if (sel.value === correctVal) sel.classList.add('correct');
     else sel.classList.add('incorrect');
   });
@@ -425,12 +502,13 @@ function renderMatch(q, body) {
   body.appendChild(list);
 }
 
-function markMatch(q) {
+function markMatch(q, reveal) {
   const rows = document.querySelectorAll('#match-list .match-item');
   rows.forEach(row => {
-    const i = parseInt(row.dataset.idx, 10);
     const sel = row.querySelector('select');
     sel.disabled = true;
+    if (!reveal) return;
+    const i = parseInt(row.dataset.idx, 10);
     const chosen = sel.value === '' ? null : parseInt(sel.value, 10);
     const correct = q.matchCorrect[i];
     if (chosen === correct) row.classList.add('correct');
@@ -476,6 +554,7 @@ function restoreMatchAnswers(vals) {
 function handleCheck(q) {
   let isCorrect = false;
   let userData = null;
+  const reveal = mode !== 'exam';
 
   if (q.type === 'single' || q.type === 'multi') {
     const selected = checkChoice(q);
@@ -484,22 +563,22 @@ function handleCheck(q) {
     const correctSet = new Set(q.correct);
     const selSet = new Set(selected);
     isCorrect = correctSet.size === selSet.size && [...correctSet].every(x => selSet.has(x));
-    markChoice(q, selected);
+    markChoice(q, selected, reveal);
   } else if (q.type === 'order') {
     userData = orderState[current].slice();
     isCorrect = JSON.stringify(orderState[current]) === JSON.stringify(q.correctOrder);
-    markOrder(q);
+    markOrder(q, reveal);
   } else if (q.type === 'fill') {
     const vals = getFillAnswers();
     if (vals.some(v => !v)) { alert('Заповни всі поля.'); return; }
     userData = vals;
     isCorrect = isFillCorrect(q);
-    markFill(q);
+    markFill(q, reveal);
   } else if (q.type === 'match') {
     const vals = getMatchAnswers();
     userData = vals;
     isCorrect = isMatchCorrect(q);
-    markMatch(q);
+    markMatch(q, reveal);
   }
 
   answers[current] = isCorrect ? 'correct' : 'incorrect';
@@ -508,10 +587,15 @@ function handleCheck(q) {
   if (isCorrect) score++;
 
   const feedback = document.getElementById('feedback');
-  feedback.classList.add('show', isCorrect ? 'correct' : 'incorrect');
-  feedback.textContent = isCorrect ? '✓ Правильно!' : '✗ Неправильно.';
+  if (reveal) {
+    feedback.classList.add('show', isCorrect ? 'correct' : 'incorrect');
+    feedback.textContent = isCorrect ? '✓ Правильно!' : '✗ Неправильно.';
+    showExtras(q);
+  } else {
+    feedback.classList.add('show', 'neutral');
+    feedback.textContent = 'Відповідь зафіксована.';
+  }
 
-  showExtras(q);
   updateTopbar();
   document.getElementById('check-btn').disabled = true;
   saveProgress();
@@ -522,33 +606,46 @@ function handleCheck(q) {
 }
 
 function showAlreadyAnswered(q) {
+  const reveal = mode !== 'exam' || examRevealed;
   const isCorrect = answers[current] === 'correct';
   const feedback = document.getElementById('feedback');
-  feedback.classList.add('show', isCorrect ? 'correct' : 'incorrect');
-  feedback.textContent = isCorrect ? '✓ Правильно!' : '✗ Неправильно.';
+  if (reveal) {
+    feedback.classList.add('show', isCorrect ? 'correct' : 'incorrect');
+    feedback.textContent = isCorrect ? '✓ Правильно!' : '✗ Неправильно.';
+  } else {
+    feedback.classList.add('show', 'neutral');
+    feedback.textContent = 'Відповідь зафіксована.';
+  }
 
   if (q.type === 'single' || q.type === 'multi') {
     const wrap = document.getElementById('choice-wrap');
     (userAnswerData[current] || []).forEach(i => wrap.children[i] && wrap.children[i].classList.add('selected'));
-    markChoice(q, userAnswerData[current] || []);
+    markChoice(q, userAnswerData[current] || [], reveal);
   } else if (q.type === 'order') {
     orderState[current] = userAnswerData[current] ? userAnswerData[current].slice() : orderState[current];
     drawOrderList(q, document.getElementById('order-list'));
-    markOrder(q);
+    markOrder(q, reveal);
   } else if (q.type === 'fill') {
     restoreFillAnswers(userAnswerData[current]);
-    markFill(q);
+    markFill(q, reveal);
   } else if (q.type === 'match') {
     restoreMatchAnswers(userAnswerData[current]);
-    markMatch(q);
+    markMatch(q, reveal);
   }
-  showExtras(q);
+
+  if (reveal) showExtras(q);
+  else document.getElementById('extra-info').innerHTML = '';
 }
 
 // ------------------------------------------------------------
 // SUMMARY
 // ------------------------------------------------------------
 function renderSummary() {
+  if (mode === 'exam' && !examRevealed) {
+    examRevealed = true;
+    saveProgress();
+  }
+
   document.getElementById('topbar').classList.remove('hidden');
   document.getElementById('q-counter').textContent = 'Підсумок';
   document.getElementById('progress-bar').style.width = '100%';
@@ -559,7 +656,7 @@ function renderSummary() {
 
   root.innerHTML = `
     <div class="card">
-      <div class="card-header"><span>Результат</span></div>
+      <div class="card-header"><span>Результат — ${mode === 'exam' ? 'Екзамен' : 'Тренування'}</span></div>
       <div class="card-body summary">
         <h2>Тест завершено</h2>
         <div class="score">${score} / ${QUESTIONS.length}</div>
@@ -582,7 +679,53 @@ function renderSummary() {
     current = firstWrong;
     render();
   };
-  document.getElementById('home-btn').onclick = () => { started = false; render(); };
+  document.getElementById('home-btn').onclick = () => goHome();
+}
+
+// ------------------------------------------------------------
+// ДОСТУП ЗА ПАРОЛЕМ (клієнтський гейт для GitHub Pages)
+// ------------------------------------------------------------
+const AUTH_HASH = '0613e132e6df700c2472e4af6f2294131a77d18b539b7091cc9189b79712bcee';
+const AUTH_KEY = 'dccor-auth-ok-v1';
+
+async function sha256Hex(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function checkAuth() {
+  if (sessionStorage.getItem(AUTH_KEY) === '1') { showApp(); return; }
+  showGate();
+}
+
+function showGate() {
+  document.getElementById('auth-gate').classList.remove('hidden');
+  document.getElementById('topbar').classList.add('hidden');
+  document.querySelector('.wrap').classList.add('hidden');
+  const btn = document.getElementById('auth-btn');
+  const input = document.getElementById('auth-pass');
+  const err = document.getElementById('auth-err');
+  const attempt = async () => {
+    if (!input.value) return;
+    const hash = await sha256Hex(input.value);
+    if (hash === AUTH_HASH) {
+      sessionStorage.setItem(AUTH_KEY, '1');
+      showApp();
+    } else {
+      err.textContent = 'Невірний пароль';
+      input.value = '';
+      input.focus();
+    }
+  };
+  btn.onclick = attempt;
+  input.onkeydown = (e) => { if (e.key === 'Enter') attempt(); };
+  input.focus();
+}
+
+function showApp() {
+  document.getElementById('auth-gate').classList.add('hidden');
+  document.querySelector('.wrap').classList.remove('hidden');
+  init();
 }
 
 // ------------------------------------------------------------
@@ -591,19 +734,8 @@ function renderSummary() {
 async function init() {
   root.innerHTML = '<div class="landing"><p>Завантаження питань…</p></div>';
   QUESTIONS = await loadQuestions();
-
-  const saved = loadProgress();
-  if (saved && saved.answers && saved.answers.length === QUESTIONS.length) {
-    answers = saved.answers;
-    userAnswerData = saved.userAnswerData || new Array(QUESTIONS.length).fill(null);
-    current = saved.current || 0;
-    score = saved.score || 0;
-    answeredCount = saved.answeredCount || 0;
-  } else {
-    resetProgress();
-  }
-
+  migrateOldProgress();
   render();
 }
 
-init();
+checkAuth();
