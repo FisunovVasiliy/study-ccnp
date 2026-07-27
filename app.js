@@ -29,7 +29,9 @@ let answeredCount = 0;
 let started = false;
 let mode = null;            // 'training' | 'exam'
 let examRevealed = false;   // true, коли екзамен завершено і можна показувати правильні відповіді
-let topicFilter = 'All';
+let topicFilter = 'All';    // фільтр теми, застосовується ЛИШЕ до режиму «Тренування»
+let sessionTopic = 'All';   // тема поточної сесії (для Екзамену завжди 'All')
+let navChunk = 0;           // яка сотня питань зараз показана в навігації
 let currentUser = null;     // slug поточного залогіненого користувача
 
 const root = document.getElementById('app-root');
@@ -92,7 +94,7 @@ function migrateOldProgress() {
 
 function loadProgress() {
   try {
-    const raw = localStorage.getItem(storageKeyFor(mode, topicFilter));
+    const raw = localStorage.getItem(storageKeyFor(mode, sessionTopic));
     if (!raw) return null;
     return JSON.parse(raw);
   } catch (e) { return null; }
@@ -100,7 +102,7 @@ function loadProgress() {
 
 function saveProgress() {
   try {
-    localStorage.setItem(storageKeyFor(mode, topicFilter), JSON.stringify({
+    localStorage.setItem(storageKeyFor(mode, sessionTopic), JSON.stringify({
       answers, userAnswerData, current, score, answeredCount, examRevealed
     }));
   } catch (e) {}
@@ -144,7 +146,10 @@ function shuffle(arr) {
 // ------------------------------------------------------------
 function selectMode(m) {
   mode = m;
-  activeIndices = indicesForTopic(topicFilter);
+  // фільтр теми стосується лише тренування; екзамен завжди охоплює всі 526 питань
+  sessionTopic = (m === 'exam') ? 'All' : topicFilter;
+  activeIndices = indicesForTopic(sessionTopic);
+  navChunk = 0;
   const saved = loadProgress();
   if (saved && saved.answers && saved.answers.length === activeIndices.length) {
     answers = saved.answers;
@@ -169,7 +174,7 @@ function goHome() {
 function renderLanding() {
   const counts = topicCounts();
   const t = peekStats('training', topicFilter);
-  const e = peekStats('exam', topicFilter);
+  const e = peekStats('exam', 'All'); // екзамен завжди по всіх темах, незалежно від фільтра
 
   const topicOptions = TOPIC_ORDER.map(topic => {
     const n = topic === 'All' ? QUESTIONS.length : (counts[topic] || 0);
@@ -187,8 +192,9 @@ function renderLanding() {
       <h1>CCNP DCCOR — тренажер</h1>
       <p>350-601 DCCOR практичні питання з поясненнями. Прогрес зберігається у браузері окремо для кожного користувача, режиму й теми.</p>
       <div class="topic-filter-row">
-        <label for="topic-select">Тема (за офіційним блупринтом 350-601 v1.2):</label>
+        <label for="topic-select">Тема для тренування (за офіційним блупринтом 350-601 v1.2):</label>
         <select id="topic-select">${topicOptions}</select>
+        <div class="topic-filter-note">Фільтр діє лише в режимі «Тренування». Екзамен завжди охоплює всі 526 питань.</div>
       </div>
       <div class="mode-cards">
         <div class="mode-card">
@@ -202,7 +208,7 @@ function renderLanding() {
         </div>
         <div class="mode-card">
           <h3>Екзамен</h3>
-          <p class="mode-desc">Без підказок під час проходження. Правильні відповіді й пояснення — лише у підсумку.</p>
+          <p class="mode-desc">Без підказок під час проходження. Правильні відповіді й пояснення — лише у підсумку. Завжди всі теми.</p>
           <div class="mode-stat">${e.answeredN > 0 ? (e.examRevealed ? `${e.answeredN} / ${e.total} · ${e.score} правильно` : `${e.answeredN} / ${e.total} · в процесі`) : `0 / ${e.total}`}</div>
           <div class="landing-actions">
             <button class="btn" id="start-exam">${e.answeredN > 0 ? 'Продовжити' : 'Почати'}</button>
@@ -234,8 +240,8 @@ function renderLanding() {
   };
   const re = document.getElementById('restart-exam');
   if (re) re.onclick = () => {
-    if (confirm('Скинути прогрес режиму «Екзамен» для теми «' + (TOPIC_LABELS[topicFilter] || topicFilter) + '»?')) {
-      localStorage.removeItem(storageKeyFor('exam', topicFilter)); renderLanding();
+    if (confirm('Скинути прогрес режиму «Екзамен»?')) {
+      localStorage.removeItem(storageKeyFor('exam', 'All')); renderLanding();
     }
   };
 }
@@ -260,38 +266,56 @@ function updateTopbar() {
 // ------------------------------------------------------------
 const NAV_CHUNK_SIZE = 100;
 
-function renderNavDots(container) {
+// Показуємо лише одну «сотню» дотів за раз; перемикання — вкладками зверху.
+// resync=true (за замовчуванням) підлаштовує видиму сотню під поточне питання
+// (виклик з render()); resync=false зберігає вибір вкладки (виклик із самої вкладки).
+function renderNavDots(container, resync) {
+  if (resync === undefined) resync = true;
   container.innerHTML = '';
   const reveal = mode !== 'exam' || examRevealed;
+  const totalChunks = Math.max(1, Math.ceil(activeIndices.length / NAV_CHUNK_SIZE));
 
-  for (let start = 0; start < activeIndices.length; start += NAV_CHUNK_SIZE) {
-    const end = Math.min(start + NAV_CHUNK_SIZE, activeIndices.length);
+  if (resync) navChunk = Math.floor(current / NAV_CHUNK_SIZE);
+  if (navChunk >= totalChunks) navChunk = totalChunks - 1;
+  if (navChunk < 0) navChunk = 0;
 
-    const label = document.createElement('div');
-    label.className = 'nav-group-label';
-    label.textContent = `${start + 1}–${end}`;
-    container.appendChild(label);
-
-    const grid = document.createElement('div');
-    grid.className = 'nav-dots';
-    for (let i = start; i < end; i++) {
-      const qi = activeIndices[i];
-      const d = document.createElement('div');
-      d.className = 'dot';
-      if (i === current) d.classList.add('current');
-      if (reveal) {
-        if (answers[i] === 'correct') d.classList.add('answered-correct');
-        if (answers[i] === 'incorrect') d.classList.add('answered-incorrect');
-      } else if (answers[i] !== null) {
-        d.classList.add('answered-neutral');
-      }
-      d.title = 'Питання #' + QUESTIONS[qi].id;
-      d.textContent = i + 1;
-      d.onclick = () => { current = i; render(); };
-      grid.appendChild(d);
+  if (totalChunks > 1) {
+    const tabs = document.createElement('div');
+    tabs.className = 'nav-chunk-tabs';
+    for (let c = 0; c < totalChunks; c++) {
+      const cStart = c * NAV_CHUNK_SIZE + 1;
+      const cEnd = Math.min((c + 1) * NAV_CHUNK_SIZE, activeIndices.length);
+      const tab = document.createElement('button');
+      tab.type = 'button';
+      tab.className = 'nav-chunk-tab' + (c === navChunk ? ' active' : '');
+      tab.textContent = `${cStart}–${cEnd}`;
+      tab.onclick = () => { navChunk = c; renderNavDots(container, false); };
+      tabs.appendChild(tab);
     }
-    container.appendChild(grid);
+    container.appendChild(tabs);
   }
+
+  const start = navChunk * NAV_CHUNK_SIZE;
+  const end = Math.min(start + NAV_CHUNK_SIZE, activeIndices.length);
+  const grid = document.createElement('div');
+  grid.className = 'nav-dots';
+  for (let i = start; i < end; i++) {
+    const qi = activeIndices[i];
+    const d = document.createElement('div');
+    d.className = 'dot';
+    if (i === current) d.classList.add('current');
+    if (reveal) {
+      if (answers[i] === 'correct') d.classList.add('answered-correct');
+      if (answers[i] === 'incorrect') d.classList.add('answered-incorrect');
+    } else if (answers[i] !== null) {
+      d.classList.add('answered-neutral');
+    }
+    d.title = 'Питання #' + QUESTIONS[qi].id;
+    d.textContent = i + 1;
+    d.onclick = () => { current = i; render(); };
+    grid.appendChild(d);
+  }
+  container.appendChild(grid);
 }
 
 // ------------------------------------------------------------
@@ -309,7 +333,7 @@ function render() {
   card.className = 'card';
 
   const modeLabel = mode === 'exam' ? 'Екзамен' : 'Тренування';
-  const topicSuffix = topicFilter !== 'All' ? ` · ${TOPIC_LABELS[topicFilter] || topicFilter}` : '';
+  const topicSuffix = sessionTopic !== 'All' ? ` · ${TOPIC_LABELS[sessionTopic] || sessionTopic}` : '';
   const modeTag = `<span class="mode-tag">${modeLabel}${topicSuffix}</span>`;
   const header = document.createElement('div');
   header.className = 'card-header';
@@ -752,7 +776,7 @@ function renderSummary() {
   const wrongIds = activeIndices.filter((qi, i) => answers[i] === 'incorrect').map(qi => QUESTIONS[qi].id);
 
   const modeLabel = mode === 'exam' ? 'Екзамен' : 'Тренування';
-  const topicSuffix = topicFilter !== 'All' ? ` · ${TOPIC_LABELS[topicFilter] || topicFilter}` : '';
+  const topicSuffix = sessionTopic !== 'All' ? ` · ${TOPIC_LABELS[sessionTopic] || sessionTopic}` : '';
 
   root.innerHTML = `
     <div class="card">
