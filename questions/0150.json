@@ -1,6 +1,6 @@
 {
  "id": 150,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "What is a benefit of independent resource scaling in Cisco HyperFlex hybrid architecture?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 512,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. What is the result of this configuration?\nswitch(config)# fcns proxy-port 21:00:00:b2:c5:71:32:a9 vsan 100",
  "context": null,

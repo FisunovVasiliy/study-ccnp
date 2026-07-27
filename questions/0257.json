@@ -1,6 +1,6 @@
 {
  "id": 257,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. Which setting must be configured to prevent the reuse of passwords?",
  "context": "UCS Manager GUI: All > User Management > User Services > Locally Authenticated Users tab. Properties: Password Strength Check checked. Password Profile: Change Interval, No Change Interval, Change During Interval (Enable/Disable), History Count, Change Count fields.",

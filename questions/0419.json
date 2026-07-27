@@ -1,6 +1,6 @@
 {
  "id": 419,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "Which two actions must be taken to directly connect a Fibre Channel storage array to a Cisco UCS domain? (Choose two.)",
  "context": null,

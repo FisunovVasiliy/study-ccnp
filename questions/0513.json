@@ -1,6 +1,6 @@
 {
  "id": 513,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Which Cisco UCS component does an infra bundle \"A\" software upgrade?",
  "context": null,

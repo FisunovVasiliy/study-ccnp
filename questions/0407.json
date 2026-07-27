@@ -1,6 +1,6 @@
 {
  "id": 407,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. Two vPCs are configured from leaf A and leaf B in a Cisco ACI fabric to two different downstream devices. Which configuration object must be used on the leaf switches to support this design?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 263,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "A network administrator must configure an extra keyring in Cisco UCS Manager. The key must provide a high level of encryption and secure authentication when users use the web interface. Which configuration command set must be applied to meet these requirements?",
  "context": null,

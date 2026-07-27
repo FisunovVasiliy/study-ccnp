@@ -1,6 +1,6 @@
 {
  "id": 94,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer is configuring a backup operation on the existing Cisco UCS environment using a logical configuration.\nWhich configuration is expected to be saved by using this backup type?",
  "context": null,

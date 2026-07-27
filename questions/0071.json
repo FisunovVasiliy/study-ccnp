@@ -1,6 +1,6 @@
 {
  "id": 71,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. A network engineer is implementing a configuration checkpoint on a Cisco Nexus 9000 Series switch. The configuration must skip any existing vPC configuration errors and must complete if there are any configuration errors. The engineer finished the vPC domain configuration part. Which command completes the checkpoint implementation?",
  "context": "rollback running-config checkpoint system-fm-vpc <output-omitted>",

@@ -81,6 +81,22 @@ a { color: var(--blue); }
 .landing-stat .lbl { font-size: 13px; color: var(--muted); }
 .landing-actions { display: flex; gap: 12px; justify-content: center; margin-top: 20px; flex-wrap: wrap; }
 
+/* ---------- user bar ---------- */
+.user-bar { font-size: 12.5px; color: var(--muted); text-align: right; margin-bottom: 8px; }
+.user-bar a { color: var(--blue); text-decoration: none; }
+.user-bar a:hover { text-decoration: underline; }
+
+/* ---------- topic filter ---------- */
+.topic-filter-row {
+  display: flex; flex-direction: column; gap: 6px;
+  align-items: center; margin: 24px auto 0; max-width: 360px;
+}
+.topic-filter-row label { font-size: 12.5px; color: var(--muted); }
+.topic-filter-row select {
+  width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: 7px;
+  font-size: 13.5px; background: var(--card); color: var(--text);
+}
+
 /* ---------- mode selection ---------- */
 .mode-cards { display: flex; gap: 16px; justify-content: center; margin: 28px 0; flex-wrap: wrap; }
 .mode-card {
@@ -295,11 +311,16 @@ button.btn:disabled { opacity: .5; cursor: not-allowed; }
 .vote-note { margin-top: 8px; font-size: 12px; color: var(--muted); }
 
 /* ---------- nav dots ---------- */
+.nav-dots-wrap { margin-top: 18px; }
+.nav-group-label {
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  margin: 14px 0 6px; text-transform: uppercase; letter-spacing: .02em;
+}
+.nav-group-label:first-child { margin-top: 0; }
 .nav-dots {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
   gap: 6px;
-  margin-top: 18px;
 }
 .dot {
   aspect-ratio: 1;
@@ -325,3 +346,60 @@ button.btn:disabled { opacity: .5; cursor: not-allowed; }
 .filter-bar button.active { background: var(--blue); color: #fff; border-color: var(--blue); }
 
 .hidden { display: none !important; }
+
+/* ---------- mobile ---------- */
+@media (max-width: 600px) {
+  .wrap { padding: 12px 8px 40px; }
+
+  .topbar { padding: 8px 10px; gap: 8px; }
+  .topbar h1 { font-size: 12.5px; }
+  .stats { font-size: 11.5px; }
+
+  .landing { margin: 24px auto; padding: 0 10px; }
+  .landing h1 { font-size: 22px; }
+  .landing p { font-size: 13.5px; }
+  .landing-stats { gap: 14px; }
+  .landing-stat .num { font-size: 22px; }
+
+  .topic-filter-row { max-width: 100%; margin-top: 18px; }
+
+  .mode-cards { flex-direction: column; align-items: stretch; gap: 12px; }
+  .mode-card { max-width: 100%; min-width: 0; padding: 16px; }
+  .mode-card .mode-desc { min-height: 0; }
+
+  .card { margin-top: 12px; border-radius: 8px; }
+  .card-header {
+    flex-direction: column; align-items: flex-start; gap: 4px;
+    font-size: 12.5px; padding: 10px 14px;
+  }
+  .card-body { padding: 14px; }
+  .q-text { font-size: 14.5px; }
+  pre.context { font-size: 11.5px; padding: 10px; }
+  .q-image { border-radius: 6px; }
+
+  .option { padding: 10px 12px; font-size: 14px; gap: 8px; }
+  .option .marker { width: 20px; height: 20px; font-size: 10px; }
+
+  .order-item { padding: 8px 10px; gap: 8px; }
+  .order-item .item-text { font-size: 12.5px; }
+
+  .fill-template { font-size: 12px; padding: 10px; line-height: 2.1; }
+
+  .match-item { padding: 8px 10px; gap: 8px; }
+  .match-item .bank-text { min-width: 100%; font-size: 13px; }
+  .match-item select { min-width: 0; width: 100%; }
+
+  .actions { margin: 0 14px 16px; flex-direction: column; gap: 8px; }
+  .actions button.btn { width: 100%; }
+
+  .nav-dots { grid-template-columns: repeat(auto-fill, minmax(24px, 1fr)); gap: 4px; }
+  .dot { font-size: 10px; }
+
+  .summary { padding: 22px 14px; }
+  .summary .score { font-size: 32px; }
+
+  .auth-gate { padding: 16px; }
+  .auth-box { padding: 26px 20px; max-width: 100%; }
+
+  .user-bar { text-align: center; font-size: 12px; }
+}

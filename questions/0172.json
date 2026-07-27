@@ -1,6 +1,6 @@
 {
  "id": 172,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibit. An engineer is configuring a VSAN on the network. Which option must be selected to create the VSAN?",
  "context": "UCS Manager GUI: Create VSAN dialog with options Common/Global, Fabric A, Fabric B, Both Fabrics Configured Differently; and FC Zoning Settings checkbox 'FC Zoning Enabled'. Network topology shows Fabric A dedicated to the new SAN VSAN.",

@@ -1,6 +1,6 @@
 {
  "id": 449,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "Which two actions are needed to configure a single Cisco APIC controller for Cisco ACI fabric for the first time? (Choose two.)",
  "context": null,

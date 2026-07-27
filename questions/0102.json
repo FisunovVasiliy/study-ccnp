@@ -1,6 +1,6 @@
 {
  "id": 102,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibit. What is the result of this series of commands?",
  "context": "UCS-A# scope adapter 1/1/1\nUCS-A /chassis/server/adapter # show image\nName                         Type      Version    State\n---------------------------  --------  ---------  --------\nucs-m81kr-vic.2.2.1b.bin     Adapter   2.2(1b)    Active\n\nUCS-A /chassis/server/adapter # update firmware 2.2(1b)\nUCS-A /chassis/server/adapter* # activate firmware 2.2(1b) set-startup-only\nUCS-A /chassis/server/adapter* # commit-buffer\nUCS-A /chassis/server/adapter #",

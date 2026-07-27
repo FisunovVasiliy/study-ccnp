@@ -1,6 +1,6 @@
 {
  "id": 175,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "The FCoE technology is used in a data center and the MDS switches are configured as Fibre Channel Forwarders. Which configuration should be applied to an MDS switch in order to be used as the best switch to connect by the CNAs in the fabric?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 412,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A company needs an automation solution that enforces the desired state of the infrastructure and automatically reverts any manual configuration changes. The solution will initially be used for network devices but must later extend to server infrastructure as well. Which tool meets these requirements?",
  "context": null,

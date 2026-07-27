@@ -1,6 +1,6 @@
 {
  "id": 506,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "What does WWPN uniquely identify in this Fibre Channel fabric?\nMDS-9148S-1 (config)# show zone active vsan 11\nzone name ZONE_VSAN11 vsan 11\n* fcid 0x010000 [pwwn 50:0a:04:87:88:1a:36:00]\n* fcid 0x470000 [pwwn 20:00:00:25:b5:10:70:10]",
  "context": null,

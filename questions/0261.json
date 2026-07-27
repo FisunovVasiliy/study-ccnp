@@ -1,6 +1,6 @@
 {
  "id": 261,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. Which action is taken to ensure that the relay agent forwards the DHCP BOOTREQUEST packet to a DHCP server?",
  "context": "switch(config)# feature dhcp\nswitch(config)# ip dhcp snooping\nswitch(config)# service dhcp\nswitch(config)# ip dhcp snooping vlan 100,200,250-252\nswitch(config)# ip dhcp relay information option",

@@ -1,6 +1,6 @@
 {
  "id": 480,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. An engineer runs a Python script from a newly enabled guest shell on a Cisco Nexus 93108 Series Switch. The script needs an additional package called \"Markdown\" installed from the Python package manager. Which set of tasks must the engineer perform to install the required package?\nWARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x7f5b537c8f10>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /simple/markdown/\nERROR: Could not find a version that satisfies the requirement Markdown (from versions: none)\nERROR: No matching distribution found for Markdown",
  "context": null,

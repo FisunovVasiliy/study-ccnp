@@ -1,6 +1,6 @@
 {
  "id": 220,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Which configuration generates a syslog message when CPU utilization is higher than 60%?",
  "context": null,

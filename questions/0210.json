@@ -1,6 +1,6 @@
 {
  "id": 210,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "What is required for using Ansible with HTTP/HTTPS protocol in a Cisco NX-OS environment?",
  "context": null,

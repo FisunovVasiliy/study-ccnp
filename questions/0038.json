@@ -1,6 +1,6 @@
 {
  "id": 38,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. A network engineer plans to upgrade the current software images of a Cisco Nexus switch. What is the impact of starting the EPLD upgrade?",
  "context": "switch# show install all impact epld n9000-epld.9.2.1.img\nCompatibility check:\nModule  Type   Upgradable  Impact      Reason\n------  -----  ----------  ----------  --------\n  1     SUP    YES         disruptive  Module Upgradable\n\nRetrieving EPLD versions... Please wait.\n\nImages will be upgraded according to following table:\nModule  Type  EPLD       Running-Version  New-Version  Upg-Required\n------  ----  ---------  ---------------  -----------  ------------\n  1     SUP   MI FPGA    0x23             0x23         No\n  1     SUP   IO FPGA    0x06             0x06         No\n  1     SUP   MI FPGA2   0x23             0x23         No",

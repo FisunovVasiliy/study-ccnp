@@ -1,6 +1,6 @@
 {
  "id": 17,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. A flapping link issue has been reported on the vPC keepalive link. A packet capture has been activated on the Cisco Nexus switch.\nWhat is the destination IP address of the vPC keepalive packets that are sent by the switch?",
  "context": "Nexus# show vpc peer-keepalive | i Keepalive\n--Keepalive interval : 1000 msec\n--Keepalive timeout : 5 seconds\n--Keepalive hold timeout : 3 seconds\n--Keepalive vrf : management\n--Keepalive udp port : 3200\n--Keepalive tos : 192\n\nNexus# ethanalyzer local interface mgmt limit-captured-frames 1000\nCapturing on mgmt0\n2019-06-15 12:01:51.242597 192.168.254.11 -> 192.168.254.3 ICMP Echo (ping) request\n2019-06-15 12:01:51.242860 192.168.254.3 -> 192.168.254.11 ICMP Echo (ping) reply\n2019-06-15 11:50:15.975474 192.168.254.3 -> 192.168.254.1 TCP 47540 > bootps [SYN] Seq=0 Win=1024 Len=0 MSS=1460\n2019-06-15 11:50:15.976027 192.168.254.1 -> 192.168.254.3 UDP Source port: 3200 Destination port: 3200\n2019-06-15 11:50:17.326253 192.168.254.4 -> 192.168.254.3 UDP Source port: 3200 Destination port: 3200\n2019-06-15 11:50:17.653242 192.168.254.4 -> 192.168.254.3 UDP Source port: 3200 Destination port: 3200",

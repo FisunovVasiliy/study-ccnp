@@ -1,6 +1,6 @@
 {
  "id": 70,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. Which action completes the vPC domain implementation?",
  "context": "N9K-1 (mgmt0 e1/1-2)                    N9K-2 (mgmt0 e1/1-2)\nhostname N9K-1                          hostname N9K-2\nvpc domain 100                          vpc domain 100\n  role priority 100                       role priority 90\n  peer-keepalive destination 10.10.10.2   peer-keepalive destination 10.10.10.1\ninterface port-channel100               interface port-channel100\n  switchport mode trunk                   switchport mode trunk\n  spanning-tree port type network         spanning-tree port type network\n  vpc peer-link                           vpc peer-link\ninterface Ethernet1/1                   interface Ethernet1/1\n  switchport mode trunk                   switchport mode trunk\ninterface Ethernet1/2                   interface Ethernet1/2\n  switchport mode trunk                   switchport mode trunk\ninterface mgmt0                         interface mgmt0\n  vrf member management                   vrf member management\n  ip address 10.10.10.1/24                ip address 10.10.10.2/24",

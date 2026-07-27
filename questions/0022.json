@@ -1,6 +1,6 @@
 {
  "id": 22,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "What is an advantage of streaming telemetry over SNMP?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 196,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "A storage array must be connected to port ethernet1/10 on a Cisco MDS 9000 Series switch. In addition, the array must connect using the FCoE protocol and be single-homed. Which configuration meets these requirements?",
  "context": null,

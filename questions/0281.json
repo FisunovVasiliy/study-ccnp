@@ -1,6 +1,6 @@
 {
  "id": 281,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "order",
  "question": "DRAG DROP -\nAn engineer must configure remote authentication on a Cisco UCS system. The user password must be encrypted before it is sent to the authentication server.\nThe company security policy requires the server to be based on an open standard. Drag and drop the UCS CLI AAA configuration commands from the left into the order in which they must be implemented on the right. Not all commands are used.",
  "context": null,

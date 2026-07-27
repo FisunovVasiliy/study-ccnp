@@ -1,6 +1,6 @@
 {
  "id": 294,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "multi",
  "question": "Refer to the exhibit. A user must be granted management access to the Cisco Nexus 9000 Series Switch using AAA servers. The RADIUS servers are configured to accept login requests from the same Layer 2 subnet of the switch. The user must be permitted to log in with these requirements:\n- RADIUS server 1 must be used to log in via a console.\n- RADIUS server 2 must be used to login via SSH.\nWhich two actions meet these requirements? (Choose two.)",
  "context": "Topology: RADIUS Server 1 (10.1.1.10) and RADIUS Server 2 (10.2.2.10) both connect through mgmt0/eth0/1 to a Nexus 9000 switch.\naaa group server radius RAD1\n  server 10.1.1.10\n  deadtime 30\nradius-server host 10.1.1.10 key 0 C!$c0\naaa group server radius RAD2\n  server 10.2.2.10\n  deadtime 30\nradius-server host 10.2.2.10 key 0 C!$c0\ninterface mgmt0\n  ip address 10.1.1.1/24\n  vrf member management\ninterface vlan 22\n  ip address 10.2.2.1/24\ninterface eth0/1\n  switchport\n  switchport mode access\n  swtichport access vlan 22",

@@ -1,6 +1,6 @@
 {
  "id": 209,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "What is an advantage of using Ansible for automation as compared to Puppet and Chef?",
  "context": null,

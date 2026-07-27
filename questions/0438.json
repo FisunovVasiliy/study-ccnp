@@ -1,6 +1,6 @@
 {
  "id": 438,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "A customer data center experiences bandwidth contention that affects the servers connected to the NPV-enabled switch. The NPV switch is connected to the NPIV switch using two 10 Gb uplinks, but the traffic originating from the connected hosts to the core switch exceeds the available bandwidth. The engineers decided to add a third uplink to the NPV switch to increase the available bandwidth. Which set of commands must be used to provision the new uplink?",
  "context": null,

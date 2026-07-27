@@ -1,6 +1,6 @@
 {
  "id": 521,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An online retailer uses 200 cloud-hosted virtual machines (VMs). Currently, the configuration of each VM is performed manually. To support the growth strategy of the retailer, the retailer starts to automatically scale the VMs to meet demand and uses Ansible for configuration management. Which action must be performed in Ansible to meet the requirements before automation is performed?",
  "context": null,

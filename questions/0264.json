@@ -1,6 +1,6 @@
 {
  "id": 264,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer must configure HTTPS secure management for Cisco UCS Manager using a key ring named kr2016 and a key size of 1024 bits. The environment consists of a primary fabric interconnect named UCS-A and a secondary fabric interconnect named UCS-B. Which command sequence must be used to accomplish this goal?",
  "context": null,

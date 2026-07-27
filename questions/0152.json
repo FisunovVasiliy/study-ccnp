@@ -1,6 +1,6 @@
 {
  "id": 152,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must configure the order in which the server attempts to boot from available boot device types using Cisco Integrated Management Controller (Cisco IMC). The engineer must change the boot order configuration during the setup and apply the new requirements multiple times. The requirement is to change the Cisco IMC actual boot order so it is different from the configured boot order. Which setting accomplishes this goal?",
  "context": null,

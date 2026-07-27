@@ -1,6 +1,6 @@
 {
  "id": 353,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A company plans to deploy a Cisco HyperFlex solution for data-intensive applications and databases. The proposed solution should offer the highest performance with high consistency and low latency. Which Cisco HyperFlex storage configuration should be used?",
  "context": null,

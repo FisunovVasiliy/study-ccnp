@@ -1,6 +1,6 @@
 {
  "id": 314,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A network engineer must determine the cooling requirements for a Cisco UCS C-Series Rack Server. The server with PCIe cards is configured with a fan configuration policy. Which configuration should be used for the fan policy of the server?",
  "context": null,

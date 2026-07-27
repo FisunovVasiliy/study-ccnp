@@ -1,6 +1,6 @@
 {
  "id": 115,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibit. Which backup operation type does not include the Preserve Identities feature?",
  "context": "UCS Manager GUI: Create Backup Operation dialog.\nAdmin State: Enabled / Disabled\nType: Full State / All Configuration / System Configuration / Logical Configuration\nPreserve Identities: checkbox",

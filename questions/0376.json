@@ -1,6 +1,6 @@
 {
  "id": 376,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "A new user with access privileges in the Finance department moves to a new Admin department. The user must have access privileges to the Admin department data and applications inside the Cisco UCS Manager. Which set of changes must be implemented in Cisco UCS Central for the user to acquire the privileges?",
  "context": null,

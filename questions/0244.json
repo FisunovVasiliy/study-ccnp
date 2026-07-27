@@ -1,6 +1,6 @@
 {
  "id": 244,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "fill",
  "question": "DRAG DROP -\nA network administrator must automate the process of pinging all the IP addresses from the 10.0.0.0/8 subnet. The subnet is already present on the ARP table of the Cisco Nexus switch. Drag and drop the bash commands to generate the desired output. Not all commands are used.\n\nExpected output:\n--- 10.1.0.2 ping statistics ---\n5 packets transmitted, 5 packets received, 0.00% packet loss\n--- 10.1.0.77 ping statistics ---\n5 packets transmitted, 0 packets received, 100.00% packet loss",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 224,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "order",
  "question": "DRAG DROP -\nAn engineer deploys a custom Guest Shell rootfs on a Nexus 9000 Series Switch. Drag and drop the steps from the left into the order required to deploy the solution on the right. Not all options are used.",
  "context": null,

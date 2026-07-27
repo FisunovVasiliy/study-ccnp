@@ -1,6 +1,6 @@
 {
  "id": 170,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Which configuration statically assigns VSAN membership to a virtual Fibre Channel interface?",
  "context": null,

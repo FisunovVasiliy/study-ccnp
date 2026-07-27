@@ -1,6 +1,6 @@
 {
  "id": 91,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "An engineer wants to create a backup of Cisco UCS Manager for disaster recovery purposes.\nWhat are two characteristics of a full state backup of a Cisco UCS Manager database? (Choose two.)",
  "context": null,

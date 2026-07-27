@@ -1,6 +1,6 @@
 {
  "id": 355,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "A company must security harden its Cisco UCS C-Series servers. The security policy requires all out-of-band management to meet these requirements:\n- It must encrypt all traffic\n- It must use nondefault ports\n- It must provide private administrative sessions.\nWhich Cisco IMC configuration meets the requirements?",
  "context": null,

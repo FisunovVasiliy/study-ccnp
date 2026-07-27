@@ -1,6 +1,6 @@
 {
  "id": 132,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must configure a SPAN session on a Cisco Nexus 5600 Series switch to rate-limit the mirrored traffic to 1 Gbps. Which configuration meets this requirement?",
  "context": null,

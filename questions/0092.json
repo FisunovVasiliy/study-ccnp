@@ -1,6 +1,6 @@
 {
  "id": 92,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "What happens to the default host firmware policy after a Cisco UCS Manager upgrade?",
  "context": null,

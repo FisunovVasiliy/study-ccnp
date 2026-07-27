@@ -1,6 +1,6 @@
 {
  "id": 402,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. A vPC pair connects to two firewalls, ASA_1 and ASA_2, through orphan ports. When one of the vPC peer links goes down, the orphan ports connected to the firewalls remain up, and traffic continues to be forwarded to the firewall that is connected to the switch with the failed link, causing traffic loss. Which action resolves this issue?",
  "context": "Topology: vPC pair of switches connected to ASA_1 and ASA_2 firewalls via orphan (non-vPC) ports.",

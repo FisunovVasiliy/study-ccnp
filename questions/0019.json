@@ -1,6 +1,6 @@
 {
  "id": 19,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. What is the result of running the command presented?",
  "context": "restart pim",

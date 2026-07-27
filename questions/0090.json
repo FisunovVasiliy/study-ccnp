@@ -1,6 +1,6 @@
 {
  "id": 90,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer is implementing an import operation in Cisco UCS Manager.\nWhat is the impact of performing this operation?",
  "context": null,

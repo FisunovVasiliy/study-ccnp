@@ -1,6 +1,6 @@
 {
  "id": 496,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer is implementing VSANs on a Cisco MDS 9000 Series Switch with a native Fibre Channel. The deployment must meet these requirements: the host on port fc1/1 must be assigned to VSAN 10; and the port channel 10 ISL must pass multiple VSANs, including VSAN 10. Which configuration set meets these requirements?",
  "context": null,

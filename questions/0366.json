@@ -1,6 +1,6 @@
 {
  "id": 366,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Which value is missing in the field in the key called \"msg\" in this JSON response?",
  "context": "Request:\n{\n  \"ins_api\": {\n    \"version\": \"1.0\",\n    \"type\": \"cli_show\",\n    \"chunk\": \"0\",\n    \"sid\": \"1\",\n    \"input\": \"show switchname\",\n    \"output_format\": \"json\"\n  }\n}\n\nResponse:\n{\n  \"ins_api\": {\n    \"type\": \"cli_show\",\n    \"version\": \"1.0\",\n    \"sid\": \"eoc\",\n    \"outputs\": {\n      \"output\": {\n        \"input\": \"show switchname\",\n        \"msg\": \"<missing_value>\",\n        \"code\": \"200\",\n        \"body\": {\n          \"hostname\": \"switch466336289237\"\n        }\n      }\n    }\n  }\n}",

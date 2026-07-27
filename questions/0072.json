@@ -1,6 +1,6 @@
 {
  "id": 72,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must implement a VXLAN-based data center interconnect. The long-distance transport provided by a service provider is IP-based, supports a maximum MTU of 1554 bytes, and does not support outbound traffic replication. Which action must be taken to build the data center interconnect?",
  "context": null,

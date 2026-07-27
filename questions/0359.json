@@ -1,6 +1,6 @@
 {
  "id": 359,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "A network engineer must configure a Fibre Channel interface on the Cisco MDS 9000 Series Switch. The configuration must meet these requirements:\n- The interface must be disabled when the bit errors threshold is exceeded.\n- Buffer-to-buffer credits must be set to the maximum value.\n- The interface must have full bandwidth allocated for its port group.\nWhich command set configures a Fibre Channel interface that meets these requirements?",
  "context": null,

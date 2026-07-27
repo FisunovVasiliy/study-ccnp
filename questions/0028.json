@@ -1,6 +1,6 @@
 {
  "id": 28,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. Which VLANs are capable to be assigned on vPC interfaces?",
  "context": "switch# show vpc brief\nLegend:\n        (*) - local vPC is down, forwarding via vPC peer-link\n\nvPC domain id                  : 10\nPeer status                    : peer adjacency formed ok\nvPC keep-alive status          : peer is alive\nConfiguration consistency status : success\nType-2 consistency status      : success\nvPC role                       : primary\nNumber of vPCs configured      : 1\nPeer Gateway                   : Enabled\nDual-active exluded VLANs      : -\n\nvPC Peer-link status\n---------------------------------------------------------------\nid   Port   Status   Active vlans\n--   ----   ------   --------------------------------------------------\n1    Po20   up       100-105\n\nvPC status\n----------------------------------------------------------------------------\nid   Port   Status   Consistency  Reason                Active vlans\n--   ----   ------   -----------  --------------------  -----------\n7    Po7    up       success      success               100-104\n8    Po8    up       success      success               100-102\n9    Po9    up       success      success               100-103",

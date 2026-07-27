@@ -1,6 +1,6 @@
 {
  "id": 129,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer needs to make an XML backup of Cisco UCS Manager. The backup should be transferred using an authenticated and encrypted tunnel, and it should contain all system and service profiles configuration. Which command must be implemented to meet these requirements?",
  "context": null,

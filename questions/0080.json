@@ -1,6 +1,6 @@
 {
  "id": 80,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer is performing an ISSU upgrade on the Cisco MDS 9000 Series switch. What is the impact on the control plane of the switch?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 68,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A Cisco ACI engineer must configure an access port on a Cisco ACI leaf switch. The access policy should be configured so that it supports L3Out connectivity concurrently with several EPGs that are mapped to this interface with the static port method. How should the access policy be configured?",
  "context": null,

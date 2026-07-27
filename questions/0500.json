@@ -1,6 +1,6 @@
 {
  "id": 500,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A network engineer needs a tool to automate the provisioning of Cisco UCS Service Profiles. The administrator has limited programming knowledge but is skilled with scripting tools. The tool must include existing support for Cisco UCS configuration. Additionally, the administrator will eventually use the solution to manage Cisco UCS C-Series Rack Servers. Which tool meets these requirements?",
  "context": null,

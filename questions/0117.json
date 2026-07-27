@@ -1,6 +1,6 @@
 {
  "id": 117,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibit. Which action must be taken before the maintenance policy can be committed?",
  "context": "FI-1# scope org /\nFI-1 /org # create maint-policy maintenance\nFI-1 /org/maint-policy* # set reboot-policy timer-automatic\nFI-1 /org/maint-policy* # set soft-shutdown-timer never",

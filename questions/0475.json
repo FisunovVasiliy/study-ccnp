@@ -1,6 +1,6 @@
 {
  "id": 475,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "fill",
  "question": "DRAG DROP -\nAll logins to a Cisco Nexus 9000 Series Switch must pass through the TACACS+ server at IP address 192.168.10.10. The configuration must meet these requirements: the TACACS+ server must be used for SSH and Telnet; the TACACS+ server key must be Cisco123!; management VRF must be used for connectivity; and the deployment must fail back to local credentials if the TACACS+ server fails to respond within 30 seconds. Drag and drop the code snippets from the right onto the blanks in the code on the left to complete the configuration. Not all code snippets are used.",
  "context": null,

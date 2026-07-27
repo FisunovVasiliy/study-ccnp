@@ -1,6 +1,6 @@
 {
  "id": 104,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "When the default firmware package is set to a new version, which type of policy determines the timing of server reboots during the firmware upgrade?",
  "context": null,

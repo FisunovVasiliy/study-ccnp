@@ -1,6 +1,6 @@
 {
  "id": 291,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer needs to install a new package on a Cisco Nexus 9000 Series Switch. What the impact of running the install commit <filename> command on the switch?",
  "context": null,

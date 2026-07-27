@@ -1,6 +1,6 @@
 {
  "id": 226,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. Which command needs to be added to the line starting with the `file` keyword to have the generated running-config file with the name 'fusion-config_' and current date?",
  "context": "import time\nimport cli\n\ndate= time.strftime('%Y%m%d')\nfile=\ncli.execute ('copy running-config ftp://10.183.249.182/FusionSW/' +file)\nexit()",

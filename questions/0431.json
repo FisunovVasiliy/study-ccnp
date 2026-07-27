@@ -1,6 +1,6 @@
 {
  "id": 431,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. These Cisco ACI objects already have been created: Bridge domain: Test_Telco; Application profile: PROD_App; Tenant: PROD. Which value for application_profile_dn on line 2 must be used to automate the creation of EPG Red_Test_VM using Terraform?",
  "context": "resource \"aci_application_profile\" \"test_ap\" {\n  tenant_dn = aci_tenant.PROD.id\n  name = \"PROD_App\"\n  annotation = \"tag\"\n  description = \"from terraform\"\n  name_alias = \"test_ap\"\n  prio = \"level1\"\n}\n\nresource \"aci_application_epg\" \"Red_Test_VM\" {\n  application_profile_dn =\n  name = \"Red_Test_VM\"\n  description = \"from terraform\"\n  annotation = \"tag_epg\"\n  exception_tag = \"0\"\n  flood_on_encap = \"disabled\"\n  fwd_ctrl = \"none\"\n  has_mcast_source = \"no\"\n  is_attr_based_epg = \"no\"\n  match_t = \"AtleastOne\"\n  name_alias = \"alias_epg\"\n  pc_enf_pref = \"unenforced\"\n  pref_gr_memb = \"exclude\"\n  prio = \"unspecified\"\n  shutdown = \"no\"\n  relation_fv_rs_bd = aci_bridge_domain.Test_Telco.id\n}",

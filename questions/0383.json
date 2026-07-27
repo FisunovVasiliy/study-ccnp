@@ -1,6 +1,6 @@
 {
  "id": 383,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "fill",
  "question": "DRAG DROP -\nRefer to the exhibit. An engineer implements an MP-BGP deployment that must meet these requirements:\n- Unicast traffic must flow through the Red link between the two autonomous systems.\n- Multicast traffic must flow through the Green link.\n- BGP must be configured to carry routing information and differentiate between unicast and multicast traffic to avoid RPF check failure.\nDrag and drop the SiteA commands from the right onto the blanks in the configuration on the left. Commands can be used more than once.",
  "context": "Topology: Multicast Server (192.168.1.0/24) - SiteA (AS 65001) -- Red link (Unicast Traffic 172.16.10.0/24) / Green link (Multicast Traffic 172.16.20.0/24) -- SiteB -- Client.",

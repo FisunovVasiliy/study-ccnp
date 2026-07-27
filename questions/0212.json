@@ -1,6 +1,6 @@
 {
  "id": 212,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit.\nWhy does the Python code for Cisco NX-API print an error message?",
  "context": "Python Code:\nimport requests\nimport json\n\nurl='http://lab-93180bd1f-sw1/ins'\nswitchuser='dazfre'\nswitchpassword='C1scoroxo'\n\nmyheaders={'content-type' : 'application/json'}\npayload={\n  \"ins_api\": {\n    \"version\": \"1.0\",\n    \"type\": \"cli_show\",\n    \"chunk\": \"0\",\n    \"sid\": \"1\",\n    \"input\": \"configure terminal ; feature hsrp\",\n    \"output_format\": \"json\"\n  }\n}\nresponse = requests.post(url,data=json.dumps(payload), headers=myheaders,auth=(switchuser,switchpassword))\n\nprint(response.text)\n\nERROR MESSAGE:\n{\n  \"ins_api\": {\n    \"type\": \"cli_show\",\n    \"version\": \"1.0\",\n    \"sid\": \"eoc\",\n    \"outputs\": {\n      \"output\": [{\n        \"clierror\": \"% invalid command\\n\",\n        \"input\": \"configure terminal\",\n        \"msg\": \"input CLI command error\",\n        \"code\": \"400\"\n      },{\n        \"clierror\": \"% invalid command\\n\",\n        \"input\": \"feature hsrp\",\n        \"msg\": \"input CLI command error\",\n        \"code\": \"400\"\n      }]\n    }\n  }\n}",

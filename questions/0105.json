@@ -1,6 +1,6 @@
 {
  "id": 105,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "Which two hypervisors does Cisco HyperFlex support? (Choose two.)",
  "context": null,

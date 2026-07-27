@@ -1,6 +1,6 @@
 {
  "id": 361,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "multi",
  "question": "Refer to the exhibit. A network engineer must SPAN only the ingress traffic of a Cisco MDS 9000 Series Switch from interface fc 1/23 to interface fc 1/24. Which two configurations must be applied to complete this task? (Choose two.)",
  "context": "interface fc 1/24\n-- output omitted --\nno shutdown\nspan session 1\n-- output omitted --\ndestination interface fc 1/24",

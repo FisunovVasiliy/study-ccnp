@@ -1,6 +1,6 @@
 {
  "id": 131,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "Refer to the exhibit. A Cisco Nexus 5600 Series switch experiences unexplained packet drops. An engineer configures a SPAN session to capture dropped packets. Which two command sets complete the configuration? (Choose two.)",
  "context": null,

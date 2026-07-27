@@ -1,6 +1,6 @@
 {
  "id": 341,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "fill",
  "question": "DRAG DROP -\nAn engineer must configure an LACP port channel on two Cisco Nexus 9000 Series Switches. The interface e1/2 must be a hot-standby link that initiates negotiation with other ports. Drag and drop the commands from the right onto the blanks in the configuration on the left. Not all commands are used.",
  "context": null,

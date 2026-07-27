@@ -1,6 +1,6 @@
 {
  "id": 362,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "multi",
  "question": "An engineer needs to implement a solution that will provide telemetry of MDS 9000 switches in a SAN fabric. The solution should use Cisco Data Center Network Manager (DCNM) with SAN Insights feature. Which three steps are required to deploy the solution? (Choose three.)",
  "context": null,

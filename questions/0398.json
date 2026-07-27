@@ -1,6 +1,6 @@
 {
  "id": 398,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer is connecting a Cisco MDS 9700 Series Multilayer Director to a downstream Cisco Nexus 5672UP switch. Which command set must be used to complete the configuration?",
  "context": "int fc1/1-2\nswitchmode rate dedicated\nchannel-group 100 force\nno shut\n\nint san-port-channel 100\nswitchport trunk allowed vsan 1\nswitchport trunk allowed vsan add 100",

@@ -1,6 +1,6 @@
 {
  "id": 213,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "multi",
  "question": "Which two components should be checked when a Cisco Nexus 9000 Series Switch fails to boot using POAP? (Choose two.)",
  "context": null,

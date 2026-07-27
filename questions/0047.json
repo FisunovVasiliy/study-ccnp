@@ -1,6 +1,6 @@
 {
  "id": 47,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A customer needs a tool to take advantage of the CI/CD model to streamline its operations and optimize cost. The customer wants to integrate the solution with the Cisco products it currently uses, including Cisco ACI networking and Cisco UCS Series servers. The solution should also provide on-premises Kubernetes and AppDynamics performance monitoring. Because of the security requirements, the solution should not install a local client on products under management. Which orchestration solution meets these requirements?",
  "context": null,

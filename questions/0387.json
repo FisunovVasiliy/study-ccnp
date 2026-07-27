@@ -1,6 +1,6 @@
 {
  "id": 387,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "An engineer needs to connect Cisco UCS Fabric Interconnect (FI) to an external storage array. Due to budget limitations, the engineer must connect a Cisco UCS FI directly to an FC storage port. Which two actions must be taken to complete this connection? (Choose two.)",
  "context": null,

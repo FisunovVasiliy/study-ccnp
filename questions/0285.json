@@ -1,6 +1,6 @@
 {
  "id": 285,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "An engineer must suggest a deployment model for a newly developed application. The engineer has a small starting budget and lacks technical knowledge and infrastructure to implement storage, operating system, and database services to support the application deployment. The engineer also needs usage data related to the service and the ability to elastically scale the deployment as customer demands grow. Which two models must be used to meet the requirements? (Choose two.)",
  "context": null,

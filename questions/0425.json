@@ -1,6 +1,6 @@
 {
  "id": 425,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. Which device alias database is shown by this output?\nswitch# show device-alias database\ndevice-alias name SampleName pwwn 24:40:00:e7:09:5b:27:56",
  "context": null,

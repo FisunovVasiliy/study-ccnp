@@ -1,6 +1,6 @@
 {
  "id": 450,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer implements an Application Performance Monitoring (APM) solution. The solution runs in a vSphere infrastructure where the vSwitch support for promiscuous mode is disabled for security reasons. As a result, the final implementation must receive a copy of bidirectional traffic to a load balancer that is connected to a Cisco Nexus 93108 Series Switch. The APM solution supports GRE encapsulated traffic. Which configuration must be applied to the switch to meet this requirement?",
  "context": null,

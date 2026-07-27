@@ -1,6 +1,6 @@
 {
  "id": 208,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An administrator needs to configure an automated policy to shut down a link when a given threshold is exceeded on MDS switch.\nWhich feature needs to be used?",
  "context": null,

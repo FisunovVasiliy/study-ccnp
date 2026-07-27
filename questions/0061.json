@@ -1,6 +1,6 @@
 {
  "id": 61,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer needs to implement streaming telemetry on a Cisco MDS 9000 Series switch. The requirement is for the show command data to be collected every 30 seconds and sent to receivers. Which command must be added to the configuration to meet this requirement?",
  "context": "switch(config-dest) # sensor-group 100\nswitch(conf-tm-sensor)# path show_stats_fc3/1\nswitch(conf-tm-sensor)# subscription 100\nswitch(conf-tm-sub)# <missing command>\nswitch(conf-tm-sub)# dst-grp 100",

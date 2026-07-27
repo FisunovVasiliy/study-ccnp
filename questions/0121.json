@@ -1,6 +1,6 @@
 {
  "id": 121,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibit. Which type of backup is required to restore a Cisco UCS configuration?",
  "context": "Enter the configuration method. (console/gui) ? console\nEnter the setup mode; setup newly or restore from backup. (setup/restore) ? restore\n\nNOTE:\n  To configure Fabric interconnect using a backup file on a remote server, you will need to setup management interface.\n  The management interface will be re-configured (if necessary), based on information stored in the backup file.\n\nContinue to restore this Fabric interconnect from a backup file (yes/no) ? yes\n\nPhysical Switch Mgmt0 IPv4 address : 192.168.10.10\nPhysical Switch Mgmt0 IPv4 netmask : 255.255.255.0\nIPv4 address of the default gateway : 192.168.10.1\nEnter the protocol to get backup file (scp/ftp/tftp/sftp) ? scp\nEnter the IP address of backup server: 20.10.20.10\nEnter fully qualified backup file name: Backup.bak\nEnter user ID: user\nEnter password:\nRetrieved backup configuration file.\nConfiguration file - Ok",

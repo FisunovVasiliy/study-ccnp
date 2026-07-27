@@ -1,6 +1,6 @@
 {
  "id": 204,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. Which feature set must be used to configure on switch 2 to establish a VSAN trunk between switch 1 and switch 2?",
  "context": "Switch 1 (E port, Trunk Mode Auto) --- VSAN Trunk --- Switch 2 (?, ?)",

@@ -1,6 +1,6 @@
 {
  "id": 453,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "An engineer must configure a new Cisco UCS B-Series infrastructure with a Cisco S108 chassis. The configuration must meet these requirements: the setup must use aggregation between Cisco UCS Fabric Interconnects and I/O modules; the implementation requires four 10 GbE connections per I/O module; and the Cisco UCS Fabric Interconnects must support uplinks of different speeds for future expansion. Which two steps must be taken to meet these requirements? (Choose two.)",
  "context": null,

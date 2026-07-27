@@ -1,6 +1,6 @@
 {
  "id": 156,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer is implementing zoning on two Cisco MDS switches. After the implementation is finished, E Ports that connect the two Cisco MDS switches become isolated. What is wrong with the implementation?",
  "context": "Zoning was configured with Zoneset AB, containing different active zone set names between MDS-A and MDS-B.",

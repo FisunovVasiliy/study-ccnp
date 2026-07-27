@@ -1,6 +1,6 @@
 {
  "id": 367,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An engineer must perform a POAP deployment of a Cisco Nexus 9000 Series Switch. The switch must automatically receive its software image and configuration file upon power-on. Also, only UDP is permitted between the Nexus 9000 switch and the server that hosts the Cisco NX-OS system images.\nWhich set of actions completes the configuration?",
  "context": null,

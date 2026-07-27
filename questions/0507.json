@@ -1,6 +1,6 @@
 {
  "id": 507,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibit. The network management system that is located at 192.168.10.10 and port 2000 must receive traps from the Cisco UCS Manager called UCSM. The community name is Cisco123! and the SNMP version must be the most secure. These two commands have already been configured on Cisco UCSM:\nUCS-A# scope monitoring -\nUCS-A/monitoring # enable snmp -\nWhich command set completes the SNMP configuration?",
  "context": "Topology: NMS (192.168.10.10, port 2000) <-- snmpv3 trap -- UCSM (192.168.10.20, port 443).",

@@ -1,6 +1,6 @@
 {
  "id": 474,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. Two Cisco Nexus Series Switches use EIGRP between their Eth1/1 interfaces. The switches are configured to support EIGRP authentication. Which set of CLI commands must be used to establish EIGRP neighborship?",
  "context": "key chain EIGRP\n  key 2\n    key-string CISCO\n!\nrouter eigrp Pallini\n  autonomous-system 10\n  authentication mode md5\n!\ninterface Ethernet1/1\n  ip authentication key-chain eigrp Pallini EIGRP",

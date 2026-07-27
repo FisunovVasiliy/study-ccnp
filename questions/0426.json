@@ -1,6 +1,6 @@
 {
  "id": 426,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An engineer must create a scheduler configuration to create two backup jobs per day. The backup file must be copied to a server in the operations VRF. Which configuration accomplishes this task?",
  "context": null,

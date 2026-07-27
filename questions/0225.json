@@ -1,6 +1,6 @@
 {
  "id": 225,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "The Cisco Nexus switch Generic Online Diagnostics policy for a PortLoopback test requires 10 consecutive failures to error disable the port. The customer wants to change it to 5 consecutive failures. Which configuration applies the changes for module 1 only?",
  "context": null,

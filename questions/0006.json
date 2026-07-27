@@ -1,6 +1,6 @@
 {
  "id": 6,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. Which statement about the default gateway configuration of the vPC is true?",
  "context": "N7K-1\ninterface Vlan165\n  no shutdown\n  no ip redirects\n  ip address 10.16.165.2/27\n  no ipv6 redirects\n  hsrp version 2\n  hsrp 165\n    preempt\n    priority 150\n    ip 10.16.165.1\n\nvpc domain 100\n  role priority 100\n  peer-keepalive destination 10.1.1.2 source 10.1.1.1\nvrf default\n  delay restore 60\n  peer-gateway\n  auto-recovery\n  ip arp synchronize\n\nN7K-2\ninterface Vlan165\n  no shutdown\n  no ip redirects\n  ip address 10.16.165.3/27\n  no ipv6 redirects\n  hsrp version 2\n  hsrp 165\n    priority 50\n    ip 10.16.165.1\n\nvpc domain 100\n  role priority 200\n  peer-keepalive destination 10.1.1.1 source 10.1.1.2\nvrf default\n  delay restore 60\n  peer-gateway\n  auto-recovery\n  ip arp synchronize",

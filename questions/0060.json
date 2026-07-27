@@ -1,6 +1,6 @@
 {
  "id": 60,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. Which configuration ensures that the Cisco Nexus 7000 Series switches are the primary devices for LACP?",
  "context": "Topology: Nexus 7000 device A and device B connected via vPC Peer Keepalive and vPC Peer Link, both downstream connected (lacp 32768) to two access switches.",

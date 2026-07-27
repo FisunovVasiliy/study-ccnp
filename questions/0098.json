@@ -1,6 +1,6 @@
 {
  "id": 98,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "Which two settings must be configured before enabling a Cisco UCS Manager domain for Cisco Intersight connectivity? (Choose two.)",
  "context": null,

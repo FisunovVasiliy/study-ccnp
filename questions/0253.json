@@ -1,6 +1,6 @@
 {
  "id": 253,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer is running an ACI fabric, has VMM integration with VMware vCenter, and wants to enable microsegmentation based on vCenter VM attributes.\nWhich statement describes microsegmentation in this scenario?",
  "context": null,

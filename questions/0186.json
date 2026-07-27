@@ -1,6 +1,6 @@
 {
  "id": 186,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "The EPLD update of the supervisor module has been scheduled for several Cisco MDS 9000 Series switches. What will be the impact of the update?",
  "context": null,

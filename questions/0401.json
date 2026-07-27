@@ -1,6 +1,6 @@
 {
  "id": 401,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must configure port security on a Cisco MDS switch. The requirements are: the VSAN 4 port-security database must be activated and initiated despite conflicts with the existing configuration; static entries in the database must be added without database activation; the configuration must apply fabric wide; and any pending configuration lock must be released after the process is complete. Which command set accomplishes this task?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 338,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "A storage administrator notices an increasing number of storage targets that unexpectedly reach capacity, causing periodic service interruptions. The administrator must now create and submit a daily report of the environment that shows the status of the storage targets with the highest capacities.\nWhich solution provides this information?",
  "context": null,

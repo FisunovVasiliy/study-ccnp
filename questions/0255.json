@@ -1,6 +1,6 @@
 {
  "id": 255,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "multi",
  "question": "Which two authentication types does Cisco UCS Manager support when configuring authentication? (Choose two.)",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 272,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "multi",
  "question": "An engineer must configure RBAC in Cisco UCS Manager in an existing data center environment.\nWhich two roles are suitable for configuring LAN connectivity policies? (Choose two.)",
  "context": null,

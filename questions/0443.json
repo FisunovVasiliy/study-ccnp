@@ -1,6 +1,6 @@
 {
  "id": 443,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer is implementing a Cisco ACI fabric and must use a static VLAN range as part of a VMM deployment. The static VLAN must be incorporated into the dynamic VLAN pool. The existing VLAN pool is set for dynamic allocation. Which action accomplishes this goal?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 509,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "fill",
  "question": "DRAG DROP -\nRefer to the exhibit. The server is sending traffic to the storage server using Fiber Channel protocol. The requirement is for the N5K-1 to forward traffic to MDS9k-1. Drag and drop the configuration steps from the right to complete the configuration for N5K-1 on the left. Not all configuration steps are used.",
  "context": "Topology: Storage connects to MDS 9k-1 (Port 2/1) and MDS 9k-2 (Port 2/1). MDS 9k-1 (Port 2/2) connects to N5K-1 (Port 2/2), MDS 9k-2 (Port 2/2) connects to N5K-2 (Port 2/2). N5K-1 (Port 2/1) and N5K-2 (Port 2/1) connect to Server.",

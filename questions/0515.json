@@ -1,6 +1,6 @@
 {
  "id": 515,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must create a script that downloads the POAP personality tarball file from an FTP server that is exposed in the SERVER environmental variable. The personality file to be downloaded is named with the hostname of the switch and the tar extension. The default method of downloading the file must be SCP. Which code snippet completes the script?\nfrom poap.personality import POAPPersonality\nimport os\n\n______\n\nusername = os.environ['USERNAME'] if 'USERNAME' in os.environ else \"root\"\npassword = os.environ['PASSWORD']\nserver = os.environ['SERVER']\nvrf = os.environ['POAP_VRF'] if 'POAP_VRF' in os.environ else \"default\"\n\npersonality = POAPPersonality(\n  download_path,\n  personality_tarball,\n  protocol,\n  username,\n  password,\n  server,\n  vrf\n)\n\npersonality.get_personality()\npersonality.apply_personality()",
  "context": null,

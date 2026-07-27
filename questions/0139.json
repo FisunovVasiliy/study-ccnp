@@ -1,6 +1,6 @@
 {
  "id": 139,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "multi",
  "question": "A new employee must be granted access to add VLANs into an existing Cisco UCS Manager and configure NTP synchronization with date and time zone settings. Which two privileges must be granted to the employee to complete the task? (Choose two.)",
  "context": null,

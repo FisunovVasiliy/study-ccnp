@@ -1,6 +1,6 @@
 {
  "id": 386,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A bridge domain is being extended out of a Cisco ACI fabric. Between which of these components are policies used to identify the connectivity between Endpoint Groups and the external connection?",
  "context": null,

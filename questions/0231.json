@@ -1,6 +1,6 @@
 {
  "id": 231,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Which data structure results from running this Python code?",
  "context": ">>> import json\n>>> f = open('fname.json', 'r')\n>>> var1 = json.load(f)\n>>> var1\n{u'bd': u'bd1', u'ap':{u'epgs':[{u'name': u'app'}, {u'name': u'web'}, {u'name': u'db'}]}, u'name': u'OnlineStore', u'name': u'39185372', u'pvn': u'pvn1'}",

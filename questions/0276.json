@@ -1,6 +1,6 @@
 {
  "id": 276,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "A company provides applications and database hosting services to multiple customers using isolated infrastructure-as-a-service services within the same data center environment. The environment is based on Cisco MDS 9000 Series Switches. The requirement is to manage the environment by using Fibre Channel Security Protocol and to enable user authentication when the centralized AAA server is unreachable. All communication between the MDS switches and the remote servers must be encrypted. Which command set must be used to meet these requirements?",
  "context": null,

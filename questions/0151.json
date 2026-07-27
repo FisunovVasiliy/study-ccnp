@@ -1,6 +1,6 @@
 {
  "id": 151,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Which method must a network engineer use to upgrade the BIOS firmware or a Cisco UCS standalone C-Series rack-mount server?",
  "context": null,

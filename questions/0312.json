@@ -1,6 +1,6 @@
 {
  "id": 312,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Where does the witness VM reside in a Cisco HyperFlex Edge deployment?",
  "context": null,

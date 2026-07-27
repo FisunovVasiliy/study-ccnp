@@ -1,6 +1,6 @@
 {
  "id": 441,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "fill",
  "question": "DRAG DROP -\nDrag and drop the command snippets from the bottom onto the boxes in the code to complete a Python script that displays a list of interfaces on a Cisco Nexus 9000 Series Switch using on-box Python. Not all command snippets are used.",
  "context": null,

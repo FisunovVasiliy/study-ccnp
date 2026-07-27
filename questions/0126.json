@@ -1,6 +1,6 @@
 {
  "id": 126,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Which service profile is affected if the default host firmware policy in Cisco UCS Manager is changed?",
  "context": null,

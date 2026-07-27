@@ -1,6 +1,6 @@
 {
  "id": 85,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. Software downgrade is required on a Cisco Nexus 7000 Series switch. What is displayed when this command is executed?",
  "context": "show incompatibility-all system bootflash:n7000-s1-dk9.4.2.4.bin",

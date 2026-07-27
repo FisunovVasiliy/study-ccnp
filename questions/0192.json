@@ -1,6 +1,6 @@
 {
  "id": 192,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "A network engineer must prevent data corruption due to cross fabric communication in an FCoE environment. Which configuration must be applied to the Cisco Nexus Unified switches to achieve this objective?",
  "context": null,

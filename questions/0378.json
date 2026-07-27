@@ -1,6 +1,6 @@
 {
  "id": 378,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer must affirm the identity of the Cisco UCS Manager after a valid CA-signed keyring for HTTPS access is created. Which action completes the configuration?",
  "context": null,

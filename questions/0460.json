@@ -1,6 +1,6 @@
 {
  "id": 460,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must deploy a Cisco UCS C-Series Server with a single VIC 1455 integrated into a Cisco UCS Manager cluster. Two fiber connections are available, and the deployment has no fabric extenders. Which set of actions accomplishes this goal?",
  "context": null,

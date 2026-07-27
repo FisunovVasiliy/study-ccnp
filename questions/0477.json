@@ -1,6 +1,6 @@
 {
  "id": 477,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A QoS policy on Cisco UCS must meet these requirements: no-drop class must be configured; and jumbo frames must be enabled without fragmentation. Which configuration must be implemented to meet these conditions?",
  "context": null,

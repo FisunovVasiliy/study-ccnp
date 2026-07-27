@@ -1,6 +1,6 @@
 {
  "id": 498,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must perform a backup and restore in Cisco UCS to rebuild the system in a disaster recovery scenario. The backup file must be encrypted to prevent the passwords from being stored as cleartext. Which backup configuration meets these requirements?",
  "context": null,

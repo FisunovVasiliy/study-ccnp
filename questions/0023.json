@@ -1,6 +1,6 @@
 {
  "id": 23,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "APIC EPG Resolution Immediacy is set to \"Immediate\".\nWhich statement is true about the Deployment Immediacy for VMM domains associated to EPGs?",
  "context": null,

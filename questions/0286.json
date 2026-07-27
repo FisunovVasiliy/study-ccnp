@@ -1,6 +1,6 @@
 {
  "id": 286,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "fill",
  "question": "DRAG DROP -\nAn engineer must configure Cisco UCS Manager to accept only HTTPS connections that use TLS 1.2. The cipher security level must be high and the length of the keyring key value must be 2048 bits. Drag and drop the code snippets from the right onto the blanks in the code on the left to accomplish these goals. Not all commands are used.",
  "context": null,

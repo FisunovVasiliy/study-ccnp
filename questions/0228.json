@@ -1,6 +1,6 @@
 {
  "id": 228,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "fill",
  "question": "DRAG DROP -\nAn engineer must shut down the Ethernet 1/2 interface when the Ethernet 4/5 interface state is down. Drag and drop the CLI commands from the bottom onto the blanks in the exhibit to implement this EEM. Not all commands are used.",
  "context": null,

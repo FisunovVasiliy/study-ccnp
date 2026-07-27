@@ -1,6 +1,6 @@
 {
  "id": 26,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must configure a Nexus 7000 series switch for HSRP on VLAN 100. When fully functional, the router must be the active master. Which set of commands must be used to implement the scenario?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 299,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A network engineer must deploy a configuration backup policy to the Cisco UCS Manager. The file generated from this backup must have a snapshot of the entire system that should be used to restore the system during disaster recovery. The backup file must be transferred insecurely by using the TCP protocol. Which configuration backup settings meet these requirements?",
  "context": null,

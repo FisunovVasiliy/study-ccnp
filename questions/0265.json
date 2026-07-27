@@ -1,6 +1,6 @@
 {
  "id": 265,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "A network engineer needs to configure system logging on the Cisco MDS Series switch. The messages must be displayed with the severity level of 'warning' and above. For security reasons, the users must be logged out of the console after 5 minutes of inactivity. Which configuration must be applied to meet these requirements?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 429,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Which component becomes unavailable for a maximum of 80 seconds during a nondisruptive Cisco NX-OS upgrade?",
  "context": null,

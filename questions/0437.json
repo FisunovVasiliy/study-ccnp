@@ -1,6 +1,6 @@
 {
  "id": 437,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A customer asks an engineer to develop an orchestration solution to automate repetitive tasks. The customer operations team must integrate the tool with its existing automation framework. The customer asks for the tool to support these requirements: the customer's security requirements mandate the use of SSH transport; no extra software must be installed on the managed systems; and the support staff has limited knowledge of scripting languages, so the solution must be easy to read and use declarative language. Which solution meets these requirements?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 163,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer must ensure fabric redundancy when implementing NPV mode on a Cisco MDS 9000 Series Switch. Which action enables fabric redundancy?",
  "context": null,

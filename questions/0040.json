@@ -1,6 +1,6 @@
 {
  "id": 40,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "After a Cisco Nexus 7000 Series switch chassis replacement, the administrator discovers that all vPC-enabled LACP port channels are reinitialized. The administrator wants to prevent this issue the next time the chassis is replaced. Which two actions must be taken to meet this requirement before the isolated device is reloaded? (Choose two.)",
  "context": null,

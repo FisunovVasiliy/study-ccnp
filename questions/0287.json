@@ -1,6 +1,6 @@
 {
  "id": 287,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A network administrator is creating a custom Django self-service portal that runs on a Linux server to automate the creation of new VLANS on Cisco UCS Manager. Which feature must be installed and configures on the server?",
  "context": null,

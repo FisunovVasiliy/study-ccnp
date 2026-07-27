@@ -1,6 +1,6 @@
 {
  "id": 43,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must monitor all LAN traffic on Fabric A from a blade server. Which source should be configured in the test-span monitor session to complete this task?",
  "context": "UCS Manager GUI: LAN / Traffic Monitoring Sessions / Fabric A / Monitor Session test-span\nName: test-span\nAdmin State: Enabled\nDestination: sys/switch-A/slot-1/switch-ether/port-17\nAdmin Speed: 10 Gbps (selected)\nOperational State: Down\nOperational State Reason: No Sources Configured\nConfiguration Success: Yes",

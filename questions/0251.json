@@ -1,6 +1,6 @@
 {
  "id": 251,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "When a strict CoPP policy is implemented, which statement describes an event during which packets are dropped?",
  "context": null,

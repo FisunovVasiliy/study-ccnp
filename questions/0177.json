@@ -1,6 +1,6 @@
 {
  "id": 177,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "What is a recommended design choice in a topology for multipathing iSCSI traffic?",
  "context": null,

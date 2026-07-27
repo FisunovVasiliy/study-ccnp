@@ -1,6 +1,6 @@
 {
  "id": 418,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must mirror the traffic on a switch. The engineer locates the server port that requires monitoring on switch1, but the packet sniffer is on switch2. The engineer must configure the source IP address on switch1. Which command accomplishes this goal?",
  "context": "switch1#show run interface Vlan 10\ninterface Vlan10\n  description Service Datacenter-Rack-A\n  ip address 209.165.200.225 255.255.255.224\n!\nend\nswitch1#",

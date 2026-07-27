@@ -1,6 +1,6 @@
 {
  "id": 388,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "An engineer must add a new VRF (DC:DC) to the network that runs with Multiprotocol Border Gateway Protocol (MP-BGP) and EVPN. The requirement for the new VRF is to allow communication of network prefixes between PE1 and PE2. Which two sets of steps should be taken to complete the VRF configuration? (Choose two.)",
  "context": null,

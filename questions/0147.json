@@ -1,6 +1,6 @@
 {
  "id": 147,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer configures the properties of a Cisco UCS Cisco Integrated Management Controller network adapter for a standalone Cisco C-Series Server. The Failback Timeout in the vNIC was set to 600. When the failure occurs, the secondary interfaces must be used and then failback when the primary interface becomes available again. Which action must be taken to meet these requirements?",
  "context": null,

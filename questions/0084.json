@@ -1,6 +1,6 @@
 {
  "id": 84,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must configure a monitoring solution for a Cisco Nexus 9000 Series switch based data center. The solution must provide real-time insight into the network health with subscription-based monitoring. The monitoring must be initiated from the client side, and the data must be sent via encryption. Which configuration steps complete the configuration?",
  "context": null,

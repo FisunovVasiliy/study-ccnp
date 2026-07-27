@@ -1,6 +1,6 @@
 {
  "id": 373,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "A network engineer connects the CNA interface of a server to a switch. The switch must bring down all of the VLANs on the interface that are not enabled for FCoE, but the VLANs that are enabled for FCoE should continue to carry SAN traffic without interruption. Which configuration should be applied to the switch to achieve this objective?",
  "context": null,

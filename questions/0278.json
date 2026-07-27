@@ -1,6 +1,6 @@
 {
  "id": 278,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer must implement a solution that prevents untrusted DHCP servers from compromising the network. The feature must be configured on a Cisco Nexus 7000 Series Switch and applied to VLAN 10. The legitimate DHCP servers are connected to interface Ethernet 2/4. Which configuration set must be used to meet these requirements?",
  "context": null,

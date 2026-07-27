@@ -1,6 +1,6 @@
 {
  "id": 275,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer has a primary fabric that is named UCS-A and a secondary fabric that is named UCS-B. A certificate request that has a subject name of sjc2016 for a keyring that is named kr2016 needs to be created. The cluster IP address is 10.68.68.68.\nWhich command set creates this certificate request?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 389,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Which component is excluded by default from the host firmware package?",
  "context": null,

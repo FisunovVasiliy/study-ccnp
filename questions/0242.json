@@ -1,6 +1,6 @@
 {
  "id": 242,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. An engineer logs all occurrences of a configuration being saved. The engineer must generate an additional log message when someone attempts to change the configuration for interface Ethernet 1/1. Which set of commands must be used to meet these requirements?",
  "context": "event manager applet ConfigMgmt\n  event cli match \"copy run start\"\n  action 1 syslog priority warnings msg Configuration Modified",

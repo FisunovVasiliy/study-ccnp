@@ -1,6 +1,6 @@
 {
  "id": 118,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "Which two firmware packages are included in the Cisco UCS C-Series Rack-Mount UCS-Managed Server Software bundle? (Choose two.)",
  "context": null,

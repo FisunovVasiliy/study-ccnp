@@ -5,18 +5,32 @@
 // ============================================================
 
 const LETTERS = ['A','B','C','D','E','F'];
-const STORAGE_PREFIX = 'dccor-quiz-progress-v2-';
-const OLD_STORAGE_KEY = 'dccor-quiz-progress-v1'; // для міграції прогресу зі старої версії
+const STORAGE_PREFIX = 'dccor-quiz-progress-v3-';
+const OLD_STORAGE_KEY_V1 = 'dccor-quiz-progress-v1';          // дуже стара версія (без режимів)
+const TOPIC_FILTER_KEY = 'dccor-topic-filter-v1';
 
-let QUESTIONS = [];         // масив питань у порядку id
-let current = 0;            // індекс поточного питання
-let answers = [];           // 'correct' | 'incorrect' | null, паралельно QUESTIONS
-let userAnswerData = [];    // збережений вибір користувача (для перегляду)
+const TOPIC_ORDER = ['All', 'Network', 'Compute', 'Storage Network', 'Automation and AI', 'Security'];
+const TOPIC_LABELS = {
+  'All': 'Усі теми',
+  'Network': 'Мережа (Network)',
+  'Compute': 'Обчислення (Compute)',
+  'Storage Network': 'Мережа зберігання (Storage Network)',
+  'Automation and AI': 'Автоматизація та AI',
+  'Security': 'Безпека (Security)'
+};
+
+let QUESTIONS = [];         // масив усіх 526 питань у порядку id
+let activeIndices = [];     // індекси QUESTIONS, що входять у поточний фільтр теми
+let current = 0;            // позиція всередині activeIndices
+let answers = [];           // 'correct' | 'incorrect' | null, паралельно activeIndices
+let userAnswerData = [];    // збережений вибір користувача (для перегляду), паралельно activeIndices
 let score = 0;
 let answeredCount = 0;
 let started = false;
 let mode = null;            // 'training' | 'exam'
 let examRevealed = false;   // true, коли екзамен завершено і можна показувати правильні відповіді
+let topicFilter = 'All';
+let currentUser = null;     // slug поточного залогіненого користувача
 
 const root = document.getElementById('app-root');
 
@@ -28,26 +42,57 @@ async function loadQuestions() {
   return all;
 }
 
-function storageKeyFor(m) {
-  return STORAGE_PREFIX + (m === 'exam' ? 'exam' : 'training');
+function indicesForTopic(topic) {
+  if (topic === 'All') return QUESTIONS.map((_, i) => i);
+  const res = [];
+  QUESTIONS.forEach((q, i) => { if (q.topic === topic) res.push(i); });
+  return res;
+}
+
+function topicCounts() {
+  const counts = {};
+  QUESTIONS.forEach(q => { counts[q.topic] = (counts[q.topic] || 0) + 1; });
+  return counts;
+}
+
+function topicSlug(t) {
+  return t === 'All' ? 'all' : t.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+}
+
+function storageKeyFor(m, topic) {
+  const userPart = currentUser ? currentUser + '-' : '';
+  return STORAGE_PREFIX + userPart + (m === 'exam' ? 'exam' : 'training') + '-' + topicSlug(topic);
 }
 
 function migrateOldProgress() {
   try {
-    const old = localStorage.getItem(OLD_STORAGE_KEY);
-    const newKey = storageKeyFor('training');
-    if (old && !localStorage.getItem(newKey)) {
-      const d = JSON.parse(old);
+    // v1 (найстаріша, один загальний прогрес без режимів) -> training/Усі теми
+    const v1 = localStorage.getItem(OLD_STORAGE_KEY_V1);
+    const trainingAllKey = storageKeyFor('training', 'All');
+    if (v1 && !localStorage.getItem(trainingAllKey)) {
+      const d = JSON.parse(v1);
       if (d.answers && d.answers.length === QUESTIONS.length) {
-        localStorage.setItem(newKey, JSON.stringify({ ...d, examRevealed: false }));
+        localStorage.setItem(trainingAllKey, JSON.stringify({ ...d, examRevealed: false }));
       }
     }
+    // v2 (розділення на training/exam, без фільтра тем) -> v3 training|exam / Усі теми
+    ['training', 'exam'].forEach(m => {
+      const v2Key = 'dccor-quiz-progress-v2-' + m;
+      const v3Key = storageKeyFor(m, 'All');
+      const v2 = localStorage.getItem(v2Key);
+      if (v2 && !localStorage.getItem(v3Key)) {
+        const d = JSON.parse(v2);
+        if (d.answers && d.answers.length === QUESTIONS.length) {
+          localStorage.setItem(v3Key, v2);
+        }
+      }
+    });
   } catch (e) {}
 }
 
 function loadProgress() {
   try {
-    const raw = localStorage.getItem(storageKeyFor(mode));
+    const raw = localStorage.getItem(storageKeyFor(mode, topicFilter));
     if (!raw) return null;
     return JSON.parse(raw);
   } catch (e) { return null; }
@@ -55,27 +100,28 @@ function loadProgress() {
 
 function saveProgress() {
   try {
-    localStorage.setItem(storageKeyFor(mode), JSON.stringify({
+    localStorage.setItem(storageKeyFor(mode, topicFilter), JSON.stringify({
       answers, userAnswerData, current, score, answeredCount, examRevealed
     }));
   } catch (e) {}
 }
 
 function resetProgress() {
-  answers = new Array(QUESTIONS.length).fill(null);
-  userAnswerData = new Array(QUESTIONS.length).fill(null);
+  answers = new Array(activeIndices.length).fill(null);
+  userAnswerData = new Array(activeIndices.length).fill(null);
   current = 0; score = 0; answeredCount = 0; examRevealed = false;
   saveProgress();
 }
 
-function peekStats(m) {
+function peekStats(m, topic) {
+  const total = indicesForTopic(topic).length;
   try {
-    const raw = localStorage.getItem(storageKeyFor(m));
-    if (!raw) return { answeredN: 0, score: 0, examRevealed: false };
+    const raw = localStorage.getItem(storageKeyFor(m, topic));
+    if (!raw) return { answeredN: 0, score: 0, total, examRevealed: false };
     const d = JSON.parse(raw);
-    if (!d.answers || d.answers.length !== QUESTIONS.length) return { answeredN: 0, score: 0, examRevealed: false };
-    return { answeredN: d.answers.filter(a => a !== null).length, score: d.score || 0, examRevealed: !!d.examRevealed };
-  } catch (e) { return { answeredN: 0, score: 0, examRevealed: false }; }
+    if (!d.answers || d.answers.length !== total) return { answeredN: 0, score: 0, total, examRevealed: false };
+    return { answeredN: d.answers.filter(a => a !== null).length, score: d.score || 0, total, examRevealed: !!d.examRevealed };
+  } catch (e) { return { answeredN: 0, score: 0, total, examRevealed: false }; }
 }
 
 function escapeHtml(str) {
@@ -94,15 +140,16 @@ function shuffle(arr) {
 }
 
 // ------------------------------------------------------------
-// LANDING / ВИБІР РЕЖИМУ
+// LANDING / ВИБІР РЕЖИМУ + ФІЛЬТРА ТЕМИ
 // ------------------------------------------------------------
 function selectMode(m) {
   mode = m;
+  activeIndices = indicesForTopic(topicFilter);
   const saved = loadProgress();
-  if (saved && saved.answers && saved.answers.length === QUESTIONS.length) {
+  if (saved && saved.answers && saved.answers.length === activeIndices.length) {
     answers = saved.answers;
-    userAnswerData = saved.userAnswerData || new Array(QUESTIONS.length).fill(null);
-    current = saved.current || 0;
+    userAnswerData = saved.userAnswerData || new Array(activeIndices.length).fill(null);
+    current = Math.min(saved.current || 0, Math.max(activeIndices.length - 1, 0));
     score = saved.score || 0;
     answeredCount = saved.answeredCount || 0;
     examRevealed = !!saved.examRevealed;
@@ -120,17 +167,34 @@ function goHome() {
 }
 
 function renderLanding() {
-  const t = peekStats('training');
-  const e = peekStats('exam');
+  const counts = topicCounts();
+  const t = peekStats('training', topicFilter);
+  const e = peekStats('exam', topicFilter);
+
+  const topicOptions = TOPIC_ORDER.map(topic => {
+    const n = topic === 'All' ? QUESTIONS.length : (counts[topic] || 0);
+    const label = TOPIC_LABELS[topic] || topic;
+    const sel = topic === topicFilter ? ' selected' : '';
+    return `<option value="${escapeHtml(topic)}"${sel}>${escapeHtml(label)} (${n})</option>`;
+  }).join('');
+
+  const userObj = AUTH_USERS.find(u => u.slug === currentUser);
+  const userBar = userObj ? `<div class="user-bar">Увійшов як: <strong>${escapeHtml(userObj.name)}</strong> · <a href="#" id="logout-link">Вийти</a></div>` : '';
+
   root.innerHTML = `
     <div class="landing">
+      ${userBar}
       <h1>CCNP DCCOR — тренажер</h1>
-      <p>350-601 DCCOR практичні питання з поясненнями. Прогрес зберігається у браузері окремо для кожного режиму.</p>
+      <p>350-601 DCCOR практичні питання з поясненнями. Прогрес зберігається у браузері окремо для кожного користувача, режиму й теми.</p>
+      <div class="topic-filter-row">
+        <label for="topic-select">Тема (за офіційним блупринтом 350-601 v1.2):</label>
+        <select id="topic-select">${topicOptions}</select>
+      </div>
       <div class="mode-cards">
         <div class="mode-card">
           <h3>Тренування</h3>
           <p class="mode-desc">Правильна відповідь і пояснення показуються одразу після кожного питання.</p>
-          <div class="mode-stat">${t.answeredN} / ${QUESTIONS.length} пройдено · ${t.score} правильно</div>
+          <div class="mode-stat">${t.answeredN} / ${t.total} пройдено · ${t.score} правильно</div>
           <div class="landing-actions">
             <button class="btn" id="start-training">${t.answeredN > 0 ? 'Продовжити' : 'Почати'}</button>
             ${t.answeredN > 0 ? '<button class="btn secondary" id="restart-training">Скинути</button>' : ''}
@@ -139,7 +203,7 @@ function renderLanding() {
         <div class="mode-card">
           <h3>Екзамен</h3>
           <p class="mode-desc">Без підказок під час проходження. Правильні відповіді й пояснення — лише у підсумку.</p>
-          <div class="mode-stat">${e.answeredN > 0 ? (e.examRevealed ? `${e.answeredN} / ${QUESTIONS.length} · ${e.score} правильно` : `${e.answeredN} / ${QUESTIONS.length} · в процесі`) : `0 / ${QUESTIONS.length}`}</div>
+          <div class="mode-stat">${e.answeredN > 0 ? (e.examRevealed ? `${e.answeredN} / ${e.total} · ${e.score} правильно` : `${e.answeredN} / ${e.total} · в процесі`) : `0 / ${e.total}`}</div>
           <div class="landing-actions">
             <button class="btn" id="start-exam">${e.answeredN > 0 ? 'Продовжити' : 'Почати'}</button>
             ${e.answeredN > 0 ? '<button class="btn secondary" id="restart-exam">Скинути</button>' : ''}
@@ -149,15 +213,30 @@ function renderLanding() {
     </div>
   `;
   document.getElementById('topbar').classList.add('hidden');
+
+  const logoutLink = document.getElementById('logout-link');
+  if (logoutLink) logoutLink.onclick = (e) => { e.preventDefault(); logout(); };
+
+  const topicSelect = document.getElementById('topic-select');
+  topicSelect.onchange = () => {
+    topicFilter = topicSelect.value;
+    try { localStorage.setItem(TOPIC_FILTER_KEY, topicFilter); } catch (e) {}
+    renderLanding();
+  };
+
   document.getElementById('start-training').onclick = () => selectMode('training');
   document.getElementById('start-exam').onclick = () => selectMode('exam');
   const rt = document.getElementById('restart-training');
   if (rt) rt.onclick = () => {
-    if (confirm('Скинути прогрес режиму «Тренування»?')) { localStorage.removeItem(storageKeyFor('training')); renderLanding(); }
+    if (confirm('Скинути прогрес режиму «Тренування» для теми «' + (TOPIC_LABELS[topicFilter] || topicFilter) + '»?')) {
+      localStorage.removeItem(storageKeyFor('training', topicFilter)); renderLanding();
+    }
   };
   const re = document.getElementById('restart-exam');
   if (re) re.onclick = () => {
-    if (confirm('Скинути прогрес режиму «Екзамен»?')) { localStorage.removeItem(storageKeyFor('exam')); renderLanding(); }
+    if (confirm('Скинути прогрес режиму «Екзамен» для теми «' + (TOPIC_LABELS[topicFilter] || topicFilter) + '»?')) {
+      localStorage.removeItem(storageKeyFor('exam', topicFilter)); renderLanding();
+    }
   };
 }
 
@@ -166,11 +245,11 @@ function renderLanding() {
 // ------------------------------------------------------------
 function updateTopbar() {
   document.getElementById('topbar').classList.remove('hidden');
-  document.getElementById('q-counter').textContent = `Питання ${current + 1} / ${QUESTIONS.length}`;
-  document.getElementById('progress-bar').style.width = `${(current / QUESTIONS.length) * 100}%`;
+  document.getElementById('q-counter').textContent = `Питання ${current + 1} / ${activeIndices.length}`;
+  document.getElementById('progress-bar').style.width = `${(current / activeIndices.length) * 100}%`;
   const statsEl = document.getElementById('stats');
   if (mode === 'exam' && !examRevealed) {
-    statsEl.textContent = `Відповідено: ${answeredCount} / ${QUESTIONS.length}`;
+    statsEl.textContent = `Відповідано: ${answeredCount} / ${activeIndices.length}`;
   } else {
     statsEl.textContent = `Правильно: ${score} / ${answeredCount}`;
   }
@@ -179,24 +258,40 @@ function updateTopbar() {
 // ------------------------------------------------------------
 // NAV DOTS
 // ------------------------------------------------------------
+const NAV_CHUNK_SIZE = 100;
+
 function renderNavDots(container) {
   container.innerHTML = '';
   const reveal = mode !== 'exam' || examRevealed;
-  QUESTIONS.forEach((q, i) => {
-    const d = document.createElement('div');
-    d.className = 'dot';
-    if (i === current) d.classList.add('current');
-    if (reveal) {
-      if (answers[i] === 'correct') d.classList.add('answered-correct');
-      if (answers[i] === 'incorrect') d.classList.add('answered-incorrect');
-    } else if (answers[i] !== null) {
-      d.classList.add('answered-neutral');
+
+  for (let start = 0; start < activeIndices.length; start += NAV_CHUNK_SIZE) {
+    const end = Math.min(start + NAV_CHUNK_SIZE, activeIndices.length);
+
+    const label = document.createElement('div');
+    label.className = 'nav-group-label';
+    label.textContent = `${start + 1}–${end}`;
+    container.appendChild(label);
+
+    const grid = document.createElement('div');
+    grid.className = 'nav-dots';
+    for (let i = start; i < end; i++) {
+      const qi = activeIndices[i];
+      const d = document.createElement('div');
+      d.className = 'dot';
+      if (i === current) d.classList.add('current');
+      if (reveal) {
+        if (answers[i] === 'correct') d.classList.add('answered-correct');
+        if (answers[i] === 'incorrect') d.classList.add('answered-incorrect');
+      } else if (answers[i] !== null) {
+        d.classList.add('answered-neutral');
+      }
+      d.title = 'Питання #' + QUESTIONS[qi].id;
+      d.textContent = i + 1;
+      d.onclick = () => { current = i; render(); };
+      grid.appendChild(d);
     }
-    d.title = 'Питання ' + (i + 1);
-    d.textContent = i + 1;
-    d.onclick = () => { current = i; render(); };
-    container.appendChild(d);
-  });
+    container.appendChild(grid);
+  }
 }
 
 // ------------------------------------------------------------
@@ -205,15 +300,17 @@ function renderNavDots(container) {
 function render() {
   if (!started) { renderLanding(); return; }
 
-  if (current >= QUESTIONS.length) { renderSummary(); return; }
+  if (current >= activeIndices.length) { renderSummary(); return; }
 
   updateTopbar();
 
-  const q = QUESTIONS[current];
+  const q = QUESTIONS[activeIndices[current]];
   const card = document.createElement('div');
   card.className = 'card';
 
-  const modeTag = `<span class="mode-tag">${mode === 'exam' ? 'Екзамен' : 'Тренування'}</span>`;
+  const modeLabel = mode === 'exam' ? 'Екзамен' : 'Тренування';
+  const topicSuffix = topicFilter !== 'All' ? ` · ${TOPIC_LABELS[topicFilter] || topicFilter}` : '';
+  const modeTag = `<span class="mode-tag">${modeLabel}${topicSuffix}</span>`;
   const header = document.createElement('div');
   header.className = 'card-header';
   header.innerHTML = `<span>Питання #${q.id}${q.type === 'order' ? ' · впорядкування' : ''}${q.type === 'match' ? ' · зіставлення' : ''}${q.type === 'fill' ? ' · заповнення' : ''}</span>` +
@@ -266,7 +363,7 @@ function render() {
 
   const nextBtn = document.createElement('button');
   nextBtn.className = 'btn secondary';
-  nextBtn.textContent = current === QUESTIONS.length - 1 ? 'Підсумок →' : 'Далі →';
+  nextBtn.textContent = current === activeIndices.length - 1 ? 'Підсумок →' : 'Далі →';
   nextBtn.onclick = () => { current++; render(); };
   actions.appendChild(nextBtn);
 
@@ -281,7 +378,7 @@ function render() {
   card.appendChild(actions);
 
   const navWrap = document.createElement('div');
-  navWrap.className = 'nav-dots';
+  navWrap.className = 'nav-dots-wrap';
   root.appendChild(navWrap);
   renderNavDots(navWrap);
 
@@ -651,15 +748,18 @@ function renderSummary() {
   document.getElementById('progress-bar').style.width = '100%';
   document.getElementById('stats').textContent = `Правильно: ${score} / ${answeredCount}`;
 
-  const pct = QUESTIONS.length ? Math.round((score / QUESTIONS.length) * 100) : 0;
-  const wrongIds = QUESTIONS.filter((q, i) => answers[i] === 'incorrect').map(q => q.id);
+  const pct = activeIndices.length ? Math.round((score / activeIndices.length) * 100) : 0;
+  const wrongIds = activeIndices.filter((qi, i) => answers[i] === 'incorrect').map(qi => QUESTIONS[qi].id);
+
+  const modeLabel = mode === 'exam' ? 'Екзамен' : 'Тренування';
+  const topicSuffix = topicFilter !== 'All' ? ` · ${TOPIC_LABELS[topicFilter] || topicFilter}` : '';
 
   root.innerHTML = `
     <div class="card">
-      <div class="card-header"><span>Результат — ${mode === 'exam' ? 'Екзамен' : 'Тренування'}</span></div>
+      <div class="card-header"><span>Результат — ${modeLabel}${topicSuffix}</span></div>
       <div class="card-body summary">
         <h2>Тест завершено</h2>
-        <div class="score">${score} / ${QUESTIONS.length}</div>
+        <div class="score">${score} / ${activeIndices.length}</div>
         <div>${pct}% правильних відповідей</div>
         ${wrongIds.length ? `<div style="margin-top:10px; color:var(--muted); font-size:13px;">Помилки у питаннях: ${wrongIds.join(', ')}</div>` : ''}
         <div class="actions" style="justify-content:center; margin:20px 0 0;">
@@ -683,10 +783,13 @@ function renderSummary() {
 }
 
 // ------------------------------------------------------------
-// ДОСТУП ЗА ПАРОЛЕМ (клієнтський гейт для GitHub Pages)
+// ДОСТУП ЗА ПАРОЛЕМ (клієнтський гейт для GitHub Pages, декілька користувачів)
 // ------------------------------------------------------------
-const AUTH_HASH = '0613e132e6df700c2472e4af6f2294131a77d18b539b7091cc9189b79712bcee';
-const AUTH_KEY = 'dccor-auth-ok-v1';
+const AUTH_USERS = [
+  { slug: 'vasiliy', name: 'Vasiliy Fisunov', hash: '7bac617a5a8424c0044a2533b1ef18a6c2129b41604bb3da853e168547c4c3f4' },
+  { slug: 'oleksii', name: 'Oleksii Zamsha', hash: 'f33b93badd759a935f4bf584af63a8aa39d834855ad1b22ebc4c4e05de6f7607' }
+];
+const AUTH_KEY = 'dccor-auth-user-v2';
 
 async function sha256Hex(str) {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
@@ -694,7 +797,9 @@ async function sha256Hex(str) {
 }
 
 function checkAuth() {
-  if (sessionStorage.getItem(AUTH_KEY) === '1') { showApp(); return; }
+  const savedSlug = sessionStorage.getItem(AUTH_KEY);
+  const user = AUTH_USERS.find(u => u.slug === savedSlug);
+  if (user) { currentUser = user.slug; showApp(); return; }
   showGate();
 }
 
@@ -708,8 +813,10 @@ function showGate() {
   const attempt = async () => {
     if (!input.value) return;
     const hash = await sha256Hex(input.value);
-    if (hash === AUTH_HASH) {
-      sessionStorage.setItem(AUTH_KEY, '1');
+    const user = AUTH_USERS.find(u => u.hash === hash);
+    if (user) {
+      currentUser = user.slug;
+      sessionStorage.setItem(AUTH_KEY, currentUser);
       showApp();
     } else {
       err.textContent = 'Невірний пароль';
@@ -720,6 +827,16 @@ function showGate() {
   btn.onclick = attempt;
   input.onkeydown = (e) => { if (e.key === 'Enter') attempt(); };
   input.focus();
+}
+
+function logout() {
+  sessionStorage.removeItem(AUTH_KEY);
+  currentUser = null;
+  started = false;
+  mode = null;
+  document.getElementById('topbar').classList.add('hidden');
+  document.querySelector('.wrap').classList.add('hidden');
+  showGate();
 }
 
 function showApp() {
@@ -735,6 +852,10 @@ async function init() {
   root.innerHTML = '<div class="landing"><p>Завантаження питань…</p></div>';
   QUESTIONS = await loadQuestions();
   migrateOldProgress();
+  try {
+    const savedTopic = localStorage.getItem(TOPIC_FILTER_KEY);
+    if (savedTopic && TOPIC_ORDER.includes(savedTopic)) topicFilter = savedTopic;
+  } catch (e) {}
   render();
 }
 

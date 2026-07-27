@@ -1,6 +1,6 @@
 {
  "id": 240,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "fill",
  "question": "DRAG DROP -\nDrag and drop the keywords onto the URL request to collect all the subnets configured under tenant Production using a REST API. Not all options are used.",
  "context": null,

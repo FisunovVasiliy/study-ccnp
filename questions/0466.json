@@ -1,6 +1,6 @@
 {
  "id": 466,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must configure fabric binding on a Cisco MDS 9000 Series Switch to match the output. Which fabric database configuration accomplishes this goal?\nswitch# show fabric-binding database active vsan 10\n----------------------------------------------\nVsan   Logging-in Switch WWN        Domain-id\n----------------------------------------------\n10     21:00:00:00:00:00:00:10      Any\n10     21:00:00:00:00:00:00:20      20\n10     21:00:00:00:00:00:00:30      30\n[Total 3 entries]",
  "context": null,

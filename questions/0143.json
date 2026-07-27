@@ -1,6 +1,6 @@
 {
  "id": 143,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer configures an Intersight Virtual Appliance and must claim over 200 targets. The engineer starts the Claim New Target Procedure. The engineer has prepared an initial comma-separated value file to provision the targets. Which information must be included in the comma-separated value file to provision the targets?",
  "context": null,

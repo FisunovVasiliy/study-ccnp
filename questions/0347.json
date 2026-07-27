@@ -1,6 +1,6 @@
 {
  "id": 347,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer performs a Cisco UCS C480 ML M5 installation from a Cisco UCS Manager. As a part of the design, the server must perform an iSCSI boot from the storage array. Which configuration must be performed in the SAN settings in the root organization to satisfy that condition?",
  "context": null,

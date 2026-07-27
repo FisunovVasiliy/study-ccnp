@@ -1,6 +1,6 @@
 {
  "id": 301,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must configure a Cisco UCS domain for monitoring and management by the Cisco Intersight SaaS platform. After the setup is complete, administrators must have full control to configure the device through Cisco UCS Manager and Intersight. Which set of actions accomplishes this task?",
  "context": null,

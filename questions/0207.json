@@ -1,6 +1,6 @@
 {
  "id": 207,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A customer has a requirement for an automation solution that supports periodically acquiring configuration from a centralized server and aligning UCS servers to their desired state.\nWhich open-source tool meets this requirement?",
  "context": null,

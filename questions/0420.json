@@ -1,6 +1,6 @@
 {
  "id": 420,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Which event is expected during direct upgrade of Cisco UCS Manager firmware?",
  "context": null,

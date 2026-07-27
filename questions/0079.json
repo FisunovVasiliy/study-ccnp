@@ -1,6 +1,6 @@
 {
  "id": 79,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An infrastructure architect is analyzing the deployment type for an application. Several companies must be able to operate the application environment and integrate it with a third-party protocol. The development team also must have maximum control over their development environment, including the operating system used, Python interpreter, and corresponding libraries. Which cloud deployment solution meets those requirements?",
  "context": null,

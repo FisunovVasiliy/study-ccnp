@@ -1,6 +1,6 @@
 {
  "id": 145,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "Which two configuration settings are available in the Cisco UCS Firmware Auto Sync Server policy? (Choose two.)",
  "context": null,

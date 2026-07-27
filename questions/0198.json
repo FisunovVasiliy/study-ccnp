@@ -1,6 +1,6 @@
 {
  "id": 198,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "multi",
  "question": "An engineer must implement the FCoE on the Cisco Nexus 9000 Series switch-based infrastructure. The deployment will contain dual-homed fabric extenders and must support jumbo frames with port channels. Which two sets of actions complete the configuration? (Choose two.)",
  "context": null,

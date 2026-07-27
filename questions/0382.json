@@ -1,6 +1,6 @@
 {
  "id": 382,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A network engineer needs a solution that simplifies the initial deployment of Cisco Nexus Series Switches. The solution must support these requirements:\n- zero-touch provisioning\n- configuration through DHCP options\n- initial configuration from a central TFTP server\n- no manual configuration management after the initial installation\nWhich technology supports these goals?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 97,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "Refer to the exhibit. Which two Cisco UCS components are upgraded as a result of the configuration? (Choose two.)",
  "context": "Exhibit: UCS Manager 'Install Infrastructure Firmware' wizard, step 2 'Install Infrastructure Firmware'. Fields shown: Firmware Installer: Ready, Name: default, Description: Infrastructure Pack, Infra Pack: 3.2(3d)A, Service Pack: <not set>, Force checked, Evacuate unchecked, Infrastructure Upgrade Schedule: Admin State Untriggered, Owner Local, Max Number Of Concurrent Tasks Unlimited, Upgrade Now checked.",

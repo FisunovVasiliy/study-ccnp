@@ -1,6 +1,6 @@
 {
  "id": 103,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "What is the benefit of adding Cisco HyperFlex Hardware Acceleration Cards to a HyperFlex deployment?",
  "context": null,

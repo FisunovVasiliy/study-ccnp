@@ -1,6 +1,6 @@
 {
  "id": 510,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. A DevOps engineer must create a PowerShell script to display a list of tenants in the Cisco Application Centric Infrastructure (ACI) by using the Cisco ACI PowerShell module. The engineer does NOT know how many results will be returned, so it is important to iterate through all the results. Which code snippet completes the script?\n1 Write-Host \"Retrieving list of tenants on ACI\"\n2 $tenanturl = $baseurl + \"/api/node/class/fvTenant.json\"\n3 $webobj = new-object net.webclient\n4 $webobj.Headers.add(\"Cookie\", $cookies)\n5 $result = $webobj.DownloadString($tenanturl)\n6 $resultjson = $result | convertfrom-json\n7 $tenants = New-Object System.Collections.ArrayList",
  "context": null,

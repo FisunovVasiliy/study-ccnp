@@ -1,6 +1,6 @@
 {
  "id": 16,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A customer has a requirement to deploy a cloud service and needs to have full control over the underlying OS, data and applications.\nWhich cloud model meets this requirement?",
  "context": null,

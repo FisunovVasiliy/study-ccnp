@@ -1,6 +1,6 @@
 {
  "id": 511,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "fill",
  "question": "DRAG DROP -\nRefer to the exhibit. Drag and drop FCoE port types from the right onto the corresponding positions on the left to complete the FCoE deployment. Port types can be used more than once. Not all port types are used.",
  "context": "Topology: FCF NPIV Core switch connects down to FCOE NPV switch, which connects down to FCOE Host.",

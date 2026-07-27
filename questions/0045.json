@@ -1,6 +1,6 @@
 {
  "id": 45,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A network architect wants to propose a scalable network monitoring solution in which data is repeatedly acquired from network devices. The solution must use a push model and provide close to real-time access to operational data. Which technology must be used to meet these requirements?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 31,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "What occurs when running the command install deactivate <filename> while a software maintenance upgrade is performed on a Cisco Nexus 9000 Series switch?",
  "context": null,

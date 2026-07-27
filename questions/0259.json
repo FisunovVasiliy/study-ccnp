@@ -1,6 +1,6 @@
 {
  "id": 259,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer is configuring AAA authentication on a Cisco MDS 9000 Series switch. The LDAP server is located under the IP 10.10.2.2. The data sent to the LDAP server should be encrypted. Which command should be used to meet these requirements?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 10,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. The STP priority of N7K-1 and N7K-2 are the lowest in the network.\nWhich statement describes STP on the vPC?",
  "context": "N7K-1\nspanning-tree vlan 1-10 priority 8192\n\nvpc domain 100\n  role priority 100\n  peer-keepalive destination 10.1.1.2 source 10.1.1.1\nvrf default\n  delay restore 60\n  peer-switch\n  auto-recovery\n  ip arp synchronize\n\nN7K-2\nspanning-tree vlan 1-10 priority 8192\n\nvpc domain 100\n  role priority 200\n  peer-keepalive destination 10.1.1.1 source 10.1.1.2\nvrf default\n  delay restore 60\n  peer-switch\n  auto-recovery\n  ip arp synchronize",

@@ -1,6 +1,6 @@
 {
  "id": 128,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Due to a domain name change at a customer site, a Cisco UCS cluster must be renamed. An engineer must recommend a solution to ensure that the Cisco UCS Manager is available over HTTPS.\nWhich action accomplishes this goal?",
  "context": null,

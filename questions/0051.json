@@ -1,6 +1,6 @@
 {
  "id": 51,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must configure OSPF routing on Cisco Nexus 9000 Series Switches. The IP subnet of the Eth1/2 interfaces for both switches must be advertised via OSPF. However, these interfaces must not establish OSPF adjacency or send routing updates. The current OSPF adjacency over the interfaces Eth1/1 on SW1 and Eth1/1 on SW2 must remain unaffected. Which configuration must be applied to both Nexus switches to meet these requirements?",
  "context": null,

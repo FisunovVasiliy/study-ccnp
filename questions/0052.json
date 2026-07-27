@@ -1,6 +1,6 @@
 {
  "id": 52,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A network engineer must perform a backup and restore of the Cisco Nexus 5000 Series switch configuration. The backup must be made to an external backup server. The only protocol permitted between the Cisco Nexus Series switch and the backup server is UDP. The backup must be used when the current working configuration of the switch gets corrupted. Which set of steps must be taken to meet these requirements?",
  "context": null,

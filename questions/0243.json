@@ -1,6 +1,6 @@
 {
  "id": 243,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "multi",
  "question": "Which two methods are available to manage an ACI REST API session authentication when a user is unauthenticated? (Choose two.)",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 127,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "multi",
  "question": "An engineer is implementing Cisco Intersight in a secure environment. The environment must use LDAP directory service and ensure information integrity and confidentiality. Which two steps must be taken to implement the solution? (Choose two.)",
  "context": null,

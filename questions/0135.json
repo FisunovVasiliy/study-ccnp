@@ -1,6 +1,6 @@
 {
  "id": 135,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A network engineer plans to upgrade the firmware of a Cisco UCS B-Series chassis by using the Auto Install feature. Which component is upgraded during the infrastructure firmware upgrade stage?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 95,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer is seeking the most optimal on demand CPU performance while configuring the BIOS settings of a UCS C-series rack mount server.\nWhat setting will accomplish this goal?",
  "context": null,

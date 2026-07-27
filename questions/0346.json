@@ -1,6 +1,6 @@
 {
  "id": 346,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must perform backup and restore of the Cisco UCS Manager configuration. The configuration must be stored on a remote server via XML encoding. The backup must store the configurations of the chassis, FEX, rack servers, IOMs, and blade server. Which set of actions accomplishes these goals?",
  "context": null,

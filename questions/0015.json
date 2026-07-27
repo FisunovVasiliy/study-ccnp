@@ -1,6 +1,6 @@
 {
  "id": 15,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. A network engineer is setting up a multihomed OTV network. The first site has been set up with a primary and secondary adjacency server.\nWhich configuration must be added on the remote OTV AEDs site?",
  "context": "OTV-Site1# show otv\nOTV Overlay Information\nSite Identifier 0000.0000.0111\nOverlay interface Overlay200\nVPN name: Overlay200\nVPN state: UP\nExtended vlans: 178 2500-2563 (Total:65)\nJoin interface(s): Eth1/2 (20.1.1.1)\nSite vlan: 1999 (up)\nAED-Capable: Yes\nCapability: Unicast-Only\nIs Adjacency Server: Yes\nAdjacency Server(s): 20.1.1.1/20.2.1.1",

@@ -1,6 +1,6 @@
 {
  "id": 35,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "An engineer is implementing OTV on a transport that supports multicast. The solution needs to meet the following requirements:\n- Establish adjacency to the remote peer by using multicast.\n- Enable OTV advertisements for VLAN 100 to the other site.\nWhich two commands should be configured to meet these requirements? (Choose two.)",
  "context": null,

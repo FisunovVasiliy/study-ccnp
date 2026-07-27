@@ -1,6 +1,6 @@
 {
  "id": 473,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer reported suspicious behavior in a server farm that is deployed on the 198.19.1.0/24 subnet. The traffic must be captured only from the server with the IP address of 198.19.1.19/24. The traffic analyzer is connected to the same switch as the server farm. Which configuration set captures the traffic?\nswitch(config)# vlan access-map span_filter 5\nswitch(config-access-map)# match ip address match_Server_pkts\nswitch(config-access-map)# action forward",
  "context": null,

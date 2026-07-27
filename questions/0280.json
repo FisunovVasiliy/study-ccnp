@@ -1,6 +1,6 @@
 {
  "id": 280,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer must apply AAA configuration on a Cisco MDS 9000 Series Switch. The solution must meet these conditions:\n- It must use a challenge-response authentication protocol that uses MD5 hashing with an incrementally changing identifier.\n- The RADIUS configuration must be automatically shared with other MDS switches in the environment.\nThe RADIUS server is already defined. Which command set completes the configuration?",
  "context": null,

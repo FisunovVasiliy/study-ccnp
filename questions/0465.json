@@ -1,6 +1,6 @@
 {
  "id": 465,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer must configure a Fibre Channel port channel on a Cisco Nexus 9000 Series Switch. The configuration must meet these requirements: a port-channel protocol negotiation is performed with the peer ports; the trunk mode must be explicitly configured for the interfaces; and VSANs from 10 to 20 must be allowed. Which command set configures the devices to meet the requirements?",
  "context": null,

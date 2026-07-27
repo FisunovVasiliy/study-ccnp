@@ -1,6 +1,6 @@
 {
  "id": 354,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must implement private VLANs for a group of Cisco UCS B-Series servers. The primary VLAN is present, but the secondary VLAN must be added to both fabrics. Which configuration set accomplishes this task?",
  "context": null,

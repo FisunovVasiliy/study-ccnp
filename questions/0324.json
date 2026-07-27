@@ -1,6 +1,6 @@
 {
  "id": 324,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must invoke a Python script that alerts the operations team when the router DC-RTR-1 becomes unreachable. Which configuration set accomplishes this task?",
  "context": "Topology: DC-RTR-1 (10.19.31.1) connects to N9K-DC-1-SPINE-1 (10.19.31.2) and N9K-DC-1-SPINE-2 (10.19.31.3).\nswitch(config)# ip sla 10\nswitch(config-ip-sla)# icmp-echo 10.19.31.1\nswitch(config)# ip sla schedule 10 life forever start-time now\nswitch(config)# track 5 ip sla 10 reachability",

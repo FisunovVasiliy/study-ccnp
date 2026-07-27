@@ -1,6 +1,6 @@
 {
  "id": 458,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A Cisco IMC on the Cisco UCS C-Series Server must be configured with VLAN ID 110 and a priority value of 20. Which command set meets these requirements?",
  "context": null,

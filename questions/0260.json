@@ -1,6 +1,6 @@
 {
  "id": 260,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. What is the result of implementing the configuration?",
  "context": "NEXUS(config)# radius-server timeout 15\nNEXUS(config)# ip radius source-interface Vlan100\nNEXUS(config)# radius-server host 10.1.50.31 key 7 \"Fewhg1234\" authentication accounting\nNEXUS(config)# aaa group server radius RADIUS\nNEXUS(config-radius)# server 10.1.50.31\nNEXUS(config-radius)# deadtime 10\nNEXUS(config-radius)# use-vrf management\nNEXUS(config-radius)# source-interface mgmt 0\nNEXUS(config)# aaa authentication login default group RADIUS",

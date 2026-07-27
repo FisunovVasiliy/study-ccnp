@@ -1,6 +1,6 @@
 {
  "id": 487,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A customer deploys a media server to distribute streaming videos to network clients. The requirement is to allow the video feed to reach only requesting clients. The shared trees must not propagate the video feed if no clients from that tree request it. To reduce configuration touchpoints, the solution must support the automatic discovery and announcement of RP-set information. Each router in the network is responsible for selecting the RP. Which configuration set meets these requirements?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 203,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must implement a Cisco UCS system at a customer site. One of the requirements is to implement SAN boot. The storage system maps the source WWPN to a unique LUN.\nWhich method does Cisco recommend to configure the SAN boot?",
  "context": null,

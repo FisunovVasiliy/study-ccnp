@@ -1,6 +1,6 @@
 {
  "id": 479,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. A source is sending a multicast traffic stream to the receiver. How is the multicast traffic expected to flow through the network when it reaches a vPC peer?",
  "context": "Topology: Agg-1 (M1) and Agg-2 (M2) connect to Access-1 and Access-2 via vPC-1 and vPC-2. Source connects to Access-1 (Vlan 10), Receiver connects to Access-2 (Vlan 10). Multicast traffic stream flows from Source toward Receiver.",

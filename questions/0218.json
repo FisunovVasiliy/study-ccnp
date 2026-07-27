@@ -1,6 +1,6 @@
 {
  "id": 218,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An engineer is asked to manage a large-scale data center and collect information from multiple Cisco NX-OS devices using Cisco NX-OS Data Management Engine model.\nWhich technology should be used to accomplish this goal?",
  "context": null,

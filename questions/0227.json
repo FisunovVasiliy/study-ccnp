@@ -1,6 +1,6 @@
 {
  "id": 227,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A network engineer must create an EEM script that saves a copy of the running configuration on bootflash and writes a message to syslog when a user saves the configuration to a Cisco Nexus Series switch. Which configuration set should be applied to complete this task?",
  "context": null,

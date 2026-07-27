@@ -1,6 +1,6 @@
 {
  "id": 392,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A network engineer implements a Python script on a Cisco Nexus 9000 Series Switch with redundant supervisors. The script is located on a built-in container that runs as part of the Cisco NX-OS system. The requirement is to automate the periodic transfer of the Python script to a redundant supervisor. In addition, the script must be transferred to an external server using encryption and authentication. Which configuration set meets these requirements?",
  "context": null,

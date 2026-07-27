@@ -1,6 +1,6 @@
 {
  "id": 194,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. A network engineer created a new role to be assigned to the SAN users. The requirement is for users to have these characteristics:\n- permitted to show access to the system, SNMP, module, and hardware information.\n- permitted to run debug zone and exec fcping commands.\n- restricted from accessing show feature environment command.\nWhich configuration set meets these requirements?",
  "context": "MDS-B# show role\nRole: default-role\n  Description: This is a system defined role and applies to all users.\n  Rule    Type       Command-type    Feature\n  1.      permit     show                    role\n\nMDS-B# show role name san-users",

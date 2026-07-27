@@ -1,6 +1,6 @@
 {
  "id": 77,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "fill",
  "question": "DRAG DROP -\nAn engineer must configure HSRP protocol on two Cisco Nexus 9000 Series switches running a virtual port channel. In addition, the HSRP implementation must meet these requirements:\n- It must allow more than 500 groups.\n- switch1 must act as the primary switch.\n- Both switches must use a user-defined hardware address.\nDrag and drop the commands from the right to complete a configuration of the HSRP on the left. The commands are used more than once. Not all commands are used.",
  "context": null,

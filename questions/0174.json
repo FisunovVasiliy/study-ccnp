@@ -1,6 +1,6 @@
 {
  "id": 174,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer configures FCIP on a Cisco MDS 9000 Series switch. What is the result of implementing the configuration?",
  "context": "MDSSWITCH(config)# interface fcip 1\nMDSSWITCH(config-if)# peer-info ipaddr 10.1.1.1\nMDSSWITCH(config-if)# write-accelerator\nMDSSWITCH(config-if)# ip-compression mode auto\nMDSSWITCH(config-if)# no shutdown",

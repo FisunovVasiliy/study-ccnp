@@ -1,6 +1,6 @@
 {
  "id": 116,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibit. What is a characteristic presented in the service profile of the UUID?",
  "context": "CISCO-UCS-A# scope org /\nCISCO-UCS-A /org* # create service-profile Cisco1 instance\nCISCO-UCS-A /org/service-profile* # set bios-policy bios1\nCISCO-UCS-A /org/service-profile* # set boot-policy boot1\nCISCO-UCS-A /org/service-profile* # set ext-mgmt-ip-state none\nCISCO-UCS-A /org/service-profile* # set host-fw-policy ipmi-user987\nCISCO-UCS-A /org/service-profile* # set identity dynamic-uuid derived\nCISCO-UCS-A /org/service-profile* # set ipmi-access-profile ipmi1\nCISCO-UCS-A /org/service-profile* # set local-disk-policy local1\nCISCO-UCS-A /org/service-profile* # set maint-policy maint1\nCISCO-UCS-A /org/service-profile* # set mgmt-fw-policy mgmt1\nCISCO-UCS-A /org/service-profile* # set power-control-policy power1\nCISCO-UCS-A /org/service-profile* # set scrub-policy scrub1\nCISCO-UCS-A /org/service-profile* # set sol-policy sol1\nCISCO-UCS-A /org/service-profile* # set stats-policy stats1\nCISCO-UCS-A /org/service-profile* # set user-label Cisco\nCISCO-UCS-A /org/service-profile* # vcon-policy vconnpolicy\nCISCO-UCS-A /org/service-profile* # commit-buffer\nCISCO-UCS-A /org/service-profile #",

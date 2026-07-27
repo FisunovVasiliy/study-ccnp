@@ -1,6 +1,6 @@
 {
  "id": 181,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "A customer data center is configured for distribution of user roles, call home, and NTP. The data center was split into two geographically separate locations called DC1 and DC2. The requirement is for the user role configurations to be distributed in DC1 and for NTP and call home features to be constrained to DC2. Which two configuration sets must be used to meet these requirements? (Choose two.)",
  "context": null,

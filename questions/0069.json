@@ -1,6 +1,6 @@
 {
  "id": 69,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer monitors ingress traffic from Host-A and all traffic for VLAN 20 from Host-B. Which configuration must be implemented to monitor and export traffic to Network Analyzer?",
  "context": "Topology: Host-A (Vlan10) -- Eth1/2 -- SW-1 (10.20.10.1) -- Eth2/1 -- IP/MPLS Cloud (GRE encapsulation) -- Eth2/1 -- SW-2 (10.10.10.1) -- Network Analyzer.\nHost-B (Vlan20) -- Eth1/1 -- SW-1.",

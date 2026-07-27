@@ -1,6 +1,6 @@
 {
  "id": 494,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "multi",
  "question": "Refer to the exhibit. A network engineer must configure the physical domain and attach a VLAN pool to it. Which two commands accomplish this goal? (Choose two.)\n______ http://APIC-IP/api/node/mo/uni.json HTTP/1.1\nContent-Type: application/json\nCache-Control: no-cache\n\n{\n  \"physDomP\": {\n    \"______\": {\n      \"name\": \"test_phy_dmn\",\n      \"dn\": \"uni/phys-test_phy_dmn\"\n    },\n    \"children\": [{\n      \"infraRsVlanNs\": {\n        \"attributes\": {\n          \"tDn\": \"uni/infra/vlanns-[test_vlan]-dynamic\"\n        }\n      }\n    }]\n  }\n}",
  "context": null,

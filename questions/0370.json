@@ -1,6 +1,6 @@
 {
  "id": 370,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Which Cisco UCS Manager XML encoded backup type must be used to back up user names, roles, and service profiles?",
  "context": null,

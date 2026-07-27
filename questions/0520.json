@@ -1,6 +1,6 @@
 {
  "id": 520,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer is implementing an ERSPAN configuration to mirror web server traffic connected to N7K-2. Which ERSPAN configuration must be applied on N7K-1 to forward traffic to the network analyzer?\n! ERSPAN Source Configuration\nN7k-2(config)# monitor session 1 type erspan-source\nN7k-2(config-erspan-src)# erspan-id 100\nN7k-2(config-erspan-src)# vrf default\nN7k-2(config-erspan-src)# destination ip 192.168.16.55\nN7k-2(config-erspan-src)# source interface ethernet 2/10\nN7k-2(config-erspan-src)# no shut\nN7k-2(config-erspan-src)# exit\nN7k-2(config)# monitor erspan origin ip-address 192.168.16.10 global",
  "context": "Topology: N7K-1 (192.168.16.55) has Eth1/5 to Network Analyzer (10.10.11.1) and Eth1/30.10 to IP Cloud (L3), which connects to N7K-2 (Eth2/10 to Web Server).",

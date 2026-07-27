@@ -1,6 +1,6 @@
 {
  "id": 516,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "fill",
  "question": "DRAG DROP -\nRefer to the exhibit. Drag and drop the code snippets from the bottom onto the blanks in the code to complete the JSON request that implements the ACL presented. Not all code snippets are used.\nip access-list block_badactors\n  10 deny tcp 91.213.17.6/24 199.213.12.14/16",
  "context": null,

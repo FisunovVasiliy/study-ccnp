@@ -1,6 +1,6 @@
 {
  "id": 120,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A Cisco UCS C-Series server is installed at a data center. The server should be managed by the Cisco UCS Manager by using a single cable for management and data traffic. Which configuration should be applied after the physical connection is established?",
  "context": null,

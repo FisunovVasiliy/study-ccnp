@@ -1,6 +1,6 @@
 {
  "id": 283,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "fill",
  "question": "DRAG DROP -\nRefer to the exhibit. The Cisco Nexus Series Switches SW1, SW2, and SW3 are connected via Layer 2 copper interfaces. An engineer implements loop prevention standard IEEE 802.1w on each VLAN to provide faster recovery from network changes or failures. The implementation has these requirements:\n- Interfaces that are connected to Layer 2 hosts must not receive STP BPDUs.\n- The implementation must detect unidirectional links due to one-way traffic twisted-pair links.\n- Bridge assurance must be enabled between SW2 and SW3.\n- The Layer 2 domain must be protected from superior BPDUs that arrive from external switches.\nDrag and drop the code snippets from the right onto the blanks in the code on the left to complete the configuration for SW3. Not all code snippets are used.",
  "context": "Topology: SW1 (Root Bridge) connects to SW2 (Eth1/4) and SW3 (Eth1/4). SW2-SW3 connected via Eth1/5. SW3 Eth1/6 connects to Layer2 Host. SW3 Eth1/5 also connects to External Switch.",

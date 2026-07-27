@@ -1,6 +1,6 @@
 {
  "id": 8,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A small remote office is set to connect to the regional hub site via NSSA ASBR.\nWhich type of LSA is sent to the remote office OSPF area?",
  "context": null,

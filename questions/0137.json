@@ -1,6 +1,6 @@
 {
  "id": 137,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A network engineer must configure a power redundancy policy on a Cisco UCS C-Series Rack Server. The power redundancy must support two power sources being used to power the server. Which configuration should be applied to meet the requirement?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 78,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must configure OSPFv2 connectivity between a pair of Cisco Nexus switches. The connection between the switches must meet these requirements:\n- Use unicast for updates.\n- Use decentralized communication of updates.\n- Full adjacency between switches.\nWhich configuration is needed to meet these requirements?",
  "context": null,

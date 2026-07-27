@@ -1,6 +1,6 @@
 {
  "id": 504,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "multi",
  "question": "Refer to the exhibit. Three operational endpoints are deployed under the same application EPG. Only the ICMP traffic must be permitted within the Web_EPG. Which two actions must be taken to accomplish this goal? (Choose two.)",
  "context": "Topology: two spines connect to Leaf1-4, which connect to Endpoint2, Endpoint1, Endpoint3, all in EPG: Web_EPG, BD: Web_BD.",

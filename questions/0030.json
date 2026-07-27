@@ -1,6 +1,6 @@
 {
  "id": 30,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A network engineer repeatedly saves a configuration on Catalyst switches to NVRAM using the write memory command. Which action should be taken to implement the same action on Nexus switches?",
  "context": null,

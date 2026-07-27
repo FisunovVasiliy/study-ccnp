@@ -1,6 +1,6 @@
 {
  "id": 368,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A DevOps engineer must use Python to manage a Cisco device. The device is in a highly secure DMZ environment. Only trusted Cisco Python libraries can be used.\nWhich solution meets the requirements?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 322,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "An engineer performs a Firmware Auto install upgrade through the Cisco UCS Manager. Which two Cisco UCS components are available to be upgraded in the install Server Firmware stage? (Choose two.)",
  "context": null,

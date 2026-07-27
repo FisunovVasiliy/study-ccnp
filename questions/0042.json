@@ -1,6 +1,6 @@
 {
  "id": 42,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "An engineer performs a set of configuration changes for the vPC domain using Session Manager. Which two commands are used to verify the configuration and apply the device changes when no errors are returned? (Choose two.)",
  "context": null,

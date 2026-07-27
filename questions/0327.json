@@ -1,6 +1,6 @@
 {
  "id": 327,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must perform a nondisruptive software upgrade on a dual supervisor Cisco Nexus 7000 Series Switch. What is the cause of the upgrade being disruptive?",
  "context": null,

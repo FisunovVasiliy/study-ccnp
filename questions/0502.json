@@ -1,6 +1,6 @@
 {
  "id": 502,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. A software downgrade must be performed on a Cisco Nexus 9000 Series switch. What is displayed by running the command shown?\nNexus01# show incompatibility-all system n7000-s2-dk9.8.0.1.bin",
  "context": null,

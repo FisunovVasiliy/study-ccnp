@@ -1,6 +1,6 @@
 {
  "id": 344,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must allow communication between the APIC controller and an OpenStack OpFlex agent. The agent is running on a compute node directly plugged to a Cisco ACI leaf switch. The engineer must enable and extend Infra VLAN on the port facing the compute and extend the Infra VLAN to the host. Which action must be taken to meet these requirements?",
  "context": null,

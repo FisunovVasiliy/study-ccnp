@@ -1,6 +1,6 @@
 {
  "id": 202,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "A Cisco MDS 9000 Series Storage Switch has reloaded unexpectedly.\nWhere does the engineer look for the latest core dump file?",
  "context": null,

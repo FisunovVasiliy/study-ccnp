@@ -1,6 +1,6 @@
 {
  "id": 403,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Which VLAN must be assigned as the ACI infra VLAN when running the APIC setup script during initial configuration?",
  "context": null,

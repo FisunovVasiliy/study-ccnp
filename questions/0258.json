@@ -1,6 +1,6 @@
 {
  "id": 258,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "multi",
  "question": "Port security is statically configured on a Cisco Nexus 7700 Series switch and F3 line card. The switch is configured with an Advanced Services license. Which two actions delete secured MAC addresses from the interface? (Choose two.)",
  "context": null,

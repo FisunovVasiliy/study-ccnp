@@ -1,6 +1,6 @@
 {
  "id": 205,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer is performing a configuration on a Cisco Nexus 5000 Series Switch. The requirement is for the current Fibre Channel IDs in VSAN 120 to be saved across reboots. The Cisco environment also must integrate with a third-party solution that requires persistent Fibre Channel IDs for the VSAN. The WWN of the Cisco switch must be 33:e8:00:05:30:00:16:df and its Fibre Channel ID 0x070128. Which command set meets these requirements?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 99,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must configure Cisco IMC server management NIC for autonegotiation.\nWhich setting should be selected?",
  "context": null,

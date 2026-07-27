@@ -1,6 +1,6 @@
 {
  "id": 33,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A DNS server with IP address 192.168.1.1 is deployed in a data center. A network engineer must configure a Cisco UCS Fabric Interconnect to use this DNS.\nWhich configuration should be applied?",
  "context": null,

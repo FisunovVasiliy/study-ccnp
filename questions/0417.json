@@ -1,6 +1,6 @@
 {
  "id": 417,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "What happens to the LACP peer session during an ISSU upgrade of a switch, when default aging timers are used?",
  "context": null,

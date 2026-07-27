@@ -1,6 +1,6 @@
 {
  "id": 266,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "A network administrator must perform a system upgrade on a Cisco MDS 9000 Series Switch. Due to the recent changes by the security team:\n* The AAA server is unreachable.\n* All TCP communication between the MDS 9000 Series Switch and AAA servers is disabled.\nWhich actions must be used to perform the upgrade?",
  "context": null,

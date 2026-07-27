@@ -1,6 +1,6 @@
 {
  "id": 492,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer implements an environment with multiple traffic types on a consolidated I/O link between Cisco Nexus 9000 Series Switch and MDS 9000 Series Switch. The configuration must meet these requirements: the unified I/O link must support LAN and SAN traffic; a single, multipurpose Ethernet transport must be used; the configuration must discard MAC addresses that are not part of the current fabric; and the QoS markings must be preserved. Which configuration set meets the requirements?",
  "context": null,

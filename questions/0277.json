@@ -1,6 +1,6 @@
 {
  "id": 277,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "A customer undergoes an IT security review assessment. The auditor must have read-only access to the Cisco Nexus 9000 Series Switch to perform the configuration review. The customer implements this security role for the auditor: role name audit rule 1 permit command * rule 2 - Output omitted - username auditor password C4SAFF1B05EB1968Sc0 role audit\nWhich configuration snippet must complete the configuration?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 62,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must configure OSPF in the data center. The external routes have already been redistributed into OSPF. The network must meet these criteria:\n* The data center servers must reach services in the cloud and the services behind the redistributed routes.\n* The exit point toward the Internet should be propagated only when there is a dynamically learned default route from the upstream router.\nWhich feature is required?",
  "context": null,

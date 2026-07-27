@@ -1,6 +1,6 @@
 {
  "id": 182,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must distribute all the host ports to use all eight configured FEX uplinks. The solution must minimize disruption if an uplink fails. Which action accomplishes this objective?",
  "context": "interface port-channel10\n switchport mode fex-fabric\n fex associate 100\n\nshow fex detail\nFEX: 100 Description: FEX0100 state: Online\n  Fex Version: 7.3(0)N1(1) [Switch Version: 7.3(0)N1(1)]\n  Fex Interim Version: 7.3(0)N1(1)\n  Switch Interim Version: 7.3(0)N1(1)\n  Extender Model: N2K-C2232PP-10GE,  Extender Serial: ABC12340001\n  Part No: 73-14071-01\n  Pinning-mode: static    Max-links: 1\n  Fabric port for control traffic: Eth1/1\n  Fabric interface state:\n    Po10 - Interface Up. State: Active",

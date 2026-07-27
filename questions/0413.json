@@ -1,6 +1,6 @@
 {
  "id": 413,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. What does this output indicate about port channel 1?\nswitch# show interface po1\nport-channel 1 is trunking\n  admin port mode is F, trunk mode is on\n  port mode is TF",
  "context": null,

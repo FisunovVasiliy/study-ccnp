@@ -1,6 +1,6 @@
 {
  "id": 296,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "fill",
  "question": "DRAG DROP -\nAn engineer must configure a control plane policy on a Cisco Nexus 9000 Series Switch that is located at IP 192.168.20.1 that meets these requirements:\n- Only HTTP, RDP, and ICMP traffic is permitted from subnet 192.168.10.0/24.\n- The committed information rate must be 54000 pps.\n- The burst size must be 128 packets.\n- Any other traffic must be dropped.\nDrag and drop the code snippets from the bottom onto the blanks in the code on the top to complete the configuration. Not all code snippets are used.",
  "context": null,

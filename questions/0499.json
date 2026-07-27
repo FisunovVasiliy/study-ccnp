@@ -1,6 +1,6 @@
 {
  "id": 499,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. A Cisco MDS 9000 Series Switch is configured with RBAC. The default role applies to all users. User A is also assigned to the role Custom-Role-B. Which set of features will user A be authorized to configure?\nMDS# show role\nRole: network-admin\n  Description: Predefined network admin role\nRule  Perm  Type   Scope   Entity\nrule 5 permit show feature hardware\nrule 4 permit show feature environment\nrule 3 permit config feature ntp\nrule 2 permit config feature ssh\nrule 1 permit config feature tacacs+\n\nRole: Custom-Role-B\n  Description: Additional admin role\nRule  Perm  Type   Scope   Entity\nrule 6 permit config feature dpvm\nrule 1 deny config feature tacacs+",
  "context": null,

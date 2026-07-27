@@ -1,6 +1,6 @@
 {
  "id": 130,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A network architect considers a Cisco HyperFlex design solution for a company. The proposed solution is for a virtual environment that is not performance-sensitive, but the solution must have high storage capacity and a low cost. Which Cisco HyperFlex storage configuration should be used?",
  "context": null,

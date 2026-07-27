@@ -1,6 +1,6 @@
 {
  "id": 9,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Which adjacency server configuration makes two OTV edge devices located in the same site bring up the dual-site adjacency?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 146,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "A Cisco Nexus 9000 Series switch experiences a startup configuration corruption. The engineer must implement a procedure to recover the backup configuration file from the switch. Which command set must be used?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 447,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "fill",
  "question": "DRAG DROP -\nRefer to the exhibit. During a recent outage, a network engineer discovered that host A started to experience intermittent connectivity, when Leaf102 was down. Drag and drop the code snippets from the bottom onto the boxes in the code to resolve the problem. Not all code snippets are used.",
  "context": "Topology: POD1 (Leaf101, Leaf102) and POD2 (Leaf201, Leaf202) connect through Spine01/Spine02 to Host A and Host B.\nLEAF-101# show vpc orphan-ports\nNote:\n-------::Going through port database. Please be patient.::-------\nVLAN       Orphan Ports\n-------    -------------------\n500        Po2\n501        Po2\n502        Po2\n503        Po2",

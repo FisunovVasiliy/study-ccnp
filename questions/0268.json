@@ -1,6 +1,6 @@
 {
  "id": 268,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "An engineer must configure the HSRP protocol between two Cisco Nexus 9000 Series Switches. This configuration is present on Nexus A.\nThe final HSRP configuration must meet these requirements:\n* The HSRP communication must be secured on both switches.\n* Both switches must support more than 300 groups.\nWhich two commands must be added to the HSRP configuration on Nexus A to complete these requirements? (Choose two.)",
  "context": "! Nexus A\nkey chain NHRP-KEYS\n  key 1010\n    key-string 7 072a43795c1d0c4057265303163b3e2121a720361a021e11\n    accept-lifetime 00:00:00 Jan 01 2021 23:59:59 Aug 31 2021\n    send-lifetime 00:00:00 Jan 01 2021 23:59:59 Jul 31 2021\n  key 1020\n    key-string 7 086f43cd5c150c1702630203163b3e2221a520261a011a12\n    accept-lifetime 00:00:00 Jul 01 2021 23:59:59 Dec 31 2021\n    send-lifetime 00:00:00 Jul 01 2021 23:59:59 Dec 31 2021\ninterface ethernet 1/1\n  ip 209.165.200.226/27\n  hsrp 200\n    priority 201\n    ip 209.165.200.225\n    -- missing output --\n  no shutdown",

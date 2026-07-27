@@ -1,6 +1,6 @@
 {
  "id": 467,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must create a Bash script to run in the Cisco NX-OS Guest Shell. The script must loop through the available namespaces and output all registered interfaces. Which code snippet completes the script?\nfor ns in /var/run/netns/*; do\n  ______\n  ifconfig\ndone",
  "context": null,

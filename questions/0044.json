@@ -1,6 +1,6 @@
 {
  "id": 44,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer configured an environment that contains the vPC and non-vPC switches. However, it was noticed that the downstream non-vPC switches do not receive the same STP bridge ID from the upstream vPC switch peers. Which vPC feature must be implemented to ensure that vPC and non-vPC switches receive the same STP bridge ID from the upstream vPC switch peers?",
  "context": null,

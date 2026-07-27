@@ -1,6 +1,6 @@
 {
  "id": 390,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer must configure a Cisco MDS 9000 Series Switch for traffic analysis from the storage array. The storage array is connected to the interface fc2/1 in VSAN 10 and the traffic analyzer to fc4/2. The capture file must include ingress and egress traffic between the switch and the storage array. Also, only traffic in VSAN 10 must be captured. Which configuration set meets these requirements?",
  "context": null,

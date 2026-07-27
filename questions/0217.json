@@ -1,6 +1,6 @@
 {
  "id": 217,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit.\nAn engineer configures a new application profile using REST API and receives this error message. Which method can be used before the application profile can be configured?",
  "context": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><imdata totalCount=\"1\"><error code=\"403\" text=\"Token was invalid (Error: Token timeout)\"/></imdata>",

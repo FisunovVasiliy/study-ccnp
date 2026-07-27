@@ -1,6 +1,6 @@
 {
  "id": 396,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. Which feature must be implemented on Postman to receive the response from a Cisco Nexus 9000 Series Switch?",
  "context": "Postman GUI: GET request to http://10.10.10.70/api/mo/sys/intf/phys-[eth1/3].json. Authorization tab, TYPE dropdown showing options: Inherit auth from parent, No Auth, API Key, Bearer Token, Basic Auth, Digest Auth, OAuth 1.0, OAuth 2.0, Hawk Authentication, AWS Signature, NTLM Authentication [Beta]. Body tab shows a JSON response with interface attributes (adminSt enable, autoNeg, bw, delay, dot1qEtherType, etc.).",

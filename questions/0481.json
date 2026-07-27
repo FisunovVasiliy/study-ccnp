@@ -1,6 +1,6 @@
 {
  "id": 481,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "multi",
  "question": "Refer to the exhibit. An engineer is configuring Cisco Data Center Network Manager to automate the provisioning of Cisco Nexus 9000 Series Switches. The engineer must configure user access for network engineers to permit device operations in Interface Manager. The solution must hide Admin and Config Menu items in Interface Manager. Which two roles must be assigned to the network engineers to meet these requirements? (Choose two.)",
  "context": "DCNM roles table includes: global-admin, network-admin, lan-network-admin, san-network-admin, san-admin, server-admin, sme-admin, sme-stg-admin, sme-kmc-admin, sme-recovery, network-operator, device-upg-admin, access-admin. access-admin: role introduced to perform operations in Interface Manager window for all fabrics. network-operator: general network operator role, mapped to Operator Perspective.",

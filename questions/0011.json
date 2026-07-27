@@ -1,6 +1,6 @@
 {
  "id": 11,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "The engineer must configure SPAN on a Cisco Nexus 5000 Series Switch to get a capture of the traffic from these applications for an in-depth packet analysis.\nWhich two SPAN characteristics must be considered? (Choose two.)",
  "context": null,

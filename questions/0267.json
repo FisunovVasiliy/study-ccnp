@@ -1,6 +1,6 @@
 {
  "id": 267,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "A network engineer must enable port security on all Cisco MDS Series Switches in the fabric. The requirement is to avoid the extensive manual configuration of the switch ports. Which action must be taken to meet these requirements?",
  "context": null,

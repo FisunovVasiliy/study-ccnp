@@ -1,6 +1,6 @@
 {
  "id": 349,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must recover the Cisco UCS system. The full backup is available on a backup SCP server. Which set of actions recovers the configuration of the Cisco UCS Manager?",
  "context": null,

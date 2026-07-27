@@ -1,6 +1,6 @@
 {
  "id": 313,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer must implement protection against ICMP DoS attacks on a Cisco Nexus 9000 Series Switch. The requirement is to rate-limit ICMP without denying all other ICMP traffic. The ICMP traffic currently passing through the Cisco Nexus 9000 device must not be affected. Which configuration accomplishes these goals?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 140,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Refer to the exhibits. ESXi-Server is associated to the blade server. A VLAN is added to Trunk-A. The VLAN is missing on the vNIC of ESXi-Server. Which action should be taken to add the VLAN to the vNIC?",
  "context": "Exhibit 1: Service Template ESXi-Server (updating template) - vNIC template list includes Trunk-A.\nExhibit 2: vNIC Template Trunk-A - Template Type: Initial Template.",

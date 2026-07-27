@@ -1,6 +1,6 @@
 {
  "id": 303,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "fill",
  "question": "DRAG DROP -\nA network engineer must configure FCoE on an interface of a Cisco MDS 9000 Series Switch. It should be used for mapping between VLAN 600 and VLAN 6.\nDrag and drop the commands from the bottom into their implementation order in the FCoE configuration. Not all commands are used.",
  "context": null,

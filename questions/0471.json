@@ -1,6 +1,6 @@
 {
  "id": 471,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An engineer must create a PowerShell script that leverages the Cisco UCS Manager PowerShell module to submit automated requests to Cisco UCS Manager. The engineer must automate the removal of switches from VLANs. Environment variables must provide the VLAN name and switch identifiers. The VLAN must persist when it is removed from the switch port. Which command must the engineer include in the script to accomplish these goals?",
  "context": null,

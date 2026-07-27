@@ -1,6 +1,6 @@
 {
  "id": 59,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "multi",
  "question": "A network architect must redesign a data center network based on OSPFv2. The network must perform fast reconvergence between directly connected switches. Which two actions must be taken to meet the requirements? (Choose two.)",
  "context": null,

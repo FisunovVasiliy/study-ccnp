@@ -1,6 +1,6 @@
 {
  "id": 101,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Where is the witness deployed in a two-node Cisco HyperFlex Edge deployment?",
  "context": null,

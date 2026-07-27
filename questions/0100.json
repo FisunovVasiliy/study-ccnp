@@ -1,6 +1,6 @@
 {
  "id": 100,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "A network engineer is adding a Cisco HyperFlex data platform to the Cisco Intersight management portal.\nWhich two components are required for Intersight to claim the Cisco HyperFlex data platform? (Choose two.)",
  "context": null,

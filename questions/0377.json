@@ -1,6 +1,6 @@
 {
  "id": 377,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer configures a role for a new user in Cisco UCS Manager. The role should allow the user to configure vHBAs, vNICs, and server port types. Which role should be assigned to allow the engineer to complete this task?",
  "context": null,

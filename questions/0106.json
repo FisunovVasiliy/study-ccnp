@@ -1,6 +1,6 @@
 {
  "id": 106,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "order",
  "question": "DRAG DROP -\nAn engineer deploys a custom guest shell rootfs onto multiple switches.\nDrag and drop the steps from the left into the correct order on the right.",
  "context": null,

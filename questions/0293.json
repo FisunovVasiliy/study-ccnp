@@ -1,6 +1,6 @@
 {
  "id": 293,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "Which two actions should be performed before upgrading the infrastructure and firmware of multiple UCS blades? (Choose two.)",
  "context": null,

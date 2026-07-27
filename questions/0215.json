@@ -1,6 +1,6 @@
 {
  "id": 215,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An engineer enters these commands while in EEM on a Cisco Nexus 9000 Series Switch: event manager applet Backup-config event timer watchdog time 1800 name timer event cli match \"copy running-config startup-config\"\nWhat is the result of applying this configuration?",
  "context": null,

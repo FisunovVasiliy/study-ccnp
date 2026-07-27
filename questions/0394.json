@@ -1,6 +1,6 @@
 {
  "id": 394,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "The network team needs permissions to access the Cisco UCS B-Series Servers via the Cisco UCS Manager GUI to configure the network and collect information about faults. The administrator wants to assign these permissions to the newly configured user called netops. Which set of tasks must the administrator perform to accomplish these goals?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 400,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A customer requires a solution to orchestrate the configuration of storage arrays, firewalls, and Cisco ACI networking. Additionally, the orchestration product must support open automation and a service catalog. Which solution meets these requirements?",
  "context": null,

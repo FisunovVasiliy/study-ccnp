@@ -1,6 +1,6 @@
 {
  "id": 74,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must perform a software upgrade on a production Cisco Nexus 7000 Series switch. Before the upgrade activity, the requirement is for all ports to be shut down and routing protocols to terminate gracefully. Which feature must be used to meet these requirements?",
  "context": null,

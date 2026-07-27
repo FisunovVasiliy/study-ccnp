@@ -1,6 +1,6 @@
 {
  "id": 448,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must integrate Cisco ACI with a VMware vSphere environment. The requirement is to use a VMware Distributed Virtual Switch and to assign the encapsulation VLAN of the EPG from the VLAN pool. Which configuration set accomplishes this goal?",
  "context": null,

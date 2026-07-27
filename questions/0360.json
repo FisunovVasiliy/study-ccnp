@@ -1,6 +1,6 @@
 {
  "id": 360,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must connect a Cisco UCS appliance port directly to NFS and iSCSI storage devices. Which action should be taken to achieve this goal?",
  "context": null,

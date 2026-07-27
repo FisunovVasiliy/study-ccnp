@@ -1,6 +1,6 @@
 {
  "id": 488,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "An engineer must configure port aggregation between two Cisco MDS 9000 Series Switches. The solution must meet these requirements: suspend member interface if parameters mismatch; load-balance traffic on multiple ports; and support traffic from multiple VSANs. Which port channel configuration must be used?",
  "context": null,

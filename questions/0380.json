@@ -1,6 +1,6 @@
 {
  "id": 380,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. The communication between the web server and the application server experiences poor performance. The network engineer must collect the traffic between the two servers, including the payload, for more investigation. The collected data must be sent from the remote site to the headquarters. Which action accomplishes this goal?",
  "context": "Topology: Remote Site has Web Server and Application Server connected to N5K-1, which connects via L3 MPLS to N5K-2 at HQ, which connects to a Monitor Server.",

@@ -1,6 +1,6 @@
 {
  "id": 12,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Host1 is in VLAN100 located in DataCenter1 and Host2 is in VLAN200 located in DataCenter2.\nWhich OTV VLAN mapping configuration allows Layer 2 connectivity between these two hosts?",
  "context": null,

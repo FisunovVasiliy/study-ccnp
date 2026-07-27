@@ -1,6 +1,6 @@
 {
  "id": 66,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "fill",
  "question": "DRAG DROP -\nAn engineer must configure the HSRP protocol to implement redundancy using two Cisco Nexus Series switches. In addition, the HSRP implementation must meet these requirements:\n* switch1 must retain the primary role if switch2 goes offline.\n* switch1 must retain the primary role until normal conditions are restored.\n* switch1 and switch2 must ensure that the routing tables are converged before taking the active role.\n* switch2 must retain the primary role if the default gateway is not reachable.\nDrag and drop the configuration commands from the right to the left to meet the requirements. The commands are used more than once. Not all commands are used.",
  "context": null,

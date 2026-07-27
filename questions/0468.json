@@ -1,6 +1,6 @@
 {
  "id": 468,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. A network engineer is using tcpdump to capture a snapshot of OSPF-related traffic on a specific Cisco NX-OS switch port. For security reasons, the capture must be taken using an embedded container that is already deployed on the Cisco Nexus device. Which command completes the script?\n______\nsudo -i\ntcpdump -i Eth1-47 -w /tmp/ospf_traffic.pcap ip proto 89",
  "context": null,

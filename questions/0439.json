@@ -1,6 +1,6 @@
 {
  "id": 439,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. An engineer uses Python in Cisco NX-OS guest shell to retrieve the configuration of the EIGRP ASN on interface eth1/1. The engineer has written this script:\n>>> import json\n>>> from cli import*\nWhich command set must be used to retrieve the value of the 'asn' key?",
  "context": "{\n  \"TABLE_asn\": {\n    \"ROW_asn\": {\n      \"asn\": \"10\",\n      \"TABLE_vrf\": {\n        \"ROW_vrf\": {\n          \"vrf\": \"default\",\n          \"TABLE_peer\": {\n            \"ROW_peer\": {\n              \"peer_handle\": \"0\",\n              \"peer_ipaddr\": \"10.13.0.2\",\n              \"peer_ifname\": \"Eth1/1\",\n              \"peer_holdtime\": \"13\",\n              \"peer_srtt\": \"6\",\n              \"peer_rto\": \"50\",\n              \"peer_xmitq_count\": \"0\",\n              \"peer_last_seqno\": \"4\",\n              \"peer_uptime\": \"PT46M49S\"\n            }\n          }\n        }\n      }\n    }\n  }\n}",

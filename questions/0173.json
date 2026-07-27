@@ -1,6 +1,6 @@
 {
  "id": 173,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "An engineer is configuring a vHBA template in UCS Manager. The engineer needs to specify the logical addresses used by the vHBA and the path through which the SAN traffic flows. Which two resources must be specified in the vHBA template? (Choose two.)",
  "context": null,

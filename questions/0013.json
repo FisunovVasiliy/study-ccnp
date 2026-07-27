@@ -1,6 +1,6 @@
 {
  "id": 13,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. What is configured as a result of running these commands?",
  "context": "switch(config)# interface Ethernet 2/2\nswitch(config)# ip address 172.23.231.240/23\nswitch(config)# ip verify unicast source reachable-via rx",

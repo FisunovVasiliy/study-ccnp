@@ -1,6 +1,6 @@
 {
  "id": 86,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "The VMM domain is integrated between Cisco APICs and vCenter using a distributed vSwitch. The traffic must be blocked between a subset of endpoints in an EPG based on specific VM attributes and the rest of the VMs in that EPG. Which set of actions blocks this traffic?",
  "context": null,

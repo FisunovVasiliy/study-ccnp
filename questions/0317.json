@@ -1,6 +1,6 @@
 {
  "id": 317,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer is implementing traffic monitoring for a server vNIC that is configured with fabric failover enabled. The requirement is for the traffic to be sent to an analyzer, even during a failure of one of the fabric interconnects. The analyzer is connected to unconfigured Ethernet ports on both fabric interconnects. Which configuration accomplishes this task?",
  "context": null,

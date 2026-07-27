@@ -1,6 +1,6 @@
 {
  "id": 144,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "Which component is disrupted when the Cisco Integrated Management Controller is upgraded on a Cisco UCS Series Server?",
  "context": null,

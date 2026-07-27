@@ -1,6 +1,6 @@
 {
  "id": 166,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. What is the result of implementing this configuration?",
  "context": "N5K-1(config)# interface fc2/3\nN5K-1(config-if)# switchport mode SD",

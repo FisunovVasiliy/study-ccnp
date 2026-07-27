@@ -1,6 +1,6 @@
 {
  "id": 229,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Which data interchange format is presented in this output?",
  "context": "{\n  \"totalCount\": \"1\",\n  \"imdata\": [\n    {\n      \"fabricNode\": {\n        \"attributes\": {\n          \"address\": \"10.0.40.65\",\n          \"apicType\": \"apic\",\n          \"dn\": \"topology/pod-1/node-201\",\n          \"id\": \"201\",\n          \"lastStateModTs\": \"2020-09-07T10:20:57.236+00:00\",\n          \"modTs\": \"2020-09-07T10:21:18.912+00:00\",\n          \"model\": \"N9K-C9336PQ\",\n          \"monPolDn\": \"uni/fabric/monfab-default\",\n          \"role\": \"spine\",\n          \"serial\": \"FDO39185372J\",\n          \"uid\": \"0\",\n          \"vendor\": \"Cisco Systems, Inc\"\n        }\n      }\n    }\n  ]\n}",

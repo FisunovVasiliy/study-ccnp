@@ -1,6 +1,6 @@
 {
  "id": 326,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "order",
  "question": "DRAG DROP -\nDrag and drop the steps on the left onto the order in which they must be implemented on the right to recover a fabric interconnect when there is no working image on the bootflash.",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 241,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An engineer must create an EPG called \"Test\". The configuration request should succeed if the Tenant called \"Tenant\" and the application profile called \"Test\" exist. The firewall policy allows only the HTTP connectivity to APIC from the user's computer. Which action accomplishes this goal?",
  "context": null,

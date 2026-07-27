@@ -1,6 +1,6 @@
 {
  "id": 514,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "An engineer must remove the running configuration of a Cisco Nexus 9000 Series Switch and replace it with a backup file without restarting the switch. The backup file is stored on an SFTP server that is reachable via the mgmt0 interface. Which set of commands accomplishes this task?",
  "context": null,

@@ -1,6 +1,6 @@
 {
  "id": 171,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "multi",
  "question": "Refer to the exhibit. An engineer must configure FCoE on a Cisco Nexus switch. Which two command sets complete this configuration? (Choose two.)",
  "context": "vlan 10\n fcoe vsan 10\n\ninterface ethernet 1/3\n switchport mode trunk\n switchport trunk allowed vlan 10",

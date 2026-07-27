@@ -1,6 +1,6 @@
 {
  "id": 188,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "A company is running a pair of Cisco Nexus 7706 Series switches as part of a data center segment. All network engineers have restricted read-write access to the core switches. A network engineer must add a new FCoE VLAN to allow traffic from servers toward FCoE storage. Which set of actions must be taken to meet these requirements?",
  "context": null,

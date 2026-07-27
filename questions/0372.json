@@ -1,6 +1,6 @@
 {
  "id": 372,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "A network administrator must create a Linux container on a Cisco Nexus Series Switch. The container requires 10 percent of the CPU of the switch and 1024 MB of RAM to run successfully. Which task provides the necessary resources?",
  "context": null,

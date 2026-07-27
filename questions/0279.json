@@ -1,6 +1,6 @@
 {
  "id": 279,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer implements a Cisco UCS C-Series Server that must adhere to these security requirements:\n- Unencrypted communication must be disabled.\n- The session timeout must not exceed 15 minutes.\n- Unencrypted traffic must be automatically diverted.\n- CLI-based management must use nondefault ports.\nWhich configuration set meets these requirements?",
  "context": null,

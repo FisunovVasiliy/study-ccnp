@@ -1,6 +1,6 @@
 {
  "id": 469,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "An engineer must automate the provisioning of Cisco ACI objects using the Terraform tool. The engineer must ensure that APIC counts the authentication login requests against the threshold to avoid a DOS attack. Which configuration must be used in Terraform to accomplish these goals?",
  "context": null,

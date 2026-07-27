@@ -1,6 +1,6 @@
 {
  "id": 332,
- "topic": "Topic 1",
+ "topic": "Network",
  "type": "single",
  "question": "Refer to the exhibit. A network administrator experiences these issues with the network:\n- PC1 is experiencing a buffering problem for video applications.\n- The servers that are connected to SW2 are experiencing packet drops when they connect to the internet.\nThe engineer wants to configure the required traffic capture to investigate the issue further.\nWhich configuration must be implemented to monitor the traffic?",
  "context": "Topology: Monitoring Device -Eth2/3- N9K -Eth1/1- SW1 (PC1 Vlan10, PC2 Vlan15); N9K -Eth1/2- SW2 (Vlan18-23 servers).",

@@ -1,6 +1,6 @@
 {
  "id": 457,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "An engineer must upgrade the server firmware for which the service profile is configured with a host firmware package. Which action must be taken to accomplish this goal?",
  "context": null,

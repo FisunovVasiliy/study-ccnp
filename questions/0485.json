@@ -1,6 +1,6 @@
 {
  "id": 485,
- "topic": "Topic 1",
+ "topic": "Storage Network",
  "type": "single",
  "question": "Refer to the exhibit. An engineer must configure FCoE with these requirements: VLAN 100 must be used to carry the Ethernet traffic; Fabric A must use FCoE on VLAN 11 and VSAN 11; Fabric B must use FCoE on VLAN 12 and VSAN 12; vfc 10 on Fabric A must be bound to Ethernet 1/1 on N5K_1; and vfc 11 on Fabric B must be bound to Ethernet 1/1 on N5K_2. Which interface vfc 10 configuration accomplishes these requirements?\nN5K_1(config)# feature fcoe\nN5K_1(config)# vlan 100\nN5K_1(config)# vsan database\nN5K_1(config-vsan-db)# vsan 11\n\nN5K_1(config)# vlan 11\nN5K_1(config-vlan)# fcoe vsan 11\n\nN5K_1(config)# vlan 100\n\nN5K_1(config)# interface ethernet 1/1\nN5K_1(config-if)# switchport mode trunk\nN5K_1(config-if)# switchport trunk allowed vlan 11, 100\nN5K_1(config-if)# no shutdown",
  "context": "Topology: Fabric A (N5K_1, N5K_2, FCoE VLAN11-VSAN11) and Fabric B (N5K_3, N5K_4, FCoE VLAN12-VSAN12) connect to LAN and SAN clouds and to a C2XX server via Ten1/Ten0.",

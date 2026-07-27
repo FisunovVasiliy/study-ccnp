@@ -1,6 +1,6 @@
 {
  "id": 256,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "Refer to the exhibit. What is the result of implementing this configuration?",
  "context": "NEXUS(config)# feature tacacs+\nNEXUS(config)# tacacs-server timeout 5\nNEXUS(config)# tacacs-server directed-request\nNEXUS(config)# tacacs-server deadtime 0\nNEXUS(config)# tacacs-server host 10.1.50.20 port 49\nNEXUS(config)# tacacs-server host 10.1.50.20 key 7 \"F1whg123\" timeout 1\nNEXUS(config)# aaa group server tacacs+ ISE\nNEXUS(config-tacacs+)# server 10.1.50.20\nNEXUS(config-tacacs+)# deadtime 10\nNEXUS(config-tacacs+)# use-vrf management\nNEXUS(config-tacacs+)# source-interface mgmt 0\nNEXUS(config)# aaa authentication login default group ISE",

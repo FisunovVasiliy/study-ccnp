@@ -1,6 +1,6 @@
 {
  "id": 456,
- "topic": "Topic 1",
+ "topic": "Security",
  "type": "single",
  "question": "An engineer configures user authentication on Cisco UCS Manager to ensure that the user and roles can be saved on the external server and secured using authentication. Which set of actions meets these requirements?",
  "context": null,

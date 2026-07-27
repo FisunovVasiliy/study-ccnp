@@ -1,6 +1,6 @@
 {
  "id": 53,
- "topic": "Topic 1",
+ "topic": "Automation and AI",
  "type": "single",
  "question": "Refer to the exhibit. Which command is run from the Guest Shell to set the description on the first five interfaces of the Cisco Nexus switch?",
  "context": "interface Ethernet1/1\n  description Server1\ninterface Ethernet1/2\n  description Server2\ninterface Ethernet1/3\n  description Server3\ninterface Ethernet1/4\n  description Server4\ninterface Ethernet1/5\n  description Server5",

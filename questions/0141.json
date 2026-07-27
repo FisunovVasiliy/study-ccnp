@@ -1,6 +1,6 @@
 {
  "id": 141,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A network engineer is deploying a Cisco All-Flash HyperFlex solution. Which local storage configuration is required for the operating system and persistent logging?",
  "context": null,

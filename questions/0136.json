@@ -1,6 +1,6 @@
 {
  "id": 136,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "multi",
  "question": "An engineer must build a lab replica of a Cisco UCS production environment. The file must be imported into a new Cisco UCS cluster using a Cisco UCS Manager GUI. The file must be in XML format and be exported from Cisco UCS Manager using an encrypted method. Which two configuration parameters should be selected to meet these requirements? (Choose two.)",
  "context": null,

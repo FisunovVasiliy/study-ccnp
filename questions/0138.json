@@ -1,6 +1,6 @@
 {
  "id": 138,
- "topic": "Topic 1",
+ "topic": "Compute",
  "type": "single",
  "question": "A Cisco UCS user called 'Employee1' accidentally changed the boot policy of the Cisco UCS server at the Cisco UCS Manager root level. This change impacted all service profiles, and their storage connectivity was lost. The system administrator wants to prevent this issue from recurring in the future. The new security policy mandates that access must be restricted up to the organization level and prevent other users from modifying root policies. Which action must be taken to meet these requirements?",
  "context": null,
